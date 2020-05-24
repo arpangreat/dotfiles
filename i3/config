@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -141,11 +141,12 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
-assign [class="Firefox"] $ws3 
 assign [class="Alacritty"] $ws1
-assign [class="vlc"] $ws10
 assign [class="Org.gnome.Nautilus"] $ws2
+assign [class="Firefox"] $ws3 
+assign [class="Google-chrome"] $ws3
 assign [class="Org.gnome.Characters"] $ws9
+assign [class="vlc"] $ws10
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -188,8 +189,9 @@ bar {
 
 bindsym $mod+shift+x exec i3lock
  
-exec firefox
 exec alacritty
-exec vlc
-exec gnome-characters
 exec nautilus
+exec firefox
+exec gnome-characters
+exec vlc
+exec xmodmap ~/swap

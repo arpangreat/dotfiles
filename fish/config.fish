@@ -20,6 +20,7 @@ abbr -a vrc 'vim ~/.vimrc'
 abbr -a nrc 'nvim ~/.config/nvim/init.vim'
 abbr -a brc 'vim ~/.bashrc'
 abbr -a arc 'vim ~/.config/alacritty/alacritty.yml'
+abbr -a irc 'vim ~/.config/i3/config'
 abbr -a m make
 abbr -a o xdg-open
 abbr -a g git

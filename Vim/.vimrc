@@ -413,8 +413,7 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
-
-
+nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gf :Gfiles<CR>
@@ -422,6 +421,10 @@ nnoremap <leader>r :source %<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gf :Gpull<CR>
 nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <buffer> <silent> <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
+
+
