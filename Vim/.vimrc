@@ -231,6 +231,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'rstacruz/sparkup'
 Plugin 'vimwiki/vimwiki'
 Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'neoclide/coc.nvim'
 Plugin 'SirVer/ultisnips'
@@ -417,7 +418,7 @@ nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gf :Gfiles<CR>
-nnoremap <leader>r :source %<CR>
+nnoremap <leader>rv :source %<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gb :Gblame<CR>
@@ -429,3 +430,15 @@ nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
+
+
+let g:racer_cmd = "/home/user/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
+let g:racer_insert_paren = 1
+
+
+autocmd FileType rust nmap <buffer> rd         <Plug>(rust-def)
+autocmd FileType rust nmap <buffer> rs         <Plug>(rust-def-split)
+autocmd FileType rust nmap <buffer> rx         <Plug>(rust-def-vertical)
+autocmd FileType rust nmap <buffer> rt         <Plug>(rust-def-tab)
+autocmd FileType rust nmap <buffer> <leader>rd <Plug>(rust-doc)
