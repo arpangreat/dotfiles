@@ -427,4 +427,5 @@ nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <buffer> <silent> <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
 
-
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
