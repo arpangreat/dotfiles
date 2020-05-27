@@ -78,10 +78,10 @@ window:
   # Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
 
-scrolling:
+  #scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 0
+  #history: 0
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
@@ -361,14 +361,14 @@ vi_mode_style: Beam
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-mouse:
+#mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
   # alacritty should wait for accepting multiple clicks as one double
   # or triple click.
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
   #hide_when_typing: false
@@ -419,7 +419,8 @@ mouse:
 # - `mods` (see key bindings)
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
-
+  - { mouse: Middle, action: ScrollPageUp }
+  - { mouse: Middle, action: ScrollPageDown }
 # Key bindings
 #
 # Key bindings are specified as a list of objects. For example, this is the
