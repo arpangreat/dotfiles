@@ -409,6 +409,8 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
+nnoremap <silent> <leader>+ :vertical resize +5<CR>
+nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>

@@ -232,6 +232,7 @@ Plugin 'rstacruz/sparkup'
 Plugin 'vimwiki/vimwiki'
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
+Plugin 'rust-lang/rls'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'neoclide/coc.nvim'
 Plugin 'SirVer/ultisnips'
@@ -414,6 +415,8 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
+nnoremap <silent> <leader>+ :vertical resize +5<CR>
+nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>
