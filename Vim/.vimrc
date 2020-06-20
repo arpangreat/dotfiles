@@ -220,7 +220,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vifm/vifm'
 Plugin 'vifm/vifm.vim'
 Plugin 'mcchrish/nnn.vim'
-
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 " Colorscheme
 Plugin 'morhetz/gruvbox'
 Plugin 'rigellute/shades-of-purple.vim'
