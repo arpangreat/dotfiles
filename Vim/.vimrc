@@ -219,9 +219,10 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vifm/vifm'
 Plugin 'vifm/vifm.vim'
-Plugin 'mcchrish/nnn.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'mcchrish/nnn.vim'
+
 " Colorscheme
 Plugin 'morhetz/gruvbox'
 Plugin 'rigellute/shades-of-purple.vim'
@@ -241,6 +242,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'mbbill/undotree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'wincent/terminus'
+"Plugin 'myitcv/govim'
+Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -428,12 +431,15 @@ nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gf :Gpull<CR>
+nnoremap <leader><leader> <C-^>
 nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <buffer> <silent> <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
+nnoremap <leader>s :wq<CR>
+nnoremap <leader>zx :q!<CR>
 
 
 let g:racer_cmd = "/home/user/.cargo/bin/racer"
