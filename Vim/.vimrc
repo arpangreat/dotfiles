@@ -204,6 +204,7 @@ set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+"call plug#begin('~/.vim/plugged')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -217,24 +218,16 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vifm/vifm'
-Plugin 'vifm/vifm.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-Plugin 'mcchrish/nnn.vim'
-
 " Colorscheme
-Plugin 'morhetz/gruvbox'
 Plugin 'rigellute/shades-of-purple.vim'
 Plugin 'chriskempson/base16-vim'
-
+Plugin 'bluz71/vim-nightfly-guicolors'
 " Language specific
 Plugin 'valloric/youcompleteme'
-Plugin 'rstacruz/sparkup'
-Plugin 'vimwiki/vimwiki'
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
-Plugin 'rust-lang/rls'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'neoclide/coc.nvim'
 Plugin 'SirVer/ultisnips'
@@ -242,8 +235,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'mbbill/undotree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'wincent/terminus'
-"Plugin 'myitcv/govim'
-Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -275,7 +266,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 
 "gruvbox
-set background=dark
+" set background=dark
 " Setting dark mode
 "let g:gruvbox_hls_cursor
 "colorscheme gruvbox
@@ -320,9 +311,9 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 "Purple theme
 "colorscheme shades_of_purple
- "if (has("termguicolors"))
-  "set termguicolors
- "endif
+if (has("termguicolors"))
+ set termguicolors
+endif
 
 
 "let g:shades_of_purple_airline = 1
@@ -363,10 +354,14 @@ let g:nnn#action = {
 
 " Intregating with Base16-theme as of the terminal
 
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+" if filereadable(expand("~/.vimrc_background"))
+ " let base16colorspace=256
+ " source ~/.vimrc_background
+" endif
+
+" nightfly
+
+colorscheme nightfly
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -407,7 +402,6 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 " let mapleader = " "
 " I use space as leader you can anything by putting 
 " that character inside of the the double Qoutes
-
 let mapleader = " "
 
 nnoremap <leader>h :wincmd h<CR>
@@ -419,8 +413,6 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
-nnoremap <silent> <leader>+ :vertical resize +5<CR>
-nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>
@@ -431,15 +423,12 @@ nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gf :Gpull<CR>
-nnoremap <leader><leader> <C-^>
 nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <buffer> <silent> <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>s :wq<CR>
-nnoremap <leader>zx :q!<CR>
 
 
 let g:racer_cmd = "/home/user/.cargo/bin/racer"
@@ -447,8 +436,8 @@ let g:racer_experimental_completer = 1
 let g:racer_insert_paren = 1
 
 
-autocmd FileType rust nmap <buffer> rd         <Plug>(rust-def)
-autocmd FileType rust nmap <buffer> rs         <Plug>(rust-def-split)
-autocmd FileType rust nmap <buffer> rx         <Plug>(rust-def-vertical)
-autocmd FileType rust nmap <buffer> rt         <Plug>(rust-def-tab)
-autocmd FileType rust nmap <buffer> <leader>rd <Plug>(rust-doc)
+autocmd FileType rust nmap <buffer> rd         <Plugin>(rust-def)
+autocmd FileType rust nmap <buffer> rs         <Plugin>(rust-def-split)
+autocmd FileType rust nmap <buffer> rx         <Plugin>(rust-def-vertical)
+autocmd FileType rust nmap <buffer> rt         <Plugin>(rust-def-tab)
+autocmd FileType rust nmap <buffer> <leader>rd <Plugin>(rust-doc)
