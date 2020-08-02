@@ -27,6 +27,7 @@
 set nocompatible
 set cursorline
 set mouse+=a
+set guicursor=
 set autoindent
 set hlsearch
 set incsearch
@@ -217,6 +218,8 @@ Plug 'vifm/vifm.vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'vuciv/vim-bujo'
+Plug 'tpope/vim-dispatch'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
