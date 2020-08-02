@@ -57,7 +57,7 @@ syntax enable
 filetype plugin on
 
 set t_Co=256
-set notermguicolors
+set termguicolors
 set encoding=utf-8
 set ttimeoutlen=50
 
@@ -225,14 +225,15 @@ Plug 'rigellute/shades-of-purple.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'dylanaraps/wal.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 " Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-Plug 'SirVer/ultisnips'
+"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
 Plug 'leafgarland/typescript-vim'
@@ -350,7 +351,9 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 " colorscheme wal
 "
 "
-colorscheme nord
+"colorscheme nord
+
+colorscheme nightfly
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
