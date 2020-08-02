@@ -27,7 +27,6 @@
 set nocompatible
 set cursorline
 set mouse+=a
-set guicursor=
 set autoindent
 set hlsearch
 set incsearch
