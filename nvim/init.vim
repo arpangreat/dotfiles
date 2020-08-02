@@ -215,12 +215,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'vifm/vifm'
 Plug 'vifm/vifm.vim'
 Plug 'mcchrish/nnn.vim'
-
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
 Plug 'chriskempson/base16-vim'
-
+Plug 'dylanaraps/wal.vim'
+Plug 'arcticicestudio/nord-vim'
 " Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
@@ -234,6 +236,7 @@ Plug 'mbbill/undotree'
 Plug 'leafgarland/typescript-vim'
 Plug 'wincent/terminus'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'fatih/vim-go'
 " All of your Plugs must be added before the following line
 call plug#end()
 filetype plugin indent on    " required
@@ -269,6 +272,15 @@ set background=dark
 " Setting dark mode
 "let g:gruvbox_hls_cursor
 "colorscheme gruvbox
+
+" NERDTree Configs
+
+let g:NERDTreeShowHidden=1
+let g:NERDTreeAutoDeleteBuffer=1
+let g:NERDTreeQuitOnOpen=0
+
+" Open nerd tree at the current file or close nerd tree if pressed again.
+nnoremap <silent> <expr> <Leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 
 "rainbow parenthesis
@@ -325,38 +337,19 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 
 
-"nnn.vim
-" Disable default mappings
-let g:nnn#set_default_mappings = 0
-
-" Then set your own
-nnoremap <silent> <leader>nn :NnnPicker<CR>
-
-
-" Or override
-" Start nnn in the current file's directory
-nnoremap <leader>n :NnnPicker '%:p:h'<CR>
-
-" Opens the nnn window in a split
-"let g:nnn#layout = 'new' " or vnew, tabnew etc.
-
-" Or pass a dictionary with window size
-"let g:nnn#layout = { 'left': '~20%' } " or right, up, down
-
-" Floating window (neovim latest and vim with patch 8.2.191)
-"let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
-
-let g:nnn#action = {
-      \ '<c-t>': 'tab split',
-      \ '<c-x>': 'split',
-      \ '<c-v>': 'vsplit' }
-
 " Intregating with Base16-theme as of the terminal
 
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+" if filereadable(expand("~/.vimrc_background"))
+ " let base16colorspace=256
+ " source ~/.vimrc_background
+" endif
+" colorscheme for pywal
+"
+" colorscheme wal
+"
+"
+colorscheme nord
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -405,8 +398,10 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <leader>pv :wincmd v<bar> :NERDTree <bar> :vertical resize 25<CR>
+nnoremap <leader>pp :NERDTree<CR>
 nnoremap <Leader>ps :Rg<SPACE>
+nnoremap <leader><leader> <C-^>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
@@ -424,11 +419,9 @@ nnoremap <leader>gf :Gpull<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
+nnoremap <leader>s :wq<CR>
+nnoremap <leader>e :q!<CR>
 
-    inoremap <buffer> <silent><expr> <TAB>
-                \ pumvisible() ? "\<C-n>" :
-                \ <SID>check_back_space() ? "\<TAB>" :
-                \ coc#refresh()
 
     inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
     inoremap <buffer> <silent><expr> <C-space> coc#refresh()
