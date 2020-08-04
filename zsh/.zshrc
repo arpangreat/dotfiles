@@ -79,6 +79,7 @@ plugins=(
     git
     zsh-completions
     zsh-autosuggestions  
+    zsh-abbr
 
 )
 
@@ -131,7 +132,8 @@ alias rd='sudo rmdir'
 alias rf='sudo rm -rf'
 alias g='git'
 alias gc='git clone'
-alias gp='git pull'
+alias gf='git pull'
+alias gp='git push -u origin master'
 alias arc='vim ~/.config/alacritty/alacritty.yml'
 alias zrc='nvim ~/.zshrc'
 alias ll='ls -la'
@@ -142,3 +144,12 @@ bindkey -v
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# base16
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+
+pfetch
