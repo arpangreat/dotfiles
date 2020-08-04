@@ -80,6 +80,7 @@ plugins=(
     zsh-completions
     zsh-autosuggestions  
     zsh-abbr
+    z
 
 )
 
