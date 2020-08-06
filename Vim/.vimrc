@@ -57,7 +57,7 @@ syntax enable
 filetype plugin on
 
 set t_Co=256
-set notermguicolors
+set termguicolors
 set encoding=utf-8
 set ttimeoutlen=50
 
@@ -202,63 +202,65 @@ set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
 "                     - Internal Training
 "                       - Encouragement
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin('~/.vim/plugged')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 " Functionalities
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vifm/vifm'
-Plugin 'vifm/vifm.vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'mcchrish/nnn.vim'
+Plug 'VundleVim/Vundle.vim'
+Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'tpope/vim-fugitive'
+Plug 'vifm/vifm'
+Plug 'vifm/vifm.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'mcchrish/nnn.vim'
 
 " Colorscheme
-Plugin 'morhetz/gruvbox'
-Plugin 'rigellute/shades-of-purple.vim'
-Plugin 'chriskempson/base16-vim'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'dylanaraps/wal.vim'
+Plug 'morhetz/gruvbox'
+Plug 'rigellute/shades-of-purple.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'dylanaraps/wal.vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 " Language specific
-Plugin 'valloric/youcompleteme'
-Plugin 'rstacruz/sparkup'
-Plugin 'vimwiki/vimwiki'
-Plugin 'rust-lang/rust.vim'
-Plugin 'racer-rust/vim-racer'
-Plugin 'rust-lang/rls'
-Plugin 'scrooloose/nerdtree'
-"Plugin 'neoclide/coc.nvim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'mbbill/undotree'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'wincent/terminus'
-"Plugin 'myitcv/govim'
-Plugin 'fatih/vim-go'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+" Plug 'valloric/youcompleteme'
+Plug 'rstacruz/sparkup'
+Plug 'vimwiki/vimwiki'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+Plug 'rust-lang/rls'
+Plug 'scrooloose/nerdtree'
+Plug 'neoclide/coc.nvim' , {'do': 'yarn install --frozen-lockfile'}
+
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'mbbill/undotree'
+Plug 'leafgarland/typescript-vim'
+Plug 'wincent/terminus'
+"Plug 'myitcv/govim'
+Plug 'fatih/vim-go'
+" All of your Plugs must be added before the following line
+call plug#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
 " Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+" :PlugList       - lists configured plugins
+" :PlugInstall    - installs plugins; append `!` to update or just :PlugUpdate
+" :PlugSearch foo - searches for foo; append `!` to refresh local cache
+" :PlugClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Put your non-Plug stuff after this line
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -287,6 +289,10 @@ let g:NERDTreeShowHidden=1
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeQuitOnOpen=0
 
+autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Open nerd tree at the current file or close nerd tree if pressed again.
 nnoremap <silent> <expr> <Leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
@@ -349,13 +355,14 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 " Intregating with Base16-theme as of the terminal
 
- if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+" if filereadable(expand("~/.vimrc_background"))
+"  let base16colorspace=256
+"  source ~/.vimrc_background
+"endif
 
 "colorscheme nord
 
+colorscheme nightfly
 " colorscheme wal
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -423,9 +430,9 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gf :Gpull<CR>
 nnoremap <leader><leader> <C-^>
-nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
-nnoremap <buffer> <silent> <leader>gr :YcmCompleter GoToReferences<CR>
-nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
+" nnoremap <buffer> <silent> <leader>gd :YcmCompleter GoTo<CR>
+" nnoremap <buffer> <silent> <leader>gr :YcmCompleter GoToReferences<CR>
+" nnoremap <buffer> <silent> <leader>rr :YcmCompleter RefactorRename<space>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
@@ -443,3 +450,15 @@ autocmd FileType rust nmap <buffer> rs         <Plug>(rust-def-split)
 autocmd FileType rust nmap <buffer> rx         <Plug>(rust-def-vertical)
 autocmd FileType rust nmap <buffer> rt         <Plug>(rust-def-tab)
 autocmd FileType rust nmap <buffer> <leader>rd <Plug>(rust-doc)
+
+
+    inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+    inoremap <buffer> <silent><expr> <C-space> coc#refresh()
+
+    " GoTo code navigation.
+    nmap <buffer> <leader>gd <Plug>(coc-definition)
+    nmap <buffer> <leader>gy <Plug>(coc-type-definition)
+    nmap <buffer> <leader>gi <Plug>(coc-implementation)
+    nmap <buffer> <leader>gr <Plug>(coc-references)
+    nmap <buffer> <leader>rr <Plug>(coc-rename)
+    nnoremap <buffer> <leader>cr :CocRestart
