@@ -232,8 +232,8 @@ Plug 'rstacruz/sparkup'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
-"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'SirVer/ultisnips'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
 Plug 'leafgarland/typescript-vim'
@@ -281,6 +281,9 @@ set background=dark
 let g:NERDTreeShowHidden=1
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeQuitOnOpen=0
+autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Open nerd tree at the current file or close nerd tree if pressed again.
 nnoremap <silent> <expr> <Leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
@@ -351,10 +354,9 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 " colorscheme wal
 "
 "
-"colorscheme nord
+" colorscheme nord
 
 colorscheme nightfly
-
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -414,7 +416,7 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>
-nnoremap <leader>gf :Gfiles<CR>
+nnoremap <leader>gv :GitFiles<CR>
 nnoremap <leader>r :source %<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Gpush<CR>
