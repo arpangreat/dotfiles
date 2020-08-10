@@ -356,6 +356,9 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 "
 " colorscheme nord
 
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
+
 colorscheme nightfly
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -411,9 +414,13 @@ nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <leader><leader> <C-^>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
+nnoremap <Leader>pg :GFiles<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
+nnoremap \gr :GoRun<CR>
+nnoremap \gb :GoBuild<CR>
+nnoremap \gt :GoTest<CR>
 
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gv :GitFiles<CR>
