@@ -205,7 +205,8 @@ set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
 call plug#begin('~/.vim/plugged')
 
 Plug 'VundleVim/Vundle.vim'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
@@ -223,9 +224,12 @@ Plug 'tpope/vim-dispatch'
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
 Plug 'chriskempson/base16-vim'
-Plug 'dylanaraps/wal.vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'ayu-theme/ayu-vim' " or other package manager
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'crusoexia/vim-monokai'
+Plug 'rakr/vim-one'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 " Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
@@ -271,7 +275,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 
 "gruvbox
-set background=dark
+" set background=dark
 " Setting dark mode
 "let g:gruvbox_hls_cursor
 "colorscheme gruvbox
@@ -288,6 +292,50 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Open nerd tree at the current file or close nerd tree if pressed again.
 nnoremap <silent> <expr> <Leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
+" Monokai Colorscheme
+"colorscheme monokai
+"let g:monokai_term_italic = 1
+"let g:monokai_gui_italic = 1
+
+
+" Purify Colorscheme
+"colorscheme purify
+"let g:airline_theme='purify'
+
+
+
+" Vim-One Colorscheme
+"let g:airline_theme='one'
+"colorscheme one
+"set background=dark
+"let g:one_allow_italics = 1
+
+"if (empty($TMUX))
+"  if (has("nvim"))
+ "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+"  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"  endif
+" endif
+
+
+" Palenite Colorscheme
+"set background=dark
+"colorscheme palenight
+"let g:airline_theme = "palenight"
+"if (has("nvim"))
+"For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+"  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"endif
+
+"let g:palenight_terminal_italics=1
+
+
+" Ayu Colorscheme
+
+"let ayucolor="light"  " for light version of theme
+"let ayucolor="mirage" " for mirage version of theme
+"let ayucolor="dark"   " for dark version of theme
+"colorscheme ayu
 
 "rainbow parenthesis
 let g:rbpt_colorpairs = [
@@ -345,10 +393,10 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 " Intregating with Base16-theme as of the terminal
 
-" if filereadable(expand("~/.vimrc_background"))
- " let base16colorspace=256
- " source ~/.vimrc_background
-" endif
+"if filereadable(expand("~/.vimrc_background"))
+" let base16colorspace=256
+" source ~/.vimrc_background
+"endif
 " colorscheme for pywal
 "
 " colorscheme wal
@@ -360,6 +408,41 @@ let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'
 
 colorscheme nightfly
+let g:nightflyCursorColor = 1
+set background=dark
+let g:nightflyUnderlineMatchParen = 1
+
+if exists('&cursorlineopt')
+    set cursorlineopt=number
+    set cursorline
+endif
+
+function! RelativeNumberActivity(active)
+    if &diff
+        " For diffs, do nothing since we want relativenumbers in all windows.
+        return
+    endif
+    if &buftype == "nofile" || &buftype == "nowrite"
+        setlocal nonumber
+    elseif a:active == v:true
+        setlocal relativenumber
+        if exists('&cursorlineopt')
+            setlocal cursorline
+        endif
+    else
+        setlocal norelativenumber
+        if exists('&cursorlineopt')
+            setlocal nocursorline
+        endif
+    endif
+endfunction
+
+augroup CustomWindowActivity
+    autocmd!
+    autocmd WinEnter * call RelativeNumberActivity(v:true)
+    autocmd WinLeave * call RelativeNumberActivity(v:false)
+augroup END
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a

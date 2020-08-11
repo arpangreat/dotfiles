@@ -210,7 +210,8 @@ call plug#begin('~/.vim/plugged')
 " let Vundle manage Vundle, required
 " Functionalities
 Plug 'VundleVim/Vundle.vim'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
@@ -222,7 +223,7 @@ Plug 'vifm/vifm.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mcchrish/nnn.vim'
-
+Plug 'sheerun/vim-polyglot'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
@@ -230,6 +231,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'dylanaraps/wal.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'colepeters/spacemacs-theme.vim'
 " Language specific
 " Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
@@ -356,13 +358,53 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 " Intregating with Base16-theme as of the terminal
 
 " if filereadable(expand("~/.vimrc_background"))
-"  let base16colorspace=256
-"  source ~/.vimrc_background
-"endif
+  "let base16colorspace=256
+  "source ~/.vimrc_background
+" endif
+"colorscheme spacemacs-theme
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
 
 "colorscheme nord
 
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 colorscheme nightfly
+let g:nightflyCursorColor = 1
+let g:nightflyUnderlineMatchParen = 1
+if exists('&cursorlineopt')
+    set cursorlineopt=number
+    set cursorline
+endif
+
+function! RelativeNumberActivity(active)
+    if &diff
+        " For diffs, do nothing since we want relativenumbers in all windows.
+        return
+    endif
+    if &buftype == "nofile" || &buftype == "nowrite"
+        setlocal nonumber
+    elseif a:active == v:true
+        setlocal relativenumber
+        if exists('&cursorlineopt')
+            setlocal cursorline
+        endif
+    else
+        setlocal norelativenumber
+        if exists('&cursorlineopt')
+            setlocal nocursorline
+        endif
+    endif
+endfunction
+
+augroup CustomWindowActivity
+    autocmd!
+    autocmd WinEnter * call RelativeNumberActivity(v:true)
+    autocmd WinLeave * call RelativeNumberActivity(v:false)
+augroup END
+
+
 " colorscheme wal
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -422,7 +464,7 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
 
 nnoremap <leader>gs :G<CR>
-nnoremap <leader>gf :Gfiles<CR>
+nnoremap <leader>pg :Gfiles<CR>
 nnoremap <leader>rv :source %<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Gpush<CR>
