@@ -37,6 +37,7 @@ set relativenumber
 set shortmess+=I
 set laststatus=2
 set backspace=indent,eol,start
+"set kscb
 set hidden
 set ignorecase
 set smartcase
@@ -48,6 +49,7 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
+set updatetime=100
 set nowrap
 set colorcolumn=100
 highlight ColorColumn ctermbg=0 guibg=lightgrey                                                    
@@ -220,6 +222,9 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vuciv/vim-bujo'
 Plug 'tpope/vim-dispatch'
+"Plug "ThePrimeagen/vim-apm"
+Plug 'airblade/vim-gitgutter'
+Plug 'xuyuanp/nerdtree-git-plugin'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
@@ -460,6 +465,27 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 
+" nerdtree with git
+
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+
+
+
+
+
+
+
 " YCM for Rust-Completion
 let g:ycm_rust_src_path="/home/arpangreat/Developer/rust-master/src/"
 let g:rustfmt_autosave = 1
@@ -494,6 +520,7 @@ nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :NERDTree <bar> :vertical resize 25<CR>
 nnoremap <leader>pp :NERDTree<CR>
 nnoremap <Leader>ps :Rg<SPACE>
+nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
@@ -505,6 +532,7 @@ nnoremap \gr :GoRun<CR>
 nnoremap \gb :GoBuild<CR>
 nnoremap \gt :GoTest<CR>
 
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gv :GitFiles<CR>
 nnoremap <leader>r :source %<CR>
@@ -524,10 +552,10 @@ nnoremap <leader>e :q!<CR>
     inoremap <buffer> <silent><expr> <C-space> coc#refresh()
 
     " GoTo code navigation.
-    nmap <buffer> <leader>gd <Plug>(coc-definition)
-    nmap <buffer> <leader>gy <Plug>(coc-type-definition)
-    nmap <buffer> <leader>gi <Plug>(coc-implementation)
-    nmap <buffer> <leader>gr <Plug>(coc-references)
+    nmap <buffer> <leader>cd <Plug>(coc-definition)
+    nmap <buffer> <leader>cy <Plug>(coc-type-definition)
+    nmap <buffer> <leader>rg <Plug>(coc-implementation)
+    nmap <buffer> <leader>cr <Plug>(coc-references)
     nmap <buffer> <leader>rr <Plug>(coc-rename)
     nnoremap <buffer> <leader>cr :CocRestart
 
