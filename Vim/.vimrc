@@ -46,6 +46,7 @@ set expandtab
 set smartindent
 set noswapfile
 set nobackup
+set ts=4 sw=4 noet
 set undodir=~/.vim/undodir
 set undofile
 set nowrap
@@ -215,7 +216,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
 Plug 'vifm/vifm'
@@ -224,6 +225,9 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdcommenter'
+Plug 'raimondi/delimitmate'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
@@ -232,6 +236,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'dylanaraps/wal.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'colepeters/spacemacs-theme.vim'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'nanotech/jellybeans.vim'
 " Language specific
 " Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
@@ -338,9 +344,9 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 "Purple theme
 "colorscheme shades_of_purple
-"if (has("termguicolors"))
-" set termguicolors
-"endif
+if (has("termguicolors"))
+ set termguicolors
+endif
 
 
 "let g:shades_of_purple_airline = 1
@@ -370,41 +376,64 @@ let $FZF_DEFAULT_OPTS='--reverse'
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-colorscheme nightfly
-let g:nightflyCursorColor = 1
-let g:nightflyUnderlineMatchParen = 1
-if exists('&cursorlineopt')
-    set cursorlineopt=number
-    set cursorline
-endif
+"colorscheme nightfly
+"let g:nightflyCursorColor = 1
+"let g:nightflyUnderlineMatchParen = 1
+"if exists('&cursorlineopt')
+"    set cursorlineopt=number
+""    set cursorline
+"endif
+""
+"function! RelativeNumberActivity(active)
+""    if &diff
+"        " For diffs, do nothing since we want relativenumbers in all windows.
+""        return
+"    endif
+""    if &buftype == "nofile" || &buftype == "nowrite"
+"        setlocal nonumber
+""    elseif a:active == v:true
+"        setlocal relativenumber
+""        if exists('&cursorlineopt')
+"            setlocal cursorline
+""        endif
+"    else
+""        setlocal norelativenumber
+"        if exists('&cursorlineopt')
+""            setlocal nocursorline
+"        endif
+""    endif
+"endfunction
+"
+"augroup CustomWindowActivity
+"    autocmd!
+"    autocmd WinEnter * call RelativeNumberActivity(v:true)
+"    autocmd WinLeave * call RelativeNumberActivity(v:false)
+"augroup END
+"
+" Jellybeans
 
-function! RelativeNumberActivity(active)
-    if &diff
-        " For diffs, do nothing since we want relativenumbers in all windows.
-        return
-    endif
-    if &buftype == "nofile" || &buftype == "nowrite"
-        setlocal nonumber
-    elseif a:active == v:true
-        setlocal relativenumber
-        if exists('&cursorlineopt')
-            setlocal cursorline
-        endif
-    else
-        setlocal norelativenumber
-        if exists('&cursorlineopt')
-            setlocal nocursorline
-        endif
-    endif
-endfunction
-
-augroup CustomWindowActivity
-    autocmd!
-    autocmd WinEnter * call RelativeNumberActivity(v:true)
-    autocmd WinLeave * call RelativeNumberActivity(v:false)
-augroup END
+"colorscheme jellybeans
 
 
+"let g:jellybeans_overrides = {
+"\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+"\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+"\              'attr': 'bold' },
+"\    'Comment': { 'guifg': 'cccccc' },
+"\}
+
+"let g:jellybeans_overrides = {
+"\    'MatchParen': { 'guifg': 'dd0093', 'guibg': '000000',
+"\                    'ctermfg': 'Magenta', 'ctermbg': '' },
+"\}
+
+"let g:jellybeans_use_term_italics = 1
+
+
+
+colorscheme challenger_deep
+
+"colorscheme spacemacs-theme
 " colorscheme wal
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -462,6 +491,34 @@ nnoremap <Leader>pf :Files<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :below vertical terminal<CR>
+nmap<F8> :TagbarToggle<CR>
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+
+
+
 
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>pg :Gfiles<CR>
