@@ -51,7 +51,7 @@ set undodir=~/.vim/undodir
 set undofile
 set updatetime=100
 set nowrap
-set colorcolumn=100
+set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey                                                    
 
 " enable syntax and plugins (for netrw)
@@ -212,7 +212,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
 Plug 'vifm/vifm'
@@ -225,9 +225,14 @@ Plug 'tpope/vim-dispatch'
 "Plug "ThePrimeagen/vim-apm"
 Plug 'airblade/vim-gitgutter'
 Plug 'xuyuanp/nerdtree-git-plugin'
+"Plug 'itchyny/lightline.vim'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdcommenter'
+Plug 'raimondi/delimitmate'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'ayu-theme/ayu-vim' " or other package manager
@@ -235,7 +240,8 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'crusoexia/vim-monokai'
 Plug 'rakr/vim-one'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
-" Language specific
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+"0 Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
 Plug 'vimwiki/vimwiki'
@@ -285,6 +291,33 @@ let g:airline#extensions#tabline#formatter = 'default'
 "let g:gruvbox_hls_cursor
 "colorscheme gruvbox
 
+" lightline
+
+"let g:lightline = {
+"      \ 'colorscheme': 'onedark',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"      \ },
+"      \ 'component_function': {
+"      \   'gitbranch': 'FugitiveHead'
+"      \ },
+"      \ }
+"
+"
+"function! LightlineGitGutter()
+"  if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
+"    return ''
+"  endif
+"  let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
+"  return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
+"endfunction
+"
+
+
+
+
+
 " NERDTree Configs
 
 let g:NERDTreeShowHidden=1
@@ -301,6 +334,36 @@ nnoremap <silent> <expr> <Leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" :
 "colorscheme monokai
 "let g:monokai_term_italic = 1
 "let g:monokai_gui_italic = 1
+
+
+"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+if (empty($TMUX))
+  if (has("nvim"))
+    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+
+" Vim One Dark Colorscheme
+
+"colorscheme onedark
+
+"let g:onedark_terminal_italics = 1
+
+"let g:airline_theme='onedark'
+
+" Challenger deep Colorscheme
+
+colorscheme challenger_deep
 
 
 " Purify Colorscheme
@@ -412,41 +475,41 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'
 
-colorscheme nightfly
-let g:nightflyCursorColor = 1
-set background=dark
-let g:nightflyUnderlineMatchParen = 1
+"colorscheme nightfly
+"let g:nightflyCursorColor = 1
+"set background=dark
+"let g:nightflyUnderlineMatchParen = 1
 
-if exists('&cursorlineopt')
-    set cursorlineopt=number
-    set cursorline
-endif
+"if exists('&cursorlineopt')
+"    set cursorlineopt=number
+"    set cursorline
+"endif
 
-function! RelativeNumberActivity(active)
-    if &diff
-        " For diffs, do nothing since we want relativenumbers in all windows.
-        return
-    endif
-    if &buftype == "nofile" || &buftype == "nowrite"
-        setlocal nonumber
-    elseif a:active == v:true
-        setlocal relativenumber
-        if exists('&cursorlineopt')
-            setlocal cursorline
-        endif
-    else
-        setlocal norelativenumber
-        if exists('&cursorlineopt')
-            setlocal nocursorline
-        endif
-    endif
-endfunction
+"function! RelativeNumberActivity(active)
+"    if &diff
+"        " For diffs, do nothing since we want relativenumbers in all windows.
+"        return
+"    endif
+"    if &buftype == "nofile" || &buftype == "nowrite"
+"        setlocal nonumber
+"    elseif a:active == v:true
+"        setlocal relativenumber
+"        if exists('&cursorlineopt')
+"            setlocal cursorline
+"        endif
+"    else
+"        setlocal norelativenumber
+"        if exists('&cursorlineopt')
+"            setlocal nocursorline
+"        endif
+"    endif
+"endfunction
 
-augroup CustomWindowActivity
-    autocmd!
-    autocmd WinEnter * call RelativeNumberActivity(v:true)
-    autocmd WinLeave * call RelativeNumberActivity(v:false)
-augroup END
+"augroup CustomWindowActivity
+"    autocmd!
+"    autocmd WinEnter * call RelativeNumberActivity(v:true)
+"    autocmd WinLeave * call RelativeNumberActivity(v:false)
+"augroup END
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -531,6 +594,32 @@ nnoremap <leader>t :below vertical terminal<CR>
 nnoremap \gr :GoRun<CR>
 nnoremap \gb :GoBuild<CR>
 nnoremap \gt :GoTest<CR>
+
+nmap<F8> :TagbarToggle<CR>
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
 
 nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>gs :G<CR>
