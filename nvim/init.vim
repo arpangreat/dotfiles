@@ -229,6 +229,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
 Plug 'raimondi/delimitmate'
+Plug 'stsewd/fzf-checkout.vim'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
@@ -241,6 +242,7 @@ Plug 'crusoexia/vim-monokai'
 Plug 'rakr/vim-one'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'embark-theme/vim', { 'as': 'embark' }
 "0 Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'rstacruz/sparkup'
@@ -255,6 +257,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'wincent/terminus'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'fatih/vim-go'
+" Plug 'govim/govim'
 " All of your Plugs must be added before the following line
 call plug#end()
 filetype plugin indent on    " required
@@ -363,7 +366,7 @@ endif
 
 " Challenger deep Colorscheme
 
-colorscheme challenger_deep
+"colorscheme challenger_deep
 
 
 " Purify Colorscheme
@@ -436,7 +439,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 "airline theme
-let g:airline_theme='deus'
+"let g:airline_theme='deus'
 
 "auto pairs
 let g:AutoPairsFlyMode = 1
@@ -448,8 +451,14 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
   "set termguicolors
  "endif
 
+" Embark Theme 
+colorscheme embark
+let g:airline_theme = 'embark'
+let g:embark_terminal_italics = 1
 
-"let g:shades_of_purple_airline = 1
+
+
+" let g:shades_of_purple_airline = 1
 "let g:airline_theme='shades_of_purple'
 
 " Base16 colorscheme
@@ -630,6 +639,7 @@ nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gf :Gpull<CR>
+nnoremap <leader>go :GCheckout<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
