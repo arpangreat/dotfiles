@@ -1,27 +1,3 @@
-" FEATURES TO COVER:
-" - Fuzzy File Search
-" - Tag jumping
-" - Autocomplete
-" - File Browsing
-" - Snippets
-" - Build Integration (if we have time)
-
-
-
-" GOALS OF THIS TALK:
-" - Increase Vim understanding
-" - Offer powerful options
-
-" NOT GOALS OF THIS TALK:
-" - Hate on plugins
-" - Get people to stop using plugins
-
-
-
-
-
-" {{{ BASIC SETUP
-" BASIC SETUP:
 
 " enter the current millenium
 set nocompatible
@@ -54,6 +30,9 @@ set nowrap
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey                                                    
 
+set scrolloff=8
+set noshowmode
+set completeopt=menuone,noinsert,noselect
 " enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
@@ -63,146 +42,6 @@ set termguicolors
 set encoding=utf-8
 set ttimeoutlen=50
 
-
-
-
-
-
-
-" FINDING FILES:
-
-" Search down into subfolders
-" Provides tab-completion for all file-related tasks
-set path+=**
-
-" Display all matching files when we tab complete
-set wildmenu
-
-" NOW WE CAN:
-" - Hit tab to :find by partial match
-" - Use * to make it fuzzy
-
-" THINGS TO CONSIDER:
-" - :b lets you autocomplete any open buffer
-
-
-" TAG JUMPING:
-
-" Create the `tags` file (may need to install ctags first)
-command! MakeTags !ctags -R .
-command! Cpp !g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
-command! Cargob !cargo build --release
-command! Cargor !cargo run
-nnoremap <C-c><C-b> :!cargo build --release<CR>
-inoremap <C-c><C-b> <ESC> :!cargo build --release<CR>
-nnoremap <C-c><C-r> :!cargo run<CR>
-inoremap <C-c><C-r> <ESC> :!cargo run<CR>
-vnoremap <C-w> "+y
-nnoremap <C-x> "+p
-"Create a cpp file
-"
-"
-" 
-"
-" NOW WE CAN:
-" - Use ^] to jump to tag under cursor
-" - Use g^] for ambiguous tags
-" - Use ^t to jump back up the tag stack
-
-" THINGS TO CONSIDER:
-" - This doesn't help if you want a visual list of tags
-
-
-
-
-
-" AUTOCOMPLETE:
-
-" The good stuff is documented in |ins-completion|
-" HIGHLIGHTS:
-" - ^x^n for JUST this file
-" - ^x^f for filenames (works with our path trick!)
-" - ^x^] for tags only
-" - ^n for anything specified by the 'complete' option
-
-" NOW WE CAN:
-" - Use ^n and ^p to go back and forth in the suggestion list
-
-
-
-
-
-" FILE BROWSING:
-
-" Tweaks for browsing
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
-" NOW WE CAN:
-" - :edit a folder to open a file browser
-" - <CR>/v/t to open in an h-split/v-split/tab
-" - check |netrw-browse-maps| for more mappings
-
-
-
-" SNIPPETS:
-
-" Read an empty HTML template and move cursor to title
-nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
-nnoremap ,java :-1read $HOME/.vim/.skeleton.java<CR>3jwf>a
-nnoremap ,cpp :-1read $HOME/.vim/.skeleton.cpp<CR>4jf>a
-nnoremap ,syso :-1read $HOME/.vim/.sysoskeleton.java<CR>5wllf<a>
-
-
-
-" NOW WE CAN:
-" - Take over the world!
-"   (with much fewer keystrokes)
-
-
-
-
-
-
-
-
-
-" BUILD INTEGRATION:
-
-" Steal Mr. Bradley's formatter & add it to our spec_helper
-" http://philipbradley.net/rspec-into-vim-with-quickfix
-
-" Configure the `make` command to run RSpec
-set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
-
-" NOW WE CAN:
-" - Run :make to run RSpec
-" - :cl to list errors
-" - :cc# to jump to error by number
-" - :cn and :cp to navigate forward and back
-
-
-
-
-
-"                          THANK YOU!
-
-"                    Download this file at:
-"                github.com/mcantor/no_plugins
-
-"                Follow me for kitten pictures:
-"                     twitter.com/mcantor
-
-"          Contact me at `max at maxcantor dot net` for:
-"                  - Consulting (Dev and PM)
-"                          - Tutoring
-"                     - Classroom Teaching
-"                     - Internal Training
-"                       - Encouragement
 
 call plug#begin('~/.vim/plugged')
 
@@ -233,18 +72,26 @@ Plug 'stsewd/fzf-checkout.vim'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'ayu-theme/ayu-vim' " or other package manager
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'crusoexia/vim-monokai'
-Plug 'rakr/vim-one'
-Plug 'kyoz/purify', { 'rtp': 'vim' }
+" Plug 'ayu-theme/ayu-vim' " or other package manager
+" Plug 'drewtempelmeyer/palenight.vim'
+" Plug 'crusoexia/vim-monokai'
+" Plug 'rakr/vim-one'
+" Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'embark-theme/vim', { 'as': 'embark' }
 "0 Language specific
 "Plug 'valloric/youcompleteme'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/telescope.nvim'
+Plug 'tjdevries/nlua.nvim'
+Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'rstacruz/sparkup'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
@@ -254,9 +101,9 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
 Plug 'leafgarland/typescript-vim'
-Plug 'wincent/terminus'
 Plug 'ThePrimeagen/vim-be-good'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go'	
+Plug 'OmniSharp/omnisharp-vim'
 " Plug 'govim/govim'
 " All of your Plugs must be added before the following line
 call plug#end()
@@ -467,6 +314,48 @@ let g:embark_terminal_italics = 1
 "colorscheme base16-default-dark
 
 
+" lua <<EOF
+" totally optional to use setup
+" require('telescope').setup{
+"   defaults = {
+"     shorten_path = false -- currently the default value is true
+"   }
+" }
+" EOF
+"
+" nnoremap <c-p> :lua require'telescope.builtin'.find_files{}<CR>
+" nnoremap <silent> gr <cmd>lua require'telescope.builtin'.lsp_references{ shorten_path = true }<CR>
+
+"
+" <C-n>  <C-p> next | previous
+" <Down> <Up>  next | previous
+" j      k     next | previous (in normal mode)
+" <CR>         go to file selection
+"
+" <C-x>        go to file selection as a split
+" <C-v>        go to file selection as a vertical split
+" <C-t>        go to a file in a new tab
+"
+" <C-u>        scroll up in preview window
+" <C-d>        scroll down in preview window
+"
+" <C-c>        close telescope
+" <Esc>        close telescope (in normal mode)
+
+" -- Fuzzy find over git files in your directory
+" require('telescope.builtin').git_files()
+"
+" -- Grep files as you type (requires rg currently)
+" require('telescope.builtin').live_grep()
+"
+" -- Use builtin LSP to request references under cursor. Fuzzy find over results.
+" require('telescope.builtin').lsp_references()
+"
+" -- Convert currently quickfixlist to telescope
+" require('telescope.builtin').quickfix()
+"
+" -- Convert currently loclist to telescope
+" require('telescope.builtin').loclist()
 
 " Intregating with Base16-theme as of the terminal
 
@@ -552,8 +441,27 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
+" FZF getting better
 
-
+let $FZF_DEFAULT_OPTS='--reverse'
+let g:fzf_branch_actions = {
+      \ 'rebase': {
+      \   'prompt': 'Rebase> ',
+      \   'execute': 'echo system("{git} rebase {branch}")',
+      \   'multiple': v:false,
+      \   'keymap': 'ctrl-r',
+      \   'required': ['branch'],
+      \   'confirm': v:false,
+      \ },
+      \ 'track': {
+      \   'prompt': 'Track> ',
+      \   'execute': 'echo system("{git} checkout --track {branch}")',
+      \   'multiple': v:false,
+      \   'keymap': 'ctrl-t',
+      \   'required': ['branch'],
+      \   'confirm': v:false,
+      \ },
+      \}
 
 
 
@@ -594,16 +502,33 @@ nnoremap <leader>pp :NERDTree<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader><leader> <C-^>
-nnoremap <C-p> :Files<CR>
 nnoremap <Leader>pf :Files<CR>
 nnoremap <Leader>pg :GFiles<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
-nnoremap <leader>t :below vertical terminal<CR>
+nnoremap <leader>ttv :below vertical terminal<CR>
 nnoremap \gr :GoRun<CR>
 nnoremap \gb :GoBuild<CR>
 nnoremap \gt :GoTest<CR>
 
+nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
+nnoremap <leader>pr :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
+nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
+" Telescope
+
+nnoremap <Leader>tg <cmd>lua require'telescope.builtin'.git_files{}<CR>
+" Searches over files in a git folder. Note: This does not work outside a git repo folder.
+
+nnoremap <Leader>tf <cmd>lua require'telescope.builtin'.find_files{}<CR>
+" || Search over files in your cwd current working directory. ||
+
+nnoremap <Leader>gr <cmd>lua require'telescope.builtin'.lsp_references{}<CR>
+" Search over variable references from your Language Server.
+
+nnoremap <Leader>ts <cmd>lua require'telescope.builtin'.lsp_workspace_symbols{}<CR>
+
+
+nnoremap <Leader>tn <cmd>lua require'telescope.builtin'.find_files{ cwd = "~/.config/nvim/" }<CR>
 nmap<F8> :TagbarToggle<CR>
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -646,15 +571,40 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>s :wq<CR>
 nnoremap <leader>e :q!<CR>
 
+" Nvim Lsp mappings
 
-    inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-    inoremap <buffer> <silent><expr> <C-space> coc#refresh()
+nnoremap <leader>vd :lua vim.lsp.buf.definition()<CR>
+nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
+nnoremap <leader>vsh :lua vim.lsp.buf.signature_help()<CR>
+nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>
+nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>
+nnoremap <leader>vh :lua vim.lsp.buf.hover()<CR>
+nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>
 
-    " GoTo code navigation.
-    nmap <buffer> <leader>cd <Plug>(coc-definition)
-    nmap <buffer> <leader>cy <Plug>(coc-type-definition)
-    nmap <buffer> <leader>rg <Plug>(coc-implementation)
-    nmap <buffer> <leader>cr <Plug>(coc-references)
-    nmap <buffer> <leader>rr <Plug>(coc-rename)
-    nnoremap <buffer> <leader>cr :CocRestart
 
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+lua require'nvim_lsp'.tsserver.setup{ on_attach=require'completion'.on_attach }
+lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
+lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
+lua require'nvim_lsp'.rls.setup{ on_attach=require'completion'.on_attach }
+
+" nvim_lsp#setup("bashls", {config})
+"
+"   Default Values:
+"     cmd = { "bash-language-server", "start" }
+"     filetypes = { "sh" }
+"     log_level = 2
+"     root_dir = vim's starting directory
+"     settings = {}
+    " inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+    " inoremap <buffer> <silent><expr> <C-space> coc#refresh()
+    "
+    " " GoTo code navigation.
+    " nmap <buffer> <leader>cd <Plug>(coc-definition)
+    " nmap <buffer> <leader>cy <Plug>(coc-type-definition)
+    " nmap <buffer> <leader>rg <Plug>(coc-implementation)
+    " nmap <buffer> <leader>cr <Plug>(coc-references)
+    " nmap <buffer> <leader>rr <Plug>(coc-rename)
+    " nnoremap <buffer> <leader>cr :CocRestart
+    "
