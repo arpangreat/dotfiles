@@ -39,7 +39,7 @@ filetype plugin on
 
 set t_Co=256
 set termguicolors
-set encoding=utf-8
+set encoding=UTF-8
 set ttimeoutlen=50
 
 
@@ -47,16 +47,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'VundleVim/Vundle.vim'
 " Plug 'scrooloose/syntastic'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
 "Plug 'jiangmiao/auto-pairs'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
-Plug 'vifm/vifm'
-Plug 'vifm/vifm.vim'
-Plug 'mcchrish/nnn.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vuciv/vim-bujo'
@@ -84,7 +81,7 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'embark-theme/vim', { 'as': 'embark' }
 "0 Language specific
 "Plug 'valloric/youcompleteme'
-
+Plug 'tpope/vim-surround'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
@@ -92,18 +89,23 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/telescope.nvim'
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
+Plug 'dense-analysis/ale'
+" Plug 'kyazdani42/nvim-web-devicons'
+Plug 'tjdevries/cyclist.vim'
+Plug 'norcalli/snippets.nvim'
+Plug 'ryanoasis/vim-devicons'
 Plug 'rstacruz/sparkup'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
-Plug 'leafgarland/typescript-vim'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'fatih/vim-go'	
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'nvim-treesitter/nvim-treesitter'
 " Plug 'govim/govim'
 " All of your Plugs must be added before the following line
 call plug#end()
@@ -119,17 +121,17 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plug stuff after this line
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-
-"vim airline
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+"
+"
+" "vim airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -164,10 +166,27 @@ let g:airline#extensions#tabline#formatter = 'default'
 "endfunction
 "
 
+" Ale Configs
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
 
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
 
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
 
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
 
+let g:airline#extensions#ale#enabled = 1
+set statusline=%{LinterStatus()}
+nmap <silent> <C-l> <Plug>(ale_previous_wrap)
+nmap <silent> <C-h> <Plug>(ale_next_wrap)
 " NERDTree Configs
 
 let g:NERDTreeShowHidden=1
@@ -180,13 +199,91 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Open nerd tree at the current file or close nerd tree if pressed again.
 nnoremap <silent> <expr> <Leader>n g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
+call cyclist#add_listchar_option_set('limited', {
+        \ 'eol': '↲',
+        \ 'tab': '» ',
+        \ 'trail': '·',
+        \ 'extends': '<',
+        \ 'precedes': '>',    
+        \ 'conceal': '┊',
+        \ 'nbsp': '␣',
+        \ })
+
+call cyclist#add_listchar_option_set('busy', {
+        \ 'eol': '↲',
+        \ 'tab': '»·',
+        \ 'space': '␣',
+        \ 'trail': '-',
+        \ 'extends': '☛',
+        \ 'precedes': '☚',    
+        \ 'conceal': '┊',
+        \ 'nbsp': '☠',
+        \ })
+
+" Add a new named configuration
+" call cyclist#add_listchar_option_set('limited', {
+"         \ 'eol': '↲',
+"         \ 'tab': '» ',
+"         \ 'trail': '·',
+"         \ 'extends': '<',
+"         \ 'precedes': '>',
+"         \ 'conceal': '┊',
+"         \ 'nbsp': '␣',
+"         \ })
+"
+" " Cycle to the next configuration
+" nmap <leader>cn <Plug>CyclistNext
+" nmap <leader>cp <Plug>CyclistPrev
+"
+" " Set a specific configuration
+" call cyclist#activate_listchars('limited')
+"
+" " Reset to default configuration
+" call cyclist#activate_listchars('default')
+"
+" " Override just one value in a configuration
+" "   Each of the `cyclist#set_*` is based on the names in `:help listchars`
+"
+" " TRAIL U+2591
+" call cyclist#set_trail('default', '░')
+"
+" " PRECEDES & EXTENDS
+" call cyclist#set_preceds('default', '☚')
+" call cyclist#set_extends('default', '☛')
+
+" lua require'nvim-web-devicons'.setup()
+"
+" lua require'nvim-web-devicons'.get_icon(filename, extension, options)
+
 " Monokai Colorscheme
 "colorscheme monokai
 "let g:monokai_term_italic = 1
 "let g:monokai_gui_italic = 1
 
+" Norcalli snippets
+lua require'snippets'.use_suggested_mappings()
+
+" This variant will set up the mappings only for the *CURRENT* buffer.
+lua require'snippets'.use_suggested_mappings(true)
+
+" There are only two keybindings specified by the suggested keymappings, which is <C-k> and <C-j>
+" They are exactly equivalent to:
+
+" <c-k> will either expand the current snippet at the word or try to jump to
+" the next position for the snippet.
+inoremap <c-K> <cmd>lua return require'snippets'.expand_or_advance(1)<CR>
+
+" <c-j> will jump backwards to the previous field.
+" If you jump before the first field, it will cancel the snippet.
+inoremap <c-J> <cmd>lua return require'snippets'.advance_snippet(-1)<CR>
+
+
+
+
+
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
 if (empty($TMUX))
@@ -219,7 +316,6 @@ endif
 " Purify Colorscheme
 "colorscheme purify
 "let g:airline_theme='purify'
-
 
 
 " Vim-One Colorscheme
@@ -312,6 +408,61 @@ let g:embark_terminal_italics = 1
 
 
 "colorscheme base16-default-dark
+
+" Treesitter configs
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "all",     -- one of "all", "language", or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = {},  -- list of language that will be disabled
+  },
+}
+EOF
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  refactor = {
+    highlight_current_scope = { enable = true },
+  },
+}
+EOF
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  refactor = {
+    highlight_definitions = { enable = true },
+  },
+}
+EOF
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  textobjects = {
+    select = {
+      enable = true,
+      keymaps = {
+        -- You can use the capture groups defined in textobjects.scm
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        ["ic"] = "@class.inner",
+
+        -- Or you can define your own textobjects like this
+        ["iF"] = {
+          python = "(function_definition) @function",
+          cpp = "(function_definition) @function",
+          c = "(function_definition) @function",
+          java = "(method_declaration) @function",
+        },
+      },
+    },
+  },
+}
+EOF
+
+
 
 
 " lua <<EOF
@@ -572,14 +723,22 @@ nnoremap <leader>s :wq<CR>
 nnoremap <leader>e :q!<CR>
 
 " Nvim Lsp mappings
-
-nnoremap <leader>vd :lua vim.lsp.buf.definition()<CR>
-nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
-nnoremap <leader>vsh :lua vim.lsp.buf.signature_help()<CR>
-nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>
-nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>
-nnoremap <leader>vh :lua vim.lsp.buf.hover()<CR>
-nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
+nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
+" nnoremap <leader>vd :lua vim.lsp.buf.definition()<CR>
+" nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
+" nnoremap <leader>vsh :lua vim.lsp.buf.signature_help()<CR>
+" nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>
+" nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>
+" nnoremap <leader>vh :lua vim.lsp.buf.hover()<CR>
+" nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>
 
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
@@ -589,6 +748,7 @@ lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
 " lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.rls.setup{ on_attach=require'completion'.on_attach }
 
+lua require'nvim_lsp'.vimls.setup{ on_attach=require'completion'.on_attach }
 " nvim_lsp#setup("bashls", {config})
 "
 "   Default Values:
