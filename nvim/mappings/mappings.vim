@@ -7,6 +7,7 @@
 
 let mapleader = " "
 
+nnoremap ,in :-1read ~/.config/nvim/skeleton.intro<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -48,7 +49,7 @@ nnoremap <Leader>tn <cmd>lua require'telescope.builtin'.find_files{ cwd = "~/.co
 nmap<F8> :TagbarToggle<CR>
 
 
-nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+" nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gv :GitFiles<CR>
 nnoremap <leader>r :source %<CR>
@@ -64,6 +65,18 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>s :wq<CR>
 nnoremap <leader>e :q!<CR>
 
+tnoremap <A-h> <C-\><C-N><C-w>h
+tnoremap <A-j> <C-\><C-N><C-w>j
+tnoremap <A-k> <C-\><C-N><C-w>k
+tnoremap <A-l> <C-\><C-N><C-w>l
+inoremap <A-h> <C-\><C-N><C-w>h
+inoremap <A-j> <C-\><C-N><C-w>j
+inoremap <A-k> <C-\><C-N><C-w>k
+inoremap <A-l> <C-\><C-N><C-w>l
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 " Nvim Lsp mappings
 nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>

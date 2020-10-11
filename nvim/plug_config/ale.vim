@@ -1,6 +1,6 @@
 " Ale Configs
-let g:ale_sign_error = '>>'
-let g:ale_sign_warning = '--'
+let g:ale_sign_error = '§'
+let g:ale_sign_warning = 'Þ'
 
 function! LinterStatus() abort
     let l:counts = ale#statusline#Count(bufnr(''))

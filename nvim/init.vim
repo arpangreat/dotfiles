@@ -1,4 +1,16 @@
 
+" ======================================================================================
+"   _____                  _   _ _                   _
+"  / ____|                | | (_) |        /\       | |
+" | (_____      ____ _ ___| |_ _| | __    /  \   ___| |__   __ _ _ __ _   _ _   _  __ _
+"  \___ \ \ /\ / / _` / __| __| | |/ /   / /\ \ / __| '_ \ / _` | '__| | | | | | |/ _` |
+"  ____) \ V  V / (_| \__ \ |_| |   <   / ____ \ (__| | | | (_| | |  | |_| | |_| | (_| |
+" |_____/ \_/\_/ \__,_|___/\__|_|_|\_\ /_/    \_\___|_| |_|\__,_|_|   \__, |\__, |\__,_|
+"                                                                      __/ | __/ |
+"                                                                     |___/ |___/
+"
+"========================================================================================
+
 " enter the current millenium
 set nocompatible
 set cursorline
@@ -6,6 +18,7 @@ set mouse+=a
 set autoindent
 set hlsearch
 set incsearch
+set inccommand=split
 set number
 set showcmd
 set clipboard=unnamedplus
@@ -15,6 +28,8 @@ set laststatus=2
 set backspace=indent,eol,start
 "set kscb
 set hidden
+set include=
+set display=lastline
 set ignorecase
 set smartcase
 set tabstop=4 softtabstop=4
@@ -27,9 +42,9 @@ set undodir=~/.vim/undodir
 set undofile
 set updatetime=100
 set nowrap
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey                                                    
-
+set colorcolumn=100
+highlight ColorColumn ctermbg=0 guibg=grey
+set shada=!,'1000,<50,s10,h
 set viminfo='100,n$HOME/.vim/files/info/viminfo
 set scrolloff=8
 set noshowmode
@@ -42,9 +57,26 @@ set t_Co=256
 set termguicolors
 set encoding=UTF-8
 set ttimeoutlen=50
+" if empty(&g:statusline)
+"   setglobal statusline=[%n]\ %<%.99f\ %y%h%w%m%r%=%-14.(%l,%c%V%)\ %P
+" endif
+set runtimepath+=~/plugins/my_cyclist.vim/
 
+if has('unix')
+    let g:plugin_path = expand('~/.vim/plugged')
+else
+    let g:plugin_path = expand('$HOME') . '\nvim_plug'
+endif
 
-call plug#begin('~/.vim/plugged')
+function! s:local_plug(package_name) abort
+    if isdirectory(expand("~/plugins/" . a:package_name))
+        execute "Plug '~/plugins/".a:package_name."'"
+    else
+        execute "Plug '~/arpangreat/".a:package_name."'"
+    endif
+endfunction
+
+call plug#begin(g:plugin_path)
 
 Plug 'VundleVim/Vundle.vim'
 " Plug 'scrooloose/syntastic'
@@ -52,9 +84,10 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
-"Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vuciv/vim-bujo'
@@ -80,6 +113,8 @@ Plug 'bluz71/vim-nightfly-guicolors'
 " Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'tjdevries/colorbuddy.vim'
+Plug 'tjdevries/gruvbuddy.nvim'
 "0 Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
@@ -87,11 +122,12 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+" Plug 'tjdevries/express_line.nvim'
 Plug 'nvim-lua/telescope.nvim'
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'dense-analysis/ale'
-" Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tjdevries/cyclist.vim'
 Plug 'norcalli/snippets.nvim'
 Plug 'ryanoasis/vim-devicons'
@@ -109,6 +145,7 @@ Plug 'ThePrimeagen/vim-be-good'
 Plug 'fatih/vim-go'	
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'nvim-treesitter/nvim-treesitter'
+call s:local_plug('my_cyclist.vim')
 " Plug 'govim/govim'
 " All of your Plugs must be added before the following line
 call plug#end()
@@ -123,6 +160,8 @@ filetype plugin indent on    " required
 " :PlugClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
+
+" lua require('init')
 
 " Configs for Plugs
 source $HOME/.config/nvim/plug_config/ale.vim
@@ -141,7 +180,7 @@ source $HOME/.config/nvim/plug_config/syntastic.vim
 source $HOME/.config/nvim/plug_config/treesitter.vim
 source $HOME/.config/nvim/plug_config/vim-airline.vim
 source $HOME/.config/nvim/plug_config/ycm.vim
-
+source $HOME/.config/nvim/plug_config/nvim-devicons.vim
 " Configs for themes
 source $HOME/.config/nvim/themes/ayu.vim
 source $HOME/.config/nvim/themes/base16.vim
@@ -150,6 +189,7 @@ source $HOME/.config/nvim/themes/nightfly.vim
 source $HOME/.config/nvim/themes/palenight.vim
 source $HOME/.config/nvim/themes/purify.vim
 source $HOME/.config/nvim/themes/vim_one.vim
+source $HOME/.config/nvim/themes/gruvbuddy.vim
 
 
 " Configs for mappings
@@ -173,6 +213,11 @@ if (empty($TMUX))
   endif
 endif
 
+
+augroup LuaHighLight
+    au!
+    au TextYankPost * silent! lua require'vim.highlight'.on_yank()
+augroup END
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
