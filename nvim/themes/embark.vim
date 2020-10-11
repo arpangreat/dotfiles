@@ -1,4 +1,4 @@
 " Embark Theme 
-colorscheme embark
+" colorscheme embark
 let g:airline_theme = 'embark'
-let g:embark_terminal_italics = 1
+" let g:embark_terminal_italics = 1
