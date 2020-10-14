@@ -101,7 +101,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'raimondi/delimitmate'
 Plug 'stsewd/fzf-checkout.vim'
 " Colorscheme
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 Plug 'rigellute/shades-of-purple.vim'
 " Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
@@ -115,6 +115,8 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'tjdevries/colorbuddy.vim'
 Plug 'tjdevries/gruvbuddy.nvim'
+Plug 'connorholyday/vim-snazzy'
+Plug 'arzg/vim-colors-xcode'
 "0 Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
@@ -136,6 +138,9 @@ Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
+Plug 'Yggdroot/indentLine'
+Plug 'kshenoy/vim-signature'
+Plug 'gruvbox-community/gruvbox'
 " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'SirVer/ultisnips'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -181,6 +186,7 @@ source $HOME/.config/nvim/plug_config/treesitter.vim
 source $HOME/.config/nvim/plug_config/vim-airline.vim
 source $HOME/.config/nvim/plug_config/ycm.vim
 source $HOME/.config/nvim/plug_config/nvim-devicons.vim
+source $HOME/.config/nvim/plug_config/indentline.vim
 " Configs for themes
 source $HOME/.config/nvim/themes/ayu.vim
 source $HOME/.config/nvim/themes/base16.vim
@@ -190,6 +196,8 @@ source $HOME/.config/nvim/themes/palenight.vim
 source $HOME/.config/nvim/themes/purify.vim
 source $HOME/.config/nvim/themes/vim_one.vim
 source $HOME/.config/nvim/themes/gruvbuddy.vim
+source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/themes/xcode.vim
 
 
 " Configs for mappings
