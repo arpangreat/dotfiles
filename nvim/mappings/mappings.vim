@@ -31,6 +31,7 @@ nnoremap \gt :GoTest<CR>
 nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 nnoremap <leader>pr :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
+nnoremap <C-w> "+p<CR>
 " Telescope
 
 nnoremap <Leader>tg <cmd>lua require'telescope.builtin'.git_files{}<CR>
@@ -47,7 +48,6 @@ nnoremap <Leader>ts <cmd>lua require'telescope.builtin'.lsp_workspace_symbols{}<
 
 nnoremap <Leader>tn <cmd>lua require'telescope.builtin'.find_files{ cwd = "~/.config/nvim/" }<CR>
 nmap<F8> :TagbarToggle<CR>
-
 
 " nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>gs :G<CR>
