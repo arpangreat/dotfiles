@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/arpangreat/.config/nvim'
+let g:netrw_dirhist_4='/home/arpangreat/RustExs/MyDocTutorial/functional_programming_features'
+let g:netrw_dirhist_3='/home/arpangreat/RustExs/MyDocTutorial/functional_programming_features/src'
+let g:netrw_dirhist_2='/home/arpangreat/CExamples/Introduction'
+let g:netrw_dirhist_1='/home/arpangreat/RustExs/MyDocTutorial/minigrep/src'
+let g:netrw_dirhist_0='/home/arpangreat/RustExs/MyDocTutorial/error_demo/src'
+let g:netrw_dirhist_9='/home/arpangreat/RustExs/MyDocTutorial/adder/src'
+let g:netrw_dirhist_8='/home/arpangreat/RustExs/calculator_advanced/src'
+let g:netrw_dirhist_7='/home/arpangreat/RustExs/MyDocTutorial/generics_traits_demo/src'
+let g:netrw_dirhist_6='/home/arpangreat/RustExs/MyDocTutorial/traits_demo/src'
