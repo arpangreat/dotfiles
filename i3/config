@@ -29,7 +29,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-xrandr --output HDMI-1 --auto --left-of eDP-1  
+exec --no-startup-id xrandr --output HDMI-1 --auto --left-of eDP-1
+exec --no-startup-id feh --bg-center $HOME/Pictures/Mine/'WhatsApp Image 2020-11-13 at 4.20.15 PM (1).jpeg'
+
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -141,6 +143,14 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# Workspaces
+workspace 1 output HDMI-1
+workspace 2 output eDP-1
+workspace 3 output eDP-1
+workspace 9 output HDMI-1
+workspace 10 output HDMI-1
+
+bindsym $mod+x move workspace to output right
 
 # "assign [class="Alacritty"] $ws1
 assign [class="Kitty"] $ws1
