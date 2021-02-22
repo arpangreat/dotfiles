@@ -156,3 +156,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 
 pfetch
+
+# Install it
+# fortune | cowsay | lolcat
