@@ -25,7 +25,7 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>ttv :below vertical terminal<CR>
 nnoremap <leader>sv :vsplit<CR>
 nnoremap <leader>ss :split<CR>
-nnoremap <leader>st :tabnew<CR>
+nnoremap <leader>st :tabedit<CR>
 nmap <leader>sp :tabp<CR>
 nmap <leader>sn :tabn<CR>
 nnoremap \gr :GoRun<CR>
