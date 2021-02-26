@@ -20,10 +20,14 @@ nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <Leader>pf :Files<CR>
 nnoremap <Leader>pg :GFiles<CR>
-nnoremap <Leader>ss :Startify<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <leader>ttv :below vertical terminal<CR>
+nnoremap <leader>sv :vsplit<CR>
+nnoremap <leader>ss :split<CR>
+nnoremap <leader>st :tabnew<CR>
+nmap <leader>sp :tabp<CR>
+nmap <leader>sn :tabn<CR>
 nnoremap \gr :GoRun<CR>
 nnoremap \gb :GoBuild<CR>
 nnoremap \gt :GoTest<CR>
@@ -62,7 +66,6 @@ nnoremap <leader>go :GCheckout<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>s :wq<CR>
 nnoremap <leader>e :q!<CR>
 
 tnoremap <A-h> <C-\><C-N><C-w>h
