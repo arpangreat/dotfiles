@@ -51,8 +51,7 @@ bindsym $mod+minus          gaps outer current minus 5
 bindsym $mod+shift+plus     gaps inner current set 15; gaps outer current set 15
 bindsym $mod+shift+minus    gaps inner current set 0; gaps outer current set 0
 
-gaps inner 15
-gaps outer 15
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -222,4 +221,7 @@ exec nautilus
 exec google-chrome
 exec gnome-characters
 exec vlc
-exec xmodmap ~/swap
+exec xmodmap ~/dotfiles/i3/swap
+exec compton
+exec feh --bg-scale ~/Downloads/603f71f6839b8.jpg  
+

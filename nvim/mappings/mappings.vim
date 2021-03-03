@@ -38,20 +38,33 @@ nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
 nnoremap <C-w> "+p<CR>
 " Telescope
 
-nnoremap <Leader>tg <cmd>lua require'telescope.builtin'.git_files{}<CR>
-" Searches over files in a git folder. Note: This does not work outside a git repo folder.
-
-nnoremap <Leader>tf <cmd>lua require'telescope.builtin'.find_files{}<CR>
-" || Search over files in your cwd current working directory. ||
-
-nnoremap <Leader>gr <cmd>lua require'telescope.builtin'.lsp_references{}<CR>
-" Search over variable references from your Language Server.
-
-nnoremap <Leader>ts <cmd>lua require'telescope.builtin'.lsp_workspace_symbols{}<CR>
-
-
-nnoremap <Leader>tn <cmd>lua require'telescope.builtin'.find_files{ cwd = "~/.config/nvim/" }<CR>
+" nnoremap <Leader>tg <cmd>lua require'telescope.builtin'.git_files{}<CR>
+" " Searches over files in a git folder. Note: This does not work outside a git repo folder.
+"
+" nnoremap <Leader>tf <cmd>lua require'telescope.builtin'.find_files{}<CR>
+" " || Search over files in your cwd current working directory. ||
+"
+" nnoremap <Leader>gr <cmd>lua require'telescope.builtin'.lsp_references{}<CR>
+" " Search over variable references from your Language Server.
+"
+" nnoremap <Leader>ts <cmd>lua require'telescope.builtin'.lsp_workspace_symbols{}<CR>
+"
+"
+" nnoremap <Leader>tn <cmd>lua require'telescope.builtin'.find_files{ cwd = "~/.config/nvim/" }<CR>
 nmap<F8> :TagbarToggle<CR>
+
+lua require("arpangreat")
+
+nnoremap <leader>ts :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
+nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
+nnoremap <Leader>tf :lua require('telescope.builtin').find_files()<CR>
+
+nnoremap <leader>tw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
+nnoremap <leader>tb :lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>th :lua require('telescope.builtin').help_tags()<CR>
+nnoremap <leader>trc :lua require('arpangreat.telescope').search_dotfiles()<CR>
+" nnoremap <leader>ta :lua require('arpangreat.telescope').anime_selector()<CR>
+" nnoremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
 
 " nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>gs :G<CR>
@@ -63,7 +76,7 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gf :Gpull<CR>
 nnoremap <leader>go :GCheckout<CR>
-
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>e :q!<CR>

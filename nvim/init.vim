@@ -53,6 +53,7 @@ set completeopt=menuone,noinsert,noselect
 " enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
+highlight Normal guibg=none
 
 set t_Co=256
 set termguicolors
@@ -129,9 +130,11 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 " Plug 'tjdevries/express_line.nvim'
-Plug 'nvim-lua/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
+Plug 'anott03/nvim-lspinstall'
 Plug 'dense-analysis/ale'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tjdevries/cyclist.vim'
@@ -148,6 +151,8 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'powerline/powerline'
 Plug 'tpope/vim-git'
+Plug 'liuchengxu/vim-which-key'
+
 if has('nvim')
     Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -163,7 +168,7 @@ Plug 'mbbill/undotree'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'fatih/vim-go'	
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'nvim-treesitter/nvim-treesitter'
+" Plug 'nvim-treesitter/nvim-treesitter'
 call s:local_plug('my_cyclist.vim')
 " Plug 'govim/govim'
 " All of your Plugs must be added before the following line
@@ -183,45 +188,45 @@ filetype plugin indent on    " required
 " lua require('init')
 
 " Configs for Plugs
-source $HOME/.config/nvim/plug_config/ale.vim
-" source $HOME/.config/nvim/plug_config/lightline.vim
-source $HOME/.config/nvim/plug_config/auto_pairs.vim
-source $HOME/.config/nvim/plug_config/cyclist.vim
-source $HOME/.config/nvim/plug_config/fzf.vim
-source $HOME/.config/nvim/plug_config/fzf_better.vim
-source $HOME/.config/nvim/plug_config/nerdtree.vim
-source $HOME/.config/nvim/plug_config/nerdtree_git.vim
-source $HOME/.config/nvim/plug_config/nerdcommenter.vim
-source $HOME/.config/nvim/plug_config/norcalli_snippets.vim
-source $HOME/.config/nvim/plug_config/rainbow_parenthesis.vim
-source $HOME/.config/nvim/plug_config/startify.vim
-source $HOME/.config/nvim/plug_config/syntastic.vim
-source $HOME/.config/nvim/plug_config/treesitter.vim
-source $HOME/.config/nvim/plug_config/vim-airline.vim
-source $HOME/.config/nvim/plug_config/ycm.vim
-source $HOME/.config/nvim/plug_config/nvim-devicons.vim
-source $HOME/.config/nvim/plug_config/indentline.vim
-source $HOME/.config/nvim/plug_config/powerline.vim
-source $HOME/.config/nvim/plug_config/vim_git.vim
-source $HOME/.config/nvim/plug_config/lazygit.vim
-source $HOME/.config/nvim/plug_config/denite.vim
+source $HOME/dotfiles/nvim/plug_config/ale.vim
+" source $HOME/dotfiles/nvim/plug_config/lightline.vim
+source $HOME/dotfiles/nvim/plug_config/auto_pairs.vim
+source $HOME/dotfiles/nvim/plug_config/cyclist.vim
+source $HOME/dotfiles/nvim/plug_config/fzf.vim
+source $HOME/dotfiles/nvim/plug_config/fzf_better.vim
+source $HOME/dotfiles/nvim/plug_config/nerdtree.vim
+source $HOME/dotfiles/nvim/plug_config/nerdtree_git.vim
+source $HOME/dotfiles/nvim/plug_config/nerdcommenter.vim
+source $HOME/dotfiles/nvim/plug_config/norcalli_snippets.vim
+source $HOME/dotfiles/nvim/plug_config/rainbow_parenthesis.vim
+source $HOME/dotfiles/nvim/plug_config/startify.vim
+source $HOME/dotfiles/nvim/plug_config/syntastic.vim
+" source $HOME/dotfiles/nvim/plug_config/treesitter.vim
+source $HOME/dotfiles/nvim/plug_config/vim-airline.vim
+source $HOME/dotfiles/nvim/plug_config/ycm.vim
+source $HOME/dotfiles/nvim/plug_config/nvim-devicons.vim
+source $HOME/dotfiles/nvim/plug_config/indentline.vim
+source $HOME/dotfiles/nvim/plug_config/powerline.vim
+source $HOME/dotfiles/nvim/plug_config/vim_git.vim
+source $HOME/dotfiles/nvim/plug_config/lazygit.vim
+source $HOME/dotfiles/nvim/plug_config/denite.vim
 " Configs for themes
-source $HOME/.config/nvim/themes/ayu.vim
-source $HOME/.config/nvim/themes/base16.vim
-source $HOME/.config/nvim/themes/embark.vim
-source $HOME/.config/nvim/themes/nightfly.vim
-source $HOME/.config/nvim/themes/palenight.vim
-source $HOME/.config/nvim/themes/purify.vim
-source $HOME/.config/nvim/themes/vim_one.vim
-" source $HOME/.config/nvim/themes/gruvbuddy.vim
-source $HOME/.config/nvim/themes/gruvbox.vim
-source $HOME/.config/nvim/themes/xcode.vim
-source $HOME/.config/nvim/themes/tokyo.vim
+source $HOME/dotfiles/nvim/themes/ayu.vim
+source $HOME/dotfiles/nvim/themes/base16.vim
+source $HOME/dotfiles/nvim/themes/embark.vim
+source $HOME/dotfiles/nvim/themes/nightfly.vim
+source $HOME/dotfiles/nvim/themes/palenight.vim
+source $HOME/dotfiles/nvim/themes/purify.vim
+source $HOME/dotfiles/nvim/themes/vim_one.vim
+" source $HOME/dotfiles/nvim/themes/gruvbuddy.vim
+source $HOME/dotfiles/nvim/themes/gruvbox.vim
+source $HOME/dotfiles/nvim/themes/xcode.vim
+source $HOME/dotfiles/nvim/themes/tokyo.vim
 
 
 " Configs for mappings
 
-source $HOME/.config/nvim/mappings/mappings.vim
+source $HOME/dotfiles/nvim/mappings/mappings.vim
 
 
 
@@ -275,10 +280,10 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 lua require'nvim_lsp'.tsserver.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.rls.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
+" " lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.rls.setup{ on_attach=require'completion'.on_attach }
 
 lua require'nvim_lsp'.vimls.setup{ on_attach=require'completion'.on_attach }
 " nvim_lsp#setup("bashls", {config})
