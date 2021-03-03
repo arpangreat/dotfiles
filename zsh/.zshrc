@@ -15,7 +15,7 @@ export ZSH="/home/arpangreat/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,9 +79,7 @@ plugins=(
     git
     zsh-completions
     zsh-autosuggestions  
-    zsh-abbr
     zsh-syntax-highlighting  
-    z
 
 )
 
@@ -138,6 +136,8 @@ alias gf='git pull'
 alias gp='git push -u origin master'
 alias arc='vim ~/.config/alacritty/alacritty.yml'
 alias zrc='nvim ~/.zshrc'
+alias trc='nvim ~/.tmux.conf'
+alias tm='tmux -u'
 alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
 alias ll='ls -la'
@@ -154,9 +154,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
-
-
-pfetch
-
+neofetch
 # Install it
 # fortune | cowsay | lolcat
+
+bash ~/.config/base16-shell/scripts/base16-rebecca.sh
+
+eval "$(starship init zsh)"
