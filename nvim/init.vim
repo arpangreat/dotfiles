@@ -11,6 +11,8 @@
 "
 "========================================================================================
 
+highlight Normal guibg=none
+
 " enter the current millenium
 set nocompatible
 set cursorline

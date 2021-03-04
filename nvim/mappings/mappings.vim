@@ -8,6 +8,7 @@
 let mapleader = " "
 
 nnoremap ,in :-1read ~/.config/nvim/skeleton.intro<CR>
+nnoremap <leader>bg :highlight Normal guibg=none<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
