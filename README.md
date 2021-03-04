@@ -12,6 +12,6 @@
 
 # i3 installation
 
-`sudo add-apt-repository ppa:kgilmer/speed-ricer
-sudo apt-get update
-sudo apt-get install i3-gaps-wm`
+`sudo add-apt-repository ppa:kgilmer/speed-ricer`
+`sudo apt-get update`
+`sudo apt-get install i3-gaps-wm`
