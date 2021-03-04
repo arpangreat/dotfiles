@@ -250,6 +250,10 @@ client.urgent           $base08 $base08 $base00 $base08 $base08
 client.placeholder      $base00 $base00 $base05 $base00 $base00
 client.background       $base07
 
+# Gaps on
+gaps inner 6
+gaps outer 6
+# smart_gaps on
 
 bindsym $mod+shift+x exec i3lock
 bindsym $mod+shift+s exec gnome-screenshot
