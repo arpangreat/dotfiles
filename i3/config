@@ -267,5 +267,5 @@ exec gnome-characters
 exec vlc
 exec xmodmap ~/dotfiles/i3/swap
 exec compton
-exec feh --bg-scale ~/Downloads/603f71f6839b8.jpg  
+exec feh --bg-scale ~/dotfiles/wallpaper/wallpaper.jpg  
 
