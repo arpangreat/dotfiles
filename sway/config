@@ -151,12 +151,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 bindsym $mod+x move workspace to output right
 
-assign [class="Kitty"] $ws1
-assign [class="dolphin"] $ws2
-assign [class="Firefox"] $ws3 
-assign [class="Google-chrome"] $ws3
+assign [app_id="Kitty"] workspace number $ws1
+assign [app_id="org.kde.dolphin"] workspace number $ws2
+assign [class="Firefox"] workspace number $ws3 
+assign [class="Google-chrome"] workspace number $ws3
 # assign [class="Org.gnome.Characters"] $ws9
-assign [class="vlc"] $ws10
+assign [class="vlc"] workspace number $ws10
 #
 # Layout stuff:
 #
@@ -244,7 +244,7 @@ bar {
 exec kitty
 exec dolphin
 # exec firefox
-exec google-chrome
+exec google-chrome-stable
 # exec gnome-characters
 # exec vlc
 # exec xmodmap ~/dotfiles/i3/swap
