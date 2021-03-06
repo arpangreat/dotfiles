@@ -156,20 +156,20 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Workspaces
-workspace 1 output HDMI-1
-workspace 2 output eDP-1
-workspace 3 output eDP-1
-workspace 9 output HDMI-1
-workspace 10 output HDMI-1
+workspace 1 output HDMI1
+workspace 2 output eDP1
+workspace 3 output eDP1
+workspace 9 output HDMI1
+workspace 10 output HDMI1
 
 bindsym $mod+x move workspace to output right
 
 # "assign [class="Alacritty"] $ws1
 assign [class="Kitty"] $ws1
-assign [class="Org.gnome.Nautilus"] $ws2
+assign [class="dolphin"] $ws2
 assign [class="Firefox"] $ws3 
 assign [class="Google-chrome"] $ws3
-assign [class="Org.gnome.Characters"] $ws9
+# assign [class="Org.gnome.Characters"] $ws9
 assign [class="vlc"] $ws10
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -260,12 +260,25 @@ bindsym $mod+shift+s exec gnome-screenshot
  
 #exec alacritty
 exec kitty
-exec nautilus
+exec dolphin
 # exec firefox
 exec google-chrome
-exec gnome-characters
+# exec gnome-characters
 exec vlc
 exec xmodmap ~/dotfiles/i3/swap
 exec compton
 exec feh --bg-scale ~/dotfiles/wallpaper/wallpaper.jpg  
 
+# Plasma
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [class="(?i)*nextcloud*"] floating disable
+for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
+no_focus [class="plasmashell" window_type="notification"] 
