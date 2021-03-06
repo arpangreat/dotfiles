@@ -154,6 +154,8 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'powerline/powerline'
 Plug 'tpope/vim-git'
 Plug 'liuchengxu/vim-which-key'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'mattn/emmet-vim'
 
 if has('nvim')
     Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -281,13 +283,15 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-lua require'nvim_lsp'.tsserver.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
-" " lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.rls.setup{ on_attach=require'completion'.on_attach }
-
-lua require'nvim_lsp'.vimls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.rls.setup{ on_attach=require'completion'.on_attach }
+let g:LanguageClient_serverCommands = { 
+            \ 'typescript': ['typescript-language-server', '--stdio', '--tsserver-path', 'node_modules/.bin/tsserver'], 
+            \ }
+lua require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
 " nvim_lsp#setup("bashls", {config})
 "
 "   Default Values:
