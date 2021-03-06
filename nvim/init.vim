@@ -38,6 +38,7 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set signcolumn=yes
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
@@ -55,7 +56,6 @@ set completeopt=menuone,noinsert,noselect
 " enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
-highlight Normal guibg=none
 
 set t_Co=256
 set termguicolors
