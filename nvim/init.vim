@@ -11,7 +11,6 @@
 "
 "========================================================================================
 
-highlight Normal guibg=none
 
 " enter the current millenium
 set nocompatible
@@ -89,7 +88,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
-" Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -103,7 +102,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 "Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
-Plug 'raimondi/delimitmate'
+" Plug 'raimondi/delimitmate'
 Plug 'stsewd/fzf-checkout.vim'
 " Colorscheme
 " Plug 'morhetz/gruvbox'
@@ -131,6 +130,10 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 " Plug 'tjdevries/express_line.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
@@ -233,7 +236,7 @@ source $HOME/dotfiles/nvim/themes/tokyo.vim
 source $HOME/dotfiles/nvim/mappings/mappings.vim
 
 
-
+let g:lsc_auto_map = v:true
 " let g:airline_theme = 'deus'
 
 function! GitStatus()
@@ -284,8 +287,8 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
-" lua require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
-" lua require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
 " lua require'lspconfig'.rls.setup{ on_attach=require'completion'.on_attach }
 let g:LanguageClient_serverCommands = { 
