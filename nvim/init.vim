@@ -46,6 +46,7 @@ Plug 'tpope/vim-dispatch'
 "Plug "ThePrimeagen/vim-apm"
 Plug 'airblade/vim-gitgutter'
 Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 "Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
@@ -86,6 +87,8 @@ Plug 'natebosch/vim-lsc-dart'
 Plug 'svermeulen/vimpeccable'
 Plug 'hrsh7th/nvim-compe'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+
 " Plug 'svermeulen/vimpeccable-lua-vimrc-example'
 " Plug 'tjdevries/express_line.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
@@ -173,6 +176,7 @@ source $HOME/dotfiles/nvim/plug_config/powerline.vim
 source $HOME/dotfiles/nvim/plug_config/vim_git.vim
 source $HOME/dotfiles/nvim/plug_config/lazygit.vim
 source $HOME/dotfiles/nvim/plug_config/denite.vim
+source $HOME/dotfiles/nvim/plug_config/ranger.vim
 source $HOME/dotfiles/nvim/lua/nv-compe/compe.vim
 
 " Configs for themes
