@@ -160,5 +160,6 @@ neofetch
 # fortune | cowsay | lolcat
 
 bash ~/.config/base16-shell/scripts/base16-rebecca.sh
+# wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
 eval "$(starship init zsh)"

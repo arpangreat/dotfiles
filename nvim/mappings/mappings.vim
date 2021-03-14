@@ -54,7 +54,7 @@ nnoremap <C-w> "+p<CR>
 " nnoremap <Leader>tn <cmd>lua require'telescope.builtin'.find_files{ cwd = "~/.config/nvim/" }<CR>
 nmap<F8> :TagbarToggle<CR>
 
-lua require("arpangreat")
+" lua require("arpangreat")
 
 nnoremap <leader>ts :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
@@ -81,6 +81,12 @@ nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>e :q!<CR>
+
+inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
+inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 tnoremap <A-h> <C-\><C-N><C-w>h
 tnoremap <A-j> <C-\><C-N><C-w>j

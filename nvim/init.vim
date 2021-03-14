@@ -11,60 +11,6 @@
 "
 "========================================================================================
 
-
-" enter the current millenium
-set nocompatible
-set cursorline
-set mouse+=a
-set autoindent
-set hlsearch
-set incsearch
-set inccommand=split
-set number
-set showcmd
-set clipboard=unnamedplus
-set relativenumber
-set shortmess+=I
-set laststatus=2
-set backspace=indent,eol,start
-"set kscb
-set hidden
-set include=
-set display=lastline
-set ignorecase
-set smartcase
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-set signcolumn=yes
-set noswapfile
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
-set updatetime=100
-set nowrap
-set colorcolumn=100
-highlight ColorColumn ctermbg=0 guibg=grey
-set shada=!,'1000,<50,s10,h
-set viminfo='100,n$HOME/.vim/files/info/viminfo
-set scrolloff=8
-set noshowmode
-set completeopt=menuone,noinsert,noselect
-" set statusline=
-" enable syntax and plugins (for netrw)
-syntax enable
-filetype plugin on
-
-set t_Co=256
-set termguicolors
-set encoding=UTF-8
-set ttimeoutlen=50
-" if empty(&g:statusline)
-"   setglobal statusline=[%n]\ %<%.99f\ %y%h%w%m%r%=%-14.(%l,%c%V%)\ %P
-" endif
-set runtimepath+=~/plugins/my_cyclist.vim/
-
 if has('unix')
     let g:plugin_path = expand('~/.vim/plugged')
 else
@@ -78,6 +24,7 @@ function! s:local_plug(package_name) abort
         execute "Plug '~/arpangreat/".a:package_name."'"
     endif
 endfunction
+
 
 call plug#begin(g:plugin_path)
 
@@ -123,6 +70,7 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'arzg/vim-colors-xcode'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'ghifarit53/daycula-vim' , {'branch' : 'main'}
+Plug 'dylanaraps/wal.vim'
 "0 Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
@@ -130,11 +78,19 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'anott03/nvim-lspinstall'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'svermeulen/vimpeccable'
+Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/vim-vsnip'
+" Plug 'svermeulen/vimpeccable-lua-vimrc-example'
 " Plug 'tjdevries/express_line.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'nvim-treesitter/playground'
+
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'tjdevries/nlua.nvim'
@@ -208,7 +164,7 @@ source $HOME/dotfiles/nvim/plug_config/norcalli_snippets.vim
 source $HOME/dotfiles/nvim/plug_config/rainbow_parenthesis.vim
 source $HOME/dotfiles/nvim/plug_config/startify.vim
 source $HOME/dotfiles/nvim/plug_config/syntastic.vim
-" source $HOME/dotfiles/nvim/plug_config/treesitter.vim
+source $HOME/dotfiles/nvim/plug_config/treesitter.vim
 source $HOME/dotfiles/nvim/plug_config/vim-airline.vim
 source $HOME/dotfiles/nvim/plug_config/ycm.vim
 source $HOME/dotfiles/nvim/plug_config/nvim-devicons.vim
@@ -217,6 +173,8 @@ source $HOME/dotfiles/nvim/plug_config/powerline.vim
 source $HOME/dotfiles/nvim/plug_config/vim_git.vim
 source $HOME/dotfiles/nvim/plug_config/lazygit.vim
 source $HOME/dotfiles/nvim/plug_config/denite.vim
+source $HOME/dotfiles/nvim/lua/nv-compe/compe.vim
+
 " Configs for themes
 source $HOME/dotfiles/nvim/themes/ayu.vim
 source $HOME/dotfiles/nvim/themes/base16.vim
@@ -234,6 +192,12 @@ source $HOME/dotfiles/nvim/themes/tokyo.vim
 " Configs for mappings
 
 source $HOME/dotfiles/nvim/mappings/mappings.vim
+
+" Lua file
+" lua require('arpangreat')
+lua require('init')
+lua require('settings')
+lua require('nv-compe')
 
 
 let g:lsc_auto_map = v:true
@@ -290,6 +254,7 @@ lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.sumneko_lua.setup{ on_attach=require'completion'.on_attach }
 " lua require'lspconfig'.rls.setup{ on_attach=require'completion'.on_attach }
 let g:LanguageClient_serverCommands = { 
             \ 'typescript': ['typescript-language-server', '--stdio', '--tsserver-path', 'node_modules/.bin/tsserver'], 
