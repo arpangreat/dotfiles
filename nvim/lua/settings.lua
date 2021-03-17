@@ -57,3 +57,4 @@ vim.o.ttimeoutlen = 50
 vim.o.updatetime = 100
 vim.o.shortmess = "I"
 vim.o.laststatus = 2
+

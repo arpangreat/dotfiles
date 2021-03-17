@@ -9,9 +9,4 @@
 
 -- [ThePrimeagen](https://github.com/ThePrimeagen/anime)
 
-
-# i3 installation
-
-`sudo add-apt-repository ppa:kgilmer/speed-ricer`
-`sudo apt-get update`
-`sudo apt-get install i3-gaps-wm`
+# Changing Neovim in lua-config :smiley:

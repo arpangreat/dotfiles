@@ -1,0 +1,1 @@
+/home/arpangreat/dotfiles/nvim/lua/init.lua
