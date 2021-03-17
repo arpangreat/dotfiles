@@ -34,6 +34,7 @@ Plug 'VundleVim/Vundle.vim'
 " Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'dhruvasagar/vim-table-mode'
@@ -72,6 +73,7 @@ Plug 'arzg/vim-colors-xcode'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'ghifarit53/daycula-vim' , {'branch' : 'main'}
 Plug 'dylanaraps/wal.vim'
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
 "0 Language specific
 "Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
@@ -154,21 +156,14 @@ filetype plugin indent on    " required
 " lua require('init')
 
 " Configs for Plugs
-source $HOME/dotfiles/nvim/plug_config/ale.vim
-" source $HOME/dotfiles/nvim/plug_config/lightline.vim
-source $HOME/dotfiles/nvim/plug_config/auto_pairs.vim
 source $HOME/dotfiles/nvim/plug_config/cyclist.vim
 source $HOME/dotfiles/nvim/plug_config/fzf.vim
 source $HOME/dotfiles/nvim/plug_config/fzf_better.vim
-source $HOME/dotfiles/nvim/plug_config/nerdtree.vim
 source $HOME/dotfiles/nvim/plug_config/nerdtree_git.vim
-source $HOME/dotfiles/nvim/plug_config/nerdcommenter.vim
-source $HOME/dotfiles/nvim/plug_config/norcalli_snippets.vim
 source $HOME/dotfiles/nvim/plug_config/rainbow_parenthesis.vim
 source $HOME/dotfiles/nvim/plug_config/startify.vim
 source $HOME/dotfiles/nvim/plug_config/syntastic.vim
-source $HOME/dotfiles/nvim/plug_config/treesitter.vim
-source $HOME/dotfiles/nvim/plug_config/vim-airline.vim
+" source $HOME/dotfiles/nvim/plug_config/vim-airline.vim
 source $HOME/dotfiles/nvim/plug_config/ycm.vim
 source $HOME/dotfiles/nvim/plug_config/nvim-devicons.vim
 source $HOME/dotfiles/nvim/plug_config/indentline.vim
@@ -177,12 +172,11 @@ source $HOME/dotfiles/nvim/plug_config/vim_git.vim
 source $HOME/dotfiles/nvim/plug_config/lazygit.vim
 source $HOME/dotfiles/nvim/plug_config/denite.vim
 source $HOME/dotfiles/nvim/plug_config/ranger.vim
-source $HOME/dotfiles/nvim/lua/nv-compe/compe.vim
 
 " Configs for themes
 source $HOME/dotfiles/nvim/themes/ayu.vim
 source $HOME/dotfiles/nvim/themes/base16.vim
-source $HOME/dotfiles/nvim/themes/embark.vim
+" source $HOME/dotfiles/nvim/themes/embark.vim
 source $HOME/dotfiles/nvim/themes/nightfly.vim
 source $HOME/dotfiles/nvim/themes/palenight.vim
 source $HOME/dotfiles/nvim/themes/purify.vim
@@ -202,7 +196,19 @@ source $HOME/dotfiles/nvim/mappings/mappings.vim
 lua require('init')
 lua require('settings')
 lua require('nv-compe')
+lua require('lua-ls')
+lua require('nvcoder')
+" lua require('nv-galaxyline')
+lua require('snippets-nvim')
+lua require('nv-treesitter')
+lua require('nv-nerdtree')
+lua require('nv-nerdcommenter')
+lua require('nv-autopairs')
+lua require('nv-ale')
+lua require('nv-airline')
 
+colorscheme nvcode
+highlight Normal guibg=none
 
 let g:lsc_auto_map = v:true
 " let g:airline_theme = 'deus'
@@ -263,7 +269,7 @@ lua require'lspconfig'.rust_analyzer.setup{ on_attach=require'completion'.on_att
 let g:LanguageClient_serverCommands = { 
             \ 'typescript': ['typescript-language-server', '--stdio', '--tsserver-path', 'node_modules/.bin/tsserver'], 
             \ }
-lua require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
+" lua require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
 " nvim_lsp#setup("bashls", {config})
 "
 "   Default Values:
