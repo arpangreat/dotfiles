@@ -14,7 +14,6 @@ source $HOME/dotfiles/nvim/plugin/plugins.vim
 
 " Lua file
 " lua require('arpangreat')
-lua require('init')
 lua require('settings')
 lua require('nv-compe')
 lua require('lua-ls')
@@ -27,10 +26,10 @@ lua require('nv-nerdcommenter')
 lua require('nv-autopairs')
 lua require('nv-ale')
 lua require('nv-embark')
-
-" colorscheme embark
-" let g:airline_theme='embark'
-" highlight Normal guibg=none
+lua require('nv-fzf')
+lua require('nv-indentline')
+lua require('nv-nvim-devicons')
+lua require('mappings')
 
 let g:lsc_auto_map = v:true
 " let g:airline_theme = 'deus'
