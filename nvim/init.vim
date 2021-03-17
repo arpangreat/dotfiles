@@ -29,6 +29,7 @@ lua require('nv-embark')
 lua require('nv-fzf')
 lua require('nv-indentline')
 lua require('nv-nvim-devicons')
+lua require('nv-bufferlines')
 lua require('mappings')
 
 let g:lsc_auto_map = v:true
