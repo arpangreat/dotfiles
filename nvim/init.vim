@@ -163,7 +163,7 @@ source $HOME/dotfiles/nvim/plug_config/nerdtree_git.vim
 source $HOME/dotfiles/nvim/plug_config/rainbow_parenthesis.vim
 source $HOME/dotfiles/nvim/plug_config/startify.vim
 source $HOME/dotfiles/nvim/plug_config/syntastic.vim
-" source $HOME/dotfiles/nvim/plug_config/vim-airline.vim
+source $HOME/dotfiles/nvim/plug_config/vim-airline.vim
 source $HOME/dotfiles/nvim/plug_config/ycm.vim
 source $HOME/dotfiles/nvim/plug_config/nvim-devicons.vim
 source $HOME/dotfiles/nvim/plug_config/indentline.vim
@@ -205,7 +205,7 @@ lua require('nv-nerdtree')
 lua require('nv-nerdcommenter')
 lua require('nv-autopairs')
 lua require('nv-ale')
-lua require('nv-airline')
+" lua require('nv-airline')
 
 colorscheme nvcode
 highlight Normal guibg=none
