@@ -40,7 +40,6 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.cursorline = true
 
-
 -- Utils
 vim.o.compatible = false
 vim.o.mouse='a'
@@ -58,3 +57,4 @@ vim.o.ttimeoutlen = 50
 vim.o.updatetime = 100
 vim.o.shortmess = "I"
 vim.o.laststatus = 2
+
