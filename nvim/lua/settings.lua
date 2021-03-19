@@ -18,7 +18,7 @@ vim.o.softtabstop = 4
 vim.o.signcolumn="yes"
 vim.o.scrolloff = 8
 vim.o.showmode = false
-vim.o.completeopt = "menuone,noselect"
+vim.o.completeopt = "menuone,noinsert,noselect"
 vim.o.hidden = true
 -- vim.o.include
 vim.o.display = "lastline"

@@ -10,6 +10,8 @@
 "                                                                     |___/ |___/
 "
 "========================================================================================
+filetype plugin indent on
+
 source $HOME/dotfiles/nvim/plugin/plugins.vim
 
 " Lua file
@@ -31,6 +33,7 @@ lua require('nv-indentline')
 lua require('nv-nvim-devicons')
 lua require('nv-bufferlines')
 lua require('mappings')
+lua require('nv-lsp-configs')
 
 let g:lsc_auto_map = v:true
 " let g:airline_theme = 'deus'
@@ -85,7 +88,6 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
 " lua require'lspconfig'.sumneko_lua.setup{ on_attach=require'completion'.on_attach }
 " lua require'lspconfig'.rls.setup{ on_attach=require'completion'.on_attach }
 let g:LanguageClient_serverCommands = { 
