@@ -10,3 +10,7 @@
 -- [ThePrimeagen](https://github.com/ThePrimeagen/anime)
 
 # Changing Neovim in lua-config :smiley:
+
+# A note for me ...
+## To Setup Rust-analyzer for nvim Then
+ -- [Follow This Link](https://sharksforarms.dev/posts/neovim-rust/)
