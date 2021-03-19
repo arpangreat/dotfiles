@@ -14,3 +14,10 @@
 # A note for me ...
 ## To Setup Rust-analyzer for nvim Then
  -- [Follow This Link](https://sharksforarms.dev/posts/neovim-rust/)
+ 
+## To Setup Clangd for nvim Then do this
+ -- `sudo pacman -S clangd`
+ -- `sudo pacman -S llvm`
+ -- " Don't forget to make a project using projectCreate script else you are not going to have lsp-server"
+ 
+ And then you are all good to Go
