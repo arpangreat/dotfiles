@@ -138,6 +138,7 @@ alias gp='git push -u origin master'
 alias arc='vim ~/.config/alacritty/alacritty.yml'
 alias zrc='nvim ~/.zshrc'
 alias trc='nvim ~/.tmux.conf'
+alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
 alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
@@ -164,3 +165,10 @@ bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
 eval "$(starship init zsh)"
+[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
+
+export JAR=/path/to/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.6.0.v20200915-1508.jar
+export GRADLE_HOME=$HOME/gradle
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.9.11-9.fc33.x86_64/
+export JDTLS_CONFIG=/path/to/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_linux
+export WORKSPACE=$HOME/workspace
