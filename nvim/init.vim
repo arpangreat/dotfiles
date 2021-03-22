@@ -33,6 +33,7 @@ lua require('nv-indentline')
 lua require('nv-nvim-devicons')
 lua require('nv-bufferlines')
 lua require('mappings')
+lua require('nv-startify')
 lua require('nv-lsp-configs')
 
 let g:lsc_auto_map = v:true
@@ -82,34 +83,3 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
-
-
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
-" lua require'lspconfig'.sumneko_lua.setup{ on_attach=require'completion'.on_attach }
-" lua require'lspconfig'.rls.setup{ on_attach=require'completion'.on_attach }
-let g:LanguageClient_serverCommands = { 
-            \ 'typescript': ['typescript-language-server', '--stdio', '--tsserver-path', 'node_modules/.bin/tsserver'], 
-            \ }
-" lua require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
-" nvim_lsp#setup("bashls", {config})
-"
-"   Default Values:
-"     cmd = { "bash-language-server", "start" }
-"     filetypes = { "sh" }
-"     log_level = 2
-"     root_dir = vim's starting directory
-"     settings = {}
-" inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-" inoremap <buffer> <silent><expr> <C-space> coc#refresh()
-"
-" " GoTo code navigation.
-" nmap <buffer> <leader>cd <Plug>(coc-definition)
-" nmap <buffer> <leader>cy <Plug>(coc-type-definition)
-" nmap <buffer> <leader>rg <Plug>(coc-implementation)
-" nmap <buffer> <leader>cr <Plug>(coc-references)
-" nmap <buffer> <leader>rr <Plug>(coc-rename)
-" nnoremap <buffer> <leader>cr :CocRestart
-"
