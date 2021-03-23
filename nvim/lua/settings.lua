@@ -58,3 +58,6 @@ vim.o.updatetime = 100
 vim.o.shortmess = "I"
 vim.o.laststatus = 2
 
+-- Disabling Gitgutter
+vim.cmd("let g:gitgutter_enabled = 0")
+vim.cmd("let g:gitgutter_signs = 0")

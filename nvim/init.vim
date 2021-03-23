@@ -10,8 +10,6 @@
 "                                                                     |___/ |___/
 "
 "========================================================================================
-filetype plugin indent on
-
 source $HOME/dotfiles/nvim/plugin/plugins.vim
 
 " Lua file
@@ -23,7 +21,6 @@ lua require('lua-ls')
 " lua require('nv-galaxyline')
 lua require('snippets-nvim')
 lua require('nv-treesitter')
-lua require('nv-nerdtree')
 lua require('nv-nerdcommenter')
 lua require('nv-autopairs')
 lua require('nv-ale')
@@ -35,17 +32,14 @@ lua require('nv-bufferlines')
 lua require('mappings')
 lua require('nv-startify')
 lua require('nv-airline')
+lua require('nv-rainbow')
+lua require('nv-gitsigns')
+" lua require('nv-nvim-tree')
 lua require('nv-lsp-configs')
 
 let g:lsc_auto_map = v:true
 " let g:airline_theme = 'deus'
-
-function! GitStatus()
-  let [a,m,r] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', a, m, r)
-endfunction
-set statusline+=%{GitStatus()}
-
+set statusline+=%{get(b:,'gitsigns_status','')}
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -62,7 +56,6 @@ if (empty($TMUX))
         set termguicolors
     endif
 endif
-
 
 augroup LuaHighLight
     au!
