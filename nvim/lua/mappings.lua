@@ -52,7 +52,7 @@ vim.api.nvim_set_keymap('n','<Leader>trc',":lua require('arpangreat.telescope').
 -- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
 vim.api.nvim_set_keymap('n','<Leader>gs',':G<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gv',':GitFiles<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>r',':source %<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>r',':luafile %<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gc',':Git commit<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gp',':Git push<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gb',':Gblame<CR>', { noremap = true , silent = false })
