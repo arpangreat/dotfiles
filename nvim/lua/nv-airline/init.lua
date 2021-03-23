@@ -23,7 +23,6 @@ vim.cmd("let g:airline#extensions#tabline#enabled = 1")
 vim.cmd("let g:airline#extensions#branch#enabled = 1")
 vim.cmd("let g:airline#extensions#tagbar#enabled = 1")
 vim.cmd("let g:airline#extensions#ale#enabled = 1")
-vim.cmd("let g:airline#extensions#gitgutter#enabled = 1")
 
 vim.cmd([[
 if !exists('g:airline_symbols')
