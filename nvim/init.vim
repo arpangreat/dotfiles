@@ -34,6 +34,7 @@ lua require('nv-nvim-devicons')
 lua require('nv-bufferlines')
 lua require('mappings')
 lua require('nv-startify')
+lua require('nv-airline')
 lua require('nv-lsp-configs')
 
 let g:lsc_auto_map = v:true
