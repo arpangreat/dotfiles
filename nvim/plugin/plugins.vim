@@ -49,6 +49,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'norcalli/nvim_utils'
+
 Plug 'anott03/nvim-lspinstall'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
