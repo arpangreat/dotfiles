@@ -12,7 +12,7 @@
 vim.cmd("source $HOME/dotfiles/nvim/plugin/plugins.vim")
 
 -- Lua file
--- require('arpangreat')
+require('arpangreat')
 require('settings')
 require('nv-compe')
 require('lua-ls')
@@ -20,12 +20,14 @@ require('lua-ls')
 -- require('nv-galaxyline')
 require('snippets-nvim')
 require('nv-treesitter')
+require('nv-telescope')
 require('nv-nerdcommenter')
 require('nv-autopairs')
 require('nv-ale')
 require('nv-embark')
 require('nv-fzf')
 require('nv-indentline')
+require('nv-indent-blankline')
 require('nv-nvim-devicons')
 require('nv-bufferlines')
 require('mappings')
@@ -59,6 +61,7 @@ endif
 ]])
 
 require'nvim_utils'
+require'colorizer'.setup()
 function nvim_create_augroups()
 		vim.cmd("au!")
 		vim.cmd("au TextYankPost * silent! lua require'vim.highlight'.on_yank()")

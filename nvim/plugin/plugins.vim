@@ -29,6 +29,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
+Plug 'lukas-reineke/indent-blankline.nvim'
 " Colorscheme
 Plug 'rigellute/shades-of-purple.vim'
 Plug 'chriskempson/base16-vim'
@@ -42,6 +43,7 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'ghifarit53/daycula-vim' , {'branch' : 'main'}
 Plug 'dylanaraps/wal.vim'
 Plug 'gruvbox-community/gruvbox'
+Plug 'norcalli/nvim-colorizer.lua'
 
 " Language specific
 Plug 'tpope/vim-surround'
