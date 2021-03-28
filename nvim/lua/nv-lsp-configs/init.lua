@@ -18,6 +18,8 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
+vim.cmd("let g:rustfmt_autosave = 1")
+
 vim.cmd("let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']")
 require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
