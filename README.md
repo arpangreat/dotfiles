@@ -7,7 +7,7 @@
  
 # The Anime Wallpapers are provided by a git repo by 
 
--- [ThePrimeagen](https://github.com/ThePrimeagen/anime)
+-- [ThePrimeagen](https://hub.com/ThePrimeagen/anime)
 
 # Changing Neovim in lua-config :smiley:
 
@@ -21,3 +21,6 @@
  -- " Don't forget to make a project using projectCreate script else you are not going to have lsp-server"
  
  And then you are all good to Go
+ 
+## The Nvim review is done by [ThePrimeagen](github.com/ThePrimeagen) in this video 
+ -- https://www.twitch.tv/videos/968826658 from 2:04:11
