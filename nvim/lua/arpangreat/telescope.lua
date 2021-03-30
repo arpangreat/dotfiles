@@ -38,14 +38,30 @@ require('telescope').setup {
         fzy_native = {
             override_generic_sorter = false,
             override_file_sorter = true,
-        }
+        },
+	 frecency = {
+      show_scores = false,
+      show_unindexed = true,
+      ignore_patterns = {"*.git/*", "*/tmp/*"},
+      workspaces = {
+        ["conf"]    = "/home/arpangreat/.config",
+        ["rust"]    = "/home/arpangreat/RustExs",
+        ["cpp"]    = "/home/arpangreat/cppexamples",
+        ["java"]    = "/home/arpangreat/javaexsnew",
+        ["ts"]    = "/home/arpangreat/TypeScriptExs",
+        ["project"] = "/home/arpangreat/termigit",
+        ["wiki"]    = "/home/arpangreat/wiki"
+      }
     }
+},
 }
 
 require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('gh')
+require('telescope').load_extension('frecency')
 
 local M = {}
-M.search_dotfiles = function() 
+M.search_dotfiles = function()
     require("telescope.builtin").find_files({
         prompt_title = "< VimRC >",
         cwd = "$HOME/dotfiles/nvim",

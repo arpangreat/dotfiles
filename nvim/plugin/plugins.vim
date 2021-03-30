@@ -68,6 +68,10 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope-github.nvim'
+Plug 'nvim-telescope/telescope-frecency.nvim' 
+Plug 'tami5/sql.nvim'
+
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'anott03/nvim-lspinstall'
@@ -96,6 +100,7 @@ Plug 'mbbill/undotree'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'fatih/vim-go'	
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'christoomey/vim-tmux-navigator'
 call s:local_plug('my_cyclist.vim')
 
 " Plug 'govim/govim'
