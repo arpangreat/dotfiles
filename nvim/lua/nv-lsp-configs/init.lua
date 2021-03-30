@@ -37,7 +37,6 @@ require'lspconfig'.dockerls.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.graphql.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.hls.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.jsonls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.pyright.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.yamlls.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.pyright.setup{ on_attach=require'completion'.on_attach }
 
