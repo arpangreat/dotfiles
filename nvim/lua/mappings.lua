@@ -32,7 +32,6 @@ vim.api.nvim_set_keymap('n','\\gr',':GoRun<CR>',{ noremap = true , silent = fals
 vim.api.nvim_set_keymap('n','\\gb',':GoBuild<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','\\gt',':GoTest<CR>',{ noremap = true , silent = false })
 
-vim.api.nvim_set_keymap('n','<C-w>','"+p<CR>',{ noremap = true , silent = false })
 -- Telescope
 
 vim.api.nvim_set_keymap('n','<F8>',':TagBarToggle<CR>',{ noremap = false, silent = false })
@@ -79,18 +78,18 @@ vim.api.nvim_set_keymap('i','<C-e>' , "compe#close('<C-e')", { noremap = true , 
 vim.api.nvim_set_keymap('i','<C-f>' , "compe#scroll({ 'delta': +4 })", { noremap = true , silent = true , expr = true })
 vim.api.nvim_set_keymap('i','<C-f>' , "compe#scroll({ 'delta': -4 })", { noremap = true , silent = true , expr = true })
 
-vim.api.nvim_set_keymap('t','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('t','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('t','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('t','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h','<C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h','<C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h','<C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h','<C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
+vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
 -- Nvim Lsp mappings
 vim.api.nvim_set_keymap('n','<c-]','<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','K','<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true , silent = true})
