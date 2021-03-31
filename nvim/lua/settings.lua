@@ -11,7 +11,7 @@ vim.o.inccommand = "split"
 -- Vim UI
 vim.o.smartindent = true
 vim.o.wrap = false
-vim.o.colorcolumn = "100"
+vim.o.colorcolumn = '120'
 vim.o.showcmd = true
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
@@ -38,7 +38,8 @@ vim.o.encoding="utf-8"
 -- Numbers
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.o.cursorline = true
+vim.wo.cursorline = true
+-- vim.wo.cursorcolumn = true
 
 -- Utils
 vim.o.compatible = false

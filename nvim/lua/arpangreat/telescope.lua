@@ -68,6 +68,12 @@ M.search_dotfiles = function()
     })
 end
 
+M.search_notes = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< Notes >",
+        cwd = "$HOME/wiki/",
+    })
+end
             -- map(mode, key, lua function to call)
             --
             -- good place to look: telescope.actions (init.lua)
@@ -119,9 +125,9 @@ end
 --     })
 -- end
 
-M.git_branches = function() 
+M.git_branches = function()
     require("telescope.builtin").git_branches({
-        attach_mappings = function(prompt_bufnr, map) 
+        attach_mappings = function(prompt_bufnr, map)
             map('i', '<c-d>', actions.git_delete_branch)
             map('n', '<c-d>', actions.git_delete_branch)
             return true
