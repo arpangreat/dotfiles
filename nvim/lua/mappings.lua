@@ -72,6 +72,12 @@ vim.api.nvim_set_keymap('n','<Leader>q',':q<CR>', { noremap = true , silent = fa
 vim.api.nvim_set_keymap('n','<Leader>e',':q!<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>y','"+y<CR>', { noremap = true , silent = false })
 
+-- For Notes
+vim.api.nvim_set_keymap('n','<Leader>mp',':MarkdownPreview<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>ne',':vsplit ~/wiki/index.md<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>no',':e ~/wiki/index.md<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>ns',":lua require('arpangreat.telescope').search_notes()<CR>",{ noremap = true , silent = false })
+
 vim.api.nvim_set_keymap('i','C-Space' , 'compe#complete()', { noremap = true , silent = true , expr = true })
 vim.api.nvim_set_keymap('i','<CR>' , "compe#confirm('<CR>')", { noremap = true , silent = true , expr = true })
 vim.api.nvim_set_keymap('i','<C-e>' , "compe#close('<C-e')", { noremap = true , silent = true , expr = true })
