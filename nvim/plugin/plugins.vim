@@ -17,8 +17,9 @@ call plug#begin(g:plugin_path)
 
 Plug 'edkolev/promptline.vim'
 Plug 'VundleVim/Vundle.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
