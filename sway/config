@@ -266,4 +266,6 @@ exec google-chrome-stable
 # exec vlc
 # exec xmodmap ~/dotfiles/i3/swap
 
+bindsym $mod+Shift+s exec '/home/arpangreat/dotfiles/custom-scripts/screenshot.sh'
+
 include /etc/sway/config.d/*
