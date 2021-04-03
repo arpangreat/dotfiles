@@ -39,10 +39,12 @@ require('nv-gitsigns')
 -- require('nv-nvim-tree')
 require('nv-lsp-configs')
 
+vim.cmd("let g:gitgutter_enabled = 1")
+vim.cmd("let g:gitgutter_signs = 0")
 vim.cmd("let g:airline_disable_statusline = 1")
 vim.cmd("let g:lsc_auto_map = v:true")
 -- let g:airline_theme = 'deus'
-vim.cmd("set statusline+=%{get(b:,'gitsigns_status','')}")
+vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
 --Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 --
 --If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -64,10 +66,22 @@ endif
 
 require'nvim_utils'
 require'colorizer'.setup()
-function nvim_create_augroups()
-		vim.cmd("au!")
-		vim.cmd("au TextYankPost * silent! lua require'vim.highlight'.on_yank()")
-end
+
+vim.api.nvim_exec([[
+augroup highlight_yank
+    autocmd!
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
+augroup END
+]], true)
+
+vim.api.nvim_exec([[
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
+]], true)
+
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
 -- for movement, rather than using more efficient movement commands, is also a

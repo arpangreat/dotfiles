@@ -179,4 +179,3 @@ gls.short_line_right[1] = {
     highlight = {colors.grey,colors.purple}
   }
 }
-
