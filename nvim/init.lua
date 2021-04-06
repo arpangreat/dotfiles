@@ -82,6 +82,13 @@ endfunction
 set statusline+=%{GitStatus()}
 ]], true)
 
+vim.api.nvim_exec([[
+augroup fmt
+    autocmd!
+    autocmd BufWritePre * undojoin | Neoformat
+augroup END
+]], true)
+
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
 -- for movement, rather than using more efficient movement commands, is also a

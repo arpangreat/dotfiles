@@ -133,8 +133,9 @@ alias rd='sudo rmdir'
 alias rf='sudo rm -rf'
 alias g='git'
 alias gc='git clone'
-alias gf='git pull'
+alias gP='git pull'
 alias gp='git push -u origin master'
+alias gf='$GOPATH/bin/gf'
 alias arc='vim ~/.config/alacritty/alacritty.yml'
 alias zrc='nvim ~/.zshrc'
 alias trc='nvim ~/.tmux.conf'
@@ -142,6 +143,11 @@ alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
 alias cht='cht.sh'
 alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
+alias rusttm='~/dotfiles/custom-scripts/./rusttm'
+alias gotm='~/dotfiles/custom-scripts/./gotm'
+alias javatm='~/dotfiles/custom-scripts/./javatm'
+alias tstm='~/dotfiles/custom-scripts/./tstm'
+alias nvtm='~/dotfiles/custom-scripts/./nvtm'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
@@ -182,3 +188,13 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
 '
 fpath=(~/.zsh.d/ $fpath)
+
+export GOPATH=$HOME/go
+source $HOME/tomnomnom/gf/gf-completion.zsh
+export PATH=$PATH:$GOPATH/go/bin
+
+# set a valid path to your vault
+export VAULT_PATH=/home/arpangreat/wiki/
+
+# set a valid path to your editor
+export VAULT_EDITOR=/usr/bin/nvim
