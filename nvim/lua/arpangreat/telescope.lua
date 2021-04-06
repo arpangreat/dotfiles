@@ -74,6 +74,13 @@ M.search_notes = function()
         cwd = "$HOME/wiki/",
     })
 end
+
+M.search_configs = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< Configs >",
+        cwd = "$HOME/dotfiles/",
+    })
+end
             -- map(mode, key, lua function to call)
             --
             -- good place to look: telescope.actions (init.lua)
