@@ -46,6 +46,7 @@ Plug 'ghifarit53/daycula-vim' , {'branch' : 'main'}
 Plug 'dylanaraps/wal.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'glepnir/zephyr-nvim'
 
 " Language specific
 Plug 'tpope/vim-surround'
@@ -93,6 +94,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-git'
 Plug 'liuchengxu/vim-which-key'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'sbdchd/neoformat'
 Plug 'mattn/emmet-vim'
 
 Plug 'SirVer/ultisnips'
@@ -100,7 +102,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
 Plug 'ThePrimeagen/vim-be-good'
-Plug 'fatih/vim-go'	
+" Plug 'fatih/vim-go'
+Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'christoomey/vim-tmux-navigator'
 call s:local_plug('my_cyclist.vim')
