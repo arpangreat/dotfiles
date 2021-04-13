@@ -35,8 +35,8 @@ SETUVAR _fish_abbr_kl:keybase\x20chat\x20list
 SETUVAR _fish_abbr_kr:keybase\x20chat\x20read
 SETUVAR _fish_abbr_ks:keybase\x20chat\x20send
 SETUVAR _fish_abbr_l:ls
-SETUVAR _fish_abbr_la:exa\x20\x2dl\x20\x2dg\x20\x2d\x2dicons\x20\x2d\x2dtree\x20\x2da
-SETUVAR _fish_abbr_ll:exa\x20\x2dl\x20\x2dg\x20\x2d\x2dicons\x20\x2d\x2dtree
+SETUVAR _fish_abbr_la:exa\x20\x2dl\x20\x2dg\x20\x2d\x2dicons\x20\x2da
+SETUVAR _fish_abbr_ll:exa\x20\x2dl\x20\x2dg\x20\x2d\x2dicons
 SETUVAR _fish_abbr_lll:ls\x20\x2dla
 SETUVAR _fish_abbr_m:make
 SETUVAR _fish_abbr_na:/home/arpangreat/My\x2dFirst\x2dPlugin/\x2e/nvim\x2eappimage
