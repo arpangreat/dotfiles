@@ -74,6 +74,7 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope-frecency.nvim' 
 Plug 'tami5/sql.nvim'
+Plug 'nvim-telescope/telescope-media-files.nvim'
 
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'

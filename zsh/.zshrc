@@ -80,7 +80,6 @@ plugins=(
     zsh-completions
     zsh-autosuggestions  
     zsh-syntax-highlighting  
-
 )
 
 
@@ -148,12 +147,15 @@ alias gotm='~/dotfiles/custom-scripts/./gotm'
 alias javatm='~/dotfiles/custom-scripts/./javatm'
 alias tstm='~/dotfiles/custom-scripts/./tstm'
 alias nvtm='~/dotfiles/custom-scripts/./nvtm'
+alias pytm='~/dotfiles/custom-scripts/./pytm'
+alias z='~/z/./z.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
 alias ll='ls -la'
 alias la='ls -A'
 alias l='ls'
+alias obs="QT_QPA_PLATFORM=xcb obs"
 
 bindkey -v
 
@@ -198,3 +200,8 @@ export VAULT_PATH=/home/arpangreat/wiki/
 
 # set a valid path to your editor
 export VAULT_EDITOR=/usr/bin/nvim
+
+# export ANDROID_SDK=
+#
+# [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
+# echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
