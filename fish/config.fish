@@ -41,17 +41,15 @@ abbr -a javatm ~/dotfiles/custom-scripts/./javatm
 abbr -a tstm ~/dotfiles/custom-scripts/./tstm
 abbr -a nvtm ~/dotfiles/custom-scripts/./nvtm
 abbr -a pytm ~/dotfiles/custom-scripts/./pytm
-abbr -a z ~/z/./z.sh
 abbr -a notes nvim ~/wiki/index.md
 abbr -a projectCreate bash ~/dotfiles/custom-scripts/projectCreate.sh
 abbr -a na ~/My-First-Plugin/./nvim.appimage
-abbr -a ll exa -l -g --icons --tree
-abbr -a la  exa -l -g --icons --tree -a
+abbr -a ll exa -l -g --icons 
+abbr -a la  exa -l -g --icons -a
 abbr -a l ls
 abbr -a obs QT_QPA_PLATFORM xcb obs
 
 fish_vi_key_bindings
-
 
 # Base16 Shell
 if status --is-interactive
