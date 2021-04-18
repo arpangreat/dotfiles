@@ -55,6 +55,12 @@ vim.api.nvim_set_keymap('n','<Leader>ttc',":Telescope colorscheme<CR>",{ noremap
 
 vim.api.nvim_set_keymap("n", "<Leader>trf", "<Cmd>lua require('telescope').extensions.frecency.frecency(require('telescope.themes').get_dropdown({}))<CR>", {noremap = true, silent = true})
 
+-- GitWorkTree
+vim.api.nvim_set_keymap("n", "<Leader>gwc", ':lua require("git-worktree").create_worktree', { noremap = true , silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>gws", ':lua require("git-worktree").switch_worktree', { noremap = true , silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>gwd", ':lua require("git-worktree").delete_worktree', { noremap = true , silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>gwt", ":lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", { noremap = true , silent = false })
+
 -- noremap <leader>ta :lua require('arpangreat.telescope').anime_selector()<CR>
 -- noremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
 

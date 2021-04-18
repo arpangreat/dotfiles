@@ -107,6 +107,7 @@ Plug 'ThePrimeagen/vim-be-good'
 Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ThePrimeagen/git-worktree.nvim'
 call s:local_plug('my_cyclist.vim')
 
 " Vim for notes
