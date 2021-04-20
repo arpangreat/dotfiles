@@ -26,7 +26,7 @@ set $menu rofi -show run
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 include "$HOME/.cache/wal/colors-sway"
 output * bg '~/dotfiles/wallpaper/HD wallpaper_ man near Torii gate wallpaper, gray temple wallpaper, landscape.jpeg' fill
-client.focused $color0 $background $foreground $color7 $background
+# client.focused $color0 $background $foreground $color7 $background
 #
 # Example configuration:
 #
