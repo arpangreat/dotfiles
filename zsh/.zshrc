@@ -80,6 +80,7 @@ plugins=(
     zsh-completions
     zsh-autosuggestions  
     zsh-syntax-highlighting  
+    zsh-z
 )
 
 
@@ -152,8 +153,9 @@ alias z='~/z/./z.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='ls -la'
-alias la='ls -A'
+alias ll='exa -l -g --icons'
+alias la='exa -l -g --icons -a'
+alias lt='exa -l -g --icons --tree'
 alias l='ls'
 alias obs="QT_QPA_PLATFORM=xcb obs"
 
