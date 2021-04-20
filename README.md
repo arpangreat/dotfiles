@@ -24,3 +24,24 @@
  
 ## The Nvim review is done by [ThePrimeagen](github.com/ThePrimeagen) in this video 
  -- https://www.twitch.tv/videos/968826658 from 2:04:11
+
+## The commands to setup nvim-lsp
+```shell
+sudo npm install -g vim-language-server
+sudo npm install -g yaml-language-server
+sudo npm install -g vscode-html-languageserver-bin
+sudo npm install -g vscode-json-languageserver
+sudo npm install -g pyright
+sudo npm install -g typescript typescript-language-server
+sudo npm i -g bash-language-server
+sudo npm install -g vscode-css-languageserver-bin
+sudo npm install -g dockerfile-language-server-nodejs
+```
+# to setup lua lsp [follow this link](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it 
+
+# to setup gopls run 
+```shell
+cd dotfiles/
+GO111MODULE=on go get -u golang.org/x/tools/gopls@latest
+sudo ln -s /home/arpangreat/go/bin/* /usr/bin
+```
