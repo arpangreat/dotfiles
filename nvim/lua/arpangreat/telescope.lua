@@ -35,10 +35,16 @@ require('telescope').setup {
         }
     },
     extensions = {
-        fzy_native = {
-            override_generic_sorter = false,
-            override_file_sorter = true,
-        },
+        -- fzy_native = {
+        --     override_generic_sorter = false,
+        --     override_file_sorter = true,
+        -- },
+		 fzf = {
+      override_generic_sorter = false, -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+                                       -- the default case_mode is "smart_case"
+    },
 	 frecency = {
       show_scores = false,
       show_unindexed = true,
@@ -63,9 +69,27 @@ require('telescope').setup {
 },
 }
 
-require('telescope').load_extension('fzy_native')
+-- require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('fzf')
 require('telescope').load_extension('gh')
 require('telescope').load_extension('frecency')
+
+-- Lua Interface for telescope-fzf-native
+--local fzf = require('fzf')
+--
+--local slab = fzf.allocate_slab()
+---- pattern: string
+---- case_mode: number with 0 = smart_case, 1 = ignore_case, 2 = respect_case
+--local pattern_obj = fzf.parse_pattern(pattern, case_mode)
+--
+---- you can get the score/position for as many items as you want
+---- line: string
+--fzf.get_score(line, pattern_obj, slab)
+--fzf.get_pos(line, pattern_obj, slab)
+--
+--fzf.free_pattern(pattern_obj)
+--fzf.free_slab(slab)
+-------------------------------------------
 
 local M = {}
 M.search_dotfiles = function()

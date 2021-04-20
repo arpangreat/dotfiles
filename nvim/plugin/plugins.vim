@@ -71,6 +71,7 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope-frecency.nvim' 
 Plug 'tami5/sql.nvim'

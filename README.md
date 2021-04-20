@@ -45,3 +45,4 @@ cd dotfiles/
 GO111MODULE=on go get -u golang.org/x/tools/gopls@latest
 sudo ln -s /home/arpangreat/go/bin/* /usr/bin
 ```
+# To use z with Zsh [Download from this link](https://github.com/agkozak/zsh-z)
