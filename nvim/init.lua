@@ -41,6 +41,7 @@ require('nv-lsp-configs')
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
+vim.cmd("hi FloatermBorder guifg=cyan")
 vim.cmd("let g:gitgutter_enabled = 1")
 vim.cmd("let g:gitgutter_signs = 0")
 vim.cmd("let g:airline_disable_statusline = 1")
