@@ -109,6 +109,7 @@ Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nv
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ThePrimeagen/git-worktree.nvim'
+Plug 'voldikss/vim-floaterm'
 call s:local_plug('my_cyclist.vim')
 
 " Vim for notes
