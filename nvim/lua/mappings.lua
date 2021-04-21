@@ -121,3 +121,8 @@ vim.api.nvim_set_keymap('n','<Leader>fh',':DashboardFindHistory<CR>', { noremap 
 vim.api.nvim_set_keymap('n','<Leader>sl',':<C-u>SessionLoad<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>fa',':DashboardFindWord<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>fb',':DashboardJumpMark<CR>', { noremap = true , silent = false })
+
+-- Floaterm
+vim.api.nvim_set_keymap('n','<F7>',':FloatermNew --height=0.9 --width=0.9<CR>', { noremap = true , silent = true })
+vim.api.nvim_set_keymap('t','<F7>',':FloatermToggle<CR>', { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n','<F12>',':FloatermToggle<CR>', { noremap = true , silent = true })
