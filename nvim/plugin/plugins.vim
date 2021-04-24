@@ -47,6 +47,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'glepnir/zephyr-nvim'
+Plug 'tiagovla/tokyodark.nvim'
 
 " Language specific
 Plug 'tpope/vim-surround'
