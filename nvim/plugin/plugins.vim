@@ -111,6 +111,7 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ThePrimeagen/git-worktree.nvim'
 Plug 'voldikss/vim-floaterm'
+Plug 'rhysd/git-messenger.vim'
 call s:local_plug('my_cyclist.vim')
 
 " Vim for notes
