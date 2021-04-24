@@ -157,6 +157,7 @@ assign [app_id="Kitty"] workspace number $ws1
 assign [app_id="org.kde.dolphin"] workspace number $ws2
 assign [class="Firefox"] workspace number $ws3 
 assign [class="Google-chrome"] workspace number $ws3
+assign [class="Brave-browser"] workspace number $ws3
 # assign [class="Org.gnome.Characters"] $ws9
 assign [class="vlc"] workspace number $ws10
 #
@@ -261,7 +262,8 @@ bar {
 exec kitty
 exec dolphin
 # exec firefox
-exec google-chrome-stable
+# exec google-chrome-stable
+exec brave
 # exec gnome-characters
 # exec vlc
 # exec xmodmap ~/dotfiles/i3/swap

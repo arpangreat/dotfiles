@@ -34,8 +34,8 @@ vim.o.termguicolors = true
 vim.o.include = ""
 vim.o.display = "lastline"
 vim.o.encoding="utf-8"
-vim.wo.winblend = 0
-
+vim.wo.winblend = 100
+-- vim.api.nvim_exec([[set winblend=100]], true)
 -- Numbers
 vim.wo.number = true
 vim.wo.relativenumber = true

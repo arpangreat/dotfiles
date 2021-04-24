@@ -74,6 +74,7 @@ vim.api.nvim_set_keymap('n','<Leader>gb',':Gblame<CR>', { noremap = true , silen
 vim.api.nvim_set_keymap('n','<Leader>gl',':Glog<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gf',':Gpull<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>go',':GCheckout<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gm',':GitMessenger<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>',":WhichKey '<Space>'<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n','<Leader>w',':w!<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>q',':q<CR>', { noremap = true , silent = false })
