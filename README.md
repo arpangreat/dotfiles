@@ -53,3 +53,4 @@ sudo ln -s /home/arpangreat/go/bin/* /usr/bin
 sudo pacman -S grim
 sudo pacman -S slurp
 ```
+# try to make a install script for installing everything
