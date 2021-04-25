@@ -25,6 +25,7 @@ require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.vuels.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
+require'lspconfig'.zls.setup{ on_attach=require'completion'.on_attach }
 require'lspconfig'.bashls.setup{ on_attach=require'completion'.on_attach }
 --  require'lspconfig'.ghcide.setup{ on_attach=require'completion'.on_attach }
 --  require'lspconfig'.sumneko_.setup{ on_attach=require'completion'.on_attach }
