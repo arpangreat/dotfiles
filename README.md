@@ -25,3 +25,31 @@ Hey this is my dotfiles repository ,From which you can download my config files
 And then you are all good to Go
 
 ## The Nvim review is done by [ThePrimeagen](github.com/ThePrimeagen) in this video
+
+## The commands to setup nvim-lsp
+```shell
+sudo npm install -g vim-language-server
+sudo npm install -g yaml-language-server
+sudo npm install -g vscode-html-languageserver-bin
+sudo npm install -g vscode-json-languageserver
+sudo npm install -g pyright
+sudo npm install -g typescript typescript-language-server
+sudo npm i -g bash-language-server
+sudo npm install -g vscode-css-languageserver-bin
+sudo npm install -g dockerfile-language-server-nodejs
+```
+# to setup lua lsp [follow this link](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it 
+
+# to setup gopls run 
+```shell
+cd dotfiles/
+GO111MODULE=on go get -u golang.org/x/tools/gopls@latest
+sudo ln -s /home/arpangreat/go/bin/* /usr/bin
+```
+# after doing everything don't forget to run ```:TSInstall all``` in nvim to install Treesitter
+
+# to use screenshot.sh run
+```shell
+sudo pacman -S grim
+sudo pacman -S slurp
+```
