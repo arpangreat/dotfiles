@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/cppexamples
+
+tmux new-session -s CppTm -n IDE -d
+tmux new-window -t CppTm -d -n zsh
+tmux new-window -t CppTm -d -n BashTop
+
+# tmux send-keys -t CppTm:IDE "ide" Enter
+tmux send-keys -t CppTm:BashTop "bashtop" Enter
+
+tmux select-window -t CppTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t CppTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t CppTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t CppTm:IDE "clear" Enter
+
+tmux -u attach -t CppTm
+
