@@ -37,6 +37,7 @@ sudo npm install -g typescript typescript-language-server
 sudo npm i -g bash-language-server
 sudo npm install -g vscode-css-languageserver-bin
 sudo npm install -g dockerfile-language-server-nodejs
+sudo npm install -g ocaml-language-server
 ```
 # to setup lua lsp [follow this link](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it 
 
