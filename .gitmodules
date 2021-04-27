@@ -1,0 +1,3 @@
+[submodule "anime"]
+	path = anime
+	url = https://github.com/ThePrimeagen/anime.git
