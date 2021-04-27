@@ -6,7 +6,7 @@ Hey this is my dotfiles repository ,From which you can download my config files
 
 # The Anime Wallpapers are provided by a git repo by
 
--- [ThePrimeagen](https://hub.com/ThePrimeagen/anime)
+-- [ThePrimeagen](https://github.com/ThePrimeagen/anime)
 
 # Changing Neovim in lua-config :smiley:
 
