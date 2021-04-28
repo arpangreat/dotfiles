@@ -47,6 +47,13 @@ cd dotfiles/
 GO111MODULE=on go get -u golang.org/x/tools/gopls@latest
 sudo ln -s /home/arpangreat/go/bin/* /usr/bin
 ```
+# To setup jdtls
+- first delete ~/dotfiles/nvim/jdtl-language-server-latest by `rm -rf jdt-language-latest-server`
+- then , extract ~/dotfiles/nvim/jdt-language-server-latest.tar.gz inside `~/dotfiles/nvim/`
+- tweak `.zshrc` respective java file paths if needed
+- **make project with `projectCreate` script inside ~/dotfiles/custom-scripts and lang name should be `gradle` not `java`**
+- And you are all done 
+
 # after doing everything don't forget to run ```:TSInstall all``` in nvim to install Treesitter
 
 # to use screenshot.sh run
