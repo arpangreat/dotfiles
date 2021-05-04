@@ -1,6 +1,8 @@
 #!/bin/sh
+items=`find ~/ -maxdepth 1 -mindepth 1 -type d`
+selected=`echo "$items" | fzf`
 
-cd $1 || return
+cd $selected || return
 
 tmux new-session -s CdTm -n IDE -d
 tmux new-window -t CdTm -d -n zsh
