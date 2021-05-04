@@ -1,5 +1,5 @@
 #!/bin/sh
-items=`find ~/ -maxdepth 1 -mindepth 1 -type d`
+items=`find ~/`
 selected=`echo "$items" | fzf`
 
 cd $selected || return
