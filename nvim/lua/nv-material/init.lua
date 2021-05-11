@@ -8,3 +8,6 @@ require('colorbuddy').colorscheme('material')
 vim.cmd("colorscheme material")
 
 vim.api.nvim_exec([[highlight Normal guibg=none]], true)
+
+--Lua:
+vim.api.nvim_set_keymap('n', '<C-m>', [[<Cmd>lua require('material.functions').toggle_style()<CR>]], { noremap = true, silent = true })
