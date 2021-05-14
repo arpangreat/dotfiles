@@ -104,7 +104,7 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-git'
 Plug 'liuchengxu/vim-which-key'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'sbdchd/neoformat'
 Plug 'mattn/emmet-vim'
 
