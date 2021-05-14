@@ -259,7 +259,7 @@ bar {
 								binding_mode       #FF5555 #FF5555 #F8F8F2
 				}
 }
-exec kitty
+exec $term
 exec dolphin
 # exec firefox
 # exec google-chrome-stable
