@@ -1,0 +1,84 @@
+# For the benefit of emacs users: -*- shell-script -*-
+#
+#  _ _____ _     _            _
+# (_)___ /| |__ | | ___   ___| | _____
+# | | |_ \| '_ \| |/ _ \ / __| |/ / __|
+# | |___) | |_) | | (_) | (__|   <\__ \
+# |_|____/|_.__/|_|\___/ \___|_|\_\___/
+
+align=center
+separator=false
+color=#f8f8f2
+separator_block_width=15
+markup=pango
+
+[battery]
+interval=2
+color=#ff5555
+border=#ff5555
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+[wifi]
+command=iwgetid -r | tr '\n' ' ' && grep $(iwgetid -m | awk '{ printf "%s", $1 }') /proc/net/wireless | awk '{ printf "%i%\n", int($3 * 100 / 70) }'
+instance=wlp11s0f3u1
+interval=5
+label=<span color="#ff79c6"> </span>
+
+[mediaplayer]
+command=playerctl metadata --format "{{ artist }} <span color=\"#bd93f9\">-</span> {{ title }}"
+interval=2
+label=<span color="#bd93f9"> </span>
+
+[arch_update]
+command=checkupdates | wc -l
+interval=once
+label=<span color="#1793d1"> </span>
+
+[home]
+command=df -h /home | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#50fa7b\">GiB</span>\n", $4 }'
+interval=3
+label=<span color="#50fa7b"> </span>
+
+[cpu1]
+command=~/dotfiles/i3blocks/i3cpu1
+interval=5
+label=<span color="#ffdd33"><b>CORE 0: </b></span>
+
+[cpu2]
+command=~/dotfiles/i3blocks/i3cpu2
+interval=5
+label=<span color="#ff00f7"><b>CORE 1: </b></span>
+
+[cpu3]
+command=~/dotfiles/i3blocks/i3cpu3
+interval=5
+label=<span color="#1bf3e9"><b>CORE 2: </b></span>
+
+[cpu4]
+command=~/dotfiles/i3blocks/i3cpu4
+interval=5
+label=<span color="#34fa79"><b>CORE 3: </b></span>
+
+[memory]
+command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $7 }'
+interval=2
+label=<span color="#ff79c6"> </span>
+
+[volume]
+command=pulseaudio-ctl full-status | awk '{ printf "%i<span color=\"#bd93f9\">%</span>\n", $1 }'
+interval=1
+label=<span color="#bd93f9"> </span>
+
+[time]
+command=date | awk '{ printf "%s<span color=\"#50fa7b\">%s</span>%s<span color=\"#50fa7b\"></span>\n", $5, $6, $7}'
+interval=1
+label=<span color="#50fa7b"> </span>
+
+[date]
+command=LC_ALL="zh_CN.UTF-8" date '+%Y 年 %B %d 日 %A。' | awk '{ printf "%s<span color=\"#ff5555\">%s%s</span>%s<span color=\"#ff5555\">%s %s</span>\n", $1, $2, $3, $4, $5, $6 }'
+interval=60
+label=<span color="#ff5555"> </span>
+
