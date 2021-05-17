@@ -73,7 +73,7 @@ interval=1
 label=<span color="#bd93f9"> </span>
 
 [time]
-command=date | awk '{ printf "%s<span color=\"#50fa7b\">%s</span>%s<span color=\"#50fa7b\"></span>\n", $5, $6, $7}'
+command=date '+I: %H %M %p' | awk '{ printf "%s:%s <span color=\"#50fa7b\">%s</span>\n", $2, $3, $4}'
 interval=1
 label=<span color="#50fa7b"> </span>
 
