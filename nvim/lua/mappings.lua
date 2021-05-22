@@ -128,6 +128,10 @@ vim.api.nvim_set_keymap('n','<F7>',':FloatermNew --height=0.9 --width=0.9<CR>', 
 vim.api.nvim_set_keymap('t','<F7>','<C-\\><C-n>:FloatermToggle<CR>', { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n','<F12>',':FloatermToggle<CR>', { noremap = true , silent = true })
 
+-- Vim-Ultest
+vim.api.nvim_set_keymap('n', ']t', '<Plug>(ultest-next-fail)', { noremap = false , silent = false })
+vim.api.nvim_set_keymap('n','[t' , '<Plug>(ultest-prev-fail)', { noremap = true , silent = false })
+
 -- Nohl
 vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()]], true)
 

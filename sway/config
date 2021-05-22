@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -222,6 +222,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# audio
+bindsym F1 exec pulseaudio-ctl mute
+bindsym F2 exec pulseaudio-ctl down
+bindsym F3 exec pulseaudio-ctl up
 # Gaps
 gaps inner 6
 gaps outer 6

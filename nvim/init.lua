@@ -30,8 +30,8 @@ require('nv-ale')
 -- require('nv-tokyodark')
 -- require('nv-onebuddy')
 -- require('nv-spacebuddy')
-require('nv-material')
--- require('nv-nightbuddy')
+-- require('nv-material')
+require('nv-nightbuddy')
 -- require('nv-tokyonight')
 require('nv-fzf')
 require('nv-indentline')
@@ -56,6 +56,8 @@ vim.cmd("let g:airline_disable_statusline = 1")
 vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
+vim.cmd("let test#python#pytest#options = '--color=yes'")
+vim.cmd("let test#javascript#jest#options = '--color=always'")
 -- let g:airline_theme = 'deus'
 vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
 --Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
@@ -99,6 +101,13 @@ vim.api.nvim_exec([[
 augroup fmt
 	autocmd!
 	autocmd BufWritePre * undojoin | Prettier
+augroup END
+]], true)
+
+vim.api.nvim_exec([[
+augroup UltestRunner
+    au!
+    au BufWritePost * UltestNearest
 augroup END
 ]], true)
 
