@@ -270,7 +270,18 @@ gaps outer 6
 # smart_gaps on
 
 bindsym $mod+shift+x exec i3lock
-bindsym $mod+shift+s exec gnome-screenshot
+bindsym F1 exec pulseaudio-ctl mute
+bindsym F2 exec pulseaudio-ctl down
+bindsym F3 exec pulseaudio-ctl up
+bindsym $mod+shift+s exec ~/dotfiles/custom-scripts/screenshot.sh
+
+# Drop Down Terminal
+bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+exec --no-startup-id $term --name dropdown -e tmux
  
 #exec alacritty
 exec kitty
