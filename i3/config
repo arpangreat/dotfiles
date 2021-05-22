@@ -277,11 +277,10 @@ exec kitty
 exec dolphin
 # exec firefox
 exec brave
-exec vlc
+# exec vlc
 exec xmodmap ~/dotfiles/i3/swap
-# exec compton
-exec feh --bg-scale ~/dotfiles/wallpaper/HD wallpaper_ man near Torii gate wallpaper, gray temple wallpaper, landscape (1).jpeg 
-
+exec compton
+exec --no-startup-id feh --bg-scale ~/dotfiles/wallpaper/HD\ wallpaper_\ man\ near\ Torii\ gate\ wallpaper,\ gray\ temple\ wallpaper,\ landscape\ \(1\).jpeg
 # Plasma
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 for_window [class="plasmashell"] floating enable;
