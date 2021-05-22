@@ -278,7 +278,7 @@ bindsym $mod+shift+s exec ~/dotfiles/custom-scripts/screenshot.sh
 # Drop Down Terminal
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] resize set 700 500
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 5
 exec --no-startup-id $term --name dropdown -e tmux -u
