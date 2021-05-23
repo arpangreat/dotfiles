@@ -283,6 +283,14 @@ for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 5
 exec --no-startup-id $term --name dropdown -e tmux -u
  
+# Drop Down Terminal
+bindsym $mod+a [instance="calc"] scratchpad show; [instance="calc"] move position center
+for_window [instance="calc"] floating enable
+for_window [instance="calc"] resize set 700 500
+for_window [instance="calc"] move scratchpad
+for_window [instance="calc"] border pixel 5
+exec --no-startup-id $term --name calc -e ipython3
+
 #exec alacritty
 exec kitty
 exec dolphin
