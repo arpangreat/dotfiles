@@ -273,7 +273,7 @@ bindsym $mod+shift+x exec i3lock
 bindsym F1 exec pulseaudio-ctl mute
 bindsym F2 exec pulseaudio-ctl down
 bindsym F3 exec pulseaudio-ctl up
-bindsym $mod+shift+s exec ~/dotfiles/custom-scripts/screenshot.sh
+bindsym $mod+shift+s exec --no-startup-id gnome-screenshot
 
 # Drop Down Terminal
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
@@ -284,7 +284,7 @@ for_window [instance="dropdown"] border pixel 5
 exec --no-startup-id $term --name dropdown -e tmux -u
  
 # Drop Down Terminal
-bindsym $mod+a [instance="calc"] scratchpad show; [instance="calc"] move position center
+bindsym $mod+shift+a [instance="calc"] scratchpad show; [instance="calc"] move position center
 for_window [instance="calc"] floating enable
 for_window [instance="calc"] resize set 700 500
 for_window [instance="calc"] move scratchpad
