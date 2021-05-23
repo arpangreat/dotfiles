@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+[ $(echo -e "No\nYes" | LANG="en_GB.UTF-8" dmenu -i -p "$1") \
+== "Yes" ] && $2
