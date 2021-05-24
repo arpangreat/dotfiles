@@ -276,6 +276,7 @@ bindsym F3 exec pulseaudio-ctl up
 bindsym $mod+shift+s exec --no-startup-id gnome-screenshot
 bindsym $mod+e exec --no-startup-id ~/dotfiles/custom-scripts/dmenuemoji
 bindsym $mod+shift+p exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure??" poweroff
+bindsym $mod+shift+b exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure??" reboot
 
 # Drop Down Terminal
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
