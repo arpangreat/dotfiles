@@ -1,6 +1,6 @@
-#!/bin/sh
-items=`find ~/`
-selected=`echo "$items" | fzf`
+#!/bin/env bash
+itemsFind=$(find ~/)
+selected=$(echo "$itemsFind" | fzf)
 
 cd $selected || return
 
