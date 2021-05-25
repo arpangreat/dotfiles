@@ -1,3 +1,6 @@
 [submodule "anime"]
 	path = anime
 	url = https://github.com/ThePrimeagen/anime.git
+[submodule "ranger/colorschemes"]
+	path = ranger/colorschemes
+	url = https://github.com/ranger/colorschemes.git
