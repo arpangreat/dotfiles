@@ -1,5 +1,4 @@
--- Custom KeyBindings To make life easier
--- You can change this to your own
+-- Custom KeyBindings To make life easier You can change this to your own
 -- Remember to map Your leader by writing
 -- let mapleader = -- --
 -- I use space as leader you can anything by putting 
@@ -136,3 +135,22 @@ vim.api.nvim_set_keymap('n','[t' , '<Plug>(ultest-prev-fail)', { noremap = true 
 vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()]], true)
 
 -- vim.api.nvim_set_keymap('n','<CR>','{-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()', { noremap = true , expr = true })
+
+-- Prodoc
+vim.api.nvim_set_keymap('n', '<Leader>cp', ':ProComment<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('x', '<Leader>cp', ':ProComment<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n', '<Leader>cd', ':ProDoc<CR>', { noremap = true , silent = false })
+
+-- LspSaga
+vim.api.nvim_set_keymap('n', 'gh', "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ea', "<cmd>lua require('lspsaga.codeaction').code_action()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('v', '<Leader>ea', ":<C-U>lua require('lspsaga.codeaction').ranger_code_action()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>eh', "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<C-f>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<C-b>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>es', "<cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>er', "<cmd>lua require('lspsaga.rename').rename()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ee', "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ec', "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '[e', "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', ']e', "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>", { noremap = true , silent = true })
