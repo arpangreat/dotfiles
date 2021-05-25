@@ -57,6 +57,7 @@ Plug 'glepnir/oceanic-material'
 Plug 'glepnir/prodoc.nvim'
 Plug 'tiagovla/tokyodark.nvim'
 Plug 'folke/tokyonight.nvim'
+Plug 'eddyekofo94/gruvbox-flat.nvim'
 
 " Language specific
 Plug 'tpope/vim-surround'
