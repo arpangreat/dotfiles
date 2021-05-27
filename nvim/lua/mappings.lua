@@ -52,7 +52,7 @@ vim.api.nvim_set_keymap('n','<Leader>te',":Telescope<CR>",{ noremap = true , sil
 vim.api.nvim_set_keymap('n','<Leader>ttc',":Telescope colorscheme<CR>",{ noremap = true , silent = false })
 
 
-vim.api.nvim_set_keymap("n", "<Leader>trf", "<Cmd>lua require('telescope').extensions.frecency.frecency(require('telescope.themes').get_dropdown({}))<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Leader>trf", "<Cmd>lua require('telescope').extensions.frecency.frecency(require('telescope.themes').get_ivy({ winblend = 0 }))<CR>", {noremap = true, silent = true})
 
 -- GitWorkTree
 vim.api.nvim_set_keymap("n", "<Leader>gwc", ':lua require("git-worktree").create_worktree', { noremap = true , silent = false })
