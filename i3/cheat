@@ -1,0 +1,2 @@
+#!/bin/sh
+grep '^bind' ~/dotfiles/i3/config | cut -d " " -f 2- | column | nvim -R

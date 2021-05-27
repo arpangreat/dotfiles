@@ -275,8 +275,8 @@ bindsym F2 exec pulseaudio-ctl down
 bindsym F3 exec pulseaudio-ctl up
 bindsym $mod+shift+s exec --no-startup-id gnome-screenshot
 bindsym $mod+e exec --no-startup-id ~/dotfiles/custom-scripts/dmenuemoji
-bindsym $mod+shift+p exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure??" poweroff
-bindsym $mod+shift+b exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure??" reboot
+bindsym $mod+shift+p exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure to POWEROFF ??" poweroff
+bindsym $mod+shift+b exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure to REBOOT ??" reboot
 bindsym $mod+g exec kitty -e ranger
 
 # Drop Down Terminal
@@ -298,10 +298,10 @@ exec --no-startup-id $term --name calc -e ipython3
 # Drop Down Cheatsheet Terminal
 bindsym $mod+c [instance="cheat"] scratchpad show; [instance="cheat"] move position center
 for_window [instance="cheat"] floating enable
-for_window [instance="cheat"] resize set 2000 2000
+for_window [instance="cheat"] resize set 1000 1000
 for_window [instance="cheat"] move scratchpad
 for_window [instance="cheat"] border pixel 5
-exec --no-startup-id $term --name cheat -e grep '^bind' ~/dotfiles/i3/config | cut -d " " -f 2- | column | less
+exec --no-startup-id $term --name cheat -e ~/dotfiles/i3/./cheat
 
 #exec alacritty
 exec kitty
