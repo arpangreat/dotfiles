@@ -48,7 +48,7 @@ vim.api.nvim_set_keymap('n','<Leader>tcc',":lua require('arpangreat.telescope').
 vim.api.nvim_set_keymap('n','<Leader>tgi',":lua require('telescope').extensions.gh.issues()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgp',":lua require('telescope').extensions.gh.pull_request()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgg',":lua require('telescope').extensions.gh.gist()<CR>",{ noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>te',":Telescope<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>te',":Telescope",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>ttc',":Telescope colorscheme<CR>",{ noremap = true , silent = false })
 
 

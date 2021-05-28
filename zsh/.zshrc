@@ -77,6 +77,8 @@ plugins=(
     zsh-syntax-highlighting  
     zsh-z
     zsh-vi-mode
+    zsh-interactive-cd
+    zbell
 )
 
 
