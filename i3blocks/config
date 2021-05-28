@@ -28,10 +28,10 @@ command=playerctl metadata --format "{{ artist }} <span color=\"#bd93f9\">-</spa
 interval=2
 label=<span color="#bd93f9"> </span>
 
-[arch_update]
-command=checkupdates | wc -l
-interval=once
-label=<span color="#1793d1"> </span>
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+label=<span color="#ff79c6">🌤️ </span>
 
 [home]
 command=df -h /home | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#50fa7b\">GiB</span>\n", $4 }'
@@ -77,4 +77,3 @@ label=<span color="#50fa7b"> </span>
 command=LC_ALL="zh_CN.UTF-8" date '+%Y 年 %B %d 日 %A。' | awk '{ printf "%s<span color=\"#ff5555\">%s%s</span>%s<span color=\"#ff5555\">%s %s</span>\n", $1, $2, $3, $4, $5, $6 }'
 interval=60
 label=<span color="#ff5555"> </span>
-
