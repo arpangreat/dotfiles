@@ -1,3 +1,4 @@
+local themes = require "telescope.themes"
 
 local actions = require('telescope.actions')
 require('telescope').setup {
@@ -112,6 +113,8 @@ M.search_configs = function()
         cwd = "$HOME/dotfiles/",
     })
 end
+
+
             -- map(mode, key, lua function to call)
             --
             -- good place to look: telescope.actions (init.lua)
