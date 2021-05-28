@@ -78,7 +78,7 @@ plugins=(
     zsh-z
     zsh-vi-mode
     zsh-interactive-cd
-    zbell
+    fasd
 )
 
 
@@ -113,7 +113,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nv="nvim"
 alias e='emacs'
-alias v='vim'
 alias brc='nvim ~/.bashrc'
 alias vrc='nvim ~/.vimrc'
 alias src='nvim ~/.config/sway/config'
@@ -180,6 +179,7 @@ bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
 eval "$(starship init zsh)"
+eval "$(fasd --init auto)"
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
 export JAR=~/dotfiles/nvim/jdt-language-server-latest/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar
