@@ -23,6 +23,8 @@ vim.o.hidden = true
 -- vim.o.include
 vim.o.display = "lastline"
 vim.o.backspace = "indent,eol,start"
+vim.o.winblend = 0
+vim.o.pumblend = 20
 
 -- Visuals
 vim.o.syntax = "enable"
