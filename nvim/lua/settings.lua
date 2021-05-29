@@ -24,7 +24,7 @@ vim.o.hidden = true
 vim.o.display = "lastline"
 vim.o.backspace = "indent,eol,start"
 vim.o.winblend = 0
-vim.o.pumblend = 20
+vim.o.pumblend = 30
 
 -- Visuals
 vim.o.syntax = "enable"

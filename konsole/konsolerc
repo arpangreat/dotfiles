@@ -1,0 +1,45 @@
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB2gAAAPoAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAABY/////8AAAAAAAAAAA==
+StatusBar=Disabled
+eDP-1 HDMI-1 Height 1920x1080=1037
+eDP-1 HDMI-1 Width 1920x1080=1896
+eDP-1 HDMI-1 XPosition 1920x1080=12
+eDP-1 HDMI-1 YPosition 1920x1080=31
+
+[Desktop Entry]
+DefaultProfile=arpan.profile
+
+[Favorite Profiles]
+Favorites=Breath2.profile
+
+[KonsoleWindow]
+RemoveWindowTitleBarAndFrame=true
+
+[MainWindow]
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAB2gAAAP8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAACP////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1 HDMI-1 Height 1920x1080=1037
+eDP-1 HDMI-1 Width 1920x1080=1896
+eDP-1 HDMI-1 XPosition 1920x1080=12
+eDP-1 HDMI-1 YPosition 1920x1080=31
+eDP-1 Window-Maximized 1920x1080=true
+eDP1 XPosition=1044
+eDP1 XPosition 1920x1080=1280
+eDP1 YPosition=112
+eDP1 YPosition 1920x1080=29
+
+[MainWindow][Toolbar sessionToolbar]
+ToolButtonStyle=IconOnly
+
+[SplitView]
+SplitViewVisibility=AlwaysHideSplitHeader
+
+[TabBar]
+NewTabButton=false
+TabBarVisibility=AlwaysHideTabBar
+
+[Toolbar sessionToolbar]
+ToolButtonStyle=IconOnly

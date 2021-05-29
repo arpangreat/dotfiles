@@ -4,9 +4,9 @@ vim.g.material_italic_keywords = 1
 vim.g.material_italic_functions = 1
 vim.g.material_italic_variables = 1
 vim.g.material_style = 'palenight'
--- vim.g.material_contrast = false
-vim.g.material_borders = true
--- vim.g.material_disable_background = 0
+vim.g.material_contrast = 0
+vim.g.material_borders = 0
+vim.g.material_disable_background = true
 
 require('colorbuddy').colorscheme('material')
 vim.cmd("colorscheme material")
