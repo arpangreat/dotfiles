@@ -38,7 +38,7 @@ vim.api.nvim_set_keymap('n','<F8>',':TagBarToggle<CR>',{ noremap = false, silent
 -- lua require("arpangreat")
 vim.api.nvim_set_keymap('n','<Leader>ts',":lua require('telescope.builtin').grep_string({ search = vim.fn.input(\"Grep For >\") })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgf',":lua require('telescope.builtin').git_files()<CR>",{ noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>tf',":lua require('telescope.builtin').find_files()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tf',":lua require('telescope.builtin').find_files({winblend = 0})<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tw',":lua require('telescope.builtin').grep_string({ search = vim.fn.expand(\"<cword>\") })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tb',":lua require('telescope.builtin').buffers()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>th',":lua require('telescope.builtin').help_tags()<CR>",{ noremap = true , silent = false })
