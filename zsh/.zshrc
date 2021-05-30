@@ -8,7 +8,7 @@ export ZSH="/home/arpangreat/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -178,7 +178,7 @@ neofetch
 bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 eval "$(fasd --init auto)"
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
@@ -206,6 +206,11 @@ export VAULT_PATH=/home/arpangreat/wiki/
 # set a valid path to your editor
 export VAULT_EDITOR=/usr/bin/nvim
 
+# Spaceship configs
+SPACESHIP_BATTERY_THRESHOLD=30
+SPACESHIP_VI_MODE_COLOR=#ff87d7
+# SPACESHIP_CHAR_SYMBOL='-->'
+# SPACESHIP_CHAR_SUFFIX=' '
 # export ANDROID_SDK=
 #
 # [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk

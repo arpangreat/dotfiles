@@ -241,18 +241,18 @@ bar {
     status_command i3blocks
     position top
 
-        colors {
-            background $base00
-                separator  $base01
-                statusline $base04
+	colors {
+	    background $base00
+		separator  $base01
+		statusline $base04
 
 # State             Border  BG      Text
-                focused_workspace   $base05 $base0D $base00
-                active_workspace    $base05 $base03 $base00
-                inactive_workspace  $base03 $base01 $base05
-                urgent_workspace    $base08 $base08 $base00
-                binding_mode        $base00 $base0A $base00
-        }
+		focused_workspace   $base05 $base0D $base00
+		active_workspace    $base05 $base03 $base00
+		inactive_workspace  $base03 $base01 $base05
+		urgent_workspace    $base08 $base08 $base00
+		binding_mode        $base00 $base0A $base00
+	}
 }
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
@@ -285,7 +285,7 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 700 500
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 5
-exec --no-startup-id $term --name dropdown
+exec --no-startup-id kitty --name dropdown
  
 # Drop Down Calc Terminal
 bindsym $mod+a [instance="calc"] scratchpad show; [instance="calc"] move position center
@@ -293,7 +293,7 @@ for_window [instance="calc"] floating enable
 for_window [instance="calc"] resize set 700 500
 for_window [instance="calc"] move scratchpad
 for_window [instance="calc"] border pixel 5
-exec --no-startup-id $term --name calc -e ipython3
+exec --no-startup-id kitty --name calc -e ipython3
 
 # Drop Down Cheatsheet Terminal
 bindsym $mod+c [instance="cheat"] scratchpad show; [instance="cheat"] move position center
@@ -301,10 +301,10 @@ for_window [instance="cheat"] floating enable
 for_window [instance="cheat"] resize set 1000 1000
 for_window [instance="cheat"] move scratchpad
 for_window [instance="cheat"] border pixel 5
-exec --no-startup-id $term --name cheat -e ~/dotfiles/i3/./cheat
+exec --no-startup-id kitty --name cheat -e ~/dotfiles/i3/./cheat
 
 #exec alacritty
-exec kitty
+exec $term
 exec dolphin
 # exec firefox
 exec brave
@@ -312,6 +312,7 @@ exec brave
 exec xmodmap ~/dotfiles/i3/swap
 exec compton
 exec --no-startup-id feh --bg-scale ~/dotfiles/wallpaper/HD\ wallpaper_\ man\ near\ Torii\ gate\ wallpaper,\ gray\ temple\ wallpaper,\ landscape\ \(1\).jpeg
+# exec_always --no-startup-id /home/arpangreat/.config/polybar/launch.sh
 # Plasma
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 for_window [class="plasmashell"] floating enable;
