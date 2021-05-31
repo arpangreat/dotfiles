@@ -4,6 +4,7 @@ local actions = require('telescope.actions')
 require('telescope').setup {
     defaults = {
         file_sorter = require('telescope.sorters').get_fzy_sorter,
+	prompt_position = "top",
         prompt_prefix = '$> ',
         color_devicons = true,
 
@@ -13,33 +14,43 @@ require('telescope').setup {
 
         initial_mode = "insert",
         selection_strategy = "reset",
-        sorting_strategy = "descending",
+        sorting_strategy = "ascending",
         layout_strategy = "horizontal",
 	layout_defaults = {horizontal = {mirror = false}, vertical = {mirror = false}},
 	-- layout_config = {
-        --       width = 0.8,
-        --       height = 0.85,
+	--       width = 0.8,
+	--       height = 0.85,
         --
-        --       horizontal = {
-        --         -- width_padding = 0.1,
-        --         -- height_padding = 0.1,
-        --         preview_width = 0.6,
-        --       },
+	--       horizontal = {
+	--         -- width_padding = 0.1,
+	--         -- height_padding = 0.1,
+	--         preview_width = 0.6,
+	--       },
         --
-        --       vertical = {
-        --         -- width_padding = 0.05,
-        --         -- height_padding = 1,
-        --         width = 0.9,
-        --         height = 0.95,
-        --         preview_height = 0.5,
-        --       },
+	--       vertical = {
+	--         -- width_padding = 0.05,
+	--         -- height_padding = 1,
+	--         width = 0.9,
+	--         height = 0.95,
+	--         preview_height = 0.5,
+	--       },
         --
-        --       flex = {
-        --         horizontal = {
-        --           preview_width = 0.9,
-        --         },
-        --       },
-        --     },
+	--       center = {
+	--         -- width_padding = 0.05,
+	--         -- height_padding = 1,
+	--         width = 0.9,
+	--         height = 0.95,
+	--         preview_height = 10,
+	--         results_height = 10,
+        --
+	--       },
+        --
+	--       flex = {
+	--         horizontal = {
+	--           preview_width = 0.9,
+	--         },
+	--       },
+	--     },
         file_ignore_patterns = {},
         generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
         shorten_path = true,
@@ -129,6 +140,7 @@ M.search_notes = function()
     require("telescope.builtin").find_files({
         prompt_title = "< Notes >",
         cwd = "$HOME/wiki/",
+	layout_strategy="vertical",
     })
 end
 
