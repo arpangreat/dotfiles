@@ -93,7 +93,7 @@ vim.api.nvim_set_keymap('n','<Leader>y','"+y<CR>', { noremap = true , silent = f
 vim.api.nvim_set_keymap('n','<Leader>mp',':MarkdownPreview<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>ne',':vsplit ~/wiki/index.md<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>no',':e ~/wiki/index.md<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>ns',":lua require('arpangreat.telescope').search_notes()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>ns',":lua require('arpangreat.telescope').search_notes(require('telescope.themes').get_dropdown({ layout_strategy = 'vertical' }))<CR>",{ noremap = true , silent = false })
 
 vim.api.nvim_set_keymap('i','C-Space' , 'compe#complete()', { noremap = true , silent = true , expr = true })
 vim.api.nvim_set_keymap('i','<CR>' , "compe#confirm('<CR>')", { noremap = true , silent = true , expr = true })
