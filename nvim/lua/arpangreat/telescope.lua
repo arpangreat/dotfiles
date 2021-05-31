@@ -15,7 +15,31 @@ require('telescope').setup {
         selection_strategy = "reset",
         sorting_strategy = "descending",
         layout_strategy = "horizontal",
-        layout_defaults = {horizontal = {mirror = false}, vertical = {mirror = false}},
+	layout_defaults = {horizontal = {mirror = false}, vertical = {mirror = false}},
+	-- layout_config = {
+        --       width = 0.8,
+        --       height = 0.85,
+        --
+        --       horizontal = {
+        --         -- width_padding = 0.1,
+        --         -- height_padding = 0.1,
+        --         preview_width = 0.6,
+        --       },
+        --
+        --       vertical = {
+        --         -- width_padding = 0.05,
+        --         -- height_padding = 1,
+        --         width = 0.9,
+        --         height = 0.95,
+        --         preview_height = 0.5,
+        --       },
+        --
+        --       flex = {
+        --         horizontal = {
+        --           preview_width = 0.9,
+        --         },
+        --       },
+        --     },
         file_ignore_patterns = {},
         generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
         shorten_path = true,
