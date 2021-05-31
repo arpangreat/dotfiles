@@ -38,6 +38,9 @@ vim.api.nvim_set_keymap('n','<F8>',':TagBarToggle<CR>',{ noremap = false, silent
 -- lua require("arpangreat")
 vim.api.nvim_set_keymap('n','<Leader>ts',":lua require('telescope.builtin').grep_string({ search = vim.fn.input(\"Grep For >\") })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgf',":lua require('telescope.builtin').git_files()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tgc',":lua require('telescope.builtin').git_commits()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tgb',":lua require('telescope.builtin').git_bcommits()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tgs',":lua require('telescope.builtin').git_status()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tf',":lua require('telescope.builtin').find_files({winblend = 0})<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tw',":lua require('telescope.builtin').grep_string({ search = vim.fn.expand(\"<cword>\") })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tb',":lua require('telescope.builtin').buffers()<CR>",{ noremap = true , silent = false })
@@ -48,9 +51,14 @@ vim.api.nvim_set_keymap('n','<Leader>tcc',":lua require('arpangreat.telescope').
 vim.api.nvim_set_keymap('n','<Leader>tgi',":lua require('telescope').extensions.gh.issues()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgp',":lua require('telescope').extensions.gh.pull_request()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgg',":lua require('telescope').extensions.gh.gist()<CR>",{ noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>te',":Telescope",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>to',":Telescope",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>ttc',":Telescope colorscheme<CR>",{ noremap = true , silent = false })
 
+
+vim.api.nvim_set_keymap('n','<Leader>tea',":lua require('telescope.builtin').lsp_code_actions()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>teo',":lua require('telescope.builtin').lsp_range_code_actions()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>ter',":lua require('telescope.builtin').lsp_references()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tes',":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>",{ noremap = true , silent = false })
 
 vim.api.nvim_set_keymap("n", "<Leader>trf", "<Cmd>lua require('telescope').extensions.frecency.frecency(require('telescope.themes').get_dropdown({ layout_config = { width = 0.25 } }))<CR>", {noremap = true, silent = true})
 
