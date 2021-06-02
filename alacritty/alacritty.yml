@@ -88,19 +88,19 @@ window:
         #multiplier: 3
 
 # Font configuration
-#font:
-#   # Normal (roman) font face
-#        normal:
-#     # Font family
-#     #
-#     # Default:
-#     #   - (macOS) Menlo
-#     #   - (Linux/BSD) monospace
-#     #   - (Windows) Consolas
-# family: "Inconsolota Regular"
+font:
+        #   # Normal (roman) font face
+        #        normal:
+        #     # Font family
+        #     #
+        #     # Default:
+        #     #   - (macOS) Menlo
+        #     #   - (Linux/BSD) monospace
+        #     #   - (Windows) Consolas
+        family: "Operator Mono Lig Book"
 
 # The `style` can be specified to pick a specific face.
-#style: Regular
+style: Regular
 
 # Bold font face
 #bold:
@@ -136,7 +136,7 @@ window:
 #style: Bold Italic
 
 # Point size
-#size: 11.0
+size: 11.0
 
 # Offset is the extra space around each character. `offset.y` can be thought of
 # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
