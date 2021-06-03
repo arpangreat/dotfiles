@@ -81,4 +81,7 @@ sudo visudo
 # Then type in any area
 Defaults env_reset,pwfeedback
 ```
+
+# How to setup tmux for italics [from here](https://rsapkf.xyz/blog/enabling-italics-vim-tmux)
+
 # try to make a install script for installing everything
