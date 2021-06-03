@@ -221,3 +221,4 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 # added by travis gem
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+export TERM=xterm-256color-italic
