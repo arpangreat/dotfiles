@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -15,7 +8,7 @@ export ZSH="/home/arpangreat/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -52,6 +45,8 @@ export ZSH="/home/arpangreat/.oh-my-zsh"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -80,7 +75,10 @@ plugins=(
     zsh-completions
     zsh-autosuggestions  
     zsh-syntax-highlighting  
-
+    zsh-z
+    zsh-vi-mode
+    zsh-interactive-cd
+    fasd
 )
 
 
@@ -96,11 +94,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nvim'
- else
-   export EDITOR='nvim'
- fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='nvim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -113,15 +111,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# Custom aliases
+alias nv="nvim"
 alias e='emacs'
-alias v='vim'
-alias nv='nvim'
-alias brc='vim ~/.bashrc'
-alias vrc='vim ~/.vimrc'
+alias brc='nvim ~/.bashrc'
+alias vrc='nvim ~/.vimrc'
 alias src='nvim ~/.config/sway/config'
 alias ec='emacsclient'
-alias nrc='nvim ~/.config/nvim/init.vim'
+alias nrc='nvim ~/.config/nvim/init.lua'
 alias s='sudo'
 alias sv='sudo vim'
 alias snv='sudo nvim'
@@ -133,17 +129,37 @@ alias rd='sudo rmdir'
 alias rf='sudo rm -rf'
 alias g='git'
 alias gc='git clone'
-alias gf='git pull'
+alias gP='git pull'
 alias gp='git push -u origin master'
-alias arc='vim ~/.config/alacritty/alacritty.yml'
-alias zrc='nvim ~/.zshrc'
-alias trc='nvim ~/.tmux.conf'
+alias gf='$GOPATH/bin/gf'
+alias arc='nvim ~/.config/alacritty/alacritty.yml'
+alias zrc='~/Downloads/./nvim.appimage ~/.zshrc'
+alias trc='~/Downloads/./nvim.appimage ~/.tmux.conf'
+alias krc='nvim ~/.config/kitty/kitty.conf'
+alias irc='nvim ~/dotfiles/i3/config'
+alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
+alias cht='cht.sh'
 alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
+alias rusttm='~/dotfiles/custom-scripts/./rusttm'
+alias gotm='~/dotfiles/custom-scripts/./gotm'
+alias javatm='~/dotfiles/custom-scripts/./javatm'
+alias tstm='~/dotfiles/custom-scripts/./tstm'
+alias nvtm='~/dotfiles/custom-scripts/./nvtm'
+alias pytm='~/dotfiles/custom-scripts/./pytm'
+alias cpptm='~/dotfiles/custom-scripts/./cpptm'
+alias blogtm='~/dotfiles/custom-scripts/./blogtm'
+alias cdtm='~/dotfiles/custom-scripts/./cdtm'
+alias notes='nvim ~/wiki/index.md'
+alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='ls -la'
-alias la='ls -A'
+alias ll='exa -l -g --icons'
+alias ls='exa -l -g --icons'
+alias la='exa -l -g --icons -a'
+alias lt='exa -l -g --icons --tree'
+alias lta='exa -l -g --icons --tree -a'
 alias l='ls'
+alias obs="QT_QPA_PLATFORM=xcb obs"
 
 bindkey -v
 
@@ -162,4 +178,47 @@ neofetch
 bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+eval "$(fasd --init auto)"
+[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
+
+export JAR=~/dotfiles/nvim/jdt-language-server-latest/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar
+export GRADLE_HOME=$HOME/gradle
+export JAVA_HOME=/usr/lib/jvm/java-15-openjdk/
+export JDTLS_CONFIG=~/dotfiles/nvim/jdt-language-server-latest/config_linux
+export WORKSPACE=$HOME/javaexsnew
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+--color=dark
+--color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
+--color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
+'
+fpath=(~/.zsh.d/ $fpath)
+
+export GOPATH=$HOME/go
+# source $HOME/tomnomnom/gf/gf-completion.zsh
+export PATH=$PATH:$GOPATH/go/bin
+
+# set a valid path to your vault
+export VAULT_PATH=/home/arpangreat/wiki/
+
+# set a valid path to your editor
+export VAULT_EDITOR=/usr/bin/nvim
+
+# Spaceship configs
+SPACESHIP_BATTERY_THRESHOLD=30
+SPACESHIP_VI_MODE_COLOR=#ff87d7
+# SPACESHIP_CHAR_SYMBOL='-->'
+# SPACESHIP_CHAR_SUFFIX=' '
+# export ANDROID_SDK=
+#
+# [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
+# echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
+
+alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
+
+# added by travis gem
+[ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+export TERM=xterm-256color-italic

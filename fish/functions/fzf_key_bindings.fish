@@ -1,0 +1,1 @@
+/home/arpangreat/.fzf/shell/key-bindings.fish

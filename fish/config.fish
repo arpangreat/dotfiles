@@ -1,42 +1,54 @@
-abbr -a yr 'cal -y'
-abbr -a c cargo
-abbr -a nv nvim
-abbr -a v vim
+set -gx EDITOR nvim
+
+# Go
+set -g GOPATH $HOME/go
+
+
+# abbrs
 abbr -a e emacs
+abbr -a v vim
+abbr -a nv nvim
+abbr -a brc vim ~/.bashrc
+abbr -a vrc vim ~/.vimrc
+abbr -a src nvim ~/.config/sway/config
 abbr -a ec emacsclient
-abbr -a l ls
-abbr -a ll 'ls -la'
-abbr -a rd 'sudo rmdir'
-abbr -a rf 'sudo rm -rf'
-abbr -a ch 'sudo chmod +x'
-abbr -a chu 'sudo chmod u+x'
+abbr -a nrc nvim ~/.config/nvim/init.lua
 abbr -a s sudo
-abbr -a sv 'sudo vim'
-abbr -a snv 'sudo nvim'
-abbr -a se 'sudo emacs'
-abbr -a sec 'sudo emacsclient'
-abbr -a frc 'vim ~/.config/fish/config.fish'
-abbr -a vrc 'vim ~/.vimrc'
-abbr -a nrc 'nvim ~/.config/nvim/init.vim'
-abbr -a brc 'vim ~/.bashrc'
-abbr -a arc 'vim ~/.config/alacritty/alacritty.yml'
-abbr -a irc 'vim ~/.config/i3/config'
-abbr -a m make
-abbr -a o xdg-open
+abbr -a sv sudo vim
+abbr -a snv sudo nvim
+abbr -a se sudo emacs
+abbr -a sec sudo emacsclient
+abbr -a ch sudo chmod +x
+abbr -a chu sudo chmod u+x
+abbr -a rd sudo rmdir
+abbr -a rf sudo rm -rf
 abbr -a g git
-abbr -a gco 'git checkout'
-abbr -a gc 'git clone'
-abbr -a gp 'git pull'
-abbr -a ga 'git add -p'
-abbr -a vimdiff 'nvim -d'
-abbr -a ct 'cargo t'
-abbr -a amz 'env AWS_SECRET_ACCESS_KEY=(pass www/aws-secret-key | head -n1)'
-abbr -a ais "aws ec2 describe-instances | jq '.Reservations[] | .Instances[] | {iid: .InstanceId, type: .InstanceType, key:.KeyName, state:.State.Name, host:.PublicDnsName}'"
-abbr -a print 'lp -h cups.csail.mit.edu -d xerox9 -oDuplex=DuplexNoTumble -oStapleLocation=SinglePortrait'
-abbr -a gah 'git stash; and git pull --rebase; and git stash pop'
-abbr -a ks 'keybase chat send'
-abbr -a kr 'keybase chat read'
-abbr -a kl 'keybase chat list'
+abbr -a gc git clone
+abbr -a gP git pull
+abbr -a gp git push -u origin master
+abbr -a gf $GOPATH/bin/gf
+abbr -a arc vim ~/.config/alacritty/alacritty.yml
+abbr -a zrc nvim ~/.zshrc
+abbr -a trc nvim ~/.tmux.conf
+abbr -a frc nvim ~/dotfiles/fish/config.fish
+abbr -a sld sway-launcher-desktop
+abbr -a tm tmux -u
+abbr -a cht cht.sh
+abbr -a ide bash ~/dotfiles/custom-scripts/ide.sh
+abbr -a rusttm ~/dotfiles/custom-scripts/./rusttm
+abbr -a gotm ~/dotfiles/custom-scripts/./gotm
+abbr -a javatm ~/dotfiles/custom-scripts/./javatm
+abbr -a tstm ~/dotfiles/custom-scripts/./tstm
+abbr -a nvtm ~/dotfiles/custom-scripts/./nvtm
+abbr -a pytm ~/dotfiles/custom-scripts/./pytm
+abbr -a notes nvim ~/wiki/index.md
+abbr -a projectCreate bash ~/dotfiles/custom-scripts/projectCreate.sh
+abbr -a na ~/My-First-Plugin/./nvim.appimage
+abbr -a ll exa -l -g --icons 
+abbr -a la  exa -l -g --icons -a
+abbr -a l ls
+abbr -a obs QT_QPA_PLATFORM xcb obs
+
 fish_vi_key_bindings
 
 # Base16 Shell

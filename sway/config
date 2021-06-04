@@ -25,8 +25,8 @@ set $menu rofi -show run
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 include "$HOME/.cache/wal/colors-sway"
-output * bg ~/dotfiles/wallpaper/wallpaper.jpg fill
-client.focused $color0 $background $foreground $color7 $background
+output * bg '~/dotfiles/wallpaper/HD wallpaper_ man near Torii gate wallpaper, gray temple wallpaper, landscape.jpeg' fill
+# client.focused $color0 $background $foreground $color7 $background
 #
 # Example configuration:
 #
@@ -51,12 +51,12 @@ client.focused $color0 $background $foreground $color7 $background
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+   input "2:14:SynPS/2_Synaptics_TouchPad" {
+       dwt enabled
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -157,6 +157,7 @@ assign [app_id="Kitty"] workspace number $ws1
 assign [app_id="org.kde.dolphin"] workspace number $ws2
 assign [class="Firefox"] workspace number $ws3 
 assign [class="Google-chrome"] workspace number $ws3
+assign [class="Brave-browser"] workspace number $ws3
 # assign [class="Org.gnome.Characters"] $ws9
 assign [class="vlc"] workspace number $ws10
 #
@@ -205,13 +206,13 @@ mode "resize" {
     # up will shrink the containers height
     # down will grow the containers height
     bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
+    bindsym $down resize grow height 10px#
     bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
+    bindsym Down resize grow height 10px#
     bindsym Up resize shrink height 10px
     bindsym Right resize grow width 10px
 
@@ -221,34 +222,56 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# audio
+bindsym F1 exec pulseaudio-ctl mute
+bindsym F2 exec pulseaudio-ctl down
+bindsym F3 exec pulseaudio-ctl up
 # Gaps
 gaps inner 6
 gaps outer 6
 
-#
+
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
+
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    # position top
+    position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     # status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-    swaybar_command waybar
+		status_command i3blocks
 
-    # colors {
-    #     statusline #ffffff
-    #     background #323232
-    #     inactive_workspace #32323200 #32323200 #5c5c5c
-    # }
+				colors {
+						background #282A36
+								statusline #F8F8F2
+								separator  #44475A
+
+								focused_workspace  #44475A #44475A #F8F8F2
+								active_workspace   #282A36 #44475A #F8F8F2
+								inactive_workspace #282A36 #282A36 #BFBFBF
+								urgent_workspace   #FF5555 #FF5555 #F8F8F2
+								binding_mode       #FF5555 #FF5555 #F8F8F2
+				}
 }
-exec kitty
+exec $term
 exec dolphin
 # exec firefox
-exec google-chrome-stable
+# exec google-chrome-stable
+exec brave
 # exec gnome-characters
 # exec vlc
 # exec xmodmap ~/dotfiles/i3/swap
+
+bindsym $mod+Shift+s exec '/home/arpangreat/dotfiles/custom-scripts/screenshot.sh'
 
 include /etc/sway/config.d/*

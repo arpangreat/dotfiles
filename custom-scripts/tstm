@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/TypeScriptExs
+
+tmux new-session -s TsTm -n IDE -d
+tmux new-window -t TsTm -d -n zsh
+tmux new-window -t TsTm -d -n BashTop
+
+# tmux send-keys -t TsTm:IDE "ide" Enter
+tmux send-keys -t TsTm:BashTop "bashtop" Enter
+
+tmux select-window -t TsTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t TsTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t TsTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t TsTm:IDE "clear" Enter
+
+tmux -u attach -t TsTm
+

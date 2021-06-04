@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/go/src/github.com/arpangreat
+
+tmux new-session -s GoTm -n IDE -d
+tmux new-window -t GoTm -d -n zsh
+tmux new-window -t GoTm -d -n BashTop
+
+# tmux send-keys -t GoTm:IDE "ide" Enter
+tmux send-keys -t GoTm:BashTop "bashtop" Enter
+
+tmux select-window -t GoTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t GoTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t GoTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t GoTm:IDE "clear" Enter
+
+tmux -u attach -t GoTm
+

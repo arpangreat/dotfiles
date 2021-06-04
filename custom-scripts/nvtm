@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/dotfiles/nvim
+
+tmux new-session -s NvTm -n IDE -d
+tmux new-window -t NvTm -d -n zsh
+tmux new-window -t NvTm -d -n BashTop
+
+# tmux send-keys -t NvTm:IDE "ide" Enter
+tmux send-keys -t NvTm:BashTop "bashtop" Enter
+
+tmux select-window -t NvTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t NvTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t NvTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t NvTm:IDE "clear" Enter
+
+tmux -u attach -t NvTm
+

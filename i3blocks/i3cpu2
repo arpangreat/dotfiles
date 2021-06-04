@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# case $BLOCK_BUTTON in
+#         1) notify-send "CPU Temps:
+# $(ps axch -o cmd:15,%cpu --sort=-%cpu | head)" ;;
+#         #3) echo "Right Click Action";;
+# esac
+
+sensors | awk '/^Core 1:/ {printf "%s\n", $3}'

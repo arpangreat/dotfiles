@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/javaexsnew/javaexs
+
+tmux new-session -s JavaTm -n IDE -d
+tmux new-window -t JavaTm -d -n zsh
+tmux new-window -t JavaTm -d -n BashTop
+
+# tmux send-keys -t JavaTm:IDE "ide" Enter
+tmux send-keys -t JavaTm:BashTop "bashtop" Enter
+
+tmux select-window -t JavaTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t JavaTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t JavaTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t JavaTm:IDE "clear" Enter
+
+tmux -u attach -t JavaTm
+

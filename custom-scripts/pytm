@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/PythonExs
+
+tmux new-session -s PyTm -n IDE -d
+tmux new-window -t PyTm -d -n zsh
+tmux new-window -t PyTm -d -n BashTop
+
+# tmux send-keys -t PyTm:IDE "ide" Enter
+tmux send-keys -t PyTm:BashTop "bashtop" Enter
+
+tmux select-window -t PyTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t PyTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t PyTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t PyTm:IDE "clear" Enter
+
+tmux -u attach -t PyTm
+
