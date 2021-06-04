@@ -1,15 +1,68 @@
+local themes = require "telescope.themes"
 
 local actions = require('telescope.actions')
 require('telescope').setup {
     defaults = {
         file_sorter = require('telescope.sorters').get_fzy_sorter,
-        prompt_prefix = ' >',
+	prompt_position = "top",
+        prompt_prefix = '$> ',
         color_devicons = true,
 
         file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
         grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
         qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
 
+        initial_mode = "insert",
+        selection_strategy = "reset",
+        sorting_strategy = "ascending",
+        layout_strategy = "horizontal",
+	layout_defaults = {horizontal = {mirror = false}, vertical = {mirror = false}},
+	-- layout_config = {
+	--       width = 0.8,
+	--       height = 0.85,
+        --
+	--       horizontal = {
+	--         -- width_padding = 0.1,
+	--         -- height_padding = 0.1,
+	--         preview_width = 0.6,
+	--       },
+        --
+	--       vertical = {
+	--         -- width_padding = 0.05,
+	--         -- height_padding = 1,
+	--         width = 0.9,
+	--         height = 0.95,
+	--         preview_height = 0.5,
+	--       },
+        --
+	--       center = {
+	--         -- width_padding = 0.05,
+	--         -- height_padding = 1,
+	--         width = 0.9,
+	--         height = 0.95,
+	--         preview_height = 10,
+	--         results_height = 10,
+        --
+	--       },
+        --
+	--       flex = {
+	--         horizontal = {
+	--           preview_width = 0.9,
+	--         },
+	--       },
+	--     },
+        file_ignore_patterns = {},
+        generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
+        shorten_path = true,
+        winblend = 0,
+        width = 0.75,
+        preview_cutoff = 120,
+        results_height = 1,
+        results_width = 0.8,
+        border = {},
+        borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'},
+        use_less = true,
+        set_env = {['COLORTERM'] = 'truecolor'}, -- default = nil,
         mappings = {
             i = {
                 ["<C-x>"] = false,
@@ -18,22 +71,86 @@ require('telescope').setup {
         }
     },
     extensions = {
-        fzy_native = {
-            override_generic_sorter = false,
-            override_file_sorter = true,
-        }
-    }
+        -- fzy_native = {
+        --     override_generic_sorter = false,
+        --     override_file_sorter = true,
+        -- },
+	fzf = {
+		fuzzy = true,
+		override_generic_sorter = false, -- override the generic sorter
+		override_file_sorter = true,     -- override the file sorter
+		case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+					-- the default case_mode is "smart_case"
+	 },
+	 frecency = {
+      show_scores = false,
+      show_unindexed = true,
+      ignore_patterns = {"*.git/*", "*/tmp/*"},
+      workspaces = {
+        ["conf"]    = "/home/arpangreat/.config",
+        ["rust"]    = "/home/arpangreat/RustExs",
+        ["cpp"]    = "/home/arpangreat/cppexamples",
+        ["java"]    = "/home/arpangreat/javaexsnew",
+        ["ts"]    = "/home/arpangreat/TypeScriptExs",
+        ["project"] = "/home/arpangreat/termigit",
+        ["wiki"]    = "/home/arpangreat/wiki"
+      }
+    },
+	media_files = {
+      -- filetypes whitelist
+      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+      filetypes = {"png", "webp", "jpg", "jpeg"},
+      find_cmd = "rg" -- find command (defaults to `fd`)
+    },
+	git_worktree = {}
+},
 }
 
-require('telescope').load_extension('fzy_native')
+-- require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('fzf')
+require('telescope').load_extension('gh')
+require('telescope').load_extension('frecency')
+
+-- Lua Interface for telescope-fzf-native
+--local fzf = require('fzf')
+--
+--local slab = fzf.allocate_slab()
+---- pattern: string
+---- case_mode: number with 0 = smart_case, 1 = ignore_case, 2 = respect_case
+--local pattern_obj = fzf.parse_pattern(pattern, case_mode)
+--
+---- you can get the score/position for as many items as you want
+---- line: string
+--fzf.get_score(line, pattern_obj, slab)
+--fzf.get_pos(line, pattern_obj, slab)
+--
+--fzf.free_pattern(pattern_obj)
+--fzf.free_slab(slab)
+-------------------------------------------
 
 local M = {}
-M.search_dotfiles = function() 
+M.search_dotfiles = function()
     require("telescope.builtin").find_files({
         prompt_title = "< VimRC >",
         cwd = "$HOME/dotfiles/nvim",
     })
 end
+
+M.search_notes = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< Notes >",
+        cwd = "$HOME/wiki/",
+	layout_strategy="vertical",
+    })
+end
+
+M.search_configs = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< Configs >",
+        cwd = "$HOME/dotfiles/",
+    })
+end
+
 
             -- map(mode, key, lua function to call)
             --
@@ -86,9 +203,9 @@ end
 --     })
 -- end
 
-M.git_branches = function() 
+M.git_branches = function()
     require("telescope.builtin").git_branches({
-        attach_mappings = function(prompt_bufnr, map) 
+        attach_mappings = function(prompt_bufnr, map)
             map('i', '<c-d>', actions.git_delete_branch)
             map('n', '<c-d>', actions.git_delete_branch)
             return true
@@ -97,4 +214,3 @@ M.git_branches = function()
 end
 
 return M
-

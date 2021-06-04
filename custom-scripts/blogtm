@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cd ~/myblog.dev.repo
+
+tmux new-session -s BlogTm -n IDE -d
+tmux new-window -t BlogTm -d -n zsh
+tmux new-window -t BlogTm -d -n BashTop
+
+# tmux send-keys -t BlogTm:IDE "ide" Enter
+tmux send-keys -t BlogTm:BashTop "bashtop" Enter
+
+tmux select-window -t BlogTm:IDE
+tmux split-window -v -p 5
+tmux send-keys -t BlogTm:IDE "clear" Enter
+tmux split-window -h -p 66
+tmux send-keys -t BlogTm:IDE "clear" Enter
+tmux split-window -h -p 50
+tmux send-keys -t BlogTm:IDE "clear" Enter
+
+tmux -u attach -t BlogTm
+
