@@ -112,6 +112,8 @@ Plug 'rstacruz/sparkup'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
 Plug 'ziglang/zig.vim'
+Plug 'Pocco81/DAPInstall.nvim'
+
 " Plug 'mhinz/vim-startify'
 Plug 'glepnir/dashboard-nvim'
 Plug 'Yggdroot/indentLine'
