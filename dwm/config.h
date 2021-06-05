@@ -97,6 +97,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,      spawn,	   SHCMD("dmenuemoji") },
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD("powerprompt") },
 	{ MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("rebootprompt") },
+	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("brave") },
 };
 
 /* button definitions */
