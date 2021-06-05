@@ -18,7 +18,7 @@ set $up k
 set $right l
 
 # set default desktop layout (default is tiling)
-# workspace_layout tabbed <stacking|tabbed>
+# workspace_layout tabbed # <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
