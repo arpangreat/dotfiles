@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+picom &
+xmodmap ~/dotfiles/i3/swap
+feh --bg-scale ~/dotfiles/wallpaper/cyberpunk-landscape-wallpaper.jpg
+exec dwm
