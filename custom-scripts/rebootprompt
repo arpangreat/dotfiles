@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+exec ~/dotfiles/custom-scripts/prompt "Are sure you want to REBOOT ??" reboot
