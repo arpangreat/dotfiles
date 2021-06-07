@@ -175,6 +175,8 @@ neofetch
 # Install it
 # fortune | cowsay | lolcat
 
+kitty + complete setup zsh | source /dev/stdin
+
 bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
