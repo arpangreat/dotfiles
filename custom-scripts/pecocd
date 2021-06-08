@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+items=$(find ~/)
+selected=$(echo "$items" | peco --layout=bottom-up)
+
+cd "$selected" || return

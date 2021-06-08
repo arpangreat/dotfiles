@@ -317,7 +317,7 @@ for_window [instance="calc"] floating enable
 for_window [instance="calc"] resize set 700 500
 for_window [instance="calc"] move scratchpad
 for_window [instance="calc"] border pixel 5
-exec --no-startup-id kitty --name calc -e ipython3
+exec --no-startup-id kitty --name calc -e ipython
 
 # Drop Down Cheatsheet Terminal
 bindsym $mod+c [instance="cheat"] scratchpad show; [instance="cheat"] move position center

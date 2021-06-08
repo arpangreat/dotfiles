@@ -218,6 +218,9 @@ SPACESHIP_VI_MODE_COLOR=#ff87d7
 # [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
 # echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 
+# Some things for peco
+bindkey -s '^o' 'cd .config'
+
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
 # added by travis gem
