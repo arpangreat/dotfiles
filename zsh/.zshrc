@@ -219,7 +219,7 @@ SPACESHIP_VI_MODE_COLOR=#ff87d7
 # echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 
 # Some things for peco
-bindkey -s '^o' 'cd .config'
+bindkey -s '^o' 'cdtm\n'
 
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
