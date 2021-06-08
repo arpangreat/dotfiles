@@ -1,6 +1,6 @@
 #!/bin/env bash
 itemsFind=$(find ~/)
-selected=$(echo "$itemsFind" | fzf)
+selected=$(echo "$itemsFind" | fzf --cycle --prompt="cdtm > ")
 
 cd $selected || return
 
