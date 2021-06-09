@@ -4,4 +4,5 @@ xmodmap ~/dotfiles/i3/swap
 feh --bg-scale ~/dotfiles/wallpaper/cyberpunk-landscape-wallpaper.jpg
 dwmblocks &
 kitty &
+brave &
 exec dwm
