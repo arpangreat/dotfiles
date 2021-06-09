@@ -2,6 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 20;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 40;       /* vert inner gap between windows */
@@ -34,10 +35,6 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "Alacritty",NULL,       NULL,       0,            0,           -1 },
-	{ "dolphin",  NULL,       NULL,       0 << 3,       0,           -1 },
-	{ "Brave",    NULL,       NULL,       0 << 4,       0,           -1 },
-	{ "vlc",      NULL,       NULL,       8,            0,           -1 },
 };
 
 /* layout(s) */
