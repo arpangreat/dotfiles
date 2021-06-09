@@ -4,3 +4,7 @@
 [submodule "ranger/colorschemes"]
 	path = ranger/colorschemes
 	url = https://github.com/ranger/colorschemes.git
+[submodule "dwmblocks"]
+	path = dwmblocks
+	url = https://github.com/torrinfail/dwmblocks.git
+	branch = master
