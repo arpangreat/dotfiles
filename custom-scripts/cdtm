@@ -1,8 +1,8 @@
 #!/bin/env bash
-itemsFind=$(find ~/)
+itemsFind=$(find *)
 selected=$(echo "$itemsFind" | fzf --cycle --prompt="cdtm > ")
 
-cd $selected || return
+cd "$selected" || exit
 
 tmux new-session -s CdTm -n IDE -d
 tmux new-window -t CdTm -d -n zsh

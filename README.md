@@ -85,3 +85,7 @@ Defaults env_reset,pwfeedback
 # How to setup tmux for italics [from here](https://rsapkf.xyz/blog/enabling-italics-vim-tmux)
 
 # try to make a install script for installing everything
+
+# IF NVIM BUILD FROM SOURCE BREAKS , use ./nvim/nvim.txt commit tag to fallback to safe zone, also use it inside official neovim repo clone inside $HOME
+`git checkout #the tag`
+
