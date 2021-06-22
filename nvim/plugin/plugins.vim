@@ -31,6 +31,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
+Plug 'folke/todo-comments.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 " Plug 'glepnir/indent-guides.nvim'
 
@@ -58,6 +59,7 @@ Plug 'glepnir/prodoc.nvim'
 Plug 'tiagovla/tokyodark.nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'eddyekofo94/gruvbox-flat.nvim'
+Plug 'ful1e5/onedark.nvim'
 
 " Language specific
 Plug 'tpope/vim-surround'

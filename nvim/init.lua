@@ -22,6 +22,7 @@ require('snippets-nvim')
 require('nv-treesitter')
 require('nv-telescope')
 require('nv-nerdcommenter')
+-- require('nv-todo-comment')
 -- require('nv-autopairs')
 require('nv-lua-autopairs')
 require('nv-autotag')
@@ -32,6 +33,7 @@ require('nv-ale')
 -- require('nv-spacebuddy')
 -- require('nv-material')
 require('nv-nebulous')
+-- require('nv-onedark')
 -- require('nv-tokyonight')
 -- require('nv-oceanic-material')
 -- require('nv-gruvbox-flat')
@@ -114,6 +116,8 @@ augroup UltestRunner
 augroup END
 ]], true)
 
+--HACK
+-- TODO do something
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
 -- for movement, rather than using more efficient movement commands, is also a
