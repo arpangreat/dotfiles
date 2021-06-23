@@ -190,6 +190,17 @@ export JAVA_HOME=/usr/lib/jvm/java-15-openjdk/
 export JDTLS_CONFIG=~/dotfiles/nvim/jdt-language-server-latest/config_linux
 export WORKSPACE=$HOME/javaexsnew
 
+function _pip_completion {
+  local words cword
+  read -Ac words
+  read -cn cword
+  reply=( $( COMP_WORDS="$words[*]" \
+             COMP_CWORD=$(( cword-1 )) \
+             PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
+}
+
+compctl -K _pip_completion pip3
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=dark
