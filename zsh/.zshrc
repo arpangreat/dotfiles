@@ -167,17 +167,17 @@ bindkey -v
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # base16
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+# BASE16_SHELL="$HOME/.config/base16-shell/"
+# [ -n "$PS1" ] && \
+#     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#         eval "$("$BASE16_SHELL/profile_helper.sh")"
 neofetch
 # Install it
 # fortune | cowsay | lolcat
 
 kitty + complete setup zsh | source /dev/stdin
 
-bash ~/.config/base16-shell/scripts/base16-rebecca.sh
+# bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
 # eval "$(starship init zsh)"
