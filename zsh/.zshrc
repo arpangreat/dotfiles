@@ -159,6 +159,7 @@ alias la='exa -l -g --icons -a'
 alias lt='exa -l -g --icons --tree'
 alias lta='exa -l -g --icons --tree -a'
 alias l='ls'
+alias lg='lazygit'
 alias obs="QT_QPA_PLATFORM=xcb obs"
 
 bindkey -v
