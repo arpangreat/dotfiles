@@ -6,13 +6,7 @@ require'nvim-treesitter.configs'.setup {
       ["foo.bar"] = "Identifier",
     },
   },
-}
-
-
-require'nvim-treesitter.configs'.setup {
   indent = {
-    enable = true
-  }
+    enable = true,
+  },
 }
-
-require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
