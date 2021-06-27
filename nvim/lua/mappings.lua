@@ -95,24 +95,37 @@ vim.api.nvim_set_keymap('n','<Leader>ne',':vsplit ~/wiki/index.md<CR>', { norema
 vim.api.nvim_set_keymap('n','<Leader>no',':e ~/wiki/index.md<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>ns',":lua require('arpangreat.telescope').search_notes(require('telescope.themes').get_dropdown({ layout_strategy = 'vertical' }))<CR>",{ noremap = true , silent = false })
 
-vim.api.nvim_set_keymap('i','C-Space' , 'compe#complete()', { noremap = true , silent = true , expr = true })
-vim.api.nvim_set_keymap('i','<CR>' , "compe#confirm('<CR>')", { noremap = true , silent = true , expr = true })
-vim.api.nvim_set_keymap('i','<C-e>' , "compe#close('<C-e')", { noremap = true , silent = true , expr = true })
-vim.api.nvim_set_keymap('i','<C-f>' , "compe#scroll({ 'delta': +4 })", { noremap = true , silent = true , expr = true })
-vim.api.nvim_set_keymap('i','<C-f>' , "compe#scroll({ 'delta': -4 })", { noremap = true , silent = true , expr = true })
+-- For Vsnip
+vim.api.nvim_exec([[
+" NOTE: You can use other key to expand snippet.
 
-vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('t','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('i','<A-h>','<C-\\><C-N><C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
-vim.api.nvim_set_keymap('n','<A-h>','<C-w>h',{ noremap = true })
+" Expand
+imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+
+" Expand or jump
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+
+" Jump forward or backward
+imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+
+" Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
+" See https://github.com/hrsh7th/vim-vsnip/pull/50
+nmap        s   <Plug>(vsnip-select-text)
+xmap        s   <Plug>(vsnip-select-text)
+nmap        S   <Plug>(vsnip-cut-text)
+xmap        S   <Plug>(vsnip-cut-text)
+
+" If you want to use snippet for multiple filetypes, you can `g:vsnip_filetypes` for it.
+let g:vsnip_filetypes = {}
+let g:vsnip_filetypes.javascriptreact = ['javascript']
+let g:vsnip_filetypes.typescriptreact = ['typescript']
+]], true)
+
 -- Nvim Lsp mappings
 vim.api.nvim_set_keymap('n','<c-]','<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','K','<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true , silent = true})
