@@ -23,6 +23,7 @@ Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vuciv/vim-bujo'
