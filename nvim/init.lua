@@ -51,6 +51,7 @@ require('nv-rainbow')
 require('nv-gitsigns')
 -- require('nv-nvim-tree')
 require('nv-lsp-configs')
+require('nv-todo-comment')
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
