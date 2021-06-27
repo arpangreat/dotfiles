@@ -79,9 +79,9 @@ Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 Plug 'svermeulen/vimpeccable'
 " Plug 'hrsh7th/nvim-compe'
-Plug 'hrsh7th/vim-vsnip'
-Plug 'rafamadriz/friendly-snippets'
-Plug 'hrsh7th/vim-vsnip-integ'
+" Plug 'hrsh7th/vim-vsnip'
+" Plug 'rafamadriz/friendly-snippets'
+" Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Vim Only

@@ -63,7 +63,11 @@ vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
 vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
-vim.cmd("let g:completion_enable_snippet = 'vim-vsnip'")
+vim.cmd("let g:completion_enable_snippet = 'UltiSnips'")
+vim.cmd("let g:UltiSnipsExpandTrigger='<tab>'")
+vim.cmd("let g:UltiSnipsJumpForwardTrigger='<tab>'")
+vim.cmd("let g:UltiSnipsJumpBackwardTrigger='<s-tab>'")
+
 -- let g:airline_theme = 'deus'
 vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
 --Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
