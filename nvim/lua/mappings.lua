@@ -4,8 +4,9 @@
 -- I use space as leader you can anything by putting 
 -- that character inside of the the double Qoutes
 
-vim.g.mapleader = " "
+-- HACK: YOU HAVE A MAPPING FOR Keymaps named nvmap
 
+vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n','<Leader>bg',':highlight Normal guibg=none<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>h',':wincmd h<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>j',':wincmd j<CR>',{ noremap = true , silent = false })
@@ -53,8 +54,7 @@ vim.api.nvim_set_keymap('n','<Leader>tgi',":lua require('telescope').extensions.
 vim.api.nvim_set_keymap('n','<Leader>tgp',":lua require('telescope').extensions.gh.pull_request()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgg',":lua require('telescope').extensions.gh.gist()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>to',":Telescope",{ noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>ttc',":Telescope colorscheme<CR>",{ noremap = true , silent = false })
-
+vim.api.nvim_set_keymap('n', '<Leader>ttc', ':TodoTelescope<CR>', { noremap = true, silent = false, expr = false })
 
 vim.api.nvim_set_keymap('n','<Leader>tea',":lua require('telescope.builtin').lsp_code_actions()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>teo',":lua require('telescope.builtin').lsp_range_code_actions()<CR>",{ noremap = true , silent = false })
