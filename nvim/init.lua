@@ -129,6 +129,11 @@ augroup UltestRunner
 augroup END
 ]], true)
 
+vim.cmd([[let g:completion_confirm_key = ""]])
+vim.cmd([[
+imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
+]])
+
 --HACK
 -- TODO do something
 -- Try to prevent bad habits like using the arrow keys for movement. This is
