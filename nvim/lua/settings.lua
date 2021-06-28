@@ -51,8 +51,8 @@ vim.o.autoindent = true
 vim.o.backup = false
 -- vim.o.undofile = false
 vim.cmd("set undofile")
-vim.o.undodir='~/.vim/undodir'
-vim.o.backupdir="~/.vim/backupdir"
+vim.o.undodir='/home/arpangreat/.vim/undodir'
+vim.o.backupdir="/home/arpangreat/.vim/backupdir"
 vim.o.swapfile = false
 vim.o.shada="!,'1000,<50,s10,h"
 vim.o.viminfo="'100,n$HOME/.vim/files/info/viminfo"
