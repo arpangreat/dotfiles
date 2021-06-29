@@ -10,6 +10,7 @@
 --
 --========================================================================================
 vim.cmd("source $HOME/dotfiles/nvim/plugin/plugins.vim")
+vim.cmd("source $HOME/dotfiles/nvim/tmuxline.vim")
 
 -- Lua file
 require('arpangreat')
