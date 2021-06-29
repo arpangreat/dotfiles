@@ -61,6 +61,7 @@ Plug 'tiagovla/tokyodark.nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'eddyekofo94/gruvbox-flat.nvim'
 Plug 'ful1e5/onedark.nvim'
+Plug 'sainnhe/gruvbox-material'
 
 " Language specific
 Plug 'tpope/vim-surround'
@@ -140,6 +141,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ThePrimeagen/git-worktree.nvim'
 Plug 'voldikss/vim-floaterm'
 Plug 'rhysd/git-messenger.vim'
+Plug 'kristijanhusak/orgmode.nvim'
 call s:local_plug('my_cyclist.vim')
 
 " Vim for notes
