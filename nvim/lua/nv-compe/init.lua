@@ -17,17 +17,26 @@ require'compe'.setup {
     buffer = true;
     calc = true;
     vsnip = true;
+    ultisnips = true;
     nvim_lsp = true;
     nvim_lua = true;
     spell = true;
     tags = true;
     snippets_nvim = true;
     treesitter = true;
+    orgmode = true;
   };
 }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+  properties = {
+    'documentation',
+    'detail',
+    'additionalTextEdits',
+  }
+}
 
 require'lspconfig'.rust_analyzer.setup {
   capabilities = capabilities,
