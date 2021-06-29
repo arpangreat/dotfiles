@@ -34,6 +34,7 @@ Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
 Plug 'folke/todo-comments.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'sainnhe/tmuxline.vim'
 " Plug 'glepnir/indent-guides.nvim'
 
 " Colorscheme
