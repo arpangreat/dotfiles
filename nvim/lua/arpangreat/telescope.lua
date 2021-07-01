@@ -4,7 +4,6 @@ local actions = require('telescope.actions')
 require('telescope').setup {
     defaults = {
         file_sorter = require('telescope.sorters').get_fzy_sorter,
-	prompt_position = "top",
         prompt_prefix = '$> ',
         color_devicons = true,
 
@@ -15,43 +14,18 @@ require('telescope').setup {
         initial_mode = "insert",
         selection_strategy = "reset",
         sorting_strategy = "ascending",
-		scroll_strategy = "cycle",
+	scroll_strategy = "cycle",
         layout_strategy = "horizontal",
-		layout_config = {horizontal = {mirror = false}, vertical = {mirror = false}},
-	-- layout_config = {
-	--       width = 0.8,
-	--       height = 0.85,
-        --
-	--       horizontal = {
-	--         -- width_padding = 0.1,
-	--         -- height_padding = 0.1,
-	--         preview_width = 0.6,
-	--       },
-        --
-	--       vertical = {
-	--         -- width_padding = 0.05,
-	--         -- height_padding = 1,
-	--         width = 0.9,
-	--         height = 0.95,
-	--         preview_height = 0.5,
-	--       },
-        --
-	--       center = {
-	--         -- width_padding = 0.05,
-	--         -- height_padding = 1,
-	--         width = 0.9,
-	--         height = 0.95,
-	--         preview_height = 10,
-	--         results_height = 10,
-        --
-	--       },
-        --
-	--       flex = {
-	--         horizontal = {
-	--           preview_width = 0.9,
-	--         },
-	--       },
-	--     },
+	layout_config = {
+	      horizontal = {
+	        mirror = false,
+	      },
+	      vertical = {
+	        mirror = false,
+	      },
+	      prompt_position = "top",
+	},
+	file_sorter = require'telescope.sorters'.get_fuzzy_file,
         file_ignore_patterns = {},
         generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
         shorten_path = true,
@@ -64,6 +38,8 @@ require('telescope').setup {
         borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'},
         use_less = true,
         set_env = {['COLORTERM'] = 'truecolor'}, -- default = nil,
+
+	buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
         mappings = {
             i = {
                 ["<C-x>"] = false,
@@ -103,7 +79,8 @@ require('telescope').setup {
       filetypes = {"png", "webp", "jpg", "jpeg"},
       find_cmd = "rg" -- find command (defaults to `fd`)
     },
-	git_worktree = {}
+	git_worktree = {},
+	z = {},
 },
 }
 
@@ -111,23 +88,9 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('gh')
 require('telescope').load_extension('frecency')
+require('telescope').load_extension('z')
+require('telescope').load_extension('media_files')
 
--- Lua Interface for telescope-fzf-native
---local fzf = require('fzf')
---
---local slab = fzf.allocate_slab()
----- pattern: string
----- case_mode: number with 0 = smart_case, 1 = ignore_case, 2 = respect_case
---local pattern_obj = fzf.parse_pattern(pattern, case_mode)
---
----- you can get the score/position for as many items as you want
----- line: string
---fzf.get_score(line, pattern_obj, slab)
---fzf.get_pos(line, pattern_obj, slab)
---
---fzf.free_pattern(pattern_obj)
---fzf.free_slab(slab)
--------------------------------------------
 
 local M = {}
 M.search_dotfiles = function()
@@ -153,56 +116,6 @@ M.search_configs = function()
 end
 
 
-            -- map(mode, key, lua function to call)
-            --
-            -- good place to look: telescope.actions (init.lua)
-            -- lua function to call:  (gets bufnr, not necessarily needed)
-            --   require('telescope.actions.state').get_selected_entry(bufnr)
-            --   Actions just take the bufnr and give out information
-            --   require('telescope.actions').close(bufnr)
-            --
-            --   check out telescope.actions for _all the available_ supported
-            --   actions.
-            --
-            --   :h telescope.setup ->
-            --   :h telescope.builtin ->
-            --   :h telescope.layout ->
-            --   :h telescope.actions
-            --
--- function set_background(content)
---     vim.fn.system(
---         "dconf write /org/mate/desktop/background/picture-filename \"'" .. content .. "'\"")
--- end
-
--- M.anime_selector = function()
---     require("telescope.builtin").find_files({
---         prompt_title = "< Anime Bobs > ",
---         cwd = "~/dotfiles/backgrounds",
---
---         attach_mappings = function(prompt_bufnr, map)
---             function set_the_background(close)
---                 local content =
---                     require('telescope.actions.state').get_selected_entry(bufnr)
---                 set_background(content.cwd .. "/" .. content.value)
---                 if close then
---                     require('telescope.actions').close(prompt_bufnr)
---                 end
---             end
---
---             map('i', '<C-p>', function(bufnr)
---                 set_the_background()
---             end)
---
---             map('i', '<CR>', function(bufnr)
---                 set_the_background(true)
---             end)
---
---             -- Please continue mapping (attaching additional key maps):
---             -- Ctrl+n/p to move up and down the list.
---             return true
---         end
---     })
--- end
 
 M.git_branches = function()
     require("telescope.builtin").git_branches({
