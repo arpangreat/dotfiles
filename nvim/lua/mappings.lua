@@ -158,10 +158,59 @@ vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"
 
 -- vim.api.nvim_set_keymap('n','<CR>','{-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()', { noremap = true , expr = true })
 
--- Prodoc
-vim.api.nvim_set_keymap('n', '<Leader>cp', ':ProComment<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('x', '<Leader>cp', ':ProComment<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n', '<Leader>cd', ':ProDoc<CR>', { noremap = true , silent = false })
+--[[ [count]<leader>cc |NERDCommenterComment|
+   [
+   [ Comment out the current line or text selected in visual mode.
+   [
+   [ [count]<leader>cn |NERDCommenterNested|
+   [
+   [ Same as cc but forces nesting.
+   [
+   [ [count]<leader>c<space> |NERDCommenterToggle|
+   [
+   [ Toggles the comment state of the selected line(s). If the topmost selected line is commented, all selected lines are uncommented and vice versa.
+   [
+   [ [count]<leader>cm |NERDCommenterMinimal|
+   [
+   [ Comments the given lines using only one set of multipart delimiters.
+   [
+   [ [count]<leader>ci |NERDCommenterInvert|
+   [
+   [ Toggles the comment state of the selected line(s) individually.
+   [
+   [ [count]<leader>cs |NERDCommenterSexy|
+   [
+   [ Comments out the selected lines with a pretty block formatted layout.
+   [
+   [ [count]<leader>cy |NERDCommenterYank|
+   [
+   [ Same as cc except that the commented line(s) are yanked first.
+   [
+   [ <leader>c$ |NERDCommenterToEOL|
+   [
+   [ Comments the current line from the cursor to the end of line.
+   [
+   [ <leader>cA |NERDCommenterAppend|
+   [
+   [ Adds comment delimiters to the end of line and goes into insert mode between them.
+   [
+   [ |NERDCommenterInsert|
+   [
+   [ Adds comment delimiters at the current cursor position and inserts between. Disabled by default.
+   [
+   [ <leader>ca |NERDCommenterAltDelims|
+   [
+   [ Switches to the alternative set of delimiters.
+   [
+   [ [count]<leader>cl |NERDCommenterAlignLeft [count]<leader>cb |NERDCommenterAlignBoth
+   [
+   [ Same as |NERDCommenterComment| except that the delimiters are aligned down the left side (<leader>cl) or both sides (<leader>cb).
+   [
+   [ [count]<leader>cu |NERDCommenterUncomment|
+   [
+   [ Uncomments the selected line(s).
+   [  ]]
+
 
 -- LspSaga
 vim.api.nvim_set_keymap('n', 'gh', "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", { noremap = true , silent = true })
