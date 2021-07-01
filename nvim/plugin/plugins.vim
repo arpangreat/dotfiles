@@ -102,6 +102,8 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope-frecency.nvim' 
+Plug 'nvim-telescope/telescope-symbols.nvim'
+Plug 'nvim-telescope/telescope-z.nvim'
 Plug 'tami5/sql.nvim'
 Plug 'nvim-telescope/telescope-media-files.nvim'
 
