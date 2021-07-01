@@ -145,15 +145,6 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'kristijanhusak/orgmode.nvim'
 call s:local_plug('my_cyclist.vim')
 
-" Vim for notes
-
-Plug 'pbrisbin/vim-mkdir'
-Plug 'jkramer/vim-checkbox', { 'for': 'markdown' }
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax' 
-
-
 " Plug 'govim/govim'
 " All of your Plugs must be added before the following line
 call plug#end()
