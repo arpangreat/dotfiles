@@ -118,11 +118,20 @@ set statusline+=%{GitStatus()}
 -- augroup END
 -- ]], true)
 
+-- TODO: fix it
+-- Format by Nvim Lsp
+-- vim.api.nvim_exec([[
+--         augroup Format
+--         autocmd! * <buffer>
+--         autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
+--         augroup END
+-- ]], true)
+
 vim.api.nvim_exec([[
-	augroup Format
-	autocmd! * <buffer>
-	autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
-	augroup END
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 ]], true)
 
 vim.api.nvim_exec([[
@@ -137,8 +146,8 @@ vim.cmd([[
 imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
 ]])
 
---HACK
--- TODO do something
+--HACK:
+-- TODO: do something
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
 -- for movement, rather than using more efficient movement commands, is also a

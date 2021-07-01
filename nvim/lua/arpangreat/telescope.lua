@@ -17,7 +17,7 @@ require('telescope').setup {
         sorting_strategy = "ascending",
 		scroll_strategy = "cycle",
         layout_strategy = "horizontal",
-	layout_defaults = {horizontal = {mirror = false}, vertical = {mirror = false}},
+		layout_config = {horizontal = {mirror = false}, vertical = {mirror = false}},
 	-- layout_config = {
 	--       width = 0.8,
 	--       height = 0.85,
