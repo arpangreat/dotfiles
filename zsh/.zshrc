@@ -167,6 +167,9 @@ bindkey -v
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# My custom zsh files
+source $HOME/dotfiles/zsh/functions/functions
+
 # base16
 # BASE16_SHELL="$HOME/.config/base16-shell/"
 # [ -n "$PS1" ] && \
@@ -204,10 +207,23 @@ compctl -K _pip_completion pip3
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+--preview "bat --color 'always' {}"
 --color=dark
 --color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
 --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
 '
+# Using highlight (http://www.andre-simon.de/doku/highlight/en/highlight.html)
+export FZF_CTRL_T_OPTS="--preview 'bat --color "always" {}'"
+export FZF_CTRL_T_OPTS="--select-1 --exit-0"
+export FZF_CTRL_R_OPTS='--sort --exact'
+export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
+fzf-history-widget-accept() {
+  fzf-history-widget
+  zle accept-line
+}
+zle     -N     fzf-history-widget-accept
+bindkey '^X^R' fzf-history-widget-accept
+
 fpath=(~/.zsh.d/ $fpath)
 
 export GOPATH=$HOME/go
