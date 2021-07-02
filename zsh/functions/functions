@@ -144,7 +144,9 @@ function git() {
   elif [ "$1" = full ]; then
    command git show --format=fuller
   elif [ "$1" = up ]; then
-   command lazygit
+   command git add .
+   command git commit -m "$2"
+   command git push
   else
     command git "$@"
   fi
