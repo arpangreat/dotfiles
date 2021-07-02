@@ -181,6 +181,7 @@ neofetch
 
 kitty + complete setup zsh | source /dev/stdin
 
+# source /home/arpangreat/tokyonight.nvim/extras/zsh_tokyonight_storm.zsh-theme
 # bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
