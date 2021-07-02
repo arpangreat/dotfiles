@@ -131,7 +131,8 @@ vim.api.nvim_set_keymap('n','K','<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = t
 vim.api.nvim_set_keymap('n','gD','<cmd>lua vim.lsp.buf.implementation()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','<c-K>','<cmd>lua vim.lsp.buf.signature_help()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','1gD','<cmd>lua vim.lsp.buf.type_definition()<CR>', {noremap = true , silent = true})
-vim.api.nvim_set_keymap('n','gr','<cmd>lua vim.lsp.buf.references()<CR>', {noremap = true , silent = true})
+vim.api.nvim_set_keymap('n','gr','<cmd>lua vim.lsp.buf.rename()<CR>', {noremap = true , silent = true})
+vim.api.nvim_set_keymap('n','gf','<cmd>lua vim.lsp.buf.references()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','g0','<cmd>lua vim.lsp.buf.document_symbol()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','gW','<cmd>lua vim.lsp.buf.workspace_symbol()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','gd','<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = true , silent = true})
@@ -209,7 +210,6 @@ vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"
    [
    [ Uncomments the selected line(s).
    [  ]]
-
 
 -- LspSaga
 vim.api.nvim_set_keymap('n', '<Leader>ef', "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", { noremap = true , silent = true })
