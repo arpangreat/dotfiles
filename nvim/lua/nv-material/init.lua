@@ -1,14 +1,14 @@
-vim.g.material_flat_ui = 1
-vim.g.material_italic_comments = 1
-vim.g.material_italic_keywords = 1
-vim.g.material_italic_functions = 1
-vim.g.material_italic_variables = 1
+-- vim.g.material_flat_ui = 1
+vim.g.material_italic_comments = true
+vim.g.material_italic_keywords = true
+vim.g.material_italic_functions = true
+vim.g.material_italic_variables = true
 vim.g.material_style = "palenight"
 vim.g.material_contrast = false
 vim.g.material_borders = false
 vim.g.material_disable_background = true
 
-require('colorbuddy').colorscheme('material')
+require('material').set()
 
 vim.api.nvim_exec([[highlight Normal guibg=none]], true)
 

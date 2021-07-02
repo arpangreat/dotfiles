@@ -212,7 +212,7 @@ vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"
 
 
 -- LspSaga
-vim.api.nvim_set_keymap('n', 'gh', "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ef', "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>ea', "<cmd>lua require('lspsaga.codeaction').code_action()<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('v', '<Leader>ea', ":<C-U>lua require('lspsaga.codeaction').ranger_code_action()<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>eh', "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>", { noremap = true , silent = true })
