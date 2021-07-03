@@ -170,6 +170,8 @@ bindkey -v
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
 
+# eval "$(starship init zsh)"
+
 # base16
 # BASE16_SHELL="$HOME/.config/base16-shell/"
 # [ -n "$PS1" ] && \
@@ -206,7 +208,11 @@ function _pip_completion {
 
 compctl -K _pip_completion pip3
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# The plugin will auto execute this zvm_after_init function
+function zvm_after_init() {
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+}
+
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --preview "bat --color 'always' {}"
 --color=dark
