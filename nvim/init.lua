@@ -53,6 +53,7 @@ require('nv-rainbow')
 require('nv-gitsigns')
 -- require('nv-nvim-tree')
 require('nv-lsp-configs')
+require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-orgmode')
 
