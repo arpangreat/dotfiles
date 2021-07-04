@@ -146,8 +146,13 @@ vim.cmd([[
 imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
 ]])
 
+-- HACK: Chain Completion for completion-nvim
+vim.api.nvim_exec([[
+let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
+let g:completion_auto_change_source = 1
+]], true)
+
 --HACK:
--- TODO: do something
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
 -- for movement, rather than using more efficient movement commands, is also a

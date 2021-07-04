@@ -161,6 +161,10 @@ alias lta='exa -l -g --icons --tree -a'
 alias l='ls'
 alias lg='lazygit'
 alias obs="QT_QPA_PLATFORM=xcb obs"
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
 
 bindkey -v
 
@@ -246,6 +250,25 @@ export VAULT_EDITOR=/usr/bin/nvim
 # Spaceship configs
 SPACESHIP_BATTERY_THRESHOLD=30
 SPACESHIP_VI_MODE_COLOR=#ff87d7
+# ORDER
+# SPACESHIP_PROMPT_ORDER=(
+#   time     #
+#   vi_mode  # these sections will be
+#   user     # before prompt char
+#   host     #
+#   char
+#   dir
+#   git
+#   node
+#   ruby
+#   xcode
+#   swift
+#   golang
+#   docker
+#   venv
+#   pyenv
+# )
+
 # SPACESHIP_CHAR_SYMBOL='-->'
 # SPACESHIP_CHAR_SUFFIX=' '
 # export ANDROID_SDK=
