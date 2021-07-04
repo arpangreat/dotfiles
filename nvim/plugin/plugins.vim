@@ -123,7 +123,7 @@ Plug 'Pocco81/DAPInstall.nvim'
 
 " Plug 'mhinz/vim-startify'
 Plug 'glepnir/dashboard-nvim'
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-git'
