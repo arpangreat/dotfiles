@@ -224,3 +224,6 @@ vim.api.nvim_set_keymap('n', '<Leader>ee', "<cmd>lua require'lspsaga.provider'.p
 vim.api.nvim_set_keymap('n', '<Leader>ec', "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n', '[e', "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n', ']e', "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>", { noremap = true , silent = true })
+
+-- Symbols Outline
+vim.api.nvim_set_keymap('n', '<Leader>so', '<cmd>SymbolsOutline<CR>', { noremap = true, silent = false, expr = false })

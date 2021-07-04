@@ -8,10 +8,10 @@ then
   
   tmux new-session -s CdTm -n IDE -d
   tmux new-window -t CdTm -d -n zsh
-  tmux new-window -t CdTm -d -n BashTop
+  tmux new-window -t CdTm -d -n Bottom
   
   # tmux send-keys -t CdTm:IDE "ide" Enter
-  tmux send-keys -t CdTm:BashTop "bashtop" Enter
+  tmux send-keys -t CdTm:Bottom "btm" Enter
   
   tmux select-window -t CdTm:IDE
   tmux split-window -v -p 5
