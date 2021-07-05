@@ -13,6 +13,7 @@ require("todo-comments").setup {
     WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
     PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
     NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
+    TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
   },
   -- highlighting of the line containing the todo comment
   -- * before: highlights before the keyword (typically comment characters)
@@ -33,6 +34,7 @@ require("todo-comments").setup {
     info = { "LspDiagnosticsDefaultInformation", "#2563EB" },
     hint = { "LspDiagnosticsDefaultHint", "#10B981" },
     default = { "Identifier", "#7C3AED" },
+    test = { "Identifier", "#FF00FF" }
   },
   search = {
     command = "rg",
