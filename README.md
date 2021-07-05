@@ -89,3 +89,10 @@ Defaults env_reset,pwfeedback
 # IF NVIM BUILD FROM SOURCE BREAKS , use ./nvim/nvim.txt commit tag to fallback to safe zone, also use it inside official neovim repo clone inside $HOME
 `git checkout #the tag`
 
+# Fonts ( Also see Fonts/ )
+Download from [Operator Mono](https://fontsfree.net/operator-mono-medium-font-download.html)
+Download from [Operator Book](https://fontsfree.net/operator-mono-book-font-download.html)
+Download from [Operator Itaic](https://fontsfree.net/operator-mono-book-italic-2-font-download.html)
+Download from [Operator Bold](https://fontsfree.net/operator-mono-bold-font-download.html)
+
+## And follow this link to use [ligatures Support](https://github.com/kiliman/operator-mono-lig)
