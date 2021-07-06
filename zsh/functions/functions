@@ -171,3 +171,15 @@ function ttc() {
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 }
+
+function c() {
+  if [ "$1" = b ]; then
+    command cargo build
+  elif [ "$1" = r ]; then
+    command cargo run
+  elif [ "$1" = t ]; then
+    command cargo test
+  else
+    command cargo --help
+  fi
+}

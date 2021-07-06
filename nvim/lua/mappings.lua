@@ -227,3 +227,6 @@ vim.api.nvim_set_keymap('n', ']e', "<cmd>lua require'lspsaga.diagnostic'.lsp_jum
 
 -- Symbols Outline
 vim.api.nvim_set_keymap('n', '<Leader>so', '<cmd>SymbolsOutline<CR>', { noremap = true, silent = false, expr = false })
+
+-- HACK: Formating Big Lines with g
+vim.api.nvim_set_keymap('n', '<Leader>fg', "<cmd>g/ ./ normal gqq<CR>", { noremap = true, silent = false, expr = false })
