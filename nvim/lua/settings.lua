@@ -12,19 +12,22 @@ vim.o.inccommand = "split"
 vim.o.smartindent = true
 vim.o.wrap = false
 vim.o.colorcolumn = '120'
-vim.o.showcmd = true
+vim.o.showcmd = false
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.signcolumn="yes"
 vim.o.scrolloff = 8
 vim.o.showmode = false
-vim.o.completeopt = "menuone,noinsert,noselect"
+vim.o.completeopt = "menuone"
+vim.o.completeopt = "noinsert"
+vim.o.completeopt = "noselect"
 vim.o.hidden = true
 -- vim.o.include
 vim.o.display = "lastline"
 vim.o.backspace = "indent,eol,start"
 vim.o.winblend = 0
 vim.o.pumblend = 30
+vim.o.textwidth = 80
 
 -- Visuals
 vim.o.syntax = "enable"
@@ -54,9 +57,8 @@ vim.cmd("set undofile")
 vim.o.undodir='/home/arpangreat/.vim/undodir'
 vim.o.backupdir="/home/arpangreat/.vim/backupdir"
 vim.o.swapfile = false
-vim.o.shada="!,'1000,<50,s10,h"
-vim.o.viminfo="'100,n$HOME/.vim/files/info/viminfo"
 vim.o.clipboard = "unnamedplus"
+vim.o.emoji = false
 
 -- Times
 vim.o.ttimeoutlen = 50

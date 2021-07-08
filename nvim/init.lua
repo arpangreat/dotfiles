@@ -9,10 +9,9 @@
 --                                                                     |___/ |___/
 --
 --========================================================================================
-vim.cmd("source $HOME/dotfiles/nvim/plugin/plugins.vim")
-vim.cmd("source $HOME/dotfiles/nvim/tmuxline.vim")
 
 -- Lua file
+require('plugins')
 require('arpangreat')
 require('settings')
 -- require('nv-compe')
@@ -57,6 +56,7 @@ require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-orgmode')
 
+vim.cmd("autocmd BufWritePost plugins.lua PackerCompile")
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
 vim.cmd("hi FloatermBorder guifg=cyan")
