@@ -1,12 +1,12 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
-
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-
-if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
-  execute 'packadd packer.nvim'
-end
+-- local execute = vim.api.nvim_command
+-- local fn = vim.fn
+--
+-- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+--
+-- if fn.empty(fn.glob(install_path)) > 0 then
+--   fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
+--   execute 'packadd packer.nvim'
+-- end
 
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
@@ -64,7 +64,6 @@ return require('packer').startup(function()
   use 'VundleVim/Vundle.vim'
   -- use 'vim-airline/vim-airline'
   -- use 'vim-airline/vim-airline-themes'
-  use 'p00f/nvim-ts-rainbow'
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
@@ -105,6 +104,8 @@ return require('packer').startup(function()
   use 'eddyekofo94/gruvbox-flat.nvim'
   use 'ful1e5/onedark.nvim'
   use 'sainnhe/gruvbox-material'
+  use {'nxvu699134/vn-night.nvim'}
+
   
   -- Language specific
   use 'tpope/vim-surround'
