@@ -18,9 +18,7 @@ vim.o.softtabstop = 4
 vim.o.signcolumn="yes"
 vim.o.scrolloff = 8
 vim.o.showmode = false
-vim.o.completeopt = "menuone"
-vim.o.completeopt = "noinsert"
-vim.o.completeopt = "noselect"
+vim.o.completeopt = "menuone,noselect"
 vim.o.hidden = true
 -- vim.o.include
 vim.o.display = "lastline"
@@ -57,6 +55,8 @@ vim.cmd("set undofile")
 vim.o.undodir='/home/arpangreat/.vim/undodir'
 vim.o.backupdir="/home/arpangreat/.vim/backupdir"
 vim.o.swapfile = false
+vim.o.splitright = true
+vim.o.splitbelow = true
 vim.o.clipboard = "unnamedplus"
 vim.o.emoji = false
 

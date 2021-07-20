@@ -32,6 +32,14 @@ vim.api.nvim_set_keymap('n','\\gr',':!go run %<CR>',{ noremap = true , silent = 
 vim.api.nvim_set_keymap('n','\\gb',':!go build<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','\\gt',':!go test<CR>',{ noremap = true , silent = false })
 
+-- Compe
+vim.api.nvim_set_keymap('i', '<C-Space>', 'compe#complete()', { noremap = true, silent = true, expr = true })
+vim.api.nvim_set_keymap('i',  '<CR>', "compe#confirm('<CR>')", { noremap = true, silent = true, expr = true })
+vim.api.nvim_set_keymap('i',  '<C-e>', "compe#close('<C-e>')", { noremap = true, silent = true, expr = true })
+vim.api.nvim_set_keymap('i',  '<C-f>', "compe#scroll({ 'delta': +4 })", { noremap = true, silent = true, expr = true })
+vim.api.nvim_set_keymap('i',  '<C-d>', "compe#scroll({ 'delta': -4 })", { noremap = true, silent = true, expr = true })
+
+
 -- Telescope
 
 vim.api.nvim_set_keymap('n','<F8>',':TagBarToggle<CR>',{ noremap = false, silent = false })
@@ -73,14 +81,16 @@ vim.api.nvim_set_keymap("n", "<Leader>gwt", ":lua require('telescope').extension
 -- noremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
 
 -- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
-vim.api.nvim_set_keymap('n','<Leader>gs',':G<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gs',':Neogit<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gd',':DiffviewOpen<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gD',':DiffviewOpen main<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gv',':GitFiles<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>r',':luafile %<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gc',':Git commit<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gp',':Git push<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gc',':Neogit commit<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gp',':Neogit push<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gb',':Gblame<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gl',':Glog<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gf',':Gpull<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gl',':Neogit log<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gf',':Neogit pull<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>go',':GCheckout<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>gm',':GitMessenger<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>',":WhichKey '<Space>'<CR>", { noremap = true , silent = true })
@@ -126,7 +136,7 @@ vim.api.nvim_set_keymap('n','<Leader>ns',":lua require('arpangreat.telescope').s
 -- ]], true)
 
 -- Nvim Lsp mappings
-vim.api.nvim_set_keymap('n','<c-]','<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true , silent = true})
+vim.api.nvim_set_keymap('n','<c-]>','<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','K','<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','gD','<cmd>lua vim.lsp.buf.implementation()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','<c-K>','<cmd>lua vim.lsp.buf.signature_help()<CR>', {noremap = true , silent = true})
@@ -227,6 +237,17 @@ vim.api.nvim_set_keymap('n', ']e', "<cmd>lua require'lspsaga.diagnostic'.lsp_jum
 
 -- Symbols Outline
 vim.api.nvim_set_keymap('n', '<Leader>so', '<cmd>SymbolsOutline<CR>', { noremap = true, silent = false, expr = false })
+
+-- Neoterm
+vim.api.nvim_set_keymap('n', '<C-q>', ':Ttoggle<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', '<C-q>', ':Ttoggle<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('t', '<C-q>', '<C-\\><C-n>:Ttoggle<CR>', { noremap = true, silent = false, expr = false })
+
+-- Vim Test
+vim.api.nvim_set_keymap('n', 'tt', ':TestNearest<CR>', { noremap = true, silent = true, expr = false })
+vim.api.nvim_set_keymap('n', 'tf', ':TestFile<CR>', { noremap = true, silent = true, expr = false })
+vim.api.nvim_set_keymap('n', 'ts', ':TestSuite<CR>', { noremap = true, silent = true, expr = false })
+vim.api.nvim_set_keymap('n', 't_', ':TestLast<CR>', { noremap = true, silent = true, expr = false })
 
 -- HACK: Formating Big Lines with g
 vim.api.nvim_set_keymap('n', '<Leader>fg', "<cmd>g/ ./ normal gqq<CR>", { noremap = true, silent = false, expr = false })
