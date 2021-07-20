@@ -9,9 +9,10 @@
 --                                                                     |___/ |___/
 --
 --========================================================================================
+vim.cmd("source /home/arpangreat/dotfiles/nvim/my-vim/plugins.vim")
 
 -- Lua file
-require('plugins')
+-- require('plugins')
 require('arpangreat')
 require('settings')
 -- require('nv-compe')
