@@ -93,6 +93,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'simrat39/symbols-outline.nvim'
+Plug 'puremourning/vimspector'
 
 Plug 'janko/vim-test'
 Plug 'rcarriga/vim-ultest', { 'do': ':UpdateRemotePlugins' }
