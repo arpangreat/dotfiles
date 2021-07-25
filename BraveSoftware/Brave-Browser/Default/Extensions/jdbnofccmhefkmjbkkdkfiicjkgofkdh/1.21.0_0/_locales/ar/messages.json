@@ -1,0 +1,1310 @@
+{
+   "contextmenu_add": {
+      "message": "إنشاء جديد"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "إضافة إشارة مرجعية"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "مدير الإشارات المرجعية"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "فحص الإشارات المرجعية"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "إغلق جميع الدلائل"
+   },
+   "contextmenu_copy": {
+      "message": "نسخ الرابط الى المحفظة"
+   },
+   "contextmenu_current_tab": {
+      "message": "افتح في التبويب الحالي"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "حذف الإشارة المرجعية"
+   },
+   "contextmenu_delete_dir": {
+      "message": "حذف الدليل"
+   },
+   "contextmenu_delete_separator": {
+      "message": "حذف الفاصل"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "إلغاء علامة"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "الغاء مجلد"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "تحرير إشارة مرجعية"
+   },
+   "contextmenu_edit_dir": {
+      "message": "تحرير الدليل"
+   },
+   "contextmenu_edit_separator": {
+      "message": "تحرير الفاصل"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "إخفاء من الشريط الجانبي"
+   },
+   "contextmenu_infos": {
+      "message": "معلومات"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "اختصارات لوحة المفاتيح"
+   },
+   "contextmenu_new_tab": {
+      "message": "افتح في علامة تبويب جديدة"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "افتح في نافذة التصفح المتخفي"
+   },
+   "contextmenu_new_window": {
+      "message": "افتح في نافذة جديدة"
+   },
+   "contextmenu_open_children": {
+      "message": "إفتح الإشارات المرجعية"
+   },
+   "contextmenu_pin": {
+      "message": "تثبيت فالأعلى"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "تحديث الشريط الجانبي"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "اختر علامة"
+   },
+   "contextmenu_select_dir": {
+      "message": "اختر مجلد"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "أظهر في الدليل"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "إظهار في الشريط الجانبي"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "إظهار المعطيات المخفية"
+   },
+   "contextmenu_unpin": {
+      "message": "إلغاء التثبيت في الأعلى"
+   },
+   "contribute_intro": {
+      "message": "لتحسين الإضافة ، أود أن أعرف بشكل أفضل كيفية استخدام المستخدمين للشريط الجانبي والتكوين الذي يستخدمونه."
+   },
+   "contribute_notice": {
+      "message": "يمكنك مساعدتي عن طريق مشاركة التكوين الخاص بك"
+   },
+   "contribute_outro": {
+      "message": "إذا كانت لديك أسئلة أو مخاوف بشأن مشاركة المعلومات ، فيرجى إرسال رسالة ملاحظات إليّ."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "يمكنك مشاركة نشاطك داخل الشريط الجانبي بشكل مجهول ، مما يساعدني على معرفة كيفية استخدام المستخدمين للشريط الجانبي بشكل عام. لن يتم قياس معلومات حول إشاراتك المرجعية أو مواقع الويب التي قمت بزيارتها."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "هذه المعلومات مفيدة للغاية لتحديد المشاكل في سهولة الاستخدام أو الميزات التي لا تستخدم على سبيل المثال في كثير من الأحيان."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "كم عدد الإشارات المرجعية التي يمتلكها المستخدمون في المتوسط؟"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "ماهو النظام الأساسي للمستخدمين (Windows ، Mac ، Linux ، ...)؟"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "هل يستخدم المستخدمون البحث؟"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "هل يقوم المستخدمون بتغيير فرز الإشارات المرجعية؟"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "كم مرة يقوم المستخدمون بإعادة ترتيب أو تحرير الإدخالات؟"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "البيانات المشتركة هي على سبيل المثال:"
+   },
+   "contribute_share_activity_label": {
+      "message": "مشاركة النشاط"
+   },
+   "contribute_share_config_desc": {
+      "message": "أنت تشارك التكوين الخاص بك بشكل مجهول ، مما يساعدني على تحديد الإعدادات الشائعة ومعرفة ما يجب تحسينه أو تغييره في الإصدارات المستقبلية."
+   },
+   "contribute_share_config_label": {
+      "message": "مشاركة التكوين"
+   },
+   "extension_desc": {
+      "message": "يضيف شريط جانبي يسار شاشتك يحتوي على جميع إشاراتك المرجعية"
+   },
+   "extension_last_update": {
+      "message": "اخر تحديث منذ {1}"
+   },
+   "extension_name": {
+      "message": "قائمة الاشارات الجانبية"
+   },
+   "extension_version": {
+      "message": "النسخة"
+   },
+   "header_bookmarks": {
+      "message": "الإشارات المرجعية"
+   },
+   "header_bookmarks_single": {
+      "message": "الإشارة المرجعية"
+   },
+   "header_selected_entries": {
+      "message": "المختارة"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "نسخ عنوان الرابط للدخول الذي تم تمريره حاليا"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "يزيل الإدخال الذي تم تمريره حاليًا"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "تنفيذ نقرة على الإدخال الذي تم تمريره حاليًا"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "يغلق الشريط الجانبي او التراكب المفتوح السياق"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "أمر"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "السيطرة"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "حذف"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "أدخل"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "خروج"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "تحول"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "التبويب"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "يفتح السياق للدخول الذي تم تمريره حاليا"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "مرر المؤشر( الفأرة) لحقل القادم او السابق في الشريط الجانبي"
+   },
+   "more_link": {
+      "message": "أعرف أكثر"
+   },
+   "newtab_fallback_desc": {
+      "message": "لقد فتحنا علامة تبويب جديدة مع الشريط الجانبي لك بدلا من ذلك."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "لا يمكن استخدام الشريط الجانبي في صفحات الإضافة"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "تم حظر الشريط الجانبي"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "لا يمكن استخدام الشريط الجانبي في صفحة علامة التبويب الجديدة الافتراضية"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "لا يمكن استخدام الشريط الجانبي في صفحات نظام الكروم"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "حظر أحد قواعد عنوان URL الشريط الجانبي لفتحه"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "لا يمكن استخدام الشريط الجانبي على متجر كروم"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "عرض هذه الصفحة دائمًا عند فتحعلامة تبويب جديدة"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "عرض أيقونات الموقع"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "عرض معاينات الموقع"
+   },
+   "newtab_grid_links_custom": {
+      "message": "تعريفات المستخدم"
+   },
+   "newtab_grid_links_default": {
+      "message": "الصفحات العلوية"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "حجم الشبكة"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "لا تظهر الصفحات"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "معظم المواقع المستخدمة"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "الإشارات المستخدمة مؤخرًا"
+   },
+   "newtab_search_engine_custom": {
+      "message": "تعريف المستخدم"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "عنوان"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "عنوان URL للصفحة الرئيسية"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "عنوان URL لنتائج البحث"
+   },
+   "newtab_search_engine_headline": {
+      "message": "محرك البحث"
+   },
+   "newtab_search_field_hide": {
+      "message": "قم بإخفاء حقل البحث"
+   },
+   "newtab_search_field_show": {
+      "message": "قم بإظهار حقل البحث"
+   },
+   "newtab_search_placeholder": {
+      "message": "ابحث عن {1} أو اكتب عنوان URL"
+   },
+   "newtab_speech_search_error": {
+      "message": "لتمكين البحث عن الكلام ، عليك السماح بالوصول إلى الميكروفون."
+   },
+   "newtab_speech_search_listening": {
+      "message": "تكلم الآن"
+   },
+   "newtab_title": {
+      "message": "علامة تبويب جديدة"
+   },
+   "newtab_upload_background": {
+      "message": "تحميل صورة الخلفية"
+   },
+   "onboarding_finish_desc": {
+      "message": "نلهو مع الشريط الجانبي الخاص بك."
+   },
+   "onboarding_finish_notice": {
+      "message": "إذا كنت تنقر باستمرار على أشياء في الجانب {1} من نافذة المتصفح ، فقد ترغب في تغيير المكان الذي يمكن فيه فتح الشريط الجانبي رأسياً لتجنب فتحه عن طريق الخطأ."
+   },
+   "onboarding_goto_appearance": {
+      "message": "ضبط المظهر"
+   },
+   "onboarding_goto_settings": {
+      "message": "مزيد من الإعدادات"
+   },
+   "onboarding_handson_desc": {
+      "message": "الآن يمكنك تجربتها بنفسك."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "انقر على رمز الإضافة لفتح الشريط الجانبي."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "حرك المؤشر إلى {1} حافة نافذتك."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "ثم {1} انقر بالماوس لفتح الشريط الجانبي."
+   },
+   "onboarding_headline": {
+      "message": "شكرًا لك على تثبيتك هذه الإضافة."
+   },
+   "onboarding_left": {
+      "message": "يسار"
+   },
+   "onboarding_right": {
+      "message": "يمين"
+   },
+   "onboarding_setup": {
+      "message": "الإعداد الآن"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "كيف تريد فتح الشريط الجانبي؟"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "أين تريد أن يكون الشريط الجانبي الخاص بك؟"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "غامق"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "أي نمط تفضل؟"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "فاتح"
+   },
+   "onboarding_skip": {
+      "message": "تخطي الإعداد"
+   },
+   "onboarding_title": {
+      "message": "إعداد"
+   },
+   "overlay_add_position": {
+      "message": "موضع"
+   },
+   "overlay_add_position_append": {
+      "message": "إلحاق بدليل"
+   },
+   "overlay_add_position_prepend": {
+      "message": "إضافة لدليل"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "معلومات اضافية"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "تم إنشاؤها في"
+   },
+   "overlay_bookmark_title": {
+      "message": "عنوان"
+   },
+   "overlay_bookmark_url": {
+      "message": "رابط"
+   },
+   "overlay_bookmark_views": {
+      "message": "رؤى"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "كل شهر"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "مسجلة منذ"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "رؤية"
+   },
+   "overlay_cancel": {
+      "message": "الغاء"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "التحقق من عناوين مواقع العلامات المرجعية"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "كسرت"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "تغيرت"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "مكررة"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "دلائل فارغة"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "جميع عناوين المواقع المرجعية على ما يرام"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "لا توجد عناوين إشارة مرجعية مكسورة"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "لا توجد عناوين إشارة مرجعية قد تم تغييرها"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "لا توجد عناوين إشارة مرجعية مكررة"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "لا توجد دلائل بدون إشارات مرجعية"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "حذف المحدد"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "تحديث المحدد"
+   },
+   "overlay_close": {
+      "message": "اغلاق"
+   },
+   "overlay_confirm_open_children": {
+      "message": "هل تريد حقًا فتح جميع الإشارات المرجعية التابعة لـ {1}؟"
+   },
+   "overlay_delete": {
+      "message": "حذف"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "هل تريد حقًا حذف هذه الإشارة المرجعية؟"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "هل تريد حقًا حذف هذا الدليل؟ ستتم إزالة جميع الإشارات المرجعية أيضًا."
+   },
+   "overlay_dir_children": {
+      "message": "عناصر"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "إشارات مرجعية"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "الدلائل"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "هل تريد حقًا إخفاء هذه الإشارة المرجعية من الشريط الجانبي؟"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "هل تريد حقًا إخفاء هذا الدليل من الشريط الجانبي؟ سيتم إخفاء جميع الإشارات المرجعية التابعة أيضًا."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "إخفاء من الشريط الجانبي"
+   },
+   "overlay_label_bookmark": {
+      "message": "المرجعية"
+   },
+   "overlay_label_dir": {
+      "message": "دليل"
+   },
+   "overlay_label_separator": {
+      "message": "الفاصل"
+   },
+   "overlay_open_children": {
+      "message": "افتح الكل"
+   },
+   "overlay_save": {
+      "message": "حفظ"
+   },
+   "overlay_separator_title_desc": {
+      "message": "يمكنك اختياريا إدخال عنوان. سيتم عرضه أعلى السطر الفاصل ويمكن أن يساعدك في تنظيم قائمة الإشارات المرجعية الخاصة بك."
+   },
+   "overlay_update": {
+      "message": "تحديث"
+   },
+   "premium_activate": {
+      "message": "تفعيل النسخة المدفوعة الثمن"
+   },
+   "premium_already_activated": {
+      "message": "أنت تستخدم النسخة المدفوعة مسبقا ً"
+   },
+   "premium_desc_1": {
+      "message": "مع النسخة المدفوعة الثمن سوف يمكنك الحصول على ميزات اضافيه ومساعدتي في صيانة التمديد."
+   },
+   "premium_desc_2": {
+      "message": "يمكنك الاطلاع علي الميزات المدرجة في Premium أدناه. جميع الميزات الرئيسية للملحق مجانية ولن تتطلب الإرتقاء ل Premium علي الإطلاق. يمكنك دفع ما التمديد وعملي تعتبره يستحق ذلك بأمانة ، وللحصول هذه الميزات."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "إذا كنت تستخدم صفحه علامة تبويب جديده من هذا الملحق ، يمكنك تعيين صوره الخلفية الخاصة بك لجعلها تبدو أنسب."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "تخصيص صفحه علامة التبويب الجديدة"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "إذا كنت معتادا علي إستعمال CSS ، يمكنك تغيير المظهر الكامل للشريط الجانبي عن طريق إضافه تعريفات الأنماط الخاصة بك. وهذا يسمح لك تخصيص كل شيء علي الإطلاق."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "تخصيص كل شيء مع ورقه الأنماط الخاصة بك"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "مع Premium يمكنك الوصول إلى الميزات غير المنشورة، والتي هي حاليا قيد التطوير أو الاختبار."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "كن أول من يختبر الميزات التجريبية الجديدة"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "استيراد وتصدير الخصائص الخاصة بك"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "يمكنك النقر بزر الماوس الأيمن فوق أي دليل في الشريط الجانبي الخاص بك وتفحصه. صفحة النتائج سوف تظهر كل عناوين المواقع المحدثة، والعناوين التي لم تعد تعمل والإشارات ذات ال URL نفسه."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "تحقق من الإشارات المرجعية للارتباطات المكسورة أو التكرارات"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "غير عرض الشريط الجانبي بأي وقت"
+   },
+   "premium_feature_themes_desc": {
+      "message": "يمكنك تبديل التصميم الكامل للشريط الجانبي بنقرة واحدة عن طريق تثبيت سمة أخرى. كما يمكن تخصيصها باستخدام أشرطة التمرير وخيارات الألوان المتاحة."
+   },
+   "premium_feature_themes_headline": {
+      "message": "تغيير مظهر الشريط الجانبي الخاص بك"
+   },
+   "premium_get_now": {
+      "message": "احصل على النسخة المدفوعة الثمن الآن"
+   },
+   "premium_license_key": {
+      "message": "مفتاح الترخيص"
+   },
+   "premium_pay_buy": {
+      "message": "شراء Premium"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "سياسة الإلغاء"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "تأكيد الشراء"
+   },
+   "premium_pay_contact": {
+      "message": "إذا كنت تواجه اي مشاكل في الدفع أو لديك اي اسئله ، يرجى الاتصال بي في {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "بطاقة الائتمان أو الخصم"
+   },
+   "premium_pay_eula": {
+      "message": "اتفاقية ترخيص المستخدم النهائي"
+   },
+   "premium_pay_eula_desc": {
+      "message": "لقد قرأت و قبلت [a]اتفاقية ترخيص المستخدم النهائي[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "تنتهي صلاحية البطاقة في"
+   },
+   "premium_pay_info_card_number": {
+      "message": "رقم البطاقة"
+   },
+   "premium_pay_info_email": {
+      "message": "البريد الالكتروني"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "الرجاء إدخال عنوان البريد الخاص بك لاستلام مفتاح الترخيص."
+   },
+   "premium_pay_info_name": {
+      "message": "الاسم"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "طريقة الدفع"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "الرمز البريدي"
+   },
+   "premium_pay_license_key_desc": {
+      "message": "إذا كنت ترغب في تنشيط {1} علي جهاز آخر أو بعد إعادة تثبيت الملحق ، يمكنك إدخال المفتاح التالي في إعدادات الملحق:"
+   },
+   "premium_pay_price_info": {
+      "message": "هذه الرسوم لمرة واحدة فقط ، وتشمل جميع الميزات المقدمة في المستقبل"
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "يمكنك دفع ما تعتقد أن التمديد وعملي يستحق لك للوصول إلى الميزات المتميزة. سوف تتلقى دائما جميع الميزات قسط، بغض النظر عن المبلغ الذي كنت على استعداد لدفع."
+   },
+   "premium_pay_price_total": {
+      "message": "المجموع"
+   },
+   "premium_pay_purchase_id": {
+      "message": "معرف الشراء"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "اختر طريقة الدفع"
+   },
+   "premium_pay_success_headline": {
+      "message": "شكرا على شرائك"
+   },
+   "premium_pay_success_info": {
+      "message": "تم تنشيط {1} تلقائيا لهذا الجهاز. ليس عليك القيام بأي خطوات أخرى."
+   },
+   "premium_pay_verifying": {
+      "message": "جاري التحقق من صحة المعاملة وقبولها"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "امسح هذا الرمز QR علي WeChat للمتابعة."
+   },
+   "premium_pay_what_you_want": {
+      "message": "ادفع ما تريد"
+   },
+   "premium_popup_text": {
+      "message": "هل ألقيت نظرة على النسخة المدفوعة الثمن ؟"
+   },
+   "premium_restricted_text": {
+      "message": "هذه الميزة متوفرة فقط في النسخة المدفوعة الثمن"
+   },
+   "premium_show_license_input": {
+      "message": "أنا امتلك النسخة المدفوعة الثمن مسبقا ً"
+   },
+   "settings_advanced": {
+      "message": "إعدادات الخبير"
+   },
+   "settings_available_themes": {
+      "message": "السمات المتاحة"
+   },
+   "settings_background_blur": {
+      "message": "تأثير طمس الخلفية"
+   },
+   "settings_background_transparency": {
+      "message": "شفافية الخلفية"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "لون رمز الدليل"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "رمز الدليل"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "المسافة البادئة الدليل"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "حجم خط الإشارات المرجعية"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "علامات الحشو الأفقي"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "حجم رمز الإشارات المرجعية"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "ارتفاع خط الإشارات"
+   },
+   "settings_close_timeout": {
+      "message": "إغلاق المهلة"
+   },
+   "settings_close_timeout_desc": {
+      "message": "المهلة بعد ثوانٍ من إغلاق الشريط الجانبي. سيتم احتساب الماوس بمجرد ترك الماوس للشريط الجانبي ويتوقف عند تحريكه مرة أخرى."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "لا تغلق تلقائيا"
+   },
+   "settings_color_scheme": {
+      "message": "نظام الألوان"
+   },
+   "settings_color_scheme_desc": {
+      "message": "لون رأس الشريط الجانبي ، ومربعات الاختيار ، وما إلى ذلك."
+   },
+   "settings_custom_css": {
+      "message": "ورقة أنماط مخصصة"
+   },
+   "settings_custom_css_desc": {
+      "message": "يمكنك تحديد ورقة الأنماط الخاصة بك لتجاوز التصميم الافتراضي. يرجى استخدام هذا الخيار فقط ، إذا كنت على دراية بـ CSS وتعرف ما تقوم به."
+   },
+   "settings_dark_mode": {
+      "message": "سطح - المظهر الخارجي"
+   },
+   "settings_dir_accordion": {
+      "message": "إظهار الدليل الحالي فقط"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "يغلق جميع الأدلة باستثناء الدليل النشط."
+   },
+   "settings_directories_icon_size": {
+      "message": "حجم رمز الأدلة"
+   },
+   "settings_directory_arrows": {
+      "message": "اسهم المجلدات"
+   },
+   "settings_expert_save_error": {
+      "message": "لا يمكن حفظ الإعدادات. يرجى تصحيح المدخلات الخاصة بك."
+   },
+   "settings_expert_settings_desc": {
+      "message": "باستخدام إعدادات الخبير ، يمكنك تغيير أي اعداد محدد في الإضافة ، حتى تلك التي لا يمكنك تغييرها باستخدام مربعات الاختيار المعتادة أو منزلقات صفحة الإعدادات."
+   },
+   "settings_expert_settings_notice": {
+      "message": "يرجى تغيير هذه القيم فقط ، إذا كنت تعرف ما تفعله. يمكن أن تسبب التكوينات الخاطئة سلوكًا غير متوقع للإضافة. إذا تعطل شيء ما ، يمكنك العودة إلى الإعدادات الافتراضية"
+   },
+   "settings_export": {
+      "message": "إعدادات التصدير"
+   },
+   "settings_filter_explanation_1": {
+      "message": "فقط قم باضافة نمط رابط واحد لكل سطر"
+   },
+   "settings_filter_explanation_2": {
+      "message": "استخدم * لمطابقة أي حرف (على سبيل المثال ، example.com/* يتوافق مع جميع الصفحات الموجودة تحت example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "إذا لم تقم بتضمين أي * في قاعدة ، فسيتطابق عنوان URL الصحيح فقط (على سبيل المثال ، لن يتطابق \"example.com\" مع عنوان url \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "لست بحاجة إلى إضافة البروتوكول (على سبيل المثال ، http: //) في القواعد"
+   },
+   "settings_filter_intro": {
+      "message": "إذا كنت لا تريد تحميل الشريط الجانبي على كل صفحة ، فيمكنك تهيئة مكان تحميل الامتداد (القائمة البيضاء) أو مكان عدم (القائمة السوداء)."
+   },
+   "settings_filter_rules": {
+      "message": "انماط الروابط"
+   },
+   "settings_filter_visibility": {
+      "message": "تحميل الشريط الجانبي"
+   },
+   "settings_filter_visibility_always": {
+      "message": "على كل صفحة"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "على كل صفحة ما عدا صفحات محددة"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "فقط على صفحات محددة"
+   },
+   "settings_font_family": {
+      "message": "محرف"
+   },
+   "settings_font_family_default": {
+      "message": "افتراضي"
+   },
+   "settings_font_family_desc": {
+      "message": "محرف من الشريط الجانبي والتراكبات"
+   },
+   "settings_header_height": {
+      "message": "ارتفاع الرأس"
+   },
+   "settings_headline_share_userdata": {
+      "message": "تبادل المعلومات"
+   },
+   "settings_hover_color": {
+      "message": "لون المؤشر"
+   },
+   "settings_icon_background_color": {
+      "message": "لون الخلفية"
+   },
+   "settings_icon_color": {
+      "message": "اللون"
+   },
+   "settings_icon_color_auto": {
+      "message": "تلقائي"
+   },
+   "settings_icon_color_custom": {
+      "message": "تخصيص"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "الوان الايقونات سوف تحدد تلقائيا ً لتناسب لون النظام لحاسوبك الشخصي (داكن ام فاتح). يمكنك ايضا ً تخصيص الوانك الخاصة للايقونات"
+   },
+   "settings_icon_color_desc_2": {
+      "message": "{browserName} الرجاء الانتباه الى ان اللون التلقائي لايعمل, عندما يتم استخدام واجهه"
+   },
+   "settings_icon_shape": {
+      "message": "شكل"
+   },
+   "settings_import": {
+      "message": "اعدادات مهمه"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "استيراد/تصدير المفضلة"
+   },
+   "settings_import_export_desc": {
+      "message": "يمكنك تصدير إعدادات الإضافة وحفظها محليًا على جهاز الكمبيوتر الخاص بك. يمكنك استيراد الملف الذي تم تصديره مسبقًا على أي جهاز كمبيوتر ، حيث تم تثبيت الامتداد."
+   },
+   "settings_import_export_headline": {
+      "message": "استيراد/تصدير إعدادات"
+   },
+   "settings_import_export_notice": {
+      "message": ". الخيارات مخفوظة وتتزامن تلقائيا بين أجهزتك، إن قمت بتسجيل الدخول من المتصفح. أذا لم تكن تريد تسجيل الدخول أو تريد مشاركة الضبط مع أحد آخر، يمكنك تصدير الخيارات وحفظها."
+   },
+   "settings_import_failed": {
+      "message": "فشل في استيراد التهيئة. يرجى اختيار ملف صالح."
+   },
+   "settings_import_saved": {
+      "message": "تم استيراد التكوين بنجاح"
+   },
+   "settings_indicator_color": {
+      "message": "اللون"
+   },
+   "settings_indicator_icon_color": {
+      "message": "لون الرمز"
+   },
+   "settings_indicator_icon_size": {
+      "message": "حجم الرمز"
+   },
+   "settings_indicator_width": {
+      "message": "عرض"
+   },
+   "settings_install_theme": {
+      "message": "تثبيت السمة"
+   },
+   "settings_installed_theme_info": {
+      "message": "السمة الحالية"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "ضبط اختصار لوحة المفاتيح"
+   },
+   "settings_language": {
+      "message": "لغة"
+   },
+   "settings_language_default": {
+      "message": "المتصفح الافتراضي"
+   },
+   "settings_language_desc": {
+      "message": "لغة واجهة المستخدم"
+   },
+   "settings_link_action": {
+      "message": "العناوين مفتوحة"
+   },
+   "settings_link_action_current_tab": {
+      "message": "علامة التبويب الحالية"
+   },
+   "settings_link_action_desc": {
+      "message": "انقر بزر الماوس الأيسر على أي إشارة مرجعية سيتم فتحها إما في علامة التبويب الحالية أو في علامة تبويب جديدة."
+   },
+   "settings_link_action_new_tab": {
+      "message": "علامة تبويب جديدة"
+   },
+   "settings_menu_appearance": {
+      "message": "مظهر خارجي"
+   },
+   "settings_menu_appearance_general": {
+      "message": "عام"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "أيقونة"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "مؤشر"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "غطاء"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "شريط جانبي"
+   },
+   "settings_menu_dashboard": {
+      "message": "نظرة عامه"
+   },
+   "settings_menu_expert": {
+      "message": "اعدادات الخبير"
+   },
+   "settings_menu_export": {
+      "message": "استيراد و تصدير"
+   },
+   "settings_menu_infos": {
+      "message": "معلومات"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "معلومات عنا"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "التغيير"
+   },
+   "settings_menu_infos_contact": {
+      "message": "اتصال"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "الأذونات"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "الخصوصية"
+   },
+   "settings_menu_language": {
+      "message": "لغة"
+   },
+   "settings_menu_language_general": {
+      "message": "عام"
+   },
+   "settings_menu_language_translate": {
+      "message": "ترجمة"
+   },
+   "settings_menu_newtab": {
+      "message": "علامة تبويب جديدة"
+   },
+   "settings_menu_premium": {
+      "message": "مدفوع"
+   },
+   "settings_menu_sidebar": {
+      "message": "الشريط الجانبي"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "منقي"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "عام"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "تبديل"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "تلميحات"
+   },
+   "settings_menu_support": {
+      "message": "الدعم"
+   },
+   "settings_new_tab": {
+      "message": "علامة تبويب جديدة"
+   },
+   "settings_new_tab_background": {
+      "message": "فتح في الخلفية"
+   },
+   "settings_new_tab_desc": {
+      "message": "افتح الإشارات المرجعية في علامة تبويب جديدة في المقدمة أو الخلفية"
+   },
+   "settings_new_tab_foreground": {
+      "message": "فتح في المقدمة"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "بعد علامة التبويب الحالية"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "بعد علامة التبويب الأخيرة"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "قبل علامة التبويب الأولى"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "افتح علامات تبويب جديدة بعد علامة التبويب الأخيرة أو الحالية"
+   },
+   "settings_newtab_desc": {
+      "message": "للأسف لا تقوم المستعرضات المستندة إلى الكروم بتحميل الملحقات في صفحه علامة التبويب الجديدة الافتراضية. ولهذا أضفت بعض الخيارات التي تتيح لك الوصول إلى إشاراتك المرجعية عند فتح علامة تبويب جديدة بطريقة أخرى."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "التركيز على شريط العنوان"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "اذا تم تمكين هذا الخيار, سيتم التركيز على شريط العنوان الخاص بك عند فتح علامة تبويب جديدة. واذا لم يكن الامر كذلك, سيتم تركيز مربع البحث علي الموقع بدلا من ذلك."
+   },
+   "settings_newtab_override": {
+      "message": "تجاوز صفحة علامة تبويب جديدة"
+   },
+   "settings_newtab_override_desc": {
+      "message": "هل يجب ان يتجاوز الملحق صفحه علامة التبويب الجديدة الحالية باستخدام مخصص أو موقع ويب يجب تحميله عند فتح علامة تبويب جديده ؟"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "افتح الشريط الجانبي تلقائيا"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "قم بتكوين ما إذا كان يجب فتح الشريط الجانبي تلقائيًا عند فتح علامة تبويب جديدة."
+   },
+   "settings_newtab_website": {
+      "message": "تحميل الموقع"
+   },
+   "settings_newtab_website_desc": {
+      "message": "في مكان فتح استبدال علامة التبويب الجديدة ، يمكنك تعيين موقع ويب تم تحميله بدلاً من ذلك."
+   },
+   "settings_not_synced": {
+      "message": "لن تكون متزامنة عبر أجهزتك."
+   },
+   "settings_open_action": {
+      "message": "فتح الشريط الجانبي"
+   },
+   "settings_open_action_desc": {
+      "message": "افتح الشريط الجانبي بالنقر أو تمرير الماوس الأيسر أو الأيمن على حافة نافذة المتصفح. بدلاً من ذلك ، يمكنك تغييرها لفتحها فقط في حالة النقر فوق الرمز الموجود في قائمة كروم."
+   },
+   "settings_open_action_icon": {
+      "message": "انقر على أيقونة"
+   },
+   "settings_open_action_leftclick": {
+      "message": "الزر الأيسر"
+   },
+   "settings_open_action_mouseover": {
+      "message": "تمرير الماوس"
+   },
+   "settings_open_action_rightclick": {
+      "message": "الزر الايمن"
+   },
+   "settings_open_delay": {
+      "message": "تأخير فتح"
+   },
+   "settings_open_delay_desc": {
+      "message": "يمنع على الفور فتح الشريط الجانبي عند تمرير الماوس أو بالنقر مع التأخير."
+   },
+   "settings_overlay_mask_color": {
+      "message": "لون القناع"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "هذه الإضافة تعرض المواقع المحفوظة أو المرجعية في الشريط الجانبي ، وبالتالي تحتاج إلى الإذن للوصول. يسمح الإذن أيضًا لهذه الإضافة أن تقوم بحفظ الإشارات المرجعية ( المواقع ) وتعديلها وإزالتها."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "للأسف {browserName} ليس لديه آلية لعرض المحتوى في نافذة المتصفح دون التفاعل مع صفحه الزيارة الحالية."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "بما ان الشريط الجانبي معروض في أعلى الموقع الحالي ، فان هذا الاذن مطلوب. بالاضافه إلى هذا السبب التقني ، لا يتم استخدام الاذن لأغراض أخرى."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "إذا كان لديك مخاوف بشأن ما أفعله بالإذن، يمكنك الإطلاع عالمصدر البرمجي في موقع Github. انها مفتوحة ومرئية للجميع."
+   },
+   "settings_permissions_desc": {
+      "message": "من أجل جعل الشريط الجانبي قابل للتبديل ممكن في {browserName} ، الأذونات التالية مطلوبه ومطلوبه من قبل الملحق:"
+   },
+   "settings_premium_activated": {
+      "message": "تم تفعيل النظام المدفوع بنجاح"
+   },
+   "settings_premium_invalid_key": {
+      "message": "لم يتم تفعيل النظام المدفوع ، رجاءً أدخل مفتاح رخصة صالح"
+   },
+   "settings_presets": {
+      "message": "ضبط الأحجام النسبية"
+   },
+   "settings_presets_desc": {
+      "message": "يمكنك تحديد أحجام محددة مسبقًا للشريط الجانبي. سيؤدي ذلك إلى تغيير مربعات التمرير في هذه الصفحة لضبط عرض الشريط الجانبي وارتفاع الخطوط وأحجام الأيقونات والعديد من الخيارات الأخرى."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "منع تمرير الصفحة"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "يمنع التمرير من موقع الويب الحالي بينما يكون الشريط الجانبي مفتوحًا."
+   },
+   "settings_prevent_windowed": {
+      "message": "إيقاف الشريط الجانبي في وضع النافذة"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "تعطيل إمكانية فتح الشريط الجانبي بتمرير المؤشر عندما يكون المتصفح في وضع النافذة"
+   },
+   "settings_remember_desc": {
+      "message": "حدد ما تريد تذكره عبر تغييرات الصفحة. إذا اخترت تذكر آخر إشارة مرجعية افتتاحية ، فسيتم تحديدها عند فتح الشريط الجانبي مرة أخرى."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "تذكر الدلائل الفرعية المفتوحة"
+   },
+   "settings_remember_state": {
+      "message": "تذكر"
+   },
+   "settings_remember_state_all": {
+      "message": "موضع التمرير وفتح الدلائل وآخر إشارة مرجعية تم فتحها"
+   },
+   "settings_remember_state_nothing": {
+      "message": "لا شيئ"
+   },
+   "settings_remember_state_open_states": {
+      "message": "الأدلة المفتوحة"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "التمرير وفتح الدلائل"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "فتح دلائل المستوى العلوي"
+   },
+   "settings_reopen_sidebar": {
+      "message": "إعادة فتح الشريط الجانبي"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "افتح الشريط الجانبي تلقائيًا مرة أخرى ، بعد فتح إشارة مرجعية من داخل الشريط الجانبي."
+   },
+   "settings_restore": {
+      "message": "استعادة الافتراضي"
+   },
+   "settings_restore_confirm": {
+      "message": "هل تريد حقا استعادة التكوين الافتراضي؟"
+   },
+   "settings_restored_message": {
+      "message": "تمت استعادة التكوين بنجاح"
+   },
+   "settings_save": {
+      "message": "حفظ التغييرات"
+   },
+   "settings_saved_message": {
+      "message": "تم حفظ التغييرات بنجاح"
+   },
+   "settings_saved_share_userdata": {
+      "message": "تم حفظ تفضيلاتك بنجاح"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "إخفاء شريط التمرير"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "المهلة بعد ثوانٍ من إخفاء شريط التمرير. سيعرض التمرير شريط التمرير مرة أخرى."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "لا تختبئ"
+   },
+   "settings_scroll_bar_width": {
+      "message": "عرض شريط التمرير"
+   },
+   "settings_search_placeholder": {
+      "message": "البحث عن الاعدادات"
+   },
+   "settings_show_themes": {
+      "message": "إظهار السمات المتاحة"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "لون القناع"
+   },
+   "settings_sidebar_position": {
+      "message": "موضع"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "للسماح لك بتعيين ما إذا كان يجب فتح الشريط الجانبي على اليمين أو في الجانب الأيمن من نافذة المتصفح."
+   },
+   "settings_sidebar_position_left": {
+      "message": "يسار"
+   },
+   "settings_sidebar_position_right": {
+      "message": "يمين"
+   },
+   "settings_sidebar_width": {
+      "message": "عرض"
+   },
+   "settings_support_faq_headline": {
+      "message": "أسئلة مكررة"
+   },
+   "settings_support_feedback_desc": {
+      "message": "هل لديك أي اقتراحات للتحسينات أو الأسئلة أو لاحظت فقدان خيارات التكوين أو عثرت على خطأ؟ للمساعدة في تحسين التجارب مع هذه الإضافة ، سأكون ممتنًا جدًا لأي تعليقات تم تقديمها أو قد تكون لديك."
+   },
+   "settings_support_feedback_email": {
+      "message": "عنوان البريد الالكتروني (اختياري)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "رأي"
+   },
+   "settings_support_feedback_notice": {
+      "message": "يرجى كتابة تعليقاتك باللغة الإنجليزية ، وإلا فسيكون من الصعب فهم رسالتك والإجابة عليها."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "إرفاق لقطات الشاشة"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "يمكنك فقط تحميل {1} كحد الأقصى من لقطات الشاشة"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "حجم ملف {1} كبير جدا (> 1 ميغابايت)"
+   },
+   "settings_support_feedback_send": {
+      "message": "ارسل رأيك"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "لا يمكن ارسال رسالتك. حاول مرة اخرى."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "شكرا لك على ملاحظاتك"
+   },
+   "settings_text_color": {
+      "message": "لون الخط"
+   },
+   "settings_theme": {
+      "message": "السمة"
+   },
+   "settings_theme_changed": {
+      "message": "تم تغيير السمة بنجاح"
+   },
+   "settings_theme_default": {
+      "message": "السمة الافتراضية"
+   },
+   "settings_theme_default_desc": {
+      "message": "يتيح لك هذا المظهر الوصول إلى إشاراتك المرجعية بطريقة نظيفة وحديثة. يمكن تغيير لون العديد من العناصر عن طريق تعديل نظام الألوان."
+   },
+   "settings_theme_glass": {
+      "message": "مظهر الزجاج"
+   },
+   "settings_theme_glass_desc": {
+      "message": "يجعل هذا المظهر خلفية الشريط الجانبي شبه شفافة ويضيف تأثير زجاج ضبابي عليه. يمكنك ضبط هذا التأثير وشفافية الشريط الجانبي."
+   },
+   "settings_themes_notice": {
+      "message": "يمكنك اختيار التصميم الأساسي للشريط الجانبي. يمكن تخصيص السمة المحددة باستخدام أشرطة التمرير وخيارات الألوان المتاحة."
+   },
+   "settings_title": {
+      "message": "إعدادات"
+   },
+   "settings_toggle_area": {
+      "message": "تكوين المنطقة"
+   },
+   "settings_toggle_area_desc": {
+      "message": "بشكل افتراضي ، يمكن تحريك الحافة الكاملة لإطار المستعرض الخاص بك لفتح الشريط الجانبي. يمكنك تغيير هذا وتكوين مكان لفتح الشريط الجانبي بالضبط."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "سحب للتحريك"
+   },
+   "settings_toggle_area_height": {
+      "message": "ارتفاع"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "يمكنك تقليل ارتفاع المساحة ، بحيث يتم فتح الشريط الجانبي فقط عند تحريك المؤشر إلى هذا الموقع لحافة نافذة المتصفح."
+   },
+   "settings_toggle_area_width": {
+      "message": "عرض"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "العرض (في إطارات)"
+   },
+   "settings_tooltip_content": {
+      "message": "محتوى تلميح الأداة"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "معلومات اضافية"
+   },
+   "settings_tooltip_content_all": {
+      "message": "العنوان وعنوان الرابط"
+   },
+   "settings_tooltip_content_title": {
+      "message": "العنوان الوحيد"
+   },
+   "settings_tooltip_content_url": {
+      "message": "فقط رابط"
+   },
+   "settings_tooltip_delay": {
+      "message": "تأخير تلميح الأداة"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "سيتم عرض التأخير قبل تلميحات الأدوات للإشارات المرجعية عند تحريك الماوس."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "لا تظهر تلميحات الأدوات مطلقًا"
+   },
+   "settings_tooltip_desc": {
+      "message": "حدد المعلومات التي يجب أن تحتويها تلميح الأدوات."
+   },
+   "settings_tooltip_font_size": {
+      "message": "حجم خط تلميح الأدوات"
+   },
+   "settings_translation_add_language": {
+      "message": "اضافة لغة"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "الرجوع إلى النظرة العامة"
+   },
+   "settings_translation_desc": {
+      "message": "يمكنك المساعدة في ترجمة الإضافة بلغتك أو تحسين الإضافة الحالية."
+   },
+   "settings_translation_help": {
+      "message": "بالنسبة لكل إدخال ، يمكنك مشاهدة الترجمة الإنجليزية ، والتي يجب ترجمتها بلغتك. لمساعدتك في تحديد مكان استخدام النص وما هو الغرض منه ، يكون لكل إدخال اسم (مثل {1}) ، والذي لا يجب ترجمته. من فضلك لا تنس أن ترسل ترجمتك عن طريق الضغط على الزر الموجود في الزاوية العلوية اليمنى!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "بعض الترجمات مفقودة"
+   },
+   "settings_translation_info": {
+      "message": "يمكنك تحرير الترجمات الموجودة أو إضافة الترجمات المفقودة. إذا أرسلت تغييراتك ، فسوف أراجع مدخلاتك وأوافق عليها."
+   },
+   "settings_translation_link": {
+      "message": "اذهب إلى نظرة عامة على الترجمة"
+   },
+   "settings_translation_notice1": {
+      "message": "بمجرد أن يتم ترجمة كل الفئات المحددة على النحو المطلوب ، سيتم تحرير الترجمة."
+   },
+   "settings_translation_notice2": {
+      "message": "لن يتم نشر فئات غير كاملة ، لمنع نصف النصوص المترجمة"
+   },
+   "settings_translation_reminder_desc": {
+      "message": "أريد أن يتم إشعاري عند إضافة متغيرات لغة جديدة إلى الإضافة"
+   },
+   "settings_translation_required_category": {
+      "message": "مطلوب"
+   },
+   "settings_translation_status_draft": {
+      "message": "الترجمة غير كاملة أو تحتاج إلى مراجعة وليست متاحة للمستخدمين"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "تتوفر الترجمة ، ولكن بعض الفئات غير كاملة"
+   },
+   "settings_translation_status_released": {
+      "message": "الترجمة متاحة"
+   },
+   "settings_translation_submit": {
+      "message": "تقديم"
+   },
+   "settings_translation_submit_message": {
+      "message": "تم تقديم ترجمتك بنجاح"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "تم نسخ الرابط"
+   },
+   "sidebar_deleted": {
+      "message": "محذوف"
+   },
+   "sidebar_dir_children": {
+      "message": "العناصر"
+   },
+   "sidebar_search_no_results": {
+      "message": "لا يوجد إشارات مرجعية متوافقة مع بحثك"
+   },
+   "sidebar_search_placeholder": {
+      "message": "ابحث عن إشارة مرجعية"
+   },
+   "sidebar_undo_deletion": {
+      "message": "التراجع"
+   },
+   "sort_label_alphabetical": {
+      "message": "أبجديًا"
+   },
+   "sort_label_custom": {
+      "message": "محددة من المستخدم"
+   },
+   "sort_label_most_used": {
+      "message": "الأكثر إستخدامًا"
+   },
+   "sort_label_recently_added": {
+      "message": "مضاف مؤخرًا"
+   },
+   "sort_label_recently_used": {
+      "message": "مستخدم حديثا"
+   },
+   "sort_most_used_per_month": {
+      "message": "شهريا"
+   },
+   "sort_view_as_tree": {
+      "message": "عرض الدلائل"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "إعادة تحميل الآن"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "نظرًا لتحديث الإضافة ، يجب إعادة تحميل هذه الصفحة."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "خدمة التعليقات غير متوفرة حاليًا. إذا كنت ترغب في تقديم ملاحظات ، يرجى إرسال بريد إلكتروني إليّ."
+   },
+   "status_service_unavailable_headline": {
+      "message": "الخدمة غير متوفرة"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "خدمة الترجمة غير متوفرة في الوقت الحالي. الرجاء معاودة المحاولة في وقت لاحق."
+   }
+}

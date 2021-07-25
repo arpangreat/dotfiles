@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "Добавить элемент"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Добавить закладку"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Диспетчер закладок"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Проверка закладок"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Закрыть все папки"
+   },
+   "contextmenu_copy": {
+      "message": "Скопировать URL в буфер обмена"
+   },
+   "contextmenu_current_tab": {
+      "message": "Открыть в текущей вкладке"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Удалить закладку"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Удалить папку"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Удалить разделитель"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Отменить выбор закладки"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Отменить выбор папки"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Изменить закладку"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Изменить папку"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Изменить разделитель"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Скрыть на панели"
+   },
+   "contextmenu_infos": {
+      "message": "Информация"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Горячие клавиши"
+   },
+   "contextmenu_new_tab": {
+      "message": "Открыть в новой вкладке"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Открыть в режиме инкогнито"
+   },
+   "contextmenu_new_window": {
+      "message": "Открыть в новом окне"
+   },
+   "contextmenu_open_children": {
+      "message": "Открыть все вложенные закладки"
+   },
+   "contextmenu_pin": {
+      "message": "Закрепить вверху"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Перезагрузить боковую панель"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Выбрать закладку"
+   },
+   "contextmenu_select_dir": {
+      "message": "Выбрать папку"
+   },
+   "contextmenu_select_entries": {
+      "message": "Выбрать несколько записей"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Искать в папке"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Показать на панели"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Показать скрытые элементы"
+   },
+   "contextmenu_unpin": {
+      "message": "Открепить от верха"
+   },
+   "contribute_intro": {
+      "message": "Чтобы улучшить расширение, я хотел бы лучше узнать, как люди используют боковую панель и какую конфигурацию они применяют."
+   },
+   "contribute_notice": {
+      "message": "Вы можете помочь автору, поделившись своей конфигурацией"
+   },
+   "contribute_outro": {
+      "message": "Если у вас есть вопросы или замечания по поводу собираемой информации, пришлите мне сообщение с обратной связью."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Вы можете анонимно делиться своими действиями на боковой панели – это помогает мне узнавать, как люди её используют в целом. Информация о ваших закладках и посещённых сайтах [b]НЕ ПЕРЕДАЁТСЯ[/b]."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Эта информация очень полезна для выявления проблем в удобстве использования или функциях, которые, например, применяются не очень часто."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Сколько закладок в среднем у пользователей?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Какая платформа у пользователей (Windows, Mac, Linux, ...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Пользователи применяют поиск?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Пользователи меняют сортировку закладок?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Как часто пользователи пересортировывают или редактируют записи?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Пример данных, которыми вы делитесь:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Поделиться действиями"
+   },
+   "contribute_share_config_desc": {
+      "message": "Вы анонимно сообщаете свою конфигурацию, которая помогает мне понять популярные настройки и определить, что можно улучшить или изменить в будущих версиях."
+   },
+   "contribute_share_config_label": {
+      "message": "Поделиться конфигурацией"
+   },
+   "extension_desc": {
+      "message": "Добавляет выезжающую с краёв окна браузера панель с закладками"
+   },
+   "extension_last_update": {
+      "message": "Последний раз обновленно {1}"
+   },
+   "extension_name": {
+      "message": "Закладки в боковой панели"
+   },
+   "extension_version": {
+      "message": "Версия"
+   },
+   "header_bookmarks": {
+      "message": "Закладки"
+   },
+   "header_bookmarks_single": {
+      "message": "Закладка"
+   },
+   "header_selected_entries": {
+      "message": "выбранный"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Скопировать URL-адрес текущей записи"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Удалить текущую запись"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Выполнить щелчок по текущей записи"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Закрыть боковую панель, открытое наложение или контекстное меню"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Command"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Delete"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Tab"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Открыть контекстное меню для текущей записи"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Переместить следующую или предыдущую запись на боковой панели"
+   },
+   "more_link": {
+      "message": "Ещё..."
+   },
+   "newtab_fallback_desc": {
+      "message": "Вместо этого открыта новая вкладка с боковой панелью"
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Боковая панель не может быть открыта на страницах расширений"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Что-то блокирует боковую панель"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Боковая панель не может быть открыта на новой вкладке"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Боковая панель не может быть открыта на служебных страницах {browserName}"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Одно из ваших правил URL запретило открывать боковую панель"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Боковая панель не может быть открыта в магазине {browserName}"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Всегда показывать эту страницу при открытии новой вкладки"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Показывать значки сайтов"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Показывать предпросмотр сайтов"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Пользовательские записи"
+   },
+   "newtab_grid_links_default": {
+      "message": "Лучшие страницы"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Размер сетки"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Не показывать страницы"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Самые популярные закладки"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Недавно использованные закладки"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Определено пользователем"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Заголовок"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL домашней страницы"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL результатов поиска"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Поисковый движок"
+   },
+   "newtab_search_field_hide": {
+      "message": "Скрыть поле поиска"
+   },
+   "newtab_search_field_show": {
+      "message": "Показать поле поиска"
+   },
+   "newtab_search_placeholder": {
+      "message": "Поиск {1} или введите URL-адрес"
+   },
+   "newtab_speech_search_error": {
+      "message": "Чтобы включить голосовой поиск, нужно разрешить доступ к микрофону."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Говорите"
+   },
+   "newtab_title": {
+      "message": "Новая вкладка"
+   },
+   "newtab_upload_background": {
+      "message": "Отправка фонового изображения"
+   },
+   "onboarding_finish_desc": {
+      "message": "Надеемся, вам понравится пользоваться боковой панелью."
+   },
+   "onboarding_finish_notice": {
+      "message": "Если вы часто задеваете край окна браузера {1}, то можно изменить место вызова боковой панели, чтобы исключить её случайные появления."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Настроить внешний вид"
+   },
+   "onboarding_goto_settings": {
+      "message": "Расширенные настройки"
+   },
+   "onboarding_handson_desc": {
+      "message": "Теперь попробуйте сами."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Щёлкните по значку расширения, чтобы открыть боковую панель."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Переместите курсор к краю окна {1}."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Затем щёлкните кнопкой мыши {1}, чтобы открыть боковую панель."
+   },
+   "onboarding_headline": {
+      "message": "Благодарим вас за установку этого расширения."
+   },
+   "onboarding_left": {
+      "message": "слева"
+   },
+   "onboarding_right": {
+      "message": "справа"
+   },
+   "onboarding_setup": {
+      "message": "Установить"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Как вы хотите открывать панель?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Где вы хотите расположить панель?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Тёмный"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Какой стиль вы предпочитаете?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Светлый"
+   },
+   "onboarding_skip": {
+      "message": "Пропустить установку"
+   },
+   "onboarding_title": {
+      "message": "Установка"
+   },
+   "overlay_add_position": {
+      "message": "Позиция"
+   },
+   "overlay_add_position_append": {
+      "message": "Добавить в папку снизу"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Добавить в папку сверху"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Дополнительная информация"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Создано"
+   },
+   "overlay_bookmark_title": {
+      "message": "Заголовок"
+   },
+   "overlay_bookmark_url": {
+      "message": "Ссылка"
+   },
+   "overlay_bookmark_views": {
+      "message": "Просмотры"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "за месяц"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Запись ведётся с"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Просмотр"
+   },
+   "overlay_cancel": {
+      "message": "Отмена"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Проверка URL-ссылок"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Нерабочие"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Изменённые"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Дубликаты"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Пустые папки"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Все закладки в рабочем состоянии"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Нет нерабочих закладок"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Нет изменённых закладок"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Нет дублированных закладок"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Нет папок без закладок"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Удалить выбранные"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Обновить выбранные"
+   },
+   "overlay_close": {
+      "message": "Закрыть"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Вы действительно хотите открыть все вложенные закладки ({1} шт.)?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "Вы действительно хотите открыть все закладки {1}, включая закладки из подпапок в выбранных папках?"
+   },
+   "overlay_delete": {
+      "message": "Удалить"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Вы действительно хотите удалить эту закладку?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Вы действительно хотите удалить эту папку? Все вложенные закладки также будут удалены."
+   },
+   "overlay_delete_selected": {
+      "message": "Удалить выбранные записи"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "Вы действительно хотите удалить выбранные записи? Все закладки подпапок выбранных папок также будут удалены."
+   },
+   "overlay_dir_children": {
+      "message": "Основные закладки"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Закладки"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Папки"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Вы действительно хотите скрыть эту закладку?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Вы действительно хотите скрыть эту папку? Все вложенные закладки также будут скрыты."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Скрыть из боковой панели"
+   },
+   "overlay_label_bookmark": {
+      "message": "Закладка"
+   },
+   "overlay_label_dir": {
+      "message": "Папка"
+   },
+   "overlay_label_separator": {
+      "message": "Разделитель"
+   },
+   "overlay_open_children": {
+      "message": "Открыть все"
+   },
+   "overlay_save": {
+      "message": "Сохранить"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Вы можете указать заголовок для разделителя. Он будет отображаться поверх строки разделителя, помогая упорядочивать список закладок."
+   },
+   "overlay_update": {
+      "message": "Обновить"
+   },
+   "premium_activate": {
+      "message": "Активировать версию Premium"
+   },
+   "premium_already_activated": {
+      "message": "Вы уже используете версию Premium"
+   },
+   "premium_desc_1": {
+      "message": "Версия Premium имеет дополнительные возможности и помогает автору улучшать расширение."
+   },
+   "premium_desc_2": {
+      "message": "Ниже приведены функции, включённые в версию Premium. Все основные функции расширения бесплатные и не требуют версию Premium. Вы можете заплатить за расширение, чтобы поощрить его автора и получить доступ к этим функциям."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Если вы используете страницу \"Новая вкладка\" этого расширения, то можете установить своё фоновое изображение, сделав её более привлекательной."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Настройка своей страницы \"Новая вкладка\""
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Если вы знакомы с CSS, то можете полностью изменить внешний вид боковой панели, добавив свои собственные определения стиля. Это позволяет настраивать абсолютно всё."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Настройка всего с помощью собственной таблицы стилей"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "В версии Premium вы получите доступ к ещё недоступным широкой публике функциям, которые в настоящее время разрабатываются или проходят тестирование."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Будьте первым, кто попробует новые экспериментальные функции"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Импорт и экспорт настроек"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Щёлкните правой кнопкой мыши на любой папке в боковой панели и выполните проверку. На странице результатов отображаются все обновлённые URL-адреса, неработающие закладки и закладки с тем же URL-адресом."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Проверка в закладках неработающих ссылок и дубликатов"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Возможность изменять ширину боковой панели"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Вы можете поменять весь дизайн боковой панели одним щелчком мыши, установив другую тему. Также его можно настроить с помощью движков и настроек цвета."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Изменение темы оформления"
+   },
+   "premium_get_now": {
+      "message": "Получить версию Premium"
+   },
+   "premium_license_key": {
+      "message": "Лицензионный ключ"
+   },
+   "premium_pay_buy": {
+      "message": "Купить версию Premium"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Условия отмены оплаты"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Подтвердить покупку"
+   },
+   "premium_pay_contact": {
+      "message": "При проблемах с оплатой, либо если у вас есть какие-либо вопросы, свяжитесь со мной - {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Кредитная или дебетовая карта"
+   },
+   "premium_pay_eula": {
+      "message": "Лицензионное соглашение"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Я прочитал(а) и принимаю [a]Лицензионное соглашение[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Срок действия карты"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Номер карты"
+   },
+   "premium_pay_info_email": {
+      "message": "E-mail"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Укажите свой адрес электронной почты для получения лицензионного ключа."
+   },
+   "premium_pay_info_name": {
+      "message": "Имя"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Способ оплаты"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Почтовый индекс"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Выберите способ оплаты ниже и выберите желаемую сумму, которую вы хотите заплатить на следующем шаге."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Если вы хотите активировать {1} на другом устройстве или после переустановки расширения, то введите этот ключ в настройках расширения:"
+   },
+   "premium_pay_price_info": {
+      "message": "Это единовременная плата, в том числе за будущие функции Premium."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Чтобы получить доступ к Premium, вы можете заплатить столько, сколько считаете нужным. После этого вы всегда будете иметь доступ к Premium, независимо от суммы платы."
+   },
+   "premium_pay_price_total": {
+      "message": "Итого"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Идентификационный номер покупки"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Выберите способ оплаты"
+   },
+   "premium_pay_success_headline": {
+      "message": "Благодарим за покупку!"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} автоматически активировано для этого устройства. Больше ничего делать не нужно."
+   },
+   "premium_pay_verifying": {
+      "message": "Проверка транзакции"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Отсканируйте этот QR-код в WeChat для продолжения"
+   },
+   "premium_pay_what_you_want": {
+      "message": "Платите как удобно"
+   },
+   "premium_popup_text": {
+      "message": "А вы знаете, что есть ещё и версия Premium?"
+   },
+   "premium_restricted_text": {
+      "message": "Эта функция доступна только в версии Premium"
+   },
+   "premium_show_license_input": {
+      "message": "У меня уже есть версия Premium"
+   },
+   "settings_advanced": {
+      "message": "Дополнительные параметры"
+   },
+   "settings_available_themes": {
+      "message": "Доступные темы"
+   },
+   "settings_background_blur": {
+      "message": "Размытие фона"
+   },
+   "settings_background_transparency": {
+      "message": "Прозрачность фона"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Цвет значка папок"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Значок папок"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Отступы от папок"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Размер шрифта закладок"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Сжатие закладки по горизонтали"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Размер значка закладок"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Высота строк закладок"
+   },
+   "settings_close_timeout": {
+      "message": "Время до закрытия"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Время в секундах, после которого будет закрыта боковая панель. Оно будет отсчитываться, если мышь не наведена на боковую панель, и останавливаться при повторном наведении на панель."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Не закрывать автоматически"
+   },
+   "settings_color_scheme": {
+      "message": "Цветовая схема"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Цвет заголовка боковой панели, флажков и т.д."
+   },
+   "settings_custom_css": {
+      "message": "Своя таблица стилей"
+   },
+   "settings_custom_css_desc": {
+      "message": "Вы можете задать собственную таблицу стилей, чтобы переопределить стиль по умолчанию. Используйте эту настройку, только если вы знакомы с CSS и знаете, что делаете."
+   },
+   "settings_dark_mode": {
+      "message": "Ночная тема"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Внешний вид боковой панели"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Вы можете полностью изменить внешний вид боковой панели в соответствии со своими потребностями. Существуют различные варианты изменения размера шрифта, междустрочного интервала, цветов, значков и многого другого. Вы также можете выбрать один из предустановленных образцов и параметров, чтобы быстро сделать боковую панель такой, как Вы хотите."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Настройка режима боковой панели"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Вы можете изменить различные параметры для управления расширением. Например, можно изменить способ появления боковой панели или способ открытия закладок. Если Вы не хотите, чтобы боковая панель загружалась на каждой странице, можно настроить это, используя соответствующие правила."
+   },
+   "settings_dir_accordion": {
+      "message": "Показывать только текущую папку"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Закрывать все папки, кроме текущей активной."
+   },
+   "settings_directories_icon_size": {
+      "message": "Размер значка папок"
+   },
+   "settings_directory_arrows": {
+      "message": "Стрелки папок"
+   },
+   "settings_expert_save_error": {
+      "message": "Не удалось сохранить настройки. Исправьте указанные данные."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Параметры для экспертов позволяют настроить каждую опцию расширения, даже те, которые нельзя изменить в обычном режиме, используя стандартные флажки и ползунки."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Изменяйте здесь значения, только если вы знаете, что делаете. Неправильные конфигурации могут вызвать непредвиденное поведение расширения. Если что-то сломалось, вы сможете вернуться к конфигурации по умолчанию."
+   },
+   "settings_export": {
+      "message": "Экспортировать настройки"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Только одна ссылка на каждой строке."
+   },
+   "settings_filter_explanation_2": {
+      "message": "Используйте звёздочку * для обозначения любых символов (пример: example.com/* соответствует всем страницам на сайте example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Если в правиле нет знака *, это обозначает точное соответствие (пример: \"example.com\" не будет соответствовать адресу \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "Не добавляйте протокол в правила (например http://)"
+   },
+   "settings_filter_intro": {
+      "message": "Если вы не хотите, чтобы боковая панель загружалась на каждой странице, то можете добавить страницу в белый (разрешение) или в чёрный список (запрет)."
+   },
+   "settings_filter_rules": {
+      "message": "Шаблоны адресов"
+   },
+   "settings_filter_visibility": {
+      "message": "Загрузка боковой панели"
+   },
+   "settings_filter_visibility_always": {
+      "message": "На каждой странице"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "На каждой странице, кроме указанных"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Только на указанных страницах"
+   },
+   "settings_font_family": {
+      "message": "Шрифт"
+   },
+   "settings_font_family_default": {
+      "message": "По умолчанию"
+   },
+   "settings_font_family_desc": {
+      "message": "Шрифт боковой панели и наложения"
+   },
+   "settings_header_height": {
+      "message": "Высота заголовка"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Поделиться информацией"
+   },
+   "settings_hover_color": {
+      "message": "Цвет под курсором"
+   },
+   "settings_icon_background_color": {
+      "message": "Цвет фона"
+   },
+   "settings_icon_color": {
+      "message": "Цвет"
+   },
+   "settings_icon_color_auto": {
+      "message": "Автоматический"
+   },
+   "settings_icon_color_custom": {
+      "message": "Настраиваемый"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Цвет значка будет установлен автоматически в соответствии с цветовой схемой системы (светлой или тёмной). Вы также можете задать свой собственный цвет для значка."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Обратите внимание, что при использовании своей темы в {browserName} автоматический выбор цвета не работает."
+   },
+   "settings_icon_shape": {
+      "message": "Форма значка"
+   },
+   "settings_import": {
+      "message": "Импортировать настройки"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Импорт/экспорт закладок"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Это функция браузера и не является частью расширения. Подробнее об импорте и экспорте закладок читайте в {browserName}."
+   },
+   "settings_import_export_desc": {
+      "message": "Вы можете экспортировать свои настройки расширения и сохранить их на компьютере. Сохранённый файл можно импортировать на любом компьютере, где установлено расширение."
+   },
+   "settings_import_export_headline": {
+      "message": "Настройки импорта/экспорта"
+   },
+   "settings_import_export_notice": {
+      "message": "Настройки расширения автоматически синхронизируются между вашими устройствами, если вы вошли в {browserName} под своим аккаунтом Google. Если вы не хотите входить в систему или желаете поделиться своими настройками с другими людьми, то можете использовать эту опцию импорта/экспорта."
+   },
+   "settings_import_failed": {
+      "message": "Ошибка импорта настроек. Выберите правильный файл."
+   },
+   "settings_import_saved": {
+      "message": "Настройки успешно импортированы"
+   },
+   "settings_indicator_color": {
+      "message": "Цвет"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Цвет значков"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Размер значков"
+   },
+   "settings_indicator_width": {
+      "message": "Ширина"
+   },
+   "settings_install_theme": {
+      "message": "Установить тему"
+   },
+   "settings_installed_theme_info": {
+      "message": "Установлено"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Задать сочетание клавиш"
+   },
+   "settings_language": {
+      "message": "Язык"
+   },
+   "settings_language_default": {
+      "message": "Браузер по умолчанию"
+   },
+   "settings_language_desc": {
+      "message": "Язык интерфейса"
+   },
+   "settings_link_action": {
+      "message": "Открывать закладки"
+   },
+   "settings_link_action_current_tab": {
+      "message": "В текущей вкладке"
+   },
+   "settings_link_action_desc": {
+      "message": "Щелчок левой кнопкой мыши по закладке откроет её в текущей или в новой вкладке"
+   },
+   "settings_link_action_new_tab": {
+      "message": "В новой вкладке"
+   },
+   "settings_menu_appearance": {
+      "message": "Внешний вид"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Главная"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Значок"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Индикатор"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Наложение"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Боковая панель"
+   },
+   "settings_menu_dashboard": {
+      "message": "Обзор"
+   },
+   "settings_menu_expert": {
+      "message": "Настройки для экспертов"
+   },
+   "settings_menu_export": {
+      "message": "Импорт/экспорт"
+   },
+   "settings_menu_infos": {
+      "message": "Информация"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "Об авторе расширения"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "История изменений"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Контакт"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Права доступа"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Конфиденциальность"
+   },
+   "settings_menu_language": {
+      "message": "Язык"
+   },
+   "settings_menu_language_general": {
+      "message": "Главные"
+   },
+   "settings_menu_language_translate": {
+      "message": "Языковые настройки"
+   },
+   "settings_menu_newtab": {
+      "message": "Новая вкладка"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Боковая панель"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Фильтр"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Главные"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Переключатель"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Подсказки"
+   },
+   "settings_menu_support": {
+      "message": "Поддержка"
+   },
+   "settings_new_tab": {
+      "message": "Новая вкладка"
+   },
+   "settings_new_tab_background": {
+      "message": "Открывать в фоне"
+   },
+   "settings_new_tab_desc": {
+      "message": "Делать закладку активной или нет при открытии в новой вкладке."
+   },
+   "settings_new_tab_foreground": {
+      "message": "Открывать как активную"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "После текущей вкладки"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "После последней вкладки"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Перед первой вкладкой"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Открывать новые вкладки после последней или текущей вкладки."
+   },
+   "settings_newtab_desc": {
+      "message": "К сожалению, в браузерах на основе Chromium не разрешено загружать расширения на новой вкладке, поэтому боковая панель там не работает. Чтобы обойти проблему, были добавлены опции, позволяющие получать доступ к закладкам при открытии новой вкладки другим способом."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Фокус на адресной строке"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Если включено, то при открытии новой вкладки активной будет сделана адресная строка. Если нет, то активной будет строка поиска."
+   },
+   "settings_newtab_override": {
+      "message": "Заменить новую вкладку"
+   },
+   "settings_newtab_override_configure": {
+      "message": "Конфигурация"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Следует ли заменять текущую новую вкладку пользовательской или сайтом, загружаемым при открытии новой вкладки?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "Предпросмотр"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Открывать боковую панель автоматически"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Укажите, следует ли открывать боковую панель автоматически при открытии новой вкладки."
+   },
+   "settings_newtab_website": {
+      "message": "Открыть сайт"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Вместо открытия замены новой вкладки можно указать сайт для загрузки."
+   },
+   "settings_not_synced": {
+      "message": "Не будет синхронизироваться между устройствами."
+   },
+   "settings_open_action": {
+      "message": "Открывать боковую панель"
+   },
+   "settings_open_action_desc": {
+      "message": "Боковую панель можно вызывать щелчком левой или правой кнопкой мыши, перемещением мыши к краю окна браузера, либо только щелчком по значку расширения."
+   },
+   "settings_open_action_icon": {
+      "message": "Щелчком по значку"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Щелчком ЛКМ"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Подведением мыши"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Щелчком ПКМ"
+   },
+   "settings_open_delay": {
+      "message": "Задержка открытия"
+   },
+   "settings_open_delay_desc": {
+      "message": "Открывать боковую панель при наведении мыши или щелчке в зоне активации не сразу, а с задержкой."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Цвет маски"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "Расширение отображает ваши закладки на боковой панели, поэтому для этого требуется разрешение. Разрешение также позволяет расширению добавлять, редактировать и удалять закладки."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "К сожалению, у {browserName} нет механизма отображения содержимого в окне браузера без взаимодействия с текущей страницей."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Так как боковая панель отображается поверх текущего сайта, для этого требуется разрешение. Помимо данной технической причины, для иных целей разрешение не используется."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Если у вас есть сомнения относительно того, что я делаю с разрешением, вы можете просмотреть исходный код расширения на Github. Это ПО с открытым исходным кодом, доступным каждому."
+   },
+   "settings_permissions_desc": {
+      "message": "Чтобы в {browserName} появилась настраиваемая боковая панель, расширению необходимо предоставить следующие разрешения:"
+   },
+   "settings_premium_activated": {
+      "message": "Premium-аккаунт успешно активирован"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Невозможно активировать Premium-аккаунт. Введите корректный лицензионный ключ."
+   },
+   "settings_presets": {
+      "message": "Установить относительные размеры"
+   },
+   "settings_presets_desc": {
+      "message": "Вы можете выбрать предопределённые размеры для боковой панели. Это изменит ползунки на данной странице, чтобы настроить ширину панели, высоту строк, размеры значков и другие параметры."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Запрет прокрутки страницы"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Запрещать прокрутку текущего сайта, пока открыта боковая панель."
+   },
+   "settings_prevent_windowed": {
+      "message": "Отключать боковую панель в оконном режиме"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Не открывать боковую панель в оконном режиме по щелчку или подведению мыши к краю браузера"
+   },
+   "settings_remember_desc": {
+      "message": "Выберите, что запоминать при смене страниц. Если выбрать запоминание последней открытой закладки, то она будет отмечена при следующем вызове боковой панели."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Запоминать открытые подпапки"
+   },
+   "settings_remember_state": {
+      "message": "Запоминать"
+   },
+   "settings_remember_state_all": {
+      "message": "Положение прокрутки, открытые папки и последнюю открытую закладку"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Ничего"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Открытые папки"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Положение прокрутки и открытые папки"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Открытые папки верхнего уровня"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Повторно открывать боковую панель"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Автоматически открывать боковую панель после открытия закладки из боковой панели."
+   },
+   "settings_restore": {
+      "message": "Сброс"
+   },
+   "settings_restore_confirm": {
+      "message": "Вы действительно хотите восстановить начальные настройки?"
+   },
+   "settings_restored_message": {
+      "message": "Конфигурация успешно восстановлена"
+   },
+   "settings_save": {
+      "message": "Сохранить изменения"
+   },
+   "settings_saved_message": {
+      "message": "Изменения успешно сохранены"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Ваши настройки успешно сохранены"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Скрыть полосу прокрутки"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Время в секундах, после которого полоса прокрутки будет скрыта. При прокрутке полоса будет показана снова."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Никогда не скрывать"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Ширина полосы прокрутки"
+   },
+   "settings_search_placeholder": {
+      "message": "Поиск конфигурации"
+   },
+   "settings_show_themes": {
+      "message": "Показать доступные темы"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Цвет маски"
+   },
+   "settings_sidebar_position": {
+      "message": "Положение"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Позволяет выбрать расположение боковой панели: слева или справа экрана."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Слева"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Справа"
+   },
+   "settings_sidebar_width": {
+      "message": "Ширина"
+   },
+   "settings_support_faq_headline": {
+      "message": "Часто задаваемые вопросы"
+   },
+   "settings_support_feedback_desc": {
+      "message": "У вас есть предложения по улучшению расширения или какие-либо вопросы? Хотите добавить какие-то настройки или нашли ошибку? Любой ваш отзыв поможет улучшить расширение. Пишите!"
+   },
+   "settings_support_feedback_email": {
+      "message": "Адрес электронной почты (не обязательно)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Обратная связь"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Отправьте автору сообщение, но только на английском языке, иначе возможны проблемы с пониманием и ответом."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Прикрепить снимок экрана"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Максимум снимков экрана для отправки: {1}"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "Размер файла {1} слишком большой (> 1 МБ)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Отправить отзыв"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Не удалось отправить сообщение. Попробуйте ещё раз."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Благодарим вас за отзыв"
+   },
+   "settings_text_color": {
+      "message": "Цвет текста"
+   },
+   "settings_theme": {
+      "message": "Тема"
+   },
+   "settings_theme_changed": {
+      "message": "Тема успешно изменена"
+   },
+   "settings_theme_default": {
+      "message": "Тема по умолчанию"
+   },
+   "settings_theme_default_desc": {
+      "message": "Эта тема предоставляет доступ к закладкам в чистом, современном виде. Многие элементы окрашены в настраиваемую цветовую схему."
+   },
+   "settings_theme_focus": {
+      "message": "Выбранная тема"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Это более компактная тема с упрощённой анимацией для повышения производительности."
+   },
+   "settings_theme_glass": {
+      "message": "Стеклянная тема"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Эта тема делает фон боковой панели полупрозрачным и добавляет эффект матового стекла. Этот эффект и прозрачность настраиваются."
+   },
+   "settings_themes_notice": {
+      "message": "Вы можете выбрать простой дизайн боковой панели. Выбранная тема допускает настройку с помощью ползунков и параметров цвета."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Это расширение - проект одного человека. Всё это начиналось как хобби-проект для личного пользования."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Активация"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "По умолчанию, весь край окна браузера может быть использован для открывания боковой панели. Вы можете уменьшить этот параметр (область активации). Например, Вы можете изменить показ боковой панели так, чтобы она отображалась только при нажатии на область в нижнем левом углу окна браузера. Это может быть полезно для предотвращения непреднамеренного отображения боковой панели при нажатии на ссылки веб-сайта."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Развернуть все подпапки"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Чтобы быстро открыть папку со всеми открытыми вложенными папками, можно дважды щелкнуть по папке на боковой панели."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Вы знали?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Скрыть записи"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Вы можете скрыть отдельные закладки или даже папки на боковой панели. Для этого надо щелкнуть правой кнопкой мыши на любую запись на боковой панели, а затем нажать кнопку {1} ​​в контекстном меню. Чтобы снова отобразить скрытые записи, Вы можете щелкнуть на значок меню в заголовке боковой панели и установить там соответствующий флажок."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "Расширение доступно на {1} разных языках. Переводы выполняются сообществом, и каждый может внести свой вклад, переведя тексты расширения на другие языки. Переводы будут утверждены, а затем добавлены в расширение при следующем обновлении."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Горячие клавиши"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "Боковой панелью можно управлять с помощью горячих клавиш. Вы можете просмотреть список горячих клавиш, щелкнув на значок меню в заголовке боковой панели, а затем нажав кнопку {1}."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Выбрать несколько записей"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "Вы можете выбрать несколько закладок или папок на боковой панели, чтобы сразу открывать, удалять или даже перемещать их с помощью перетаскивания."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Новая вкладка"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "Вы можете настроить внешний вид страницы новой вкладки прямо на странице, нажав кнопку {1} ​​в нижнем углу. Затем вы можете изменить элементы сетки, поисковую систему, фоновое изображение или ссылки сверху."
+   },
+   "settings_tips_tricks_next": {
+      "message": "Следующий совет"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Открыть все вкладки"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Чтобы открыть все закладки в папке, щелкните средней кнопкой мыши на папке. Или же Вы можете нажать {1}, щелкнув левой кнопкой мыши по папке."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Конфиденциальность"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "Закладки, отображаемые на боковой панели, синхронизируются и управляются {browserName}. Расширение не хранит и не анализирует их, а только отображает закладки вашего браузера на боковой панели."
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Быстрые закладки"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Вы можете перетащить любой URL-адрес прямо на боковую панель и поместить его в нужное место. Таким образом Вы даже можете выделить и перетащить текущий URL-адрес вкладки браузера. Также можно перетащить {1} часть символов слева от адресной строки на боковую панель, чтобы добавить текущую страницу в закладки, не отмечая сначала всю адресную строку."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Быстрый поиск"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Если Вы откроете боковую панель, то можно сразу искать закладки, просто начав печатать. Нет никакой необходимости сначала нажимать на значок поиска в заголовке боковой панели."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Быстрое копирование URL-адреса"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Чтобы скопировать URL-адрес закладки на боковой панели в буфер обмена, Вы можете нажать {1} при наведении курсора на запись."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Щелчок правой кнопкой мыши"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Вы можете щелкнуть правой кнопкой мыши любую закладку или папку на боковой панели, чтобы открыть дополнительные параметры. Например, Вы можете редактировать существующие закладки или закреплять записи в верхней части боковой панели. Щелкнув папку правой кнопкой мыши, можно запустить проверку закладок, чтобы определить поврежденные или обновленные URL-адреса закладок."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Разделители"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Закладка с URL-адресом {1} и заголовком {2} или {3} будет отображаться в качестве разделителя на боковой панели. Вы можете добавить разделители, щелкнув правой кнопкой мыши на любой папке на боковой панели, а затем нажав кнопку {4}."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Поделиться информацией"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "Вы можете поделиться своей конфигурацией анонимно, что поможет мне определить популярные настройки и определить, что нужно улучшить или изменить в будущих выпусках. Расширение не собирает никаких личных данных и не читает закладки. Без явного разрешения это расширение не отправляет никуда какие-либо конфигурации."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Синхронизация"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Проверьте настройки синхронизации"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Все ваши настройки боковой панели будут синхронизированы между вашими устройствами, если Вы включите параметры синхронизации браузера в настройках. Это работает даже без статуса Premium."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "Первая версия этого расширения была выпущена в ноябре 2016 года."
+   },
+   "settings_title": {
+      "message": "Настройки"
+   },
+   "settings_toggle_area": {
+      "message": "Настроить область"
+   },
+   "settings_toggle_area_desc": {
+      "message": "По умолчанию боковая панель открывается при подведении мыши к любой точке края окна браузера. Такое поведение можно изменить, настроив, где именно открывать боковую панель."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Перемещать перетаскиванием"
+   },
+   "settings_toggle_area_height": {
+      "message": "Высота"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Вы можете уменьшить высоту области так, что боковая панель будет открываться только при перемещении курсора в это место у края окна браузера."
+   },
+   "settings_toggle_area_width": {
+      "message": "Ширина"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Ширина (оконный режим)"
+   },
+   "settings_tooltip_content": {
+      "message": "Содержание подсказки"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Дополнительная информация"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Заголовок и ссылка"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Только заголовок"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Только ссылка"
+   },
+   "settings_tooltip_delay": {
+      "message": "Задержка подсказки"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Задержка перед показом подсказки к закладке при наведении на неё мыши."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Не показывать подсказки"
+   },
+   "settings_tooltip_desc": {
+      "message": "Выбрать информацию, которую должна содержать подсказка."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Размер шрифта подсказки"
+   },
+   "settings_translation_add_language": {
+      "message": "Добавить язык"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Назад к обзору"
+   },
+   "settings_translation_desc": {
+      "message": "Вы можете помочь перевести расширение на свой язык или улучшить имеющийся перевод."
+   },
+   "settings_translation_help": {
+      "message": "Для каждой записи имеется английский текст, который должен быть переведён на ваш язык. Чтобы определить, где и для чего используется текст, у каждой записи есть имя (например {1}), которое не переводится. Не забудьте отправить перевод, нажав кнопку \"Отправить\" вверху!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Некоторые переводы отсутствуют"
+   },
+   "settings_translation_info": {
+      "message": "Вы можете отредактировать имеющийся перевод или добавить то, чего не хватает. Ваши правки будут просмотрены и приняты автором расширения."
+   },
+   "settings_translation_link": {
+      "message": "Приступить к переводу"
+   },
+   "settings_translation_notice1": {
+      "message": "Перевод публикуется, когда будут переведены все категории, отмеченные как обязательные."
+   },
+   "settings_translation_notice2": {
+      "message": "Незавершённые категории не публикуются, чтобы в расширении не оказалось мест, переведённых лишь частично."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Я хочу получать уведомления при добавлении в расширение новых строк, требующих перевода"
+   },
+   "settings_translation_required_category": {
+      "message": "Обязательно к переводу"
+   },
+   "settings_translation_status_draft": {
+      "message": "Перевод не завершён или нуждается в проверке, поэтому он пока недоступен для пользователей"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Перевод доступен, но некоторые разделы не завершены"
+   },
+   "settings_translation_status_released": {
+      "message": "Перевод доступен"
+   },
+   "settings_translation_submit": {
+      "message": "Отправить"
+   },
+   "settings_translation_submit_message": {
+      "message": "Ваш перевод успешно отправлен"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "Ссылка скопирована"
+   },
+   "sidebar_deleted": {
+      "message": "Удалено"
+   },
+   "sidebar_dir_children": {
+      "message": "Элементы"
+   },
+   "sidebar_search_no_results": {
+      "message": "Таких закладок не обнаружено"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Поиск закладки"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Отменить"
+   },
+   "sort_label_alphabetical": {
+      "message": "По алфавиту"
+   },
+   "sort_label_custom": {
+      "message": "Определено пользователем"
+   },
+   "sort_label_most_used": {
+      "message": "Часто используемые"
+   },
+   "sort_label_recently_added": {
+      "message": "Недавно добавленные"
+   },
+   "sort_label_recently_used": {
+      "message": "Недавно открытые"
+   },
+   "sort_most_used_per_month": {
+      "message": "За месяц"
+   },
+   "sort_view_as_tree": {
+      "message": "Показать папки"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Перезагрузить"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Так как расширение было обновлено, эту страницу нужно перезагрузить."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Служба обратной связи сейчас недоступна. Если вы хотите оставить отзыв, напишите мне по электронной почте."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Сервис недоступен"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Служба перевода сейчас недоступна. Повторите попытку позже."
+   }
+}

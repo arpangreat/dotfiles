@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "js": [ "youtubeAutoContribution.bundle.js" ],
+      "matches": [ "https://m.youtube.com/*", "https://www.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "",
+   "incognito": "not_allowed",
+   "key": "vA0q7cYAn79TDAbEacIPwPXRZ0rkc1slWGgSBe/OlkU=",
+   "manifest_version": 2,
+   "name": "greaselion-14",
+   "version": "1.0"
+}

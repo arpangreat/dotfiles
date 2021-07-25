@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "항목 추가"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "북마크 추가"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "북마크 관리자"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "북마크 확인"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "모든 폴더 닫기"
+   },
+   "contextmenu_copy": {
+      "message": "URL을 클립보드로 복사"
+   },
+   "contextmenu_current_tab": {
+      "message": "현재 탭에서 열기"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "북마크 삭제"
+   },
+   "contextmenu_delete_dir": {
+      "message": "폴더 삭제"
+   },
+   "contextmenu_delete_separator": {
+      "message": "구분선 삭제"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "북마크 선택 해제"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "폴더 선택 해제"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "북마크 편집"
+   },
+   "contextmenu_edit_dir": {
+      "message": "폴더 수정"
+   },
+   "contextmenu_edit_separator": {
+      "message": "구분선수정"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "사이드바에서 숨기기"
+   },
+   "contextmenu_infos": {
+      "message": "정보"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "키보드 단축키"
+   },
+   "contextmenu_new_tab": {
+      "message": "새 탭에서 열기"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "시크릿 창에서 링크 열기"
+   },
+   "contextmenu_new_window": {
+      "message": "새 창에서 열기"
+   },
+   "contextmenu_open_children": {
+      "message": "모든 북마크 열기"
+   },
+   "contextmenu_pin": {
+      "message": "위쪽에 고정"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "사이드바를 새로고침"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "북마크 선택"
+   },
+   "contextmenu_select_dir": {
+      "message": "폴더 선택"
+   },
+   "contextmenu_select_entries": {
+      "message": "여러 항목 선택"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "폴더에 표시하기"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "사이드바에 표시하기"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "숨겨진 항목 보기"
+   },
+   "contextmenu_unpin": {
+      "message": "위쪽에 고정 해제"
+   },
+   "contribute_intro": {
+      "message": "이 확장 프로그램을 향상시키기 위해, 사용자가 사이드 바를 사용하는 방법과 사용하는 구성에 대해 더 잘 알고 싶습니다."
+   },
+   "contribute_notice": {
+      "message": "구성 정보를 공유하여 개발자에게 도움을 제공할 수 있습니다."
+   },
+   "contribute_outro": {
+      "message": "정보 공유에 대해 궁금한 점이 있으면 피드백 메시지를 보내주십시오."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "사용자가 사이드 바를 어떻게 사용하는 지에 대한 정보를 익명으로 보냅니다. 북마크 또는 웹사이트 방문 기록은 [b]전송되지 않습니다[/b]."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "이 정보는 유용성 또는 예를 들어 자주 사용되지 않는 기능의 문제점을 식별하는 데 매우 유용합니다."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "이용자들의 평균 북마크 갯수"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "주로 사용하는 운영체제 (Windows, Mac, Linux, ...)"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "검색 기능의 사용 여부"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "북마크 정렬 변경 여부"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "북마크 항목 정렬 및 수정 여부"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "전송되는 정보는 다음과 같은 통계의 데이터로 쓰입니다:"
+   },
+   "contribute_share_activity_label": {
+      "message": "활동 공유"
+   },
+   "contribute_share_config_desc": {
+      "message": "구성을 익명으로 공유하면 인기있는 설정을 파악하고 향후 릴리스에서 개선하거나 변경해야 할 사항을 파악하는 데 도움이됩니다."
+   },
+   "contribute_share_config_label": {
+      "message": "구성 공유"
+   },
+   "extension_desc": {
+      "message": "브라우저 화면 가장자리에 북마크 목록을 표시하거나 숨길 수 있는 사이드바를 추가하세요."
+   },
+   "extension_last_update": {
+      "message": "{1}에 마지막으로 수정됨"
+   },
+   "extension_name": {
+      "message": "북마크 사이드바"
+   },
+   "extension_version": {
+      "message": "버전"
+   },
+   "header_bookmarks": {
+      "message": "북마크들"
+   },
+   "header_bookmarks_single": {
+      "message": "북마크"
+   },
+   "header_selected_entries": {
+      "message": "선택됨"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "현재 잡힌 항목의 주소을 복사합니다."
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "현재 잡힌 항목을 제거 합니다."
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "현재 잡힌 항목을 클릭해 실행 합니다."
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "사이드바, 열린 오버레이 또는 컨텍스트 메뉴를 닫습니다."
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Command"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Del"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "탭"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "현재 잡힌 항목에 대한 컨텍스트 메뉴를 엽니 다."
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "사이드바의 다음 또는 전 항목을 잡습니다."
+   },
+   "more_link": {
+      "message": "더 알아보기"
+   },
+   "newtab_fallback_desc": {
+      "message": "대신 사이드바를 사용하여 새 탭을 열었습니다."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "확장 프로그램 관리 페이지에서는 사이드바를 열 수 없습니다."
+   },
+   "newtab_fallback_headline_general": {
+      "message": "무언가가 사이드바를 차단했습니다."
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "새 탭 페이지에서는 사이드바를 열 수 없습니다."
+   },
+   "newtab_fallback_headline_system": {
+      "message": "{browserName} 시스템 페이지에서는 사이드바를 열 수 없습니다."
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "사이드바를 열 수 없는 주소규칙 중 하나가 있습니다."
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "{browserName} 웹 스토어에서는 사이드바를 열 수 없습니다."
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "새 탭을 열 때 항상 이 페이지 표시"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "사이트 아이콘 보기"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "사이트 프리뷰 보기"
+   },
+   "newtab_grid_links_custom": {
+      "message": "사용자 정의 항목"
+   },
+   "newtab_grid_links_default": {
+      "message": "기본 시작 페이지"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "그리드 크기"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "시작 페이지 숨김"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "자주 방문한 사이트"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "최근에 방문한 사이트"
+   },
+   "newtab_search_engine_custom": {
+      "message": "사용자 지정"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "제목"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "홈페이지 주소"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "검색 결과 주소"
+   },
+   "newtab_search_engine_headline": {
+      "message": "검색엔진"
+   },
+   "newtab_search_field_hide": {
+      "message": "검색 필드 숨기기"
+   },
+   "newtab_search_field_show": {
+      "message": "검색 필드 표시하기"
+   },
+   "newtab_search_placeholder": {
+      "message": "{1}을 검색하거나 주소를 입력하세요."
+   },
+   "newtab_speech_search_error": {
+      "message": "음성 검색을 활성화하려면 마이크 액세스를 허용해야 합니다."
+   },
+   "newtab_speech_search_listening": {
+      "message": "지금 말하세요"
+   },
+   "newtab_title": {
+      "message": "새 탭"
+   },
+   "newtab_upload_background": {
+      "message": "배경 이미지 업로드"
+   },
+   "onboarding_finish_desc": {
+      "message": "사이드바로 북마크를 편하게 이용하세요!"
+   },
+   "onboarding_finish_notice": {
+      "message": "브라우져창의 {1} 쪽을 자주 선택한다면, 우연히 열리는 것을 피하기 위해 수직으로 사이드바가 열리도록 바꾸는 것을 원할 수 도 있습니다."
+   },
+   "onboarding_goto_appearance": {
+      "message": "외형 변경"
+   },
+   "onboarding_goto_settings": {
+      "message": "추가 설정"
+   },
+   "onboarding_handson_desc": {
+      "message": "이제 스스로 해 보세요."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "아이콘을 클릭해서 사이드바를 여세요."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "이 창의 {1}으로 커서를 옮겨 보세요."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "{1} 클릭으로 사이드바를 여세요."
+   },
+   "onboarding_headline": {
+      "message": "이 확장 프로그램을 설치해 주셔서 감사합니다."
+   },
+   "onboarding_left": {
+      "message": "왼쪽"
+   },
+   "onboarding_right": {
+      "message": "오른쪽"
+   },
+   "onboarding_setup": {
+      "message": "지금 설치"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "사이드바를 어떻게 열고 싶으세요?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "사이드바를 어디에 두고 싶으세요?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "어둡게"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "어떤 스타일을 좋아하세요?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "밝게"
+   },
+   "onboarding_skip": {
+      "message": "나중에 설치"
+   },
+   "onboarding_title": {
+      "message": "설치"
+   },
+   "overlay_add_position": {
+      "message": "위치"
+   },
+   "overlay_add_position_append": {
+      "message": "폴더에 첨부하기"
+   },
+   "overlay_add_position_prepend": {
+      "message": "폴더 앞쪽에 추가하기"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "추가 정보"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "추가한 날짜:"
+   },
+   "overlay_bookmark_title": {
+      "message": "제목"
+   },
+   "overlay_bookmark_url": {
+      "message": "주소"
+   },
+   "overlay_bookmark_views": {
+      "message": "번 방문함"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "(최근 한 달동안)"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "집계를 시작한 날짜:"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "번 방문함"
+   },
+   "overlay_cancel": {
+      "message": "취소"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "주소 갱신 중"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "깨짐"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "바뀜"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "중복"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "빈 디렉토리"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "모든 주소가 이전 주소와 일치합니다."
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "깨진 주소가 없습니다"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "바뀐 주소가 없습니다"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "중복된 주소가 없습니다"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "북마크가 없는 디렉토리가 없습니다"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "선택 삭제"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "선택 갱신"
+   },
+   "overlay_close": {
+      "message": "닫기"
+   },
+   "overlay_confirm_open_children": {
+      "message": "{1}개의 북마크를 모두 여시겠습니까?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "선택된 폴더들의 하위 폴더를 포함한 {1}개의 북마크를 모두 여시겠습니까?"
+   },
+   "overlay_delete": {
+      "message": "삭제"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "이 북마크를 삭제하시겠습니까?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "이 폴더를 삭제하시겠습니까? 폴더 내 북마크들도 함께 삭제됩니다."
+   },
+   "overlay_delete_selected": {
+      "message": "선택된 항목 삭제"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "정말로 삭제하시겠습니까? 이 항목을 삭제하면 모든 하위 항목들도 삭제됩니다."
+   },
+   "overlay_dir_children": {
+      "message": "개의 항목"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "개의 북마크"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "개의 폴더"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "이 북마크를 사이드바에서 숨기시겠습니까?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "이 폴더를 사이드바에서 숨기시겠습니까? 폴더 내 북마크들도 함께 숨겨집니다."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "사이드바에서 숨기기"
+   },
+   "overlay_label_bookmark": {
+      "message": "북마크"
+   },
+   "overlay_label_dir": {
+      "message": "폴더"
+   },
+   "overlay_label_separator": {
+      "message": "구분선"
+   },
+   "overlay_open_children": {
+      "message": "모두 열기"
+   },
+   "overlay_save": {
+      "message": "저장"
+   },
+   "overlay_separator_title_desc": {
+      "message": "구분선에 제목을 입력할 수도 있습니다. 제목은 구분선 상단에 표시되며 북마크 목록 구성에 도움이 됩니다."
+   },
+   "overlay_update": {
+      "message": "갱신"
+   },
+   "premium_activate": {
+      "message": "프리미엄 활성화"
+   },
+   "premium_already_activated": {
+      "message": "이미 프리미엄을 이용하고 있습니다"
+   },
+   "premium_desc_1": {
+      "message": "프리미엄으로 더 많은 기능을 이용하고 확장 프로그램을 유지하는 데 도움을 주세요."
+   },
+   "premium_desc_2": {
+      "message": "프리미엄에서 제공되는 기능들을 확인해보세요. 본 확장 프로그램의 모든 핵심 기능들은 무료이며 프리미엄이 필요하지는 않습니다. 하지만 개발진의 노력에 보답하시면 아래와 같은 더 많은 기능들을 이용하실 수 있습니다!"
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "확장 프로그램의 새 탭 페이지를 나만의 배경 이미지로 더욱 멋지게 꾸며보세요."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "새 탭 페이지 커스터마이징"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "CSS를 다룰 줄 아신다고요? 직접 작성한 스타일 시트를 통해 사이드바의 모습을 완전히 바꿀 수 있습니다. 이 기능은 모든 것을 커스터마이징 할 수 있게 해줍니다."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "스타일 시트를 통한 커스터마이징"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "프리미엄에서 아직 공개되지 않은 개발 단계의 기능들에 접근할 수 있습니다."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "새로운 실험적 기능들을 시도해보는 첫 번째 주인공이 되세요"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "설정 불러오기와 내보내기"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "사이드바에서 디렉토리를 마우스 오른쪽 버튼으로 클릭하여 확인을 수행합니다. 결과 페이지에는 업데이트된 모든 주소, 더 이상 작동하지 않는 북마크, 중복된 북마크들이 표시됩니다."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "북마크에 깨진 링크 또는 중복이 있는지 확인하세요"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "언제 어디서나 사이드바의 폭을 조절하세요"
+   },
+   "premium_feature_themes_desc": {
+      "message": "한번의 클릭으로 슬라이드바 디자인을 다른 테마로 설정할 수 있습니다. 물론 옵션에서 취향에 맞게 변경할 수 있습니다."
+   },
+   "premium_feature_themes_headline": {
+      "message": "사이드바의 테마를 변경하세요"
+   },
+   "premium_get_now": {
+      "message": "프리미엄 시작하기"
+   },
+   "premium_license_key": {
+      "message": "라이센스 키"
+   },
+   "premium_pay_buy": {
+      "message": "프리미엄 구매"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "취소 정책"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "구매 확정"
+   },
+   "premium_pay_contact": {
+      "message": "지불 관련 문제가 있거나 질문 사항이있는 경우 {1}에 문의하십시오."
+   },
+   "premium_pay_creditcard": {
+      "message": "신용 카드 또는 직불 카드"
+   },
+   "premium_pay_eula": {
+      "message": "최종 사용자 사용권 계약"
+   },
+   "premium_pay_eula_desc": {
+      "message": "[a] 최종 사용자 사용권 계약 [/a]을 읽고 동의합니다."
+   },
+   "premium_pay_info_card_expires": {
+      "message": "카드 만료일"
+   },
+   "premium_pay_info_card_number": {
+      "message": "카드 번호"
+   },
+   "premium_pay_info_email": {
+      "message": "이메일"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "라이센스 키를 제공 받을 이메일 주소를 입력하세요."
+   },
+   "premium_pay_info_name": {
+      "message": "이름"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "결제 수단"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "우편번호"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "아래에서 결제 방법을 선택하고 다음 단계에서 원하는 금액을 선택하세요."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "다른 장치에서 또는 확장 프로그램을 재설치 한 후에 {1}을 (를) 활성화하려면 설정에서 다음 키를 입력하십시오:"
+   },
+   "premium_pay_price_info": {
+      "message": "1회 지불을 통해 향후 모든 프리미엄 기능을 지속적으로 제공 받습니다."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "이 확장프로그램에 만족하신 만큼의 금액을 선택해주세요. 액수와는 관계 없이 모든 프리미엄 기능이 제공됩니다."
+   },
+   "premium_pay_price_total": {
+      "message": "총액"
+   },
+   "premium_pay_purchase_id": {
+      "message": "구매 ID"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "결제 방법을 선택하세요"
+   },
+   "premium_pay_success_headline": {
+      "message": "구매해 주셔서 감사합니다!"
+   },
+   "premium_pay_success_info": {
+      "message": "{1}이 (가)이 장치에 대해 자동으로 활성화되었습니다. 더 이상의 조치를 취할 필요는 없습니다."
+   },
+   "premium_pay_verifying": {
+      "message": "거래 확인"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "계속하려면 WeChat에서 이 QR코드를 스캔하세요."
+   },
+   "premium_pay_what_you_want": {
+      "message": "원하는 금액을 선택하세요"
+   },
+   "premium_popup_text": {
+      "message": "프리미엄을 확인해 보셨나요?"
+   },
+   "premium_restricted_text": {
+      "message": "이 기능은 프리미엄에서만 이용할 수 있습니다."
+   },
+   "premium_show_license_input": {
+      "message": "라이센스 키 등록하기"
+   },
+   "settings_advanced": {
+      "message": "고급 설정"
+   },
+   "settings_available_themes": {
+      "message": "사용 가능한 테마"
+   },
+   "settings_background_blur": {
+      "message": "배경 흐림 효과"
+   },
+   "settings_background_transparency": {
+      "message": "배경 투명도"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "디렉토리 아이콘 색상"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "디렉토리 아이콘"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "디렉토리 맞춤"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "북마크 폰트 크기"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "북마크 가로 여백"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "북마크 아이콘 크기"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "북마크 선 굵기"
+   },
+   "settings_close_timeout": {
+      "message": "시간 초과시 닫기"
+   },
+   "settings_close_timeout_desc": {
+      "message": "사이드 바를 닫은 후 제한 시간 (초). 마우스가 사이드 바를 떠나 자마자 다시 계산을 마칠 때 카운트됩니다."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "자동으로 닫지 않음"
+   },
+   "settings_color_scheme": {
+      "message": "색상 구성표"
+   },
+   "settings_color_scheme_desc": {
+      "message": "사이드바 헤더와 체크박스 등의 색상"
+   },
+   "settings_custom_css": {
+      "message": "스타일시트 사용자설정"
+   },
+   "settings_custom_css_desc": {
+      "message": "자신의 스타일 시트를 정의하여 기본 스타일을 덮어쓸 수 있습니다. CSS에 익숙한 사용자만 이 옵션을 사용하세요!"
+   },
+   "settings_dark_mode": {
+      "message": "스킨 색상"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "사이드바의 외관을 바꿔보세요"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "취향에 따라 사이드바의 외관을 완전히 새롭게 꾸밀 수 있습니다. 글자 크기, 줄 간격, 색상, 아이콘 등 수많은 옵션을 확인해보세요. 기본적으로 제공되는 디자인과 옵션을 선택하여 원하는 사이드바를 빠르게 구성할 수도 있습니다."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "사이드바의 동작을 설정하세요"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "확장프로그램을 제어할 수 있는 다양한 옵션들을 살펴보세요. 예를 들어, 사이드바가 움직이는 방식이나 북마크가 열리는 방식을 변경할 수 있습니다. 매 페이지마다 사이드바가 로드되는 것을 원치 않으면 적절한 규칙을 통해 이를 제어할 수도 있습니다."
+   },
+   "settings_dir_accordion": {
+      "message": "현재 폴더만 표시"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "현재 열려 있는 폴더를 제외한 나머지 폴더를 모두 닫습니다."
+   },
+   "settings_directories_icon_size": {
+      "message": "디렉토리 아이콘 크기"
+   },
+   "settings_directory_arrows": {
+      "message": "디렉토리 화살표"
+   },
+   "settings_expert_save_error": {
+      "message": "설정을 저장할 수 없습니다. 입력 내용을 수정하십시오."
+   },
+   "settings_expert_settings_desc": {
+      "message": "전문가 설정을 사용하면 설정 페이지의 일반 확인란 또는 슬라이더를 사용하여 변경할 수 없는 확장자의 모든 구성 플래그를 구성할 수 있습니다."
+   },
+   "settings_expert_settings_notice": {
+      "message": "당신이 무엇을 하고 있는지 알고 있는 경우에만 여기서 값을 변경하십시오. 잘못된 구성은 확장의 예상치 못한 동작을 야기할 수 있습니다. 만약 어떤 것이 고장나면, 당신은 기본 구성으로 되돌릴 수 있습니다."
+   },
+   "settings_export": {
+      "message": "설정 내보내기"
+   },
+   "settings_filter_explanation_1": {
+      "message": "한 줄에 하나의 주소패턴을 입력하십시오"
+   },
+   "settings_filter_explanation_2": {
+      "message": "특정 문자를 매치하기 위해서 *를 사용하십시오.(예: example.com/* example.com 아래에 있는 모든 페이지가 매칭됩니다.)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "규칙에 *를 포함하지 않으면 정확한 주소만 매칭됩니다. (예: example.com은 example.com/about.html를 매칭하지 않습니다.)"
+   },
+   "settings_filter_explanation_4": {
+      "message": "규칙에 프로토콜(예: http://)을 포함하지 않아도 됩니다."
+   },
+   "settings_filter_intro": {
+      "message": "사이드바가 나올 수 있는 페이지(화이트리스트)와 나올 수 없는 페이지(블랙리스트)를 설정할 수 있습니다."
+   },
+   "settings_filter_rules": {
+      "message": "주소패턴"
+   },
+   "settings_filter_visibility": {
+      "message": "사이드바 불러오기"
+   },
+   "settings_filter_visibility_always": {
+      "message": "모든 페이지에서"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "특정 페이지를 제외한 모든 페이지에서"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "특정 페이지에만"
+   },
+   "settings_font_family": {
+      "message": "폰트 모양"
+   },
+   "settings_font_family_default": {
+      "message": "기본값"
+   },
+   "settings_font_family_desc": {
+      "message": "사이드바의 폰트 모양 및 위치"
+   },
+   "settings_header_height": {
+      "message": "헤더 높이"
+   },
+   "settings_headline_share_userdata": {
+      "message": "정보 공유"
+   },
+   "settings_hover_color": {
+      "message": "마우스오버 색상"
+   },
+   "settings_icon_background_color": {
+      "message": "배경 색상"
+   },
+   "settings_icon_color": {
+      "message": "아이콘 색상"
+   },
+   "settings_icon_color_auto": {
+      "message": "자동"
+   },
+   "settings_icon_color_custom": {
+      "message": "커스텀"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "아이콘 색상은 사용자 시스템의 색상 모드(라이트, 다크)에 맞게 자동으로 설정됩니다. 직접 아이콘 색상을 꾸밀 수 있습니다."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "크롬 테마를 커스텀으로 사용 중일 때는 아이콘 색상이 자동으로 설정되지 않습니다."
+   },
+   "settings_icon_shape": {
+      "message": "아이콘 모양"
+   },
+   "settings_import": {
+      "message": "설정 가져오기"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "북마크 불러오기/내보내기"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "이 기능은 브라우저 자체 기능입니다. 북마크 불러오기/내보내기에 관해 자세히 알아보려면 {browserName}를 확인하세요."
+   },
+   "settings_import_export_desc": {
+      "message": "확장 프로그램의 설정을 컴퓨터에 저장할 수 있습니다. 이전에 추출된 파일을 가져올 수도 있습니다."
+   },
+   "settings_import_export_headline": {
+      "message": "설정 불러오기/내보내기"
+   },
+   "settings_import_export_notice": {
+      "message": "Google 계정으로 {browserName}에 로그인하면 확장 프로그램 설정이 기기간에 자동으로 동기화됩니다. 로그인하지 않고 다른 사용자와 설정을 공유하려면 import/export 옵션을 사용하여 공유 할 수 있습니다."
+   },
+   "settings_import_failed": {
+      "message": "설정을 내보내지 못했습니다."
+   },
+   "settings_import_saved": {
+      "message": "설정을 성공적으로 내보냈습니다."
+   },
+   "settings_indicator_color": {
+      "message": "구분자 색상"
+   },
+   "settings_indicator_icon_color": {
+      "message": "아이콘 색상"
+   },
+   "settings_indicator_icon_size": {
+      "message": "아이콘 크기"
+   },
+   "settings_indicator_width": {
+      "message": "가로폭"
+   },
+   "settings_install_theme": {
+      "message": "테마 설치"
+   },
+   "settings_installed_theme_info": {
+      "message": "현재 설치된 테마"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "키보드 단축키 지정"
+   },
+   "settings_language": {
+      "message": "언어"
+   },
+   "settings_language_default": {
+      "message": "브라우저 기본값"
+   },
+   "settings_language_desc": {
+      "message": "표시 언어"
+   },
+   "settings_link_action": {
+      "message": "북마크 열기"
+   },
+   "settings_link_action_current_tab": {
+      "message": "현재 탭"
+   },
+   "settings_link_action_desc": {
+      "message": "북마크를 왼쪽 클릭하면 현재 탭이나 새 탭에서 북마크가 열립니다."
+   },
+   "settings_link_action_new_tab": {
+      "message": "새 탭"
+   },
+   "settings_menu_appearance": {
+      "message": "모양"
+   },
+   "settings_menu_appearance_general": {
+      "message": "일반"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "아이콘"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "구분자"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "오버레이"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "사이드바"
+   },
+   "settings_menu_dashboard": {
+      "message": "개요"
+   },
+   "settings_menu_expert": {
+      "message": "전문가 설정"
+   },
+   "settings_menu_export": {
+      "message": "불러오기/내보내기"
+   },
+   "settings_menu_infos": {
+      "message": "정보"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "나에 대해서"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "변경 사항"
+   },
+   "settings_menu_infos_contact": {
+      "message": "연락"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "권한"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "개인정보"
+   },
+   "settings_menu_language": {
+      "message": "언어"
+   },
+   "settings_menu_language_general": {
+      "message": "일반"
+   },
+   "settings_menu_language_translate": {
+      "message": "번역"
+   },
+   "settings_menu_newtab": {
+      "message": "새 탭"
+   },
+   "settings_menu_premium": {
+      "message": "프리미엄"
+   },
+   "settings_menu_sidebar": {
+      "message": "사이드바"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "필터"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "일반"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "토글"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "도움말"
+   },
+   "settings_menu_support": {
+      "message": "지원"
+   },
+   "settings_new_tab": {
+      "message": "새 탭"
+   },
+   "settings_new_tab_background": {
+      "message": "비활성 탭에 열기"
+   },
+   "settings_new_tab_desc": {
+      "message": "전경 또는 배경의 새 탭에서 북마크 열기"
+   },
+   "settings_new_tab_foreground": {
+      "message": "활성 탭에 열기"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "현재 탭 이후"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "마지막 탭 이후"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "첫 번째 탭 이전"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "마지막 또는 현재 탭 다음에 새 탭 열기"
+   },
+   "settings_newtab_desc": {
+      "message": "새 탭 페이지에서 확장 프로그램을 로드하는 기능은 아쉽게도 Google의 정책에 의해 허용되지 않습니다. 따라서 새 탭 페이지에서 북마크바를 열 때에는 다른 방식으로 우회하여 구현합니다."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "주소 입력하기"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "새 탭을 열었을 때 주소를 입력할 수 있습니다. 체크하지 않을 시 기본으로 설정 된 웹 사이트의 검색창을 입력할 수 있습니다."
+   },
+   "settings_newtab_override": {
+      "message": "새 탭 페이지 덮어쓰기"
+   },
+   "settings_newtab_override_configure": {
+      "message": "환경 설정"
+   },
+   "settings_newtab_override_desc": {
+      "message": "새 탭을 띄울 때 \"사이드바\"를 사용하여 페이지를 여시겠습니까?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "미리보기"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "자동으로 사이드바 열기"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "새 탭을 열었을 때 사이드바를 자동으로 열 것인지 설정합니다."
+   },
+   "settings_newtab_website": {
+      "message": "웹 사이트 열기"
+   },
+   "settings_newtab_website_desc": {
+      "message": "덮어씌운 새 탭 페이지 대신 불러올 웹 사이트를 설정합니다."
+   },
+   "settings_not_synced": {
+      "message": "모든 기기에서 동기화되지 않습니다."
+   },
+   "settings_open_action": {
+      "message": "사이드바 열기"
+   },
+   "settings_open_action_desc": {
+      "message": "왼쪽 클릭, 오른쪽 클릭, 마우스 옮기기로 사이드바를 엽니다. {browserName} 메뉴의 아이콘 클릭으로만 열 수 있게 설정할 수도 있습니다."
+   },
+   "settings_open_action_icon": {
+      "message": "아이콘 클릭"
+   },
+   "settings_open_action_leftclick": {
+      "message": "왼쪽 클릭"
+   },
+   "settings_open_action_mouseover": {
+      "message": "마우스 가져다 대기"
+   },
+   "settings_open_action_rightclick": {
+      "message": "오른쪽 클릭"
+   },
+   "settings_open_delay": {
+      "message": "열기 딜레이"
+   },
+   "settings_open_delay_desc": {
+      "message": "마우스 오버나 클릭시 지연으로 사이드바가 바로 열리지 않게 방지합니다."
+   },
+   "settings_overlay_mask_color": {
+      "message": "마스크 색상"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "확장 프로그램은 사이드 바에 북마크를 표시하므로 액세스 권한이 필요합니다. 또한 권한을 통해 확장 프로그램이 북마크를 추가, 편집 및 제거 할 수 있습니다."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "불행하게도 크롬은 현재 방문한 페이지와 상호 작용하지 않고 브라우저 창에 콘텐츠를 표시하는 메커니즘이 없습니다."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "사이드바가 현재 웹 사이트 상단에 표시되므로 이 권한이 필요합니다. 이러한 기술적인 이유 외에도 다른 목적으로 사용 권한이 사용되지 않습니다."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "사용권한으로 작업중인 작업에 대해 궁금한 점이 있으면 Github에서 확장 프로그램의 소스 코드를 볼수 있습니다. 오픈 소스이고 누구나 볼수 있습니다."
+   },
+   "settings_permissions_desc": {
+      "message": "크롬에서 전환 가능한 사이드바를 만들려면 다음 권한이 필요합니다. 확장에서 요청한 항목:"
+   },
+   "settings_premium_activated": {
+      "message": "프리미엄이 성공적으로 활성화되었습니다."
+   },
+   "settings_premium_invalid_key": {
+      "message": "프리미엄을 활성화할 수 없습니다. 올바른 라이센스 키를 입력하십시오."
+   },
+   "settings_presets": {
+      "message": "상대 크기 설정"
+   },
+   "settings_presets_desc": {
+      "message": "사이드바에 대해 미리 정의된 크기를 선택할 수 있습니다. 그러면 이 페이지의 슬라이더가 변경되어 사이드바 폭, 라인 높이, 아이콘 크기 및 기타 많은 옵션을 조정할 수 있습니다."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "화면 스크롤 방지"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "사이드바가 열려 있을 때 웹 사이트의 스크롤을 방지합니다."
+   },
+   "settings_prevent_windowed": {
+      "message": "창 모드에서 사이드바 사용 안 함"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "브라우저가 창 모드에있을 때 브라우저 내용의 가장자리를 클릭하거나 가리켜서 사이드바를 열 수 없게합니다."
+   },
+   "settings_remember_desc": {
+      "message": "페이지 변경시 기억할 내용을 선택하십시오. 마지막으로 연 책갈피를 기억하도록 선택하면 사이드 바를 다시 열 때 책갈피가 표시됩니다."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "열렸던 하위 디렉토리 기억"
+   },
+   "settings_remember_state": {
+      "message": "기억하기"
+   },
+   "settings_remember_state_all": {
+      "message": "스크롤 위치, 열렸던 디렉토리 및 마지막으로 연 북마크"
+   },
+   "settings_remember_state_nothing": {
+      "message": "기억하지 않음"
+   },
+   "settings_remember_state_open_states": {
+      "message": "열렸던 디렉토리"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "스크롤 위치와 열렸던 디렉토리"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "열린 상위 레벨 디렉토리"
+   },
+   "settings_reopen_sidebar": {
+      "message": "사이드바 다시 열기"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "사이드바에서 북마크를 연 다음 사이드 바를 다시 자동으로 엽니다."
+   },
+   "settings_restore": {
+      "message": "기본값으로 복원"
+   },
+   "settings_restore_confirm": {
+      "message": "설정을 기본값으로 복원하시겠습니까?"
+   },
+   "settings_restored_message": {
+      "message": "설정을 기본값으로 복원했습니다."
+   },
+   "settings_save": {
+      "message": "변경 사항 저장"
+   },
+   "settings_saved_message": {
+      "message": "변경 사항을 성공적으로 저장했습니다."
+   },
+   "settings_saved_share_userdata": {
+      "message": "설정을 성공적으로 저장했습니다."
+   },
+   "settings_scroll_bar_hide": {
+      "message": "스크롤 바 숨김"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "마지막으로 스크롤한 뒤, 설정된 시간이 지나면 스크롤 바가 사라집니다. 다시 스크롤하면 스크롤바가 나타납니다."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "숨기지 않음"
+   },
+   "settings_scroll_bar_width": {
+      "message": "스크롤바 폭"
+   },
+   "settings_search_placeholder": {
+      "message": "구성 검색"
+   },
+   "settings_show_themes": {
+      "message": "사용 가능한 테마 보기"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "마스크 색상"
+   },
+   "settings_sidebar_position": {
+      "message": "위치"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "사이드 바를 화면의 왼쪽 또는 오른쪽에서 열어야하는지 여부를 설정할 수 있습니다."
+   },
+   "settings_sidebar_position_left": {
+      "message": "왼쪽"
+   },
+   "settings_sidebar_position_right": {
+      "message": "오른쪽"
+   },
+   "settings_sidebar_width": {
+      "message": "사이드바 폭"
+   },
+   "settings_support_faq_headline": {
+      "message": "자주 묻는 질문"
+   },
+   "settings_support_feedback_desc": {
+      "message": "개선 사항, 질문이 있으시거나 버그를 발견 하셨나요? 보내주신 피드백은 모두 감사하게 받을 것이며, 이 확장 프로그램을 더 편리하게 사용하기 하는 데에 도움이 될 것입니다."
+   },
+   "settings_support_feedback_email": {
+      "message": "이메일 주소(선택)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "피드백"
+   },
+   "settings_support_feedback_notice": {
+      "message": "피드백을 영어로 작성해주세요. 그렇지 않을 경우 답변이 어려울 수 있습니다."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "스크린샷 첨부"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "최대 {1}개의 스크린샷만 업로드 할 수 있습니다."
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "{1}의 파일 크기가 너무 큽니다. (> 1 MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "피드백 보내기"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "피드백이 전송되지 않았습니다. 다시 시도해주세요."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "피드백을 보내주셔서 감사합니다"
+   },
+   "settings_text_color": {
+      "message": "글자 색상"
+   },
+   "settings_theme": {
+      "message": "테마"
+   },
+   "settings_theme_changed": {
+      "message": "테마가 성공적으로 변경되었습니다."
+   },
+   "settings_theme_default": {
+      "message": "기본 테마"
+   },
+   "settings_theme_default_desc": {
+      "message": "북마크를 단정하고 모던한 형태로 표현하는 테마입니다. 색상 구성표를 통해 다양한 요소들의 색상을 조정할 수 있습니다."
+   },
+   "settings_theme_focus": {
+      "message": "포커스 테마"
+   },
+   "settings_theme_focus_desc": {
+      "message": "애니메이션을 줄이고 각 요소들을 더 조밀하게 배치한 테마입니다. 향상된 성능과 생산성을 제공합니다."
+   },
+   "settings_theme_glass": {
+      "message": "글래스 테마"
+   },
+   "settings_theme_glass_desc": {
+      "message": "사이드바의 배경을 반투명하고 흐린 글래스의 형태로 표현하는 테마입니다. 투명도와 흐림 효과를 조정할 수 있습니다."
+   },
+   "settings_themes_notice": {
+      "message": "사이드바의 기본 디자인을 선택합니다. 테마를 선택한 후 슬라이더와 색상 옵션을 커스터마이징할 수 있습니다."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "이 확장프로그램은 개인용 취미로 시작된 1인 프로젝트입니다."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "활성화 영역"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "사이드바는 기본적으로 브라우저 창의 가장자리를 가리키면 열리게 되어 있습니다. 사이드바가 가장자리의 일부에서만 열리도록 허용하여 활성화 영역을 더 작게 만들 수 있습니다. 예를 들어, 브라우저 창의 왼쪽 하단 모서리에있는 활성화 영역을 클릭할 때만 표시되도록 설정할 수 있습니다. 이는 브라우저를 이용하다가 사이드바가 의도치 않게 튀어나오는 것을 방지하는 데 도움이 됩니다."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "모든 하위 폴더 확장"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "폴더를 더블클릭하여 해당 폴더와 하위 폴더를 모두 열 수 있습니다."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "혹시 알고 계셨나요?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "항목 숨기기"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "사이드바에서 북마크 또는 폴더를 숨길 수 있습니다. 사이드바의 항목을 마우스 오른쪽 버튼으로 클릭한 다음 컨텍스트 메뉴에서 {1} 버튼을 클릭합니다. 숨겨진 항목을 다시 표시하려면 사이드바 헤더에 있는 메뉴 아이콘을 클릭하고 해당 확인란을 활성화하면 됩니다."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "본 확장프로그램은 {1}개의 다른 언어로 제공됩니다. 번역은 커뮤니티에서 이루어지며 누구든 참여할 수 있습니다. 번역이 승인되면 다음 업데이트에서 확장프로그램에 추가됩니다."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "단축키"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "사이드바는 키보드 단축키를 사용하여 제어할 수 있습니다. 사이드바 헤더에있는 메뉴 아이콘을 클릭한 다음 {1} 버튼을 클릭해 단축키 목록을 볼 수 있습니다."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "여러 항목 선택"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "사이드바에서 여러 북마크 또는 폴더를 선택하여 드래그 앤 드롭으로 동시에 열거나 삭제하거나 이동할 수 있습니다."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "새 탭"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "아래쪽 모서리의 {1} 버튼을 클릭하여 페이지에서 직접 새 탭 페이지의 모양을 구성할 수 있습니다. 그런 다음 그리드 항목, 검색 엔진, 배경 이미지 또는 맨 위의 링크를 변경할 수 있습니다."
+   },
+   "settings_tips_tricks_next": {
+      "message": "다음 팁"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "모든 북마크 열기"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "폴더 내의 모든 북마크를 열려면 폴더를 휠 클릭하면 됩니다. 또는 왼쪽 마우스 버튼으로 폴더를 클릭하고 있는 동안 {1}을 누르면 됩니다."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "개인정보"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "사이드바에 표시된 북마크는 동기화되고 {browserName}에 의해 관리됩니다. 확장 기능은 이러한 북마크를 저장하거나 분석하지 않으며 사이드바에 브라우저의 책갈피만 표시합니다."
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "빠른 북마크"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "아무 URL이나 사이드바 안으로 드래그하면 북마크에 추가됩니다. 브라우저 탭의 현재 URL을 드래그할 수도 있습니다. 검색 주소창 왼쪽에 있는 {1} 기호를 사이드바 안으로 드래그하면, 전체 주소를 표시하지 않고도 현재 페이지를 북마크할 수 있습니다."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "빠른 검색"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "사이드바를 열고 곧바로 타이핑을 시작할 수 있습니다. 사이드바의 헤더에 있는 검색 아이콘을 누를 필요도 없습니다!"
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "빠른 URL 복사"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "사이드바에 있는 북마크의 URL을 클립보드로 복사하려면 항목을 가리키고 {1}를 누르세요."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "오른쪽 클릭"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "사이드바에서 북마크나 폴더를 마우스 오른쪽 버튼으로 클릭하면 추가 옵션이 표시됩니다. 예를 들어, 북마크를 편집하거나 항목을 사이드바 상단에 고정할 수 있습니다. 폴더를 오른쪽 클릭하면 북마크 확인을 통해 손상되거나 업데이트된 URL을 식별할 수도 있습니다."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "구분자"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "URL이 {1}이고 제목이 {2} 또는 {3}인 북마크 항목이 사이드바에 구분 기호로 표시됩니다. 사이드바에서 폴더를 마우스 오른쪽 클릭한 다음 {4} 버튼을 클릭하여 구분 기호를 추가할 수 있습니다."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "정보 공유"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "구성을 익명으로 공유하여 자주 사용하는 설정을 식별하고 향후 릴리스에서 개선하거나 변경할 항목을 식별할 수 있습니다. 해당 확장 프로그램이 개인 데이터를 수집하거나 북마크를 읽지 않습니다. 명시적 권한이 없으면 확장 프로그램은 어떠한 구성도 공유하지 않습니다."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "동기화"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "동기화 설정 확인하기"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "설정에서 브라우저 동기화 옵션을 활성화하면 사이드바의 모든 설정이 여러 장치 간에 동기화됩니다."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "이 확장프로그램의 최초 버전은 2016년 11월에 출시되었습니다."
+   },
+   "settings_title": {
+      "message": "설정"
+   },
+   "settings_toggle_area": {
+      "message": "영역 조정"
+   },
+   "settings_toggle_area_desc": {
+      "message": "기본적으로 사이드바를 여는 데에 브라우저 창의 모든 모서리를 지정할 수 있습니다. 이를 설정하여 구체적으로 어느 곳에서 사이드바가 열리게 할 지 정할 수 있습니다."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "드래그 움직임"
+   },
+   "settings_toggle_area_height": {
+      "message": "높이"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "높이를 조절하여 브라우저 모서리의 일정 부분에서만 사이드바가 열리게 할 수 있습니다."
+   },
+   "settings_toggle_area_width": {
+      "message": "넓이"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "넓이 (창 모드)"
+   },
+   "settings_tooltip_content": {
+      "message": "도움말 내용"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "추가 정보"
+   },
+   "settings_tooltip_content_all": {
+      "message": "북마크 제목과 주소"
+   },
+   "settings_tooltip_content_title": {
+      "message": "북마크 제목만"
+   },
+   "settings_tooltip_content_url": {
+      "message": "북마크 주소만"
+   },
+   "settings_tooltip_delay": {
+      "message": "도움말 딜레이"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "마우스로 가리키면 북마크에 대한 도움말이 표시되기까지 지연시간을 말합니다."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "도움말 표시 안 함"
+   },
+   "settings_tooltip_desc": {
+      "message": "도움말에 표시할 정보를 선택하세요"
+   },
+   "settings_tooltip_font_size": {
+      "message": "툴팁 폰트 크기"
+   },
+   "settings_translation_add_language": {
+      "message": "언어 추가"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "개요로 돌아가기"
+   },
+   "settings_translation_desc": {
+      "message": "이 확장 프로그램을 번역하거나 기존 번역본를 개선할 수 있습니다."
+   },
+   "settings_translation_help": {
+      "message": "각 항목에 대해 영어 원문을 참고하여 당신의 언어로 번역해 주십시오. 텍스트가 사용되는 위치와 그 용도를 식별하는 데 도움이 되도록 각 항목에 이름이 있으며(예 : {1}), 이는 번역하면 안됩니다. 오른쪽 상단에있는 버튼을 눌러 번역을 제출하는 것을 잊지 마십시오!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "일부 번역이 누락되었습니다."
+   },
+   "settings_translation_info": {
+      "message": "번역하지 않았거나 이미 번역한 항목을 수정할 수 있습니다. 번역한 항목을 보내주시면 검토 후 적용해 드립니다."
+   },
+   "settings_translation_link": {
+      "message": "번역 개요 가기"
+   },
+   "settings_translation_notice1": {
+      "message": "필수적인 카테고리에 대해 번역이 완료되는 즉시 번역판이 제공됩니다."
+   },
+   "settings_translation_notice2": {
+      "message": "번역이 완전하지 않은 항목은 사용자에게 제공되지 않습니다."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "새로운 언어 항목이 추가될 때 알림을 받고 싶습니다."
+   },
+   "settings_translation_required_category": {
+      "message": "필수"
+   },
+   "settings_translation_status_draft": {
+      "message": "번역 미완성. 번역이 완전하지 않거나 검토가 필요합니다."
+   },
+   "settings_translation_status_incomplete": {
+      "message": "번역된 항목이 표시되고 있지만, 일부 카테고리는 번역되지 않았습니다."
+   },
+   "settings_translation_status_released": {
+      "message": "번역이 완료됨"
+   },
+   "settings_translation_submit": {
+      "message": "제출"
+   },
+   "settings_translation_submit_message": {
+      "message": "번역한 항목을 제출하였습니다."
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "주소를 클립보드에 복사했습니다."
+   },
+   "sidebar_deleted": {
+      "message": "삭제됨"
+   },
+   "sidebar_dir_children": {
+      "message": "요소"
+   },
+   "sidebar_search_no_results": {
+      "message": "검색어와 일치하는 북마크가 없습니다."
+   },
+   "sidebar_search_placeholder": {
+      "message": "북마크 검색"
+   },
+   "sidebar_undo_deletion": {
+      "message": "삭제 취소"
+   },
+   "sort_label_alphabetical": {
+      "message": "이름순으로 정렬"
+   },
+   "sort_label_custom": {
+      "message": "사용자가 수동으로 정렬"
+   },
+   "sort_label_most_used": {
+      "message": "자주 방문한 순서로 정렬"
+   },
+   "sort_label_recently_added": {
+      "message": "최근에 추가한 순서로 정렬"
+   },
+   "sort_label_recently_used": {
+      "message": "최근에 방문한 순서로 정렬"
+   },
+   "sort_most_used_per_month": {
+      "message": "최근 한 달 동안"
+   },
+   "sort_view_as_tree": {
+      "message": "폴더 표시"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "새로고침"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "업데이트로 이 페이지를 새로고침 해야 합니다."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "현재 피드백 기능 이용이 불가합니다. 잠시 후 다시 시도해주세요."
+   },
+   "status_service_unavailable_headline": {
+      "message": "서비스 이용불가"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "현재 번역 기능 이용이 불가합니다. 잠시 후 다시 시도해주세요."
+   }
+}

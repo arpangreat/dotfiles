@@ -1,0 +1,25 @@
+2021/07/25-18:16:44.335 1db70 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/25-18:16:44.335 1db70 Recovering log #40
+2021/07/25-18:16:44.340 1db70 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000040.log 
+2021/07/25-18:16:58.889 1e10a Level-0 table #46: started
+2021/07/25-18:16:58.928 1e10a Level-0 table #46: 1675425 bytes OK
+2021/07/25-18:16:58.932 1e10a Delete type=0 #40
+2021/07/25-18:17:46.732 1db70 Level-0 table #48: started
+2021/07/25-18:17:46.735 1db70 Level-0 table #48: 61676 bytes OK
+2021/07/25-18:17:46.737 1db70 Delete type=0 #45
+2021/07/25-18:17:46.737 1db70 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x1c\x00S\x00t\x00o\x00r\x00e\x00d\x00C\x00a\x00c\x00h\x00e\x00S\x00t\x00a\x00t\x00e\x00:\x00:\x00/\x00m\x00a\x00i\x00l\x00/\x00u\x00/\x000\x00/' @ 34346 : 1
+2021/07/25-18:17:46.737 1db70 Compacting 1@0 + 1@1 files
+2021/07/25-18:17:46.752 1db70 Generated table #49@0: 1114 keys, 212475 bytes
+2021/07/25-18:17:46.752 1db70 Compacted 1@0 + 1@1 files => 212475 bytes
+2021/07/25-18:17:46.753 1db70 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/25-18:17:46.754 1db70 Delete type=2 #48
+2021/07/25-18:17:46.754 1db70 Delete type=2 #46
+2021/07/25-18:17:46.755 1db70 Manual compaction at level-0 from '\x00\x01\x01\x02\x01\x1c\x00S\x00t\x00o\x00r\x00e\x00d\x00C\x00a\x00c\x00h\x00e\x00S\x00t\x00a\x00t\x00e\x00:\x00:\x00/\x00m\x00a\x00i\x00l\x00/\x00u\x00/\x000\x00/' @ 34346 : 1 .. (end); will stop at (end)
+2021/07/25-18:17:46.755 1db70 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x1c\x00S\x00t\x00o\x00r\x00e\x00d\x00C\x00a\x00c\x00h\x00e\x00S\x00t\x00a\x00t\x00e\x00:\x00:\x00/\x00m\x00a\x00i\x00l\x00/\x00u\x00/\x001\x00/' @ 32666 : 1
+2021/07/25-18:17:46.755 1db70 Compacting 1@1 + 1@2 files
+2021/07/25-18:17:46.759 1db70 Generated table #50@1: 88 keys, 41387 bytes
+2021/07/25-18:17:46.759 1db70 Compacted 1@1 + 1@2 files => 41387 bytes
+2021/07/25-18:17:46.760 1db70 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/25-18:17:46.760 1db70 Delete type=2 #43
+2021/07/25-18:17:46.760 1db70 Delete type=2 #49
+2021/07/25-18:17:46.761 1db70 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x1c\x00S\x00t\x00o\x00r\x00e\x00d\x00C\x00a\x00c\x00h\x00e\x00S\x00t\x00a\x00t\x00e\x00:\x00:\x00/\x00m\x00a\x00i\x00l\x00/\x00u\x00/\x001\x00/' @ 32666 : 1 .. (end); will stop at (end)

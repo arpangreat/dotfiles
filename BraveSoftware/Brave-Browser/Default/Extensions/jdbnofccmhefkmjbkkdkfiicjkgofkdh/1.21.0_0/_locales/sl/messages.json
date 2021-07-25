@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "Dodaj vnos"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Dodaj zaznamek"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Urejevalnik zaznamkov"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Preveri zaznamke"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Zapri vse mape"
+   },
+   "contextmenu_copy": {
+      "message": "Kopiraj URL v odložišče"
+   },
+   "contextmenu_current_tab": {
+      "message": "odpri v tem zavihku"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Izbriši zaznamek"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Izbriši mapo"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Izbriši delilnik"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Prekliči izbiro zaznamka"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Prekliči izbor mape"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Uredi zaznamek"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Uredi mapo"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Uredi delilnik"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Skrij iz stranske vrstice"
+   },
+   "contextmenu_infos": {
+      "message": "Informacije"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Bližnjice na tipkovnici"
+   },
+   "contextmenu_new_tab": {
+      "message": "Odpri v novem zavihku"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Odpri v oknu brez beleženja zgodovine"
+   },
+   "contextmenu_new_window": {
+      "message": "Odpri v novem oknu"
+   },
+   "contextmenu_open_children": {
+      "message": "Odpri zaznamke"
+   },
+   "contextmenu_pin": {
+      "message": "Pripni na vrh"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Ponovno naloži stransko vrstico"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Izberite zaznamek"
+   },
+   "contextmenu_select_dir": {
+      "message": "Izberite mapo"
+   },
+   "contextmenu_select_entries": {
+      "message": "Izberite več vnosov"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Pokaži v mapi"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Pokaži na stranski vrstici"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Pokaži skrite vnose"
+   },
+   "contextmenu_unpin": {
+      "message": "Odpni iz vrha"
+   },
+   "contribute_intro": {
+      "message": "Za izboljšanje razširitve, bi želel vedeti več kako uporabniki uporabljajo stransko vrstico in kakšne nastavitve uporabljajo."
+   },
+   "contribute_notice": {
+      "message": "Lahko nam pomagate, z deljenjem vaših nastavitev"
+   },
+   "contribute_outro": {
+      "message": "Če imate vprašanja ali skrbi v zvezi z deljenjem informacij, prosimo pošljite sporočilo s povratno informacijo."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Vašo aktivnost lahko delite iz stranske vrstice anonimno, kar mi pomaga vedeti kako uporabniki na splošno uporabljajo stransko vrstico. Informacije o vaših zaznamkih ali vaših obiskanih spletnih straneh [b]ne bodo[/b] beležene."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Te informacija je zelo uporabna za identifikacijo problemov v uporabnosti možnosti, ki niso uporabljene pogosto."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Koliko zaznamkov imajo uporabniki povprečno?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Katero platformo uporabljajo uporabniki (Windows, Mac, Linux, ...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Ali uporabniki uporabljajo iskanje?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Ali uporabniki spreminjajo sortiranje zaznamkov?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Kako pogosto uporabniki ponovno razvrščajo ali spreminjajo vnose?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Podatki, ki so deljeni so na primer:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Deli aktivnost"
+   },
+   "contribute_share_config_desc": {
+      "message": "Vaše nastavitve delite anonimno, kar mi pomaga identificirati priljubljene nastavitve, in ugotoviti kaj je potrebno izboljšati v prihodnjih posodobitvah."
+   },
+   "contribute_share_config_label": {
+      "message": "Deli nastavitve"
+   },
+   "extension_desc": {
+      "message": "Doda preklopljivo vrstico z vsemi vašimi zaznamki na rob okna vašega brskalnika."
+   },
+   "extension_last_update": {
+      "message": "Nazadnje posodobljeno {1}"
+   },
+   "extension_name": {
+      "message": "Vrstica z zaznamki"
+   },
+   "extension_version": {
+      "message": "Verzija"
+   },
+   "header_bookmarks": {
+      "message": "Zaznamki"
+   },
+   "header_bookmarks_single": {
+      "message": "Zaznamek"
+   },
+   "header_selected_entries": {
+      "message": "izbrano"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Kopira URL trenutnega prehodnega vnosa"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Odstrani trenutni prehodni vnos"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Izvede klik na trenutni prehod vnosa"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Zapre stransko vrstico, odprt overlay ali kontekstni meni"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Command"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Delete"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Zavihek"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Odpre kontekstni meni trenutnega prehoda vnosa"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Lebdi nad naslednjim ali prejšnjim vnosom v stranski vrstici"
+   },
+   "more_link": {
+      "message": "Preberi več"
+   },
+   "newtab_fallback_desc": {
+      "message": "Namesto tega smo odprli nov zavihek s stransko vrstico."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Stranska vrstica se ne more uporabljati na strani razširitev"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Nekaj je blokiralo stransko vrstico"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Stranska vrstica se ne more uporabljati na privzeti strani novega zavihka"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Stranska vrstica se ne more uporabljati na straneh {browserName} System-a"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "En izmed vaših URL-jev je preprečil stranski vrstici da se odpre"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Stranska vrstica se ne more uporabljati na strani {browserName} Webstore"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Vedno pokaži to stran pri odpiranju novega zavihka"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Prikaži ikone spletnih strani"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Prikaži predoglede spletnih strani"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Uporabniško določeni vnosi"
+   },
+   "newtab_grid_links_default": {
+      "message": "Top strani"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Velikost mreže"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Ne pokaži strani"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Največkrat uporabljeni zaznamki"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Nedavno uporabljeni zaznamki"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Določen s strani uporabnika"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Naslov"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL domače strani"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL rezultatov iskanja"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Iskalni pogon"
+   },
+   "newtab_search_field_hide": {
+      "message": "Skrij polje za iskanje"
+   },
+   "newtab_search_field_show": {
+      "message": "Pokaži polje za iskanje"
+   },
+   "newtab_search_placeholder": {
+      "message": "Iskanje {1} ali vnesi URL"
+   },
+   "newtab_speech_search_error": {
+      "message": "Če želite omogočiti govorno iskanje, morate omogočiti dostop do mikrofona."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Govori zdaj"
+   },
+   "newtab_title": {
+      "message": "Nov zavihek"
+   },
+   "newtab_upload_background": {
+      "message": "Naloži sliko ozadja"
+   },
+   "onboarding_finish_desc": {
+      "message": "Veliko zabave z vašo stransko vrstico."
+   },
+   "onboarding_finish_notice": {
+      "message": "Če pogosti klikate stvari na {1} strani okna brskalnika, lahko raje spremenite kje se stranska vrstica vodoravno odpre da se izognete odpiranju po nesreči."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Nastavi izgled"
+   },
+   "onboarding_goto_settings": {
+      "message": "Več nastavitev"
+   },
+   "onboarding_handson_desc": {
+      "message": "Sedaj lahko preizkusite sami."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Kliknite na ikono razširitve da odprete stransko vrstico."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Premaknite miškin kazalec na {1} rob ekrana vašega okna."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Nato {1} kliknite z vašo miško da odprete stransko vrstico."
+   },
+   "onboarding_headline": {
+      "message": "Hvala za namestitev razširitve."
+   },
+   "onboarding_left": {
+      "message": "levo"
+   },
+   "onboarding_right": {
+      "message": "desno"
+   },
+   "onboarding_setup": {
+      "message": "Nastavi zdaj"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Kako želite odpreti vašo stransko vrstico?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Kje želite vašo stransko vrstico?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Temen"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Kater stil imate raje?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Svetel"
+   },
+   "onboarding_skip": {
+      "message": "Preskoči nastavljanje"
+   },
+   "onboarding_title": {
+      "message": "Nastavljanje"
+   },
+   "overlay_add_position": {
+      "message": "Položaj"
+   },
+   "overlay_add_position_append": {
+      "message": "Dodaj v mapo"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Pripni v mapo"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Dodatne informacije"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Ustvarjen dne"
+   },
+   "overlay_bookmark_title": {
+      "message": "Naslov"
+   },
+   "overlay_bookmark_url": {
+      "message": "URL"
+   },
+   "overlay_bookmark_views": {
+      "message": "Ogledi"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "na mesec"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Shranjen od"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Ogled"
+   },
+   "overlay_cancel": {
+      "message": "Prekliči"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Preverjanje URL-jev zaznamkov"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Pokvarjeno"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Spremenjeno"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Dvojniki"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Prazne mape"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Vsi URL-ji zaznamkov so v redu"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Ni pokvarjenih URL-jev zaznamkov"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Ni spremenjenih URL-jev zaznamkov"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Ni podvojenih URL-jev zaznamkov"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Ni map brez zaznamkov"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Izbriši izbrano"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Posodobi izbrano"
+   },
+   "overlay_close": {
+      "message": "Zapri"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Ali res želite odpreti vseh {1} podrejenih zaznamkov?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "Ali res želite odpreti vseh{1} zaznamkov, vključno z zaznamki v podmapah v izbranih mapah?"
+   },
+   "overlay_delete": {
+      "message": "Izbriši"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Ali res želite izbrisati ta zaznamek?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Ali res želite izbrisati to mapo? Vsi podrejeni zaznamki bodo izbrisani prav tako."
+   },
+   "overlay_delete_selected": {
+      "message": "Izbriši izbrane vnose"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "Ali res želite izbrisati izbrane vnose? Izbrisani bodo tudi vsi zaznamki v podmapah izbranih map."
+   },
+   "overlay_dir_children": {
+      "message": "Elementi"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Zaznamki"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Mape"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Ali res želite skriti ta zaznamek iz stranske vrstice?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Ali res želite skriti to mapo iz stranske vrstice? Vsi podrejeni zaznamki bodo skriti prav tako."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Skrij iz stranske vrstice"
+   },
+   "overlay_label_bookmark": {
+      "message": "Zaznamek"
+   },
+   "overlay_label_dir": {
+      "message": "Mapa"
+   },
+   "overlay_label_separator": {
+      "message": "Delilnik"
+   },
+   "overlay_open_children": {
+      "message": "Odpri vse"
+   },
+   "overlay_save": {
+      "message": "Shrani"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Imate možnost poimenovanja naslova delilnika. Ime bo prikazano na vrhu delilne črte in vam lahko pomaga pri organizaciji seznama zaznamkov."
+   },
+   "overlay_update": {
+      "message": "Posodobi"
+   },
+   "premium_activate": {
+      "message": "Premium aktivacija"
+   },
+   "premium_already_activated": {
+      "message": "Premium že uporabljate"
+   },
+   "premium_desc_1": {
+      "message": "Z Premium dobite dostop do dodatnih funkcij in mi pomagate vzdrževati razširitev."
+   },
+   "premium_desc_2": {
+      "message": "Spodaj lahko pogledate funkcije Premium-a. Vse ključne funkcije razširitve so brezplačne za uporabo in ne bodo potrebovale Premium-a. Za dostop do funkcij Premium-a lahko plačate toliko, kot se vam razširitev in moje delo zdi vredna."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Če uporabljate stran novega zavihka te razširitve, lahko za še boljši izgled za ozadje določite svojo lastno sliko."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Prilagodite vašo stran novega zavihka"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Če poznate CSS, lahko popolnoma spremenite izgled stranske vrstice z dodajanjem vaših lastnih definicij stilov."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Prilagodite vse z vašim lastnim Stylesheet-om"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "Z Premium-om dobite dostop do neobjavljenih funkcij, ki so še trenutno v izdelavi ali so v testiranju."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Bodite prvi pri preizkuševanju novih eksperimentalnih funkcij."
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Izvozite in uvozite vaše nastavitve."
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Na vsako mapo vaše stranske vrstice lahko kliknete z desno miškino tipko da izberete preverjanje. Stran z rezultati vam bo pokazala vse posodobljene URL-je, zaznamke, ki niso več delujoči in zaznamke z enakim URL-jem."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Preveri vaše zaznamke za pokvarjene povezave ali duplikate"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Spremenite širino vaše stranske vrstice kadarkoli."
+   },
+   "premium_feature_themes_desc": {
+      "message": "Zamenjajte cel izgled stranske vrstice z enim klikom z namestitvijo druge teme. Te so tudi lahko prilagojene z drsniki in izborom barv."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Spremenite temo stranske vrstice"
+   },
+   "premium_get_now": {
+      "message": "Pridobi Premium zdaj"
+   },
+   "premium_license_key": {
+      "message": "Licenčni ključ"
+   },
+   "premium_pay_buy": {
+      "message": "Premium nakup"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Politika odpovedi"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Potrdite nakup"
+   },
+   "premium_pay_contact": {
+      "message": "Če imate z plačilom kakršnekoli težave ali vprašanja, me prosim kontaktirajte na {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Kreditna ali debetna kartica"
+   },
+   "premium_pay_eula": {
+      "message": "End-User License Agreement"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Prebral sem in sprejmem [a]End-User License Agreement[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Potek kartice"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Številka kartice"
+   },
+   "premium_pay_info_email": {
+      "message": "E-pošta"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Vnesite svoj e-poštni naslov, da boste prejeli licenčni ključ."
+   },
+   "premium_pay_info_name": {
+      "message": "Ime"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Način plačila"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Poštna številka"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Spodaj izberite način plačila in v naslednjem koraku izberite želeni znesek, ki ga želite plačati."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Za aktivacijo {1} na drugi napravi ali ob ponovni namestitvi razširitve, lahko vnesete sledeči licenčni ključ v nastavitve razširitve:"
+   },
+   "premium_pay_price_info": {
+      "message": "To je enkratno plačilo in vključuje tudi vse prihodnje premijske funkcije."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Lahko plačate toliko kolikor mislite, da je vam razširitev in moje delo vredno, če želite dobiti dostop do premium funkcij. Vedno boste prejeli vse premium funkcije, ne glede na to, koliko ste pripravljeni plačati."
+   },
+   "premium_pay_price_total": {
+      "message": "Skupaj"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Nakup ID"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Izberite način plačila"
+   },
+   "premium_pay_success_headline": {
+      "message": "Hvala vam za vaš nakup"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} je bil samodejno aktiviran za vašo napravo. Nadaljnji koraki niso potrebni."
+   },
+   "premium_pay_verifying": {
+      "message": "Preveri transakcijo"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Za nadaljevanje skenirajte to kodo QR v programu WeChat."
+   },
+   "premium_pay_what_you_want": {
+      "message": "Plačajte kolikor želite"
+   },
+   "premium_popup_text": {
+      "message": "Ste že pogledali Premium?"
+   },
+   "premium_restricted_text": {
+      "message": "Ta funkcija je možna le z Premium"
+   },
+   "premium_show_license_input": {
+      "message": "Premium že imam"
+   },
+   "settings_advanced": {
+      "message": "Napredne nastavitve"
+   },
+   "settings_available_themes": {
+      "message": "Razpoložljive teme"
+   },
+   "settings_background_blur": {
+      "message": "Zamegljenost ozadja"
+   },
+   "settings_background_transparency": {
+      "message": "Prosojnost ozadja"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Barva ikone mape"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Ikona mape"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Indentation map"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Velikost pisave zaznamkov"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Vodoravno odstopanje zaznamkov"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Velikost ikone zaznamkov"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Velikost vrstice zaznamka"
+   },
+   "settings_close_timeout": {
+      "message": "Čas zapiranja"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Čas v sekundah po katerem se stranska vrstica zapre. Šteti se začne takoj ko miškin kazalec zapusti stransko vrstico in se ustavi ob ponovnem prehodu."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Ne zapri samodejno"
+   },
+   "settings_color_scheme": {
+      "message": "Barvna shema"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Barva glave stranske vrstice, checkboxov in podobno."
+   },
+   "settings_custom_css": {
+      "message": "Stil po meri"
+   },
+   "settings_custom_css_desc": {
+      "message": "Nastavite lahko lasten stil, da preglasite privzet stil. To možnost uporabite samo, če vam je CSS poznan in veste kaj počnete."
+   },
+   "settings_dark_mode": {
+      "message": "Površina"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Spremenite videz stranske vrstice"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Videz stranske vrstice lahko v celoti spremenite tako, da ustreza vašim potrebam. Obstajajo različne možnosti za spreminjanje velikosti pisave, razmika med vrsticami, barv, ikon in še veliko več. Izbirate lahko tudi med vnaprej določenimi modeli in prednastavljenimi možnostmi, da bo stranska vrstica hitro videti, kot želite."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Nastavite obnašanje stranske vrstice"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Za nadzor razširitve lahko spremenite različne možnosti. Lahko na primer spremenite, kako naj stranska vrstica drsi ali kako se odpirajo vaši zaznamki. Če ne želite, da se stranska vrstica nalaga na vsaki strani, lahko to nastavite tudi z uporabo ustreznih pravil."
+   },
+   "settings_dir_accordion": {
+      "message": "Pokaži le trenutno mapo"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Zapri vse mape razen trenutno aktivne."
+   },
+   "settings_directories_icon_size": {
+      "message": "Velikost ikone map"
+   },
+   "settings_directory_arrows": {
+      "message": "Puščice map"
+   },
+   "settings_expert_save_error": {
+      "message": "Nastavitev ni bilo mogoče shraniti. Prosimo, popravite vnos."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Strokovne nastavitve vam omogočajo, da nastavite vsako zastavico konfiguracije razširitve, tudi tiste, ki jih ne morete spremeniti z običajnimi potrditvenimi polji ali drsniki strani z nastavitvami."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Prosimo, spremenite samo vrednosti tukaj, če veste, kaj počnete. Napačne konfiguracije lahko povzročijo nepričakovano obnašanje razširitve. Če se nekaj pokvari, se lahko vrnete na privzeto konfiguracijo."
+   },
+   "settings_export": {
+      "message": "Izvozi nastavitve"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Dodajte le en URL vzorec na vrstico"
+   },
+   "settings_filter_explanation_2": {
+      "message": "Uporabite * za izbiro kateregakoli znaka (na primer: primer.com/* izbere vse strani pod primer.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Če ne izberete nobene * v pravilih, bo izbran le točen URL (primer: \"primer.com\" ne bo izbral URL-ja \"primer.com/vizitka.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "V pravila ne rabite dodati protokolov (primer: http://)"
+   },
+   "settings_filter_intro": {
+      "message": "Če ne želite, da je stranska vrstica naložena na vsaki strani, lahko izberete kje razširitev naložiti (bela lista) ali kje ne (črna lista)."
+   },
+   "settings_filter_rules": {
+      "message": "Vzorci URL-jev"
+   },
+   "settings_filter_visibility": {
+      "message": "Naloži stransko vrstico"
+   },
+   "settings_filter_visibility_always": {
+      "message": "Na vsaki strani"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "Na vseh straneh razen določenih"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Samo na določenih straneh"
+   },
+   "settings_font_family": {
+      "message": "Pisava"
+   },
+   "settings_font_family_default": {
+      "message": "Privzeto"
+   },
+   "settings_font_family_desc": {
+      "message": "Pisava stranske vrstice v pregledu"
+   },
+   "settings_header_height": {
+      "message": "Višina glave"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Deli informacijo"
+   },
+   "settings_hover_color": {
+      "message": "Barva ob prehodu z miško"
+   },
+   "settings_icon_background_color": {
+      "message": "Barva ozadja"
+   },
+   "settings_icon_color": {
+      "message": "Barva"
+   },
+   "settings_icon_color_auto": {
+      "message": "Avtomatično"
+   },
+   "settings_icon_color_custom": {
+      "message": "Ročno"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Barva ikone bo nastavljena avtomatično, ko izberete barvno shemo(svetlo ali temno). Lahko pa v nastavitvah sami določite barvo ikone."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Avtomatična barva ikon ni možna kadar privzeto uporabljate temo iz Chroma."
+   },
+   "settings_icon_shape": {
+      "message": "Oblika"
+   },
+   "settings_import": {
+      "message": "Uvozi nastavitve"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Uvozi/Izvozi Zaznamke"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "To je funkcija brskalnika in ni del razširitve. Preberite več o tem, kako uvoziti in izvoziti zaznamke v {browserName}."
+   },
+   "settings_import_export_desc": {
+      "message": "Vaše nastavitve razširitve lahko izvozite in shranite lokalno na vaš računalnik. Prej izvoženo datoteko lahko uvozite na katerekoli računalnik, kjer je nameščena razširitev."
+   },
+   "settings_import_export_headline": {
+      "message": "Uvozi/Izvozi Nastavitve"
+   },
+   "settings_import_export_notice": {
+      "message": "Nastavitve razširitve so samodejno sinhronizirane med vašimi napravami, če ste prijavljeni z vašim računom. Če se nočete prijaviti ali želite vaše nastavitve deliti z ostalimi ljudmi, lahko uporabite to uvozi/izvozi možnost"
+   },
+   "settings_import_failed": {
+      "message": "Konfiguracijski uvoz. Prosim izberite veljavno datoteko."
+   },
+   "settings_import_saved": {
+      "message": "Konfiguracija uspešno uvožena"
+   },
+   "settings_indicator_color": {
+      "message": "Barva"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Barva ikone"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Velikost ikone"
+   },
+   "settings_indicator_width": {
+      "message": "Širina"
+   },
+   "settings_install_theme": {
+      "message": "Namesti temo"
+   },
+   "settings_installed_theme_info": {
+      "message": "Trenutno nameščeno"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Nastavi bližnjico na tipkovnici"
+   },
+   "settings_language": {
+      "message": "Jezik"
+   },
+   "settings_language_default": {
+      "message": "Brskalnikov privzet"
+   },
+   "settings_language_desc": {
+      "message": "Jezik uporabniškega vmesnika"
+   },
+   "settings_link_action": {
+      "message": "Odpri zaznamke"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Trenutni zavihek"
+   },
+   "settings_link_action_desc": {
+      "message": "Klik na zaznamek z levo miškino tipko ga bo odprl v trenutnem ali novem zavihku."
+   },
+   "settings_link_action_new_tab": {
+      "message": "Novi zavihek"
+   },
+   "settings_menu_appearance": {
+      "message": "Izgled"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Osnovno"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Ikona"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Indikator"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Overlay"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Stranska vrstica"
+   },
+   "settings_menu_dashboard": {
+      "message": "Pregled"
+   },
+   "settings_menu_expert": {
+      "message": "Strokovne nastavitve"
+   },
+   "settings_menu_export": {
+      "message": "Uvoz/izvoz"
+   },
+   "settings_menu_infos": {
+      "message": "Informacija"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "O meni"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Seznam sprememnb"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Stik"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Dovoljenja"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Zasebnost"
+   },
+   "settings_menu_language": {
+      "message": "Jezik"
+   },
+   "settings_menu_language_general": {
+      "message": "Osnovno"
+   },
+   "settings_menu_language_translate": {
+      "message": "Prevedi"
+   },
+   "settings_menu_newtab": {
+      "message": "Nov zavihek"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Stranska vrstica"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Filter"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Osnovno"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Toggle"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Namigi"
+   },
+   "settings_menu_support": {
+      "message": "Podpora"
+   },
+   "settings_new_tab": {
+      "message": "Nov zaznamek"
+   },
+   "settings_new_tab_background": {
+      "message": "Odpri v ozadju"
+   },
+   "settings_new_tab_desc": {
+      "message": "Odpri zaznamke v novem oknu v ospredju ali v ozadju"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Odpri v ospredju"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Za trenutnim zavihkom"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Za zadnjim zavihkom"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Pred prvim zavihkom"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Odpri nove zavihke za zadnjim odprtim ali trenutnim zavihkom"
+   },
+   "settings_newtab_desc": {
+      "message": "Na žalost je Google odstranil možnost nalaganja razširitev na privzeti strani za nov zavihek. Zaradi tega sem dodal nekaj opcij, ki pri odpiranju novega zavihka omogočajo dostop do zaznamkov na druge načine."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Izpostavljena naslovno vrstico"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Če omogočena, bo naslovna vrstica izpostavljena, ko odprete nov zavihek. Če ne, bo namesto nje izpostavljeno iskalno polje"
+   },
+   "settings_newtab_override": {
+      "message": "Preglasi stran novega zavihka"
+   },
+   "settings_newtab_override_configure": {
+      "message": "Konfigurirajte"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Želite da razširitev preglasi vašo stran trenutnega novega zavihka z ali prilagojenim ali spletno stranjo, ki bo naložena ob odpiranju novega zavihka?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "Predogled"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Samodejno odpri stransko vrstico"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Nastavi, če se stranska vrstica odpre samodejno ob odpiranju novega zavihka."
+   },
+   "settings_newtab_website": {
+      "message": "Naloži spletno stran"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Na mesto odpiranja zamenjave novega zavihka lahko določite spletno stran, ki bo odprta namesto zavihka."
+   },
+   "settings_not_synced": {
+      "message": "Ne bo sinhronizirano preko vaših naprav."
+   },
+   "settings_open_action": {
+      "message": "Odpri vrstico z zaznamki"
+   },
+   "settings_open_action_desc": {
+      "message": "Odpri vrstico z zaznamki z levim ali desnim klikom ali prehodom miškinega kazalca na rob okna brskalnika. Alternativno lahko to spremenite tako, da se odpre le ob kliku na ikono v meniju {browserName}-a."
+   },
+   "settings_open_action_icon": {
+      "message": "Klik na ikono"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Levi klik"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Prehod z miško"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Denis klik"
+   },
+   "settings_open_delay": {
+      "message": "Zamik pri odpiranju"
+   },
+   "settings_open_delay_desc": {
+      "message": "Prepreči takojšnje odpiranje stranske vrstice ob prehodu z miško ali kliku na ikono."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Barva maske"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "Razširitev prikazuje vaše zaznamke v stranski vrstici in za to potrebuje to dovoljenje da dobi dostop. To dovoljenje tudi dovoli razširitvi da dodaja, ureja in odstranjuje zaznamke."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "Na žalost {browserName} nima mehanizma za prikaz vsebina v oknu brskalnika brez interakcije z trenutno obiskano stranjo."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Ker je stranska vrstica prikazana na vrhu trenutne spletne strani, je to dovoljenje potrebovano. Razen tehničnih razlogov, to dovoljenje ni uporabljeno za druge namene."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Če imate skrbi v zvezi z kaj počnem z tem dovoljenjem, lahko pogledate izvorno kodo razširitve na Github-u. Je odprto kodna in vidna vsem."
+   },
+   "settings_permissions_desc": {
+      "message": "Da je toggeable stranska vrstica možna v {browserName}-u, so potrebna in zahtevana sledeča dovoljenja razširitve:"
+   },
+   "settings_premium_activated": {
+      "message": "Premium uspešno aktiviran"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Premium aktivacija nu uspela. Prosim vnesite veljaven licenčni ključ"
+   },
+   "settings_presets": {
+      "message": "Nastavi relativne velikosti"
+   },
+   "settings_presets_desc": {
+      "message": "Izberete lahko pre-definirane velikosti za stransko vrstico. To no spremenilo drsnike na teh strani za prilagoditev širine stranske vrstice, višine vrstic, velikosti ikon in veliko več drugih možnosti."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Prepreči vrtenje strani"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Prepreči vrtenje trenutne strani medtem ko je stranska vrstica odprta."
+   },
+   "settings_prevent_windowed": {
+      "message": "Onemogoči stransko vrstico v načinu v oknu."
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Onemogoči možnost odpiranja stranske vrstice z klikom ali prehodom miške na rob brskalnika ko je brskalnik v načinu v oknu."
+   },
+   "settings_remember_desc": {
+      "message": "Izberite kaj se zapomni na splošno pri spremembah strani. Če izberete, da se zapomni zadnji odprt zaznamek, bo označen, ko se stranska vrstica odpre ponovno."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Zapomni si odprte pod-mape"
+   },
+   "settings_remember_state": {
+      "message": "Zapomni si"
+   },
+   "settings_remember_state_all": {
+      "message": "Lokacijo vrtenja, odprte mape in zadnji odprti zaznamek"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Nič"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Odprte mape"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Lokacijo vrtenja in odprte mape"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Odprte najvišje sloje map"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Ponovno odpri stransko vrstico"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Samodejno ponovno odpri stransko vrstico za odpiranjem zaznamke iz stranske vrstice."
+   },
+   "settings_restore": {
+      "message": "Obnovi privzeto"
+   },
+   "settings_restore_confirm": {
+      "message": "Ali res želite obnoviti privzete nastavitve?"
+   },
+   "settings_restored_message": {
+      "message": "Nastavitve uspešno obnovljene"
+   },
+   "settings_save": {
+      "message": "Shrani spremembe"
+   },
+   "settings_saved_message": {
+      "message": "Spremembe uspešno shranjene"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Vaša preferenca je bila uspešno shranjena"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Skrij stransko vrstico"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Čas v sekundah po katerem bo stranska vrstica skrita. Vrtenje bo stransko vrstico pokazalo ponovno."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Nikoli skrij"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Širina drsnika"
+   },
+   "settings_search_placeholder": {
+      "message": "Poiščite konfiguracijo"
+   },
+   "settings_show_themes": {
+      "message": "Pokaži razpoložljive teme"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Barva maske"
+   },
+   "settings_sidebar_position": {
+      "message": "Lokacija"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Dovoli vam nastaviti, če se bo stranska vrstica odprla na levem ali desnem robu okna brskalnika."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Levo"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Desno"
+   },
+   "settings_sidebar_width": {
+      "message": "Širina"
+   },
+   "settings_support_faq_headline": {
+      "message": "Pogosta vprašanja"
+   },
+   "settings_support_feedback_desc": {
+      "message": "Imate kakšne predloge za izboljšanje, vprašanja, opazite manjkajoče nastavitve, ali ste našli hrošča? Za pomoč pri izboljšanju izkušnje z razširitvijo bom zelo hvaležen za kakršnekoli in vse povratne informacije, ki jih imate."
+   },
+   "settings_support_feedback_email": {
+      "message": "e-poštni naslov (neobvezno)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Povratne infrmacije"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Prosim sestavite vašo povratno informacijo v angleškem jeziku, drugače bo težko razumeti vaše sporočilo in vam odgovoriti."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Priloži sliko ekrana"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Naložite lahko največ {1} slik ekrana"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "Velikost datoteke od {1} je prevelika (> 1 MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Pošlji povratno informacijo"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Vaše sporočilo ni bilo poslano. Prosim poskusite ponovno."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Hvala za vašo povratno informacijo"
+   },
+   "settings_text_color": {
+      "message": "Barva besedila"
+   },
+   "settings_theme": {
+      "message": "Tema"
+   },
+   "settings_theme_changed": {
+      "message": "Tema uspešno spremenjena"
+   },
+   "settings_theme_default": {
+      "message": "Privzeta tema"
+   },
+   "settings_theme_default_desc": {
+      "message": "Ta tema Vam dovoli moderen in čist dostop do zaznamkov. Nekateri elementi so obarvani z nastavljivo barvno shemo"
+   },
+   "settings_theme_focus": {
+      "message": "Focus tema"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Ta tema zmanjšuje animacije in gosteje razporeja elemente za večjo produktivnost in zmogljivost."
+   },
+   "settings_theme_glass": {
+      "message": "Steklena tema"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Ta tema naredi ozadje opravilne vrstice prosojno in mu doda učinek zamegljenega stekla. Ta učinek in prosojnost lahko prilagodite"
+   },
+   "settings_themes_notice": {
+      "message": "Izberete lahko osnovno obliko stranske vrstice. Izbrano temo je lahko uredite po meri z drsniki in barvami"
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Ta razširitev je projekt enega človeka, ki se je začel kot hobi projekt za osebno uporabo."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Aktivacijsko območje"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "Če želite odpreti stransko vrstico, lahko privzeto premaknete celoten rob okna brskalnika. Aktivacijsko območje lahko zmanjšate, če dovolite, da se stranska vrstica odpre le na delu višine brskalnika. Stransko vrstico lahko na primer spremenite tako, da se prikaže samo, ko kliknete območje za aktiviranje v spodnjem levem kotu okna brskalnika. To je lahko koristno, da preprečite nenamerno prikazovanje stranske vrstice, ko kliknete povezave na spletnem mestu."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Razširite vse podmape"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Če želite hitro odpreti tudi mapo z vsemi odprtimi podmapami, lahko dvokliknete mapo v stranski vrstici."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Ali ste vedeli?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Skrij vnose"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "V stranski vrstici lahko skrijete posamezne zaznamke ali celo mape. Z desno miškino tipko lahko kliknete kateri koli vnos v stranski vrstici in nato v kontekstnem meniju kliknete gumb {1}. Če želite znova prikazati skrite vnose, lahko v glavi stranske vrstice kliknete ikono menija in tam omogočite ustrezno potrditveno polje."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "Razširitev je na voljo v {1} različnih jezikih. Prevodi so narejeni v skupnosti in vsak lahko prispeva s prevajanjem besedil razširitve v druge jezike. Prevodi bodo odobreni in nato dodani v razširitev z naslednjo posodobitvijo."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Bližnjice na tipkovnici"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "Stransko vrstico lahko nadzorujete z bližnjicami na tipkovnici. Seznam bližnjic si lahko ogledate tako, da v glavi stranske vrstice kliknete ikono menija in nato kliknete gumb {1}."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Izberite več vnosov"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "V stranski vrstici lahko izberete več zaznamkov ali map, da jih hkrati povlečete in spustite tako, da jih odprete, izbrišete ali celo premaknete."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Nov zaznamek"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "Videz strani novega zavihka lahko konfigurirate neposredno na strani, tako da kliknete gumb {1} v spodnjem kotu. Nato lahko spremenite elemente mreže, iskalnik, sliko ozadja ali povezave na vrhu."
+   },
+   "settings_tips_tricks_next": {
+      "message": "Naslednji namig"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Odprite vse zaznamke"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Če želite odpreti vse zaznamke v mapi, lahko srednjo mapo kliknete. Lahko pa pritisnete {1}, medtem ko z levim gumbom miške kliknete mapo."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Zasebnost"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "Zaznamke, prikazane v stranski vrstici, sinhronizira in upravlja {browserName}. Razširitev teh zaznamkov ne shranjuje ali analizira in v stranski vrstici prikaže samo tiste iz vašega brskalnika."
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Hitri zaznamki"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Vsak URL lahko povlečete naravnost v stransko vrstico in ga spustite na želeno mesto. Na ta način lahko celo označite in povlečete trenutni URL zavihka brskalnika. Simbol {1} lahko povlečete tudi levo od naslovne vrstice v stransko vrstico, če želite trenutno stran dodati med zaznamke, ne da bi prej označili celotno naslovno vrstico."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Hitro iskanje"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Če odprete stransko vrstico, lahko zaznamke iščete tako, da začnete tipkati. Najprej ni treba klikniti ikone za iskanje v glavi stranske vrstice."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Hitra kopija URL-ja"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Če želite kopirati URL zaznamka v stranski vrstici v odložišče, lahko med premikanjem vnosa pritisnete {1}."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Desni klik"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Če želite razkriti dodatne možnosti, lahko z desno miškino tipko kliknete kateri koli zaznamek ali mapo v stranski vrstici. Na primer, na vrhu stranske vrstice lahko uredite obstoječe zaznamke ali zaznamke. Ko z desno miškino tipko kliknete mapo, lahko začnete preverjati zaznamke, da prepoznate nepravilne ali posodobljene URL-je zaznamkov."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Ločila"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Vnos zaznamka z URL-jem {1} in naslovom {2} ali {3} bo prikazan kot ločilo v stranski vrstici. Ločila lahko dodate tako, da z desno miškino tipko kliknete katero koli mapo v stranski vrstici in nato kliknete gumb {4}."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Deli informacijo"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "Konfiguracijo lahko delite anonimno, kar mi pomaga prepoznati priljubljene nastavitve in ugotoviti, kaj izboljšati ali spremeniti v prihodnjih izdajah. Razširitev ne zbira osebnih podatkov ali bere zaznamkov. Brez izrecnega dovoljenja razširitev tudi ne deli nobene konfiguracije."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Sinhronizacija"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Poiščite nastavitve sinhronizacije"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Vse nastavitve stranske vrstice bodo sinhronizirane med vašimi napravami, če v nastavitvah omogočite možnosti sinhronizacije brskalnika. Tudi brez Premium."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "Prva različica te razširitve je bila izdana novembra 2016."
+   },
+   "settings_title": {
+      "message": "Nastavitve"
+   },
+   "settings_toggle_area": {
+      "message": "Konfiguriraj območje"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Privzeto lahko stransko vrstico z prehodom miške odprete po celotnem robu brskalnika. To lahko spremenite in konfigurirate tako, da določite katero območje točno bo stransko vrstico odpiralo."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Povlecite, da premaknete"
+   },
+   "settings_toggle_area_height": {
+      "message": "Višina"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Spremenite lahko višino območja, tako da se bo stranska vrstica odprla samo ko boste naredili prehod z miško le na tej lokaciji roba okna brskalnika."
+   },
+   "settings_toggle_area_width": {
+      "message": "Širina"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Širina (v oknu)"
+   },
+   "settings_tooltip_content": {
+      "message": "Vsebina namiga"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Dodatne informacije"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Naslov in URL"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Samo naslov"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Samo URL"
+   },
+   "settings_tooltip_delay": {
+      "message": "Zamik namiga"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Zamik po katerem bo prikazan namig zaznamke ob prehodu z miško."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Nikoli ne pokaži namigov"
+   },
+   "settings_tooltip_desc": {
+      "message": "Izberite katere informacije bo namig prikazoval."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Velikost pisave namigov"
+   },
+   "settings_translation_add_language": {
+      "message": "Dodaj jezik"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Nazaj na pregled"
+   },
+   "settings_translation_desc": {
+      "message": "Pomagate lahko z prevodi razširitve v vaš jezik ali izboljšate že obstoječega."
+   },
+   "settings_translation_help": {
+      "message": "Za vsak vnos, ki mora biti preveden v vaš jezik, lahko vidite angleški prevod. Za lažjo identifikacijo kje se tekst uporablja in za kaj sploh je, ima vsak vnos svoje ime (na primer: {1}), in ne sme biti preveden. Prosim ne pozabite oddati vašega prevoda z klikom na gumb v zgornjem desnem kotu!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Nekateri prevodi manjkajo"
+   },
+   "settings_translation_info": {
+      "message": "Urejate lahko že obstoječe prevode ali dodate manjkajoče. Če oddate svoje spremembe, bom preveril vaš vnos in ga odobril."
+   },
+   "settings_translation_link": {
+      "message": "Pojdi na pregled prevodov"
+   },
+   "settings_translation_notice1": {
+      "message": "Takoj, ko bodo prevedene vse kategorije označene kot potrebovane, bom izdal prevod."
+   },
+   "settings_translation_notice2": {
+      "message": "Nepopolne kategorije ne bodo izdane, da se preprečijo nepopolno prevedenih tekstov."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Želim biti obveščen, ko se v razširitev dodajo nove jezikovne spremenljivke"
+   },
+   "settings_translation_required_category": {
+      "message": "Potrebovano"
+   },
+   "settings_translation_status_draft": {
+      "message": "Prevod je nepopoln ali potrebuje ocenitev in ni na voljo uporabnikom"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Prevod je na voljo, vendar so nekatere kategorije nepopolne"
+   },
+   "settings_translation_status_released": {
+      "message": "Prevod je na voljo"
+   },
+   "settings_translation_submit": {
+      "message": "Oddaj"
+   },
+   "settings_translation_submit_message": {
+      "message": "Vaš prevod je bil uspešno oddan"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "URL kopiran"
+   },
+   "sidebar_deleted": {
+      "message": "Odstranjen"
+   },
+   "sidebar_dir_children": {
+      "message": "Elementi"
+   },
+   "sidebar_search_no_results": {
+      "message": "Vaše iskanje se ne ujema z nobenim zaznamkom"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Išči zaznamek"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Razveljavi"
+   },
+   "sort_label_alphabetical": {
+      "message": "Po abecedi"
+   },
+   "sort_label_custom": {
+      "message": "Določen s strani uporabnika"
+   },
+   "sort_label_most_used": {
+      "message": "Največkrat uporabljeno"
+   },
+   "sort_label_recently_added": {
+      "message": "Nedavno dodano"
+   },
+   "sort_label_recently_used": {
+      "message": "Nedavno uporabljeno"
+   },
+   "sort_most_used_per_month": {
+      "message": "Na mesec"
+   },
+   "sort_view_as_tree": {
+      "message": "Pokaži mape"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Ponovno naloži zdaj"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Zaradi posodobitve razširitve je potrebno osvežiti stran."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Storitev povratnih informacij trenutno ni dostopna. Če želite pustiti povratno informacijo, prosimo pošljite e-pošto."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Storitev ni dostopna"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Storitev prevodov trenutno ni odstopna. Prosimo poskusite kasneje."
+   }
+}

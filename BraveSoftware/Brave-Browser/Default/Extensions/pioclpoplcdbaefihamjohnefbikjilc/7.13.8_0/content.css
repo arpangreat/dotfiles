@@ -1,0 +1,468 @@
+#evernoteEmailPreview {
+  background-color: white;
+  border-top: none;
+  border-right: 1px solid #A2AEB5;
+  border-bottom: none;
+  border-left: 1px solid #A2AEB5;
+  box-sizing: content-box;
+  height: calc(100% - 76px);
+  left: calc(15% - 26px);
+  min-width: 402px;
+  overflow-y: auto;
+  padding: 38px 48px;
+  position: fixed;
+  top: 0;
+  width: calc(70% - 202px);
+  z-index: 2147483646;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.45);
+  pointer-events: all; }
+  #evernoteEmailPreview .evernoteEmailHeader, #evernoteEmailPreview .evernoteEmailDimmed, #evernoteEmailPreview .evernoteEmailAttachments {
+    font-family: Helvetica, Arial, sans-serif; }
+  #evernoteEmailPreview .evernoteEmailHeader {
+    color: #2F373D;
+    font-weight: bold; }
+  #evernoteEmailPreview .evernoteEmailBig {
+    font-size: 15px; }
+  #evernoteEmailPreview .evernoteEmailMedium {
+    font-size: 14px; }
+  #evernoteEmailPreview .evernoteEmailSmall {
+    font-size: 12px; }
+  #evernoteEmailPreview .evernoteEmailRight {
+    float: right; }
+  #evernoteEmailPreview .evernoteEmailDimmed {
+    color: #7B868A; }
+  #evernoteEmailPreview .evernoteEmailDivider {
+    height: 1px; }
+  #evernoteEmailPreview .evernoteEmailLight {
+    background-color: #D3D6D8; }
+  #evernoteEmailPreview .evernoteEmailDark {
+    background-color: #A2AEB5; }
+  #evernoteEmailPreview .evernoteEmailLong {
+    left: -48px;
+    position: relative;
+    width: calc(100% + 96px); }
+  #evernoteEmailPreview .evernoteEmailShort {
+    width: 100%; }
+  #evernoteEmailPreview #evernoteEmailParticipants {
+    margin: 16px 0 29px 0; }
+  #evernoteEmailPreview #evernoteEmailLinkBack {
+    display: block;
+    margin: 22px 0 8px 0;
+    position: relative;
+    text-decoration: none; }
+  #evernoteEmailPreview #evernoteEmailLinkBackArrow {
+    height: 11px;
+    width: 16px;
+    margin-right: 12px;
+    margin-bottom: 0; }
+  #evernoteEmailPreview #evernoteEmailSelectAllMessages {
+    margin: 22px 0 8px 0;
+    position: relative; }
+  #evernoteEmailPreview .evernoteEmail {
+    margin: 24px 0;
+    position: relative; }
+  #evernoteEmailPreview .evernoteEmailCheckbox {
+    border: 1px solid #5CC18A;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 16px; }
+  #evernoteEmailPreview .evernoteEmailSelectedMessage .evernoteEmailCheckbox {
+    background-image: url(./res/gmail_msg_selected.png);
+    background-repeat: no-repeat;
+    background-size: 11px 9px;
+    background-position: 50% 50%; }
+    @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+      #evernoteEmailPreview .evernoteEmailSelectedMessage .evernoteEmailCheckbox {
+        background-image: url(./res/gmail_msg_selected@2x.png); } }
+  #evernoteEmailPreview .evernoteEmailBody {
+    /* the color and font properties are gmail's default display for style-less text. don't override since most text will have styling */
+    color: #222;
+    display: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 24px; }
+  #evernoteEmailPreview .evernoteEmail.evernoteEmailSelectedMessage .evernoteEmailBody {
+    display: block; }
+  #evernoteEmailPreview .evernoteEmailAttachments {
+    display: none;
+    padding: 20px 0 0 40px; }
+  #evernoteEmailPreview .evernoteEmail.evernoteEmailSelectedMessage .evernoteEmailAttachments {
+    display: block; }
+  #evernoteEmailPreview .evernoteEmailAttachments .evernoteEmailSize {
+    margin-left: 10px; }
+  #evernoteEmailPreview .evernoteLargeLoading {
+    background-image: url(./res/loading.gif);
+    background-repeat: no-repeat;
+    background-size: 118px 117px;
+    height: 117px;
+    left: calc(50% - 59px);
+    position: absolute;
+    top: calc(50% - 58px);
+    width: 118px; }
+    @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+      #evernoteEmailPreview .evernoteLargeLoading {
+        background-image: url(./res/loading@2x.gif); } }
+
+#evernoteContentVeil {
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0.75);
+  border-style: solid;
+  box-sizing: border-box;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 2147483645; }
+
+#evernoteFullVeil {
+  background-color: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2147483645;
+  top: 0;
+  left: 0; }
+
+#evernoteInnerBox {
+  border: 4px solid #00A82D;
+  box-sizing: border-box;
+  height: 100%; }
+
+.veilBorder {
+  position: absolute;
+  pointer-events: all; }
+
+.veilControls {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 50%;
+  width: 54px;
+  height: 24px;
+  cursor: pointer;
+  transform: translate(-50%, -50%); }
+  .veilControls.bottom {
+    top: auto;
+    bottom: -24px; }
+
+.evernoteArticleExpand,
+.evernoteArticleContract {
+  background-color: #2F373D;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 24px;
+  pointer-events: auto;
+  flex-basis: 27px; }
+
+.evernoteArticleExpand {
+  background-image: url(./res/article-expand.png);
+  background-repeat: no-repeat;
+  background-size: 14px 15px;
+  border-radius: 4px 0 0 4px;
+  border-right: none; }
+  @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .evernoteArticleExpand {
+      background-image: url(./res/article-expand@2x.png); } }
+
+.evernoteArticleContract {
+  background-image: url(./res/article-contract.png);
+  background-repeat: no-repeat;
+  background-size: 14px 5px;
+  border-left: none;
+  border-radius: 0 4px 4px 0; }
+  @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .evernoteArticleContract {
+      background-image: url(./res/article-contract@2x.png); } }
+
+#evernoteBookmarkIframe {
+  font-size: initial;
+  color: initial;
+  background-color: white;
+  position: fixed;
+  width: 574px;
+  height: 276px;
+  padding: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(123, 134, 138, 0.99);
+  pointer-events: all;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+  z-index: 2147483646;
+  clip: auto; }
+
+#evernoteClearlyArticle {
+  background: #f3f2ee;
+  border: none;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  display: block;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  min-height: 100%;
+  max-width: none;
+  min-width: 0;
+  opacity: 1;
+  outline: invert none medium;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  position: fixed;
+  resize: none;
+  right: auto;
+  top: 0;
+  vertical-align: baseline;
+  visibility: visible;
+  animation-duration: 0;
+  transition: width 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 0;
+  z-index: 2147483644;
+  clip: auto; }
+  #evernoteClearlyArticle.evernoteClipperVisible {
+    width: 100%; }
+
+#evernoteClearlyCustom {
+  background: none;
+  border: none;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  display: none;
+  height: 100%;
+  max-height: none;
+  min-height: 100%;
+  min-width: 0;
+  opacity: 1;
+  outline: invert none medium;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  position: fixed;
+  resize: none;
+  right: auto;
+  top: 0;
+  visibility: visible;
+  animation-duration: 0;
+  transition-duration: 0;
+  z-index: 2147483644;
+  width: 70%;
+  max-width: 980px;
+  margin: 0 auto 0 auto;
+  left: 50%;
+  transform: translateX(-50%); }
+  #evernoteClearlyCustom.evernoteClipperVisible {
+    display: block; }
+
+#evernoteClipperCrosshair {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2147483645; }
+  #evernoteClipperCrosshair:before, #evernoteClipperCrosshair:after {
+    border: none;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+  #evernoteClipperCrosshair:before {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    left: -100%;
+    top: -100%; }
+  #evernoteClipperCrosshair:after {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    left: 0;
+    top: 0; }
+
+#evernoteClipperCrosshairToast {
+  background: none;
+  border: none;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  display: block;
+  height: 113px;
+  left: calc(50% - 200px);
+  margin: 0;
+  max-height: none;
+  min-height: 0;
+  max-width: none;
+  min-width: 0;
+  opacity: 1;
+  outline: invert none medium;
+  padding: 0;
+  position: fixed;
+  resize: none;
+  right: auto;
+  top: calc(50% - 56.5px);
+  vertical-align: baseline;
+  visibility: visible;
+  width: 400px;
+  z-index: 2147483646;
+  animation-duration: 0;
+  transition: opacity 250ms linear;
+  user-select: none; }
+  #evernoteClipperCrosshairToast.evernoteClipperHidden {
+    opacity: 0; }
+
+#evernoteScreenshotVeil {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  border-style: solid;
+  border-width: 0;
+  z-index: 2147483644;
+  border-color: rgba(0, 0, 0, 0.27); }
+
+#EvernoteClipperPreloader {
+  position: fixed;
+  z-index: 2147483645;
+  top: 12px;
+  right: 12px;
+  width: 300px;
+  height: 60px; }
+
+.sh-tip {
+  font-family: ClipperSoleil, sans-serif;
+  border-radius: 4px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000000000;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500; }
+  .sh-tip.dark {
+    background-color: #1A1A1A;
+    color: white; }
+  .sh-tip.light {
+    background-color: white;
+    color: #333; }
+
+.nextPagesCounter {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 120px 10px;
+  color: #3d4a54;
+  font-size: 13px;
+  height: 36px;
+  line-height: 36px;
+  position: absolute;
+  top: -48px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3d4a54;
+  border-image: initial;
+  border-radius: 2px;
+  padding: 0px 33px 0 20px;
+  background-image: url(./res/loading_light.svg); }
+  .nextPagesCounter.loaded {
+    font-family: Arial, sans-serif;
+    padding: 0px 20px;
+    background-image: none; }
+
+.stopScroll {
+  height: 100% !important;
+  overflow: hidden !important; }
+
+@media (max-width: 600px) {
+  #evernoteBookmarkIframe {
+    width: 250px; } }
+
+@media (min-width: 600px) {
+  #evernoteBookmarkIframe {
+    width: 250px; } }
+
+@media (min-width: 768px) {
+  #evernoteBookmarkIframe {
+    width: 288px; } }
+
+@media (min-width: 992px) {
+  #evernoteBookmarkIframe {
+    width: 369px; } }
+
+@media (min-width: 1200px) {
+  #evernoteBookmarkIframe {
+    width: 476px; } }
+
+@media (min-width: 1400px) {
+  #evernoteBookmarkIframe {
+    width: 574px; } }
+
+.screenshotPreviewerManagerBox {
+  display: flex !important;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999999999;
+  top: 20px;
+  visibility: visible !important;
+  opacity: 1; }
+
+.screenshotPreviewerManagerBoxHidden {
+  visibility: hidden !important;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.4s linear; }
+
+@font-face {
+  font-family: 'ClipperSoleil';
+  src: url(./res/Soleil.woff2) format("woff2"); }
+
+.cropButtonsItem {
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "ClipperSoleil";
+  font-size: 10pt;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.32); }
+
+.cropButtonsItemCancel {
+  padding-left: 15px;
+  color: white; }
+
+.cropButtonsItemApply {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  width: 60px;
+  justify-content: center;
+  color: white;
+  background-color: #00A82D;
+  border-color: #00A82D; }
+  .cropButtonsItemApply:hover {
+    background-color: #008F26;
+    border-color: #008F26; }
+
+.cropButtons {
+  top: 10px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: baseline;
+  visibility: visible !important;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 174px;
+  background-color: #1A1A1A;
+  border-top: 1px solid #333;
+  border-image: initial;
+  position: fixed;
+  z-index: 9999999999;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  box-shadow: rgba(0, 0, 0, 0.05) -3px 3px 3px -1px; }
+

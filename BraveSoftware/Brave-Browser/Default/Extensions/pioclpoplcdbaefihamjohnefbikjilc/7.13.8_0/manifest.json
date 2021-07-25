@@ -1,0 +1,40 @@
+{
+   "author": "Evernote",
+   "background": {
+      "persistent": true,
+      "scripts": [ "commons.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "38": "res/icon.png"
+      },
+      "default_title": "__MSG_BrowserActionTitle__"
+   },
+   "content_scripts": [ {
+      "css": [ "content.css", "SkitchStyles.css", "TopFrames.css" ],
+      "js": [ "commons.js", "content.js" ],
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ]
+   }, {
+      "all_frames": true,
+      "js": [ "BrowserFrameLoader.js" ],
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_ExtensionDescription__",
+   "icons": {
+      "128": "res/icon128.png",
+      "38": "res/icon.png"
+   },
+   "incognito": "split",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDagHdvA7LfpgVcEBFjt6ADW0PMXRJpeSnRsjAJWdapZYbS2LAIMB5lftI0ZjGZyyH2obL2coYBgcULJkidtZ8YIX9yP5tbB7mh1RzHj2oNfXBlh2yzJm/4/QELGmHhOy3S6x/2102Zo+Q7AgBtPN5RPX1X2FJbasBT02O4DvvRcwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ExtensionName__",
+   "options_page": "OptionsFrame.html",
+   "options_ui": {
+      "page": "OptionsFrame.html#newStylePage"
+   },
+   "permissions": [ "activeTab", "tabs", "cookies", "contextMenus", "\u003Call_urls>", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.13.8",
+   "web_accessible_resources": [ "consent.html", "consentStyles.css", "ContentFrame.html", "OptionsFrame.html", "SimSearchFrame.html", "PdfPageButtonFrame.html", "content.css", "ClearlyReformatStyles.css", "ClearlyCustomStyles.css", "PreloaderStyles.css", "SkitchStyles.css", "HighlightStyles.css", "BookmarkStyles.css", "ScreenshotPreviewerManagerBox.css", "FrameSerializer.js", "BrowserFrameLoader.js", "res/snap.wav", "res/*" ]
+}

@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "Nieuw item toevoegen"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Nieuwe bladwijzer toevoegen"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Bladwijzerbeheer"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Bladwijzers nakijken"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Sluit alle mappen"
+   },
+   "contextmenu_copy": {
+      "message": "Kopieer URL naar klembord"
+   },
+   "contextmenu_current_tab": {
+      "message": "Open in huidige tab"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Verwijder bladwijzer"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Verwijder map"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Verwijder scheidingslijn"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Deselecteer bladwijzer"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Deselecteer map"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Bewerk bladwijzer"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Bewerk map"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Bewerk scheidingslijn"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Verberg in de zijbalk"
+   },
+   "contextmenu_infos": {
+      "message": "Informatie"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Sneltoetsen"
+   },
+   "contextmenu_new_tab": {
+      "message": "Open in nieuwe tab"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Open in incognitovenster"
+   },
+   "contextmenu_new_window": {
+      "message": "Open in nieuw venster"
+   },
+   "contextmenu_open_children": {
+      "message": "Open bladwijzers"
+   },
+   "contextmenu_pin": {
+      "message": "Vastmaken aan bovenkant"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Herlaad de zijbalk"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Selecteer bladwijzer"
+   },
+   "contextmenu_select_dir": {
+      "message": "Selecteer map"
+   },
+   "contextmenu_select_entries": {
+      "message": "Selecteer meerdere vermeldingen"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Toon in map"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Toon in de zijbalk"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Toon verborgen items"
+   },
+   "contextmenu_unpin": {
+      "message": "Losmaken van bovenkant"
+   },
+   "contribute_intro": {
+      "message": "Om de extensie te verbeteren, wil ik begrijpen hoe en met welke configuratie de gebruikers de zijbalk hanteren en welke configuratie ze instellen."
+   },
+   "contribute_notice": {
+      "message": "Je kan me helpen door uw instellingen met mij te delen"
+   },
+   "contribute_outro": {
+      "message": "Als je vragen of twijfels hebt over het delen van informatie, stuur me dan een feedback bericht."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Je kan je activiteit binnen de extensie anoniem delen, zodat ik weet hoe gebruikers de zijbalk in het algemeen hanteren. Informatie over je bladwijzers of bezochte websites [b]worden niet[/b] bijgehouden of gedeeld."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Deze informatie is erg nuttig om problemen met de gebruiksvriendelijkheid of weinig gebruikte functies te ontdekken."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Hoeveel bladwijzers hebben gebruikers gemiddeld?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Welk besturingssysteem gebruiken de gebruikers (Windows, MacOS, Linux, ...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Wordt de zoekfunctie gebruikt?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Veranderen gebruikers de volgorde (sortering) van de bladwijzers?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Hoe vaak worden de bladwijzers bewerkt of van volgorde veranderd?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Voorbeeld van gegevens die gedeeld worden:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Deel activiteit"
+   },
+   "contribute_share_config_desc": {
+      "message": "Je deelt anoniem je configuratie, hetgeen mij helpt om populaire instellingen te ontdekken en zo te bepalen wat er in de volgende versies van de extensie verbeterd of veranderd kan worden."
+   },
+   "contribute_share_config_label": {
+      "message": "Deel configuratie"
+   },
+   "extension_desc": {
+      "message": "Voegt een zijbalk toe aan je browser voor snelle en makkelijke toegang tot al je bladwijzers."
+   },
+   "extension_last_update": {
+      "message": "Bijgewerkt op {1}"
+   },
+   "extension_name": {
+      "message": "Bladwijzer zijbalk"
+   },
+   "extension_version": {
+      "message": "Versie"
+   },
+   "header_bookmarks": {
+      "message": "Bladwijzers"
+   },
+   "header_bookmarks_single": {
+      "message": "Bladwijzer"
+   },
+   "header_selected_entries": {
+      "message": "geselecteerd"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Kopieer de URL van het geselecteerde item"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Verwijdert het geselecteerde item"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Kies voor het geselecteerde item"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Sluit de zijbalk, het geopende hulpvenster of contextuele menu"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Cmd"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Verwijder"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Tab"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Open het contextuele menu voor het geselecteerde item"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Selecteert het volgende of vorige item in de zijbalk"
+   },
+   "more_link": {
+      "message": "Lees verder"
+   },
+   "newtab_fallback_desc": {
+      "message": "We hebben een nieuw tabblad met zijbalk voor je geopend."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "De zijbalk kan niet worden gebruikt op de Extensies-pagina"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "De zijbalk is geblokkeerd."
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "De zijbalk kan niet worden gebruikt op het standaard nieuwe tabblad"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "De zijbalk kan niet worden gebruikt op de systeem-pagina's van {browserName}"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Een URL-regel voorkomt dat de zijbalk kan worden geopend."
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "De zijbalk kan niet worden gebruikt op de {browserName} Webstore"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Deze pagina altijd tonen als je een nieuw tabblad opent."
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Toon website iconen"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Toon website voorbeelden"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Gebruiker bepaald toegang"
+   },
+   "newtab_grid_links_default": {
+      "message": "Top pagina's"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Rastergrootte"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Verberg pagina's"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Meest bladwijzers"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Recent gebruikte bladwijzers"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Gedefinieerd door gebruiker"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Titel"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL van startpagina"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL van zoekresultaten"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Zoekmachine"
+   },
+   "newtab_search_field_hide": {
+      "message": "Verberg zoekveld"
+   },
+   "newtab_search_field_show": {
+      "message": "Toon zoekveld"
+   },
+   "newtab_search_placeholder": {
+      "message": "Zoek {1} of typ de URL"
+   },
+   "newtab_speech_search_error": {
+      "message": "Om het zoeken naar spraak mogelijk te maken, moet u microfoontoegang toestaan."
+   },
+   "newtab_speech_search_listening": {
+      "message": "nu spreken"
+   },
+   "newtab_title": {
+      "message": "Nieuw tabblad"
+   },
+   "newtab_upload_background": {
+      "message": "Een achtergrondafbeelding uploaden"
+   },
+   "onboarding_finish_desc": {
+      "message": "Veel plezier met je zijbalk."
+   },
+   "onboarding_finish_notice": {
+      "message": "Als je vaak aan de {1}zijde van de browser klikt, wil je misschien veranderen waar de zijbalk geopend wordt om te voorkomen dat je deze per ongeluk opent."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Bewerk het uiterlijk"
+   },
+   "onboarding_goto_settings": {
+      "message": "Meer instellingen"
+   },
+   "onboarding_handson_desc": {
+      "message": "Nu kun je het zelf uitproberen."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Klik op het icoon van de extensie om de zijbalk te openen."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Beweeg je muisaanwijzer naar de {1}-zijde van het browservenster."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Klik {1} keer met de muis om de zijbalk te openen."
+   },
+   "onboarding_headline": {
+      "message": "Bedankt voor het installeren van deze extensie."
+   },
+   "onboarding_left": {
+      "message": "linker"
+   },
+   "onboarding_right": {
+      "message": "rechter"
+   },
+   "onboarding_setup": {
+      "message": "Installeer nu"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Hoe wil je de zijbalk openen?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Waar wil je de zijbalk tonen?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Donker"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Welke stijl verkies je?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Licht"
+   },
+   "onboarding_skip": {
+      "message": "Installatie overslaan"
+   },
+   "onboarding_title": {
+      "message": "Installatie"
+   },
+   "overlay_add_position": {
+      "message": "Positie"
+   },
+   "overlay_add_position_append": {
+      "message": "Map achteraan toevoegen"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Map vooraan toevoegen"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Meer informatie"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Gemaakt op"
+   },
+   "overlay_bookmark_title": {
+      "message": "Titel"
+   },
+   "overlay_bookmark_url": {
+      "message": "URL"
+   },
+   "overlay_bookmark_views": {
+      "message": "Weergaves"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "per maand"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Opgenomen sinds"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Weergave"
+   },
+   "overlay_cancel": {
+      "message": "Annuleer"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "De URL's van de bladwijzers controleren"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Ongeldig"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Gewijzigd"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Duplicaten"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Lege mappen"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Alle URL's van de bladwijzers zijn correct"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Er zijn geen ongeldige bladwijzer URL's"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Er zijn geen gewijzigde bladwijzer URL's"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Er zijn geen dubbele bladwijzer URL's"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Er zijn geen mappen zonder bladwijzers"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Geselecteerde verwijderen"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Geselecteerde bijwerken"
+   },
+   "overlay_close": {
+      "message": "Sluit"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Weet je zeker dat je alle {1} onderliggende wilt openen?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "Wilt u echt alle {1} bladwijzers openen, inclusief de bladwijzers in de submap van de geselecteerde mappen?"
+   },
+   "overlay_delete": {
+      "message": "Verwijder"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Weet je zeker dat je deze bladwijzer wil verwijderen?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Weet je zeker dat je deze map wil verwijderen in de zijbalk? Alle onderliggende bladwijzers worden ook verborgen."
+   },
+   "overlay_delete_selected": {
+      "message": "Verwijder geselecteerde vermeldingen"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "Wilt u de geselecteerde vermeldingen echt verwijderen? Alle submapbladwijzers van de geselecteerde mappen worden ook verwijderd."
+   },
+   "overlay_dir_children": {
+      "message": "Elementen"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Bladwijzers"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Mappen"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Weet je zeker dat je deze bladwijzer wil verbergen in de zijbalk?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Weet je zeker dat je deze map wil verbergen in de zijbalk? Alle onderliggende bladwijzers worden ook verborgen."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Verberg van zijbalk"
+   },
+   "overlay_label_bookmark": {
+      "message": "Bladwijzer"
+   },
+   "overlay_label_dir": {
+      "message": "Map"
+   },
+   "overlay_label_separator": {
+      "message": "Scheidingslijn"
+   },
+   "overlay_open_children": {
+      "message": "Alles openen"
+   },
+   "overlay_save": {
+      "message": "Opslaan"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Je kan optioneel een titel voor het scheidingsteken invoeren. Het wordt bovenaan de scheidingslijn weergegeven en kan je helpen bij het organiseren van uw bladwijzerlijst."
+   },
+   "overlay_update": {
+      "message": "Bijwerken"
+   },
+   "premium_activate": {
+      "message": "Activeer Premium"
+   },
+   "premium_already_activated": {
+      "message": "Je gebruikt Premium reeds"
+   },
+   "premium_desc_1": {
+      "message": "Met Premium krijg je toegang tot bijkomende functies, en help je mij om de extensie te blijven ontwikkelen."
+   },
+   "premium_desc_2": {
+      "message": "Hieronder kan je de Premium functies bekijken. De basisfuncties van deze extensie kan je volledig gratis gebruiken zonder Premium. Bepaal zelf wat de extensie en mijn inspanningen voor jou waard zijn, en betaal dat bedrag om toegang te bekomen tot de Premium functies."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Als je de functie \"Nieuw tabblad\" van deze extensie gebruikt, kan je je eigen achtergrondafbeelding instellen, voor een nog mooier uiterlijk."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Ontwerp je eigen Nieuw tabblad"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Mits je vertrouwd bent met CSS, kan je het volledig uiterlijk van de zijbalk aanpassen door je eigen stijlen eraan toe te voegen. Dit laat je toe om alles volledig naar eigen smaak in te stellen."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Bepaal alles op maat met je eigen stijlblad"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "Met Premium krijg je toegang tot nog niet uitgebrachte functies, die nog in ontwikkeling zijn en getest worden."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Test als eerste de nieuwe experimentele functies"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Importeer en exporteer je instellingen"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Met een rechtermuisklik kan je elke map in de zijbalk een controle laten uitvoeren. Je krijgt een rapport met alle bijgewerkte URL's, bladwijzers die niet langer functioneren en bladwijzers met dezelfde URL."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Controleer je bladwijzers op ongeldige of dubbele koppelingen"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Wijzig de breedte van je zijbalk op elk gewenst ogenblik"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Je kunt het hele ontwerp van de zijbalk met één klik verwisselen door een ander thema te installeren. Ze kunnen ook worden aangepast met de beschikbare schuifregelaars en kleuropties."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Verander het thema van je zijbalk"
+   },
+   "premium_get_now": {
+      "message": "Neem nu Premium"
+   },
+   "premium_license_key": {
+      "message": "Licentiecode"
+   },
+   "premium_pay_buy": {
+      "message": "Koop Premium"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Annuleringsbeleid"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Bevestig de aankoop"
+   },
+   "premium_pay_contact": {
+      "message": "Als je problemen zou ondervinden met je betaling of als je vragen hebt, contacteer me dan op {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Credit- of debetkaart"
+   },
+   "premium_pay_eula": {
+      "message": "Licentie-overeenkomst eindgebruiker"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Ik heb de [a]Licentie-overeenkomst eindgebruiker[/a] gelezen en aanvaard deze"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Kaart vervalt"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Kaartnummer"
+   },
+   "premium_pay_info_email": {
+      "message": "Email"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Geef je email-adres in om de licentiecode te ontvangen."
+   },
+   "premium_pay_info_name": {
+      "message": "Naam"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Betalingsmethode"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Postcode"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Selecteer hieronder een betaalmethode en kies in de volgende stap het gewenste bedrag dat je wilt betalen."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Als je {1} op een ander toestel wil activeren of de extensie opnieuw geinstalleerd hebt, dien je bij de instellingen van de extensie de volgende code in te geven:"
+   },
+   "premium_pay_price_info": {
+      "message": "Dit is een eenmalig bedrag en bevat ook alle toekomstige premiumfuncties."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "U kunt betalen wat u denkt dat de extensie en mijn werk u waard is om toegang te krijgen tot de premiumfuncties. U ontvangt altijd alle premiumfuncties, ongeacht hoeveel u bereid bent te betalen."
+   },
+   "premium_pay_price_total": {
+      "message": "Totaal"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Aankoop-ID"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Kies een betaalmethode"
+   },
+   "premium_pay_success_headline": {
+      "message": "Bedankt voor je aankoop"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} werd automatisch geactiveerd op dit toestel. Je moet geen verdere stappen ondernemen."
+   },
+   "premium_pay_verifying": {
+      "message": "Bewerking verifiëren"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Scan deze QR-code met WeChat om verder te gaan."
+   },
+   "premium_pay_what_you_want": {
+      "message": "Betaal wat jijzelf wilt"
+   },
+   "premium_popup_text": {
+      "message": "Heb je Premium al eens bekeken?"
+   },
+   "premium_restricted_text": {
+      "message": "Deze functie is enkel beschikbaar in Premium"
+   },
+   "premium_show_license_input": {
+      "message": "Ik beschik reeds over Premium"
+   },
+   "settings_advanced": {
+      "message": "Geavanceerde instellingen"
+   },
+   "settings_available_themes": {
+      "message": "Beschikbare thema's"
+   },
+   "settings_background_blur": {
+      "message": "Achtergrond wazig effect"
+   },
+   "settings_background_transparency": {
+      "message": "Achtergrond transparantie"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Mapicoon kleur"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Mapicoon"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Map inspringing"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Bladwijzers lettergrootte"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Bladwijzers horizontale opvulling"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Bladwijzers icoongrootte"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Bladwijzers regelafstand"
+   },
+   "settings_close_timeout": {
+      "message": "Sluitingstijd"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Sluitingstijd in seconden nadat de zijbalk is gesloten. Het aftellen begint wanneer de muis zich niet meer boven de zijbalk bevindt en stopt wanneer de muis zich weer boven de zijbalk bevindt"
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Niet automatisch sluiten"
+   },
+   "settings_color_scheme": {
+      "message": "Kleurenschema"
+   },
+   "settings_color_scheme_desc": {
+      "message": "De kleur van de hoofding van de zijbalk, selectievakjes, etc."
+   },
+   "settings_custom_css": {
+      "message": "Aangepast stijlblad"
+   },
+   "settings_custom_css_desc": {
+      "message": "Je kan je eigen stijlblad definiëren welke het standaard stijlblad overschrijft. Gebruik deze optie alles als je vertrouwd bent met CSS en weet wat je aan het doen bent."
+   },
+   "settings_dark_mode": {
+      "message": "Oppervlak"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Verander het uiterlijk van je zijbalk"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Je kan het uiterlijk van de zijbalk volledig aan je wensen aanpassen. Er zijn verschillende opties om de lettergrootte, regelafstand, kleuren, pictogrammen en nog veel meer te veranderen. Je kan ook kiezen uit voorgedefinieerde ontwerpen en vooraf ingestelde opties om de zijbalk er snel uit te laten zien zoals jij dat wil."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Configureer het gedrag van je zijbalk"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Er zijn verschillende opties die je kan wijzigen om de extensie te regelen. Zo kan je bijvoorbeeld instellen hoe de zijbalk moet worden ingeschoven of hoe je bladwijzers moeten worden geopend. Als je niet wil dat de zijbalk op elke pagina wordt geladen, kan je dit ook configureren met behulp van de juiste regels."
+   },
+   "settings_dir_accordion": {
+      "message": "Alleen de huidige map"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Sluit alle mappen behalve alleen de huidige actieve map."
+   },
+   "settings_directories_icon_size": {
+      "message": "Mapicoon grootte"
+   },
+   "settings_directory_arrows": {
+      "message": "Mappenpijlen"
+   },
+   "settings_expert_save_error": {
+      "message": "Kon instellingen niet opslaan. Corrigeer uw invoer."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Met de expertinstellingen kunt u elke configuratievlag van de extensie wijzigen, zelfs die u niet kunt wijzigen met de gewone selectievakjes of schuifregelaars van de instellingenpagina."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Wijzig de waarden hier alleen als u weet wat u doet. Defecte configuraties kunnen onverwacht gedrag van de extensie veroorzaken. Als iets kapot gaat, kunt u terugkeren naar de standaardconfiguratie."
+   },
+   "settings_export": {
+      "message": "Instellingen exporteren"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Je kan maximaal één URL per regel toevoegen"
+   },
+   "settings_filter_explanation_2": {
+      "message": "Gebruik een wildcard * om een bereik toe te voegen (bijvoorbeeld: example.com/* voor alle pagina's onder example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Als je geen wildcard * gebruikt in een regel dan wordt alleen de exacte koppeling gebruikt (bijvoorbeeld \"example.com\" leidt niet tot de URL \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "Je hoeft geen protocol (bijvoorbeeld \"http://\") te gebruiken in een regel."
+   },
+   "settings_filter_intro": {
+      "message": "Geef hier optioneel aan waar je de zijbalk wel (whitelist) en niet (blacklist) wilt tonen."
+   },
+   "settings_filter_rules": {
+      "message": "URL parameters"
+   },
+   "settings_filter_visibility": {
+      "message": "Laden zijbalk"
+   },
+   "settings_filter_visibility_always": {
+      "message": "Op elke pagina"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "Op elke pagina behalve specifieke pagina's"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Alleen op bepaalde pagina's"
+   },
+   "settings_font_family": {
+      "message": "Lettertype"
+   },
+   "settings_font_family_default": {
+      "message": "Standaard"
+   },
+   "settings_font_family_desc": {
+      "message": "Het lettertype van de zijbalk en de hulpvensters"
+   },
+   "settings_header_height": {
+      "message": "Hoofding hoogte"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Deel informatie"
+   },
+   "settings_hover_color": {
+      "message": "Muis-over kleur"
+   },
+   "settings_icon_background_color": {
+      "message": "Achtergrond Kleur"
+   },
+   "settings_icon_color": {
+      "message": "Kleur"
+   },
+   "settings_icon_color_auto": {
+      "message": "Automatisch"
+   },
+   "settings_icon_color_custom": {
+      "message": "Aangepast"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "De pictogramkleur wordt automatisch ingesteld op het kleurenschema van uw systeem (licht of donker). U kunt ook uw eigen aangepaste kleur voor het pictogram definiëren."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Houd er rekening mee dat de automatische kleur niet werkt wanneer u een aangepast {browserName}-thema gebruikt."
+   },
+   "settings_icon_shape": {
+      "message": "Vorm"
+   },
+   "settings_import": {
+      "message": "Instellingen importeren"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Importeer/Exporteer Bladwijzers"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Dit is een browser functie en geen onderdeel van de extensie. Lees meer over hoe bladwijzers te importeren en exporteren in {browserName}."
+   },
+   "settings_import_export_desc": {
+      "message": "Je kan de instellingen van deze extensie lokaal opslaan. Je kan het opgeslagen bestand dan op elke computer importeren zolang de extensie maar is geinstalleerd."
+   },
+   "settings_import_export_headline": {
+      "message": "Import/Export Instellingen"
+   },
+   "settings_import_export_notice": {
+      "message": "De instellingen van de uitbreiding worden automatisch gesynchroniseerd tussen je apparaten als je in {browserName} bent ingelogd met je account. Als je niet wil inloggen of je instellingen wil delen met anderen, dan kan je deze import/export functie daarvoor gebruiken."
+   },
+   "settings_import_failed": {
+      "message": "Het importeren van de configuratie is mislukt. Gelieve een geldig bestand te kiezen."
+   },
+   "settings_import_saved": {
+      "message": "Instellingen succesvol geimporteerd"
+   },
+   "settings_indicator_color": {
+      "message": "Kleur"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Icoonkleur"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Icoongrootte"
+   },
+   "settings_indicator_width": {
+      "message": "Breedte"
+   },
+   "settings_install_theme": {
+      "message": "Installeer thema"
+   },
+   "settings_installed_theme_info": {
+      "message": "Geïnstalleerde thema"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Een sneltoets instellen"
+   },
+   "settings_language": {
+      "message": "Taal"
+   },
+   "settings_language_default": {
+      "message": "Browser standaard"
+   },
+   "settings_language_desc": {
+      "message": "De taal van de gebruikersinterface"
+   },
+   "settings_link_action": {
+      "message": "Open bladwijzers"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Huidige tabblad"
+   },
+   "settings_link_action_desc": {
+      "message": "Klik met de linkermuisknop om de url in het huidige of in een nieuw tabblad te openen"
+   },
+   "settings_link_action_new_tab": {
+      "message": "Nieuw tabblad"
+   },
+   "settings_menu_appearance": {
+      "message": "Uiterlijk"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Algemeen"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Icoon"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Indicator"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Hulpvenster"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Zijbalk"
+   },
+   "settings_menu_dashboard": {
+      "message": "Overzicht"
+   },
+   "settings_menu_expert": {
+      "message": "Geavanceerde instellingen"
+   },
+   "settings_menu_export": {
+      "message": "Importeren/Exporteren"
+   },
+   "settings_menu_infos": {
+      "message": "Informatie"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "Over mij"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Logboek"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Contact"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Machtigingen"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Privacy"
+   },
+   "settings_menu_language": {
+      "message": "Taal"
+   },
+   "settings_menu_language_general": {
+      "message": "Algemeen"
+   },
+   "settings_menu_language_translate": {
+      "message": "Vertalen"
+   },
+   "settings_menu_newtab": {
+      "message": "Nieuw tabblad"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Zijbalk"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Filter"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Algemeen"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Wissel"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Helptekst"
+   },
+   "settings_menu_support": {
+      "message": "Support"
+   },
+   "settings_new_tab": {
+      "message": "Nieuw tabblad"
+   },
+   "settings_new_tab_background": {
+      "message": "Open op de achtergrond"
+   },
+   "settings_new_tab_desc": {
+      "message": "Open bladwijzers in een nieuw tabblad op de voorgrond of achtergrond"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Open op de voorgrond"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Na het huidige tabblad"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Na het laatste tabblad"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Voor het eerste tabblad"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Open nieuwe tabbladen na het laatste of het huidige tabblad"
+   },
+   "settings_newtab_desc": {
+      "message": "Helaas heeft Google de functie om extensies te laden op een nieuw tabblad verwijderd. Om die reden heb ik enkele andere opties toegevoegd om bij je bladwijzers te komen."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Richt op de adres bar"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Indien ingeschakeld wordt de adres bar vastgezet bij het openen van een nieuw tabblad. Indien uitgeschakeld wordt het zoekvak van de website vastgezet."
+   },
+   "settings_newtab_override": {
+      "message": "Nieuw tabblad overschrijven"
+   },
+   "settings_newtab_override_configure": {
+      "message": "Configureer"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Moet de extensie je nieuwe tabblad overschrijven met ofwel een blad op maat of een website die ingeladen wordt bij het openen van een nieuw tabblad?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "Voorbeeld"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Zijbalk automatisch openen"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Kies of de zijbalk automatisch geopend moet worden wanneer er een nieuw tabblad wordt geopend"
+   },
+   "settings_newtab_website": {
+      "message": "Website laden"
+   },
+   "settings_newtab_website_desc": {
+      "message": "In plaats van het laden van het nieuwe tabblad op maat, kan je een website instellen die ingeladen wordt."
+   },
+   "settings_not_synced": {
+      "message": "Wordt niet gesynchroniseerd met je andere apparaten."
+   },
+   "settings_open_action": {
+      "message": "Open de zijbalk"
+   },
+   "settings_open_action_desc": {
+      "message": "Open de zijbalk door een linker- of rechtermuisklik, of door de aanwijzer over de rand van het browservenster te bewegen. Je kan ook instellen dat de zijbalk alleen opent door te klikken op het icoon in het {browserName} menu."
+   },
+   "settings_open_action_icon": {
+      "message": "Klik op het icoon"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Linkermuisklik"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Muis-over"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Rechtermuisklik"
+   },
+   "settings_open_delay": {
+      "message": "Openingsvertraging"
+   },
+   "settings_open_delay_desc": {
+      "message": "Voorkomt onmiddellijke opening van de zijbalk bij muis-over of bij klikken met vertraging."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Masker kleur"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "De extensie geeft je bladwijzers weer in de zijbalk en heeft daarom deze toestemming nodig om toegang te krijgen. De toestemming staat ook de extensie toe om bladwijzers toe te voegen, te bewerken en te verwijderen."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "Helaas heeft {browserName} geen mechanisme om inhoud weer te geven in het browservenster zonder interactie met de pagina die momenteel wordt bezocht."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Omdat de zijbalk boven op de huidige website wordt weergegeven, is deze toestemming vereist. Behalve om deze technische reden, wordt de toestemming niet voor andere doeleinden gebruikt."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Als je je zorgen maakt over wat ik met de toestemming doe, kan je de broncode van de extensie op Github bekijken. Ze is Open Source en toegankelijk voor iedereen."
+   },
+   "settings_permissions_desc": {
+      "message": "Om een inschakelbare zijbalk in {browserName} mogelijk te maken, zijn de volgende machtigingen vereist en aangevraagd door de extensie:"
+   },
+   "settings_premium_activated": {
+      "message": "Premium is succesvol geactiveerd"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Premium kon niet worden geactiveerd. Controleer uw code en probeer opnieuw."
+   },
+   "settings_presets": {
+      "message": "Stel de relatieve grootte in"
+   },
+   "settings_presets_desc": {
+      "message": "Je kan vooraf gedefinieerde formaten voor de zijbalk selecteren. Hierdoor worden de schuifregelaars op deze pagina gewijzigd om de breedte, lijnhoogten, icoongrootte en veel meer opties van de zijbalk aan te passen."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Voorkom pagina scrollen"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Voorkomt dat de huidige pagina doorscrollt wanneer de zijbalk geopend is."
+   },
+   "settings_prevent_windowed": {
+      "message": "Schakel de zijbalk uit wanneer het venster niet schermvullend is"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Schakelt de mogelijkheid uit om de zijbalk te openen door te klikken of boven de zijkant van de browser te zweven, als de browser in venstermodus is."
+   },
+   "settings_remember_desc": {
+      "message": "Selecteer wat er onthouden moet worden tijdens paginawisselingen. Als je kiest voor de laatst geopende bladwijzer dan zal deze gemarkeerd worden als de zijbalk weer geopend wordt."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Onthoud geopende submappen"
+   },
+   "settings_remember_state": {
+      "message": "Onthoud"
+   },
+   "settings_remember_state_all": {
+      "message": "Scrollpositie, geopende mappen en laatst geopende bladwijzer"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Niets"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Geopende mappen"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Scrollpositie en geopende mappen"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Geopende mappen alleen hoogste niveau"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Heropen zijbalk"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Open de zijbalk automatisch opnieuw, na het openen van een bladwijzer via de zijbalk."
+   },
+   "settings_restore": {
+      "message": "Terugzetten naar beginwaarden"
+   },
+   "settings_restore_confirm": {
+      "message": "Weet je zeker dat je de instellingen wilt terugzetten naar hun beginwaarden?"
+   },
+   "settings_restored_message": {
+      "message": "De instellingen zijn teruggezet naar hun beginwaarden"
+   },
+   "settings_save": {
+      "message": "Wijzigingen opslaan"
+   },
+   "settings_saved_message": {
+      "message": "De instellingen zijn opgeslagen"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Je voorkeuren zijn opgeslagen"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Verberg schuifbalk"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Sluitingstijd in seconden nadat de schuifbalk zal verdwijnen. Scrollen zorgt ervoor dat de schuifbalk weer tevoorschijn komt."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Nooit verbergen"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Schuifbalk breedte"
+   },
+   "settings_search_placeholder": {
+      "message": "Zoeken naar configuratie"
+   },
+   "settings_show_themes": {
+      "message": "Laat beschikbare thema's zien"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Maskerkleur"
+   },
+   "settings_sidebar_position": {
+      "message": "Positie"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Hiermee kan je instellen of de zijbalk moet openen aan de linker- of rechterkant van het browservenster."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Links"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Rechts"
+   },
+   "settings_sidebar_width": {
+      "message": "Breedte"
+   },
+   "settings_support_faq_headline": {
+      "message": "Vaak gestelde vragen"
+   },
+   "settings_support_feedback_desc": {
+      "message": "Heb je suggesties voor verbeteringen, vragen of een probleem gevonden? Help ons dan door feedback achter te laten."
+   },
+   "settings_support_feedback_email": {
+      "message": "e-mailadres (optioneel)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Feedback"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Stuur a.u.b. je feedback in het Engels, anders is het lastig om het bericht te begrijpen en te beantwoorden."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Schermafbeeldingen toevoegen"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Je kunt maximaal {1} schermafbeeldingen toevoegen"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "Het bestand {1} is te groot (> 1 MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Verstuur feedback"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Je bericht kon niet verzonden worden. Probeer het opnieuw."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Bedankt voor de feedback"
+   },
+   "settings_text_color": {
+      "message": "Tekstkleur"
+   },
+   "settings_theme": {
+      "message": "Thema"
+   },
+   "settings_theme_changed": {
+      "message": "Thema succesvol gewijzigd"
+   },
+   "settings_theme_default": {
+      "message": "Standaard thema"
+   },
+   "settings_theme_default_desc": {
+      "message": "Met dit thema hebt u op een schone, moderne manier toegang tot uw bladwijzers. Veel elementen zijn gekleurd in een configureerbaar kleurenschema."
+   },
+   "settings_theme_focus": {
+      "message": "Focus thema"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Dit thema vermindert de animaties en rangschikt de elementen dichter voor verbeterde productiviteit en prestaties."
+   },
+   "settings_theme_glass": {
+      "message": "Glas thema"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Dit thema maakt de achtergrond van de zijbalk semi-transparant en voegt er een wazig glaseffect aan toe. U kunt dit effect en de transparantie van de zijbalk aanpassen."
+   },
+   "settings_themes_notice": {
+      "message": "U kunt het basisontwerp van de zijbalk kiezen. Het geselecteerde thema kan worden aangepast met de beschikbare schuifregelaars en kleuropties."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Deze extensie is een eenmansproject, dat begon als een hobbyproject voor persoonlijk gebruik."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Activeringsgebied"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "Standaard kan met de muis over de hele rand van het browservenster worden bewogen om de zijbalk te openen. Je kan het activeringsgebied kleiner maken door de zijbalk alleen te laten openen op een deel van de browserhoogte. Je kan bijvoorbeeld de zijbalk zo instellen dat hij alleen verschijnt als je op het activeringsgebied in de linkerbenedenhoek van het browservenster klikt. Dit kan handig zijn om te voorkomen dat de zijbalk onbedoeld verschijnt wanneer je op links van de website klikt."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Alle submappen uitvouwen"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Om snel een map te openen, alsook al zijn submappen, kan je dubbelklikken op een map in de zijbalk."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Wist je dat?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Invoer verbergen"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Je kan individuele bladwijzers of zelfs mappen verbergen uit de zijbalk. Klik met de rechtermuisknop op een item in de zijbalk en klik dan op de {1} knop in het contextmenu. Om verborgen items opnieuw te tonen, kan je op het menu-icoon in de koptekst van de zijbalk klikken en daar het betreffende selectievakje inschakelen."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "De extensie is beschikbaar in {1} verschillende talen. De vertalingen worden door de gemeenschap gemaakt en iedereen kan een bijdrage leveren door de teksten van de extensie in andere talen te vertalen. Vertalingen zullen worden goedgekeurd en vervolgens bij de volgende update aan de extensie worden toegevoegd."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Toetsenbord snelkoppelingen"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "De zijbalk kan met sneltoetsen bediend worden. Je kan een lijst van sneltoetsen bekijken door op het menu-icoon in de kop van de zijbalk te klikken en dan op de {1} knop te klikken."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Selecteer meerdere vermeldingen"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "U kunt meerdere bladwijzers of mappen in de zijbalk selecteren om ze tegelijk te openen, te verwijderen of zelfs te verplaatsen met slepen en neerzetten."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Nieuw tabblad"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "U kunt het uiterlijk van de pagina 'Nieuw tabblad' rechtstreeks op de pagina configureren door op de knop {1} in de benedenhoek te klikken. Vervolgens kunt u de rasteritems, zoekmachine, achtergrondafbeelding of de links bovenaan wijzigen."
+   },
+   "settings_tips_tricks_next": {
+      "message": "Volgende tip"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Alle bladwijzers openen"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Om alle bladwijzers in een map te openen, kan je in het midden op de map klikken. Als alternatief kan je op {1} drukken terwijl je met de linker muisknop op een map klikt."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Privacy"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "De bladwijzers die in uw zijbalk worden weergegeven, worden gesynchroniseerd en beheerd door {browserName}. De extensie bewaart of analyseert deze bladwijzers niet en geeft alleen die van uw browser weer in de zijbalk."
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Snel bladwijzers maken"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Je kan elke URL direct naar de zijbalk slepen en op de gewenste plaats neerzetten. Je kan zelfs de huidige URL van een browsertabblad markeren en zo verslepen. Je kan ook het {1} symbool links van de adresbalk naar de zijbalk slepen om de huidige pagina te bookmarken zonder eerst de hele adresbalk te markeren."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Snel zoeken"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Als je de zijbalk opent, kan je naar bladwijzers zoeken door gewoon te beginnen typen. Je hoeft niet eerst op het zoekicoontje in de kop van de zijbalk te klikken."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Snel URL kopiëren"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Om de URL van een bladwijzer in de zijbalk naar je klembord te kopiëren, kan je op {1} drukken wanneer je met de muis over een item gaat."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Klik met de rechtermuisknop"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Je kan met de rechtermuisknop klikken op een bladwijzer of map in de zijbalk om extra opties weer te geven. Je kan bijvoorbeeld bestaande bladwijzers bewerken of items boven aan de zijbalk vastpinnen. Als je met de rechtermuisknop op een map klikt, kan je een bladwijzercontrole starten om gebroken of bijgewerkte bladwijzer-URL's te identificeren."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Scheidingstekens"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Een bladwijzervermelding met de URL {1} en een titel {2} of {3} zal als scheidingsteken in de zijbalk worden weergegeven. Je kan scheidingstekens toevoegen door rechts te klikken op een map in de zijbalk en dan op de {4} knop te klikken."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Deel informatie"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "U kunt uw configuratie anoniem delen, wat mij helpt populaire instellingen te identificeren en te bepalen wat ik in toekomstige releases kan verbeteren of wijzigen. De extensie verzamelt geen persoonlijke gegevens of leest geen bladwijzers. Zonder expliciete toestemming deelt de extensie ook geen enkele configuratie."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Synchronisatie"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Synchronisatie-instellingen bekijken"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Al je instellingen van de zijbalk zullen gesynchroniseerd worden tussen uw apparaten, als je de synchronisatie opties van uw browser aanzet in de instellingen. Zelfs zonder Premium."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "De eerste versie van deze extensie werd in november 2016uitgebracht."
+   },
+   "settings_title": {
+      "message": "Instellingen"
+   },
+   "settings_toggle_area": {
+      "message": "Configureer gebied"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Standaard kan de hele zijkant van de browser gebruikt worden om de zijbalk te openen, maar dat kan aangepast worden in de instellingen."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Sleep om te bewegen"
+   },
+   "settings_toggle_area_height": {
+      "message": "Hoogte"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Je kan de hoogte van het oppervlak verkleinen zodat de balk alleen opent als je met je muis precies over die zone van het browservenster beweegt."
+   },
+   "settings_toggle_area_width": {
+      "message": "Breedte"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Breedte (in een venster)"
+   },
+   "settings_tooltip_content": {
+      "message": "Helptekst inhoud"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Meer informatie"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Titel en URL"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Alleen titel"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Alleen URL"
+   },
+   "settings_tooltip_delay": {
+      "message": "Helptekst vertraging"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Vertraging vooraleer de helptekst van een bladwijzer zal verschijnen als je er met de muis boven zweeft.."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Toon helptekst nooit"
+   },
+   "settings_tooltip_desc": {
+      "message": "Selecteer welke informatie de helptekst moet bevatten."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Helptekst lettertgrootte"
+   },
+   "settings_translation_add_language": {
+      "message": "Voeg een taal toe"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Terug naar overzicht"
+   },
+   "settings_translation_desc": {
+      "message": "Je kan meehelpen met het vertalen van de extensie in je eigen taal of met het verbeteren van de bestaande vertaling."
+   },
+   "settings_translation_help": {
+      "message": "Van iedere invoer kan je de Engelse tekst bekijken die vertaald moet worden in jouw taal. Om te identificeren waarvoor de tekst wordt gebruikt, heeft iedere invoer een naam (bijvoorbeeld {1}), welke niet vertaald dient te worden. Vergeet niet je vertaling te verzenden door op de knop in de rechterbovenhoek te drukken!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Enkele vertalingen ontbreken"
+   },
+   "settings_translation_info": {
+      "message": "Je kan een bestaande vertaling bewerken of ontbrekende toevoegen. Zodra je de invoer verstuurt zal ik de invoer controleren en goedkeuren."
+   },
+   "settings_translation_link": {
+      "message": "Ga naar vertaaloverzicht"
+   },
+   "settings_translation_notice1": {
+      "message": "Zodra alle verplichte categorieën zijn vertaald, zal de vertaling worden uitgebracht."
+   },
+   "settings_translation_notice2": {
+      "message": "Onvolledige categorieën worden niet uitgebracht, om half-afgemaakte vertalingen te voorkomen."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Ik wil verwittigd worden wanneer er nieuwe taalvariabelen aan de extensie worden toegevoegd"
+   },
+   "settings_translation_required_category": {
+      "message": "Vereist"
+   },
+   "settings_translation_status_draft": {
+      "message": "De vertaling is onvolledig of moet worden gecontroleerd en is niet beschikbaar voor gebruikers"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Vertaling is beschikbaar, maar sommige categorieën zijn onvolledig"
+   },
+   "settings_translation_status_released": {
+      "message": "Vertaling is beschikbaar"
+   },
+   "settings_translation_submit": {
+      "message": "Verzenden"
+   },
+   "settings_translation_submit_message": {
+      "message": "Je vertaling is succesvol verzonden"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "URL gekopieerd"
+   },
+   "sidebar_deleted": {
+      "message": "Verwijderd"
+   },
+   "sidebar_dir_children": {
+      "message": "Elementen"
+   },
+   "sidebar_search_no_results": {
+      "message": "Geen bladwijzer gevonden"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Zoek bladwijzer"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Herstel"
+   },
+   "sort_label_alphabetical": {
+      "message": "Alfabetisch"
+   },
+   "sort_label_custom": {
+      "message": "Gedefinieerd door gebruiker"
+   },
+   "sort_label_most_used": {
+      "message": "Meest gebruikt"
+   },
+   "sort_label_recently_added": {
+      "message": "Recent toegevoegd"
+   },
+   "sort_label_recently_used": {
+      "message": "Recent gebruikt"
+   },
+   "sort_most_used_per_month": {
+      "message": "Per maand"
+   },
+   "sort_view_as_tree": {
+      "message": "Toon mappen"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Nu herladen"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Door het bijwerken van de extensie moet de pagina worden herladen."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "De feedbackdienst is momenteel niet beschikbaar. Als je feedback wil geven, stuur dan alsjeblieft een e-mail."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Dienst niet beschikbaar"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "De vertaaldienst is momenteel niet beschikbaar. Probeer het later nog eens."
+   }
+}

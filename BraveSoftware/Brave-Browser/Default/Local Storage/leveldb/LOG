@@ -1,0 +1,18 @@
+2021/07/25-20:49:02.009 5 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/07/25-20:49:02.022 5 Recovering log #1192
+2021/07/25-20:49:02.036 5 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/001192.log 
+2021/07/25-20:49:11.453 3 Level-0 table #1196: started
+2021/07/25-20:49:11.456 3 Level-0 table #1196: 23431 bytes OK
+2021/07/25-20:49:11.459 3 Delete type=0 #1192
+2021/07/25-20:59:28.493 9 Level-0 table #1198: started
+2021/07/25-20:59:28.507 9 Level-0 table #1198: 24619 bytes OK
+2021/07/25-20:59:28.510 9 Delete type=0 #1195
+2021/07/25-20:59:28.511 9 Compacting 4@0 + 1@1 files
+2021/07/25-20:59:28.561 9 Generated table #1199@0: 3009 keys, 1437117 bytes
+2021/07/25-20:59:28.562 9 Compacted 4@0 + 1@1 files => 1437117 bytes
+2021/07/25-20:59:28.564 9 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/25-20:59:28.566 9 Delete type=2 #1191
+2021/07/25-20:59:28.566 9 Delete type=2 #1198
+2021/07/25-20:59:28.566 9 Delete type=2 #1193
+2021/07/25-20:59:28.566 9 Delete type=2 #1196
+2021/07/25-20:59:28.566 9 Delete type=2 #1189

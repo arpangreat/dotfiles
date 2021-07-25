@@ -1,0 +1,1271 @@
+{
+   "contextmenu_add": {
+      "message": "Dodaj unos"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Dodaj obeleživač"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Menadžer obeleživača"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Proveri obeleživač"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Zatvori sve direktorijume"
+   },
+   "contextmenu_current_tab": {
+      "message": "Otvori u trenutnom prozoru"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Obriši obeleživač"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Obriši direktorijum"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Obriši separator"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Uredi obeleživač"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Uredi direktorijum"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Uredi Separator"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Sakrij iz bočne trake"
+   },
+   "contextmenu_infos": {
+      "message": "Informacije"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Skraćenice sa tastaturom"
+   },
+   "contextmenu_new_tab": {
+      "message": "Otvoru u novoj kartici."
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Otvori u prozoru bez arhiviranja"
+   },
+   "contextmenu_new_window": {
+      "message": "Otvori u novom prozoru"
+   },
+   "contextmenu_open_children": {
+      "message": "Otvori obeleživače"
+   },
+   "contextmenu_pin": {
+      "message": "Pričvrsti na vhu"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Učitaj ponovo (osveži) bočnu traku"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Prikaži u direktorijumu"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Prikaži u bočnoj traci"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Prikaži sakrivene unose"
+   },
+   "contextmenu_unpin": {
+      "message": "Ukloni sa vrha"
+   },
+   "contribute_intro": {
+      "message": "Da bih unapredio proširenje (ekstenziju) voleo bih da znam više o načinu kako korisnici koriste bočnu traku i koju konfiguraciju koriste."
+   },
+   "contribute_notice": {
+      "message": "Možete mi pomoći deljenjem podesavanja koje koristite"
+   },
+   "contribute_outro": {
+      "message": "Ako imate pitanja ili brige o tome kako se dele informacije, molim vas pošaljite mi poruku sa povratnim informacijama."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Možete podeliti vašu aktivnost unutar bočne trake anonimno, što mi pomaže da razumem kako korisnici koriste bočnu traku uopšteno. Informacije o vašim obeleživačima ili posećenim veb lokacijama [b]neće[/b] biti merene ili zapamćene."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Ova informacija je veoma korisna da bih prepoznao probleme u korišćenju ili opcije koje se na primer ne koriste previše često."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Koliko obeleživača korisnici imaju u proseku?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Koju platformu korisnici koriste (Windows, Mac, Linux...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Da li korisnici koriste pretragu?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Da li korisnici menjaju sortiranje obeleživača?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Koliko često korisnici re-aranžiraju ili menjaju unose?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Podaci koji su podeljeni su na primer:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Podeli aktivnost"
+   },
+   "contribute_share_config_desc": {
+      "message": "Vi delite vašu konfiguraciju anonimno, što će mi pomoći da prepoznam najčešće korišćena podešavanja i da shvatim šta da unapredim ili izmenim u budućim izdanjima."
+   },
+   "contribute_share_config_label": {
+      "message": "Podeli konfiguraciju"
+   },
+   "extension_desc": {
+      "message": "Dodaje promenljivu bočnu traku sa svim vašim obeleživačima na ivici prozora vašeg internet pretraživača."
+   },
+   "extension_name": {
+      "message": "Bočna traka obeleživača"
+   },
+   "header_bookmarks": {
+      "message": "Obeleživači"
+   },
+   "header_bookmarks_single": {
+      "message": "Obeleživač"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Kopira URL od trenutno prikazanog unosa"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Uklanja trenutno prikazani unos"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Klikće na unos koji je trenutno prikazan"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Zatvara bočnu traku, otvoreni prikaz ili sadrzajni meni."
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Command"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Delete"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Tab"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Otvara sadrzajni meni za trenutno prikazan unos"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Preskace na sledece ili proslo mesto za unos"
+   },
+   "more_link": {
+      "message": "Saznaj više"
+   },
+   "newtab_fallback_desc": {
+      "message": "Umesto traženog, otvorili smo za vas novi tab sa bočnom trakom ."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Ova bočna taka se ne može koristiti na stranicama proširenja (ekstenzija)"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Nešto je blokiralo bočnu traku"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Ova bočna traka se ne može koristiti na uobičajenoj (default) stranici novog taba"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Ova bočna traka se ne može koristiti na {browserName} sistemskim stranicama"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Neka od vaših URL pravila (podešavanja) je sprečila otvaranje bočne trake"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Ova bočna taka se ne može koristi na {browserName} veb prodavnici"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Uvek prikazuj ovu stranicu kada se otvara novi tab"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Prikaži ikonice sajtova"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Prikaži preglede sajtova"
+   },
+   "newtab_grid_links_default": {
+      "message": "Top stranice"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Veličina mreže"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Ne prikazuj stranice"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Najčešće korišćeni obeleživači"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Nedavno korišćeni obeleživači"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Korisnički definisan"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Naslov"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL naslovne stranice"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL rezultata pretrage"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Pretraživač"
+   },
+   "newtab_search_field_hide": {
+      "message": "Sakrij mesto za pretraživanje"
+   },
+   "newtab_search_field_show": {
+      "message": "Prikaži mesto za pretraživanje"
+   },
+   "newtab_search_placeholder": {
+      "message": "Pretraži {1} ili upiši URL"
+   },
+   "newtab_speech_search_error": {
+      "message": "Da biste omogućili pretragu govorom, morate omogućiti pristup mikrofonu."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Govori sada"
+   },
+   "newtab_title": {
+      "message": "Novi tab"
+   },
+   "newtab_upload_background": {
+      "message": "Otpremi sliku pozadine"
+   },
+   "onboarding_finish_desc": {
+      "message": "Zabavi se sa tvojom bočnom trakom."
+   },
+   "onboarding_finish_notice": {
+      "message": "Ako često klikćeš na nešto što je {1} do ivice tvog prozora pretraživača, možda bi želeo da promeniš gde će bočna traka da se otvori vertikalno da bi izbegao slućajno otvaranje."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Podesi izgled."
+   },
+   "onboarding_goto_settings": {
+      "message": "Više podešavanja."
+   },
+   "onboarding_handson_desc": {
+      "message": "Sada možeš isprobati sam."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Klikni na ikonu proširenja (ekstenzije) da otvoriš bočnu traku."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Pomeri kursor miša na {1} do ivice tvog prozora."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Onda klikni {1} na tvom mišu ili trekpedu da otvoriš bočnu traku."
+   },
+   "onboarding_headline": {
+      "message": "Hvala na instalaciji ovog proširenja (ekstenzije)"
+   },
+   "onboarding_left": {
+      "message": "levo"
+   },
+   "onboarding_right": {
+      "message": "desno"
+   },
+   "onboarding_setup": {
+      "message": "Podesi sada"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Kako želiš da otvaraš bočnu traku?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Gde želiš da držiš bočnu traku?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Tamni"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Koji stil preferiraš?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Svetli"
+   },
+   "onboarding_skip": {
+      "message": "Preskoči podešavanje"
+   },
+   "onboarding_title": {
+      "message": "Podešavanje"
+   },
+   "overlay_add_position": {
+      "message": "Pozicija"
+   },
+   "overlay_add_position_append": {
+      "message": "Dodaj u direktorijum"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Dodaj ispred direktorijuma"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Dodatne informacije"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Napravljeno na"
+   },
+   "overlay_bookmark_title": {
+      "message": "Naslov"
+   },
+   "overlay_bookmark_url": {
+      "message": "URL"
+   },
+   "overlay_bookmark_views": {
+      "message": "Pregleda"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "mesečno"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Zabeleženo od"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Pregled"
+   },
+   "overlay_cancel": {
+      "message": "Otkaži"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Proveravanje linkova obeleživača"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Neaktivni"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Izmenjeni"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Duplikati"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Prazni direktorijumi"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Svi linkovi obeleživača su u redu"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Nisu pronađeni neaktivni linkovi obeleživača"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Nema izmenjenih linkova obeleživača"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Nisu pronađeni duplikati linkova obeleživača"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Nisu pronađeni direktorijumi bez obeleživača"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Ukloni odabrane"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Ažuriraj odabrane"
+   },
+   "overlay_close": {
+      "message": "Zatvori"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Da li stvarno želite da otvorie svih {1} podređenih obeleživača?"
+   },
+   "overlay_delete": {
+      "message": "Obriši"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Da li stvarno želite da obrišete ovaj obeleživač?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Da li stvarno želite da obrišete ovaj direktorijum? Svi podređeni obeleživači će biti obrisani takođe."
+   },
+   "overlay_dir_children": {
+      "message": "Elementi"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Obeleživači"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Direktorijumi"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Da li stvarno želite da sakrijete ovaj obeleživač sa bočne trake?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Da li starno želite da sakrijete ovaj direktorijum sa bočne trake? Svi podređeni obeleživači će biti sakriveni takođe."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Sakrij sa bočne trake"
+   },
+   "overlay_label_bookmark": {
+      "message": "Obeleživač"
+   },
+   "overlay_label_dir": {
+      "message": "Direktorijum"
+   },
+   "overlay_label_separator": {
+      "message": "Separator"
+   },
+   "overlay_open_children": {
+      "message": "Otvori sve"
+   },
+   "overlay_save": {
+      "message": "Sačuvaj (snimi)"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Možete opciono uneti naslov. On će biti prikazan na vrhu linije separatora i može pomoći organizaciji vaše liste obeleživača."
+   },
+   "overlay_update": {
+      "message": "Ažuriranje"
+   },
+   "premium_activate": {
+      "message": "Aktiviraj Premijum"
+   },
+   "premium_already_activated": {
+      "message": "Vec koristite Premijum"
+   },
+   "premium_desc_1": {
+      "message": "Sa Premijumom bicete u mogucnosti da pristupite dodatnim opcijama i pomognete mi u odrzavanja dodatka."
+   },
+   "premium_desc_2": {
+      "message": "Ispod mozete videti opcije koje su ukljucene uz Premijum. Sve osnovne opcije i funkcije dodatka su besplatne za koriscenje i ne zahtevaju Premijum licencu. Mozete platiti koliko mislite da dodatak i moj posao vredi Vama i time dobili ove opcije."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Ukoliko koristite novu karticu dodatka, mozete postaviti Vasu sliku za pozadinu i napravite je jos lepsom"
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Prilagodi novu karticu"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Ukoliko ste upoznati sa CSS, mozete promeniti potpuni izgled bocne trake dodavanjem Vas stil. To omogucava prilagodjavanje potpuno svega."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Podesite sve sa Vasom stilskom listom"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "Sa premijumom dobijate pristup neobjavljenim opcijama i funkcijama koje su trenutno u razvoju i testiranju"
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Budite prvi koji koristi nove eksperimentalne opcije i funkcije"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Uvezi i izvezi sva podesavanja"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Mozete kliknuti desni klik na bilo koji folder na bocnoj traci da pokrenete proveru. Rezultat ce pokazati sve azurirane URL(linkove), obelezivaci koji vise nisu u funkciji i duplikate"
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Proveri obelezivace za sajtove koji su prestali sa radom ili duplikate"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Promeni sirinu bocne trake bilo kad"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Možete zameniti ceo dizajn bočne trake jednim klikom instaliranjem druge teme. One takođe mogu biti prilagođivane sa dostupnim opcijama za klizače i boje."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Promenite temu bočne trake"
+   },
+   "premium_get_now": {
+      "message": "Uzmi Premijum sada"
+   },
+   "premium_license_key": {
+      "message": "Broj licence"
+   },
+   "premium_pay_buy": {
+      "message": "Kupi Premijum"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Prava otkazivanja"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Potvrdi porudžbenicu"
+   },
+   "premium_pay_contact": {
+      "message": "Ukoliko imate neki problem sa placanjem ili imate bilo kakva pitanja, molim Vas da me kontaktirate na {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Kreditna ili debitna kartica"
+   },
+   "premium_pay_eula": {
+      "message": "Uslovi korišćenja"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Pročitao sam i slažem se sa [a]Uslovima korišćenja[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Kartica ističe"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Broj kartice"
+   },
+   "premium_pay_info_email": {
+      "message": "E-pošta"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Molim Vas unesite emajl adresu na kojoj ćete primiti broj licence."
+   },
+   "premium_pay_info_name": {
+      "message": "Ime"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Način plaćanja"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Poštanski broj"
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Ukoliko želite da aktivirate {1} na drugom uređaju ili nakon reinstalacije dodatka, možete upisati sledeći broj u podešavanja dodatka."
+   },
+   "premium_pay_price_info": {
+      "message": "Ovo je jednokratna nadoknada i uključuje sve buduće Premijum opcije i funkcije"
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Možete platiti ono što mislite da je produžetak i moj rad vredan da dobijete pristup vrhunskim funkcijama. Uvek ćete dobijati sve premijum funkcije, bez obzira na to koliko ste spremni da platite."
+   },
+   "premium_pay_price_total": {
+      "message": "Ukupno"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Broj porudžbenice"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Odaberite nacin placanja"
+   },
+   "premium_pay_success_headline": {
+      "message": "Hvala Vam na kupovini"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} je aktiviran automatski na ovom uredjaju. Vise ne morate napraviti nijedan korak."
+   },
+   "premium_pay_verifying": {
+      "message": "Provera transakcije"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Skenirajte ovaj QR kod pomocu WeChat aplikacije kako biste nastavili"
+   },
+   "premium_pay_what_you_want": {
+      "message": "Platite koliko zelite"
+   },
+   "premium_popup_text": {
+      "message": "Jeste li probali Premijum?"
+   },
+   "premium_restricted_text": {
+      "message": "Ova opcija je moguca samo na Premijum verziji dodatka."
+   },
+   "premium_show_license_input": {
+      "message": "Vec imam Premijum"
+   },
+   "settings_advanced": {
+      "message": "Napredne postavke"
+   },
+   "settings_available_themes": {
+      "message": "Dostupne teme"
+   },
+   "settings_background_blur": {
+      "message": "Efekat zamućenosti pozadine"
+   },
+   "settings_background_transparency": {
+      "message": "Providnost pozadine"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Boja ikonice foldera"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Ikonica foldera"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Uvlacenje foldera"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Velicina fonta obelezivaca"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Horizontalna ispuna obelezivaca"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Velicina ikonice obelezivaca"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Visina obelezivaca"
+   },
+   "settings_close_timeout": {
+      "message": "Istek vremena za zatvaranje"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Istek vremena u sekundama nakon čega će bočna traka biti zatvorena. To će se računati od trenutka kada kursor miša napusti bočnu traku i prestaće kada preće ponovo preko."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Ne zatvaraj automatski"
+   },
+   "settings_color_scheme": {
+      "message": "Sema boja"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Boja bocnog hedera, potvrdnih dugmica, itd."
+   },
+   "settings_custom_css": {
+      "message": "Vasa stilska lista"
+   },
+   "settings_custom_css_desc": {
+      "message": "Mozete postaviti Vasu stilsku listu kako bi promenili osnovnu. Molimo koristite ovu opciju samo ukoliko ste upoznati sa CSS i znate sta radite."
+   },
+   "settings_dark_mode": {
+      "message": "Povrsina"
+   },
+   "settings_dir_accordion": {
+      "message": "Prikaži samo trenutni direktorijum."
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Zatvara sve direktorijume osim trenutno aktivnog."
+   },
+   "settings_directories_icon_size": {
+      "message": "Velicina ikonice foldera"
+   },
+   "settings_directory_arrows": {
+      "message": "Strelice foldera"
+   },
+   "settings_expert_save_error": {
+      "message": "Neuspjesno pohranjivanje postavki. Molimo da ispravite unos."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Pomocu naprednih postavki, mozete da promenite svaku od ponudjenih konfiguracija ekstenzije, ukljucujuci i prethodno nedostupna potvrdna polja i klizace, pomocu kojih menjate zeljene konfiguracije."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Molimo promenite vrijednosti ovdje iskljucivo ako znate sta radite. Neispravne konfiguracije mogu prouzrokovati smetnje u radu ekstenzije. Ukoliko primetite smetnje u radu, mozete se vratiti na zadanu konfiguraciju."
+   },
+   "settings_export": {
+      "message": "Izvezi podešavanja"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Dodaj samo jedan šablon URL(link) po liniji"
+   },
+   "settings_filter_explanation_2": {
+      "message": "Koristite * kako bi ste spojili sve podstranice ( npr. example.com/* spaja sve stranice ispod example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Ako ne uključite nijednu * u pravilu, samo tačan URL će odgovarati (npr \"example.com\" neće odgovarati za URL \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "Ne morate dodavati protokole (npr. http://) u pravilima."
+   },
+   "settings_filter_intro": {
+      "message": "Ako ne želite da se bočni meni učitava na svakoj stranici, možete namestiti gde želite da se ekstenzija učitava (Odobrena lista) ili gde ne želite (Ne odobrena lista)"
+   },
+   "settings_filter_rules": {
+      "message": "Šablon URL(link)"
+   },
+   "settings_filter_visibility": {
+      "message": "Učitaj bočnu traku"
+   },
+   "settings_filter_visibility_always": {
+      "message": "Na svakoj stranici"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "Na svakoj stranici sem izuzetaka"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Isključivo na specifičnim stranicama"
+   },
+   "settings_font_family": {
+      "message": "Font"
+   },
+   "settings_font_family_default": {
+      "message": "Osnovni"
+   },
+   "settings_font_family_desc": {
+      "message": "Font na bocnoj traci i dodatnih baloncica"
+   },
+   "settings_header_height": {
+      "message": "Visina hedera"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Deli informacije"
+   },
+   "settings_hover_color": {
+      "message": "Boja kada je mis preko"
+   },
+   "settings_icon_color": {
+      "message": "Boja"
+   },
+   "settings_icon_color_auto": {
+      "message": "Automatsko"
+   },
+   "settings_icon_color_custom": {
+      "message": "Vasa boja"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Boja ikonice ce biti postavljena automatski kako bi se uklopila sa bojom sistema(svetla ili tamna). Takodje Vi mozete promeniti boju ikonice po Vasem izboru."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Izvinjavamo se, automatska boja ne radi kada koristite Vasu temu."
+   },
+   "settings_icon_shape": {
+      "message": "Oblik"
+   },
+   "settings_import": {
+      "message": "Ubaci podešavanja"
+   },
+   "settings_import_export_desc": {
+      "message": "Možete izvesti vaša podešavanja ekstenzije i sačuvati ih lokalno na vaš računar. Možete ubaciti prethodno izvedene fajlove na bilo koji računar, gde je ekstenzija instalirana."
+   },
+   "settings_import_export_notice": {
+      "message": "Podešavanja ekstenzija su sinhronizovana automatski između vaših uredjaja, ako ste prijavljeni na (ime pretrazivača) sa svojim nalogom. Ako ne želite da se ulogujete ili da podelite vaša podešavanja sa drugim ljudima, možete koristiti Ubaciti/Izvesti opciju."
+   },
+   "settings_import_failed": {
+      "message": "Neuspešno ubacivanje podešavanja. Odaberite ispravan fajl."
+   },
+   "settings_import_saved": {
+      "message": "Podešavanja su uspešno ubačena"
+   },
+   "settings_indicator_color": {
+      "message": "Boja"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Boja ikonica"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Velicina ikonica"
+   },
+   "settings_indicator_width": {
+      "message": "Sirina"
+   },
+   "settings_install_theme": {
+      "message": "Instaliraj temu"
+   },
+   "settings_installed_theme_info": {
+      "message": "Trenutno instalirana"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Podesi skraćenicu tastaturom"
+   },
+   "settings_language": {
+      "message": "Jezik"
+   },
+   "settings_language_default": {
+      "message": "Jezik pretraživača"
+   },
+   "settings_language_desc": {
+      "message": "Jezik korisničkog interfejsa"
+   },
+   "settings_link_action": {
+      "message": "Otvori obeleživače"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Trenutna kartica (tab)"
+   },
+   "settings_link_action_desc": {
+      "message": "Levi klik na obeleživač će ga otvoriti ili u trenutnoj kartici ili u novoj kartici."
+   },
+   "settings_link_action_new_tab": {
+      "message": "Nova kartica"
+   },
+   "settings_menu_appearance": {
+      "message": "Izgled"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Opšte"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Ikona"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Indikator"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Prikaz preko"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Bočna traka"
+   },
+   "settings_menu_expert": {
+      "message": "Ekspertska podešavanja"
+   },
+   "settings_menu_export": {
+      "message": "Import/Export"
+   },
+   "settings_menu_infos": {
+      "message": "Informacije"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "O meni"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Dnevnik izmena"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Kontakt"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Dozvole"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Privatnost"
+   },
+   "settings_menu_language": {
+      "message": "Jezik"
+   },
+   "settings_menu_language_general": {
+      "message": "Opšte"
+   },
+   "settings_menu_language_translate": {
+      "message": "Prevođenje"
+   },
+   "settings_menu_newtab": {
+      "message": "Novi tab"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Bočna traka"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Filter"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Opšte"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Uključi/Isključi"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Kratka objašnjenja"
+   },
+   "settings_menu_support": {
+      "message": "Podrška"
+   },
+   "settings_new_tab": {
+      "message": "Nova kartica"
+   },
+   "settings_new_tab_background": {
+      "message": "Otvori u pozadini"
+   },
+   "settings_new_tab_desc": {
+      "message": "Otvori obeleživač u novoj kartici ispred ili u pozadini"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Otvori ispred"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Nakon trenutne kartice"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Nakon poslednje kartice"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Pre prve kartice"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Otvori nove kartice nakon poslednje ili trenutne kartice"
+   },
+   "settings_newtab_desc": {
+      "message": "Nažalost, Google je uklonio mogućnost učitavanje dodatka na novoj kartici. Zbog toga su dodate neke opcije koje omogućavaju da pristupite obeleživačima na drugi način."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Oznaci adresnu traku"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Ukoliko je omoguceno, adresna traka ce biti izabrana kada je nova kartica otvorena."
+   },
+   "settings_newtab_override": {
+      "message": "Zameni stranicu nove kartice"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Da li dodatak moze da zameni trenutnu stranicu nove kartice sa prilagođenom ili sajtom koju treba učitati prilikom otvaranja nove kartice?"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Otvori bočnu traku automatski"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Podesite da li bočna traka treba da se otvori automatski kada se otvori nova kartica."
+   },
+   "settings_newtab_website": {
+      "message": "Učitaj sajt"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Umesto otvaranja zamenske nove kartice, možete podesiti sajt koji će se učitati umesto nje."
+   },
+   "settings_not_synced": {
+      "message": "Neće se sinkronizirati na vašim uređajima."
+   },
+   "settings_open_action": {
+      "message": "Otvori bočnu traku."
+   },
+   "settings_open_action_desc": {
+      "message": "Otvorite bočnu traku levim ili desnim klikom ili prelaskom miša preko ivice prozora pretraživača. Takođe ga možete promeniti da se otvara samo ako je pritisnuta ikonica ekstenzije."
+   },
+   "settings_open_action_icon": {
+      "message": "Klik na ikonu"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Levi klik"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Prelazak mišem"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Desni klik"
+   },
+   "settings_open_delay": {
+      "message": "Odloženo otvaranje"
+   },
+   "settings_open_delay_desc": {
+      "message": "Sprečava trenutno otvaranje bočne trake na prelazak mišem ili klikom sa odloženim otvaranjem."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Boja maske"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "Ekstenzija prikazuje vaše obeleživače u bočnoj traci, dakle treba mu ova permisija da dobije pristup. Ova permisija mu takođe dozvoljava da ekstenzija doda, izmeni ili obriše obeleživače."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "Nažalost {browserName} nema mehanizam da prikaže kontent u pretraživaču bez interakcije sa stranicom koju trenutno posećujete."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Pošto se bočna traka prikazuje u gornjem delu trenutnog sajta, ovo odobrenje je obavezno. Pored ovog tehničkog razloga, odobrenje nije korišćeno za druge svrhe."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "U koliko ste zabrinuti šta radimo sa ovom dozvolom, možete pogledati izvorni kod na ekstenziji na Github-u. To je otvoreni izvor i vidljiv je svima."
+   },
+   "settings_permissions_desc": {
+      "message": "Da bi ste napravili promenljivu bočnu traku u {browserName}, potrebne su sledeće permisije i zahtevi od ekstenzije:"
+   },
+   "settings_premium_activated": {
+      "message": "Uspesno ste aktivirali Premium nalog"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Neuspesna aktivacija Premium naloga. Molimo Vas unesite validan kljuc"
+   },
+   "settings_presets": {
+      "message": "Odredi relativnu velicinu"
+   },
+   "settings_presets_desc": {
+      "message": "Mozete odabrati vec odredjene velicine za bocnu traku. To ce promeniti slajdere na stranici kako bi promenio sirinu bocne trake, visinu linija, velicine ikonica i jos mnogo drugih opcija."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Spreči skrolovanje stranice"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Sprečava skrolovanje trenutne veb lokacije dok je bočna traka otvorena."
+   },
+   "settings_prevent_windowed": {
+      "message": "Onemogući bočnu traku u prozornom(Windowed) režimu."
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Smanjuje šanse da otvorite bočnu traku klikom ili prelaskom preko ivice pretraživača kada je pretraživač u režimu prozora."
+   },
+   "settings_remember_desc": {
+      "message": "Odaberite šta da se zapamati kroz izmene stranica. Ako odaberete da se zapamti poslednji otvoreni obeleživač, biće označen kada se ponovo otvori bočna traka."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Zapamti otvorene pod-direktorijume"
+   },
+   "settings_remember_state": {
+      "message": "Zapamti"
+   },
+   "settings_remember_state_all": {
+      "message": "Skrol pozicija, otvoreni direktorijumi i poslednji otvoreni obeleživač"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Ništa"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Otvoreni direktorijumi."
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Pozicija skrola na stranici i otvorenih direktorijuma"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Otvoreni direktorijumi na osnovnom nivou"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Ponovno otvori bočnu traku"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Automatski ponovo otvori bočnu traku, nakon otvaranja obeleživača kroz bočnu traku."
+   },
+   "settings_restore": {
+      "message": "Prethodni korak"
+   },
+   "settings_restore_confirm": {
+      "message": "Jeste li sigurni da želite vratiti zadane konfiguracije?"
+   },
+   "settings_restored_message": {
+      "message": "Zadana konfiguracija uspesno postavljena"
+   },
+   "settings_save": {
+      "message": "Sacuvajte izmene"
+   },
+   "settings_saved_message": {
+      "message": "Izmene uspesno sacuvane"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Vaša podešavanja su uspešno sačuvana"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Sakrij skrol bar"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Istek vremena u sekundama nakon što će skrol bar biti saktiven. Skrolovanje će ponovo prikazati skrol bar."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Nikad ne sakrivaj"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Sirina klizaca"
+   },
+   "settings_search_placeholder": {
+      "message": "Pretraga konfiguracije"
+   },
+   "settings_show_themes": {
+      "message": "Prikaži dostupne teme"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Boja maske"
+   },
+   "settings_sidebar_position": {
+      "message": "Pozicija"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Definiše da li bi bočna traka trebala da se otvori na levoj ili na desnoj strani prozora pretraživača."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Levo"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Desno"
+   },
+   "settings_sidebar_width": {
+      "message": "Sirina"
+   },
+   "settings_support_faq_headline": {
+      "message": "Često postavljana pitanja"
+   },
+   "settings_support_feedback_desc": {
+      "message": "Imate bilo kakve sugestije za poboljšanja, pitanja, uočili ste nedostajuće opcije za konfiguraciju ili pronašli grešku? U cilju poboljšanja iskustva sa ovim proširenjem (ekstenzijom), bio bih vam veoma zahvalan za bilo koju i svaku povratnu informaciju ili predlog koji možda imate."
+   },
+   "settings_support_feedback_email": {
+      "message": "Email adresa (opciono)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Povratne informacije"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Molim vas da vaše povratne informacije pišete na engleskom jeziku, kako bi lakše razumeo i odgovorio na vašu poruku."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Priložite snimke ekrana"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Ne možete otpremiti više od {1} snimaka ekrana"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "Veličina datoteke {1} je prevelika (> 1 MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Pošalji povratne informacije"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Vaša poruka nije mogla biti poslata. Molim vas, pokušajte ponovo."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Hvala vam na povratnim informacijama"
+   },
+   "settings_text_color": {
+      "message": "Boja teksta"
+   },
+   "settings_theme": {
+      "message": "Tema"
+   },
+   "settings_theme_changed": {
+      "message": "Tema uspešno promenjena"
+   },
+   "settings_theme_default": {
+      "message": "Standardna tema"
+   },
+   "settings_theme_default_desc": {
+      "message": "Ova tema omogućava pristup Vašim obeleživačima kroz prost, moderan dizajn. Većina elemenata su ofarbana promenljivom šemom boja."
+   },
+   "settings_theme_glass": {
+      "message": "Staklena tema"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Ova tema čini bočnu traku polovično providnom i dodaje efekat staklene zamućenosti. Možete je podesiti efekat i providnost bočne trake."
+   },
+   "settings_themes_notice": {
+      "message": "Možete odabrati standardan dizajn bočne trake. Odabrana tema može biti prilagođena sa dostupnim opcijama klizača i boje."
+   },
+   "settings_title": {
+      "message": "Podešavanja"
+   },
+   "settings_toggle_area": {
+      "message": "Podesi prostor"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Po zadanom, cela ivica vašeg prozora pretraživača može biti aktivirana prelaskom miša za otvaranje bočne trake. Možete izmeniti ovo i podesiti gde da se bočna traka tačno otvori."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Povucite da pomerite"
+   },
+   "settings_toggle_area_height": {
+      "message": "Visina"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Možete umanjiti visinu prostora, tako da se bočna traka otvara samo kada pomerite kursor miša unutar te lokacije ivice od prozora vašeg pretraživača."
+   },
+   "settings_toggle_area_width": {
+      "message": "Širina."
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Širina (unutar prozora)"
+   },
+   "settings_tooltip_content": {
+      "message": "Sadržaj opisa"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Dodatne informacije"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Naslov i URL(link)"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Samo naslov"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Samo URL(link)"
+   },
+   "settings_tooltip_delay": {
+      "message": "Kašnjenje opisa"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Kašnjenje pre nego se opis obeleživača prikaže kada kursor predje preko"
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Nikad ne prikazuj opis"
+   },
+   "settings_tooltip_desc": {
+      "message": "Odaberi koje informacije ce opis prikazivati."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Velicina fonta opisa"
+   },
+   "settings_translation_add_language": {
+      "message": "Dodaj jezik"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Nazad na pregled"
+   },
+   "settings_translation_desc": {
+      "message": "Možete pomoći prevođenju dodatka na Vaš jezik ili unapredite trenutni."
+   },
+   "settings_translation_help": {
+      "message": "Za svaki unos možete videti engleski prevod, koji treba da se prevede na vaš jezik. Da bi vam pomogli da identifikujete odakle se koristi tekst i za šta služi, svaki unos ima svoj naziv (na primer {1}),što ne bi trebalo da se prevede. Molimo vas ne zaboravite da podnesete vaš prevod klikom na dugme u gornjem desnom uglu."
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Negde prevod nedostaje"
+   },
+   "settings_translation_info": {
+      "message": "Možete promeniti trenutni prevod ili dodati neki koji nedostaje. Ukoliko podnesete zahtev sa promenama, nakon odobrenja ću ga pregledati i primeniti."
+   },
+   "settings_translation_link": {
+      "message": "Pregled prevoda"
+   },
+   "settings_translation_notice1": {
+      "message": "Čim se sve kategorije koje su označene obaveznim prevedu, prevod će biti objavljen."
+   },
+   "settings_translation_notice2": {
+      "message": "Nezavršene kategorije neće biti objavljene, da bi sprečili ne dovršen prevod."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Želim da budem obavešten kada je nova verzija jezika dodata ekstenziji"
+   },
+   "settings_translation_required_category": {
+      "message": "Obavezno"
+   },
+   "settings_translation_status_draft": {
+      "message": "Prevod je nedovršen ili mu treba pregled koji nije dostupan korisnicima"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Prevod je dostupan, ali neke kategorije su nedovršene"
+   },
+   "settings_translation_status_released": {
+      "message": "Predvod je dostupan"
+   },
+   "settings_translation_submit": {
+      "message": "Podnesi"
+   },
+   "settings_translation_submit_message": {
+      "message": "Vaš zahtev sa prevodom je uspešno poslat"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "Link je kopiran"
+   },
+   "sidebar_deleted": {
+      "message": "Uklonjeno"
+   },
+   "sidebar_dir_children": {
+      "message": "Elementi"
+   },
+   "sidebar_search_no_results": {
+      "message": "Nije pronađen obeleživač koji odgovara unetim vrednostima pretrage"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Pretraga obeleživača"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Vrati korak nazad"
+   },
+   "sort_label_alphabetical": {
+      "message": "Abecedno (eng. Alfabet)"
+   },
+   "sort_label_custom": {
+      "message": "Korisnički definisano"
+   },
+   "sort_label_most_used": {
+      "message": "Najčešće korišćeni"
+   },
+   "sort_label_recently_added": {
+      "message": "Nedavno dodati"
+   },
+   "sort_label_recently_used": {
+      "message": "Nedavno korišćeni"
+   },
+   "sort_most_used_per_month": {
+      "message": "Mesečno"
+   },
+   "sort_view_as_tree": {
+      "message": "Prikaži direktorijume"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Osveži sada"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Zbog ažuriranja dodatka ova stranica mora da se učita ponovo."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Servis za povratne informacije je trenutno nedostupan. Ako želite da pružite povrate informacije, molimo vas pošaljite email."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Servis nije dostupan"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Servis za prevođenje nije dostupan u ovom trenutku. Pokušajte kasnije."
+   }
+}

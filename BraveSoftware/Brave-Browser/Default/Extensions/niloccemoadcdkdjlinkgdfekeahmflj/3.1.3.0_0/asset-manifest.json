@@ -1,0 +1,13 @@
+{
+  "files": {
+    "background.js": "/js/background.js",
+    "inject.js": "/js/inject.js",
+    "login.js": "/js/login.js",
+    "logout.js": "/js/logout.js",
+    "options.js": "/js/options.js",
+    "twitter.js": "/js/twitter.js",
+    "js/inject.js.LICENSE": "/js/inject.js.LICENSE",
+    "js/options.js.LICENSE": "/js/options.js.LICENSE",
+    "options.html": "/options.html"
+  }
+}

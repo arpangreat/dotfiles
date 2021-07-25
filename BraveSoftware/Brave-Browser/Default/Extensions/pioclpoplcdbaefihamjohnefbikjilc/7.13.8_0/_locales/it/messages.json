@@ -1,0 +1,966 @@
+{
+   "0060cc5b94d10f9cceb22856c04f02f6": {
+      "description": "Upgrade account button",
+      "message": "Il tuo account {accountType} prevede un limite di {accountLimit} di upload ogni 30 giorni. Dopodiché, le tue note smetteranno di sincronizzarsi."
+   },
+   "01ce27a8a0d9de093fd302af921ce1ba": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Effettua l'upgrade per avere 1 GB di capacità di caricamento mensile."
+   },
+   "0235c996b43b3799573658df41ef82f2": {
+      "description": "\"Marker\" tool title of screenshot clip format",
+      "message": "Pennarello"
+   },
+   "03e61eee046a91876853adc297a654e4": {
+      "description": "Label for button to save clip to Evernote.",
+      "message": "Salva ritaglio"
+   },
+   "03ee37045f78ba987a7484aa93955fad": {
+      "description": "If enabled, it shows the partial post clip dialog that disappears after three seconds message",
+      "message": "Chiudi Clipper automaticamente"
+   },
+   "04638478207399b478e375f779c51b8b": {
+      "description": "Label for shortcut to go to email mode",
+      "message": "Email clip"
+   },
+   "0512939a41a02b6f9796abbbb1fefd28": {
+      "description": "Label for shortcut to zoom out on skitch in options page",
+      "message": "Zoom- (passo)"
+   },
+   "05f0c36034a596ec304993a7e44f9ebf": {
+      "description": "Label for notebook destination in options page",
+      "message": "Destinazione taccuino"
+   },
+   "07574accced9f8c66df362d18d55baeb": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Aggiungi account personale"
+   },
+   "0a74dec84259cc9cc1f7f462fb2c83f0": {
+      "description": "Copy logs button text",
+      "message": "Copia registri"
+   },
+   "0bced23e0866dcc535b526f9bfeae0f3": {
+      "description": "Header of the markup shortcuts on options page",
+      "message": "Annotazione"
+   },
+   "0db377921f4ce762c62526131097968f": {
+      "description": "General tab title",
+      "message": "Generale"
+   },
+   "0eaed94c4da3080dd3d88f0f2bca8c23": {
+      "description": "Low disk space warning message",
+      "message": "Lo spazio su disco è quasi esaurito. Per evitare problemi di sincronizzazione, prova a eseguire la pulizia del disco di sistema."
+   },
+   "0f4e1aaabd074689b7d3ead824d1ee8e": {
+      "description": "Label for shortcut to use the skitch arrow tool in options page",
+      "message": "Freccia"
+   },
+   "119518c2134c46108179369f0ce81fa2": {
+      "description": "Label for shortcut to use the ellipse tool in options page",
+      "message": "Ellisse"
+   },
+   "130d74c3ba60e43c646b8d2ae2e189f7": {
+      "description": "",
+      "message": "Aggiungi tag"
+   },
+   "132a6fcf2bc1cb48a30be9d7a1ab65e4": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper utilizza i cookie per riconoscere il tuo account. Controlla le impostazioni del browser per assicurarti che accetti i cookie di terzi e quindi di Evernote."
+   },
+   "13a4fc8dd4a0f5bedca5b998bbf299bd": {
+      "description": "Description of the multipage clip feature on the options page",
+      "message": "Ritaglia tutte le pagine in un'unica nota."
+   },
+   "13b5bfe96f3e2fe411c9f66f4a582adf": {
+      "description": "Headline for notification indicating which notebook the clip was successfully uploaded into",
+      "message": "in"
+   },
+   "141c4e75277f66ff4ad4c873a45b224d": {
+      "description": "Label for shortcut to start web clipper",
+      "message": "Avvia Web Clipper"
+   },
+   "1713481aca8b8b7e7c9a20c88a5f029c": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "zoom al 100%"
+   },
+   "1817c60a1a4cfeeab5ca732ff13ed65a": {
+      "description": "Label for tag selection in options page",
+      "message": "Selezione tag"
+   },
+   "1c5dbbd3b2f08cc4f1c3e69fb4f213fa": {
+      "description": "Error message",
+      "message": "Non è stato possibile caricare la pagina."
+   },
+   "1cdc076b28f70afac5fcedadf99fa119": {
+      "description": "Label for shortcut to undo skitch action in options page",
+      "message": "Annulla"
+   },
+   "1f4f6bb6a3727e7259a572df780132e9": {
+      "description": "Low disk space warning header",
+      "message": "Spazio su disco in esaurimento"
+   },
+   "248336101b461380a4b2391a7625493d": {
+      "description": "Headline for notification indicating that clip was successfully uploaded",
+      "message": "Salvate"
+   },
+   "24fc199b67f7441cda35e64e6791437b": {
+      "description": "Error message",
+      "message": "Non hai effettuato l'accesso come utente Business."
+   },
+   "2506a918747c42a905823cfb1237de0d": {
+      "description": "Maintenance message",
+      "message": "È in corso la manutenzione dei server di Evernote. Riprova più tardi."
+   },
+   "25409146618d1045b8931267648a14b4": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "Accedi a Web Clipper per visualizzare i risultati correlati"
+   },
+   "264d5425cc8f76b5e6d17f800ff3439c": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Evita di arrivare al limite. Passa subito a Evernote Plus per poter avere 1 GB di capacità di caricamento mensile."
+   },
+   "28fba1dd077f713e06c2b275512db419": {
+      "description": "Error alert message",
+      "message": "La tua connessione sembra non essere in linea."
+   },
+   "290612199861c31d1036b185b4e69b75": {
+      "description": "Amazon page section name for common product info",
+      "message": "Riepilogo"
+   },
+   "29e9d8e295b1d5b3002d2d3d5baa4c37": {
+      "description": "Shortcuts tab title",
+      "message": "Collegamenti"
+   },
+   "2ad9808f72179d66dadfac646a9033b4": {
+      "description": "Clip is over size",
+      "message": "Il ritaglio è troppo grande"
+   },
+   "2bfa5c64ad7fcb183b35841f019d04de": {
+      "description": "Label for using last used notebook in notebook selection on options page",
+      "message": "Utilizza l'ultimo taccuino usato"
+   },
+   "2c26c3d1dd3192d9ebd0d7aac2f2dd62": {
+      "description": "Untitled note title",
+      "message": "Nota senza titolo"
+   },
+   "2ca1b06542d50d918871d86c34d344d9": {
+      "description": "Label for keyboard shortcut that switches accounts",
+      "message": "Cambio account"
+   },
+   "2e1be05809b5b6c613abd8e791e102c2": {
+      "description": "Button for logging in as additional business user",
+      "message": "Aggiungi accoun Business"
+   },
+   "2e2aa75122e0f772381b5bc7a1a4fd03": {
+      "description": "Category name in destination selector",
+      "message": "Spazi"
+   },
+   "2efd89b3ccc76b0b03a34196fc6d1c8b": {
+      "description": "Placeholder text for tag input",
+      "message": "Aggiungi tag"
+   },
+   "3049dacdbd8857b7f0d88d05364916bd": {
+      "description": "Button to dismiss near quota warning",
+      "message": "Non ora"
+   },
+   "32ba78fe43257d3e7f88e3935a8ea0d4": {
+      "description": "Plus account type",
+      "message": "Plus"
+   },
+   "33c1f003104421d9c01d02db1c9b467e": {
+      "description": "label of notebook author",
+      "message": "\nAutore: {ownerName}"
+   },
+   "34dba7beda8557b9c0c5957f10095637": {
+      "description": "Options Reset button",
+      "message": "Ripristina tutte le opzioni"
+   },
+   "37c41606e05299c12b1235f52fef0df1": {
+      "description": "Warning about multipage clip",
+      "message": "Se ritagli tutte le pagine, i tempi di ritaglio potrebbero essere più lunghi"
+   },
+   "37d535f9a08bc86377e234bfd63596ce": {
+      "description": "Placeholder text for remark input",
+      "message": "Aggiungi commento"
+   },
+   "38afb4cd458f868284f38c901da91dae": {
+      "description": "Tooltip for url clip tool",
+      "message": "Segnalibro"
+   },
+   "3a7dc9e3e595892fa7e3b0baf9ca2a6b": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Anteprima segnalibro"
+   },
+   "3afbd9828e011526955ca93b48b57524": {
+      "description": "label for option in global toolbar",
+      "message": "Screenshot"
+   },
+   "3b575eee0fb9016019e5165f244cab09": {
+      "description": "Title for near quota message (75%)",
+      "message": "Hai quasi esaurito il tuo spazio"
+   },
+   "3b6c2b4caaf4f14f8d7feeddc4ac3f4d": {
+      "description": "URL for Terms of Service page (Copyright statement)",
+      "message": "Termini di servizio"
+   },
+   "3bc79030e994de3a589719ee45a62af8": {
+      "description": "Checkbox in options page to enable keyboard shortcuts",
+      "message": "Abilita scorciatoie da tastiera"
+   },
+   "3ceb953a91580dc2af7df397eb3e886b": {
+      "description": "Option in options page for what to show after a successful clip",
+      "message": "Dopo il ritaglio"
+   },
+   "41ff79afac94b17a1d8a66c7fcc33055": {
+      "description": "Error message",
+      "message": "Si è verificato un errore sconosciuto."
+   },
+   "43031118a545608417532d43c55fb9bd": {
+      "description": "Shared url copied to clipboard confirmation",
+      "message": "URL copiato negli Appunti"
+   },
+   "45af78debeb1a81e5b52c9ec4bb0c6ab": {
+      "description": "Button Premium users use to confirm activity when they're near quota",
+      "message": "Conferma attività"
+   },
+   "45efb362e1db04258668876dd6b68a96": {
+      "description": "Message that shows up when the clipper popup cant open.",
+      "message": "Questa pagina deve essere ricaricata prima che tu possa ritagliarla. Ricarica la pagina e riprova."
+   },
+   "467c00f2c32c16d590a00e6185cb880c": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Mostra i contenuti Evernote correlati alle mie ricerche sul web."
+   },
+   "479149aec98be53057f43b5947816255": {
+      "description": "Title of the clip formats list",
+      "message": "Formato ritaglio"
+   },
+   "4803e6b9e63dabf04de980788d6a13c4": {
+      "description": "Label for shortcut to use the line tool in options page",
+      "message": "Linea"
+   },
+   "4ccf00154f322aeea0f82d9aaef3abb3": {
+      "description": "Message that clip is bigger than a certain number of bytes",
+      "message": "A causa delle limitazioni del browser, non puoi salvare file di dimensioni maggiori di {size}"
+   },
+   "4cf6d37f01f5e34ee848476f1bfcfb7f": {
+      "description": "Tooltip for url clip tool",
+      "message": "Ritaglia segnalibro in Evernote"
+   },
+   "4d110a7795a7e06abee1d921c1897343": {
+      "description": "Header of the clip shortcuts on options page",
+      "message": "Ritaglio:"
+   },
+   "4dfbb099eafd3c82e033bf92946d3ce6": {
+      "description": "text for button to share clip via email",
+      "message": "Mail"
+   },
+   "510a8cb711495bfdd04c792d2fc4b0fe": {
+      "description": "label in gmail preview for the senders and threads recipients",
+      "message": "Partecipanti"
+   },
+   "52ebc26c2921d5b84fc670dff9891821": {
+      "description": "\"Zoom out\" tool title of screenshot clip format",
+      "message": "Zoom indietro"
+   },
+   "565e6049e93f709d8b8c65db360cdc25": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Ritaglia articolo semplificato in Evernote"
+   },
+   "56723c8751db32cf4269a36f2f57689a": {
+      "description": "Tooltip for article clip tool",
+      "message": "Ritaglia articolo in Evernote"
+   },
+   "5682f20488bb59cc15b66de2d798d3ac": {
+      "description": "Header of the global shortcuts on options page",
+      "message": "Globali:"
+   },
+   "56f6cc60bd71efd9e23b6fff825e58e4": {
+      "description": "Label for notebooks creation button",
+      "message": "Ritaglia in un nuovo taccuino"
+   },
+   "58b3d8603dffe8484e90c0ca371921ac": {
+      "description": "Placeholder text for the message field of the email sharing dialog",
+      "message": "Aggiungi un messaggio"
+   },
+   "592f8367bae750cc2ac3172f0598802b": {
+      "description": "Tooltip text for \"Add a reminder\" button",
+      "message": "Aggiungi un promemoria"
+   },
+   "5a95a425f74314a96f13a2f136992178": {
+      "description": "Tooltip text for \"Share\" button",
+      "message": "Condividi"
+   },
+   "5afeaba074ef570dc720caaa855d49f6": {
+      "description": "Label for shortcut to redo skitch action in options page",
+      "message": "Ripristina"
+   },
+   "5d50889672f6f860d14f502de3de1957": {
+      "description": "\"Colors\" tool title of screenshot clip format",
+      "message": "Colori"
+   },
+   "5d73f120f95121fb6cb32139c2984fd5": {
+      "description": "Error message",
+      "message": "Si è verificato un errore del server."
+   },
+   "5df6b1831a1fff17541b538eab1a3ae0": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "5e2f8ee473fdebc99fef4dc9e7ee3146": {
+      "description": "Tooltip for article clip tool",
+      "message": "Articolo"
+   },
+   "5e5c6ad2fd74ca2dad8688ef22843ac0": {
+      "description": "Maintenance message",
+      "message": "È in corso la manutenzione dei server di Evernote. Riprova più tardi."
+   },
+   "5f2ef4990ea329ce9421fc1e49f0a483": {
+      "description": "Text for the screenshot toast",
+      "message": "Seleziona un'area di ritaglio o fai clic per catturare la pagina completa."
+   },
+   "62c433ad00279a269d850a82cda99ec5": {
+      "description": "Tooltip for shortcut release notes",
+      "message": "Posiziona il cursore nel campo e premi il collegamento che desideri"
+   },
+   "63bbced1dc18e01ce3484b6800bae525": {
+      "description": "Label for shortcut to go to full page preview mode",
+      "message": "Anteprima pagina intera"
+   },
+   "64d3dcb57b34de0750a4a0283a3307a9": {
+      "description": "Title for over quota message",
+      "message": "Spazio insufficiente"
+   },
+   "64d4f6e85ad482c5cb9ba338b9600042": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Risultati correlati"
+   },
+   "6614acf7e2a66dd467bd9f92ad7bb11f": {
+      "description": "Error message displayed instead of missing logs",
+      "message": "Caricamento dati registro non riuscito"
+   },
+   "66e72957e6c99c7e4dc16ce242801b52": {
+      "description": "Tooltip for setting a keyboard shortcut in the options page",
+      "message": "Digita una combinazione di tasti per cambiare questa scorciatoia da tastiera"
+   },
+   "686e697538050e4664636337cc3b834f": {
+      "description": "Create new notebook button",
+      "message": "Crea"
+   },
+   "690cfdf924145ae042df0e4888ad8dd5": {
+      "description": "Tooltip for email context menu clip",
+      "message": "Ritaglia email in Evernote"
+   },
+   "6b76deb7d3f8000505b8017c51913daf": {
+      "description": "Error message shown when you try to clip from restricted pages",
+      "message": "A causa delle limitazioni del browser, non puoi ritagliare questa pagina."
+   },
+   "6ff9dd0d34f65181173c1e4bc39939de": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Selezione"
+   },
+   "70c1604b97488d413ebbbfa8ab2fe8c8": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Riduci il Web Clipper"
+   },
+   "715013803411b9eb276c002c2b3f9e82": {
+      "description": "Title of warning when a Premium user is near quota",
+      "message": "Sei stato indaffarato!"
+   },
+   "730bbb4f3457bb52d56a663e16ca76f1": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "Ritaglia PDF in Evernote"
+   },
+   "7575dfa4ebced0ffce2a66a3e8e96f97": {
+      "description": "Explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Mostra il tasto \"Salva in Evernote\" su pagine PDF."
+   },
+   "758e33a22a3eea5e838a7075d3502f36": {
+      "description": "Button to contact customer support",
+      "message": "Contatta l´assistenza Evernote"
+   },
+   "75f16d5429a2cd7c8dc1e80acc7fb3bc": {
+      "description": "Label for using smart filing in notebook/tag selection on options page",
+      "message": "Usa archiviazione intelligente"
+   },
+   "7685f0dfff3c115aae3ec299967988e0": {
+      "description": "Label for shortcut to zoom in on skitch in options page",
+      "message": "Zoom+ (passo)"
+   },
+   "79bae193b5f91d31d7cf3ebe904ed548": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+{count} altre pagine"
+   },
+   "7a207c49bca9a804f7ae3f1956d479fb": {
+      "description": "Maximum note content size is",
+      "message": "La dimensione massima del contenuto della nota è {size}"
+   },
+   "7b91156d64b76a5dda815937fce9119d": {
+      "description": "\"Zoom in\" tool title of screenshot clip format",
+      "message": "Zoom avanti"
+   },
+   "7ce91f975c8fbaa4c343cbae3fd9a1ee": {
+      "description": "Error message",
+      "message": "Errore di autenticazione. Accedi a Evernote."
+   },
+   "7e1907b268e3b1261c98c5bf7a368fe5": {
+      "description": "Syncing message",
+      "message": "Sincronizzazione"
+   },
+   "7e9d5a15230c09057d559dbfa930cd91": {
+      "description": "Tags not supported text",
+      "message": "Tag non supportati"
+   },
+   "81a4815e7de724c2cef8c8ca2b39967a": {
+      "description": "Generic error message for creating notebook",
+      "message": "Si è verificato un errore creando il taccuino"
+   },
+   "82bdef0300a967b862631447be24890c": {
+      "description": "Page has too many resources",
+      "message": "La pagina ha troppe risorse, il massimo è {size}"
+   },
+   "8480e52106db88681499e53a382ee4ee": {
+      "description": "Logout button",
+      "message": "Disconnetti {email}"
+   },
+   "8524de963f07201e5c086830d370797f": {
+      "description": "Label for notebooks list is loading",
+      "message": "Caricamento..."
+   },
+   "875599a8864e3ce5f5484ddc81ceaa0c": {
+      "description": "Label for shortcut to use the stamp tool in options page",
+      "message": "Timbro"
+   },
+   "898b21e58da17fb1836c96c8c4a2fd12": {
+      "description": "Label for choose destination button. Might be a space or notebook",
+      "message": "Scegli destinazione..."
+   },
+   "89dc1cb58e61ef411470470fcb1779ab": {
+      "description": "Tooltip for login in context menu",
+      "message": "Accedi a Evernote"
+   },
+   "8af311ed12b2c28c6594621a6cf36a6c": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Spiacenti, la dimensione massima della nota è pari a {size}."
+   },
+   "8b37967572ca07c35146f1ff6c825b89": {
+      "description": "Error message",
+      "message": "È richiesto l'accesso al server."
+   },
+   "8d194edea19d05ed016383e049ea7d90": {
+      "description": "Error message shown when its not possible to refresh notebooks list",
+      "message": "Errore durante l'aggiornamento dei taccuini."
+   },
+   "8d5e7e72f12067991186cdf3cb7d5d9d": {
+      "description": "Premium account type",
+      "message": "Premium"
+   },
+   "902b0d55fddef6f8d651fe1035b7d4bd": {
+      "description": "Error message header",
+      "message": "Errore"
+   },
+   "908f8d9f34f375a55dd5b6a86489d364": {
+      "description": "text in post clip dialog when there are no related notes",
+      "message": "Nessun risultato"
+   },
+   "909983ccb694a3711181d01fdeb74e9c": {
+      "description": "Error message",
+      "message": "Impossibile trovare il taccuino specificato."
+   },
+   "90c3123b6b5bce5201bf4dcdda107833": {
+      "description": "Label for shortcut to close clipper",
+      "message": "Chiudi Web Clipper o finestra attiva"
+   },
+   "90fe890b6b8f0bb0c052290c70b0840d": {
+      "description": "Tip for refresh notebooks list block",
+      "message": "Impossibile trovare la destinazione?"
+   },
+   "918d6e9f6a4fc2f88f9cbcb778e68baf": {
+      "description": "Error message when user tries to set a shortcut that's more than three keys long",
+      "message": "I tasti di scelta rapida possono combrendere al massimo tre tasti in combinazione"
+   },
+   "923195695a47153ed038da437f074da3": {
+      "description": "Error message",
+      "message": "Raggiunto limite dati."
+   },
+   "94966d90747b97d1f0f206c98a8b1ac3": {
+      "description": "Label for submit button on the feedback form",
+      "message": "Invia"
+   },
+   "950e11420880a0ec9cc27829be580e2e": {
+      "description": "Section title for search results over business notes",
+      "message": "Risultati simili nelle note Business"
+   },
+   "95c65ab43cff1aa7a9111e468e7b8bef": {
+      "description": "Label for shortcut to go to text selection mode",
+      "message": "Modalità selezione"
+   },
+   "96bd91ed2f2958d3a0cefba9545d708d": {
+      "description": "Copy logs button title",
+      "message": "Copia registri"
+   },
+   "972e73b7a882d0802a4e3a16946a2f94": {
+      "description": "Basic account type",
+      "message": "Basic"
+   },
+   "97edcf81bb86d25aafacf1ac934b7757": {
+      "description": "Error message",
+      "message": "Impossibile ritagliare e salvare nella destinazione specificata."
+   },
+   "9913b8f718a25b9ab5df9bbfe35b5c80": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Presentazione di Evernote Plus & Premium"
+   },
+   "9af7309e6c70325cd72080cd19491672": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Le dimensioni massime consentite per la nota sono di {size}."
+   },
+   "9c1f1ae3d7f326ec02e4c0909ee6e17a": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Pagina intera"
+   },
+   "9d290d3434589e33be3d2cad4f8323ec": {
+      "description": "Version label",
+      "message": "Versione:"
+   },
+   "9dffbf69ffba8bc38bc4e01abf4b1675": {
+      "description": "\"Text\" tool title of screenshot clip format",
+      "message": "Testo"
+   },
+   "9f3a28e3b8e1ab2d39153b803136e5c4": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Avvisami…"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Ritaglia in Evernote"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Usa l'estensione Evernote per salvare le cose che vedi sul Web nel tuo account Evernote."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "a10a9bcd450087de1ce1f80b35f44883": {
+      "description": "Legal tab title",
+      "message": "Legale"
+   },
+   "a11f4833156155211bd7b37e4d5e529c": {
+      "description": "Enable logs button titile",
+      "message": "Abilita i registri"
+   },
+   "a17cb092f1cd15bbb8fb075ca0365d1b": {
+      "description": "Error which shown when notebook has incorrect name",
+      "message": "Nome taccuino non valido"
+   },
+   "a1c58e94227389415de133efdf78ea6e": {
+      "description": "Label for color appearance section",
+      "message": "Aspetto"
+   },
+   "a1d5f2a85ad856617ebfdde9aa86d143": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Per poter ritagliare note di dimensioni maggiori di {size} devi essere in possesso di Evernote Premium."
+   },
+   "a25d585ba4312bd4098406942fe27892": {
+      "description": "Notebook creation error",
+      "message": "Esiste già un taccuino con lo stesso nome"
+   },
+   "a302191e995e9a77c23994cc1204d1a8": {
+      "description": "Category name in destination selector",
+      "message": "Taccuini"
+   },
+   "a41d26ca3cd0c60d01e04dee04c3442c": {
+      "description": "Message that clip is bigger than a certain number of bytes",
+      "message": "Il ritaglio supera i {size}"
+   },
+   "a580158cf2dcbc9cbb0e8eec54283de6": {
+      "description": "Highlight removal tooltip",
+      "message": "Fai clic per rimuovere l'evidenziazione"
+   },
+   "ab1a6fe3a0a4aef9da01f51d1a94bd44": {
+      "description": "Label for shortcut to go to skitch mode",
+      "message": "Scatta screenshot"
+   },
+   "ab4f22321230d8db1bca9b52a5975145": {
+      "description": "",
+      "message": "Seleziona taccuino"
+   },
+   "ad6584b1720c58e1eb70a17cc3c84b05": {
+      "description": "Label for url to clipped notebook",
+      "message": "Visualizza in Evernote"
+   },
+   "ad8783089f828b927473fb61d51940ec": {
+      "description": "label for default clip action",
+      "message": "Utilizza"
+   },
+   "ae0f61643c33404bb9fec87a30825c7a": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Ignora sempre"
+   },
+   "ae1451f8bb54e7453a21c409500bed1c": {
+      "description": "message that reminder has been added to the note",
+      "message": "Promemoria aggiunto"
+   },
+   "ae5eb1c937167b51b186e27587df5a94": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Screenshot acquisito"
+   },
+   "afa88caa9b6c3c0562dfbea054f08aca": {
+      "description": "Title for dark color mode",
+      "message": "Utilizza la modalità scura"
+   },
+   "b00adf4f51f5e2f5090416a006cf248c": {
+      "description": "\"Highlighter\" tool title of screenshot clip format",
+      "message": "Evidenziatore"
+   },
+   "b0f82c4aa9c1fa9d55e13f043cd0ed41": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Passa a Premium per accedere ai tuoi articoli ritagliati sul tuo dispositivo mobile anche quando non sei in linea. Come utente Premium, puoi impostare taccuini offline e accedere rapidamente alle tue note in qualsiasi momento."
+   },
+   "b18d8379adbda5dc9a4634ab86001a37": {
+      "description": "Button title: \"delete clip\"",
+      "message": "Elimina ritaglio"
+   },
+   "b1d02ebd9b98631b8bc6ea490a891340": {
+      "description": "Error message",
+      "message": "Account eliminato."
+   },
+   "b2d37ae1cedf42ff874289b721860af2": {
+      "description": "Logs tab title",
+      "message": "Registri"
+   },
+   "b4e7fcd2cba52644a49351cd23a6f6cf": {
+      "description": "Upgrade account button",
+      "message": "Esegui l'upgrade per avere più spazio"
+   },
+   "b5001ee43a1f9d9757caae929e1905b9": {
+      "description": "Label for shortcut to expand article selection",
+      "message": "Espandi selezione articolo"
+   },
+   "b545fe9ce114725c7398961564ff92f8": {
+      "description": "Details of warning when a Premium is near quota",
+      "message": "L´aggiunta di una grande quantità di contenuto in un breve periodo può portare a disfunzionamenti del servizio. Conferma che il tuo livello di attività attuale è intenzionale."
+   },
+   "b5e0d53644d538a90bcedff69bd23cf0": {
+      "description": "If enabled, it shows the post clip dialog w/o related notes after a successful clip message",
+      "message": "Mostra la finestra di dialogo del ritaglio senza le note correlate"
+   },
+   "b6908c122e0791f00fdd5433db23a4ab": {
+      "description": "Button to reset shortcuts in options page",
+      "message": "Ripristina collegamenti"
+   },
+   "b702532e5dc49d52bb36a826e1c0b7cd": {
+      "description": "Message displayed during clipping process.",
+      "message": "Salvataggio del ritaglio…"
+   },
+   "b78b9e865bb7e11d953601ef9cb5d2b9": {
+      "description": "\"Stamps\" tool title of screenshot clip format",
+      "message": "Timbro"
+   },
+   "b8350bead278ce9f78de740d38810adb": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Usufruisci di ulteriori funzionalità se passi a Evernote Plus o Evernote Premium."
+   },
+   "bbab939b5a6c6d2108323fe2e74efdb2": {
+      "description": "Label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Tasto pagina PDF"
+   },
+   "bcd1b68617759b1dfcff0403a6b5a8d1": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "bdcf184c0d450fd4345a79857803aafe": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Apri una conversazione in Gmail"
+   },
+   "be9aa33d53323f3bced7faea345eaeb4": {
+      "description": "label for last used clip action option in options page",
+      "message": "Utilizza l'ultimo formato di ritaglio usato"
+   },
+   "be9bffbf4f5a8a0a22de1561eabd0576": {
+      "description": "Label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Sposta in alto selezione articolo"
+   },
+   "bf25911c78c13e56ee2b778aac3f0d26": {
+      "description": "Error message",
+      "message": "Si è verificato un errore interno."
+   },
+   "bf5d28973f9366faafa89b7401f7c08b": {
+      "description": "Title for light color mode",
+      "message": "Utilizza la modalità chiara"
+   },
+   "c0552276a3b1d8a40d4968b8cf36cdec": {
+      "description": "Label for shortcut to go to pdf mode",
+      "message": "Ritaglio PDF"
+   },
+   "c274e58f3d9093760405232347bf95d1": {
+      "description": "Label for shortcut to select all markup objects in options page",
+      "message": "Seleziona tutti gli oggetti annotati"
+   },
+   "c2a96c73e26b3ce2442e74d5bd7d5f52": {
+      "description": "Too many resources",
+      "message": "Troppe risorse"
+   },
+   "c2e9e924f62423374f58330185fbf5ab": {
+      "description": "If enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Mostra la finestra di dialogo del ritaglio"
+   },
+   "c3ffa4fc7cd3454d6993b02f9ccae1ae": {
+      "description": "Label for specifying default clipping action",
+      "message": "Azione ritaglio predefinita"
+   },
+   "c4784a71adc8a196ab74d80c8ed8eb20": {
+      "description": "Error when user hits the notebook amount limit",
+      "message": "Hai raggiunto il numero massimo di taccuini"
+   },
+   "c65fbb990d50a44bed795641cfbe75a8": {
+      "description": "Error message",
+      "message": "È richiesto l'accesso a Business."
+   },
+   "c8a59e7135a20b362f9c768b09454fdb": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Ignora"
+   },
+   "c9cc8cce247e49bae79f15173ce97354": {
+      "description": "Label for button to save clip to Evernote.",
+      "message": "Salva"
+   },
+   "cae8d14edd025e72c59dbab6f378c95a": {
+      "description": "Notebook creator name, when notebook is created by you",
+      "message": "Tu"
+   },
+   "cb167cf4f8abd63f31fa696cd07e2710": {
+      "description": "Section title for search results over personal notes",
+      "message": "Risultati simili nelle note personali"
+   },
+   "cc82fb8d261fb7a98fa35e7f5da86b46": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Nessun risultato correlato nelle note"
+   },
+   "cd4db2784af5640685fce0148df3f2b2": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Seleziona tutti i messaggi"
+   },
+   "ce8ae9da5b7cd6c3df2929543a9af92d": {
+      "description": "label for option in global toolbar",
+      "message": "Email"
+   },
+   "ce9291906a4c3b042650b70d7f3b152e": {
+      "description": "Label for shortcut to use the rectangle tool in options page",
+      "message": "Rettangolo"
+   },
+   "d08e76a24ebef7ded34bbdba6360fdad": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Ritaglia sul desktop, leggi sul cellulare"
+   },
+   "d103f08d0813b7b35607f2456f5798d5": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Il Web Clipper richiede i cookie per funzionare correttamente. Abilita i coockie nelle impostazioni del tuo browser."
+   },
+   "d388632d05e8826abe4b95de0b110529": {
+      "description": "\"Crop\" tool title of screenshot clip format",
+      "message": "Ritaglia"
+   },
+   "d3b21c087ca7dd2561109888011bc0fc": {
+      "description": "",
+      "message": "Web Clipper utilizza il seguente software open source"
+   },
+   "d3de52109c609784f2e4a28d0e9fdb97": {
+      "description": "Copy logs button title",
+      "message": "Fatto!"
+   },
+   "d417daa3bf3cb7eef2d5d0712667e27f": {
+      "description": "Loading Web Clipper title",
+      "message": "Caricamento Web Clipper..."
+   },
+   "d63969ccdb3a08c0d9e245beb519dc3f": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Ritaglia l'intera pagina in Evernote"
+   },
+   "d6583168b9ae91803da650349dd832f0": {
+      "description": "Placeholder text for tag input limit",
+      "message": "Limite massimo raggiunto"
+   },
+   "d6b258792ff06f82933c74eeb8aef591": {
+      "description": "Title of the organization clip section",
+      "message": "Organizzazione"
+   },
+   "d6e6cb19e3b9c02f89d6cd54cfa7c613": {
+      "description": "Business account type",
+      "message": "Business"
+   },
+   "d789051183dace04ff2791ed4c12ffb2": {
+      "description": "button to add date to reminder",
+      "message": "Aggiungi una data"
+   },
+   "d7a1efc480004d357f4c4f9ec9bd3cf2": {
+      "description": "Error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Conflitto tra due tasti di scelta rapida"
+   },
+   "da31380170c9345c63b5b82bddf439b5": {
+      "description": "Label for the related notes tab",
+      "message": "Note correlate"
+   },
+   "db9c60df11aa671c7c123e7c56bf27a1": {
+      "description": "Label for multipage clips feature toggle",
+      "message": "Ritagli multipagina"
+   },
+   "de24b749138b4e1196d32437c5376c2e": {
+      "description": "Label for shortcut to contract article selection",
+      "message": "Selezione articolo contratto"
+   },
+   "dec8a8ad499b0b7c3c2b175379f36882": {
+      "description": "Copyright statement",
+      "message": "Copyright {0} Evernote Corporation. Tutti i diritti riservati."
+   },
+   "e03d19fb7bfcac5a4f319658a41c4676": {
+      "description": "button to set reminder for one week from now",
+      "message": "Tra una settimana"
+   },
+   "e129ae480280e47ef82fc7702f8321ba": {
+      "description": "Text for refresh notebooks list button",
+      "message": "Aggiorna l´elenco"
+   },
+   "e3469d1713b6e0123cb7794d854d39d8": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Ritaglia la selezione in Evernote"
+   },
+   "e46b8ed01e2b907944e68d56969c0166": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Per ritagliare note di dimensioni superiori maggiori di {size} devi essere in possesso di Evernote Plus o Evernote Premium."
+   },
+   "e4a7c421716ffbdb0b15f93f1e535fb7": {
+      "description": "Error message",
+      "message": "Raggiunta quota utente."
+   },
+   "e613048dd569aa364c34f34f17c32c4f": {
+      "description": "Label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Sposta in basso selezione articolo"
+   },
+   "e7ee6a7ae0e6f824f5609c7bdac34375": {
+      "description": "\"Shapes\" tool title of screenshot clip format",
+      "message": "Forme"
+   },
+   "e8cbe95de3df04d77fb43bd674a44d52": {
+      "description": "Sign in user prompt",
+      "message": "Entra come {accountName}..."
+   },
+   "ea4788705e6873b424c65e91c2846b19": {
+      "description": "Label for button to cancel screenshot waiting mode.",
+      "message": "Annulla"
+   },
+   "eb26e4c764a92acb12a713e1e99b42a4": {
+      "description": "Error message when user tries to use forbidden shortcut",
+      "message": "Impossibile utilizzare {key} in questa scorciatoia"
+   },
+   "ebb54dcac10c133f63a2ebeed6576aa8": {
+      "description": "Title for near quota message (50%)",
+      "message": "Hai utilizzato il 50% dei tuoi upload mensili"
+   },
+   "ede099ef4618afd096177ccb467e265e": {
+      "description": "\"Pixelate\" tool title of screenshot clip format",
+      "message": "Pixelizza"
+   },
+   "ee18738a0b8371049dd9f61de9f3b7ce": {
+      "description": "Label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Rettangolo arrotondato"
+   },
+   "eedddedd3a5fa57919dccaf7f06b7fa0": {
+      "description": "Error message",
+      "message": "Impossibile connettersi al server."
+   },
+   "ef625483f5a71982de118435c88ffcfa": {
+      "description": "Placeholder text for the recipient field of the email sharing dialog",
+      "message": "Inserisci indirizzo(i) email"
+   },
+   "f00832f73216fb5d315bc3b43bbf8425": {
+      "description": "message when shared notebook's permissions were changed",
+      "message": "{name}, non hai più l'autorizzazione per ritagliare nel taccuino specificato"
+   },
+   "f02654025ee9aefddb18a2c4b6da5ee7": {
+      "description": "Disable logs button title",
+      "message": "Disabilita registri"
+   },
+   "f02b140d13bec3363889800fed4fa3dc": {
+      "description": "Message that shows up when the clipper popup cant open.",
+      "message": "Questa pagina deve essere ricaricata prima che tu possa ritagliarla. Ricarica la pagina e riprova"
+   },
+   "f0523eb071ac6e3011fc716c84d9380d": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Articolo semplificato"
+   },
+   "f0a924260b5110bd3da35db944239644": {
+      "description": "Placeholder for notebooks creation field",
+      "message": "Inserisci nome taccuino"
+   },
+   "f3671b1ae90e4547655f9b55a106a812": {
+      "description": "button to set reminder for one week from now",
+      "message": "Rimuovi promemoria"
+   },
+   "f3b9de34364942606ebb991132523f83": {
+      "description": "Error message",
+      "message": "Si è verificato un errore sconosciuto"
+   },
+   "f4f70727dc34561dfde1a3c529b6205c": {
+      "description": "Title of the settings page",
+      "message": "Impostazioni"
+   },
+   "f63ca3deba069ca98f9c093f7fafa444": {
+      "description": "Label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Adatta allo zoom"
+   },
+   "f683581d3e75f05f9d9215f9b4696cef": {
+      "description": "Upgrade account button",
+      "message": "Esegui l'upgrade"
+   },
+   "f7afb8f40c06b09fff87db452e780c21": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Copia negli Appunti"
+   },
+   "f80a1a821f2881d5e6a84ff064100980": {
+      "description": "Tooltip for screenshot context menu clip",
+      "message": "Ritaglia screenshot in Evernote"
+   },
+   "f8219e58d07c30641348048defa81b71": {
+      "description": "Tooltip for image context menu clip",
+      "message": "Ritaglia immagine in Evernote"
+   },
+   "fa2ead697d9998cbc65c81384e6533d5": {
+      "description": "Privacy Policy tab title",
+      "message": "Informativa sulla privacy"
+   },
+   "fe7668df3ce773632dc8b4ef195b0f77": {
+      "description": "Error message",
+      "message": "Operazione vietata dal server."
+   },
+   "fe77d5fbcd090fab788da6c4dc21d288": {
+      "description": "Label for notebooks search field",
+      "message": "Cerca..."
+   },
+   "feb2d54240cb6cb8c3aa2248d542c8b6": {
+      "description": "Clipper options link text",
+      "message": "Opzioni Clipper"
+   },
+   "ff320e0ba6fcb304629771b61b860a25": {
+      "description": "Message for error that prevents showing an UI",
+      "message": "Si è verificato un errore con Clipper"
+   },
+   "ff3f0be60b1782641b65360e3505fc83": {
+      "description": "Error alert message",
+      "message": "La nota verrà caricata non appena sarà disponibile una connessione a Internet."
+   },
+   "ff7515fd682357564feb5a60ed45a863": {
+      "description": "Council for improvement of user experience",
+      "message": "Suggerimento: tieni premuto CTRL mentre fai clic per eseguire una panoramica"
+   },
+   "ff7b6e10f4d999b0b0b7c41127dd1779": {
+      "description": "Label for shortcut to go to article preview mode",
+      "message": "Anteprima articolo"
+   },
+   "ff9eb8bd8c927da073cea632f294e23b": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Domani"
+   }
+}

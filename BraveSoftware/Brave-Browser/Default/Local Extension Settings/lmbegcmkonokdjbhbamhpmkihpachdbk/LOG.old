@@ -1,0 +1,15 @@
+2021/07/25-09:32:21.287 876 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/lmbegcmkonokdjbhbamhpmkihpachdbk/MANIFEST-000001
+2021/07/25-09:32:21.287 876 Recovering log #37
+2021/07/25-09:32:21.298 876 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/lmbegcmkonokdjbhbamhpmkihpachdbk/000037.log 
+2021/07/25-12:06:09.141 9617 Level-0 table #41: started
+2021/07/25-12:06:09.163 9617 Level-0 table #41: 1208807 bytes OK
+2021/07/25-12:06:09.166 9617 Delete type=0 #37
+2021/07/25-12:06:09.167 9617 Compacting 4@0 + 1@1 files
+2021/07/25-12:06:09.196 9617 Generated table #42@0: 2 keys, 4056 bytes
+2021/07/25-12:06:09.196 9617 Compacted 4@0 + 1@1 files => 4056 bytes
+2021/07/25-12:06:09.197 9617 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/25-12:06:09.198 9617 Delete type=2 #30
+2021/07/25-12:06:09.198 9617 Delete type=2 #33
+2021/07/25-12:06:09.198 9617 Delete type=2 #41
+2021/07/25-12:06:09.198 9617 Delete type=2 #38
+2021/07/25-12:06:09.198 9617 Delete type=2 #36

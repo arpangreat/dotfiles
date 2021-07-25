@@ -1,0 +1,273 @@
+
+/* general */
+/* ======= */
+
+    html, body { background-color: transparent; }
+
+/* main */
+/* ==== */
+
+    /* z order */
+    #background { z-index: 100; }
+    #box { z-index: 200; }
+
+    /* containers */
+    html.readableVisible { overflow-y: scroll; }
+    #background { position: fixed; top: 0; right: 0; width: 100%; height: 100%; }
+    #box, .setBoxWidth { padding-left: 2em; padding-right: 2em; margin-left: auto; margin-right: auto; position: relative; }
+    #box_inner, .setBoxWidthInner { position: relative; margin-left: -25px; margin-right: 25px; }
+    #text { position: relative; }
+    
+/* text */
+/* ==== */
+
+    #text #articleHeader { margin-bottom: 0; }
+    #text #articleHeader__title { padding: 0; margin: 0; }
+    #text #articleHeader__author { padding: 0; margin: 0; }
+    #text #articleHeader__date { padding: 0; margin: 0; }
+    #text #articleHeader a { text-decoration: none }
+
+    #text p:last-child, 
+    #text div:last-child, 
+    #text blockquote:last-child, 
+    #text table:last-child { margin-bottom: 0 !important; } 
+
+    #text pre { width: auto; }
+
+    /* containers */
+    /* ========== */
+
+        #text div.readableLargeObjectContainer { display: block; text-align: center; }
+        #text div.readableLargeObjectContainer > object,
+        #text div.readableLargeObjectContainer > embed,
+        #text div.readableLargeObjectContainer > iframe
+            { display: block; margin-left:auto; margin-right: auto; }
+    
+        #text div.readableLargeImageContainer { display: block; text-align: center; }
+        #text div.readableLargeImageContainer img { display: block; max-width: 100%; }
+        #text div.readableLargeImageContainer.float { float: left; margin-right: 1em; }
+    
+        #text a.readableLinkWithLargeImage:link { display: block; margin: 0; padding: 0; background-color: transparent; }
+        #text a.readableLinkWithLargeImage:link div.readableLargeImageContainer { margin: 0; }
+        #text a.readableLinkWithLargeImage:link div.readableLargeImageContainer.float { margin-right: 1em; }
+
+    /* pages */
+    /* ===== */
+
+        #text div.page { position: relative; }
+        #text div.page_content { }
+    
+    /* page separators */
+    /* =============== */
+
+        #text div.separateSection { }
+        
+        #text div.separator { position: relative; margin: 0; height: 1em; line-height: 1; text-align: center; }
+        #text div.separatorLabel { position: relative; z-index: 100; padding: 0 0.5em; display: inline; }
+        #text div.separatorLine, #text section::before { 
+            position: absolute; left: -4em; top: 50%; z-index: 10;
+            width: 100%; padding-left: 4em; padding-right: 4em;
+            height: 0.1em; margin: 0; opacity: 0.5;
+        }
+        
+        #text section { position: relative; }
+        #text section::before { 
+            content: " "; display: block; 
+            left: 25%; top: 0; 
+            width: 50%;
+            padding-left: 0; padding-right: 0;
+            opacity: 0.25; 
+        }
+
+        #text section:first-child { margin-top: 0 !important; padding-top: 0 !important; }
+        #text section:first-child::before { display: none !important; }
+
+        #text #articleHeader + section::before { display: none !important; }
+        #text #articleHeader + section { margin-top: 0 !important; padding-top: 0 !important; }
+
+    /* options */
+    /* ======= */
+
+        /* footnote links */
+        /* ============== */
+        
+            #text sup.readableLinkFootnote { vertical-align: super; font-size: 0.875em; }
+
+            #text #footnotedLinks { margin-top: 2em; }
+            #text #footnotedLinks li { margin-bottom: 0.5em; }
+
+            /* on print */
+            /* ======== */
+        
+                body.footnote_links__on_print #text sup.readableLinkFootnote { display: none; }
+                body.footnote_links__on_print #footnotedLinks { display: none; }
+            
+                @media print
+                {
+                    body.footnote_links__on_print #text sup.readableLinkFootnote { display: inline; }
+                    body.footnote_links__on_print #footnotedLinks { display: block; }
+                }
+    
+            /* always */
+            /* ====== */
+        
+                body.footnote_links__always #text sup.readableLinkFootnote { display: inline; }
+                body.footnote_links__always #footnotedLinks { display: block; }
+
+            /* never */
+            /* ===== */
+        
+                body.footnote_links__never #text sup.readableLinkFootnote { display: none; }
+                body.footnote_links__never #footnotedLinks { display: none; }
+    
+        /* large graphics */
+        /* ============== */
+    
+            /* hide on print */
+            /* ============= */
+        
+                @media print
+                {
+                    body.large_graphics__hide_on_print #text div.readableLargeObjectContainer,
+                    body.large_graphics__hide_on_print #text div.readableLargeImageContainer,
+                    body.large_graphics__hide_on_print #text a.readableLinkWithLargeImage
+                        { display: none; }
+                }
+        
+            /* hide always */
+            /* =========== */
+        
+                body.large_graphics__hide_always #text div.readableLargeObjectContainer,
+                body.large_graphics__hide_always #text div.readableLargeImageContainer,
+                body.large_graphics__hide_always #text a.readableLinkWithLargeImage
+                    { display: none; }
+                        
+/* print */
+/* ===== */
+
+    @media print
+    {
+        #box { margin: 0; width: auto; }
+        #background { display: none !important; }
+    }
+
+body {
+  visibility: hidden;
+}
+body.clearlyReady {
+  visibility: visible;
+}
+
+#loading {
+  background-size: 118px 117px;
+  display: none;
+  height: 117px;
+  left: calc(50% - 59px);
+  position: fixed;
+  top: calc(50% - 58.5px);
+  visibility: visible !important;
+  width: 118px;
+  z-index: 300;
+}
+body.clearlyWaiting #loading {
+  display: block;
+}
+body.clearlyReady #loading {
+  display: none;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+  #loading {
+  }
+}
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+/* =========== */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    ol, ul { list-style: none; }
+    blockquote, q { quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after { content: ''; content: none; }
+    table { border-collapse: collapse; border-spacing: 0; }
+
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section { display: block; }
+
+
+/* styles */
+/* ====== */
+
+    /* headings */
+    #text h1, #text h2, #text h3, #text h4, #text h5, #text h6 { font-weight: bold; }
+    #text h1 { font-size: 35px; /*30 / 16*/ line-height: 35px /* 48 / 30*/ }
+    #text h2, #text h3 { font-size: 30px; /*21 / 16*/ line-height: 35px; /*24 / 21*/ margin-top: 35px; /*48 / 21*/ margin-bottom: 25px /*24 / 21*/ }
+    #text h3 { font-weight: normal; }
+    #text h4 { font-size: 20px;/*18 / 16*/ margin-top: 30px /*48 / 18*/    }
+    #text h5, #text h6 { font-size: 16px /*16*/ }
+
+    /* sections */
+    #text section { margin-top: 1.5em !important; padding-top: 1.5em !important; }
+
+    /* links */
+    #text a { text-decoration: none; }
+    #text a:hover, a:active { text-decoration: underline; }
+
+    /* block spacing */
+    #text p, #text blockquote, #text div { margin-bottom: 1.5em; }
+    #text h1, #text h2, #text h3, #text h4, #text h5, #text h6 { margin-bottom: 1.5em; }
+    #text div.separator { padding-top: 1.5em; padding-bottom: 1.5em; }
+    #text div.readableLargeImageContainer, #text div.readableLargeObjectContainer, #text figure { margin-bottom: 1em; margin-top:1em; }
+
+    /* blockquote */
+    #text blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
+
+    /* lists */
+    #text ul, #text ol { margin: 0 0 1.5em 1.5em; }
+    #text ol li { list-style-type: inherit; list-style-position: outside; }
+    #text ul li { list-style-type: inherit; list-style-position: outside; }
+
+    /* tables */
+    #text table { margin-bottom: 1.5em; /*24 / 16*/ font-size: 1em; /* width: 100%; */ }
+    #text thead th, #text tfoot th { padding: .25em .25em .25em .4em; text-transform: uppercase; }
+    #text th { text-align: left; }
+    #text td { vertical-align: top; padding: .25em .25em .25em .4em; }
+
+    /* formatting */
+    #text em, #text i { font-style: italic; }
+    #text strong, #text b { font-weight: bold; }
+
+    /* preformatted */
+    #text pre, #text code, #text tt { font-size: .875em; line-height: 1.714285em; }
+
+    /* some fixes */
+    #text h1 { line-height: 35px; font-weight: normal;  margin-bottom: 20px; }
+    #text h1 + h2 { margin-top: 4px; margin-bottom: 20px; font-size: 15px; }
+    #text p + ul, #text h2 + ul, #text p + ol, #text h2 + ol { margin-top:-1em; }
+    #text h3 + ul, #text h4 + ul, #text h5 + ul, #text h6 + ul, #text h3 + ol, #text h4 + ol, #text h5 + ol, #text h6 + ol { margin-top: 10px; }
+    #text h2, #text h3 { margin-bottom: 15px; }
+    #text hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
+    #text pre code, #text code pre { font-size: 1.15em; }
+
+
+

@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "js": [ "twitchAutoContribution.bundle.js" ],
+      "matches": [ "https://twitch.tv/*", "https://www.twitch.tv/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "",
+   "incognito": "not_allowed",
+   "key": "YgX22RHhMl8cWjh/I4ZgUYSBh7Po9uBa4Pe4EKXSd08=",
+   "manifest_version": 2,
+   "name": "greaselion-7",
+   "version": "1.0"
+}

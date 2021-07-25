@@ -1,0 +1,94 @@
+body {
+  background: #E5E5E5;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #666;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #333;
+  margin-top: 0;
+  font-weight: normal; }
+
+p {
+  font-size: 13px;
+  line-height: 150%;
+  width: 335px; }
+
+ul {
+  margin: 0 0 0 10px;
+  padding: 0;
+  color: #262626;
+  width: 335px; }
+
+li {
+  font-size: 13px;
+  line-height: 150%; }
+
+a, a:visited {
+  color: #00A82D;
+  text-decoration: none; }
+
+button {
+  border: 0 none;
+  padding: 8px 16px;
+  text-align: center;
+  width: 160px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #737373;
+  color: #737373;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  button:hover {
+    background-color: white;
+    border-color: #4D4D4D;
+    color: #4D4D4D;
+    cursor: pointer; }
+  button:active {
+    border-color: #4D4D4D;
+    color: #4D4D4D;
+    background-color: #e6e6e6; }
+  button:focus {
+    border-color: #b9d8ea; }
+
+button.btn-primary {
+  background-color: #00A82D;
+  color: white;
+  border: 1px solid #00A82D; }
+  button.btn-primary:hover {
+    background-color: #3e8c37;
+    border-color: #3e8c37;
+    cursor: pointer; }
+  button.btn-primary:active {
+    border-color: #32732d;
+    background-color: #32732d; }
+  button.btn-primary:focus {
+    border-color: #b9d8ea; }
+
+#consent {
+  width: 640px;
+  height: 480px;
+  margin: 0 auto;
+  background: #fff url(./res/Logo_128.png);
+  background-repeat: no-repeat;
+  background-position: 60px 86px;
+  background-size: 90px 90px;
+  box-sizing: border-box;
+  padding: 90px 60px 0 180px; }
+
+.footnote {
+  font-size: 10px;
+  line-height: 150%;
+  margin-bottom: 30px; }
+

@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "js": [ "twitterAutoContribution.bundle.js" ],
+      "matches": [ "https://twitter.com/*", "https://*.twitter.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "",
+   "incognito": "not_allowed",
+   "key": "an4WtV3QX4HXKmWC3Eztf8gBWc2tmi7RWlUDadUauk4=",
+   "manifest_version": 2,
+   "name": "greaselion-10",
+   "version": "1.0"
+}

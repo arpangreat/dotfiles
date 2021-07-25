@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "Agregar entrada"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Agregar Marcador"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Administrador de Marcador"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Verificar mardadores"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Cerrar todos los directorios"
+   },
+   "contextmenu_copy": {
+      "message": "Copiar URL al portapapeles"
+   },
+   "contextmenu_current_tab": {
+      "message": "Abrir en la pestaña actual"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Borrar marcador"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Borrar carpeta"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Borrar separador"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Deseleccionar marcador"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Deseleccionar carpeta"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Editar Marcador"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Editar Carpeta"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Editar separador"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Ocultar desde la barra lateral"
+   },
+   "contextmenu_infos": {
+      "message": "Mostrar información"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Atajos de teclado"
+   },
+   "contextmenu_new_tab": {
+      "message": "Abrir en una nueva pestaña"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Abrir en una ventana de incógnito"
+   },
+   "contextmenu_new_window": {
+      "message": "Abrir en una nueva ventana"
+   },
+   "contextmenu_open_children": {
+      "message": "Abrir Marcadores"
+   },
+   "contextmenu_pin": {
+      "message": "Anclar en la parte superior"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Recargar barra lateral"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Seleccionar marcador"
+   },
+   "contextmenu_select_dir": {
+      "message": "Seleccionar carpeta"
+   },
+   "contextmenu_select_entries": {
+      "message": "Selecciona múltiples entradas"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Buscar - Mostrar en carpeta"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Mostrar en la barra lateral"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Mostrar entradas ocultas"
+   },
+   "contextmenu_unpin": {
+      "message": "Desanclar de la parte superior"
+   },
+   "contribute_intro": {
+      "message": "Para mejorar la extensión, me gustaría saber mejor cómo los usuarios usan la barra lateral y qué configuración usan."
+   },
+   "contribute_notice": {
+      "message": "Puedes ayudarme compartiendo tu configuración"
+   },
+   "contribute_outro": {
+      "message": "Si tiene preguntas o inquietudes sobre el intercambio de información, envíeme un mensaje de comentarios."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Puede compartir su actividad en la barra lateral de forma anónima, lo que me ayuda a saber cómo los usuarios utilizan la barra lateral en general. La información sobre sus marcadores o sitios web visitados [b]no[/b] se medirá."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Esta información es muy útil para identificar problemas de usabilidad o características que, por ejemplo, no se utilizan con mucha frecuencia."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "¿Cuántos marcadores tienen los usuarios en promedio?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "¿En qué plataforma están los usuarios (Windows, Mac, Linux, ...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "¿Los usuarios usan la búsqueda?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "¿Los usuarios cambian la clasificación de los marcadores?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "¿Con qué frecuencia los usuarios reorganizan o editan las entradas?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Los datos que se comparten son, por ejemplo:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Compartir actividad"
+   },
+   "contribute_share_config_desc": {
+      "message": "Compartes tu configuración de forma anónima, lo que me ayuda a identificar configuraciones populares y descubrir qué cosas mejorar o cambiar en versiones futuras."
+   },
+   "contribute_share_config_label": {
+      "message": "Compartir configuración"
+   },
+   "extension_desc": {
+      "message": "Añade una barra lateral con todos tus marcadores en la parte izquierda de tu pantalla."
+   },
+   "extension_last_update": {
+      "message": "Última actualización el {1}"
+   },
+   "extension_name": {
+      "message": "Barra lateral de marcadores"
+   },
+   "extension_version": {
+      "message": "Versión"
+   },
+   "header_bookmarks": {
+      "message": "Marcadores"
+   },
+   "header_bookmarks_single": {
+      "message": "Marcador"
+   },
+   "header_selected_entries": {
+      "message": "seleccionado"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Copia la URL de la entrada actualmente suspendida"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Elimina la entrada actualmente suspendida"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Realiza un clic en la entrada actualmente suspendida"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Cierra la barra lateral, la superposición abierta o el menú contextual"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Comando"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Suprimir"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Tab"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Abre el menú contextual para la entrada actualmente suspendida"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Pone el cursor sobre la entrada siguiente o anterior en la barra lateral."
+   },
+   "more_link": {
+      "message": "Más información"
+   },
+   "newtab_fallback_desc": {
+      "message": "Hemos abierto una nueva pestaña con la barra lateral para usted"
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "La barra lateral no se puede usar en las páginas de las extensiones"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Algo ha bloqueado la barra lateral"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "La barra lateral no se puede usar en la página de nueva pestaña"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "La barra lateral no se puede usar en las páginas de sistema de {browserName}"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Una de las reglas de su URL no permite que la barra lateral se abra"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "La barra lateral no se puede usar en la {browserName} Webstore"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Mostrar siempre esta página al abrir una pestaña nueva"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Mostrar iconos de sitios web"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Mostrar vista previa de sitios web"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Entradas definidas por el usuario"
+   },
+   "newtab_grid_links_default": {
+      "message": "Páginas de arriba"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Tamaño de Grilla"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "No mostrar páginas"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Marcadores más usados"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Marcadores usados recientemente"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Definido por el usuario"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Título"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL de la página de inicio"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL de los resultados de búsqueda"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Buscador"
+   },
+   "newtab_search_field_hide": {
+      "message": "Ocultar campo de búsqueda"
+   },
+   "newtab_search_field_show": {
+      "message": "Mostrar campo de búsqueda"
+   },
+   "newtab_search_placeholder": {
+      "message": "Busca {1} o escriba la URL"
+   },
+   "newtab_speech_search_error": {
+      "message": "Para habilitar la búsqueda de voz, debe permitir el acceso al micrófono."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Hable ahora"
+   },
+   "newtab_title": {
+      "message": "Nueva pestaña"
+   },
+   "newtab_upload_background": {
+      "message": "Subir imagen de fondo"
+   },
+   "onboarding_finish_desc": {
+      "message": "Diviértete con tu barra lateral."
+   },
+   "onboarding_finish_notice": {
+      "message": "Si estas cliqueando cosas en el {1} lado de la ventana del navegador, puedes cambiar el lugar donde aparece la barra lateral verticalmente para evitar abrirla accidentalmente."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Configurar apariencia"
+   },
+   "onboarding_goto_settings": {
+      "message": "Más propiedades"
+   },
+   "onboarding_handson_desc": {
+      "message": "Ahora puedes probarlo."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Haga clic en el icono de la extensión para abrir la barra lateral."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Mueve tu cursor al lado {1} de tu ventana."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Entonces {1} haga clic con el ratón para abrir la barra lateral."
+   },
+   "onboarding_headline": {
+      "message": "Gracias por instalar esta extensión."
+   },
+   "onboarding_left": {
+      "message": "Izquierda"
+   },
+   "onboarding_right": {
+      "message": "Derecha"
+   },
+   "onboarding_setup": {
+      "message": "Configurar ahora"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "¿Cómo deseas abrir tu barra lateral?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "¿Dónde quieres tener tu barra lateral?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Oscuro"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "¿Qué estilo prefieres?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Claro"
+   },
+   "onboarding_skip": {
+      "message": "Saltar configuración"
+   },
+   "onboarding_title": {
+      "message": "Configuración"
+   },
+   "overlay_add_position": {
+      "message": "Posición"
+   },
+   "overlay_add_position_append": {
+      "message": "Anexar al directorio"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Anteponer al directorio"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Información adicional"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Creado en"
+   },
+   "overlay_bookmark_title": {
+      "message": "Título"
+   },
+   "overlay_bookmark_url": {
+      "message": "URL"
+   },
+   "overlay_bookmark_views": {
+      "message": "Vistas"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "por mes"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Grabado desde"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Vista"
+   },
+   "overlay_cancel": {
+      "message": "Cancelar"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Comprobar las URL de los marcadores"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Roto"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Cambiado"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Duplicados"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Directorios Vacios"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Todas las URLs de los marcadores están bien"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "No hay URLs rotos en los marcadores"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "No hay cambio alguno en las URLs de los marcadores"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "No hay duplicado alguno en las URLs de los marcadores"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "No hay directorios sin marcadores."
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Eliminar seleccionado"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Actualizar seleccionado"
+   },
+   "overlay_close": {
+      "message": "Cerrar"
+   },
+   "overlay_confirm_open_children": {
+      "message": "¿Realmente desea abrir todos {1} los marcadores subordinados?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "¿Realmente deseas abrir todos los {1} marcadores, incluyendo los marcadores de sub-carpetas de las carpetas seleccionadas?"
+   },
+   "overlay_delete": {
+      "message": "Eliminar"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "¿Realmente desea eliminar este marcador?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "¿Realmente desea eliminar este directorio? Todos los marcadores subordinados se eliminarán también."
+   },
+   "overlay_delete_selected": {
+      "message": "Eliminar entradas seleccionadas"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "¿De verdad quieres eliminar las entradas seleccionadas? Todos los marcadores de las subcarpetas pertenecientes a las carpetas seleccionadas se eliminarán también."
+   },
+   "overlay_dir_children": {
+      "message": "Elementos"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Marcadores"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Directorios"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "¿Realmente desea ocultar este marcador de la barra lateral?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "¿Realmente desea ocultar este directorio de la barra lateral? Todos los marcadores subordinados se ocultarán también."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Esconder de la barra lateral"
+   },
+   "overlay_label_bookmark": {
+      "message": "Marcador"
+   },
+   "overlay_label_dir": {
+      "message": "Directorio"
+   },
+   "overlay_label_separator": {
+      "message": "Separador"
+   },
+   "overlay_open_children": {
+      "message": "Abrir todo"
+   },
+   "overlay_save": {
+      "message": "Guardar"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Opcionalmente puede ingresar un título para el separador. Se mostrará en la parte superior de la línea de separación y puede ayudarlo a organizar su lista de marcadores."
+   },
+   "overlay_update": {
+      "message": "Actualizar"
+   },
+   "premium_activate": {
+      "message": "Activar Premium"
+   },
+   "premium_already_activated": {
+      "message": "Ya estás usando Premium"
+   },
+   "premium_desc_1": {
+      "message": "Con Premium tendrás acceso a características adicionales y me ayudarás a mantener la extensión."
+   },
+   "premium_desc_2": {
+      "message": "Puedes ver las características incluidas en Premium a continuación. Todas las características principales de las extensiones son de uso gratuito y no requieren Premium. Puedes pagar lo que consideres que la extensión y mi trabajo valen para ti, y así obtener acceso a estas características."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Si estás usando la página Nueva pestaña de esta extensión, puedes configurar tu propia imagen de fondo para que se vea aún mejor."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Personaliza tu página Nueva pestaña"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Si estás familiarizado con CSS, puedes cambiar la apariencia completa de la barra lateral agregando tus propias definiciones de estilo. Esto te permite personalizar absolutamente todo."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Personaliza todo con tu propia hoja de estilo"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "Con Premium, tienes acceso a características no publicadas, que actualmente están en desarrollo o en fase de prueba."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Se el primero en probar nuevas características adicionales"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Importar y exportar tus ajustes"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Puedes hacer clic con el botón derecho en cualquier directorio de la barra lateral y realizar una comprobación. La página de resultados mostrará todas las URL actualizadas, los marcadores que ya no funcionan y los marcadores con la misma URL."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Revisa tus marcadores con enlaces rotos o duplicados"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Cambia la anchura de la barra lateral en cualquier momento"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Al instalar otro tema, usted puede cambiar el diseño de su barra lateral con un click. La barra lateral puede ser personalizada con los controles deslizantes y opciones de color disponibles."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Cambie el tema de su barra lateral"
+   },
+   "premium_get_now": {
+      "message": "Hazte Premium ahora"
+   },
+   "premium_license_key": {
+      "message": "Clave de licencia"
+   },
+   "premium_pay_buy": {
+      "message": "Comprar Premium"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Política de cancelación"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Confirme su compra"
+   },
+   "premium_pay_contact": {
+      "message": "Si tienes algún problema con el pago o tienes alguna pregunta, ponte en contacto conmigo en {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Tarjeta de crédito o débito"
+   },
+   "premium_pay_eula": {
+      "message": "Acuerdo de licencia de usuario final"
+   },
+   "premium_pay_eula_desc": {
+      "message": "He leído y acepto el [a]acuerdo de licencia de usuario final[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Caducidad de la tarjeta"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Número de la tarjeta"
+   },
+   "premium_pay_info_email": {
+      "message": "E-mail"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Por favor, ingrese su correo electrónico para recibir la licencia."
+   },
+   "premium_pay_info_name": {
+      "message": "Nombre"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Método de pago"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Código postal"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Seleccione un método de pago a continuación y elija la cantidad que desea pagar en el siguiente paso."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Si quieres activar {1} en otro dispositivo o has reinstalado la extensión, puedes introducir la siguiente clave en la configuración de la extensión:"
+   },
+   "premium_pay_price_info": {
+      "message": "Este es un cargo por única vez e incluye todas las funciones premium futuras también."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Puede pagar lo que crea que vale la extensión y mi trabajo para obtener acceso a las funciones premium. Siempre recibirá todas las funciones premium, independientemente de cuánto esté dispuesto a pagar."
+   },
+   "premium_pay_price_total": {
+      "message": "Total"
+   },
+   "premium_pay_purchase_id": {
+      "message": "ID de compra"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Seleccione un método de pago"
+   },
+   "premium_pay_success_headline": {
+      "message": "Gracias por tu compra"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} se ha activado automáticamente para este dispositivo. No tienes que hacer nada más."
+   },
+   "premium_pay_verifying": {
+      "message": "Verificando transacción"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Escanee este código QR en WeChat para continuar."
+   },
+   "premium_pay_what_you_want": {
+      "message": "Paga lo que quieras"
+   },
+   "premium_popup_text": {
+      "message": "¿Ya has has probado Premium?"
+   },
+   "premium_restricted_text": {
+      "message": "Esta opción sólo está disponible en Premium"
+   },
+   "premium_show_license_input": {
+      "message": "Ya tengo Premium"
+   },
+   "settings_advanced": {
+      "message": "Ajustes avanzados"
+   },
+   "settings_available_themes": {
+      "message": "Temas disponibles"
+   },
+   "settings_background_blur": {
+      "message": "Efecto de desenfoque del fondo"
+   },
+   "settings_background_transparency": {
+      "message": "Transparencia del fondo"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Color del icono del directorio"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Icono del directorio"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Sangrado del directorio"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Tamaño de letra de los marcadores"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Relleno horizontal de los marcadores"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Tamaño del icono de los marcadores"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Altura de la línea de los marcadores"
+   },
+   "settings_close_timeout": {
+      "message": "Tiempo de espera para cerrar"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Tiempo de espera en segundos para que se cierre la barra lateral. Contará tan pronto como el ratón abandone la barra lateral y se detendrá al pasarlo de nuevo."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "No cerrar automáticamente"
+   },
+   "settings_color_scheme": {
+      "message": "Esquema de colores"
+   },
+   "settings_color_scheme_desc": {
+      "message": "El color de la barra lateral, encabezado, casillas de verificación, etc."
+   },
+   "settings_custom_css": {
+      "message": "Estilo de pagina personalizado"
+   },
+   "settings_custom_css_desc": {
+      "message": "Puede definir su propia hoja de estilo para anular el estilo predeterminado. Utilice esta opción solo si está familiarizado con CSS y sabe lo que está haciendo."
+   },
+   "settings_dark_mode": {
+      "message": "Superficie"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Cambia la apariencia de tu barra lateral"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Puede cambiar el aspecto de la barra lateral por completo para que se ajuste a sus necesidades. Hay varias opciones para cambiar el tamaño de fuente, interlineado, colores, iconos y muchos más. También puede elegir entre diseños predefinidos y opciones predefinidas para hacer que la barra lateral se vea rápidamente como desea."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Configura el comportamiento de tu barra lateral"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Hay varias opciones que puede cambiar para controlar la extensión. Por ejemplo, puede cambiar cómo se debe deslizar la barra lateral hacia adentro o cómo se deben abrir sus marcadores. Si no desea que la barra lateral se cargue en todas las páginas, también puede configurar esto utilizando las reglas adecuadas."
+   },
+   "settings_dir_accordion": {
+      "message": "Mostrar sólo el directorio actual"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Cierra todos los directorios excepto el activo actualmente."
+   },
+   "settings_directories_icon_size": {
+      "message": "Tamaño del icono de los directorios"
+   },
+   "settings_directory_arrows": {
+      "message": "Flechas de los directorios"
+   },
+   "settings_expert_save_error": {
+      "message": "No se pudo guardar la configuración. Por favor, corrija su entrada."
+   },
+   "settings_expert_settings_desc": {
+      "message": "La configuración experta le permite configurar cada marca de configuración de la extensión, incluso aquellas que no puede cambiar utilizando las casillas de verificación o los controles deslizantes de la página de configuración."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Por favor, solo cambie los valores aquí, si sabe lo que está haciendo. Las configuraciones defectuosas pueden causar un comportamiento inesperado de la extensión. Si algo se rompe, puede volver a la configuración predeterminada."
+   },
+   "settings_export": {
+      "message": "Exportar los ajustes"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Solo añadir un URL por línea."
+   },
+   "settings_filter_explanation_2": {
+      "message": "Usar asterisco: * para incluir directorio de la página y no solo la página seleccionada (Ej: \"pagina-de-ejemplo.com/*\" Incluye todas las sub-páginas de pagina-de-ejemplo.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Si no incluyes ningun asterisco en una regla, solamente el URL exacto va a coincidir. (Ej: pagina-de-ejemplo.com no incluye con el URL pagina-de-ejemplo.com/ejemplo.html"
+   },
+   "settings_filter_explanation_4": {
+      "message": "No es necesario añadir el protocolo: (Ej: http://) en las reglas"
+   },
+   "settings_filter_intro": {
+      "message": "Si no quieres que la barra lateral se cargue en cada página, puedes configurar dónde cargar la extensión (Lista blanca) y donde no (Lista negra)"
+   },
+   "settings_filter_rules": {
+      "message": "Patrones URL"
+   },
+   "settings_filter_visibility": {
+      "message": "Cargar barra lateral"
+   },
+   "settings_filter_visibility_always": {
+      "message": "En toda página"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "En toda página excepto páginas específicas"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Sólo en páginas específicas"
+   },
+   "settings_font_family": {
+      "message": "Tipo de letra"
+   },
+   "settings_font_family_default": {
+      "message": "Por defecto"
+   },
+   "settings_font_family_desc": {
+      "message": "El tipo de letra de la barra lateral y las superposiciones"
+   },
+   "settings_header_height": {
+      "message": "Altura de cabecera"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Compartir información"
+   },
+   "settings_hover_color": {
+      "message": "Color al poner el ratón encima"
+   },
+   "settings_icon_background_color": {
+      "message": "Colores de fondo"
+   },
+   "settings_icon_color": {
+      "message": "Color"
+   },
+   "settings_icon_color_auto": {
+      "message": "Automaticamente"
+   },
+   "settings_icon_color_custom": {
+      "message": "Personalizado"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "El color del ícono se emparejará automaticamente con el esquema de tu sistema (claro u oscuro). Puedes también definir tu propio color de ícono."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "El color automático no funcionará cuando uses un tema {browserName}."
+   },
+   "settings_icon_shape": {
+      "message": "Aspecto"
+   },
+   "settings_import": {
+      "message": "Importar los ajustes"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Importar/Exportar marcadores"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Esta es una función del navegador y no forma parte de la extensión. Obtén más información sobre cómo importar y exportar marcadores en {browserName}."
+   },
+   "settings_import_export_desc": {
+      "message": "Puede exportar la configuración de su extensión y guardarla de manera local en su computadora. Puede importar el archivo exportado previamente en cualquier computadora, donde está instalada la extensión."
+   },
+   "settings_import_export_headline": {
+      "message": "Configuración de importación/exportación"
+   },
+   "settings_import_export_notice": {
+      "message": "La configuración de la extensión se sincroniza automáticamente entre los dispositivos si has iniciado sesión en {browserName} con tu cuenta. Si no desea iniciar sesión o desea compartir su configuración con otras personas, puede utilizar esta opción de importación/exportación."
+   },
+   "settings_import_failed": {
+      "message": "Error al importar la configuración. Por favor elija un archivo válido."
+   },
+   "settings_import_saved": {
+      "message": "Configuración importada con éxito"
+   },
+   "settings_indicator_color": {
+      "message": "Color"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Color del icono"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Tamaño del icono"
+   },
+   "settings_indicator_width": {
+      "message": "Ancho"
+   },
+   "settings_install_theme": {
+      "message": "Instalar tema"
+   },
+   "settings_installed_theme_info": {
+      "message": "Actualmente instalado"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Establecer atajo de teclado"
+   },
+   "settings_language": {
+      "message": "Idioma"
+   },
+   "settings_language_default": {
+      "message": "Navegador predeterminado"
+   },
+   "settings_language_desc": {
+      "message": "El idioma de la interfaz de usuario"
+   },
+   "settings_link_action": {
+      "message": "Abrir marcadores"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Pestaña actual"
+   },
+   "settings_link_action_desc": {
+      "message": "Al hacer clic con el botón izquierdo del ratón en un marcador este se abrirá en la pestaña actual o en una pestaña nueva."
+   },
+   "settings_link_action_new_tab": {
+      "message": "Nueva pestaña"
+   },
+   "settings_menu_appearance": {
+      "message": "Apariencia"
+   },
+   "settings_menu_appearance_general": {
+      "message": "General"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Icono"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Indicador"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Sobreposición"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Barra lateral"
+   },
+   "settings_menu_dashboard": {
+      "message": "Visión general"
+   },
+   "settings_menu_expert": {
+      "message": "Configuraciones avanzadas"
+   },
+   "settings_menu_export": {
+      "message": "Importar/Exportar"
+   },
+   "settings_menu_infos": {
+      "message": "Mostrar información"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "Sobre mí"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Registro de cambios"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Contacto"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Permisos"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Privacidad"
+   },
+   "settings_menu_language": {
+      "message": "Lenguaje"
+   },
+   "settings_menu_language_general": {
+      "message": "General"
+   },
+   "settings_menu_language_translate": {
+      "message": "Traducción"
+   },
+   "settings_menu_newtab": {
+      "message": "Nueva pestaña"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Barra lateral"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Filtro"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "General"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Interruptor"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Sugerencias"
+   },
+   "settings_menu_support": {
+      "message": "Soporte"
+   },
+   "settings_new_tab": {
+      "message": "Nueva Pestaña"
+   },
+   "settings_new_tab_background": {
+      "message": "Abrir en segundo plano"
+   },
+   "settings_new_tab_desc": {
+      "message": "Abrir marcadores en una pestaña nueva en primer plano o en segundo plano"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Abrir en primer plano"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Después de la actual pestaña"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Después de la última pestaña"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Antes de la primera pestaña"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Abrir pestañas nuevas después de la última pestaña o de la actual pestaña"
+   },
+   "settings_newtab_desc": {
+      "message": "Desafortunadamente Google eliminó la posibilidad de cargar extensiones en la nueva pestaña predeterminada. Debido a esto he añadido algunas opciones que le permiten acceder a sus marcadores al abrir una nueva pestaña de otra manera."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Centrar barra de direcciones"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Si lo habilitas, tu barra de direcciones sera centrada cuando abras una nueva pestaña. Si no la caja de búsqueda del sitio web sera centrada en su lugar."
+   },
+   "settings_newtab_override": {
+      "message": "Anular página de nueva pestaña"
+   },
+   "settings_newtab_override_configure": {
+      "message": "Configurar"
+   },
+   "settings_newtab_override_desc": {
+      "message": "¿Debería la extensión anular su actual página nueva pestaña con un diseño personalizado o un sitio web que se debe cargar al abrir una nueva pestaña?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "Previsualizar"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Abrir automáticamente la barra lateral"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Configure si la barra lateral debe abrirse automáticamente al abrir una nueva pestaña."
+   },
+   "settings_newtab_website": {
+      "message": "Cargar sitio web"
+   },
+   "settings_newtab_website_desc": {
+      "message": "En lugar de abrir el reemplazo de nueva pestaña, puede establecer un sitio web que se cargue en su lugar."
+   },
+   "settings_not_synced": {
+      "message": "No se sincronizará en sus dispositivos."
+   },
+   "settings_open_action": {
+      "message": "Abrir barra lateral"
+   },
+   "settings_open_action_desc": {
+      "message": "Abre la barra lateral con el botón izquierdo o derecho o haz clic con el mouse sobre el borde de la ventana del navegador. Alternativamente, puede cambiarlo para que se abra sólo si se hace clic en el icono del menú de {browserName}."
+   },
+   "settings_open_action_icon": {
+      "message": "Clic en el icono"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Clic Izquierdo"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Al pasar el ratón"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Clic Derecho"
+   },
+   "settings_open_delay": {
+      "message": "Demora en la apertura"
+   },
+   "settings_open_delay_desc": {
+      "message": "Evita la apertura inmediata de la barra lateral al pasar el ratón o haciendo clic con un retardo."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Color de máscara"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "La extensión muestra tus marcadores en la barra lateral, por eso necesita este permiso, para lograr acceso. El permiso también permite a la extensión añadir, editar y remover marcadores."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "Desafortunadamente, {browserName} no tiene ningún mecanismo para mostrar contenido en la ventana del navegador sin interactuar con la página actual."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Como la barra lateral se está mostrando a la parte superior de la página actual, este permiso es necesario. El permiso no se usa con otros propósitos."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Si tienes dudas con lo que hago con el permiso, puedes ver el código fuente de la extensión en Github. Es de código abierto y está visible para todo el mundo."
+   },
+   "settings_permissions_desc": {
+      "message": "Para hacer una barra lateral activable/desactivable en {browserName}, los siguientes permisos son necesarios para la extensión:"
+   },
+   "settings_premium_activated": {
+      "message": "Premium activado correctamente"
+   },
+   "settings_premium_invalid_key": {
+      "message": "No se ha podido activar Premium. Introduce una clave de licencia valida, por favor."
+   },
+   "settings_presets": {
+      "message": "Establecer tamaños relativos"
+   },
+   "settings_presets_desc": {
+      "message": "Puede seleccionar tamaños predefinidos para la barra lateral. Esto cambiará los controles deslizantes en esta página para ajustar el ancho de la barra lateral, la altura de las líneas, el tamaño de los íconos y muchas más opciones."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Evitar el desplazamiento de la página"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Evita el desplazamiento del sitio web actual mientras la barra lateral está abierta."
+   },
+   "settings_prevent_windowed": {
+      "message": "Desactiva la barra lateral en el modo ventana"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Desactiva la posibilidad de abrir la barra lateral al hacer clic o al pasar el borde del contenido del navegador cuando el navegador está en modo ventana."
+   },
+   "settings_remember_desc": {
+      "message": "Elige qué recordar en los cambios de página. Si elige recordar el último marcador abierto, se marcará al abrir nuevamente la barra lateral."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Subdirectorios abiertos"
+   },
+   "settings_remember_state": {
+      "message": "Recordar"
+   },
+   "settings_remember_state_all": {
+      "message": "Posición de desplazamiento, directorios abiertos y último marcador abierto"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Nada"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Directorios abiertos"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Posición de desplazamiento y directorios abiertos"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Directorio de nivel superior abiertos"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Reabrir la barra lateral"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Abre automáticamente la barra lateral nuevamente después de abrir un marcador desde la barra lateral."
+   },
+   "settings_restore": {
+      "message": "Restaurar predeterminados"
+   },
+   "settings_restore_confirm": {
+      "message": "¿Seguro que deseas restaurar la configuración predeterminada?"
+   },
+   "settings_restored_message": {
+      "message": "Configuración restaurada correctamente"
+   },
+   "settings_save": {
+      "message": "Grabar cambios"
+   },
+   "settings_saved_message": {
+      "message": "Cambios guardados correctamente"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Tus preferencias se han guardado correctamente"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Esconder la barra de desplazamiento"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Tiempo de espera en segundos para que se oculte la barra de desplazamiento. Al desplazar se mostrará la barra de desplazamiento de nuevo."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Nunca ocultar"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Ancho de la barra de desplazamiento"
+   },
+   "settings_search_placeholder": {
+      "message": "Buscar configuración"
+   },
+   "settings_show_themes": {
+      "message": "Mostrar temas disponibles"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Color de la máscara"
+   },
+   "settings_sidebar_position": {
+      "message": "Posición"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Le permite establecer si la barra lateral debe abrirse en el lado izquierdo o derecho de la pantalla."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Izquierda"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Derecha"
+   },
+   "settings_sidebar_width": {
+      "message": "Ancho"
+   },
+   "settings_support_faq_headline": {
+      "message": "Preguntas Frecuentes"
+   },
+   "settings_support_feedback_desc": {
+      "message": "¿Tiene alguna sugerencia de mejoras, preguntas, aviso de opciones de configuración que faltan, o encontró un error? Para ayudar a mejorar las experiencias con esta extensión, estaría muy agradecido por todos y cada uno de los comentarios recibidos o que pueda tener."
+   },
+   "settings_support_feedback_email": {
+      "message": "Correo electrónico (opcional)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Retroalimentación"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Por favor, redacte sus comentarios en Inglés, de lo contrario será difícil de entender y responder a su mensaje."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Adjuntar capturas de pantalla"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Solo puedes subir un máximo de {1} capturas de pantalla"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "El tamaño de {1} es demasiado grande (> 1MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Enviar su comentario"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Su mensaje no pudo ser enviado. Por favor intente de nuevo."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Gracias por su comentario"
+   },
+   "settings_text_color": {
+      "message": "Color del texto"
+   },
+   "settings_theme": {
+      "message": "Tema"
+   },
+   "settings_theme_changed": {
+      "message": "Tema actualizado correctamente"
+   },
+   "settings_theme_default": {
+      "message": "Tema por defecto"
+   },
+   "settings_theme_default_desc": {
+      "message": "Este tema le permite acceder a sus marcadores de una manera limpia y moderna. Muchos elementos se colorean en un esquema de color configurable."
+   },
+   "settings_theme_focus": {
+      "message": "Tema de enfoque"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Este tema reduce las animaciones y organiza los elementos más densos para mejorar la productividad y el rendimiento."
+   },
+   "settings_theme_glass": {
+      "message": "Tema de cristal"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Este tema hace que el fondo de la barra lateral sea semitransparente y le agrega un efecto de cristal borroso. Puede ajustar este efecto y la transparencia de la barra lateral."
+   },
+   "settings_themes_notice": {
+      "message": "Puedes elegir el diseño básico de la barra lateral. El tema seleccionado puede ser personalizado a través de los controles y selectores de color disponibles."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Esta extensión es un proyecto de un solo hombre, que comenzó como un proyecto de hobby para uso personal."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Área de activación"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "De forma predeterminada, se puede colocar el cursor sobre todo el borde de la ventana del navegador para abrir la barra lateral. Puede hacer que el área de activación sea más pequeña si solo permite que la barra lateral se abra en una parte de la altura del navegador. Por ejemplo, puede cambiar la barra lateral para que solo aparezca cuando haga clic en el área de activación en la esquina inferior izquierda de la ventana del navegador. Esto puede ser útil para evitar que la barra lateral aparezca involuntariamente al hacer clic en enlaces del sitio web."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Expandir todas las subcarpetas"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Para abrir rápidamente una carpeta con todas sus subcarpetas abiertas, también puede hacer doble clic en una carpeta en la barra lateral."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "¿Sabías?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Ocultar entradas"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Puede ocultar marcadores individuales o incluso carpetas de la barra lateral. Puede hacer clic derecho en cualquier entrada de la barra lateral y luego hacer clic en el botón {1} en el menú contextual. Para volver a mostrar las entradas ocultas, puede hacer clic en el icono de menú en el encabezado de la barra lateral y habilitar la casilla correspondiente allí."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "La extensión está disponible en {1} idiomas diferentes. Las traducciones son hechas por la comunidad y todos pueden contribuir traduciendo los textos de la extensión en otros idiomas. Las traducciones se aprobarán y luego se agregarán a la extensión con la próxima actualización."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Atajos de teclado"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "La barra lateral se puede controlar mediante atajos de teclado. Puede ver una lista de accesos directos haciendo clic en el icono de menú en el encabezado de la barra lateral y luego en el botón {1}."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Selecciona múltiples entradas"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "Puede seleccionar varios marcadores o carpetas en la barra lateral para abrirlos, eliminarlos o incluso moverlos con arrastrar y soltar a la vez."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Nueva Pestaña"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "Puede configurar la apariencia de la página Nueva pestaña directamente en la página haciendo clic en el botón {1} en la esquina inferior. Luego, puede cambiar los elementos de la cuadrícula, el motor de búsqueda, la imagen de fondo o los enlaces en la parte superior."
+   },
+   "settings_tips_tricks_next": {
+      "message": "Siguiente consejo"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Abrir todos los marcadores"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Para abrir todos los marcadores de una carpeta, puede hacer clic con el botón central en la carpeta. Alternativamente, puede presionar {1} mientras hace clic en una carpeta con el botón izquierdo del ratón."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Privacidad"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "Los marcadores que se muestran en la barra lateral están sincronizados y administrados por {browserName}. La extensión no almacena ni analiza estos marcadores, y solo muestra los de su navegador en la barra lateral. Más sobre el texto fuente se requiere el texto fuente para obtener información adicional sobre la traducción"
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Marcado rápido"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Puede arrastrar cualquier URL directamente a la barra lateral y soltarla en la posición deseada. Incluso puede marcar y arrastrar la URL actual de una pestaña del navegador de esta manera. También puede arrastrar el símbolo {1} a la izquierda de la barra de direcciones en la barra lateral para marcar la página actual sin marcar primero toda la barra de direcciones."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Búsqueda rápida"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Si abre la barra lateral, puede buscar marcadores simplemente comenzando a escribir. No es necesario hacer clic en el icono de búsqueda en el encabezado de la barra lateral primero."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Copia rápida de URL"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Para copiar la URL de un marcador en la barra lateral a su portapapeles, puede presionar {1} al colocar el cursor sobre una entrada."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Botón derecho del ratón"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Puede hacer clic derecho en cualquier marcador o carpeta en la barra lateral para revelar opciones adicionales. Por ejemplo, puede editar marcadores existentes o anclar entradas en la parte superior de la barra lateral. Cuando hace clic con el botón derecho en una carpeta, puede iniciar una comprobación de marcadores para identificar URL de marcadores rotas o actualizadas."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Separadores"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Se mostrará una entrada de marcador con la URL {1} y un título {2} o {3} como separador en la barra lateral. Puede agregar separadores haciendo clic con el botón derecho en cualquier carpeta de la barra lateral y luego haciendo clic en el botón {4}."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Compartir información"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "Puede compartir su configuración de forma anónima lo que me ayuda a identificar el ajuste más popular e identificar qué mejorar o cambiar en futuras versiones. La extensión no recopila datos personales ni lee marcadores. Sin permiso explícito, la extensión tampoco comparte ninguna configuración."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Sincronización"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Busque su configuración de sincronización"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Todas sus configuraciones de la barra lateral se sincronizarán entre sus dispositivos, si habilita las opciones de sincronización de su navegador en la configuración. Incluso sin Premium."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "La primera versión de esta extensión se lanzó en noviembre de 2016."
+   },
+   "settings_title": {
+      "message": "Ajustes"
+   },
+   "settings_toggle_area": {
+      "message": "configure el area"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Puede reducir la altura del área asi que la barra lateral sólo se abrirá cuando se mueve el cursor en la esa ubicación del borde."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Arrastra para mover"
+   },
+   "settings_toggle_area_height": {
+      "message": "Altura"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Puede reducir la altura del área, por lo que la barra lateral solo se abrirá cuando mueva el cursor a esa ubicación del borde de la ventana de su navegador."
+   },
+   "settings_toggle_area_width": {
+      "message": "Ancho"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Ancho (Modo Ventana)"
+   },
+   "settings_tooltip_content": {
+      "message": "Contenido del tooltip"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Información adicional"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Título y URL"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Solo título"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Solo URL"
+   },
+   "settings_tooltip_delay": {
+      "message": "Tiempo de espera para mostrar el tooltip"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Retraso antes de que la información para los marcadores se muestre al pasar el ratón."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Nunca mostrar el tooltip"
+   },
+   "settings_tooltip_desc": {
+      "message": "Seleccione qué información debe contener el tooltip"
+   },
+   "settings_tooltip_font_size": {
+      "message": "Tamaño de fuente de información"
+   },
+   "settings_translation_add_language": {
+      "message": "Agregar idioma"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Regresar a general"
+   },
+   "settings_translation_desc": {
+      "message": "Tu puedes ayudar a traducir la extensión a tu idioma o mejorar las existentes."
+   },
+   "settings_translation_help": {
+      "message": "Para cada entrada, puede ver la traducción al inglés, que debe traducirse en su idioma. Para ayudarle a identificar dónde se usa el texto y para qué sirve, cada entrada tiene un nombre (por ejemplo, {1}), que no debe traducirse. ¡No olvide enviar su traducción pulsando el botón en la esquina superior derecha!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Algunas traducciones están incompletas"
+   },
+   "settings_translation_info": {
+      "message": "Puedes editar las traducciones existentes o agregar las que faltan. Si envía sus cambios, revisaré tu opinión y la aprobaré."
+   },
+   "settings_translation_link": {
+      "message": "Ir a la traducción principal"
+   },
+   "settings_translation_notice1": {
+      "message": "Tan pronto como se hayan traducido todas las categorías marcadas como necesarias, las traducciones serán lanzadas."
+   },
+   "settings_translation_notice2": {
+      "message": "No se publicarán las categorías incompletas, para prevenir los textos incompletos."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Quiero ser notificado cuando una nueva frase de mi lenguaje haya sido agregada a la extensión"
+   },
+   "settings_translation_required_category": {
+      "message": "Obligatorio"
+   },
+   "settings_translation_status_draft": {
+      "message": "La traducción esta incompleta o necesita una revisión y no esta disponible para los usuarios"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "La traducción está disponible, pero algunas categorías están incompletas"
+   },
+   "settings_translation_status_released": {
+      "message": "La traducción está disponible"
+   },
+   "settings_translation_submit": {
+      "message": "Enviar"
+   },
+   "settings_translation_submit_message": {
+      "message": "Tu traducción se ha enviado correctamente"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "URL copiada al portapapeles"
+   },
+   "sidebar_deleted": {
+      "message": "Eliminada"
+   },
+   "sidebar_dir_children": {
+      "message": "Elementos"
+   },
+   "sidebar_search_no_results": {
+      "message": "No hay marcadores que coincidan con tu búsqueda"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Buscar Marcador"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Deshacer"
+   },
+   "sort_label_alphabetical": {
+      "message": "Alfabético"
+   },
+   "sort_label_custom": {
+      "message": "Definido por el usuario"
+   },
+   "sort_label_most_used": {
+      "message": "Más usado"
+   },
+   "sort_label_recently_added": {
+      "message": "Agregado recientemente"
+   },
+   "sort_label_recently_used": {
+      "message": "Usado recientemente"
+   },
+   "sort_most_used_per_month": {
+      "message": "Por mes"
+   },
+   "sort_view_as_tree": {
+      "message": "Mostrar directorios"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Recargar ahora"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Debido a una actualización de la extensión, esta página debe ser recargada."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "El servicio de retroalimentación no está disponible actualmente. Si desea dar su opinión, por favor envíeme un correo electrónico."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Servicio no disponible"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "El servicio de traducción no está disponible en este momento. Por favor, inténtelo de nuevo más tarde."
+   }
+}

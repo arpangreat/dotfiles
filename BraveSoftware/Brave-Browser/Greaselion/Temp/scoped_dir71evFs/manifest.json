@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "js": [ "redditAutoContribution.bundle.js" ],
+      "matches": [ "https://old.reddit.com/*", "https://reddit.com/*", "https://www.reddit.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "",
+   "incognito": "not_allowed",
+   "key": "zsRHU8inbZf9aty8VgqbfT0wROm7BZmAS3Rjv2n7ElI=",
+   "manifest_version": 2,
+   "name": "greaselion-5",
+   "version": "1.0"
+}

@@ -1,0 +1,41 @@
+{
+   "description": "Chrome Dracula scheme color theme",
+   "differential_fingerprint": "1.16edbb1a4b7be1895a4fead2ccc123058ca3b07fcde752b3b42835ab0498a43f",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhZy7jiB4UtlGGkruTKYZXvNfTV4TX1mMoiRPZgCYmkAJ8+AhRSyl47HsC8PTs8fivVYIP0STOxmnq+DhDQ/uubM2oDeHj7jjJBxxx5buQjRX2NOSTlWD7RshsetlKlv6Nl057BWgtg2Oe1j2YS72aOfgMDB+5e4jCebTQE5qQIXyjtS5pXUW+OAUqQgNtg7aYXK98l2jNwCU/RJk9HWAh25Vi3KA1WLakCbMiS0H4+zpHfsK5Ktylw2yyEJrOXZBFSO2wusKhOoViQCvjBCkrW2PLQWcw3aWeP8bfsAK6FVrbWG9pAlzvPca5vXo3jFcItfsK6uIOVqUkNTfcA0SxQIDAQAB",
+   "manifest_version": 2,
+   "name": "Dracula Chrome Theme - Dark and Minimal",
+   "theme": {
+      "colors": {
+         "background_tab": [ 68, 71, 90 ],
+         "background_tab_inactive": [ 68, 71, 90 ],
+         "bookmark_text": [ 248, 248, 242 ],
+         "frame": [ 33, 34, 44 ],
+         "frame_inactive": [ 33, 34, 44 ],
+         "frame_incognito": [ 25, 26, 33 ],
+         "frame_incognito_inactive": [ 25, 26, 33 ],
+         "ntp_background": [ 40, 42, 54 ],
+         "ntp_header": [ 255, 121, 198 ],
+         "ntp_link": [ 139, 233, 253 ],
+         "ntp_text": [ 248, 248, 242 ],
+         "omnibox_background": [ 68, 71, 90 ],
+         "omnibox_text": [ 248, 248, 242 ],
+         "tab_background_text": [ 248, 248, 248 ],
+         "tab_background_text_inactive": [ 248, 248, 248 ],
+         "tab_background_text_incognito": [ 98, 114, 164 ],
+         "tab_background_text_incognito_inactive": [ 98, 114, 164 ],
+         "tab_text": [ 248, 248, 242 ],
+         "toolbar": [ 68, 71, 90 ],
+         "toolbar_button_icon": [ 248, 248, 242 ]
+      },
+      "images": {
+         "theme_toolbar": "images/theme_toolbar.png"
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.6"
+}

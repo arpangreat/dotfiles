@@ -1,0 +1,1 @@
+const CONSUMER_KEY = '7035-d3382df43fe0195174c42f9c'

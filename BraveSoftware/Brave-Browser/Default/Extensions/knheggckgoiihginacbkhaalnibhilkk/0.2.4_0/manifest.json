@@ -1,0 +1,34 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "128": "icon-128.png",
+         "32": "icon-32.png"
+      },
+      "default_popup": "index.html",
+      "default_title": "__MSG_webClipperExtension_keyboardShortcutAction__"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "__MSG_webClipperExtension_keyboardShortcutAction__",
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+K",
+            "linux": "Ctrl+Shift+K",
+            "mac": "Command+Shift+K",
+            "windows": "Ctrl+Shift+K"
+         }
+      }
+   },
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_webClipperExtension_description__",
+   "icons": {
+      "128": "icon-128.png",
+      "32": "icon-32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArBCw9SowVvUGjVNXyqW1yCVq8fxCntBxH3EcPRLUB01uqSRpaFLmY8N75PbwAczrV+wb+C4XL1aAp7xNgQpXkYRhhn4lW9T4NuADqkzEAy4hQr9P5qrSt6kHdDbV9bvM538tGXeIYShyb5Yp6jW4fYN8D8eYQm35j0iSTkXZ08lwTc3DX9X9XVP2wc0M1f+6giR5VLJ5h9E/yNF8w37ttOTvgTlPqYLkF3Z1JT5Ux1uREkohB1owDDSUozTsMFuxub39cx7Sw3xExe8To9c5801WipgX3ZmypMXVoodXiwck/ePa+G49aMduWWYsQAcrxYkB0dFierjMK6j/+9NNJwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_webClipperExtension_name__",
+   "permissions": [ "activeTab", "cookies", "https://*.notion.so/", "https://*.notion.so/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.4"
+}
