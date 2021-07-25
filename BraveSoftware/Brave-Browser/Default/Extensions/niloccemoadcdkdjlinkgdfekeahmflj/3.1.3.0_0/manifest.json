@@ -1,0 +1,56 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/key.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/browser-action-icon-19.png",
+         "38": "images/browser-action-icon-38.png"
+      },
+      "default_title": "__MSG_toolbarButtonTitle__"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "Save Page to Pocket",
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+P",
+            "linux": "Ctrl+Shift+P",
+            "mac": "Command+Shift+P",
+            "windows": "Ctrl+Shift+P"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "fonts/fonts.css" ],
+      "js": [ "js/inject.js" ],
+      "matches": [ "*://*/*" ]
+   }, {
+      "js": [ "js/login.js" ],
+      "matches": [ "*://getpocket.com/extension_login_success" ]
+   }, {
+      "js": [ "js/logout.js" ],
+      "matches": [ "*://getpocket.com/login?e=4" ]
+   }, {
+      "js": [ "js/twitter.js" ],
+      "matches": [ "*://twitter.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDescriptionGoogleChrome__",
+   "externally_connectable": {
+      "ids": [  ]
+   },
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKCQwBisK1UcxYMn6MAfDbc8yXWzvbnCzqJwjwbeMaAHji91jdCy3bEzMprTZxW/1Anfk9B4P+hcoTwqUaMUB4WemQMRKRsr9vC45V1iv912nqyGkoGT+cRKZc+niBriAnn4J2GBACHJqkkCiSChphDFt/UNoQEKz4VoqWZDVj/QIDAQAB",
+   "manifest_version": 2,
+   "name": "Save to Pocket",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "contextMenus", "cookies", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.1.3.0",
+   "web_accessible_resources": [ "save.html", "fonts/ProximaNova-Reg-webfont.eot", "fonts/ProximaNova-Reg-webfont.woff", "fonts/ProximaNova-Reg-webfont.ttf", "fonts/ProximaNova-Sbold-webfont.eot", "fonts/ProximaNova-Sbold-webfont.woff", "fonts/ProximaNova-Sbold-webfont.ttf", "fonts/ProximaNova-Bold-webfont.eot", "fonts/ProximaNova-Bold-webfont.woff", "fonts/ProximaNova-Bold-webfont.ttf", "images/browser-action-icon-19.png", "images/browser-action-icon-38.png", "images/browser-action-icon-added-19.png", "images/browser-action-icon-added-38.png", "images/browser-action-icon-added-dark-19.png", "images/browser-action-icon-added-dark-38.png", "images/browser-action-icon-dark-19.png", "images/browser-action-icon-dark-38.png" ]
+}

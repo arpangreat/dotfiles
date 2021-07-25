@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "Girdi ekle"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Yer imi ekle"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Yer imleri düzenleyicisi"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Yer imlerini kontrol et"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Tüm Dizinleri Kapat"
+   },
+   "contextmenu_copy": {
+      "message": "Linki panoya kopyala"
+   },
+   "contextmenu_current_tab": {
+      "message": "Mevcut sekmede aç"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Yer imini sil"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Dizini sil"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Ayırıcıyı sil"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Yer işaretinin seçimini kaldır"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Klasör seçimini kaldır"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Yer imini düzenle"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Dizini düzenle"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Ayırıcıyı düzenle"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Kenar çubuğundan gizle"
+   },
+   "contextmenu_infos": {
+      "message": "Bilgi"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Klavye kısayolları"
+   },
+   "contextmenu_new_tab": {
+      "message": "Yeni sekmede aç"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Yeni gizli sayfada aç"
+   },
+   "contextmenu_new_window": {
+      "message": "Yeni pencere aç"
+   },
+   "contextmenu_open_children": {
+      "message": "Yer imlerini aç"
+   },
+   "contextmenu_pin": {
+      "message": "Üste sabitle"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Sidebar'ı Yeniden Yükle"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Yer imi seçin"
+   },
+   "contextmenu_select_dir": {
+      "message": "Klasör seç"
+   },
+   "contextmenu_select_entries": {
+      "message": "Birden çok giriş seçin"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Dizinde göster"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Kenar çubuğunda göster"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Gizli girdileri göster"
+   },
+   "contextmenu_unpin": {
+      "message": "Üstten kaldır"
+   },
+   "contribute_intro": {
+      "message": "Bu uzantıyı geliştirmek adına diğer kullanıcıların kenar çubuğunu nasıl kullandıklarını ve hangi ayarları kullandıklarını bilmek isterim."
+   },
+   "contribute_notice": {
+      "message": "Ayarlarınızı paylaşarak bana yardımcı olabilirsiniz"
+   },
+   "contribute_outro": {
+      "message": "Sorularınız yada bilgi paylaşımı ile ilgili endişeleriniz var ise lütfen benimle iletişime geçin."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Kullanıcıların, bu ke nar çubuğunu nasıl kullandığını anlamamız için aktivititelerini paylaşabilirsin.Yer imlerin yada ziyaret ettiğin web sayfaları izlenmeyecek."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Verdiğiniz bilgi problemi tanımlamaızda yardımcı olacak, Bu bilgi, kullanılabilirlik ve çok az kullanılan özelliklerin problemlerini anlamamıza yardımcı olacak."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Bir kullanıcının ortalama kaç yer imi mevcuttur?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Kullanıcılar hangi platform (Windows, Mac, Linux, ...) üzerinde kullanıyorlar?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Kullanıcılar aramayı kullanıyorlar mı?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Kullanıcılar yer imlerinin sıralamasını değiştirirler mi?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Kullanıcılar ne sıklıkla yer imlerini düzenler yada sıralar?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Paylaştığınız bilgiye örnek:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Aktiviteyi paylaş"
+   },
+   "contribute_share_config_desc": {
+      "message": "Ayarlarınızı paylaşırsanız, popüler ayarların ne olduğunu anlamamızda ve bir sonraki sürümün daha iyi olmasına katkıda bulunabilirisiniz."
+   },
+   "contribute_share_config_label": {
+      "message": "Ayarları paylaş"
+   },
+   "extension_desc": {
+      "message": "Tarayıcınızın kenarlarına yer işaretleriniz için açılıp kapanabilen bir çubuk ekler."
+   },
+   "extension_last_update": {
+      "message": "Son güncelleştirme {1}"
+   },
+   "extension_name": {
+      "message": "Yer İşaretleri Kenar Çubuğu"
+   },
+   "extension_version": {
+      "message": "Sürüm"
+   },
+   "header_bookmarks": {
+      "message": "Yer işaretleri"
+   },
+   "header_bookmarks_single": {
+      "message": "Yer işareti"
+   },
+   "header_selected_entries": {
+      "message": "seçilmiş"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Üzerine gelinen girdinin url'sini kopyalar"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Üzerine gelinen girdiyi kaldırır"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Üzerine gelinen girdiye tıklar"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Üzerine gelinen girdiyi kapatır"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Command"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Kontrol"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Delete"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Tab"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Üzerine gelinen seçenek için sağ tık menüsünü açar"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Kenar çubuğundaki sonraki veya önceki girişi döndürür"
+   },
+   "more_link": {
+      "message": "Daha fazla bilgi al"
+   },
+   "newtab_fallback_desc": {
+      "message": "Bunun yerine sizin için kenar çubuğu ile yeni sekme açtık"
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Kenar çubuğu Extension sayfalarda çalışmıyor"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Bir şey kenar çubuğunu engelledi"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Kenar çubuğu, varsayılan yeni sekme sayfasında kullanılamaz"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Kenar çubuğu, {browserName} sistem sayfalarında kullanılamaz"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "URL kurallarınızdan biri kenar çubuğunun açılmasını engelledi"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Kenar çubuğu {browserName} Web Store'da çalışmıyor"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Yeni sekme açarken her zaman bu sayfayı göster"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Site simgelerini göster"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Site önizlemesini göster"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Kullanıcı tanımlı girişler"
+   },
+   "newtab_grid_links_default": {
+      "message": "En iyi sayfalar"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Çerçeve boyutu"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Sayfaları gösterme"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "En çok kullanılan yer imleri"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Yakın zamanda kullanılan yer imleri"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Kullanıcı tanımlı"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Başlık"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "Ana sayfanın URL'si"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "Arama sonuçlarının URL’si"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Arama motoru"
+   },
+   "newtab_search_field_hide": {
+      "message": "Arama alanını gizle"
+   },
+   "newtab_search_field_show": {
+      "message": "Arama alanını göster"
+   },
+   "newtab_search_placeholder": {
+      "message": "{1} ara veya URL gir"
+   },
+   "newtab_speech_search_error": {
+      "message": "Konuşma aramayı etkinleştirmek için mikrofon erişimine izin vermeniz gerekir."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Şimdi konuşun"
+   },
+   "newtab_title": {
+      "message": "Yeni sekme"
+   },
+   "newtab_upload_background": {
+      "message": "Arka plan görüntüsü ekleyin"
+   },
+   "onboarding_finish_desc": {
+      "message": "Kenar çubuğuyla iyi eğlenceler"
+   },
+   "onboarding_finish_notice": {
+      "message": "Eğer tarayıcı pencerisinin bu tarafına sıklıkla tıklıyorsanız, kenar çubuğunun otomatik olarak açılmasından kaçınmak için bu ayarı değiştirmek isteyebilirsiniz."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Gelişmiş Özellikler"
+   },
+   "onboarding_goto_settings": {
+      "message": "Daha Fazla Ayarlama Yap"
+   },
+   "onboarding_handson_desc": {
+      "message": "Artık kendiniz deneyebilirsiniz"
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Kenar çubuğunu açmak için uzantıya tıkla"
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Kenar çubuğunu açmak için üzerine getir"
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Kenar çubuğunu açmak için {1} tıkla"
+   },
+   "onboarding_headline": {
+      "message": "Uzantıyı yüklediğiniz için teşekkürler."
+   },
+   "onboarding_left": {
+      "message": "sol"
+   },
+   "onboarding_right": {
+      "message": "sağ"
+   },
+   "onboarding_setup": {
+      "message": "Şimdi Yükle"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Kenar çubuğunu nasıl kullanmak istersiniz ?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Hangi Tarafa Yüklenmesini İstersiniz ?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Koyu Tema"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Hangi temayı kullanmak istersiniz ?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Açık Tema"
+   },
+   "onboarding_skip": {
+      "message": "Daha Sonra Yükle"
+   },
+   "onboarding_title": {
+      "message": "Yükle"
+   },
+   "overlay_add_position": {
+      "message": "Konum"
+   },
+   "overlay_add_position_append": {
+      "message": "Dizine ekle"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Dizinin en başına ekle"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "İlave bilgi"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Şu zaman yaratıldı:"
+   },
+   "overlay_bookmark_title": {
+      "message": "Başlık"
+   },
+   "overlay_bookmark_url": {
+      "message": "URL"
+   },
+   "overlay_bookmark_views": {
+      "message": "Görünümler"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "her ay"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Şu zamandan beri kayıtlı:"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Görünüm"
+   },
+   "overlay_cancel": {
+      "message": "İptal"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Yer imlerinin URL'leri kontrol ediliyor."
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Çalışmıyor"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Değiştirildi"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Daha önce eklenmiş"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Boş klasörler"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Tüm URL'ler çalışmakta."
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Çalışmayan URL bulunmamakta."
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Değiştirilmiş URL bulunmamakta."
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Fazladan gereksiz URL bulunmamakta."
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Yer imlerinden başka klasör yok"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Seçili olan yer imlerini sil"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Seçili olan yer imlerini güncelle"
+   },
+   "overlay_close": {
+      "message": "Kapat"
+   },
+   "overlay_confirm_open_children": {
+      "message": "{1} tane yer işaretini açmak istediğinizden emin misiniz?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "Seçilen klasörlerin alt klasör yer imleri de dahil olmak üzere tüm {1} yer imlerini gerçekten açmak istiyor musunuz?"
+   },
+   "overlay_delete": {
+      "message": "Sil"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Bu yer imini silmek istediğinizden emin misiniz?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Bu dizini silmek istediğinizden emin misiniz? Tüm alt yer işaretleri de kaldırılacaktır."
+   },
+   "overlay_delete_selected": {
+      "message": "Seçili girişleri sil"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "Seçilen girişleri gerçekten silmek istiyor musunuz? Seçilen klasörlerin tüm alt klasör yer imleri de silinecektir."
+   },
+   "overlay_dir_children": {
+      "message": "Öğeler"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Yer imleri"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Dizinler"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Bu yer imini kenar çubuğundan gizlemek istediğinizden emin misiniz?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Bu dizini kenar çubuğundan gerçekten gizlemek istiyor musunuz? Tüm alt yer işaretleri de gizlenecektir."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Kenar çubuğundan gizle"
+   },
+   "overlay_label_bookmark": {
+      "message": "Yer imi"
+   },
+   "overlay_label_dir": {
+      "message": "Dizin"
+   },
+   "overlay_label_separator": {
+      "message": "Ayırıcı"
+   },
+   "overlay_open_children": {
+      "message": "Hepsini aç"
+   },
+   "overlay_save": {
+      "message": "Kaydet"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Ayırıcıya isteğe bağlı olarak başlık girebilirsiniz. Ayırıcı çizgisinin üzerinde gözükecektir ve size yer imi listenizi düzenlemenizde yardımcı olabilir."
+   },
+   "overlay_update": {
+      "message": "Güncelle"
+   },
+   "premium_activate": {
+      "message": "Premium Üyeliği Aktif Et"
+   },
+   "premium_already_activated": {
+      "message": "Zaten Premium Üyelik Kullanıyorsunuz"
+   },
+   "premium_desc_1": {
+      "message": "Premium üyelikle ek özelliklere erişebilir ve bu uzantıyı geliştirmemde bana yardımcı olabilirsin."
+   },
+   "premium_desc_2": {
+      "message": "Premium Üyelikte olan özellikleri aşağıda inceleyebilirsiniz.Uzantının tüm temel özellikleri ücretsizdir ve Premium Üyelik gerektirmez.Aşağıdaki özelliklere erişmek için uzantının ve çalışmamın size göre ederini ödeyebilirsiniz!"
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Uzantının Yeni Sekme sayfasını kullanıyorsanız, sayfanızın daha güzel görünmesi için kendi arka plan resminizi seçebilirsiniz."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Yeni Sekme Sayfanızı Özelleştirin"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "CSS biliyorsanız, kendi stil tanımlarınızı ekleyerek kenar çubuğunun görünümünü değiştirebilirsiniz. Bu özellik sayesinde her şeyi özelleştirebilirsiniz."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Her şeyi kendi Stylesheet'inizle özelleştirin."
+   },
+   "premium_feature_early_access_desc": {
+      "message": "Premium Üyelik ile, şu anda geliştirilmekte olan veya test aşamasında olan yayınlanmamış özelliklere erişebilirsiniz."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Yeni deneysel özellikleri deneyen ilk kişi siz olun"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Ayarlarınızı içe ve dışa aktarın"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Kenar çubuğunuzdaki herhangi bir dizini sağ tıklayıp Yer İmlerini Kontrol Et'e tıklayarak bir kontrol gerçekleştirebilirsiniz. Bu kontrolün sonuç sayfası, güncellenmiş tüm URL'leri, artık çalışmayan yer imlerini ve aynı URL'ye sahip yer imlerini gösterir."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Kırık linkler veya birden fazla kopyalar için yer işaretlerinizi kontrol edin"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Kenar çubuğunuzun genişliğini istediğiniz zaman değiştirin"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Başka bir tema yükleyerek kenar çubuğunun tüm tasarımını tek bir tıklamayla değiştirebilirsiniz. Ayrıca tasarımlar, mevcut kaydırıcılar ve renk seçenekleri ile özelleştirilebilir."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Kenar çubuğunuzun temasını değiştirme"
+   },
+   "premium_get_now": {
+      "message": "Premium Üyelik Al"
+   },
+   "premium_license_key": {
+      "message": "Lisans Anahtarı"
+   },
+   "premium_pay_buy": {
+      "message": "Premium Üyelik Satın Al"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "İptal politikası"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Satın almayı onayla"
+   },
+   "premium_pay_contact": {
+      "message": "Ödemenizle ilgili herhangi bir sorunla karşılaşırsanız ya da herhangi bir sorunuz olursa lütfen benimle şuradan {1} iletişime geçin."
+   },
+   "premium_pay_creditcard": {
+      "message": "Kredi veya banka kartı"
+   },
+   "premium_pay_eula": {
+      "message": "Son Kullanıcı Lisans Sözleşmesi"
+   },
+   "premium_pay_eula_desc": {
+      "message": "[a]Son Kullanıcı Lisans Sözleşmesini[/a] okudum ve onaylıyorum"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Kart Son Kullanma Tarihi"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Kart Numarası"
+   },
+   "premium_pay_info_email": {
+      "message": "E-Posta"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Lisans anahtarını almak için lütfen e-posta adresinizi girin."
+   },
+   "premium_pay_info_name": {
+      "message": "İsim"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Ödeme Yöntemi"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Posta Kodu"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Aşağıdan bir ödeme yöntemi seçin ve bir sonraki adımda ödemek istediğiniz tutarı seçin."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Bu uzantıyı farklı bir cihazda yada sonradan tekrar yüklediğinde {1} aktifleştirmek için , verilen anahtarı uzantının ayarlarından girebilirsiniz:"
+   },
+   "premium_pay_price_info": {
+      "message": "Bu bir kerelik ücrettir ve gelecekteki tüm premium özellikleri de içerir."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Premium özelliklere erişmek için eklentinin ve çalışmalarımın sizin için olduğunu düşündüğünüz değer kadar ödeyebilirsiniz. Ne kadar ödemeye istekli olursanız olun, her zaman tüm premium özellikleri alacaksınız."
+   },
+   "premium_pay_price_total": {
+      "message": "Toplam"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Ödeme ID"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Ödeme Yöntemini Seçin"
+   },
+   "premium_pay_success_headline": {
+      "message": "Ödeme için Teşekkürler"
+   },
+   "premium_pay_success_info": {
+      "message": "Bu cihaz için {1} otomatik olarak etkinleştirildi. Başka bir şey yapmanıza gerek yok."
+   },
+   "premium_pay_verifying": {
+      "message": "İşlem Onaylanıyor"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Devam etmek için WeChat'ta bu QR kodunu tarayın."
+   },
+   "premium_pay_what_you_want": {
+      "message": "İstediğin kadar öde"
+   },
+   "premium_popup_text": {
+      "message": "Premium Üyeliğini kontrol ettin mi?"
+   },
+   "premium_restricted_text": {
+      "message": "Bu özellik sadece Premium üyelikte kullanılabilir."
+   },
+   "premium_show_license_input": {
+      "message": "Premium Üyeliğim Var"
+   },
+   "settings_advanced": {
+      "message": "Gelişmiş Ayarlar"
+   },
+   "settings_available_themes": {
+      "message": "Kullanılabilir temalar"
+   },
+   "settings_background_blur": {
+      "message": "Arka plan bulanıklılığı"
+   },
+   "settings_background_transparency": {
+      "message": "Arka plan şeffaflığı"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Sözlük simgesi rengi"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Sözlük simgesi"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Klasör girintisi"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Yer imleri metin büyüklüğü"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Yer imleri yatay boşluğu"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Yer imleri simge büyüklüğü"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Bookmark çizgi genişliği"
+   },
+   "settings_close_timeout": {
+      "message": "Kapanış süresi"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Kenar çubuğu kapatılması için gerekli süre. Farenin kenar çubuğundan çıktığı anda sayıma başlanır ve tekrar açıldığında durur."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Otomatik kapama"
+   },
+   "settings_color_scheme": {
+      "message": "Renk seçimi"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Kenar çubuğu başlık ve kutucukların rengi"
+   },
+   "settings_custom_css": {
+      "message": "Özel stil"
+   },
+   "settings_custom_css_desc": {
+      "message": "Kendi CSS kodunuzu kullanarak varsayılan stili değiştirebilirsiniz. Bu seçeneği sadece ne yaptığınızı biliyorsanız ve CSS bilginiz varsa kullanın."
+   },
+   "settings_dark_mode": {
+      "message": "Arayüz"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Kenar çubuğunun görünüşünü değiştir"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Kenar çubuğunun görünümünü tamamen ihtiyaçlarınıza uyacak şekilde değiştirebilirsiniz. Yazı tipi boyutunu, satır aralığını, renkleri, simgeleri ve daha fazlasını değiştirmek için çeşitli seçenekler vardır. Kenar çubuğunun istediğiniz gibi görünmesini hızlı bir şekilde yapmak için önceden tanımlanmış tasarımlar ve önceden ayarlanmış seçeneklerden de seçim yapabilirsiniz."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Kenar çubuğunuzun davranışını yapılandırın"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Uzantıyı kontrol etmek için değiştirebileceğiniz çeşitli seçenekler vardır. Örneğin, kenar çubuğunun nasıl kayması gerektiğini veya yer imlerinizin nasıl açılması gerektiğini değiştirebilirsiniz. Kenar çubuğunun her sayfaya yüklenmesini istemiyorsanız, uygun kuralları kullanarak bunu da yapılandırabilirsiniz."
+   },
+   "settings_dir_accordion": {
+      "message": "Sadece geçerli dizini göster"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Geçerli olan haricindeki tüm dizinleri kapatır"
+   },
+   "settings_directories_icon_size": {
+      "message": "Klasörler simge boyutu"
+   },
+   "settings_directory_arrows": {
+      "message": "İşaret okları"
+   },
+   "settings_expert_save_error": {
+      "message": "Ayarlar kaydedilemiyor. Lütfen doğru değer giriniz."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Uzman ayarlarla, ayar sayfasının normal onay kutularını veya kaydırıcılarını kullanarak değiştiremeseniz bile uzantının tüm yapılandırma bayraklarını değiştirebilirsiniz."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Lütfen ne yaptığınızı biliyorsanız, sadece buradaki değerleri değiştirin. Hatalı yapılandırmalar, uzantının beklenmeyen davranışlarına neden olabilir. Bir şey bozulursa, varsayılan yapılandırmaya geri dönebilirsiniz."
+   },
+   "settings_export": {
+      "message": "Dışa aktarma ayarları"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Satır başına bir URL deseni ekle"
+   },
+   "settings_filter_explanation_2": {
+      "message": "Her karakter ile eşleşme için * kullan. (Örn: example.com/* ile example.com altındaki tüm sayfaları eşleştir)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Eğer kural ifadesinde hiç bir * karakteri koymazsanız, sadece yazılı olan URL ile birebir eşleşme sağlanır. (Örn: \"example.com\" altındaki \"example.com/about.html\" eşleştirilmez)"
+   },
+   "settings_filter_explanation_4": {
+      "message": "Kurallara hiç bir protokol eklemenize gerek yok (Örn: http://)"
+   },
+   "settings_filter_intro": {
+      "message": "Kenar çubuğunun her sayfa yüklenmesinde açılmasını istemiyorsan beyaz liste veya kara listeden düzenleyebilirsin"
+   },
+   "settings_filter_rules": {
+      "message": "URL desenleri"
+   },
+   "settings_filter_visibility": {
+      "message": "Kenar çubuğunu yükle"
+   },
+   "settings_filter_visibility_always": {
+      "message": "Her sayfada"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "Belirlenenler dışındaki her sayfada"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Belirlenen sayfalarda"
+   },
+   "settings_font_family": {
+      "message": "Metin görünümü"
+   },
+   "settings_font_family_default": {
+      "message": "Varsayılan"
+   },
+   "settings_font_family_desc": {
+      "message": "Varsayılan"
+   },
+   "settings_header_height": {
+      "message": "Başlık yüksekliği"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Bilgi paylaş"
+   },
+   "settings_hover_color": {
+      "message": "Fare ile üzerindeyken"
+   },
+   "settings_icon_background_color": {
+      "message": "Arkaplan Rengi"
+   },
+   "settings_icon_color": {
+      "message": "Renk"
+   },
+   "settings_icon_color_auto": {
+      "message": "Otomatik"
+   },
+   "settings_icon_color_custom": {
+      "message": "Özel"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Simge rengi, sisteminizin renk düzenine (açık veya koyu) uyacak şekilde otomatik olarak ayarlanır. Simge için kendi özel renginizi de tanımlayabilirsiniz."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Özel bir {browserName} teması kullanırken, otomatik rengin çalışmadığını lütfen unutmayın."
+   },
+   "settings_icon_shape": {
+      "message": "Şekli"
+   },
+   "settings_import": {
+      "message": "İçeri aktarma ayarları"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "İçe aktarma / Dışa aktarma yer imleri"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Bu bir tarayıcı özelliğidir ve uzantının bir parçası değildir. Yer işaretlerini {browserName} içinde nasıl içe ve dışa aktaracağınız hakkında daha fazla bilgi edinin."
+   },
+   "settings_import_export_desc": {
+      "message": "Uzantı ayarlarınızı dışa aktarabilir ve bunları yerel olarak bilgisayarınıza kaydedebilirsiniz. Önceden aktarılan dosyayı, uzantının yüklü olduğu herhangi bir bilgisayardan içe aktarabilirsiniz."
+   },
+   "settings_import_export_headline": {
+      "message": "İçe aktarma / Dışa aktarma ayarları"
+   },
+   "settings_import_export_notice": {
+      "message": "Google hesabınızla {browserName}'da oturum açtıysanız, uzantı ayarları cihazlarınız arasında otomatik olarak senkronize edilir. Giriş yapmak istemiyorsanız veya ayarlarınızı başkalarıyla paylaşmak istiyorsanız, bu içe / dışa aktarma seçeneğini kullanabilirsiniz."
+   },
+   "settings_import_failed": {
+      "message": "Yapılandırma alınamadı. Lütfen geçerli bir dosya seçin."
+   },
+   "settings_import_saved": {
+      "message": "Yapılandırma başarıyla alındı."
+   },
+   "settings_indicator_color": {
+      "message": "Renk"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Simge rengi"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Simge büyüklüğü"
+   },
+   "settings_indicator_width": {
+      "message": "Genişlik"
+   },
+   "settings_install_theme": {
+      "message": "Temayı kur"
+   },
+   "settings_installed_theme_info": {
+      "message": "Şu anda yüklü olan"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Klavye kısayollarını ayarla"
+   },
+   "settings_language": {
+      "message": "Dil"
+   },
+   "settings_language_default": {
+      "message": "Tarayıcı varsayılanları"
+   },
+   "settings_language_desc": {
+      "message": "Kullanıcı arayüz dili"
+   },
+   "settings_link_action": {
+      "message": "Yer imlerini aç"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Geçerli sekme"
+   },
+   "settings_link_action_desc": {
+      "message": "Sol tıklama, bir yer işaretini geçerli sekmede veya yeni bir sekmede açar."
+   },
+   "settings_link_action_new_tab": {
+      "message": "Yeni sekme"
+   },
+   "settings_menu_appearance": {
+      "message": "Görünüm"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Genel"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "İkon"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "İşaret"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Kaplama"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Kenar Çubuğu"
+   },
+   "settings_menu_dashboard": {
+      "message": "Genel Bakış"
+   },
+   "settings_menu_expert": {
+      "message": "Gelişmiş ayarlar"
+   },
+   "settings_menu_export": {
+      "message": "İçeri/Dışarı aktar"
+   },
+   "settings_menu_infos": {
+      "message": "Bilgi"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "Hakkımda"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Yeni sürümdeki değişiklikler"
+   },
+   "settings_menu_infos_contact": {
+      "message": "İletişim"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "İzinler"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Gizlilik"
+   },
+   "settings_menu_language": {
+      "message": "Dil"
+   },
+   "settings_menu_language_general": {
+      "message": "Genel"
+   },
+   "settings_menu_language_translate": {
+      "message": "Çeviri"
+   },
+   "settings_menu_newtab": {
+      "message": "Yeni Sekme"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Kenar Çubuğu"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Filtre"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Genel"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Geçiş"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Araç İpuçları"
+   },
+   "settings_menu_support": {
+      "message": "Destek"
+   },
+   "settings_new_tab": {
+      "message": "Yeni sekme"
+   },
+   "settings_new_tab_background": {
+      "message": "Arka planda aç"
+   },
+   "settings_new_tab_desc": {
+      "message": "Ön planda veya arka planda yeni sekmede yer imlerini açın"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Ön planda aç"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Geçerli sekmeden sonra aç"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Son sekmeden sonra aç"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "İlk sekmeden önce aç"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Son veya geçerli sekmeden sonra yeni sekmeler aç"
+   },
+   "settings_newtab_desc": {
+      "message": "Maalesef Google, varsayılan yeni sekme sayfasında uzantıları yükleme olasılığını kaldırdı. Bu nedenle, başka bir şekilde yeni bir sekme açarken yer imlerine erişmenize izin veren bazı seçenekler ekledim."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Adres Çubuğuna Odakla"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Eğer etkinleştirilirse, adres çubuğunuz yeni bir sekme açarken odaklanarak açılır. Eğer, etkin değilse, internet sitesindeki arama kutusu odaklanır."
+   },
+   "settings_newtab_override": {
+      "message": "Yeni sekme sayfasını geçersiz kıl"
+   },
+   "settings_newtab_override_configure": {
+      "message": "Yapılandırma"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Uzantı, geçerli yeni sekme sayfanızı yeni bir sekme açarken yüklenecek bir özel hazırlanmış veya web sitesi ile geçersiz kılmalı mı?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "Önizleme"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Otomatik olarak kenar çubuğunu aç"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Yeni bir sekme açarken kenar çubuğunun otomatik olarak açılıp açılmayacağını yapılandırın."
+   },
+   "settings_newtab_website": {
+      "message": "Web sitesini yükle"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Yeni sekme değiştirmeyi açmanın yerine, yüklenen bir web sitesi ayarlayabilirsiniz."
+   },
+   "settings_not_synced": {
+      "message": "Cihazlarınız arasında senkronize edilmeyecek."
+   },
+   "settings_open_action": {
+      "message": "Kenar çubuğunu aç"
+   },
+   "settings_open_action_desc": {
+      "message": "Kenar çubuğunu sola veya sağa tıklayarak veya tarayıcı penceresinin yan tarafında fareyle üzerine getirerek açın. Alternatif olarak, yalnızca krom menüsündeki simge tıklanırsa açmak üzere değiştirebilirsiniz."
+   },
+   "settings_open_action_icon": {
+      "message": "Simgeye tıklama"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Sol tık"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Fare üzerindeyken"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Sağ tık"
+   },
+   "settings_open_delay": {
+      "message": "Gecikmeli aç"
+   },
+   "settings_open_delay_desc": {
+      "message": "Fareyle üzerine gelme veya bir gecikmeyle tıklayarak kenar çubuğunun hemen açılmasını engeller."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Maske rengi"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "Uzantı, yer işaretlerinizi kenar çubuğunda gösteriyor ve bu nedenle erişim sağlamak için bu izne ihtiyaç var. İzin ayrıca uzantının yer imleri eklemesine, düzenlemesine ve kaldırmasına izin verir."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "Ne yazık ki, {browserName} şu anda ziyaret edilen sayfa ile etkileşime girmeden tarayıcı penceresinde içerik görüntüleme mekanizmasına sahip değil"
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Kenar çubuğu mevcut web sayfasının üstünde gösterildiği için bu izin gereklidir. Teknik gerekçelerin dışında bu izin başka bir amaçla kullanılmayacak."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "İzinle ne yaptığımla ilgili endişeleriniz varsa, uzantının kaynak kodunu Github'da görebilirsiniz. Açık Kaynak ve herkes tarafından görülebilir."
+   },
+   "settings_permissions_desc": {
+      "message": "{browserName}'da değiştirilebilen bir kenar çubuğunu mümkün kılmak için, aşağıdaki izinler gerekli olup eklenti:"
+   },
+   "settings_premium_activated": {
+      "message": "Premium üyeliğiniz başarıyla aktif edildi"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Premium üyeliğiniz aktif edilemedi.Lütfen geçerli bir lisans anahtarı girin"
+   },
+   "settings_presets": {
+      "message": "Göreceli boyutları ayarla"
+   },
+   "settings_presets_desc": {
+      "message": "Kenar çubuğu için önceden tanımlanmış boyutları seçebilirsiniz. Bu, kenar çubuğu genişliğini, çizgi yüksekliklerini, simge boyutlarını ve daha birçok seçeneği ayarlamak için bu sayfadaki kaydırıcıları değiştirir"
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Sayfa kaydırmayı engelle"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Kenar çubuğu açıkken mevcut web sitesinin kaydırılmasını önler."
+   },
+   "settings_prevent_windowed": {
+      "message": "Pencere modunda kenar çubuğunu devre dışı bırakır."
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Pencere modu aktifken tarayıcı penceresinin kenarının üzerine gelindiğinde veya tıklandığında kenar çubuğunun açılmasını engeller."
+   },
+   "settings_remember_desc": {
+      "message": "Sayfa değişikliklerinde ne hatırlanacağını seçin. Son açılan yer imini hatırlamayı seçerseniz, kenar çubuğunu tekrar açarken işaretlenir."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Çubuktaki açık konumu hatırla"
+   },
+   "settings_remember_state": {
+      "message": "Hatırla"
+   },
+   "settings_remember_state_all": {
+      "message": "Kaydırma konumu, açılmış dizinler ve son açılan yer imi"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Hiçbir şey"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Açılmış dizinler"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Kaydırma konumu ve açılmış dizinler"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "En üst düzey dizinler açıldı"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Kenar çubuğunu yeniden aç"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Kenar çubuğunu otomatik olarak aç (Kenar çubuğundan mevcut sekmede bir yer imi açtıktan sonra)"
+   },
+   "settings_restore": {
+      "message": "Varsayılana döndür"
+   },
+   "settings_restore_confirm": {
+      "message": "Varsayılan yapılandırmayı gerçekten geri yüklemek istiyor musunuz?"
+   },
+   "settings_restored_message": {
+      "message": "Yapılandırma başarıyla geri yüklendi"
+   },
+   "settings_save": {
+      "message": "Değişiklikleri kaydet"
+   },
+   "settings_saved_message": {
+      "message": "Değişiklikler başarıyla kaydedildi"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Tercihleriniz başarılı bir şekilde kaydedildi."
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Kaydırma çubuğunu gizle"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Kaydırma çubuğu gizlendikten sonra saniyeler içinde zamanaşımı. Kaydırma kaydırma çubuğunu tekrar gösterecektir."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Asla gizleme"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Kaydırma tekerleği genişliği"
+   },
+   "settings_search_placeholder": {
+      "message": "Ayarlarda ara"
+   },
+   "settings_show_themes": {
+      "message": "Kullanılabilir temaları göster"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Maske rengi"
+   },
+   "settings_sidebar_position": {
+      "message": "Pozisyon"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Kenar çubuğunun ekranın solunda veya sağında açılıp açılmayacağını ayarlamanızı sağlar."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Sol"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Sağ"
+   },
+   "settings_sidebar_width": {
+      "message": "Genişlik"
+   },
+   "settings_support_faq_headline": {
+      "message": "Sıkça Sorulan Sorular"
+   },
+   "settings_support_feedback_desc": {
+      "message": "İyileştirmeler, sorular, eksik yapılandırma seçenekleri ile ilgili herhangi bir öneriniz var mı, yoksa bir hata mı buldunuz? Bu uzantıdaki deneyimleri geliştirmeye yardımcı olmak için, verdiğiniz her türlü geri bildirime veya sahip olduğunuza çok minnettar olacağım."
+   },
+   "settings_support_feedback_email": {
+      "message": "e-posta adresi (isteğe bağlı)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Geri Bildirim"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Lütfen geri bildiriminizi İngilizce olarak yazınız, aksi halde mesajınızı anlamak ve cevaplamak zor olacaktır."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Ekran görüntüleri ekle"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "En fazla {1} ekran görüntüsü yükleyebilirsiniz."
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "{1} dosyasının boyutu çok büyük (> 1 MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Geri bildirim Yolla"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Mesajınız gönderilemedi. Lütfen tekrar deneyin."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Geri bildirim için teşekkürler"
+   },
+   "settings_text_color": {
+      "message": "Metin rengi"
+   },
+   "settings_theme": {
+      "message": "Tema"
+   },
+   "settings_theme_changed": {
+      "message": "Tema değişiklikleri başarılı"
+   },
+   "settings_theme_default": {
+      "message": "Varsayılan tema"
+   },
+   "settings_theme_default_desc": {
+      "message": "Bu tema, yer işaretlerinize basit ve modern bir şekilde erişmenizi sağlar. Birçok öğe yapılandırılabilir bir renk şemasında renklendirilir."
+   },
+   "settings_theme_focus": {
+      "message": "Odak Teması"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Bu tema, animasyonları azaltır ve gelişmiş verimlilik ve performans için öğeleri daha yoğun bir şekilde düzenler."
+   },
+   "settings_theme_glass": {
+      "message": "Cam Teması"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Bu tema, kenar çubuğunun arka planını yarı saydam hale getirir ve ona bulanık bir cam efekti ekler. Bu efekti ve kenar çubuğunun şeffaflığını ayarlayabilirsiniz"
+   },
+   "settings_themes_notice": {
+      "message": "Kenar çubuğunun temel tasarımını seçebilirsiniz. Seçilen tema mevcut kaydırıcı ve renk seçenekleriyle özelleştirilebilir."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Bu uzantı, kişisel kullanım için bir hobi projesi olarak başlayan tek kişilik bir projedir."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Aktivasyon alanı"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "Varsayılan olarak, kenar çubuğunu açmak için tarayıcı pencerenizin tüm kenarı üzerine getirilebilir. Yalnızca kenar çubuğunun tarayıcı yüksekliğinin bir bölümünde açılmasına izin vererek etkinleştirme alanını küçültebilirsiniz. Örneğin, tarayıcı penceresinin sol alt köşesindeki etkinleştirme alanını tıkladığınızda kenar çubuğunu yalnızca görünecek şekilde değiştirebilirsiniz. Bu, web sitesinin bağlantılarına tıklandığında kenar çubuğunun istemeden görünmesini önlemeye yardımcı olabilir."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Tüm alt klasörleri genişlet"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Tüm alt klasörleri açık olan bir klasörü hızlıca açmak için, kenar çubuğundaki bir klasöre çift tıklayabilirsiniz."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Biliyor muydun?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Girişleri gizle"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Tek tek yer imlerini ve hatta klasörleri kenar çubuğundan gizleyebilirsiniz. Kenar çubuğundaki herhangi bir girişi sağ tıklayabilir ve ardından bağlam menüsünde {1} düğmesini tıklayabilirsiniz. Gizli girişleri tekrar görüntülemek için, kenar çubuğunun başlığındaki menü simgesine tıklayabilir ve oradaki ilgili onay kutusunu etkinleştirebilirsiniz."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "Uzantı, {1} farklı dilde mevcuttur. Çeviriler topluluk yapımıdır ve herkes uzantının metinlerini diğer dillere çevirerek katkıda bulunmaya yardımcı olabilir. Çeviriler onaylanacak ve sonraki güncellemeyle uzantıya eklenecektir."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Klavye kısayolları"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "Kenar çubuğu klavye kısayolları kullanılarak kontrol edilebilir. Kenar çubuğunun başlığındaki menü simgesini ve ardından {1} düğmesini tıklayarak bir kısayol listesine bakabilirsiniz."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Birden çok giriş seçin"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "Kenar çubuğunda birden fazla yer imi veya klasörü seçerek tek seferde sürükleyip bırakarak açabilir, silebilir ve hatta taşıyabilirsiniz."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Yeni sekme"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "Alt köşedeki {1} düğmesini tıklayarak Yeni Sekme Sayfasının görünümünü doğrudan sayfada yapılandırabilirsiniz. Ardından ızgara öğelerini, arama motorunu, arka plan resmini veya üstteki bağlantıları değiştirebilirsiniz."
+   },
+   "settings_tips_tricks_next": {
+      "message": "Sonraki ipucu"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Tüm yer imlerini aç"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Bir klasördeki tüm yer imlerini açmak için, klasöre orta tıklayabilirsiniz. Alternatif olarak, farenizin sol düğmesiyle bir klasöre tıklarken {1} tuşuna da basabilirsiniz."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Gizlilik"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "Kenar çubuğunuzda görüntülenen yer işaretleri, {browserName} tarafından senkronize edilir ve yönetilir. Uzantı, bu yer imlerini saklamaz veya analiz etmez ve yalnızca tarayıcınızın kenar çubuğundakilerini görüntüler."
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Hızlı yer imi"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Herhangi bir URL'yi doğrudan kenar çubuğuna sürükleyebilir ve istediğiniz konuma bırakabilirsiniz. Hatta bir tarayıcı sekmesinin mevcut URL'sini bu şekilde işaretleyip sürükleyebilirsiniz. Önce adres çubuğunun tamamını işaretlemeden geçerli sayfayı yer imlerine eklemek için adres çubuğunun solundaki {1} simgesini kenar çubuğuna da sürükleyebilirsiniz."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Hızlı arama"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Kenar çubuğunu açarsanız, sadece yazmaya başlayarak yer imlerini arayabilirsiniz. Önce kenar çubuğunun başlığındaki arama simgesine tıklamanıza gerek yok."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Hızlı URL kopyalama"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Kenar çubuğundaki bir yer iminin URL'sini panonuza kopyalamak için, bir girişin üzerine gelindiğinde {1} tuşuna basabilirsiniz."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Sağ tık"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Ek seçenekleri ortaya çıkarmak için kenar çubuğundaki herhangi bir yer imine veya klasöre sağ tıklayabilirsiniz. Örneğin, mevcut yer imlerini düzenleyebilir veya girişleri kenar çubuğunun üstüne sabitleyebilirsiniz. Bir klasöre sağ tıkladığınızda, bozuk veya güncellenmiş yer imi URL'lerini tanımlamak için bir yer imi kontrolü başlatabilirsiniz."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Ayırıcılar"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Kenar çubuğunda ayırıcı olarak {1} URL'si ve başlığı {2} veya {3} olan bir yer imi girişi görüntülenecektir. Kenar çubuğunda herhangi bir klasöre sağ tıklayarak ve ardından {4} düğmesine tıklayarak ayırıcılar ekleyebilirsiniz."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Bilgi paylaş"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "Yapılandırmanızı anonim olarak paylaşabilirsiniz; bu, popüler ayarları belirlememe ve gelecekteki sürümlerde nelerin iyileştirileceğini veya değiştirileceğini belirlememe yardımcı olur. Uzantı, herhangi bir kişisel veri toplamaz veya yer imlerini okumaz. Açık izin olmadan, uzantı herhangi bir yapılandırmayı da paylaşmaz."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Senkronizasyon"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Senkronizasyon ayarlarınıza bakın"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Tarayıcınızın senkronizasyon seçeneklerini ayarlarda etkinleştirirseniz, kenar çubuğunun tüm ayarlarınız cihazlarınız arasında senkronize edilecektir. Premium olmasa bile."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "Bu uzantının ilk sürümü Kasım 2016'da yayınlandı."
+   },
+   "settings_title": {
+      "message": "Ayarlar"
+   },
+   "settings_toggle_area": {
+      "message": "Bölgeyi düzenle"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Varsayılan olarak, tarayıcı ekranının tüm kenarının üzerine kenar çubuğunu açmak için gelinebilir. Bunu değiştirebilir veya kenar çubuğunun nasıl açılabileceğini ayarlayabilirsiniz."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Hareket ettirmek için sürükle"
+   },
+   "settings_toggle_area_height": {
+      "message": "Yükseklik"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Bu alanın yüksekliğini azaltabilirsiniz, böylece kenar çubuğu tarayıcı ekranının kenarında sadece belirlenen alanın üzerine fare imleci ile geldiğiniz zaman açılır."
+   },
+   "settings_toggle_area_width": {
+      "message": "Genişlik"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Genişlik (Pencereli)"
+   },
+   "settings_tooltip_content": {
+      "message": "Araç ipucu içeriği"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "ilave bilgi"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Başlık ve URL"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Sadece başlık"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Sadece URL"
+   },
+   "settings_tooltip_delay": {
+      "message": "Araç ipucu gecikmesi"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Fare ile gezinirken, yer işaretleri için araç ipuçları görüntülenmeden önce gecikme."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Araç ipuçlarını asla gösterme"
+   },
+   "settings_tooltip_desc": {
+      "message": "Araç ipucunun hangi bilgileri içermesi gerektiğini seçin."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Tooltip font boyutu"
+   },
+   "settings_translation_add_language": {
+      "message": "Dil ekle"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Genel bakışa geri dön"
+   },
+   "settings_translation_desc": {
+      "message": "Eklentiyi kendi dilinize tercüme etmeye yardım edebilir ya da mevcut olan çeviriyi geliştirebilirsiniz."
+   },
+   "settings_translation_help": {
+      "message": "Her bir giriş için, kendi dilinizde tercüme edilmesi gereken İngilizce çeviriyi görebilirsiniz. Metnin nerede kullanıldığını ve ne için kullanıldığını tanımlamanıza yardımcı olması için, her girişin çevrilmemesi gereken bir adı (ör. {1}) vardır. Lütfen sağ üst köşedeki düğmeye basarak çevirinizi göndermeyi unutmayın!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Bazı çeviriler eksik"
+   },
+   "settings_translation_info": {
+      "message": "Varolan çevirileri düzenleyebilir ve eksik olanları ekleyebilirsiniz. Eğer değişiklik isteği gönderirseniz, incelendikten sonra onaylanacaktır."
+   },
+   "settings_translation_link": {
+      "message": "Çeviriye genel bakış"
+   },
+   "settings_translation_notice1": {
+      "message": "Bütün zorunlu olarak işaretli alanların çevirisi tamamlandığında, çeviri yayınlanacaktır."
+   },
+   "settings_translation_notice2": {
+      "message": "Tamamı çevrilmemiş kategoriler yarım yamalak görünmesin diye yayınlanmayacaktır."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Uzantıya yeni dil değişkenleri eklenirken haberdar olmak istiyorum"
+   },
+   "settings_translation_required_category": {
+      "message": "Gerekli"
+   },
+   "settings_translation_status_draft": {
+      "message": "Çeviri henüz kullanıcılar için mevcut değil çünkü eksik veya gözden geçirilmesi gerektiriyor"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Çeviri mevcut, ancak bazı kategoriler henüz tamamen çevrilmemiş"
+   },
+   "settings_translation_status_released": {
+      "message": "Çeviri mevcut"
+   },
+   "settings_translation_submit": {
+      "message": "Gönder"
+   },
+   "settings_translation_submit_message": {
+      "message": "Çeviriniz başarıyla gönderildi"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "Url kopyalandı"
+   },
+   "sidebar_deleted": {
+      "message": "Silindi"
+   },
+   "sidebar_dir_children": {
+      "message": "Öğeler"
+   },
+   "sidebar_search_no_results": {
+      "message": "Aradığınız değere uygun yer imi bulunamadı"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Yer imleri arasında ara"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Geri alma"
+   },
+   "sort_label_alphabetical": {
+      "message": "Alfabetik sırada"
+   },
+   "sort_label_custom": {
+      "message": "Kullanıcı tanımlı"
+   },
+   "sort_label_most_used": {
+      "message": "Sık kullanılan"
+   },
+   "sort_label_recently_added": {
+      "message": "Yakın zamanda eklenen"
+   },
+   "sort_label_recently_used": {
+      "message": "Yakın zamanda kullanılan"
+   },
+   "sort_most_used_per_month": {
+      "message": "Aya göre"
+   },
+   "sort_view_as_tree": {
+      "message": "Dizinleri göster"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Yeniden yükle."
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Uzantının güncellenmesinden dolayı sayfanın yenilenmesi gerekiyor."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Geri Bildirim servisi şu an kullanılamıyor. Geri bildirim bırakmak isterseniz, lütfen bana e-posta yollayın."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Hizmet kullanılamıyor"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Çeviri servisi şu an kullanılamıyor. Lütfen daha sonra tekrar deneyin."
+   }
+}

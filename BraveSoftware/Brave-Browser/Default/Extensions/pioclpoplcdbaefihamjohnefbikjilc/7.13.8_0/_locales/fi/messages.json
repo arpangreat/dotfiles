@@ -1,0 +1,966 @@
+{
+   "0060cc5b94d10f9cceb22856c04f02f6": {
+      "description": "Upgrade account button",
+      "message": "{accountType} -tilisi rajoittaa sinut {accountLimit} lähetyksiä 30 päivän välein. Sen jälkeen muistiinpanojen synkronointi lakkaa."
+   },
+   "01ce27a8a0d9de093fd302af921ce1ba": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Päivitä saadaksesi 1 Gt latauksia kuussa"
+   },
+   "0235c996b43b3799573658df41ef82f2": {
+      "description": "\"Marker\" tool title of screenshot clip format",
+      "message": "Merkitsijä"
+   },
+   "03e61eee046a91876853adc297a654e4": {
+      "description": "Label for button to save clip to Evernote.",
+      "message": "Tallenna leike"
+   },
+   "03ee37045f78ba987a7484aa93955fad": {
+      "description": "If enabled, it shows the partial post clip dialog that disappears after three seconds message",
+      "message": "Sulje leikkuri automaattisesti"
+   },
+   "04638478207399b478e375f779c51b8b": {
+      "description": "Label for shortcut to go to email mode",
+      "message": "Lähetä leike sähköpostilla"
+   },
+   "0512939a41a02b6f9796abbbb1fefd28": {
+      "description": "Label for shortcut to zoom out on skitch in options page",
+      "message": "Loitonna (askel)"
+   },
+   "05f0c36034a596ec304993a7e44f9ebf": {
+      "description": "Label for notebook destination in options page",
+      "message": "Muistikirjan kohde"
+   },
+   "07574accced9f8c66df362d18d55baeb": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Lisää henkilökohtainen tili"
+   },
+   "0a74dec84259cc9cc1f7f462fb2c83f0": {
+      "description": "Copy logs button text",
+      "message": "Kopioi lokit"
+   },
+   "0bced23e0866dcc535b526f9bfeae0f3": {
+      "description": "Header of the markup shortcuts on options page",
+      "message": "Merkitse:"
+   },
+   "0db377921f4ce762c62526131097968f": {
+      "description": "General tab title",
+      "message": "Yleistä"
+   },
+   "0eaed94c4da3080dd3d88f0f2bca8c23": {
+      "description": "Low disk space warning message",
+      "message": "Levytila on melkein täynnä. Yritä siivota järjestelmälevy, jotta vältyt synkronointiongelmilta."
+   },
+   "0f4e1aaabd074689b7d3ead824d1ee8e": {
+      "description": "Label for shortcut to use the skitch arrow tool in options page",
+      "message": "Nuoli"
+   },
+   "119518c2134c46108179369f0ce81fa2": {
+      "description": "Label for shortcut to use the ellipse tool in options page",
+      "message": "Ellipsi"
+   },
+   "130d74c3ba60e43c646b8d2ae2e189f7": {
+      "description": "",
+      "message": "Lisää avainsanoja"
+   },
+   "132a6fcf2bc1cb48a30be9d7a1ab65e4": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Verkkoleikkuri tunnistaa tilisi evästeiden avulla. Tarkista selaimen asetukset varmistaaksesi, että se hyväksyy kolmannen osapuolen evästeitä Evernotelta."
+   },
+   "13a4fc8dd4a0f5bedca5b998bbf299bd": {
+      "description": "Description of the multipage clip feature on the options page",
+      "message": "Leikkaa kaikki sivut yhteen muistiinpanoon."
+   },
+   "13b5bfe96f3e2fe411c9f66f4a582adf": {
+      "description": "Headline for notification indicating which notebook the clip was successfully uploaded into",
+      "message": "muistikirjaan"
+   },
+   "141c4e75277f66ff4ad4c873a45b224d": {
+      "description": "Label for shortcut to start web clipper",
+      "message": "Käynnistä Web Clipper"
+   },
+   "1713481aca8b8b7e7c9a20c88a5f029c": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zoomaa 100 %:iin"
+   },
+   "1817c60a1a4cfeeab5ca732ff13ed65a": {
+      "description": "Label for tag selection in options page",
+      "message": "Avainsanan valinta"
+   },
+   "1c5dbbd3b2f08cc4f1c3e69fb4f213fa": {
+      "description": "Error message",
+      "message": "Sivua ei voitu kaapata."
+   },
+   "1cdc076b28f70afac5fcedadf99fa119": {
+      "description": "Label for shortcut to undo skitch action in options page",
+      "message": "Kumoa"
+   },
+   "1f4f6bb6a3727e7259a572df780132e9": {
+      "description": "Low disk space warning header",
+      "message": "Levytila vähissä"
+   },
+   "248336101b461380a4b2391a7625493d": {
+      "description": "Headline for notification indicating that clip was successfully uploaded",
+      "message": "Tallennettu"
+   },
+   "24fc199b67f7441cda35e64e6791437b": {
+      "description": "Error message",
+      "message": "Et ole kirjautunut sisään Business-käyttäjänä."
+   },
+   "2506a918747c42a905823cfb1237de0d": {
+      "description": "Maintenance message",
+      "message": "Evernoten palvelimia huolletaan. Yritä myöhemmin uudelleen"
+   },
+   "25409146618d1045b8931267648a14b4": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "Kirjaudu Verkkoleikkuriin nähdäksesi aiheeseen liittyvät tulokset"
+   },
+   "264d5425cc8f76b5e6d17f800ff3439c": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Vältä käyttökiintiöt. Päivitä Evernote Plussaan saadaksesi 1 Gt latauksia kuussa."
+   },
+   "28fba1dd077f713e06c2b275512db419": {
+      "description": "Error alert message",
+      "message": "Yhteys näyttää olevan poikki."
+   },
+   "290612199861c31d1036b185b4e69b75": {
+      "description": "Amazon page section name for common product info",
+      "message": "Yhteenveto"
+   },
+   "29e9d8e295b1d5b3002d2d3d5baa4c37": {
+      "description": "Shortcuts tab title",
+      "message": "Oikotiet"
+   },
+   "2ad9808f72179d66dadfac646a9033b4": {
+      "description": "Clip is over size",
+      "message": "Leike on liian iso"
+   },
+   "2bfa5c64ad7fcb183b35841f019d04de": {
+      "description": "Label for using last used notebook in notebook selection on options page",
+      "message": "Käytä viimeksi käytettyä muistikirjaa"
+   },
+   "2c26c3d1dd3192d9ebd0d7aac2f2dd62": {
+      "description": "Untitled note title",
+      "message": "Nimetön muistiinpano"
+   },
+   "2ca1b06542d50d918871d86c34d344d9": {
+      "description": "Label for keyboard shortcut that switches accounts",
+      "message": "Tilin vaihto"
+   },
+   "2e1be05809b5b6c613abd8e791e102c2": {
+      "description": "Button for logging in as additional business user",
+      "message": "Lisää Business-tili"
+   },
+   "2e2aa75122e0f772381b5bc7a1a4fd03": {
+      "description": "Category name in destination selector",
+      "message": "Työtilat"
+   },
+   "2efd89b3ccc76b0b03a34196fc6d1c8b": {
+      "description": "Placeholder text for tag input",
+      "message": "Lisää avainsana"
+   },
+   "3049dacdbd8857b7f0d88d05364916bd": {
+      "description": "Button to dismiss near quota warning",
+      "message": "Ei nyt"
+   },
+   "32ba78fe43257d3e7f88e3935a8ea0d4": {
+      "description": "Plus account type",
+      "message": "Plus"
+   },
+   "33c1f003104421d9c01d02db1c9b467e": {
+      "description": "label of notebook author",
+      "message": "\nLuonut: {ownerName}"
+   },
+   "34dba7beda8557b9c0c5957f10095637": {
+      "description": "Options Reset button",
+      "message": "Nollaa kaikki asetukset"
+   },
+   "37c41606e05299c12b1235f52fef0df1": {
+      "description": "Warning about multipage clip",
+      "message": "Kaikkien sivujen leikkaaminen voi pidentää leikkaamisaikaa"
+   },
+   "37d535f9a08bc86377e234bfd63596ce": {
+      "description": "Placeholder text for remark input",
+      "message": "Lisää huomautus"
+   },
+   "38afb4cd458f868284f38c901da91dae": {
+      "description": "Tooltip for url clip tool",
+      "message": "Kirjanmerkki"
+   },
+   "3a7dc9e3e595892fa7e3b0baf9ca2a6b": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Esikatsele kirjanmerkki"
+   },
+   "3afbd9828e011526955ca93b48b57524": {
+      "description": "label for option in global toolbar",
+      "message": "Näyttökuva"
+   },
+   "3b575eee0fb9016019e5165f244cab09": {
+      "description": "Title for near quota message (75%)",
+      "message": "Tila on lähes lopussa"
+   },
+   "3b6c2b4caaf4f14f8d7feeddc4ac3f4d": {
+      "description": "URL for Terms of Service page (Copyright statement)",
+      "message": "Käyttöehdot"
+   },
+   "3bc79030e994de3a589719ee45a62af8": {
+      "description": "Checkbox in options page to enable keyboard shortcuts",
+      "message": "Ota pikanäppäimet käyttöön"
+   },
+   "3ceb953a91580dc2af7df397eb3e886b": {
+      "description": "Option in options page for what to show after a successful clip",
+      "message": "Leikkaamisen jälkeen"
+   },
+   "41ff79afac94b17a1d8a66c7fcc33055": {
+      "description": "Error message",
+      "message": "Tapahtui tuntematon verkkovirhe."
+   },
+   "43031118a545608417532d43c55fb9bd": {
+      "description": "Shared url copied to clipboard confirmation",
+      "message": "URL-osoite kopioitu leikepöydälle"
+   },
+   "45af78debeb1a81e5b52c9ec4bb0c6ab": {
+      "description": "Button Premium users use to confirm activity when they're near quota",
+      "message": "Vahvista toiminto"
+   },
+   "45efb362e1db04258668876dd6b68a96": {
+      "description": "Message that shows up when the clipper popup cant open.",
+      "message": "Tämä sivu on ladattava uudelleen, ennen kuin voit leikata sen. Lataa tili uudelleen ja yritä uudestaan."
+   },
+   "467c00f2c32c16d590a00e6185cb880c": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Näytä Evernote sisältö, joka liittyy internet-hakuihini."
+   },
+   "479149aec98be53057f43b5947816255": {
+      "description": "Title of the clip formats list",
+      "message": "Leikkeen muoto"
+   },
+   "4803e6b9e63dabf04de980788d6a13c4": {
+      "description": "Label for shortcut to use the line tool in options page",
+      "message": "Viiva"
+   },
+   "4ccf00154f322aeea0f82d9aaef3abb3": {
+      "description": "Message that clip is bigger than a certain number of bytes",
+      "message": "Selaimen rajoitusten takia et voi tallentaa tiedostoja, jotka ovat suurempia kuin {size}"
+   },
+   "4cf6d37f01f5e34ee848476f1bfcfb7f": {
+      "description": "Tooltip for url clip tool",
+      "message": "Leikkaa kirjanmerkki Evernoteen"
+   },
+   "4d110a7795a7e06abee1d921c1897343": {
+      "description": "Header of the clip shortcuts on options page",
+      "message": "Leike:"
+   },
+   "4dfbb099eafd3c82e033bf92946d3ce6": {
+      "description": "text for button to share clip via email",
+      "message": "Posti"
+   },
+   "510a8cb711495bfdd04c792d2fc4b0fe": {
+      "description": "label in gmail preview for the senders and threads recipients",
+      "message": "Osanottajat"
+   },
+   "52ebc26c2921d5b84fc670dff9891821": {
+      "description": "\"Zoom out\" tool title of screenshot clip format",
+      "message": "Loitonna"
+   },
+   "565e6049e93f709d8b8c65db360cdc25": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Leikkaa yksinkertaistettu artikkeli Evernoteen"
+   },
+   "56723c8751db32cf4269a36f2f57689a": {
+      "description": "Tooltip for article clip tool",
+      "message": "Leikkaa artikkeli Evernoteen"
+   },
+   "5682f20488bb59cc15b66de2d798d3ac": {
+      "description": "Header of the global shortcuts on options page",
+      "message": "Yleinen:"
+   },
+   "56f6cc60bd71efd9e23b6fff825e58e4": {
+      "description": "Label for notebooks creation button",
+      "message": "Leikkaa uuteen muistikirjaan"
+   },
+   "58b3d8603dffe8484e90c0ca371921ac": {
+      "description": "Placeholder text for the message field of the email sharing dialog",
+      "message": "Lisää viesti"
+   },
+   "592f8367bae750cc2ac3172f0598802b": {
+      "description": "Tooltip text for \"Add a reminder\" button",
+      "message": "Lisää muistutus"
+   },
+   "5a95a425f74314a96f13a2f136992178": {
+      "description": "Tooltip text for \"Share\" button",
+      "message": "Jaa"
+   },
+   "5afeaba074ef570dc720caaa855d49f6": {
+      "description": "Label for shortcut to redo skitch action in options page",
+      "message": "Tee uudelleen"
+   },
+   "5d50889672f6f860d14f502de3de1957": {
+      "description": "\"Colors\" tool title of screenshot clip format",
+      "message": "Värit"
+   },
+   "5d73f120f95121fb6cb32139c2984fd5": {
+      "description": "Error message",
+      "message": "Tapahtui palvelinvirhe."
+   },
+   "5df6b1831a1fff17541b538eab1a3ae0": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Verkkoleikkuri"
+   },
+   "5e2f8ee473fdebc99fef4dc9e7ee3146": {
+      "description": "Tooltip for article clip tool",
+      "message": "Artikkeli"
+   },
+   "5e5c6ad2fd74ca2dad8688ef22843ac0": {
+      "description": "Maintenance message",
+      "message": "Evernoten palvelimia huolletaan. Yritä myöhemmin uudelleen."
+   },
+   "5f2ef4990ea329ce9421fc1e49f0a483": {
+      "description": "Text for the screenshot toast",
+      "message": "Valitse leikattava alue tai kaappaa koko sivu napsauttamalla."
+   },
+   "62c433ad00279a269d850a82cda99ec5": {
+      "description": "Tooltip for shortcut release notes",
+      "message": "Aseta osoitin kenttään ja valitse haluamasi oikotie"
+   },
+   "63bbced1dc18e01ce3484b6800bae525": {
+      "description": "Label for shortcut to go to full page preview mode",
+      "message": "Esikatsele koko sivu"
+   },
+   "64d3dcb57b34de0750a4a0283a3307a9": {
+      "description": "Title for over quota message",
+      "message": "Tila on lopussa"
+   },
+   "64d4f6e85ad482c5cb9ba338b9600042": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Liittyvät tulokset"
+   },
+   "6614acf7e2a66dd467bd9f92ad7bb11f": {
+      "description": "Error message displayed instead of missing logs",
+      "message": "Lokitietojen lataus epäonnistui"
+   },
+   "66e72957e6c99c7e4dc16ce242801b52": {
+      "description": "Tooltip for setting a keyboard shortcut in the options page",
+      "message": "Paina näppäinyhdistelmää muuttaaksesi tätä pikavalintaa"
+   },
+   "686e697538050e4664636337cc3b834f": {
+      "description": "Create new notebook button",
+      "message": "Luo"
+   },
+   "690cfdf924145ae042df0e4888ad8dd5": {
+      "description": "Tooltip for email context menu clip",
+      "message": "Leikkaa sähköposti Evernoteen"
+   },
+   "6b76deb7d3f8000505b8017c51913daf": {
+      "description": "Error message shown when you try to clip from restricted pages",
+      "message": "Selaimen asettamien rajoituksien vuoksi et voi ottaa leikettä tästä sivusta."
+   },
+   "6ff9dd0d34f65181173c1e4bc39939de": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Valinta"
+   },
+   "70c1604b97488d413ebbbfa8ab2fe8c8": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Pienennä Verkkoleikkuri"
+   },
+   "715013803411b9eb276c002c2b3f9e82": {
+      "description": "Title of warning when a Premium user is near quota",
+      "message": "Olet ollut ahkera!"
+   },
+   "730bbb4f3457bb52d56a663e16ca76f1": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "Leikkaa PDF Evernoteen"
+   },
+   "7575dfa4ebced0ffce2a66a3e8e96f97": {
+      "description": "Explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Näytä Tallenna Evernoteen -painike PDF-sivuilla."
+   },
+   "758e33a22a3eea5e838a7075d3502f36": {
+      "description": "Button to contact customer support",
+      "message": "Ota yhteys Evernoten tukeen"
+   },
+   "75f16d5429a2cd7c8dc1e80acc7fb3bc": {
+      "description": "Label for using smart filing in notebook/tag selection on options page",
+      "message": "Käytä älykästä arkistointia"
+   },
+   "7685f0dfff3c115aae3ec299967988e0": {
+      "description": "Label for shortcut to zoom in on skitch in options page",
+      "message": "Lähennä (askel)"
+   },
+   "79bae193b5f91d31d7cf3ebe904ed548": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+{count} sivua lisää"
+   },
+   "7a207c49bca9a804f7ae3f1956d479fb": {
+      "description": "Maximum note content size is",
+      "message": "Muistiinpanon sisällön kokoraja on {size}"
+   },
+   "7b91156d64b76a5dda815937fce9119d": {
+      "description": "\"Zoom in\" tool title of screenshot clip format",
+      "message": "Lähennä"
+   },
+   "7ce91f975c8fbaa4c343cbae3fd9a1ee": {
+      "description": "Error message",
+      "message": "Todennusvirhe. Kirjaudu Evernoteen."
+   },
+   "7e1907b268e3b1261c98c5bf7a368fe5": {
+      "description": "Syncing message",
+      "message": "Synkronoidaan"
+   },
+   "7e9d5a15230c09057d559dbfa930cd91": {
+      "description": "Tags not supported text",
+      "message": "Avainsanoja ei tueta"
+   },
+   "81a4815e7de724c2cef8c8ca2b39967a": {
+      "description": "Generic error message for creating notebook",
+      "message": "Muistikirjaa luotaessa tapahtui virhe"
+   },
+   "82bdef0300a967b862631447be24890c": {
+      "description": "Page has too many resources",
+      "message": "Sivulla on liikaa resursseja, maksimi on {size}"
+   },
+   "8480e52106db88681499e53a382ee4ee": {
+      "description": "Logout button",
+      "message": "Kirjaudu ulos {email}"
+   },
+   "8524de963f07201e5c086830d370797f": {
+      "description": "Label for notebooks list is loading",
+      "message": "Ladataan..."
+   },
+   "875599a8864e3ce5f5484ddc81ceaa0c": {
+      "description": "Label for shortcut to use the stamp tool in options page",
+      "message": "Leima"
+   },
+   "898b21e58da17fb1836c96c8c4a2fd12": {
+      "description": "Label for choose destination button. Might be a space or notebook",
+      "message": "Valitse kohde..."
+   },
+   "89dc1cb58e61ef411470470fcb1779ab": {
+      "description": "Tooltip for login in context menu",
+      "message": "Kirjaudu Evernote"
+   },
+   "8af311ed12b2c28c6594621a6cf36a6c": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Valitettavasti suurin muistiinpanon koko on {size}."
+   },
+   "8b37967572ca07c35146f1ff6c825b89": {
+      "description": "Error message",
+      "message": "Vaaditaan palvelimen kirjautumistiedot."
+   },
+   "8d194edea19d05ed016383e049ea7d90": {
+      "description": "Error message shown when its not possible to refresh notebooks list",
+      "message": "Virhe päivitettäessä muistikirjoja."
+   },
+   "8d5e7e72f12067991186cdf3cb7d5d9d": {
+      "description": "Premium account type",
+      "message": "Premium"
+   },
+   "902b0d55fddef6f8d651fe1035b7d4bd": {
+      "description": "Error message header",
+      "message": "Virhe"
+   },
+   "908f8d9f34f375a55dd5b6a86489d364": {
+      "description": "text in post clip dialog when there are no related notes",
+      "message": "Ei tuloksia"
+   },
+   "909983ccb694a3711181d01fdeb74e9c": {
+      "description": "Error message",
+      "message": "Nimettyä muistikirjaa ei löydy."
+   },
+   "90c3123b6b5bce5201bf4dcdda107833": {
+      "description": "Label for shortcut to close clipper",
+      "message": "Sulje Web Clipper tai aktiivinen paneeli"
+   },
+   "90fe890b6b8f0bb0c052290c70b0840d": {
+      "description": "Tip for refresh notebooks list block",
+      "message": "Eikö kohdetta löydy?"
+   },
+   "918d6e9f6a4fc2f88f9cbcb778e68baf": {
+      "description": "Error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Pikanäppäinyhdistelmässä voi olla enintään kolme näppäintä."
+   },
+   "923195695a47153ed038da437f074da3": {
+      "description": "Error message",
+      "message": "Datarajoitus saavutettu."
+   },
+   "94966d90747b97d1f0f206c98a8b1ac3": {
+      "description": "Label for submit button on the feedback form",
+      "message": "Lähetä"
+   },
+   "950e11420880a0ec9cc27829be580e2e": {
+      "description": "Section title for search results over business notes",
+      "message": "Vastaavia tuloksia Business-muistiinpanoissa"
+   },
+   "95c65ab43cff1aa7a9111e468e7b8bef": {
+      "description": "Label for shortcut to go to text selection mode",
+      "message": "Valintatila"
+   },
+   "96bd91ed2f2958d3a0cefba9545d708d": {
+      "description": "Copy logs button title",
+      "message": "Kopioi lokit"
+   },
+   "972e73b7a882d0802a4e3a16946a2f94": {
+      "description": "Basic account type",
+      "message": "Basic"
+   },
+   "97edcf81bb86d25aafacf1ac934b7757": {
+      "description": "Error message",
+      "message": "Leikkeen leikkaaminen valittuun kohteeseen ei onnistu."
+   },
+   "9913b8f718a25b9ab5df9bbfe35b5c80": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Esittelyssä Evernote Plus ja Premium"
+   },
+   "9af7309e6c70325cd72080cd19491672": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Pahoittelemme, muistiinpanon sisällön maksimikoko on {size}."
+   },
+   "9c1f1ae3d7f326ec02e4c0909ee6e17a": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Koko sivu"
+   },
+   "9d290d3434589e33be3d2cad4f8323ec": {
+      "description": "Version label",
+      "message": "Versio:"
+   },
+   "9dffbf69ffba8bc38bc4e01abf4b1675": {
+      "description": "\"Text\" tool title of screenshot clip format",
+      "message": "Teksti"
+   },
+   "9f3a28e3b8e1ab2d39153b803136e5c4": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Ilmoita minulle…"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Leikkaa Evernoteen"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Käytä Evernote-laajennusta tallentaaksesi verkossa näkemiäsi asioita Evernote-tunnuksellesi."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "a10a9bcd450087de1ce1f80b35f44883": {
+      "description": "Legal tab title",
+      "message": "Lakitekstit"
+   },
+   "a11f4833156155211bd7b37e4d5e529c": {
+      "description": "Enable logs button titile",
+      "message": "Ota lokit käyttöön"
+   },
+   "a17cb092f1cd15bbb8fb075ca0365d1b": {
+      "description": "Error which shown when notebook has incorrect name",
+      "message": "Virheellinen muistikirjan nimi"
+   },
+   "a1c58e94227389415de133efdf78ea6e": {
+      "description": "Label for color appearance section",
+      "message": "Ulkonäkö"
+   },
+   "a1d5f2a85ad856617ebfdde9aa86d143": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Tarvitset Evernote Premiumin voidaksesi leikata {size} suurempia muistiinpanoja."
+   },
+   "a25d585ba4312bd4098406942fe27892": {
+      "description": "Notebook creation error",
+      "message": "Tämän niminen muistikirja on jo olemassa"
+   },
+   "a302191e995e9a77c23994cc1204d1a8": {
+      "description": "Category name in destination selector",
+      "message": "Muistikirjat"
+   },
+   "a41d26ca3cd0c60d01e04dee04c3442c": {
+      "description": "Message that clip is bigger than a certain number of bytes",
+      "message": "Leike ylittää {size}"
+   },
+   "a580158cf2dcbc9cbb0e8eec54283de6": {
+      "description": "Highlight removal tooltip",
+      "message": "Poista korostus napsauttamalla"
+   },
+   "ab1a6fe3a0a4aef9da01f51d1a94bd44": {
+      "description": "Label for shortcut to go to skitch mode",
+      "message": "Ota näyttökuva"
+   },
+   "ab4f22321230d8db1bca9b52a5975145": {
+      "description": "",
+      "message": "Valitse muistikirja"
+   },
+   "ad6584b1720c58e1eb70a17cc3c84b05": {
+      "description": "Label for url to clipped notebook",
+      "message": "Näytä Evernotessa"
+   },
+   "ad8783089f828b927473fb61d51940ec": {
+      "description": "label for default clip action",
+      "message": "Käytä"
+   },
+   "ae0f61643c33404bb9fec87a30825c7a": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Älä näytä enää"
+   },
+   "ae1451f8bb54e7453a21c409500bed1c": {
+      "description": "message that reminder has been added to the note",
+      "message": "Muistutus lisätty"
+   },
+   "ae5eb1c937167b51b186e27587df5a94": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Näyttökuva otettu"
+   },
+   "afa88caa9b6c3c0562dfbea054f08aca": {
+      "description": "Title for dark color mode",
+      "message": "Käytä tummaa tilaa"
+   },
+   "b00adf4f51f5e2f5090416a006cf248c": {
+      "description": "\"Highlighter\" tool title of screenshot clip format",
+      "message": "Korostin"
+   },
+   "b0f82c4aa9c1fa9d55e13f043cd0ed41": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Päivitä Premiumiin voidaksesi käyttää leikkaamiasi artikkeleita mobiililaitteessasi silloinkin, kun olet offline. Premium-käyttäjänä voit määrittää offline-muistikirjoja ja käyttää muistiinpanoja nopeasti milloin tahansa."
+   },
+   "b18d8379adbda5dc9a4634ab86001a37": {
+      "description": "Button title: \"delete clip\"",
+      "message": "Poista leike."
+   },
+   "b1d02ebd9b98631b8bc6ea490a891340": {
+      "description": "Error message",
+      "message": "Tili on tyhjennetty."
+   },
+   "b2d37ae1cedf42ff874289b721860af2": {
+      "description": "Logs tab title",
+      "message": "Lokit"
+   },
+   "b4e7fcd2cba52644a49351cd23a6f6cf": {
+      "description": "Upgrade account button",
+      "message": "Päivitä saadaksesi lisää tilaa"
+   },
+   "b5001ee43a1f9d9757caae929e1905b9": {
+      "description": "Label for shortcut to expand article selection",
+      "message": "Laajenna artikkeleiden valinta"
+   },
+   "b545fe9ce114725c7398961564ff92f8": {
+      "description": "Details of warning when a Premium is near quota",
+      "message": "Suuren sisältömäärän lisääminen lyhyessä ajassa saattaa aiheuttaa palvelun keskeytymisen. Vahvista, että nykyiset toiminnot ovat tahallisia."
+   },
+   "b5e0d53644d538a90bcedff69bd23cf0": {
+      "description": "If enabled, it shows the post clip dialog w/o related notes after a successful clip message",
+      "message": "Näytä onnistunut leikkaus-dialogi ilman asiaan liittyviä muistiinpanoja"
+   },
+   "b6908c122e0791f00fdd5433db23a4ab": {
+      "description": "Button to reset shortcuts in options page",
+      "message": "Palauta oikotiet"
+   },
+   "b702532e5dc49d52bb36a826e1c0b7cd": {
+      "description": "Message displayed during clipping process.",
+      "message": "Leikettä tallennetaan..."
+   },
+   "b78b9e865bb7e11d953601ef9cb5d2b9": {
+      "description": "\"Stamps\" tool title of screenshot clip format",
+      "message": "Leimat"
+   },
+   "b8350bead278ce9f78de740d38810adb": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Nauti lisäominaisuuksista päivittääksesi Evernote Plussaan tai Evernote Premiumiin."
+   },
+   "bbab939b5a6c6d2108323fe2e74efdb2": {
+      "description": "Label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF-sivupainike"
+   },
+   "bcd1b68617759b1dfcff0403a6b5a8d1": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "bdcf184c0d450fd4345a79857803aafe": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Avaa keskustelu Gmailissa"
+   },
+   "be9aa33d53323f3bced7faea345eaeb4": {
+      "description": "label for last used clip action option in options page",
+      "message": "Käytä viimeksi käytettyä leikkeen muotoa"
+   },
+   "be9bffbf4f5a8a0a22de1561eabd0576": {
+      "description": "Label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Siirrä artikkelivalintaa ylöspäin"
+   },
+   "bf25911c78c13e56ee2b778aac3f0d26": {
+      "description": "Error message",
+      "message": "Tapahtui sisäinen virhe."
+   },
+   "bf5d28973f9366faafa89b7401f7c08b": {
+      "description": "Title for light color mode",
+      "message": "Käytä vaaleaa tilaa"
+   },
+   "c0552276a3b1d8a40d4968b8cf36cdec": {
+      "description": "Label for shortcut to go to pdf mode",
+      "message": "PDF-leike"
+   },
+   "c274e58f3d9093760405232347bf95d1": {
+      "description": "Label for shortcut to select all markup objects in options page",
+      "message": "Valitse kaikki merkittävät objektit"
+   },
+   "c2a96c73e26b3ce2442e74d5bd7d5f52": {
+      "description": "Too many resources",
+      "message": "Liikaa resursseja"
+   },
+   "c2e9e924f62423374f58330185fbf5ab": {
+      "description": "If enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Näytä onnistunut leikkaus-dialogi"
+   },
+   "c3ffa4fc7cd3454d6993b02f9ccae1ae": {
+      "description": "Label for specifying default clipping action",
+      "message": "Oletusleiketoiminto"
+   },
+   "c4784a71adc8a196ab74d80c8ed8eb20": {
+      "description": "Error when user hits the notebook amount limit",
+      "message": "Muistikirjojen enimmäismäärä on täynnä"
+   },
+   "c65fbb990d50a44bed795641cfbe75a8": {
+      "description": "Error message",
+      "message": "Vaaditaan Business-kirjautumistiedot."
+   },
+   "c8a59e7135a20b362f9c768b09454fdb": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Hylkää"
+   },
+   "c9cc8cce247e49bae79f15173ce97354": {
+      "description": "Label for button to save clip to Evernote.",
+      "message": "Tallenna"
+   },
+   "cae8d14edd025e72c59dbab6f378c95a": {
+      "description": "Notebook creator name, when notebook is created by you",
+      "message": "Sinä"
+   },
+   "cb167cf4f8abd63f31fa696cd07e2710": {
+      "description": "Section title for search results over personal notes",
+      "message": "Vastaavia tuloksia henkilökohtaisissa muistiinpanoissa"
+   },
+   "cc82fb8d261fb7a98fa35e7f5da86b46": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Ei liittyviä tuloksia muistiinpanoissasi"
+   },
+   "cd4db2784af5640685fce0148df3f2b2": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Valitse kaikki viestit"
+   },
+   "ce8ae9da5b7cd6c3df2929543a9af92d": {
+      "description": "label for option in global toolbar",
+      "message": "Sähköposti"
+   },
+   "ce9291906a4c3b042650b70d7f3b152e": {
+      "description": "Label for shortcut to use the rectangle tool in options page",
+      "message": "Suorakaide"
+   },
+   "d08e76a24ebef7ded34bbdba6360fdad": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Liekkaa pöytätietokoneessa, lue puhelimessa"
+   },
+   "d103f08d0813b7b35607f2456f5798d5": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Verkkoleikkuri tarvitsee evästeitä toimiakseen kunnolla. Ota evästeet käyttöön selaimen asetuksista."
+   },
+   "d388632d05e8826abe4b95de0b110529": {
+      "description": "\"Crop\" tool title of screenshot clip format",
+      "message": "Rajaa"
+   },
+   "d3b21c087ca7dd2561109888011bc0fc": {
+      "description": "",
+      "message": "Web Clipper käyttää seuraavaa avoimen lähdekoodin ohjelmistoa"
+   },
+   "d3de52109c609784f2e4a28d0e9fdb97": {
+      "description": "Copy logs button title",
+      "message": "Valmis!"
+   },
+   "d417daa3bf3cb7eef2d5d0712667e27f": {
+      "description": "Loading Web Clipper title",
+      "message": "Verkkoleikkuria ladataan..."
+   },
+   "d63969ccdb3a08c0d9e245beb519dc3f": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Leikkaa koko sivu Evernoteen"
+   },
+   "d6583168b9ae91803da650349dd832f0": {
+      "description": "Placeholder text for tag input limit",
+      "message": "Kiintiö on täynnä"
+   },
+   "d6b258792ff06f82933c74eeb8aef591": {
+      "description": "Title of the organization clip section",
+      "message": "Järjestys"
+   },
+   "d6e6cb19e3b9c02f89d6cd54cfa7c613": {
+      "description": "Business account type",
+      "message": "Business"
+   },
+   "d789051183dace04ff2791ed4c12ffb2": {
+      "description": "button to add date to reminder",
+      "message": "Lisää päivämäärä"
+   },
+   "d7a1efc480004d357f4c4f9ec9bd3cf2": {
+      "description": "Error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Kaksi oikotietä on ristiriidassa keskenään."
+   },
+   "da31380170c9345c63b5b82bddf439b5": {
+      "description": "Label for the related notes tab",
+      "message": "Liittyvät muistiinpanot"
+   },
+   "db9c60df11aa671c7c123e7c56bf27a1": {
+      "description": "Label for multipage clips feature toggle",
+      "message": "Usean sivun leikkeet"
+   },
+   "de24b749138b4e1196d32437c5376c2e": {
+      "description": "Label for shortcut to contract article selection",
+      "message": "Supista artikkeleiden valinta"
+   },
+   "dec8a8ad499b0b7c3c2b175379f36882": {
+      "description": "Copyright statement",
+      "message": "Copyright {0} Evernote Corporation. Kaikki oikeudet pidätetään."
+   },
+   "e03d19fb7bfcac5a4f319658a41c4676": {
+      "description": "button to set reminder for one week from now",
+      "message": "Viikon kuluessa"
+   },
+   "e129ae480280e47ef82fc7702f8321ba": {
+      "description": "Text for refresh notebooks list button",
+      "message": "Päivitä lista"
+   },
+   "e3469d1713b6e0123cb7794d854d39d8": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Leikkaa valikoima Evernoteen"
+   },
+   "e46b8ed01e2b907944e68d56969c0166": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Tarvitset Evernote Plussan tai Evernote Premiumin voidaksesi leikata {size} suurempia muistiinpanoja."
+   },
+   "e4a7c421716ffbdb0b15f93f1e535fb7": {
+      "description": "Error message",
+      "message": "Käyttäjäkiintiö saavutettu."
+   },
+   "e613048dd569aa364c34f34f17c32c4f": {
+      "description": "Label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Siirrä artikkelivalintaa alaspäin"
+   },
+   "e7ee6a7ae0e6f824f5609c7bdac34375": {
+      "description": "\"Shapes\" tool title of screenshot clip format",
+      "message": "Muodot"
+   },
+   "e8cbe95de3df04d77fb43bd674a44d52": {
+      "description": "Sign in user prompt",
+      "message": "Kirjaudu tilille {accountName}..."
+   },
+   "ea4788705e6873b424c65e91c2846b19": {
+      "description": "Label for button to cancel screenshot waiting mode.",
+      "message": "Peruuta"
+   },
+   "eb26e4c764a92acb12a713e1e99b42a4": {
+      "description": "Error message when user tries to use forbidden shortcut",
+      "message": "{key} ei ole käytettävissä tässä oikotiessä"
+   },
+   "ebb54dcac10c133f63a2ebeed6576aa8": {
+      "description": "Title for near quota message (50%)",
+      "message": "Olet käyttänyt 50 % kuukausittaisesta lähetyskiintiöstäsi"
+   },
+   "ede099ef4618afd096177ccb467e265e": {
+      "description": "\"Pixelate\" tool title of screenshot clip format",
+      "message": "Pikselöi"
+   },
+   "ee18738a0b8371049dd9f61de9f3b7ce": {
+      "description": "Label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Pyöreäkulmainen suorakaide"
+   },
+   "eedddedd3a5fa57919dccaf7f06b7fa0": {
+      "description": "Error message",
+      "message": "Palvelimeen ei saada yhteyttä."
+   },
+   "ef625483f5a71982de118435c88ffcfa": {
+      "description": "Placeholder text for the recipient field of the email sharing dialog",
+      "message": "Syötä sähköpostiosoite (-osoitteet)"
+   },
+   "f00832f73216fb5d315bc3b43bbf8425": {
+      "description": "message when shared notebook's permissions were changed",
+      "message": "Sinulla ei ole enää lupaa leikata nimeämääsi muistikirjaan {name}"
+   },
+   "f02654025ee9aefddb18a2c4b6da5ee7": {
+      "description": "Disable logs button title",
+      "message": "Poista lokit käytöstä"
+   },
+   "f02b140d13bec3363889800fed4fa3dc": {
+      "description": "Message that shows up when the clipper popup cant open.",
+      "message": "Tämä sivu on ladattava uudelleen, ennen kuin voit leikata sen. Lataa tili uudelleen ja yritä uudestaan"
+   },
+   "f0523eb071ac6e3011fc716c84d9380d": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Yksinkertaistettu artikkeli"
+   },
+   "f0a924260b5110bd3da35db944239644": {
+      "description": "Placeholder for notebooks creation field",
+      "message": "Anna muistikirjan nimi"
+   },
+   "f3671b1ae90e4547655f9b55a106a812": {
+      "description": "button to set reminder for one week from now",
+      "message": "Poista muistutus"
+   },
+   "f3b9de34364942606ebb991132523f83": {
+      "description": "Error message",
+      "message": "Tapahtui tuntematon virhe."
+   },
+   "f4f70727dc34561dfde1a3c529b6205c": {
+      "description": "Title of the settings page",
+      "message": "Asetukset"
+   },
+   "f63ca3deba069ca98f9c093f7fafa444": {
+      "description": "Label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Zoomaa näkymän kokoiseksi"
+   },
+   "f683581d3e75f05f9d9215f9b4696cef": {
+      "description": "Upgrade account button",
+      "message": "Päivitä"
+   },
+   "f7afb8f40c06b09fff87db452e780c21": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Kopioi leikepöydälle"
+   },
+   "f80a1a821f2881d5e6a84ff064100980": {
+      "description": "Tooltip for screenshot context menu clip",
+      "message": "Leikkaa näyttökuva Evernoteen"
+   },
+   "f8219e58d07c30641348048defa81b71": {
+      "description": "Tooltip for image context menu clip",
+      "message": "Leikkaa kuva Evernoteen"
+   },
+   "fa2ead697d9998cbc65c81384e6533d5": {
+      "description": "Privacy Policy tab title",
+      "message": "Yksityisyyden suoja"
+   },
+   "fe7668df3ce773632dc8b4ef195b0f77": {
+      "description": "Error message",
+      "message": "Palvelin kieltää toiminnon."
+   },
+   "fe77d5fbcd090fab788da6c4dc21d288": {
+      "description": "Label for notebooks search field",
+      "message": "Etsi..."
+   },
+   "feb2d54240cb6cb8c3aa2248d542c8b6": {
+      "description": "Clipper options link text",
+      "message": "Verkkoleikkurin asetukset"
+   },
+   "ff320e0ba6fcb304629771b61b860a25": {
+      "description": "Message for error that prevents showing an UI",
+      "message": "Verkkoleikkurissa on ilmennyt virhe"
+   },
+   "ff3f0be60b1782641b65360e3505fc83": {
+      "description": "Error alert message",
+      "message": "Muistiinpanosi lähetetään, kun laitteellasi on Internet-yhteys."
+   },
+   "ff7515fd682357564feb5a60ed45a863": {
+      "description": "Council for improvement of user experience",
+      "message": "Vinkki: voit panoroida pitämällä Ctrl-näppäintä napsauttaessasi"
+   },
+   "ff7b6e10f4d999b0b0b7c41127dd1779": {
+      "description": "Label for shortcut to go to article preview mode",
+      "message": "Esikatsele artikkeli"
+   },
+   "ff9eb8bd8c927da073cea632f294e23b": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Huomenna"
+   }
+}

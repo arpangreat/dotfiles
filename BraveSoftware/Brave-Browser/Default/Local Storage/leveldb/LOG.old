@@ -1,0 +1,30 @@
+2021/07/25-09:31:41.936 3 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/07/25-09:31:41.939 3 Recovering log #1177
+2021/07/25-09:31:41.940 3 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/001177.log 
+2021/07/25-10:11:04.475 7 Level-0 table #1182: started
+2021/07/25-10:11:04.479 7 Level-0 table #1182: 17181 bytes OK
+2021/07/25-10:11:04.482 7 Delete type=0 #1177
+2021/07/25-11:37:04.475 4d Level-0 table #1184: started
+2021/07/25-11:37:04.488 4d Level-0 table #1184: 16724 bytes OK
+2021/07/25-11:37:04.492 4d Delete type=0 #1181
+2021/07/25-13:05:14.952 8b Level-0 table #1186: started
+2021/07/25-13:05:14.965 8b Level-0 table #1186: 15077 bytes OK
+2021/07/25-13:05:14.969 8b Delete type=0 #1183
+2021/07/25-13:53:04.476 9c Level-0 table #1188: started
+2021/07/25-13:53:04.479 9c Level-0 table #1188: 17408 bytes OK
+2021/07/25-13:53:04.483 9c Delete type=0 #1185
+2021/07/25-13:53:04.484 9c Compacting 4@0 + 1@1 files
+2021/07/25-13:53:04.538 9c Generated table #1189@0: 2989 keys, 1435213 bytes
+2021/07/25-13:53:04.538 9c Compacted 4@0 + 1@1 files => 1435213 bytes
+2021/07/25-13:53:04.540 9c compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/25-13:53:04.542 9c Delete type=2 #1188
+2021/07/25-13:53:04.542 9c Delete type=2 #1186
+2021/07/25-13:53:04.542 9c Delete type=2 #1179
+2021/07/25-13:53:04.542 9c Delete type=2 #1182
+2021/07/25-13:53:04.542 9c Delete type=2 #1184
+2021/07/25-16:06:04.477 dc Level-0 table #1191: started
+2021/07/25-16:06:04.480 dc Level-0 table #1191: 14889 bytes OK
+2021/07/25-16:06:04.483 dc Delete type=0 #1187
+2021/07/25-17:33:04.474 119 Level-0 table #1193: started
+2021/07/25-17:33:04.487 119 Level-0 table #1193: 14815 bytes OK
+2021/07/25-17:33:04.490 119 Delete type=0 #1190

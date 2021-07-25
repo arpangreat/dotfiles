@@ -1,0 +1,14 @@
+{
+   "content_scripts": [ {
+      "js": [ "githubInlineTipping.bundle.js" ],
+      "matches": [ "https://github.com/*", "https://www.github.com/*", "https://gist.github.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en_US",
+   "description": "",
+   "incognito": "not_allowed",
+   "key": "nLPlyXaUfudFd4b9pt1gN+hzrFbdfFkViKs058Hhi0g=",
+   "manifest_version": 2,
+   "name": "greaselion-1",
+   "version": "1.0"
+}

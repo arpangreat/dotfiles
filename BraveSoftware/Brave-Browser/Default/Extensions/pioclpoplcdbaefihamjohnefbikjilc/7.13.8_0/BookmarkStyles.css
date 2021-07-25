@@ -1,0 +1,110 @@
+body.dark {
+  background-color: #1A1A1A;
+  color: white; }
+  body.dark .link a {
+    color: #1191F6; }
+  body.dark .evernoteBookmarkWrap .bookmarkBody {
+    border-top: 1px solid #333; }
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+  font-family: Arial, sans-serif; }
+
+.evernoteBookmarkWrap .evernoteBookmarkContainer {
+  display: block;
+  height: 100%; }
+
+.evernoteBookmarkWrap .mvlspace-15 {
+  margin-left: 15px; }
+
+.evernoteBookmarkWrap .mvlspace-10 {
+  margin-left: 10px; }
+
+.evernoteBookmarkWrap .title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.evernoteBookmarkWrap img {
+  max-width: 180px;
+  display: none; }
+
+.evernoteBookmarkWrap img[src] {
+  display: inline-block;
+  vertical-align: top; }
+
+.evernoteBookmarkWrap iframe {
+  font-size: 12px;
+  flex-basis: 360px;
+  max-width: 360px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.evernoteBookmarkWrap .bookmarkBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  padding-top: 15px;
+  border-top: 1px solid #D3D6D8;
+  height: 100%; }
+  .evernoteBookmarkWrap .bookmarkBody > img {
+    width: 180px;
+    height: 180px; }
+
+.evernoteBookmarkWrap .bookmarkBody .bookmarkBodyContent, .evernoteBookmarkWrap iframe .bookmarkBodyContent {
+  flex: 1 1 auto;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%; }
+
+.evernoteBookmarkWrap .bookmarkBody .link, .evernoteBookmarkWrap iframe .link {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 15px; }
+  .evernoteBookmarkWrap .bookmarkBody .link img, .evernoteBookmarkWrap iframe .link img {
+    max-width: 16px; }
+
+.evernoteBookmarkWrap .bookmarkBody .snippet, .evernoteBookmarkWrap iframe .snippet {
+  white-space: normal;
+  font-size: 12px;
+  overflow: hidden;
+  height: 200px;
+  line-height: 150%; }
+
+@media (max-width: 288px) {
+  .evernoteBookmarkWrap img {
+    width: 90px; } }
+
+@media (min-width: 288px) {
+  .evernoteBookmarkWrap img {
+    width: 90px; } }
+
+@media (min-width: 369px) {
+  .evernoteBookmarkWrap img {
+    width: 115px; } }
+
+@media (min-width: 476px) {
+  .evernoteBookmarkWrap img {
+    width: 148px; } }
+
+@media (min-width: 576px) {
+  .evernoteBookmarkWrap img {
+    width: 180px; } }
+

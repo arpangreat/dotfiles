@@ -1,0 +1,1412 @@
+{
+   "contextmenu_add": {
+      "message": "Találat hozzáadása"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Könyvjelző hozzáadása"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Könyvjelzőkezelő"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Könyvjelzők ellenőrzése"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Összes mappa bezárása"
+   },
+   "contextmenu_copy": {
+      "message": "URL vágólapra másolása"
+   },
+   "contextmenu_current_tab": {
+      "message": "Megnyitás a jelenlegi lapon"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Könyvjelző törlése"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Mappa törlése"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Elválasztó törlése"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Könyvjelző szerkesztése"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Mappa szerkesztése"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Választó szerkesztése"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Elrejtés az oldalsávból"
+   },
+   "contextmenu_infos": {
+      "message": "Információ"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Gyorsbillentyűk"
+   },
+   "contextmenu_new_tab": {
+      "message": "Megnyitás új fülön"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Megnyitás új inkognitó ablakban"
+   },
+   "contextmenu_new_window": {
+      "message": "Megnyitás új ablakban"
+   },
+   "contextmenu_open_children": {
+      "message": "Megnyitás"
+   },
+   "contextmenu_pin": {
+      "message": "Tetőhöz rögzítés"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Oldalsáv újratöltése"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Mutatás mappában"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Mutatás oldalsávban"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Mutassa a rejtett találatokat"
+   },
+   "contextmenu_unpin": {
+      "message": "Eltávolítás a tetőről"
+   },
+   "contribute_intro": {
+      "message": "A bővítmény hatékonyabb működéséhez szükség lenne a használati szokások és a konfigurációk ismeretére"
+   },
+   "contribute_notice": {
+      "message": "A számítógép konfigurációja megosztásával segíthet nekem jobbá tenni az alkalmazást."
+   },
+   "contribute_outro": {
+      "message": "Ha kérdése vagy fenntartásai vannak az adatok megosztását illetően, akkor kérem küldjön üzenetet."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Névtelenül megoszthatja az oldalsávban végzett tevékenységét, ezzel segítve a felhasználási szokások jobb megismerését. A könyvjelzőit és a meglátogatott weboldalakat [b]nem osztja meg[/b]"
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Ez az információ nagyon hasznos a felhasználással vagy a ritkán használt funkciókkal kapcsolatos hibák azonosításában"
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Mennyi könyvjelzője van a felhasználóknak általában ?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Milyen operációs rendszert használnak (Windows, Max, Linux, ...) ?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Használják-e a keresés funkciót ?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Használják-e a könyvjelzőknél a rendezési lehetőséget ?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Milyen gyakran rendezik át a bejegyzések sorrendjét vagy szerkesztik azokat ?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Megosztott adatok például:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Tevékenység megosztása"
+   },
+   "contribute_share_config_desc": {
+      "message": "A konfiguráció megosztása anonim, de segít vele megtalálni a népszerű beállításokat és kitalálni, hogyan lehetne tovább javítani rajtuk"
+   },
+   "contribute_share_config_label": {
+      "message": "Konfiguráció megosztása"
+   },
+   "extension_desc": {
+      "message": "Hozzáad egy oldalsávot az összes könyvjelződdel a képernyőd oldalára"
+   },
+   "extension_last_update": {
+      "message": "Utoljára frissítve: {1}"
+   },
+   "extension_name": {
+      "message": "Könyvjelző oldalsáv"
+   },
+   "extension_version": {
+      "message": "Verzió"
+   },
+   "header_bookmarks": {
+      "message": "Könyvjelzők"
+   },
+   "header_bookmarks_single": {
+      "message": "Könyvjelző"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Az egér alatti elem címének másolása"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Az egér alatti elem eltávolítása"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Kattintás az egér alatti elemen"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Oldalsáv, réteg vagy helyi menü bezárása"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Parancs"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Törlés"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Fül"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Helyi menü megnyitása az egér alatti elemen"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Előző vagy következő elem kijelölése."
+   },
+   "more_link": {
+      "message": "Tudj meg többet"
+   },
+   "newtab_fallback_desc": {
+      "message": "Helyette megnyitottunk egy üres fület az oldalsávval."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Az oldalsáv nem használható a bővítmények saját oldalain"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Valami blokkolta az oldalsávot"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Az oldalsáv nem használható az alapértelmezett Új lapon"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Az oldalsáv nem használható a {browserName} saját oldalain"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Az egyik URL szabály meggátolta az oldalsáv megnyitását"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Az oldalsáv nem használható a {browserName} áruházban"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Mindig mutassa ezt az oldalt egy új fül megnyitásakor"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Weboldal ikon megjelenítése"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Weboldal előnézet"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Egyedi rácsok"
+   },
+   "newtab_grid_links_default": {
+      "message": "Fontosabb lapok"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Rács mérete"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Ne mutassa a lapokat"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Legtöbbet használt könyvjelzők"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Nemrég használt könyvjelzők"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Felhasználó által hozzáadott"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Cím"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "Honlap URL-címe"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "Keresési eredmények URL-címe"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Keresőmotor"
+   },
+   "newtab_search_field_hide": {
+      "message": "Keresés elrejtése"
+   },
+   "newtab_search_field_show": {
+      "message": "Keresés megjelenítése"
+   },
+   "newtab_search_placeholder": {
+      "message": "Keresés {1} vagy gépelje be a címet"
+   },
+   "newtab_speech_search_error": {
+      "message": "A beszédkeresés engedélyezéséhez engedélyeznie kell a mikrofon hozzáférését."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Most beszélj"
+   },
+   "newtab_title": {
+      "message": "Új fül"
+   },
+   "newtab_upload_background": {
+      "message": "Háttérkép feltöltése"
+   },
+   "onboarding_finish_desc": {
+      "message": "Használja örömmel."
+   },
+   "onboarding_finish_notice": {
+      "message": "Ha gyakran kattint az oldal {1} szélén, megváltoztathatja hogy függőlegesen hol nyíljon meg az oldalsáv, hogy elkerülje a véletlen megnyitást."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Megjelenés beállítása"
+   },
+   "onboarding_goto_settings": {
+      "message": "Még több beállítás"
+   },
+   "onboarding_handson_desc": {
+      "message": "Most kipróbálhatja saját maga."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Kattintson a bővítmény ikonjára a megnyitáshoz"
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Vigye a kurzort a {1} szélre"
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Aztán {1} kattintással megnyithatja az oldalsávot"
+   },
+   "onboarding_headline": {
+      "message": "Köszönjük hogy telepítette ezt a bővítményt."
+   },
+   "onboarding_left": {
+      "message": "bal"
+   },
+   "onboarding_right": {
+      "message": "jobb"
+   },
+   "onboarding_setup": {
+      "message": "Beállítások elvégzése most"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Hogyan szeretné megnyitni az oldalsávot ?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Hol szeretné használni az oldalsávot?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Sötét"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Melyik stílust szeretné ?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Világos"
+   },
+   "onboarding_skip": {
+      "message": "Beállítások kihagyása"
+   },
+   "onboarding_title": {
+      "message": "Beállítások"
+   },
+   "overlay_add_position": {
+      "message": "Pozíció"
+   },
+   "overlay_add_position_append": {
+      "message": "A könyvtár mögé"
+   },
+   "overlay_add_position_prepend": {
+      "message": "A könyvtár elé"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "További információ"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Készült"
+   },
+   "overlay_bookmark_title": {
+      "message": "Cím"
+   },
+   "overlay_bookmark_url": {
+      "message": "Link"
+   },
+   "overlay_bookmark_views": {
+      "message": "Megtekintések"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "havonta"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Ekkor hozzáadott"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Megtekintés"
+   },
+   "overlay_cancel": {
+      "message": "Mégsem"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Könyvjelzők címének ellenőrzése"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Megszűnt"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Megváltozott"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Dupla"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Üres könyvtárak"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Minden könyvjelző címe jó"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Nincs megszűnt könyvjelző"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Nincs megváltozott könyvjelző"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Nincs dupla könyvjelző"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Nincsenek könyvjelzők nélküli könyvtárak"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Eltávolítás kiválasztva"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Frissítés kiválasztva"
+   },
+   "overlay_close": {
+      "message": "Bezárás"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Biztosan meg akarod nyitni mind a {1} könyvjelzőt"
+   },
+   "overlay_delete": {
+      "message": "Törlés"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Biztosan törölni akarod ezt a könyvjelzőt?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Biztosan törölni akarod ezt a mappát?"
+   },
+   "overlay_dir_children": {
+      "message": "Elemek"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Könyvjelzők"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Mappák"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Biztosan el akarod rejteni az oldalsávból ezt a könyvjelzőt?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Biztosan el akarod rejteni az oldalsávból ezt a mappát?"
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Elrejtés az oldalsávból"
+   },
+   "overlay_label_bookmark": {
+      "message": "Könyvjelző"
+   },
+   "overlay_label_dir": {
+      "message": "Mappa"
+   },
+   "overlay_label_separator": {
+      "message": "Elválasztó"
+   },
+   "overlay_open_children": {
+      "message": "Mindegyik megnyitása"
+   },
+   "overlay_save": {
+      "message": "Mentés"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Hozzáadhat címet az elválasztóhoz. Ez jelenik meg az elválasztósor tetején, és segít a könyvjelzőlista rendezésében."
+   },
+   "overlay_update": {
+      "message": "Frissítés"
+   },
+   "premium_activate": {
+      "message": "Prémium előfizetés aktiválása"
+   },
+   "premium_already_activated": {
+      "message": "Már prémium előfizetést használ"
+   },
+   "premium_desc_1": {
+      "message": "A prémiummal további funkciókat érhetsz el és segítesz a bővítmény fenntartásában."
+   },
+   "premium_desc_2": {
+      "message": "A prémium kategóriájában található funkciók megtekinthetők. A bővítmények minden fontos funkciója szabadon használható és egyáltalán nem igényel prémium előfizetést. Ha akarsz fizethetsz, ha úgy gondolod, hogy a kiterjesztés és a munkám megéri és hogy hozzáférjél ezekhez a funkciókhoz."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Ha ennek a bővítménynek az Új lap lapját használja, beállíthatja saját háttérképét, hogy még szebbé váljon."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Az Új lap testreszabása"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Ha ismeri a CSS-t, megváltoztathatja az oldalsáv teljes megjelenését a saját stílusmeghatározásai hozzáadásával. Ez lehetővé teszi, hogy mindent testreszabjon."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Testre szabhat mindent a saját stíluslapjával."
+   },
+   "premium_feature_early_access_desc": {
+      "message": "A prémium előfizetéssel hozzáférést kaphat a jelenleg még nem ismert szolgáltatásokhoz, amelyek jelenleg fejlesztés alatt vagy tesztelés alatt állnak."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Legyen az első, aki az új kísérleti funkciókat kipróbálja"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Importálja és exportálja a beállításait"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "A jobb oldali egérgombbal kattintson bármelyik könyvtárra az oldalsávon, és ellenőrizheti azt. Az eredményoldal az összes frissített URL-t, a már nem működő könyvjelzőket és az azonos URL-címmel rendelkező könyvjelzőket jeleníti meg."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Ellenőrizze a könyvjelzőket hibás linkek vagy másolatok esetén"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Bármikor megváltoztathatja az oldalsáv szélességét"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Egyetlen kattintással megváltoztathatja az oldalsáv témáját ha egy újat telepít. És azok is személyre szabhatóak a rendelkezésre álló csúszkákkal és színválasztókkal."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Változtassa meg az oldalsáv kinézetét"
+   },
+   "premium_get_now": {
+      "message": "Kérem a prémium előfizetést most"
+   },
+   "premium_license_key": {
+      "message": "Licensz kulcs"
+   },
+   "premium_pay_buy": {
+      "message": "Vásárolj prémium hozzáférést"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Lemondási feltételek"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Vásárlás megerősítése"
+   },
+   "premium_pay_contact": {
+      "message": "Ha bármilyen problémája van a fizetéssel kapcsolatban, vagy bármilyen kérdése van, kérjük, lépjen velem kapcsolatba a következő címen: {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Hitel vagy betéti kártyával"
+   },
+   "premium_pay_eula": {
+      "message": "Végfelhasználói szerződés"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Elolvastam és elfogadom a [a]végfelhasználói szerződést[/a]."
+   },
+   "premium_pay_info_card_expires": {
+      "message": "A kártya érvényessége"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Kártyaszám"
+   },
+   "premium_pay_info_email": {
+      "message": "E-mail"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Kérjük, adja meg e-mail címét, hogy megkapja a licenckulcsot."
+   },
+   "premium_pay_info_name": {
+      "message": "Név"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Fizetési mód"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Irányítószám"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Válassza ki a fizetési módot alább és a következő lépésben írja be a fizetni kívánt összeget."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Ha egy másik eszközön {1} szeretné aktiválni, vagy a bővítmény újratelepítését követően beírhatja a következő kulcsot a bővítmény beállításaihoz:"
+   },
+   "premium_pay_price_info": {
+      "message": "Ez egyszeri díj, és tartalmazza a jövőbeni prémium funkciókat is."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "A prémium tulajdonságok eléréséhez tetszőleges összeggel támogathat, pont amennyire Ön számára értékes ez a bővítmény."
+   },
+   "premium_pay_price_total": {
+      "message": "Összesen"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Vásárlás azonosító"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Válasszon fizetési módot"
+   },
+   "premium_pay_success_headline": {
+      "message": "Köszönöm a vásárlást"
+   },
+   "premium_pay_success_info": {
+      "message": "A (z) {1} automatikusan aktiválva lett az eszközhöz. Nem kell további lépéseket tennie."
+   },
+   "premium_pay_verifying": {
+      "message": "Tranzakció ellenőrzése"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "A folytatáshoz olvassa le ezt a QR-kódot a WeChat programban."
+   },
+   "premium_pay_what_you_want": {
+      "message": "Fizessen amennyit akar"
+   },
+   "premium_popup_text": {
+      "message": "Megnézte már a prémium mód előnyeit?"
+   },
+   "premium_restricted_text": {
+      "message": "Ez a funkció csak prémium felhasználóknak érhető el."
+   },
+   "premium_show_license_input": {
+      "message": "Már van prémium előfizetésem"
+   },
+   "settings_advanced": {
+      "message": "További beállítások"
+   },
+   "settings_available_themes": {
+      "message": "Rendelkezésre álló témák"
+   },
+   "settings_background_blur": {
+      "message": "Háttér elmosódottsága"
+   },
+   "settings_background_transparency": {
+      "message": "Háttér átlátszósága"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Mappa ikon színe"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Mappa ikon"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Mappák tagolása"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Könyvjelző betű mérete"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Könyvjelzők vízszintes eltolása"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Könyvjelző ikon mérete"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Könyvjelzők sortávolsága"
+   },
+   "settings_close_timeout": {
+      "message": "Bezárás ideje"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Késleltetés ideje, amely után az oldalsáv bezáródik. Onnantól számolódik, amikortól az egér elhagyja az oldalsáv területét."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Ne zárja be automatikusan"
+   },
+   "settings_color_scheme": {
+      "message": "Szín séma"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Az oldalsáv fejlécének, jelölőnégyzeteinek, stb. színe"
+   },
+   "settings_custom_css": {
+      "message": "Egyéni stílus"
+   },
+   "settings_custom_css_desc": {
+      "message": "Az alapértelmezett helyett beállíthatja a saját stílusát. Csak akkor használja, ha ismerős CSS körökben és tudja mit csinál."
+   },
+   "settings_dark_mode": {
+      "message": "Felület"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Változtassa meg az oldalsáv kinézetét"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Rengeteg módon testreszabhatja az oldalsáv kinézetét. Beállíthatja a betűméretet, sorközöket, színeket, ikonokat és így tovább. Előre definiált beállításokat is használhat, hogy villámgyorsan tudja saját igényeire szabni az oldalsávot."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Állítsa be az oldalsáv viselkedését"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Több módon is testreszabhatja a bővítményt. Például hogyan jelenjen meg az oldalsáv vagy hogyan nyíljanak meg a könyvjelzők. Ha nem akarja hogy az oldalsáv minden lapon betöltődjön, azt is beállíthatja különféle szabályokkal."
+   },
+   "settings_dir_accordion": {
+      "message": "Csak az aktuális mappa megjelenítése"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Az aktuálison kívül minden más mappát összezár"
+   },
+   "settings_directories_icon_size": {
+      "message": "Mappa ikon mérete"
+   },
+   "settings_directory_arrows": {
+      "message": "Könyvtár nyilak"
+   },
+   "settings_expert_save_error": {
+      "message": "Nem sikerült menteni a beállításokat. Kérjük, javítsa ki a bevitelt."
+   },
+   "settings_expert_settings_desc": {
+      "message": "A szakértői beállítások lehetővé teszik a bővítmény minden konfigurációs jelzőjének beállítását, még akkor is, ha nem módosíthatja a beállításoldalak rendszeres jelölőnégyzeteit vagy csúszkáit."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Kérjük, csak itt változtassa meg az értékeket, ha tudja, mit csinál. A hibás konfigurációk a bővítmény váratlan viselkedését okozhatják. Ha valami megszakad, visszatérhet az alapértelmezett konfigurációhoz."
+   },
+   "settings_export": {
+      "message": "Beállítások exportálása"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Csak egy webcímet adjon hozzá soronként"
+   },
+   "settings_filter_explanation_2": {
+      "message": "Használja a *-ot a webcím maszkolására.( Pl. a example.com/* a example.com alatti összes lapot jelenti)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Ha nem használja a *-ot a webcím maszkolására, akkor csak a megadott webcímmel pontosan egyező lap kerül szűrésre (Pl. a \"example.com\" nem fogja kiszűrni a \"example.com/about.html\" lapot)"
+   },
+   "settings_filter_explanation_4": {
+      "message": "A szabályban a protokolt nem kell hozzátenni a címhez (pl. http://)."
+   },
+   "settings_filter_intro": {
+      "message": "Ha nem szeretné, hogy az oldalsáv minden lapon betöltődjön, akkor beállíthat engedélyező listát vagy tiltólistát is."
+   },
+   "settings_filter_rules": {
+      "message": "Webcím maszkok"
+   },
+   "settings_filter_visibility": {
+      "message": "Oldalsáv betöltése"
+   },
+   "settings_filter_visibility_always": {
+      "message": "Minden lapon"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "Minden lapon, kivéve a megadott lapokat"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Csak a megadott lapokon"
+   },
+   "settings_font_family": {
+      "message": "Betűtípus"
+   },
+   "settings_font_family_default": {
+      "message": "Alapértelmezett"
+   },
+   "settings_font_family_desc": {
+      "message": "Az oldalsáv és az overlay betűtípusa"
+   },
+   "settings_header_height": {
+      "message": "Fejléc magassága"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Információ megosztása"
+   },
+   "settings_hover_color": {
+      "message": "Egérkijelölés színe"
+   },
+   "settings_icon_background_color": {
+      "message": "Háttér színe"
+   },
+   "settings_icon_color": {
+      "message": "Szín"
+   },
+   "settings_icon_color_auto": {
+      "message": "Automatikusan"
+   },
+   "settings_icon_color_custom": {
+      "message": "Egyedi"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Az ikonszín automatikusan illeszkedik a rendszerének színsémájához (világos vagy sötét). Saját ízlésének megfelelően is beállíthatja az ikon színét."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Kérjük, vegye figyelembe, hogy az automatikus színbeállítás nem működik, ha saját {browserName} témát használ."
+   },
+   "settings_icon_shape": {
+      "message": "Forma"
+   },
+   "settings_import": {
+      "message": "Beállítások importálása"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Könyvjelzők import/exportja"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Ezt a feladatot a böngésző végzi és nem része ennek a bővítménynek. A {browserName}.böngészőben való használatához itt tájékozódhat."
+   },
+   "settings_import_export_desc": {
+      "message": "Exportálhatja a beállításait a helyi gépre. Korábban exportált beállításait importálhatja bármely gépen, amelyen telepítve van ez a bővítmény."
+   },
+   "settings_import_export_headline": {
+      "message": "Beállítások import/exportja"
+   },
+   "settings_import_export_notice": {
+      "message": "Ha be van jelentkezve a Google fiókjával, a bővítmény beállításai automatikusan szinkronizálódnak az eszközei között,. Ha nem akar bejelentkezni vagy meg akarja osztani a beállításait másokkal, akkor az import/export lehetőséget tudja használni."
+   },
+   "settings_import_failed": {
+      "message": "Az importálás sikertelen. Érvényes fájlt adjon meg."
+   },
+   "settings_import_saved": {
+      "message": "Beállítások sikeresen importálva"
+   },
+   "settings_indicator_color": {
+      "message": "Szín"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Ikon színe"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Ikon mérete"
+   },
+   "settings_indicator_width": {
+      "message": "Szélesség"
+   },
+   "settings_install_theme": {
+      "message": "Téma telepítése"
+   },
+   "settings_installed_theme_info": {
+      "message": "Telepített téma"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Gyorsbillentyű beállítása"
+   },
+   "settings_language": {
+      "message": "Nyelv"
+   },
+   "settings_language_default": {
+      "message": "Böngésző alapértelmezett"
+   },
+   "settings_language_desc": {
+      "message": "A felhasználói felület nyelve"
+   },
+   "settings_link_action": {
+      "message": "Könyvjelzők megnyitása"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Aktuális fül"
+   },
+   "settings_link_action_desc": {
+      "message": "A könyvjelzőn való bal kattintás vagy az aktuális fülön vagy egy új fülön nyitja meg azt."
+   },
+   "settings_link_action_new_tab": {
+      "message": "Új fül"
+   },
+   "settings_menu_appearance": {
+      "message": "Megjelenés"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Általános"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Ikon"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Indikátor"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Overlay"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Oldalsáv"
+   },
+   "settings_menu_dashboard": {
+      "message": "Áttekintés"
+   },
+   "settings_menu_expert": {
+      "message": "Szakértői beállítások"
+   },
+   "settings_menu_export": {
+      "message": "Import/Export"
+   },
+   "settings_menu_infos": {
+      "message": "Információ"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "Rólam"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Változások listája"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Kapcsolat"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Engedélyek"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Biztonsàg"
+   },
+   "settings_menu_language": {
+      "message": "Nyelv"
+   },
+   "settings_menu_language_general": {
+      "message": "Általános"
+   },
+   "settings_menu_language_translate": {
+      "message": "Nyelvi fordítás"
+   },
+   "settings_menu_newtab": {
+      "message": "Új fül"
+   },
+   "settings_menu_premium": {
+      "message": "Prémium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Oldalsáv"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Szűrő"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Általános"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Kapcsolók"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Helyi súgó"
+   },
+   "settings_menu_support": {
+      "message": "Támogatás"
+   },
+   "settings_new_tab": {
+      "message": "Új fül"
+   },
+   "settings_new_tab_background": {
+      "message": "Háttérben"
+   },
+   "settings_new_tab_desc": {
+      "message": "Könyvjelző új fülön való megnyitása az előtérben vagy a háttérben"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Előtérben"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Aktuális után"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Utolsó után"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Első előtt"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Új fülek megnyitása az aktuális után vagy az utolsó fül után"
+   },
+   "settings_newtab_desc": {
+      "message": "Sajnos a Google megszűntette a bővítmények használatának lehetőségét az alapértelmezett új lapon. Ezért lehetőség van egy másik fajta módon elérni az könyvjelzőket új lap megnyitása esetén."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Címsor előtérbe"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Ha engedélyezve van a címsor, előtérbe kerül, ha új lap nyílik. Ha nincs engedélyezve, akkor a weboldal kereső ablaka kerül az előtérbe."
+   },
+   "settings_newtab_override": {
+      "message": "Új lap megnyitása kompatibilis módban"
+   },
+   "settings_newtab_override_desc": {
+      "message": "A bővítmény használhat-e saját készítésű új lapot vagy betölthet-e helyette saját weboldalról ilyet ?"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Oldalsáv automatikus megnyitása"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Új fül esetén az oldalsáv automatikusan megnyitása"
+   },
+   "settings_newtab_website": {
+      "message": "Webhely betöltése"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Az Új lap helyett beállíthat saját webhelyet, amit új lap nyitásakor be fog tölteni"
+   },
+   "settings_not_synced": {
+      "message": "Az eszközei között nem lesz szinkronizálva."
+   },
+   "settings_open_action": {
+      "message": "Oldalsáv megnyitása"
+   },
+   "settings_open_action_desc": {
+      "message": "Az oldalsáv megnyitható a fül szélén való bal vagy jobb kattintással vagy csupán az egérmutató közelségével. Az is beállítható, hogy csak a {browserName} menüben való ikonon kattintásra jöjjön elő."
+   },
+   "settings_open_action_icon": {
+      "message": "Ikonra kattintás"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Bal kattintás"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Egér közelség"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Jobb kattintás"
+   },
+   "settings_open_delay": {
+      "message": "Megnyitási késleltetés"
+   },
+   "settings_open_delay_desc": {
+      "message": "Az oldalsáv megjelenése késleltethető."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Maszk színe"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "A bővítmény megjeleníti a könyvjelzőket az oldalsávon, ezért szüksége van erre az engedélyre a hozzáféréshez. Az engedély lehetővé teszi a kiterjesztés számára a könyvjelzők hozzáadását, szerkesztését és eltávolítását."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "Sajnos a {browserName}nek nincs mechanizmusa a tartalom megjelenítésére a böngészőablakban, anélkül, hogy kölcsönhatásba lépne a jelenleg látogató oldalon."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Mivel az oldalsáv a jelenlegi weboldal tetején jelenik meg, ez az engedély szükséges. Ezen okok miatt az engedélyt nem használják más célokra."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Ha aggályai vannak azzal kapcsolatban, hogy mit csinálok az engedélyével, akkor megtekintheti a kiterjesztés forráskódját a Githubon. Ez Open Source és mindenki számára látható."
+   },
+   "settings_permissions_desc": {
+      "message": "Annak érdekében, hogy egy átkapcsolható oldalsáv legyen lehetséges a {browserName}-ban, a kiterjesztéshez a következő engedélyek szükségesek:"
+   },
+   "settings_premium_activated": {
+      "message": "A prémium sikeresen aktiválva"
+   },
+   "settings_premium_invalid_key": {
+      "message": "A prémium aktiválása nem sikerült. Kérem adj meg egy érvényes licensz kulcsot."
+   },
+   "settings_presets": {
+      "message": "Állítsa be a relatív méreteket"
+   },
+   "settings_presets_desc": {
+      "message": "Kiválaszthat előre definiált méreteket az oldalsávhoz. Ezzel megváltoztathatja az ezen az oldalon lévő csúszkákat, hogy beállíthassa az oldalsáv szélességét, a vonalmagasságokat, az ikonméreteket és még sok más lehetőséget."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Lapgörgetés megakadályozása"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Lap görgetésének megakadályozása, ha az oldalsáv meg van nyitva"
+   },
+   "settings_prevent_windowed": {
+      "message": "Oldalsáv letiltása ablakos üzemmódban"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Ablakos üzemmódban letiltja az oldalsáv megjelenését, ha az egérrel a böngésző szélére kattintunk vagy a széle felé állunk."
+   },
+   "settings_remember_desc": {
+      "message": "Válassza ki, hogy mit jegyezzen meg az oldalsáv a megnyitások között. Ha az utolsónak megnyitott könyvjelzőt választja, akkor a következő megnyitásnál az lesz kiválasztva."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Emlékezzen a nyitott alkönyvtárakra"
+   },
+   "settings_remember_state": {
+      "message": "Utolsó művelet megjegyzése"
+   },
+   "settings_remember_state_all": {
+      "message": "Görgetési helyzet és megnyitott mappák és utoljára megnyitott könyvjelző"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Semmi"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Megnyitott mappák"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Görgetési helyzet és megnyitott mappák"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Megnyitott gyökér mappák"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Oldalsáv újbóli megnyitása"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Automatikusan megnyitja ismét az oldalsávot, miután abból megnyitott egy könyvjelzőt."
+   },
+   "settings_restore": {
+      "message": "Alapértelmezés visszaállítása"
+   },
+   "settings_restore_confirm": {
+      "message": "Biztosan vissza kívánja állítani az alapértelmezéseket ?"
+   },
+   "settings_restored_message": {
+      "message": "A beállítások visszaállítva"
+   },
+   "settings_save": {
+      "message": "Változások mentése"
+   },
+   "settings_saved_message": {
+      "message": "Változások mentve"
+   },
+   "settings_saved_share_userdata": {
+      "message": "A beállítások mentésre kerültek"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Görgetősáv elrejtése"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Görgetősáv elrejtésének ideje. A görgetés ismét előhozza."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Ne rejse el"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Görgetősáv szélessége"
+   },
+   "settings_search_placeholder": {
+      "message": "Keresse meg a konfigurációt"
+   },
+   "settings_show_themes": {
+      "message": "Mutasd a témákat"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Maszk szín"
+   },
+   "settings_sidebar_position": {
+      "message": "Oldalsáv megjelenésének helye"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Beállíthatja, hogy jobb vagy bal szélen jelenjen meg az oldalsáv"
+   },
+   "settings_sidebar_position_left": {
+      "message": "Bal"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Jobb"
+   },
+   "settings_sidebar_width": {
+      "message": "Szélesség"
+   },
+   "settings_support_faq_headline": {
+      "message": "Gyakran ismételt kérdések"
+   },
+   "settings_support_feedback_desc": {
+      "message": "Van javaslata a fejlesztéssel kapcsolatban, esetleg kérdése van, hiányzó beállítási lehetőséget talált vagy hibába ütközött ? A bővítmény fejlesztése érdekében hálásak vagyunk minden visszajelzéssel kapcsolatban."
+   },
+   "settings_support_feedback_email": {
+      "message": "email cím (nem kötelező)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Visszajelzés"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Kérem a visszajelzését angolul fogalmazza meg, különben nehézségekbe ütközhet a megértése és így a válasz is."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Csatolja a képernyőképeket"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Maximum csak {1} darab képernyőképet tölthet fel"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "A fájl {1} mérete túl nagy (>1MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Visszajelzés küldése"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Az üzenetét nem tudjuk elküldeni. Kérjük próbálja meg később."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Köszönjük a visszajelzését"
+   },
+   "settings_text_color": {
+      "message": "Szöveg szín"
+   },
+   "settings_theme": {
+      "message": "Téma"
+   },
+   "settings_theme_changed": {
+      "message": "Téma sikeresen megváltoztatva"
+   },
+   "settings_theme_default": {
+      "message": "Alapértelmezett téma"
+   },
+   "settings_theme_default_desc": {
+      "message": "Ezzel a témával letisztult és modern formában férhet hozzá a könyvjelzőihez. Az elemek színe a színösszeállítással szabadon változtatható."
+   },
+   "settings_theme_focus": {
+      "message": "Koncentráló téma"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Ez a téma mérsékli az animációkat és tömörebbé teszi az elrendezést így növekszik a hatékonyság és a teljesítmény."
+   },
+   "settings_theme_glass": {
+      "message": "Üveg téma"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Ezzel a témával az oldalsáv háttere félig átlátszó lesz és elmosódott hatást kelt. Az átlátszóság és az elmosódás szabadon változtatható."
+   },
+   "settings_themes_notice": {
+      "message": "Kiválaszthatja az oldalsáv alap kinézetét. A téma tovább módosítható a csúszkákkal és szín választókkal."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Ez a bővítmény egy ember munkája, ami hobbiként indult személyes használatra."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Aktiválás"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "Alapértelmezés szerint a böngésző teljes széle aktiválja az oldalsávot az egérmutató közelsége esetén. De beállítható az is, hogy csak bizonyos területen aktiválódjon. Így az is pl., hogy csak a bal alsó sarokban lévő aktiválási területen való kattintáskor nyíljon meg. Ezzel megakadályozhatja, hogy véletlenül nyíljon meg, amikor egy linkre akart volna kattintani."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Minden almappa kibontása"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Ha egy mappában lévő összes almappát meg kívánja nyitni egyszerűen csak dupla klikkeljen rajta."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Tudta?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Bejegyzések eltűntetése"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Akármelyik könyvjelzőt vagy mappát elrejtheti, ha egérrel jobbklikkel rajta és megnyomja a {1} gombot a helyi menüben. Az elrejtett elemek megjelenítéséhez klikkeljen a fejlécen lévő menü ikonon és jelölje be a megfelelő pipát."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "A bővítmény {1} különböző nyelven is elérhető. A fordításokat a közösség végzi és bárki besegíthet ebben. A fordításokat átnézik majd bekerülnek a következő kiadásba."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Gyorsbillentyűk"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "Az oldalsávot gyorsbillentyűkkel is vezérelheti. Megnézheti őket, ha fejlécen lévő menü ikonra klikkel és aztán megnyomja a {1} gombot."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Új fül"
+   },
+   "settings_tips_tricks_next": {
+      "message": "Következő tipp"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Összes könyvjelző megnyitása egyszerre"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Ha a mappában lévő összes könyvjelzőt egyszerre szeretné megnyitni, akkor az egér középső gombját nyomja meg a mappán. Használhatja a {1} gombot is az egér bal gombjának megnyomásával."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Biztonsàg"
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Gyors könyvjelző"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Bármely linket behúzhatja az oldalsávba és ott a megfelelő helyre. Ez az aktuális oldal címével is működik. Az aktuális cím melletti {1} jelet is behúzhatja az oldalsávba, így nem kell a cím kijelölésével vessződnie."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Gyorskeresés"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Ha megnyitja az oldalsávot sima gépeléssel kereshet a könyvjelzők között. Nem kell rákattintania a keresés ikonra az oldalsáv tetején."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Gyors link másolás"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Ha egy könyvjelző fölé áll az egérrel, akkor a {1} gomb megnyomásával vágólapra teheti a címét."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Jobb klikk"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Bármely könyvjelzőn nyomhat jobb klikket, hogy további beállításokhoz jusson. Például szerkesztheti őket vagy kitűzheti az oldalsáv tetejére. Ha egy mappán jobbklikkel, ellenőrizheti a benne szereplő könyvjelzőket, hogy felderítse a már nem élő vagy megváltozott bejegyzéseket."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Elválasztók"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "A könyvjelzők között létrehozhat elválasztót is, ha egy könyvjelzőnek azt a címet adja hogy {1} és az a neve hogy {2} vagy {3}. Új könyvjelzőt úgy hozhat létre, ha bármely mappán jobbklikkel és megnyomja a {4} gombot."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Információ megosztása"
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Szinkronizáció"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Szinkronizálási beállítások"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Az oldalsáv minden beállítása szinkronizálódik az összes eszköze között, ha engedélyezi ezt a böngészőjében. Prémium előfizetés nélkül is."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "Ez a bővítmény először 2016 novemberében került kiadásra."
+   },
+   "settings_title": {
+      "message": "Beállítások"
+   },
+   "settings_toggle_area": {
+      "message": "Terület beállítása"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Alapesetben a böngésző teljes széle aktiválja az oldalsávot. Ez megváltoztatható és beállíthatja, hogy hol érzékelje pontosan."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Áthelyezés"
+   },
+   "settings_toggle_area_height": {
+      "message": "Magasság"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Magasság (ablakos üzemmód)"
+   },
+   "settings_toggle_area_width": {
+      "message": "Szélesség"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Szélesség (ablakos üzemmód)"
+   },
+   "settings_tooltip_content": {
+      "message": "Tartalom"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "További információ"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Név és cím"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Csak a név"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Csak az URL"
+   },
+   "settings_tooltip_delay": {
+      "message": "Tippek késleltetése"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "A könyvjelzőshöz tartozó tippek előbukanásának ideje."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Sose mutassa"
+   },
+   "settings_tooltip_desc": {
+      "message": "Válassza ki, hogy mi jelenjen meg a tippekben."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Tippek betűmérete"
+   },
+   "settings_translation_add_language": {
+      "message": "Nyelv hozzáadása"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Vissza az áttekintéshez"
+   },
+   "settings_translation_desc": {
+      "message": "Segíthet a bővítmény Ön anyanyelvére történő fordításában vagy a meglévő fordítás javításában"
+   },
+   "settings_translation_help": {
+      "message": "Minden tételhez látható az angol eredeti, amelyet az Ön nyelvére kell fordítani. Hogy segítsünk a szöveg helyének és funkciójának beazonosításában, minden bejegyzésnek van egy neve (pl. {1}), amit nem kell lefordítani. Kérem ne felejtse el a fordítás elküldését a jobb felső sarokban lévő Elküldés gombra kattintással!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Néhány fordítás még hiányzik"
+   },
+   "settings_translation_info": {
+      "message": "Szerkeszthet meglévő fordításokat vagy hiányzókat is pótolhat. Ha elküldi a változtatásait, megnézem és jóváhagyom."
+   },
+   "settings_translation_link": {
+      "message": "Ugrás a fordítási áttekintőhöz"
+   },
+   "settings_translation_notice1": {
+      "message": "Amint az összes alapvető kategória lefordításra került, egyből elérhetővé is válik"
+   },
+   "settings_translation_notice2": {
+      "message": "A hiányos kategóriák nem lesznek elérhetőek, hogy elkerüljük a félig lefordított szövegeket"
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Szeretnék értesítést kapni, amikor új nyelvváltozókat adnak hozzá a kiterjesztéshez."
+   },
+   "settings_translation_required_category": {
+      "message": "Szükséges"
+   },
+   "settings_translation_status_draft": {
+      "message": "Nyelvi fordítás fékész állapotú vagy felülvizsgálatra vár és jelenleg még nem elérhető"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Nyelvi fordítás elérhető, de nem teljes"
+   },
+   "settings_translation_status_released": {
+      "message": "Nyelvi fordítás elérhető"
+   },
+   "settings_translation_submit": {
+      "message": "Elküldés"
+   },
+   "settings_translation_submit_message": {
+      "message": "A fordítás sikeresen elküldve"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "A link a vágólapra lett másolva"
+   },
+   "sidebar_deleted": {
+      "message": "Eltávolítva"
+   },
+   "sidebar_dir_children": {
+      "message": "Elemek"
+   },
+   "sidebar_search_no_results": {
+      "message": "Nincs könyvjelző ami megegyezne a keresettel"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Könyvjelző keresése"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Törlés"
+   },
+   "sort_label_alphabetical": {
+      "message": "Betűrendi"
+   },
+   "sort_label_custom": {
+      "message": "Felhasználó által hozzáadott"
+   },
+   "sort_label_most_used": {
+      "message": "Leggyakrabban használt"
+   },
+   "sort_label_recently_added": {
+      "message": "Mostanában hozzáadott"
+   },
+   "sort_label_recently_used": {
+      "message": "Mostanában használt"
+   },
+   "sort_most_used_per_month": {
+      "message": "Leggyakrabban használt ebben a hónapban"
+   },
+   "sort_view_as_tree": {
+      "message": "Mappák mutatása"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Újratöltés most"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "A bővítmény frissülése miatt a lap újratöltése szükséges"
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "A visszajelzés szolgáltatás jelenleg nem elérhető. Ha vsszajelzést kíván adni, kérem küldjön levelet"
+   },
+   "status_service_unavailable_headline": {
+      "message": "A szolgáltatás nem elérhető"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "A fordító szolgáltatás nem elérhető. Kérem próbálja meg később"
+   }
+}

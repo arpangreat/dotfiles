@@ -1,0 +1,410 @@
+{
+   "contextmenu_add": {
+      "message": "Добавяне на влизане"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Добавяне на отметка"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Мениджър на отметките"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Проверка на отметки"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Затваряне на всички директории"
+   },
+   "contextmenu_copy": {
+      "message": "Копирай линк"
+   },
+   "contextmenu_current_tab": {
+      "message": "Отваряне в текущия раздел"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Изтриване на отметка"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Изтриване на директория"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Изтриване на разделител"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Редактиране на отметките"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Редактиране на директории"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Редактиране на разделител"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Скриване от панела"
+   },
+   "contextmenu_infos": {
+      "message": "Информация"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Клавишни комбинации"
+   },
+   "contextmenu_new_tab": {
+      "message": "Отваряне на нов таб"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Отварене в инкобнито мод"
+   },
+   "contextmenu_new_window": {
+      "message": "Отваряне на нов прозорец"
+   },
+   "contextmenu_open_children": {
+      "message": "Отваряне на отметка"
+   },
+   "contextmenu_pin": {
+      "message": "Закачи най-отгоре"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Презареждане"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Показване в директория"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Показване в панела"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Показване на скрити влизания"
+   },
+   "contextmenu_unpin": {
+      "message": "Премахни от най-отгоре"
+   },
+   "extension_desc": {
+      "message": "Отстрани се добавя излизащо меню с вашите отметки"
+   },
+   "extension_name": {
+      "message": "Лента на отметките"
+   },
+   "header_bookmarks": {
+      "message": "отметки"
+   },
+   "header_bookmarks_single": {
+      "message": "отметка"
+   },
+   "more_link": {
+      "message": "Научи повече"
+   },
+   "newtab_fallback_desc": {
+      "message": "Отворихме нова страница с панела вместо това"
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Панелът не може да се използва на тази страница"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Нещо блокира панела"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Панелът не може да се използва в началната страница по подразбиране"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Панелът не може да се използва на тази страница"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Някой от Вашите правила за линкове не позволяват на панела да се отвори"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Панелът не може да се използва {browserName} магазин"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Винаги показвай тази страница при отваряне на нов таб"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Показване на иконки на сайтовете"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Показване на визоализация"
+   },
+   "newtab_grid_links_default": {
+      "message": "Най-използвани"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Размер на рамката"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Страници които да не се показват"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Най-използвани отметки"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Наскоро използвани отметки"
+   },
+   "newtab_search_engine_custom": {
+      "message": "По настройки на потребителя"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Заглавие"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "Линк на началната страница"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "Линк на търсачката"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Търсачка"
+   },
+   "newtab_search_field_hide": {
+      "message": "Скрий търсачката"
+   },
+   "newtab_search_field_show": {
+      "message": "Показвай търсачката"
+   },
+   "newtab_search_placeholder": {
+      "message": "Търси или въведи линк"
+   },
+   "newtab_speech_search_error": {
+      "message": "За да активирате търсене с говор, трябва да дадете права на микрофона."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Слушам те!"
+   },
+   "newtab_title": {
+      "message": "Нов таб"
+   },
+   "newtab_upload_background": {
+      "message": "Качете картина за заден фон."
+   },
+   "overlay_add_position": {
+      "message": "Позиция"
+   },
+   "overlay_add_position_append": {
+      "message": "Добавяне към директорията"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Добавяне в началото на директорията"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Допълнителна информация"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Създадена на"
+   },
+   "overlay_bookmark_title": {
+      "message": "Заглавие"
+   },
+   "overlay_bookmark_url": {
+      "message": "Линк"
+   },
+   "overlay_bookmark_views": {
+      "message": "Прегледи"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "За месец"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Записано от"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Преглед"
+   },
+   "overlay_cancel": {
+      "message": "Отхвърляне"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Проверка на линка"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Повредено"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Променено"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Дублирано"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Празна директория"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Всички линкове са в изправност"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Няма повредени линкове на отметки"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Няма променени линкове на отметки"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Няма дублиращи се линкове на отметки"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Няма празни директории"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Премахването избрано"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Обновяването избрано"
+   },
+   "overlay_close": {
+      "message": "Затвори"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Наистина ли искате да отворите всички"
+   },
+   "overlay_delete": {
+      "message": "Изтрий"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Наистина ли искате да изтиете тази отметка"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Наистина ли искате да изтриете тази директория. Всички директории в нея ще бъдат скрити също."
+   },
+   "overlay_dir_children": {
+      "message": "Елемент"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Отметка"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Директория"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Наистина ли искате да скриете тази отметка от панела?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Наистина ли искате да скриете тази директория от панела? Всички отметки в нея ще бъдат скрити също."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Скриване от панела"
+   },
+   "overlay_label_bookmark": {
+      "message": "Отметка"
+   },
+   "overlay_label_dir": {
+      "message": "Директория"
+   },
+   "overlay_label_separator": {
+      "message": "Разделител"
+   },
+   "overlay_open_children": {
+      "message": "Отваряне на всички"
+   },
+   "overlay_save": {
+      "message": "Запази"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Като опция можете да добавите заглавие. Ще бъде изписано най-отгоре на разделителната линя и може да Ви помогне за по добра организация на Вашите отметки."
+   },
+   "overlay_update": {
+      "message": "Обнови"
+   },
+   "settings_language": {
+      "message": "Език"
+   },
+   "settings_language_default": {
+      "message": "Браузър по подразбиране"
+   },
+   "settings_language_desc": {
+      "message": "Език на интерфейса"
+   },
+   "settings_translation_add_language": {
+      "message": "Добави език"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Обратно към превода"
+   },
+   "settings_translation_desc": {
+      "message": "Вие можете да помогнете за превода на разширението или да подобрите съществуващия такъв."
+   },
+   "settings_translation_help": {
+      "message": "За всеки текст който трябва да се преведе ще виждаш Английския му вариант. Моля Ви не забравяйте да натиснете бутона за изпращане на превода в горната част на екрана."
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Някои преводи липсват."
+   },
+   "settings_translation_info": {
+      "message": "Можеш да редактираш съществуващ превод или да добавиш липсващ. Ако направиш твоите промени, аз ще ги прегледам и одобря"
+   },
+   "settings_translation_link": {
+      "message": "Преглед на превода"
+   },
+   "settings_translation_notice1": {
+      "message": "Веднага след като всички категории са маркирани като преведени, преводът ще бъде къчен"
+   },
+   "settings_translation_notice2": {
+      "message": "Недовършените категории няма да бъдат обновени, за да се избегне превод на половина"
+   },
+   "settings_translation_required_category": {
+      "message": "Задължително"
+   },
+   "settings_translation_status_draft": {
+      "message": "Превода не е завършен или има нужда от проверка и не е достъпен за потребителите."
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Преводът е наличен, но някои категории липсват."
+   },
+   "settings_translation_status_released": {
+      "message": "Превод е наличен"
+   },
+   "settings_translation_submit": {
+      "message": "Потвърдете"
+   },
+   "settings_translation_submit_message": {
+      "message": "Вашият превод беше потвърден упешно"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "Линка е копиран"
+   },
+   "sidebar_deleted": {
+      "message": "Премахнато"
+   },
+   "sidebar_dir_children": {
+      "message": "Елементи"
+   },
+   "sidebar_search_no_results": {
+      "message": "Не са намерени отметки по зададеното търсене"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Търсене в отметки"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Върни изтритото"
+   },
+   "sort_label_alphabetical": {
+      "message": "Азбучен ред"
+   },
+   "sort_label_custom": {
+      "message": "Определени от потребител"
+   },
+   "sort_label_most_used": {
+      "message": "Най-използвани"
+   },
+   "sort_label_recently_added": {
+      "message": "Най-скоро добавени"
+   },
+   "sort_label_recently_used": {
+      "message": "Най-скоро използвани"
+   },
+   "sort_most_used_per_month": {
+      "message": "На месец"
+   },
+   "sort_view_as_tree": {
+      "message": "Покажи директории"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Презареди сега"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Поради ъпдейт, разширението трябва да се презареди."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Системата за отзиви е недостъпна в момента. Ако желаете да оставите отзив, моля изпратете ми имейл."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Услугата е недостъпна"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Услугата за превод не е достъпна в момента. Моля опитайте по-късно"
+   }
+}

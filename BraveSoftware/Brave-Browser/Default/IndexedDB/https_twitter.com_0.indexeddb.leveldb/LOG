@@ -1,0 +1,7 @@
+2021/06/25-00:36:44.046 4e6a8 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/06/25-00:36:44.046 4e6a8 Recovering log #3
+2021/06/25-00:36:44.050 4e6a8 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/000003.log 
+2021/06/25-00:41:10.159 51833 Level-0 table #5: started
+2021/06/25-00:41:10.161 51833 Level-0 table #5: 32270 bytes OK
+2021/06/25-00:41:10.163 51833 Delete type=0 #3
+2021/06/25-00:41:10.163 51833 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

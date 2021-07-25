@@ -1,0 +1,6 @@
+2021/07/23-14:14:37.964 1a139 Creating DB /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb since it was missing.
+2021/07/23-14:14:37.966 1a139 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/23-14:53:43.826 1ee3e Level-0 table #5: started
+2021/07/23-14:53:43.828 1ee3e Level-0 table #5: 2996 bytes OK
+2021/07/23-14:53:43.829 1ee3e Delete type=0 #3
+2021/07/23-14:53:43.830 1ee3e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

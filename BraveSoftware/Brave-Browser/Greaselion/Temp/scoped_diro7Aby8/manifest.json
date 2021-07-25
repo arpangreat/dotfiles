@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "js": [ "githubAutoContribution.bundle.js" ],
+      "matches": [ "https://github.com/*", "https://www.github.com/*", "https://gist.github.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "",
+   "incognito": "not_allowed",
+   "key": "jenMCfsuNOH3nDwTIdDi0TIerMyk5pj1pvhfwRv/Ti4=",
+   "manifest_version": 2,
+   "name": "greaselion-2",
+   "version": "1.0"
+}

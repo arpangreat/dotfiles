@@ -1,0 +1,41 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/lib/jsu.js", "js/opts.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon/128x128.png"
+   },
+   "content_scripts": [ {
+      "css": [ "css/contentBase.css" ],
+      "js": [ "js/lib/jsu.js", "js/opts.js", "js/extension.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'sha256-nl+LCdUZCsURbeBC1buBlAcvBhCD2/SswpeCH2ZaR34=' 'sha256-nuF8drPPKUM4+b3urtYHupidizytc1BonZF1t/vSzs0'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extension_desc__",
+   "differential_fingerprint": "1.c62afb673a39a2e1f3755ec224dfb00f8f448b719db047c256108fa1996ecf09",
+   "homepage_url": "https://extensions.redeviation.com/",
+   "icons": {
+      "128": "img/icon/128x128.png",
+      "256": "img/icon/256x256.png",
+      "48": "img/icon/48x48.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiwSf3S1gDjzjLcmVPSL9FocWXC9PwgFisanqRUbP8uYGXuX0mnfAdkfgdyIO/QdwoiEeR8vC10R3+8ruWRk3Pzmgl7Q+wcLzVDZ6yD0ke3GTkeRjV8l1AWhTGrVAzkpRYGZ0Oa6dQaMZH3l63yuYePOlOorWP5Qhpwytc/6uDjdK4/C/PRuAxweibinb9AiW0BkRZq/JIGGUoTUHbyBE1NbzFpVotbVKrd1TFgQ0LkqUkeM7F8a2Ts27RYfxPePVdziS7sR0yv5IwMl1SNlvC7fzrx2UVrxW1jlvvF1bDUumElxJSnnzbIBkviDxTu+zVggOmp1R/xC2zM328JniRwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "86",
+   "name": "__MSG_extension_name__",
+   "optional_permissions": [ "tabs", "history", "topSites" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "html/settings.html"
+   },
+   "permissions": [ "\u003Call_urls>", "bookmarks", "storage", "contextMenus", "unlimitedStorage", "fontSettings", "chrome://favicon/" ],
+   "short_name": "__MSG_extension_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.21.0",
+   "version_name": "1.21.0",
+   "web_accessible_resources": [ "css/sidebar.css", "css/overlay.css", "css/content.css", "css/themes/*", "img/*" ]
+}

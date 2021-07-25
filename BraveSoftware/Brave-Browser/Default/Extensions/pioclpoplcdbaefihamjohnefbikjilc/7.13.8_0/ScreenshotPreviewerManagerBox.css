@@ -1,0 +1,37 @@
+.screenshotPreviewerManagerInternalBox {
+  display: flex;
+  font-family: "ClipperSoleil", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 12px 20px;
+  line-height: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #1A1A1A;
+  color: white;
+  border-radius: 4px; }
+
+.screenshotPreviewerManagerInternalBoxItem {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0 20px;
+  position: relative; }
+  .screenshotPreviewerManagerInternalBoxItem:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 2px;
+    height: 100%;
+    background-color: white; }
+  .screenshotPreviewerManagerInternalBoxItem:first-child {
+    width: 30px; }
+  .screenshotPreviewerManagerInternalBoxItem:last-child:after {
+    content: '';
+    display: none; }
+

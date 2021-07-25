@@ -1,0 +1,9 @@
+2021/07/25-09:31:44.807 96a Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_pioclpoplcdbaefihamjohnefbikjilc_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/25-09:31:44.808 96a Recovering log #60
+2021/07/25-09:31:44.811 96a Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_pioclpoplcdbaefihamjohnefbikjilc_0.indexeddb.leveldb/000060.log 
+2021/07/25-13:39:23.900 e2d3 Compacting 1@1 + 1@2 files
+2021/07/25-13:39:23.916 e2d3 Generated table #63@1: 36 keys, 15822 bytes
+2021/07/25-13:39:23.917 e2d3 Compacted 1@1 + 1@2 files => 15822 bytes
+2021/07/25-13:39:23.918 e2d3 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/25-13:39:23.918 e2d3 Delete type=2 #61
+2021/07/25-13:39:23.918 e2d3 Delete type=2 #58

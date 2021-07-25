@@ -1,0 +1,138 @@
+{
+   "checksum": "674ad1ad5440a71bcb4d9495df153de2",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13267565070919326",
+            "guid": "7a404f7f-0912-4502-8752-22caa40bcd7a",
+            "id": "5",
+            "name": "Configuring kitty — kitty 0.20.3 documentation",
+            "type": "url",
+            "url": "https://sw.kovidgoyal.net/kitty/conf.html"
+         }, {
+            "date_added": "13268171576556599",
+            "guid": "83c97f08-a310-4e7b-b112-fec745a5aa9c",
+            "id": "7",
+            "name": "Go by Example",
+            "type": "url",
+            "url": "https://gobyexample.com/"
+         }, {
+            "date_added": "13269129097681853",
+            "guid": "59635d68-7875-4175-87f1-f16b3658f26f",
+            "id": "9",
+            "name": "MonoLisa - A font family designed for software developers. Font follows function.",
+            "type": "url",
+            "url": "https://www.monolisa.dev/"
+         }, {
+            "date_added": "13269198697155854",
+            "guid": "389a77b3-5c55-4aee-ac1d-babb2e8974d8",
+            "id": "11",
+            "name": "Coding Fonts — IBM Plex Mono on CSS-Tricks",
+            "type": "url",
+            "url": "https://coding-fonts.css-tricks.com/fonts/ibm-plex-mono/?language=js"
+         }, {
+            "date_added": "13269298302507956",
+            "guid": "4aa72ff2-350f-4ccd-8b4a-f878a595557c",
+            "id": "13",
+            "name": "jiangmiao/auto-pairs: Vim plugin, insert or delete brackets, parens, quotes in pair",
+            "type": "url",
+            "url": "https://github.com/jiangmiao/auto-pairs"
+         }, {
+            "date_added": "13269306239904920",
+            "guid": "3d6ea945-2c57-4c4a-ac77-343ebfe7d721",
+            "id": "14",
+            "name": "rockerBOO/awesome-neovim: Collections of awesome neovim plugins.",
+            "type": "url",
+            "url": "https://github.com/rockerBOO/awesome-neovim"
+         }, {
+            "date_added": "13269801653401052",
+            "guid": "60cb9e10-335f-4cff-a223-2a03efdef3de",
+            "id": "16",
+            "name": "spaceship-prompt/spaceship-prompt: A Zsh prompt for Astronauts",
+            "type": "url",
+            "url": "https://github.com/spaceship-prompt/spaceship-prompt"
+         }, {
+            "date_added": "13269908830018195",
+            "guid": "eab3d0ae-67a1-4f14-a1f6-c02e74ce9e3d",
+            "id": "18",
+            "name": "General Usage - bottom",
+            "type": "url",
+            "url": "https://clementtsang.github.io/bottom/nightly/usage/general-usage/"
+         }, {
+            "date_added": "13269980136512575",
+            "guid": "052ade24-4c55-4f3a-9f60-4c3c323b4587",
+            "id": "20",
+            "name": "Operator Mono Medium - Font Free [ Download Now ]",
+            "type": "url",
+            "url": "https://fontsfree.net/operator-mono-medium-font-download.html"
+         }, {
+            "date_added": "13270079737917991",
+            "guid": "7e31cb06-bfbd-4b0d-ac3f-207b03e23451",
+            "id": "22",
+            "name": "Programming in Lua : 1",
+            "type": "url",
+            "url": "https://www.lua.org/pil/1.html"
+         }, {
+            "date_added": "13270079867011645",
+            "guid": "fdaf97e4-8d62-4d28-99a7-0ef055dd7f37",
+            "id": "23",
+            "name": "Learn Lua in Y Minutes",
+            "type": "url",
+            "url": "https://learnxinyminutes.com/docs/lua/"
+         }, {
+            "date_added": "13270079913819321",
+            "guid": "efd44d56-36f3-4789-888d-43293d8c7b80",
+            "id": "24",
+            "name": "lua-users wiki: Lua Tutorial",
+            "type": "url",
+            "url": "http://lua-users.org/wiki/LuaTutorial"
+         }, {
+            "date_added": "13270252714344542",
+            "guid": "b7908707-8e39-4cdf-b6ce-015a47f0bfb7",
+            "id": "26",
+            "name": "Practice your coding skills on short coding contests - Clash of Code",
+            "type": "url",
+            "url": "https://www.codingame.com/multiplayer/clashofcode"
+         }, {
+            "date_added": "13270258472725480",
+            "guid": "a102249c-1ff6-48a3-8b1f-7657b3cf5076",
+            "id": "27",
+            "name": "wbthomason/packer.nvim: A use-package inspired plugin manager for Neovim. Uses native packages, supports Luarocks dependencies, written in Lua, allows for expressive config",
+            "type": "url",
+            "url": "https://github.com/wbthomason/packer.nvim"
+         }, {
+            "date_added": "13270765256953649",
+            "guid": "6d78397f-034e-41dc-9d55-5d1c21993ffe",
+            "id": "29",
+            "name": "Sourcegraph",
+            "type": "url",
+            "url": "https://sourcegraph.com/search"
+         } ],
+         "date_added": "13267401828052422",
+         "date_modified": "13270765256953649",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13267401828052423",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13267401828052424",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

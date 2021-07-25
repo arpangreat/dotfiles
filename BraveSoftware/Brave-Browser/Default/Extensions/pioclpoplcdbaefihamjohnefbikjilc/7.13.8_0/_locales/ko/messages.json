@@ -1,0 +1,966 @@
+{
+   "0060cc5b94d10f9cceb22856c04f02f6": {
+      "description": "Upgrade account button",
+      "message": "{accountType} 계정은 업로드 용량이 30일 당 {accountLimit}로 제한되어 있습니다. 그 후로는 노트가 동기화되지 않습니다."
+   },
+   "01ce27a8a0d9de093fd302af921ce1ba": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version B",
+      "message": "월 업로드 허용량 1GB로 업그레이드하세요"
+   },
+   "0235c996b43b3799573658df41ef82f2": {
+      "description": "\"Marker\" tool title of screenshot clip format",
+      "message": "마커"
+   },
+   "03e61eee046a91876853adc297a654e4": {
+      "description": "Label for button to save clip to Evernote.",
+      "message": "스크랩 저장"
+   },
+   "03ee37045f78ba987a7484aa93955fad": {
+      "description": "If enabled, it shows the partial post clip dialog that disappears after three seconds message",
+      "message": "Clipper 자동 종료"
+   },
+   "04638478207399b478e375f779c51b8b": {
+      "description": "Label for shortcut to go to email mode",
+      "message": "Email clip"
+   },
+   "0512939a41a02b6f9796abbbb1fefd28": {
+      "description": "Label for shortcut to zoom out on skitch in options page",
+      "message": "축소 (단계)"
+   },
+   "05f0c36034a596ec304993a7e44f9ebf": {
+      "description": "Label for notebook destination in options page",
+      "message": "대상 노트북"
+   },
+   "07574accced9f8c66df362d18d55baeb": {
+      "description": "Button for logging in as additional personal user",
+      "message": "개인 계정 추가"
+   },
+   "0a74dec84259cc9cc1f7f462fb2c83f0": {
+      "description": "Copy logs button text",
+      "message": "로그 복사"
+   },
+   "0bced23e0866dcc535b526f9bfeae0f3": {
+      "description": "Header of the markup shortcuts on options page",
+      "message": "표식:"
+   },
+   "0db377921f4ce762c62526131097968f": {
+      "description": "General tab title",
+      "message": "일반"
+   },
+   "0eaed94c4da3080dd3d88f0f2bca8c23": {
+      "description": "Low disk space warning message",
+      "message": "디스크 공간이 부족합니다. 동기화 문제를 방지하려면 시스템 디스크를 청소해 주세요."
+   },
+   "0f4e1aaabd074689b7d3ead824d1ee8e": {
+      "description": "Label for shortcut to use the skitch arrow tool in options page",
+      "message": "화살표"
+   },
+   "119518c2134c46108179369f0ce81fa2": {
+      "description": "Label for shortcut to use the ellipse tool in options page",
+      "message": "타원"
+   },
+   "130d74c3ba60e43c646b8d2ae2e189f7": {
+      "description": "",
+      "message": "태그 추가"
+   },
+   "132a6fcf2bc1cb48a30be9d7a1ab65e4": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper는 쿠키를 사용해 계정을 식별합니다. 브라우저 설정에서 Evernote의 타사 쿠키가 허용되어 있는지 확인하세요."
+   },
+   "13a4fc8dd4a0f5bedca5b998bbf299bd": {
+      "description": "Description of the multipage clip feature on the options page",
+      "message": "모든 페이지를 하나의 노트로 스크랩합니다."
+   },
+   "13b5bfe96f3e2fe411c9f66f4a582adf": {
+      "description": "Headline for notification indicating which notebook the clip was successfully uploaded into",
+      "message": "위치:"
+   },
+   "141c4e75277f66ff4ad4c873a45b224d": {
+      "description": "Label for shortcut to start web clipper",
+      "message": "Web Clipper 시작"
+   },
+   "1713481aca8b8b7e7c9a20c88a5f029c": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "100%에 맞춤"
+   },
+   "1817c60a1a4cfeeab5ca732ff13ed65a": {
+      "description": "Label for tag selection in options page",
+      "message": "태그 선택"
+   },
+   "1c5dbbd3b2f08cc4f1c3e69fb4f213fa": {
+      "description": "Error message",
+      "message": "페이지를 캡처하지 못했습니다."
+   },
+   "1cdc076b28f70afac5fcedadf99fa119": {
+      "description": "Label for shortcut to undo skitch action in options page",
+      "message": "실행 취소"
+   },
+   "1f4f6bb6a3727e7259a572df780132e9": {
+      "description": "Low disk space warning header",
+      "message": "디스크 공간 부족"
+   },
+   "248336101b461380a4b2391a7625493d": {
+      "description": "Headline for notification indicating that clip was successfully uploaded",
+      "message": "저장됨"
+   },
+   "24fc199b67f7441cda35e64e6791437b": {
+      "description": "Error message",
+      "message": "비즈니스 사용자로 로그인하지 않았습니다."
+   },
+   "2506a918747c42a905823cfb1237de0d": {
+      "description": "Maintenance message",
+      "message": "Evernote 서버가 보수 중입니다. 나중에 다시 시도해 보세요."
+   },
+   "25409146618d1045b8931267648a14b4": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "관련 검색 결과를 보려면 Web Clipper에 로그인하세요"
+   },
+   "264d5425cc8f76b5e6d17f800ff3439c": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version B",
+      "message": "한도에 도달하기 전에 지금 Evernote 플러스로 업그레이드하셔서 1GB의 월 업로드 용량을 누리세요."
+   },
+   "28fba1dd077f713e06c2b275512db419": {
+      "description": "Error alert message",
+      "message": "오프라인 상태인 것 같습니다."
+   },
+   "290612199861c31d1036b185b4e69b75": {
+      "description": "Amazon page section name for common product info",
+      "message": "요약"
+   },
+   "29e9d8e295b1d5b3002d2d3d5baa4c37": {
+      "description": "Shortcuts tab title",
+      "message": "바로가기"
+   },
+   "2ad9808f72179d66dadfac646a9033b4": {
+      "description": "Clip is over size",
+      "message": "스크랩이 너무 큽니다"
+   },
+   "2bfa5c64ad7fcb183b35841f019d04de": {
+      "description": "Label for using last used notebook in notebook selection on options page",
+      "message": "마지막으로 사용한 노트북 사용"
+   },
+   "2c26c3d1dd3192d9ebd0d7aac2f2dd62": {
+      "description": "Untitled note title",
+      "message": "제목 없는 노트"
+   },
+   "2ca1b06542d50d918871d86c34d344d9": {
+      "description": "Label for keyboard shortcut that switches accounts",
+      "message": "계정 전환"
+   },
+   "2e1be05809b5b6c613abd8e791e102c2": {
+      "description": "Button for logging in as additional business user",
+      "message": "비즈니스 계정 추가"
+   },
+   "2e2aa75122e0f772381b5bc7a1a4fd03": {
+      "description": "Category name in destination selector",
+      "message": "스페이스"
+   },
+   "2efd89b3ccc76b0b03a34196fc6d1c8b": {
+      "description": "Placeholder text for tag input",
+      "message": "태그 추가"
+   },
+   "3049dacdbd8857b7f0d88d05364916bd": {
+      "description": "Button to dismiss near quota warning",
+      "message": "지금 하지 않음"
+   },
+   "32ba78fe43257d3e7f88e3935a8ea0d4": {
+      "description": "Plus account type",
+      "message": "플러스"
+   },
+   "33c1f003104421d9c01d02db1c9b467e": {
+      "description": "label of notebook author",
+      "message": "\n만든 사람: {ownerName}"
+   },
+   "34dba7beda8557b9c0c5957f10095637": {
+      "description": "Options Reset button",
+      "message": "모든 옵션 초기화"
+   },
+   "37c41606e05299c12b1235f52fef0df1": {
+      "description": "Warning about multipage clip",
+      "message": "모든 페이지를 스크랩하면 스크랩 시간이 길어질 수 있습니다"
+   },
+   "37d535f9a08bc86377e234bfd63596ce": {
+      "description": "Placeholder text for remark input",
+      "message": "의견 추가"
+   },
+   "38afb4cd458f868284f38c901da91dae": {
+      "description": "Tooltip for url clip tool",
+      "message": "북마크"
+   },
+   "3a7dc9e3e595892fa7e3b0baf9ca2a6b": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "북마크 미리보기"
+   },
+   "3afbd9828e011526955ca93b48b57524": {
+      "description": "label for option in global toolbar",
+      "message": "스크린샷"
+   },
+   "3b575eee0fb9016019e5165f244cab09": {
+      "description": "Title for near quota message (75%)",
+      "message": "공간이 거의 다 찼습니다"
+   },
+   "3b6c2b4caaf4f14f8d7feeddc4ac3f4d": {
+      "description": "URL for Terms of Service page (Copyright statement)",
+      "message": "사용 약관"
+   },
+   "3bc79030e994de3a589719ee45a62af8": {
+      "description": "Checkbox in options page to enable keyboard shortcuts",
+      "message": "단축키 활성화"
+   },
+   "3ceb953a91580dc2af7df397eb3e886b": {
+      "description": "Option in options page for what to show after a successful clip",
+      "message": "스크랩 후"
+   },
+   "41ff79afac94b17a1d8a66c7fcc33055": {
+      "description": "Error message",
+      "message": "알 수 없는 네트워크 오류가 발생했습니다."
+   },
+   "43031118a545608417532d43c55fb9bd": {
+      "description": "Shared url copied to clipboard confirmation",
+      "message": "URL이 클립보드에 복사되었습니다"
+   },
+   "45af78debeb1a81e5b52c9ec4bb0c6ab": {
+      "description": "Button Premium users use to confirm activity when they're near quota",
+      "message": "작업 확인"
+   },
+   "45efb362e1db04258668876dd6b68a96": {
+      "description": "Message that shows up when the clipper popup cant open.",
+      "message": "이 페이지를 스크랩하려면 다시 로드해야 합니다. 페이지를 다시 로드하고 다시 시도해 보세요."
+   },
+   "467c00f2c32c16d590a00e6185cb880c": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "웹 검색과 관련된 Evernote 콘텐츠 표시"
+   },
+   "479149aec98be53057f43b5947816255": {
+      "description": "Title of the clip formats list",
+      "message": "스크랩 형식"
+   },
+   "4803e6b9e63dabf04de980788d6a13c4": {
+      "description": "Label for shortcut to use the line tool in options page",
+      "message": "선"
+   },
+   "4ccf00154f322aeea0f82d9aaef3abb3": {
+      "description": "Message that clip is bigger than a certain number of bytes",
+      "message": "브라우저의 제한으로 인해 {size} 이상의 파일을 저장할 수 없습니다"
+   },
+   "4cf6d37f01f5e34ee848476f1bfcfb7f": {
+      "description": "Tooltip for url clip tool",
+      "message": "북마크를 Evernote로 스크랩"
+   },
+   "4d110a7795a7e06abee1d921c1897343": {
+      "description": "Header of the clip shortcuts on options page",
+      "message": "스크랩:"
+   },
+   "4dfbb099eafd3c82e033bf92946d3ce6": {
+      "description": "text for button to share clip via email",
+      "message": "메일"
+   },
+   "510a8cb711495bfdd04c792d2fc4b0fe": {
+      "description": "label in gmail preview for the senders and threads recipients",
+      "message": "참가자"
+   },
+   "52ebc26c2921d5b84fc670dff9891821": {
+      "description": "\"Zoom out\" tool title of screenshot clip format",
+      "message": "축소"
+   },
+   "565e6049e93f709d8b8c65db360cdc25": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "간소화된 기사를 Evernote로 스크랩"
+   },
+   "56723c8751db32cf4269a36f2f57689a": {
+      "description": "Tooltip for article clip tool",
+      "message": "기사를 Evernote로 스크랩"
+   },
+   "5682f20488bb59cc15b66de2d798d3ac": {
+      "description": "Header of the global shortcuts on options page",
+      "message": "전역:"
+   },
+   "56f6cc60bd71efd9e23b6fff825e58e4": {
+      "description": "Label for notebooks creation button",
+      "message": "새 노트북으로 스크랩"
+   },
+   "58b3d8603dffe8484e90c0ca371921ac": {
+      "description": "Placeholder text for the message field of the email sharing dialog",
+      "message": "메시지 추가"
+   },
+   "592f8367bae750cc2ac3172f0598802b": {
+      "description": "Tooltip text for \"Add a reminder\" button",
+      "message": "알리미 추가"
+   },
+   "5a95a425f74314a96f13a2f136992178": {
+      "description": "Tooltip text for \"Share\" button",
+      "message": "공유"
+   },
+   "5afeaba074ef570dc720caaa855d49f6": {
+      "description": "Label for shortcut to redo skitch action in options page",
+      "message": "다시 실행"
+   },
+   "5d50889672f6f860d14f502de3de1957": {
+      "description": "\"Colors\" tool title of screenshot clip format",
+      "message": "색상"
+   },
+   "5d73f120f95121fb6cb32139c2984fd5": {
+      "description": "Error message",
+      "message": "서버 오류가 발생했습니다."
+   },
+   "5df6b1831a1fff17541b538eab1a3ae0": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "5e2f8ee473fdebc99fef4dc9e7ee3146": {
+      "description": "Tooltip for article clip tool",
+      "message": "기사"
+   },
+   "5e5c6ad2fd74ca2dad8688ef22843ac0": {
+      "description": "Maintenance message",
+      "message": "Evernote 서버가 보수 중입니다. 나중에 다시 시도해 보세요."
+   },
+   "5f2ef4990ea329ce9421fc1e49f0a483": {
+      "description": "Text for the screenshot toast",
+      "message": "스크랩 영역을 선택하거나 클릭하여 전체 페이지를 캡처하세요."
+   },
+   "62c433ad00279a269d850a82cda99ec5": {
+      "description": "Tooltip for shortcut release notes",
+      "message": "커서를 필드 안에 놓고 원하는 바로가기를 누르세요."
+   },
+   "63bbced1dc18e01ce3484b6800bae525": {
+      "description": "Label for shortcut to go to full page preview mode",
+      "message": "전체 페이지 미리보기"
+   },
+   "64d3dcb57b34de0750a4a0283a3307a9": {
+      "description": "Title for over quota message",
+      "message": "공간이 부족합니다"
+   },
+   "64d4f6e85ad482c5cb9ba338b9600042": {
+      "description": "Label for search-helper feature toggle",
+      "message": "관련 검색 결과"
+   },
+   "6614acf7e2a66dd467bd9f92ad7bb11f": {
+      "description": "Error message displayed instead of missing logs",
+      "message": "로그 데이터를 불러오지 못했습니다"
+   },
+   "66e72957e6c99c7e4dc16ce242801b52": {
+      "description": "Tooltip for setting a keyboard shortcut in the options page",
+      "message": "이 바로가기를 변경하려면 키 조합을 입력하세요"
+   },
+   "686e697538050e4664636337cc3b834f": {
+      "description": "Create new notebook button",
+      "message": "만들기"
+   },
+   "690cfdf924145ae042df0e4888ad8dd5": {
+      "description": "Tooltip for email context menu clip",
+      "message": "이메일을 Evernote로 스크랩"
+   },
+   "6b76deb7d3f8000505b8017c51913daf": {
+      "description": "Error message shown when you try to clip from restricted pages",
+      "message": "브라우저에 설정된 제한으로 인해 이 페이지를 스크랩할 수 없습니다."
+   },
+   "6ff9dd0d34f65181173c1e4bc39939de": {
+      "description": "Tooltip for selection clip tool",
+      "message": "선택"
+   },
+   "70c1604b97488d413ebbbfa8ab2fe8c8": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Web Clipper 최소화"
+   },
+   "715013803411b9eb276c002c2b3f9e82": {
+      "description": "Title of warning when a Premium user is near quota",
+      "message": "그동안 사용량이 많으셨군요!"
+   },
+   "730bbb4f3457bb52d56a663e16ca76f1": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF를 Evernote로 스크랩"
+   },
+   "7575dfa4ebced0ffce2a66a3e8e96f97": {
+      "description": "Explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF 페이지에 'Evernote에 저장' 버튼을 표시합니다."
+   },
+   "758e33a22a3eea5e838a7075d3502f36": {
+      "description": "Button to contact customer support",
+      "message": "Evernote 지원 문의"
+   },
+   "75f16d5429a2cd7c8dc1e80acc7fb3bc": {
+      "description": "Label for using smart filing in notebook/tag selection on options page",
+      "message": "스마트 파일링 기능 사용"
+   },
+   "7685f0dfff3c115aae3ec299967988e0": {
+      "description": "Label for shortcut to zoom in on skitch in options page",
+      "message": "확대 (단계)"
+   },
+   "79bae193b5f91d31d7cf3ebe904ed548": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+{count}페이지"
+   },
+   "7a207c49bca9a804f7ae3f1956d479fb": {
+      "description": "Maximum note content size is",
+      "message": "최대 노트 콘텐츠 크기는 {size}입니다"
+   },
+   "7b91156d64b76a5dda815937fce9119d": {
+      "description": "\"Zoom in\" tool title of screenshot clip format",
+      "message": "확대"
+   },
+   "7ce91f975c8fbaa4c343cbae3fd9a1ee": {
+      "description": "Error message",
+      "message": "인증 오류. Evernote에 로그인하세요."
+   },
+   "7e1907b268e3b1261c98c5bf7a368fe5": {
+      "description": "Syncing message",
+      "message": "동기화하는 중"
+   },
+   "7e9d5a15230c09057d559dbfa930cd91": {
+      "description": "Tags not supported text",
+      "message": "태그는 지원되지 않습니다"
+   },
+   "81a4815e7de724c2cef8c8ca2b39967a": {
+      "description": "Generic error message for creating notebook",
+      "message": "노트북을 만드는 중 오류가 발생했습니다"
+   },
+   "82bdef0300a967b862631447be24890c": {
+      "description": "Page has too many resources",
+      "message": "페이지에 리소스가 너무 많습니다. 최대 {size}"
+   },
+   "8480e52106db88681499e53a382ee4ee": {
+      "description": "Logout button",
+      "message": "{email} 로그아웃"
+   },
+   "8524de963f07201e5c086830d370797f": {
+      "description": "Label for notebooks list is loading",
+      "message": "불러오는 중..."
+   },
+   "875599a8864e3ce5f5484ddc81ceaa0c": {
+      "description": "Label for shortcut to use the stamp tool in options page",
+      "message": "스탬프"
+   },
+   "898b21e58da17fb1836c96c8c4a2fd12": {
+      "description": "Label for choose destination button. Might be a space or notebook",
+      "message": "대상 선택..."
+   },
+   "89dc1cb58e61ef411470470fcb1779ab": {
+      "description": "Tooltip for login in context menu",
+      "message": "Evernote에 로그인"
+   },
+   "8af311ed12b2c28c6594621a6cf36a6c": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "죄송하지만 최대 노트 크기는 {size}입니다."
+   },
+   "8b37967572ca07c35146f1ff6c825b89": {
+      "description": "Error message",
+      "message": "서버 로그인이 필요합니다."
+   },
+   "8d194edea19d05ed016383e049ea7d90": {
+      "description": "Error message shown when its not possible to refresh notebooks list",
+      "message": "노트북을 새로 고침하는 중 오류가 발생했습니다."
+   },
+   "8d5e7e72f12067991186cdf3cb7d5d9d": {
+      "description": "Premium account type",
+      "message": "프리미엄"
+   },
+   "902b0d55fddef6f8d651fe1035b7d4bd": {
+      "description": "Error message header",
+      "message": "오류"
+   },
+   "908f8d9f34f375a55dd5b6a86489d364": {
+      "description": "text in post clip dialog when there are no related notes",
+      "message": "결과 없음"
+   },
+   "909983ccb694a3711181d01fdeb74e9c": {
+      "description": "Error message",
+      "message": "지정한 노트북을 찾을 수 없습니다."
+   },
+   "90c3123b6b5bce5201bf4dcdda107833": {
+      "description": "Label for shortcut to close clipper",
+      "message": "Web Clipper 또는 활성화된 패널 닫기"
+   },
+   "90fe890b6b8f0bb0c052290c70b0840d": {
+      "description": "Tip for refresh notebooks list block",
+      "message": "대상을 찾을 수 없나요?"
+   },
+   "918d6e9f6a4fc2f88f9cbcb778e68baf": {
+      "description": "Error message when user tries to set a shortcut that's more than three keys long",
+      "message": "단축키는 3개 이하의 키 조합으로 이루어져야 합니다."
+   },
+   "923195695a47153ed038da437f074da3": {
+      "description": "Error message",
+      "message": "데이터 제한에 도달했습니다."
+   },
+   "94966d90747b97d1f0f206c98a8b1ac3": {
+      "description": "Label for submit button on the feedback form",
+      "message": "보내기"
+   },
+   "950e11420880a0ec9cc27829be580e2e": {
+      "description": "Section title for search results over business notes",
+      "message": "비즈니스 노트의 비슷한 검색 결과"
+   },
+   "95c65ab43cff1aa7a9111e468e7b8bef": {
+      "description": "Label for shortcut to go to text selection mode",
+      "message": "선택 모드"
+   },
+   "96bd91ed2f2958d3a0cefba9545d708d": {
+      "description": "Copy logs button title",
+      "message": "로그 복사"
+   },
+   "972e73b7a882d0802a4e3a16946a2f94": {
+      "description": "Basic account type",
+      "message": "베이직"
+   },
+   "97edcf81bb86d25aafacf1ac934b7757": {
+      "description": "Error message",
+      "message": "지정한 대상으로 스크랩할 수 없습니다."
+   },
+   "9913b8f718a25b9ab5df9bbfe35b5c80": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Evernote 플러스와 프리미엄을 소개합니다"
+   },
+   "9af7309e6c70325cd72080cd19491672": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "죄송하지만 최대 노트 콘텐츠 크기는 {size}입니다."
+   },
+   "9c1f1ae3d7f326ec02e4c0909ee6e17a": {
+      "description": "Tooltip for full page clip tool",
+      "message": "전체 페이지"
+   },
+   "9d290d3434589e33be3d2cad4f8323ec": {
+      "description": "Version label",
+      "message": "버전:"
+   },
+   "9dffbf69ffba8bc38bc4e01abf4b1675": {
+      "description": "\"Text\" tool title of screenshot clip format",
+      "message": "텍스트"
+   },
+   "9f3a28e3b8e1ab2d39153b803136e5c4": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "알림 받기…"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Evernote로 스크랩"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Evernote 확장 프로그램을 사용해 웹에서 본 정보를 Evernote 계정에 저장하세요."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "a10a9bcd450087de1ce1f80b35f44883": {
+      "description": "Legal tab title",
+      "message": "법적 고지"
+   },
+   "a11f4833156155211bd7b37e4d5e529c": {
+      "description": "Enable logs button titile",
+      "message": "로그 사용"
+   },
+   "a17cb092f1cd15bbb8fb075ca0365d1b": {
+      "description": "Error which shown when notebook has incorrect name",
+      "message": "잘못된 노트북 이름"
+   },
+   "a1c58e94227389415de133efdf78ea6e": {
+      "description": "Label for color appearance section",
+      "message": "표시"
+   },
+   "a1d5f2a85ad856617ebfdde9aa86d143": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "{size} 이상의 노트를 스크랩하려면 Evernote 프리미엄이 필요합니다."
+   },
+   "a25d585ba4312bd4098406942fe27892": {
+      "description": "Notebook creation error",
+      "message": "이 이름의 노트북이 이미 있습니다"
+   },
+   "a302191e995e9a77c23994cc1204d1a8": {
+      "description": "Category name in destination selector",
+      "message": "노트북"
+   },
+   "a41d26ca3cd0c60d01e04dee04c3442c": {
+      "description": "Message that clip is bigger than a certain number of bytes",
+      "message": "스크랩 용량이 {size} 이상입니다"
+   },
+   "a580158cf2dcbc9cbb0e8eec54283de6": {
+      "description": "Highlight removal tooltip",
+      "message": "클릭하여 하이라이트 제거"
+   },
+   "ab1a6fe3a0a4aef9da01f51d1a94bd44": {
+      "description": "Label for shortcut to go to skitch mode",
+      "message": "스크린샷 찍기"
+   },
+   "ab4f22321230d8db1bca9b52a5975145": {
+      "description": "",
+      "message": "노트북 선택"
+   },
+   "ad6584b1720c58e1eb70a17cc3c84b05": {
+      "description": "Label for url to clipped notebook",
+      "message": "Evernote에서 보기"
+   },
+   "ad8783089f828b927473fb61d51940ec": {
+      "description": "label for default clip action",
+      "message": "사용"
+   },
+   "ae0f61643c33404bb9fec87a30825c7a": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "영구 해제"
+   },
+   "ae1451f8bb54e7453a21c409500bed1c": {
+      "description": "message that reminder has been added to the note",
+      "message": "알리미 추가됨"
+   },
+   "ae5eb1c937167b51b186e27587df5a94": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "스크린샷 캡처 완료"
+   },
+   "afa88caa9b6c3c0562dfbea054f08aca": {
+      "description": "Title for dark color mode",
+      "message": "다크 모드 사용"
+   },
+   "b00adf4f51f5e2f5090416a006cf248c": {
+      "description": "\"Highlighter\" tool title of screenshot clip format",
+      "message": "하이라이터"
+   },
+   "b0f82c4aa9c1fa9d55e13f043cd0ed41": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version C",
+      "message": "프리미엄으로 업그레이드해 오프라인 상태에서도 모바일 장치에서 스크랩해둔 기사에 액세스하세요. 프리미엄 사용자는 오프라인 노트북을 지정해 언제나 빠르게 노트에 액세스할 수 있습니다."
+   },
+   "b18d8379adbda5dc9a4634ab86001a37": {
+      "description": "Button title: \"delete clip\"",
+      "message": "스크랩 삭제"
+   },
+   "b1d02ebd9b98631b8bc6ea490a891340": {
+      "description": "Error message",
+      "message": "계정이 삭제되었습니다."
+   },
+   "b2d37ae1cedf42ff874289b721860af2": {
+      "description": "Logs tab title",
+      "message": "로그"
+   },
+   "b4e7fcd2cba52644a49351cd23a6f6cf": {
+      "description": "Upgrade account button",
+      "message": "더 넓은 공간을 위해 업그레이드"
+   },
+   "b5001ee43a1f9d9757caae929e1905b9": {
+      "description": "Label for shortcut to expand article selection",
+      "message": "기사 선택 펼치기"
+   },
+   "b545fe9ce114725c7398961564ff92f8": {
+      "description": "Details of warning when a Premium is near quota",
+      "message": "단기간에 대량의 콘텐츠를 추가하면 서비스 장애로 이어질 수 있습니다. 현재 작업 수준이 의도하신 것인지 확인해 주세요."
+   },
+   "b5e0d53644d538a90bcedff69bd23cf0": {
+      "description": "If enabled, it shows the post clip dialog w/o related notes after a successful clip message",
+      "message": "관련 노트 없이 스크랩 성공 대화 상자 표시"
+   },
+   "b6908c122e0791f00fdd5433db23a4ab": {
+      "description": "Button to reset shortcuts in options page",
+      "message": "바로가기 재설정"
+   },
+   "b702532e5dc49d52bb36a826e1c0b7cd": {
+      "description": "Message displayed during clipping process.",
+      "message": "스크랩 저장 중..."
+   },
+   "b78b9e865bb7e11d953601ef9cb5d2b9": {
+      "description": "\"Stamps\" tool title of screenshot clip format",
+      "message": "스탬프"
+   },
+   "b8350bead278ce9f78de740d38810adb": {
+      "description": "Body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Evernote 플러스 또는 Evernote 프리미엄으로 업그레이드하시면 추가 기능을 즐길 수 있습니다."
+   },
+   "bbab939b5a6c6d2108323fe2e74efdb2": {
+      "description": "Label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF 페이지 버튼"
+   },
+   "bcd1b68617759b1dfcff0403a6b5a8d1": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "bdcf184c0d450fd4345a79857803aafe": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Gmail 대화 열기"
+   },
+   "be9aa33d53323f3bced7faea345eaeb4": {
+      "description": "label for last used clip action option in options page",
+      "message": "마지막으로 사용한 스크랩 형식 사용"
+   },
+   "be9bffbf4f5a8a0a22de1561eabd0576": {
+      "description": "Label for keyboard shortcut that moves the article preview box up the page",
+      "message": "기사 선택 위로 이동"
+   },
+   "bf25911c78c13e56ee2b778aac3f0d26": {
+      "description": "Error message",
+      "message": "내부 오류가 발생했습니다."
+   },
+   "bf5d28973f9366faafa89b7401f7c08b": {
+      "description": "Title for light color mode",
+      "message": "라이트 모드 사용"
+   },
+   "c0552276a3b1d8a40d4968b8cf36cdec": {
+      "description": "Label for shortcut to go to pdf mode",
+      "message": "PDF 클립"
+   },
+   "c274e58f3d9093760405232347bf95d1": {
+      "description": "Label for shortcut to select all markup objects in options page",
+      "message": "모든 표식 개체를 선택"
+   },
+   "c2a96c73e26b3ce2442e74d5bd7d5f52": {
+      "description": "Too many resources",
+      "message": "리소스가 너무 많습니다"
+   },
+   "c2e9e924f62423374f58330185fbf5ab": {
+      "description": "If enabled, it shows the full post clip dialog after a successful clip",
+      "message": "스크랩 성공 대화 상자 표시"
+   },
+   "c3ffa4fc7cd3454d6993b02f9ccae1ae": {
+      "description": "Label for specifying default clipping action",
+      "message": "기본 스크랩 동작"
+   },
+   "c4784a71adc8a196ab74d80c8ed8eb20": {
+      "description": "Error when user hits the notebook amount limit",
+      "message": "노트북 개수가 최대 한도에 도달했습니다"
+   },
+   "c65fbb990d50a44bed795641cfbe75a8": {
+      "description": "Error message",
+      "message": "비즈니스 로그인이 필요합니다."
+   },
+   "c8a59e7135a20b362f9c768b09454fdb": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "닫기"
+   },
+   "c9cc8cce247e49bae79f15173ce97354": {
+      "description": "Label for button to save clip to Evernote.",
+      "message": "저장"
+   },
+   "cae8d14edd025e72c59dbab6f378c95a": {
+      "description": "Notebook creator name, when notebook is created by you",
+      "message": "회원님"
+   },
+   "cb167cf4f8abd63f31fa696cd07e2710": {
+      "description": "Section title for search results over personal notes",
+      "message": "개인 노트의 비슷한 검색 결과"
+   },
+   "cc82fb8d261fb7a98fa35e7f5da86b46": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "노트에 관련 검색 결과 없음"
+   },
+   "cd4db2784af5640685fce0148df3f2b2": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "전체 메시지 선택"
+   },
+   "ce8ae9da5b7cd6c3df2929543a9af92d": {
+      "description": "label for option in global toolbar",
+      "message": "이메일"
+   },
+   "ce9291906a4c3b042650b70d7f3b152e": {
+      "description": "Label for shortcut to use the rectangle tool in options page",
+      "message": "직사각형"
+   },
+   "d08e76a24ebef7ded34bbdba6360fdad": {
+      "description": "Header for upsell to Basic users that appears every 30 days - version C",
+      "message": "데스크톱에서 스크랩 후 휴대폰에서 읽으세요"
+   },
+   "d103f08d0813b7b35607f2456f5798d5": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper를 사용하려면 쿠키가 제대로 작동해야 합니다. 브라우저 설정에서 쿠키를 활성화하세요."
+   },
+   "d388632d05e8826abe4b95de0b110529": {
+      "description": "\"Crop\" tool title of screenshot clip format",
+      "message": "자르기"
+   },
+   "d3b21c087ca7dd2561109888011bc0fc": {
+      "description": "",
+      "message": "Web Clipper는 다음과 같은 오픈소스 소프트웨어를 사용합니다"
+   },
+   "d3de52109c609784f2e4a28d0e9fdb97": {
+      "description": "Copy logs button title",
+      "message": "완료했습니다."
+   },
+   "d417daa3bf3cb7eef2d5d0712667e27f": {
+      "description": "Loading Web Clipper title",
+      "message": "Web Clipper 불러오는 중..."
+   },
+   "d63969ccdb3a08c0d9e245beb519dc3f": {
+      "description": "Tooltip for full page clip tool",
+      "message": "전체 페이지를 Evernote로 스크랩"
+   },
+   "d6583168b9ae91803da650349dd832f0": {
+      "description": "Placeholder text for tag input limit",
+      "message": "최대 제한에 도달했습니다"
+   },
+   "d6b258792ff06f82933c74eeb8aef591": {
+      "description": "Title of the organization clip section",
+      "message": "정리"
+   },
+   "d6e6cb19e3b9c02f89d6cd54cfa7c613": {
+      "description": "Business account type",
+      "message": "비즈니스"
+   },
+   "d789051183dace04ff2791ed4c12ffb2": {
+      "description": "button to add date to reminder",
+      "message": "날짜 추가"
+   },
+   "d7a1efc480004d357f4c4f9ec9bd3cf2": {
+      "description": "Error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "두 단축키가 충돌합니다."
+   },
+   "da31380170c9345c63b5b82bddf439b5": {
+      "description": "Label for the related notes tab",
+      "message": "관련 노트"
+   },
+   "db9c60df11aa671c7c123e7c56bf27a1": {
+      "description": "Label for multipage clips feature toggle",
+      "message": "여러 페이지 스크랩"
+   },
+   "de24b749138b4e1196d32437c5376c2e": {
+      "description": "Label for shortcut to contract article selection",
+      "message": "기사 선택 축소"
+   },
+   "dec8a8ad499b0b7c3c2b175379f36882": {
+      "description": "Copyright statement",
+      "message": "Copyright {0} Evernote Corporation. 모든 권리 보유."
+   },
+   "e03d19fb7bfcac5a4f319658a41c4676": {
+      "description": "button to set reminder for one week from now",
+      "message": "1주일 후에"
+   },
+   "e129ae480280e47ef82fc7702f8321ba": {
+      "description": "Text for refresh notebooks list button",
+      "message": "목록 새로 고침"
+   },
+   "e3469d1713b6e0123cb7794d854d39d8": {
+      "description": "Tooltip for selection clip tool",
+      "message": "선택 항목을 Evernote로 스크랩"
+   },
+   "e46b8ed01e2b907944e68d56969c0166": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "{size} 이상의 노트를 스크랩하려면 Evernote 플러스 또는 Evernote 프리미엄이 필요합니다."
+   },
+   "e4a7c421716ffbdb0b15f93f1e535fb7": {
+      "description": "Error message",
+      "message": "사용자 할당량에 도달했습니다."
+   },
+   "e613048dd569aa364c34f34f17c32c4f": {
+      "description": "Label for keyboard shortcut that moves the article preview box down the page",
+      "message": "기사 선택 아래로 이동"
+   },
+   "e7ee6a7ae0e6f824f5609c7bdac34375": {
+      "description": "\"Shapes\" tool title of screenshot clip format",
+      "message": "도형"
+   },
+   "e8cbe95de3df04d77fb43bd674a44d52": {
+      "description": "Sign in user prompt",
+      "message": "{accountName} 로그인..."
+   },
+   "ea4788705e6873b424c65e91c2846b19": {
+      "description": "Label for button to cancel screenshot waiting mode.",
+      "message": "취소"
+   },
+   "eb26e4c764a92acb12a713e1e99b42a4": {
+      "description": "Error message when user tries to use forbidden shortcut",
+      "message": "이 단축키에서 {key}를 사용할 수 없습니다"
+   },
+   "ebb54dcac10c133f63a2ebeed6576aa8": {
+      "description": "Title for near quota message (50%)",
+      "message": "월 업로드 용량의 50%를 사용했습니다"
+   },
+   "ede099ef4618afd096177ccb467e265e": {
+      "description": "\"Pixelate\" tool title of screenshot clip format",
+      "message": "모자이크 처리"
+   },
+   "ee18738a0b8371049dd9f61de9f3b7ce": {
+      "description": "Label for shortcut to use the rounded rectangle tool in options page",
+      "message": "둥근 사각형"
+   },
+   "eedddedd3a5fa57919dccaf7f06b7fa0": {
+      "description": "Error message",
+      "message": "서버에 연결할 수 없습니다."
+   },
+   "ef625483f5a71982de118435c88ffcfa": {
+      "description": "Placeholder text for the recipient field of the email sharing dialog",
+      "message": "이메일 주소 입력"
+   },
+   "f00832f73216fb5d315bc3b43bbf8425": {
+      "description": "message when shared notebook's permissions were changed",
+      "message": "더 이상 지정한 노트북 {name}에 스크랩할 권한이 없습니다"
+   },
+   "f02654025ee9aefddb18a2c4b6da5ee7": {
+      "description": "Disable logs button title",
+      "message": "로그 사용 안 함"
+   },
+   "f02b140d13bec3363889800fed4fa3dc": {
+      "description": "Message that shows up when the clipper popup cant open.",
+      "message": "이 페이지를 스크랩하려면 다시 로드해야 합니다. 페이지를 다시 로드하고 다시 시도해 보세요"
+   },
+   "f0523eb071ac6e3011fc716c84d9380d": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "간소화된 기사"
+   },
+   "f0a924260b5110bd3da35db944239644": {
+      "description": "Placeholder for notebooks creation field",
+      "message": "노트북 이름 입력"
+   },
+   "f3671b1ae90e4547655f9b55a106a812": {
+      "description": "button to set reminder for one week from now",
+      "message": "알리미 제거"
+   },
+   "f3b9de34364942606ebb991132523f83": {
+      "description": "Error message",
+      "message": "알 수 없는 오류가 발생했습니다."
+   },
+   "f4f70727dc34561dfde1a3c529b6205c": {
+      "description": "Title of the settings page",
+      "message": "설정"
+   },
+   "f63ca3deba069ca98f9c093f7fafa444": {
+      "description": "Label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "크기에 맞춤"
+   },
+   "f683581d3e75f05f9d9215f9b4696cef": {
+      "description": "Upgrade account button",
+      "message": "업그레이드"
+   },
+   "f7afb8f40c06b09fff87db452e780c21": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "클립보드에 복사"
+   },
+   "f80a1a821f2881d5e6a84ff064100980": {
+      "description": "Tooltip for screenshot context menu clip",
+      "message": "스크린샷을 Evernote로 스크랩"
+   },
+   "f8219e58d07c30641348048defa81b71": {
+      "description": "Tooltip for image context menu clip",
+      "message": "Evernote로 이미지 스크랩"
+   },
+   "fa2ead697d9998cbc65c81384e6533d5": {
+      "description": "Privacy Policy tab title",
+      "message": "개인정보 취급방침"
+   },
+   "fe7668df3ce773632dc8b4ef195b0f77": {
+      "description": "Error message",
+      "message": "서버에 의해 작업이 금지되었습니다."
+   },
+   "fe77d5fbcd090fab788da6c4dc21d288": {
+      "description": "Label for notebooks search field",
+      "message": "찾기..."
+   },
+   "feb2d54240cb6cb8c3aa2248d542c8b6": {
+      "description": "Clipper options link text",
+      "message": "Clipper 옵션"
+   },
+   "ff320e0ba6fcb304629771b61b860a25": {
+      "description": "Message for error that prevents showing an UI",
+      "message": "Clipper에 오류가 발생했습니다"
+   },
+   "ff3f0be60b1782641b65360e3505fc83": {
+      "description": "Error alert message",
+      "message": "노트는 인터넷 연결 시 업로드됩니다."
+   },
+   "ff7515fd682357564feb5a60ed45a863": {
+      "description": "Council for improvement of user experience",
+      "message": "팁: CTRL 키를 누른 상태에서 클릭하여 초점 이동하세요."
+   },
+   "ff7b6e10f4d999b0b0b7c41127dd1779": {
+      "description": "Label for shortcut to go to article preview mode",
+      "message": "기사 미리보기"
+   },
+   "ff9eb8bd8c927da073cea632f294e23b": {
+      "description": "button to set reminder for tomorrow",
+      "message": "내일"
+   }
+}

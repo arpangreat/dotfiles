@@ -1,0 +1,7 @@
+2021/07/22-15:32:20.983 12294 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/22-15:32:20.983 12294 Recovering log #3
+2021/07/22-15:32:20.984 12294 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000003.log 
+2021/07/22-15:32:23.489 114b0 Level-0 table #5: started
+2021/07/22-15:32:23.491 114b0 Level-0 table #5: 8336 bytes OK
+2021/07/22-15:32:23.492 114b0 Delete type=0 #3
+2021/07/22-15:32:23.492 114b0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

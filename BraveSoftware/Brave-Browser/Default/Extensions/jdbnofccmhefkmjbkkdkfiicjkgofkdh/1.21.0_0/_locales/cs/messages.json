@@ -1,0 +1,1439 @@
+{
+   "contextmenu_add": {
+      "message": "Přidat položku"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Přidat záložku"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Správce záložek"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Zkontrolovat záložky"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Zavřete všechny adresáře"
+   },
+   "contextmenu_copy": {
+      "message": "Kopírovat adresu do schránky"
+   },
+   "contextmenu_current_tab": {
+      "message": "Otevřít v aktuální kartě"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Odstranit záložku"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Vymazat adresář"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Odstranit oddělovač"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Zruš výběr záložky"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Zruš výběr adresáře"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Upravit záložku"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Upravit adresář"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Upravit oddělovač"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Schovat od boční lišty"
+   },
+   "contextmenu_infos": {
+      "message": "Informace"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Klávesové zkratky"
+   },
+   "contextmenu_new_tab": {
+      "message": "Otevřít na nové kartě"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Otevřít v anonymním okně"
+   },
+   "contextmenu_new_window": {
+      "message": "Otevřít v novém okně"
+   },
+   "contextmenu_open_children": {
+      "message": "Otevřít záložky"
+   },
+   "contextmenu_pin": {
+      "message": "Kolík nahoru"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Obnovit postranní panel"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Vyber záložku"
+   },
+   "contextmenu_select_dir": {
+      "message": "Vyber adresář"
+   },
+   "contextmenu_select_entries": {
+      "message": "Vyber vícero vstupů"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Zobrazit v adresáři"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Zobrazit v boční liště"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Zobrazit skryté položky"
+   },
+   "contextmenu_unpin": {
+      "message": "Odpojit od vrcholu"
+   },
+   "contribute_intro": {
+      "message": "Pro zlepšení rozšíření potřebujeme lépe znát, jak uživatelé používají postranní panel a jeho konfiguraci."
+   },
+   "contribute_notice": {
+      "message": "Můžete mi pomoci sdílením vaší konfigurace"
+   },
+   "contribute_outro": {
+      "message": "Máte-li dotazy nebo obavy týkající se sdílení informací, zašlete mi prosím zprávu."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Svou činnost můžete sdílet v postranním panelu anonymně, což mi pomáhá zjistit, jak uživatelé obecně používají postranní panel. Informace o vašich záložkách nebo navštívených webových stránkách [b]nejsou[/b] zjišťovány."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Tato informace je velmi užitečná pro identifikaci problémů s využitelností málo používaných funkcí."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Kolik záložek uživatelé průměrně používají?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Kterou platformu uživatelé používají (Windows, Mac, Linux, ...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Používají uživatelé vyhledávání?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Mění uživatelé řazení záložek?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Jak často uživatelé upravují nebo přeskupují položky?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Sdílená data, například:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Sdílení aktivity"
+   },
+   "contribute_share_config_desc": {
+      "message": "Anonymní sdílení vaší konfigurace mi pomáhá zjišťovat oblíbená nastavení a tak určit, co se v budoucích verzích zlepší nebo změní."
+   },
+   "contribute_share_config_label": {
+      "message": "Sdílení konfigurace"
+   },
+   "extension_desc": {
+      "message": "Přidejte přepínatelný panel kde naleznete všechny Vaše záložky na levé straně obrazovky."
+   },
+   "extension_last_update": {
+      "message": "Poslední aktualizace {1}"
+   },
+   "extension_name": {
+      "message": "Boční lišta zálloh"
+   },
+   "extension_version": {
+      "message": "Verze"
+   },
+   "header_bookmarks": {
+      "message": "Záložky"
+   },
+   "header_bookmarks_single": {
+      "message": "Založka"
+   },
+   "header_selected_entries": {
+      "message": "vybráno"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Zkopíruje URL aktuálně vybraného záznamu"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Smaže aktuálně vybraný záznam"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Provede kliknutí na momentálně vybraný záznam"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Zavře postranní panel nebo kontextové menu"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Příkaz"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Delete"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Tab"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Otevře kontextové menu pro aktuálně vybraný záznam"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Vybere následující nebo předchozí položku v postranním panelu"
+   },
+   "more_link": {
+      "message": "Dozvíte se více"
+   },
+   "newtab_fallback_desc": {
+      "message": "Místo toho jsme otevřeli novou kartu s postranním panelem"
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Postranní panel nelze použít na stránkách s rozšířeními"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Postranní panel je blokován"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Postranní panel nelze použít na záložce úvodní stránky"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Postranní panel nelze použít na systémových stránkách {browserName}"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Některá z Vašich stránek zakázala otevření postranního panelu"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Postranní panel nelze použít v Obchodu {browserName}"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Vždy zobraz tuto stránku při otevření nového okna"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Zobrazit ikony webových stránek"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Zobrazit náhledy webových stránek"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Uživatelem definované položky"
+   },
+   "newtab_grid_links_default": {
+      "message": "Nejoblíbenější stránky"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Velikost mřížky"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Nezobrazovat stránky"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Nejpoužívanější záložky"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Posledně použité záložky"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Definováno uživatelem"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Název"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL domovské stránky"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL výsledku vyhledávání"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Vyhledávač"
+   },
+   "newtab_search_field_hide": {
+      "message": "Schovat vyhledávací pole"
+   },
+   "newtab_search_field_show": {
+      "message": "Zobrazit vyhledávací pole"
+   },
+   "newtab_search_placeholder": {
+      "message": "Vyhledat {1} nebo typ URL"
+   },
+   "newtab_speech_search_error": {
+      "message": "Chcete-li povolit hlasové vyhledávání, musíte povolit přístup k mikrofonu."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Mluvte teď"
+   },
+   "newtab_title": {
+      "message": "Nová karta"
+   },
+   "newtab_upload_background": {
+      "message": "Nahrát obrázek pozadí"
+   },
+   "onboarding_finish_desc": {
+      "message": "Bavte se s bočním panelem."
+   },
+   "onboarding_finish_notice": {
+      "message": "Pokud často klikáte na {1} okraj okna prohlížeče, lze nastavit, v jaké části (vertikálně) může být postranní panel otevřen, abyste předešli náhodnému otevření."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Konfigurace vzhledu"
+   },
+   "onboarding_goto_settings": {
+      "message": "Další nastavení"
+   },
+   "onboarding_handson_desc": {
+      "message": "Nyní můžete vyzkoušet sami sebe."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Poté {1} kliknutím myší otevřete postranní panel."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Přesuňte kurzor na stranu {1} okna."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "{1} klikni pro otevření boční lišty"
+   },
+   "onboarding_headline": {
+      "message": "Děkujeme za instalaci tohoto rozšíření."
+   },
+   "onboarding_left": {
+      "message": "vlevo"
+   },
+   "onboarding_right": {
+      "message": "vpravo"
+   },
+   "onboarding_setup": {
+      "message": "Nastavit nyní"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Jak chcete otevřít svůj postranní panel?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Kde chcete mít svůj postranní panel?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Tmavý"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Který styl preferujete?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Světlý"
+   },
+   "onboarding_skip": {
+      "message": "Přeskočit nastavení"
+   },
+   "onboarding_title": {
+      "message": "Nastavit"
+   },
+   "overlay_add_position": {
+      "message": "Umístění"
+   },
+   "overlay_add_position_append": {
+      "message": "Připojit za adresář"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Vložit před adresář"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Doplňující info"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Vytvořeno na"
+   },
+   "overlay_bookmark_title": {
+      "message": "Název"
+   },
+   "overlay_bookmark_url": {
+      "message": "Adresa URL"
+   },
+   "overlay_bookmark_views": {
+      "message": "Náhledy"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "měsíčně"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Nahráno od"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Náhled"
+   },
+   "overlay_cancel": {
+      "message": "Zrušit"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Zkontrolovat url adresy záložek"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Poškozeno"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Změněno"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Duplikát"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Prázdná složka"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Všechny url adresy záložek jsou v pořádku"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Žádné poškozené url adresy záložek"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Žádné změněné url adresy záložek"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Žádné duplikáty mezi url adresami záložek"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Žádné složky bez záložek"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Odstranit vybrané"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Aktualizovat vybrané"
+   },
+   "overlay_close": {
+      "message": "Zavřít"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Opravdu chcete otevřít všech {1} záložek?"
+   },
+   "overlay_delete": {
+      "message": "Smazat"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Opravdu chcete smazat tyto záložky?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Opravdu chcete smazat tento adresář? Všechny podřízené záložky budou také smazané."
+   },
+   "overlay_delete_selected": {
+      "message": "Vymaž vybrané vstupy"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "Opravdu chcete vymazat vybrané vstupy? Všechny vnořené podadresáře vybraného adresáře budou také smazány."
+   },
+   "overlay_dir_children": {
+      "message": "Prvky"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Záložky"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Adresáře"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Opravdu chcete schovat tyto záložky v boční liště?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Opravdu chcete skrýt tento adresář v boční liště? Všechny podřízené záložky budou také skryté."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Schovat v boční liště"
+   },
+   "overlay_label_bookmark": {
+      "message": "Záložky"
+   },
+   "overlay_label_dir": {
+      "message": "Adresář"
+   },
+   "overlay_label_separator": {
+      "message": "Oddělovač"
+   },
+   "overlay_open_children": {
+      "message": "Otevřít vše"
+   },
+   "overlay_save": {
+      "message": "Uložit"
+   },
+   "overlay_separator_title_desc": {
+      "message": "Volitelně lze vložit název. Bude zobrazen na linii oddělovače a může pomoci třídit seznam záložek."
+   },
+   "overlay_update": {
+      "message": "Aktualizovat"
+   },
+   "premium_activate": {
+      "message": "Aktivovat Premium"
+   },
+   "premium_already_activated": {
+      "message": "Již používáte Premium"
+   },
+   "premium_desc_1": {
+      "message": "S Premium získáte přístup k dalším funkcím a pomůžete tak s údržbou rozšíření."
+   },
+   "premium_desc_2": {
+      "message": "Níže můžete zkontrolovat funkce zahrnuté v Premium. Všechny klíčové funkce rozšíření jsou zdarma a nevyžadují Premium. Můžete platit zač Vám stojí toto rozšíření a má práce ke zpřístupnění těchto funkcí."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Pokud používáte stránku Nová karta tohoto rozšíření, můžete nastavit libovolný obrázek jako pozadí, aby vše bylo ještě krásnější."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Přizpůsobte vaši stránku Nová karta"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Pokud rozumíte CSS, můžete zcela změnit vzhled postranního panelu přidáním vlastních definic. Umožní Vám to přizpůsobit cokoliv."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Přizpůsobte vše pomocí vlastní Stylessheet"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "S Premium získáte přístup k nevydaným funkcím."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Buďte prvním, kdo vyzkouší nové experimentální funkce"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Import a export Vašich nastavení"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Můžete kliknout na adresář v postranním panelu k provedení kontroly. Výsledek ukáže aktualizované url, záložky, které již nepracují, a záložky s totožnou url."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Zkontrolujte své záložky kvůli poškozeným linkům nebo duplikátům"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Změna šířky postranního panelu kdykoliv"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Celý design postranního panelu můžete zaměnit jedním kliknutím nainstalováním jiného motivu. Lze je také přizpůsobit pomocí dostupných posuvníků a barevných možností."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Změňte motiv postranního panelu"
+   },
+   "premium_get_now": {
+      "message": "Získejte Premium nyní"
+   },
+   "premium_license_key": {
+      "message": "Licenční klíč"
+   },
+   "premium_pay_buy": {
+      "message": "Kupte Premium"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Storno podmínky"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Potvrďte nákup"
+   },
+   "premium_pay_contact": {
+      "message": "Pokud se setkáte s potížemi během platby, nebo pokud máte nějaké otázky, kontaktujte mě prosím na {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Kreditní nebo debetní karta"
+   },
+   "premium_pay_eula": {
+      "message": "Licenční smlouva koncového uživatele"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Četl jsem a souhlasím s [a]Licenční smlouvou koncového uživatele[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Expirace karty"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Číslo karty"
+   },
+   "premium_pay_info_email": {
+      "message": "E-Mail"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Prosím vložte mailovou adresu na kterou má být zaslán licenční klíč."
+   },
+   "premium_pay_info_name": {
+      "message": "Jméno"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Platební metoda"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Směrovací číslo"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Vyber metodu pro placení a dále vyber požadované množství, které chceš zaplatit v dalším kroku."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Chcete-li aktivovat {1} na jiném zařízení, nebo po reinstalaci rozšíření, můžete vložit následující klíč do nastavení rozšíření:"
+   },
+   "premium_pay_price_info": {
+      "message": "Toto je jednorázová změna a zahrnuje rovněž budoucí funkce Premium."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Pro získání prémiových funkcí můžete zaplatit částku dle svého uvážení. Obdržíte vždy všechny prémiové funkce, bez ohledu na to kolik jste zaplatil(a)."
+   },
+   "premium_pay_price_total": {
+      "message": "Celkem"
+   },
+   "premium_pay_purchase_id": {
+      "message": "ID nákupu"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Zvolte platební metodu"
+   },
+   "premium_pay_success_headline": {
+      "message": "Děkuji za nákup"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} byl automaticky aktivován pro toto zařízení. Není třeba činit žádné další kroky."
+   },
+   "premium_pay_verifying": {
+      "message": "Ověření transakce"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Skenujte QR kod na WeChat pro pokračování"
+   },
+   "premium_pay_what_you_want": {
+      "message": "Plaťte jak chcete"
+   },
+   "premium_popup_text": {
+      "message": "Prozkoumal jste již Premium?"
+   },
+   "premium_restricted_text": {
+      "message": "Tato funkce je dostupná jen s Premium"
+   },
+   "premium_show_license_input": {
+      "message": "Již mám Premium"
+   },
+   "settings_advanced": {
+      "message": "Rozšířená nastavení"
+   },
+   "settings_available_themes": {
+      "message": "Dostupné motivy"
+   },
+   "settings_background_blur": {
+      "message": "Efekt rozostření pozadí"
+   },
+   "settings_background_transparency": {
+      "message": "Průhlednost pozadí"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Barva ikony adresáře"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Ikona adresáře"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Zarážka adresáře"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Velikost písma záložek"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Vodorovné odsazení záložek"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Velikost ikon záložek"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Výška řádku záložek"
+   },
+   "settings_close_timeout": {
+      "message": "Prodleva zavření"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Prodleva po uzavření boční lišty - v sekundách. Bude odpočítávat jakmile myš opustí boční lištu a zastaví se když se myší opět vrátíte."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Nezavírat automaticky"
+   },
+   "settings_color_scheme": {
+      "message": "Barevné schéma"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Barva hlavičky boční lišty, zatržítek, atd."
+   },
+   "settings_custom_css": {
+      "message": "Nastavení vlastního stylu"
+   },
+   "settings_custom_css_desc": {
+      "message": "Můžete definovat svůj vlastní styl tak, aby přepsal výchozí styl. Použijte tuto možnost pouze tehdy, pokud jste obeznámeni s CSS a víte, co děláte."
+   },
+   "settings_dark_mode": {
+      "message": "Plocha"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Změnit vzhled postranního panelu"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Vzhled postranního panelu můžete zcela změnit podle svých potřeb. Existuje mnoho možností, jak změnit velikost písma, řádkování, barvy, ikony a mnoho dalšího. Můžete si také vybrat z předdefinovaných návrhů a přednastavených možností, aby postranní panel rychle vypadal, jak chcete."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Konfigurace chování postranního panelu"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "K ovládání rozšíření můžete změnit různé možnosti. Můžete například změnit způsob zasunutí postranního panelu nebo způsob otevírání záložek. Pokud nechcete, aby se postranní panel načítal na každou stránku, můžete jej také nakonfigurovat pomocí příslušných pravidel."
+   },
+   "settings_dir_accordion": {
+      "message": "Zobraz jen aktuální adresář"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Uzavře všechny adresáře s výjimkou aktuálního adresáře."
+   },
+   "settings_directories_icon_size": {
+      "message": "Velikost ikon adresářů"
+   },
+   "settings_directory_arrows": {
+      "message": "Šipky adresáře"
+   },
+   "settings_expert_save_error": {
+      "message": "Nelze uložit nastavení. Opravte svoje nastavení."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Expertní nastavení umožňují konfigurovat každý příznak konfigurace rozšíření, a to i ty, které nelze změnit pomocí standardních zaškrtávacích políček nebo posuvníků na stránce nastavení."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Změňte zde hodnoty pouze tehdy, pokud víte, co děláte. Chybné konfigurace mohou způsobit neočekávané chování rozšíření. Pokud se něco rozbije, můžete se vrátit k výchozí konfiguraci."
+   },
+   "settings_export": {
+      "message": "Exportovat nastavení"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Přidejte pouze jeden vzor url na každý řádek."
+   },
+   "settings_filter_explanation_2": {
+      "message": "Pomocí * označte libovolný znak (např. example.com/* odpovídá všem stránkám na doméně example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Pokud nevložíte žádnou * do pravidla, bude se shodovat pouze přesná adresa URL (např. \"example.com\" neodpovídá adrese url \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "V pravidlech nemusíte přidávat protokol (např. http: //)"
+   },
+   "settings_filter_intro": {
+      "message": "Pokud nechcete, aby se postranní panel zobrazil na každé stránce, můžete nakonfigurovat, kde se má rozšíření (whitelist) načíst a kde ne (černá listina)."
+   },
+   "settings_filter_rules": {
+      "message": "Vzory URL"
+   },
+   "settings_filter_visibility": {
+      "message": "Načti postranní panel"
+   },
+   "settings_filter_visibility_always": {
+      "message": "Na každé stránce"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "Na každé stránce vyjma vybraných stránek"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Pouze na vybraných stránkách"
+   },
+   "settings_font_family": {
+      "message": "Písmo"
+   },
+   "settings_font_family_default": {
+      "message": "Základní"
+   },
+   "settings_font_family_desc": {
+      "message": "Písmo boční lišty a překrývacích popisek"
+   },
+   "settings_header_height": {
+      "message": "Výška hlavičky"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Sdílení informací"
+   },
+   "settings_hover_color": {
+      "message": "Barva při najetí myší"
+   },
+   "settings_icon_background_color": {
+      "message": "Barva pozadí"
+   },
+   "settings_icon_color": {
+      "message": "Barva"
+   },
+   "settings_icon_color_auto": {
+      "message": "Automaticky"
+   },
+   "settings_icon_color_custom": {
+      "message": "Vlastní"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Barva ikony bude nastavena automaticky podle barev systému (světlá nebo tmavá). Můžete také definovat barvu vlastní."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Pokud použijete vlastní motiv {browserName}, automatická barva nebude fungovat."
+   },
+   "settings_icon_shape": {
+      "message": "Tvar"
+   },
+   "settings_import": {
+      "message": "Importovat nastavení"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Importovat / exportovat záložky"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Toto je funkce prohlížeče a není součástí rozšíření. Přečtěte si více o tom, jak importovat a exportovat záložky v prohlížeči {browserName}."
+   },
+   "settings_import_export_desc": {
+      "message": "Nastavení rozšíření lze exportovat a lokálně uložit do vašeho počítače. Exportovaný soubor můžete importovat do libovolného zařízení, na kterém je rozšíření nainstalováno."
+   },
+   "settings_import_export_headline": {
+      "message": "Nastavení importu / exportu"
+   },
+   "settings_import_export_notice": {
+      "message": "Nastavení rozšíření je automaticky synchronizované mezi vašimi zařízeními, jestliže jste přihlášeni v {browserName} vaším Google učtem. Pokud nechcete být přihlášeni, nebo chcete sdílet vaše nastavení s jinými uživateli, můžete použít funkci import/export."
+   },
+   "settings_import_failed": {
+      "message": "Import konfigurace se nepodařilo. Zvolte prosím platný soubor."
+   },
+   "settings_import_saved": {
+      "message": "Konfigurace byla importována úspěšně"
+   },
+   "settings_indicator_color": {
+      "message": "Barva"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Barva ikony"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Velikost ikony"
+   },
+   "settings_indicator_width": {
+      "message": "Šířka"
+   },
+   "settings_install_theme": {
+      "message": "Nainstalovat motiv"
+   },
+   "settings_installed_theme_info": {
+      "message": "Aktuálně nainstalován"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Nastav klávesovou zkratku"
+   },
+   "settings_language": {
+      "message": "Jazyk"
+   },
+   "settings_language_default": {
+      "message": "Základní prohlížeč"
+   },
+   "settings_language_desc": {
+      "message": "Jazyk tohoto uživatelského prostředí"
+   },
+   "settings_link_action": {
+      "message": "Otevřít záložky"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Aktuální karta"
+   },
+   "settings_link_action_desc": {
+      "message": "Levý klik otevře záložku v aktuální nebo nové kartě."
+   },
+   "settings_link_action_new_tab": {
+      "message": "Nová karta"
+   },
+   "settings_menu_appearance": {
+      "message": "Vzhled"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Hlavní"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Ikona"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Kontrolka"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Překrývání"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Boční lišta"
+   },
+   "settings_menu_dashboard": {
+      "message": "Přehled"
+   },
+   "settings_menu_expert": {
+      "message": "Expertní nastavení"
+   },
+   "settings_menu_export": {
+      "message": "Import/Export"
+   },
+   "settings_menu_infos": {
+      "message": "Informace"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "O mě"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Záznam změn"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Kontakt"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Oprávnění"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Soukromí"
+   },
+   "settings_menu_language": {
+      "message": "Jazyk"
+   },
+   "settings_menu_language_general": {
+      "message": "Hlavní"
+   },
+   "settings_menu_language_translate": {
+      "message": "Překlad"
+   },
+   "settings_menu_newtab": {
+      "message": "Nová karta"
+   },
+   "settings_menu_premium": {
+      "message": "Premium"
+   },
+   "settings_menu_sidebar": {
+      "message": "Boční lišta"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Filtr"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Hlavní"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Přepnout"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Popisek"
+   },
+   "settings_menu_support": {
+      "message": "Podpora"
+   },
+   "settings_new_tab": {
+      "message": "Nová karta"
+   },
+   "settings_new_tab_background": {
+      "message": "Otevřít v pozadí"
+   },
+   "settings_new_tab_desc": {
+      "message": "Otevřít záložky v nové kartě v popředí nebo v pozadí"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Otevřít v popředí"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Po aktuální kartě"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Po poslední záložce"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Před první kartou"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Otevřete nové záložky po poslední nebo aktuální záložce"
+   },
+   "settings_newtab_desc": {
+      "message": "Bohužel Google odstranil možnost načíst rozšíření na výchozí stránce nové karty. Z tohoto důvodu jsem přidal několik možností, které vám umožňují přístup k vašim záložkám při otevření nové karty jiným způsobem."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Přesuň fokus na adresní řádek"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Pokud je povoleno, fokus bude přesunut na adresní řádek při otevření nové karty. Jestliže ne, bude fokus přesunut do vzhledávacího pole."
+   },
+   "settings_newtab_override": {
+      "message": "Přepsat stránku nové karty"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Máte-li rozšíření překrýt svou aktuální stránku s novými kartami buď s vlastním provedením, nebo s webovou stránkou, kterou je třeba načíst při otevírání nové karty?"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Otevřete postranní panel automaticky"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Nastavte, zda se má boční panel otevřít automaticky při otevírání nové karty."
+   },
+   "settings_newtab_website": {
+      "message": "Načíst webovou stránku"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Místo nahrazení nové záložky můžete místo toho načíst web, který je načten."
+   },
+   "settings_not_synced": {
+      "message": "Nelze synchronizovat mezi Vašimi zařízeními"
+   },
+   "settings_open_action": {
+      "message": "Otevření boční lišty"
+   },
+   "settings_open_action_desc": {
+      "message": "Lištu otevřete levým nebo pravým klikem myši na straně okna. Případně můžete nastavení změnit na otevření pomocí kliknutí na ikonu v menu {browserName}."
+   },
+   "settings_open_action_icon": {
+      "message": "Kliknutí na ikonu"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Levý klik"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Přiblížení se myší"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Pravý klik"
+   },
+   "settings_open_delay": {
+      "message": "Prodleva otevření"
+   },
+   "settings_open_delay_desc": {
+      "message": "Okamžité otevření boční lišty při přiblížení myši nebo kliknutím, je zdrženo prodlevou."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Barva masky"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "Rozšíření zobrazuje Vaše záložky v postranním panelu a proto vyžaduje oprávnění k získání přístupu. Oprávnění rovněž umožňuje tomuto rozšíření editovat a odstraňovat záložky."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "{browserName} bohužel nemá mechanizmus ke zobrazení obsahu uvnitř okna prohlížeče bez interakce s nyní prohlíženou stránkou."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Kvůli tomu, že se postranní panel zobrazuje na současné stránce je vyžadováno následující oprávnění. Kromě tohoto technického důvodu se povolení nevyužívá k jiným účelům."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Pokud přemýšlíte, k čemu jsou využívána oprávnění, můžete si prohlédnout zdrojový kód rozšíření, který je dostupný na Githubu. Jedná se o Open Source a je zpřístupněn každému."
+   },
+   "settings_permissions_desc": {
+      "message": "K umožnění přepínání postranního panelu jsou vyžadována následující oprávnění:"
+   },
+   "settings_premium_activated": {
+      "message": "Premium bylo úspěšně aktivováno"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Nelze aktivovat Premium. Vložte prosím platný licenční klíč"
+   },
+   "settings_presets": {
+      "message": "Nastavit relativní velikost"
+   },
+   "settings_presets_desc": {
+      "message": "Lze nastavit výchozí velikost postranního panelu. Toto změní velikost posuvníky na této stránce k upravení šířky postranního panelu, výšky řádků, velikost ikon a mnoho dalších parametrů."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Zabraňte posouvání stránek"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Zabraňuje procházení aktuálního webu při otevřeném postranním panelu."
+   },
+   "settings_prevent_windowed": {
+      "message": "Vypnout postranní panel v režimu okna"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Vypíná možnost otevření postranního panelu kliknutím nebo najetím na okraj obsahu prohlížeče v režimu okna."
+   },
+   "settings_remember_desc": {
+      "message": "Vyberte, co si zapamatovat mezi změnami stránek. Pokud se rozhodnete zapamatovat poslední otevřenou záložku, bude při otevření postranního panelu označena."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Zapamatovat otevřené podadresáře"
+   },
+   "settings_remember_state": {
+      "message": "Zapamatování"
+   },
+   "settings_remember_state_all": {
+      "message": "Posunutí pozice, otevření adresářů a poslední otevřená záložka"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Nic"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Otevřené adresáře"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Pozice posuvu a otevřené adresáře"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Otevřené adresáře nejvyšší úrovně"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Znovu otevřít boční lištu záložek"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Postranní panel se znovu otevře po otevření záložky z postranního panelu."
+   },
+   "settings_restore": {
+      "message": "Obnovit základní nastavení"
+   },
+   "settings_restore_confirm": {
+      "message": "Opravdu obnovit základní nastavení?"
+   },
+   "settings_restored_message": {
+      "message": "Základní nastavení obnoveno"
+   },
+   "settings_save": {
+      "message": "Uložit změny"
+   },
+   "settings_saved_message": {
+      "message": "Uloženo"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Vaše předvolba byla úspěšně uložena"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Skrýt posuvník"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Časový limit v sekundách po posuvníku bude skryt. Posunem se znovu zobrazí posuvník."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Nikdy se neschovávej"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Šířka posuvníku"
+   },
+   "settings_search_placeholder": {
+      "message": "Vyhledejte konfiguraci"
+   },
+   "settings_show_themes": {
+      "message": "Zobrazit dostupná témata"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Barva masky"
+   },
+   "settings_sidebar_position": {
+      "message": "Pozice"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Umožňuje nastavit, zda se má boční lišta otevřít na levé nebo pravé straně obrazovky."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Vlevo"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Vpravo"
+   },
+   "settings_sidebar_width": {
+      "message": "Šířka"
+   },
+   "settings_support_faq_headline": {
+      "message": "Často kladené otázky"
+   },
+   "settings_support_feedback_desc": {
+      "message": "Máte návrhy na vylepšení, dotazy, chybějící možnosti konfigurace nebo víte o chybě? Chcete-li zlepšit rozšíření, jsem velmi rád, když mi poskytnete každou zpětnou vazbu."
+   },
+   "settings_support_feedback_email": {
+      "message": "Emailová adresa (volitelné)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Zpětná vazba"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Napište prosím svou zprávu v angličtině, jinak budu mít problémy s pochopením a odpovědí na vaši zprávu."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Připojit screenshot"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Je možné nahrát maximálně {1} screenshotů"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "Velikost souboru je příliš velká {1} (>1 MB)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Odeslat zpětnou vazbu"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Vaše zpráva nemohla být odeslána. Prosím zkuste to znovu."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Děkuji za odeslání zpětné vazby"
+   },
+   "settings_text_color": {
+      "message": "Barva textu"
+   },
+   "settings_theme": {
+      "message": "Téma"
+   },
+   "settings_theme_changed": {
+      "message": "Motiv byl úspěšně změněn"
+   },
+   "settings_theme_default": {
+      "message": "Výchozí motiv"
+   },
+   "settings_theme_default_desc": {
+      "message": "Toto téma vám umožňuje přístup ke svým záložkám čistým a moderním způsobem. Barva mnoha prvků lze změnit úpravou barevného schématu."
+   },
+   "settings_theme_focus": {
+      "message": "Motiv soustředění"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Toto téma redukuje animace a uspořádá prvky hustěji pro lepší produktivitu a výkon."
+   },
+   "settings_theme_glass": {
+      "message": "Skleněné téma"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Toto téma způsobí, že pozadí postranního panelu bude průhledné a přidá do něj efekt rozmazaného skla. Tento efekt a průhlednost postranního panelu můžete upravit."
+   },
+   "settings_themes_notice": {
+      "message": "Můžete si vybrat základní design postranního panelu. Vybrané téma lze přizpůsobit pomocí dostupných posuvníků a možností barev."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Toto rozšíření je projekt jednoho člověka, který začal jako hobby projekt pro osobní použití."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Aktivační oblast"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "Ve výchozím nastavení lze přesunout celý okraj okna prohlížeče a otevřít postranní panel. Aktivační oblast můžete zmenšit tak, že postranní panel necháte otevřít pouze v části výšky prohlížeče. Například můžete změnit postranní panel tak, aby se zobrazoval pouze po kliknutí na aktivační oblast v levém dolním rohu okna prohlížeče. To může být užitečné, abyste zabránili nechtěnému zobrazení postranního panelu při klepnutí na odkazy na webu."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Rozbalit všechny podsložky"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Chceš-li rychle otevřít složku se všemi jejími podsložkami, můžeš také dvakrát kliknout na složku v postranním panelu."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Věděl jsi?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Skrýt položky"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Na bočním panelu můžete skrýt jednotlivé záložky nebo dokonce složky. Můžete kliknout pravým tlačítkem na libovolný záznam v postranním panelu a poté kliknout na tlačítko {1} v kontextové nabídce. Chcete-li znovu zobrazit skryté položky, můžete kliknout na ikonu nabídky v záhlaví postranního panelu a zaškrtnout příslušné zaškrtávací políčko."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "Rozšíření je k dispozici v {1} různých jazycích. Překlady jsou vytvořeny komunitou a každý může pomoci přispět překladem textů rozšíření do jiných jazyků. Překlady budou schváleny a poté přidány do rozšíření s další aktualizací."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Klávesové zkratky"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "Postranní panel lze ovládat pomocí klávesových zkratek. Seznam zkratek si můžete prohlédnout kliknutím na ikonu nabídky v záhlaví postranního panelu a kliknutím na tlačítko {1}."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Vyber vícero vstupů"
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Nová karta"
+   },
+   "settings_tips_tricks_next": {
+      "message": "Další tip"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Otevřít všechny záložky"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Chcete-li otevřít všechny záložky ve složce, klikněte na složku prostředním tlačítkem. Případně můžete stisknout tlačítko {1} a kliknout na složku levým tlačítkem myši."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Soukromí"
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Rychlé záložky"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Libovolnou adresu URL můžete přetáhnout přímo do postranního panelu a přetáhnout ji na požadované místo. Tímto způsobem můžete dokonce označit a přetáhnout aktuální adresu URL karty prohlížeče. Můžete také přetáhnout symbol {1} vlevo od adresního řádku do postranního panelu a označit aktuální stránku jako záložku, aniž byste nejprve označili celý adresní řádek."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Rychlé hledání"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Pokud otevřete postranní panel, můžete záložky vyhledávat pouhým začátkem psaní. Není třeba nejprve klikat na ikonu vyhledávání v záhlaví postranního panelu."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Rychlé kopírování URL"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Chcete-li zkopírovat adresu URL záložky v postranním panelu do schránky, můžete při umístění kurzoru stisknout {1}."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Klikni pravým tlačítkem myši"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Kliknutím pravým tlačítkem na libovolnou záložku nebo složku v postranním panelu zobrazíte další možnosti. Můžete například upravit existující záložky nebo připnout položky do horní části postranního panelu. Když kliknete pravým tlačítkem na složku, můžete spustit kontrolu záložek a identifikovat poškozené nebo aktualizované adresy URL záložek."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Oddělovače"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Položka záložky s adresou URL {1} a nadpisem {2} nebo {3} se zobrazí jako oddělovač v postranním panelu. Oddělovače můžete přidat kliknutím pravým tlačítkem na libovolnou složku v postranním panelu a následným kliknutím na tlačítko {4}."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Sdílení informací"
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Synchronizace"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Vyhledejte nastavení synchronizace"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Všechna vaše nastavení postranního panelu budou synchronizována mezi vašimi zařízeními, pokud v nastavení povolíte možnosti synchronizace vašeho prohlížeče. I bez Premium."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "První verze tohoto rozšíření byla vydána v listopadu 2016."
+   },
+   "settings_title": {
+      "message": "Nastavení"
+   },
+   "settings_toggle_area": {
+      "message": "Nastavení oblasti"
+   },
+   "settings_toggle_area_desc": {
+      "message": "Podle výchozího nastavení lze použít celý okraj okna pro otevření postranního panelu. Můžete nakonfigurovat, ve kterém místě ho otevřete."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Tažením přesunout"
+   },
+   "settings_toggle_area_height": {
+      "message": "Výška"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Můžete snížit výšku oblasti, takže postranní panel se otevře pouze tehdy, když přesunete kurzor na určené místo na okraji okna prohlížeče."
+   },
+   "settings_toggle_area_width": {
+      "message": "Šířka"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Šířka (v okně)"
+   },
+   "settings_tooltip_content": {
+      "message": "Obsah nápovědy"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Doplňující info"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Název a url"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Pouze titul"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Pouze url"
+   },
+   "settings_tooltip_delay": {
+      "message": "Zpoždění nápovědy"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Zpoždění předtím, než se objeví nápisy pro záložky, se zobrazí při podržení kurzoru myší."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Nikdy nezobrazovat nápovědy"
+   },
+   "settings_tooltip_desc": {
+      "message": "Vyberte, jaké informace má obsahovat popiska nástroje."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Velikost písma popisku"
+   },
+   "settings_translation_add_language": {
+      "message": "Přidat jazyk"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Zpět na přehled"
+   },
+   "settings_translation_desc": {
+      "message": "Můžete přispět přeložením do vašeho jazyka nebo vylepšit stávající překlad."
+   },
+   "settings_translation_help": {
+      "message": "U každé položky vidíte anglický překlad, který je třeba přeložit. Pro lepší vyhledání a zasazení do kontextu, má každá položka název (např. {1}), který se nepřekládá. Nezapomeňte prosím odeslat váš překlad pomocí tlačítka v horním pravém rohu!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Některé překlady chybí"
+   },
+   "settings_translation_info": {
+      "message": "Můžete upravit existující překlady nebo přidat chybějící překlady. Pokud své změny odešlete, přezkoumám váš příspěvek a schválím ho."
+   },
+   "settings_translation_link": {
+      "message": "Přejít na náhled překladu"
+   },
+   "settings_translation_notice1": {
+      "message": "Jakmile budou všechny požadované kategorie přeloženy, překlad bude uvolněn."
+   },
+   "settings_translation_notice2": {
+      "message": "Nedokončené kategorie nebudou uvolněny, aby nedocházelo k překladu poloviny přeložených textů."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Chci být informován, když budou do rozšíření přidány nové proměnné jazyka"
+   },
+   "settings_translation_required_category": {
+      "message": "Povinný"
+   },
+   "settings_translation_status_draft": {
+      "message": "Překlad je neúplný nebo potřebuje recenzi a není k dispozici pro uživatele"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Překlad je k dispozici, ale některé kategorie jsou neúplné"
+   },
+   "settings_translation_status_released": {
+      "message": "Překlad je k dispozici"
+   },
+   "settings_translation_submit": {
+      "message": "Odeslat"
+   },
+   "settings_translation_submit_message": {
+      "message": "Váš překlad byl odeslán"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "Adresa zkopírována"
+   },
+   "sidebar_deleted": {
+      "message": "Odstráneno"
+   },
+   "sidebar_dir_children": {
+      "message": "Prvky"
+   },
+   "sidebar_search_no_results": {
+      "message": "Žádná shoda"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Hledat záložku"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Vrátit zpět"
+   },
+   "sort_label_alphabetical": {
+      "message": "Abecedně"
+   },
+   "sort_label_custom": {
+      "message": "Definováno uživatelem"
+   },
+   "sort_label_most_used": {
+      "message": "Často používané"
+   },
+   "sort_label_recently_added": {
+      "message": "Nedávno přidané"
+   },
+   "sort_label_recently_used": {
+      "message": "Nedávno používané"
+   },
+   "sort_most_used_per_month": {
+      "message": "Měsíčně"
+   },
+   "sort_view_as_tree": {
+      "message": "Zobrazit adresáře"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Znovu načíst"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "V důsledku aktualizace rozšíření je třeba tuto stránku znovu načíst."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Služba zpětné vazby je momentálně nedostupná. Pokud chcete poskytnout zpětnou vazbu, pošlete mi prosím e-mail."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Služba je nedostupná"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Překladatelská služba momentálně není k dispozici. Prosím zkuste to znovu později."
+   }
+}

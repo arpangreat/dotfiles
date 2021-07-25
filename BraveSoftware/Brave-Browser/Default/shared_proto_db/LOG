@@ -1,0 +1,9 @@
+2021/07/25-20:49:04.224 5a3 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/shared_proto_db/MANIFEST-000001
+2021/07/25-20:49:04.224 5a3 Recovering log #4
+2021/07/25-20:49:04.227 5a3 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/shared_proto_db/000004.log 
+2021/07/25-21:13:24.218 10baf Level-0 table #8: started
+2021/07/25-21:13:24.222 10baf Level-0 table #8: 103745 bytes OK
+2021/07/25-21:13:24.224 10baf Delete type=0 #4
+2021/07/25-21:16:34.127 10baf Level-0 table #10: started
+2021/07/25-21:16:34.131 10baf Level-0 table #10: 89101 bytes OK
+2021/07/25-21:16:34.132 10baf Delete type=0 #7

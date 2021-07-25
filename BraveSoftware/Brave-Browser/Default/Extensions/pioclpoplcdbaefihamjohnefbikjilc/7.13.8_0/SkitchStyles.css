@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'ClipperSoleil';
+  src: url(./res/Soleil.woff2) format("woff2"); }
+
+html.skitchReady, .sh-tip {
+  box-sizing: initial; }
+  html.skitchReady *, .sh-tip * {
+    box-sizing: initial; }
+
+html body.evernoteClipperColor-dark {
+  --background-color: #1A1A1A;
+  --text-color: white; }
+
+html body.evernoteClipperColor-light {
+  --background-color: white;
+  --text-color: #333; }
+
+html.skitchReady body {
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: fixed;
+  user-select: none; }
+  html.skitchReady body > *:not(.en-markup-editor):not(#evernoteClipperTools):not(#settingsOuterContainer):not(.en-markup-surface):not(.en-markup-layer):not(.en-markup-tool-element-text-editor):not(.en-markup-toolbar-wrapper):not(.en-markup-toolbar-border):not(.skitchVisible):not([src$="pdf"]) {
+    visibility: hidden;
+    display: none; }
+  html.skitchReady body .en-markup-editor {
+    z-index: 1111111111;
+    position: fixed !important; }
+  html.skitchReady body iframe:not(#evernoteClipperTools) {
+    display: none; }
+
+html body .en-markup-editor .en-markup-surface .en-markup-crop-options {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 195px;
+  border: 2px rgba(255, 255, 255, 0.38) solid;
+  background-color: #1A1A1A; }
+  html body .en-markup-editor .en-markup-surface .en-markup-crop-options > div.skitchVisible {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%; }
+  html body .en-markup-editor .en-markup-surface .en-markup-crop-options #en-markup-cancel-crop {
+    margin-left: 2.5px;
+    margin-right: 0px; }
+  html body .en-markup-editor .en-markup-surface .en-markup-crop-options #en-markup-apply-crop {
+    margin-right: 25px;
+    margin-left: 0; }
+
+html .skitchToastBoxContainer {
+  display: inline-block; }
+  html .skitchToastBoxContainer .skitchToastBox, html .skitchToastBoxContainer .skitchZoomToolbox {
+    font-family: ClipperSoleil, sans-serif !important;
+    border-radius: 4px !important;
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 auto !important; }
+  html .skitchToastBoxContainer .skitchToastBox .skitchToast {
+    color: var(--text-color) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  html .skitchToastBoxContainer .skitchZoomToolbox .skitchZoomToolboxPercent, html .skitchToastBoxContainer .skitchZoomToolbox .skitchZoomToolboxOne {
+    color: var(--text-color);
+    border-color: var(--text-color); }
+  html .skitchToastBoxContainer .skitchZoomToolbox .skitchZoomToolboxReset svg polygon {
+    fill: var(--text-color); }
+  html .skitchToastBoxContainer .skitchZoomToolbox .skitchZoomToolboxHr {
+    border-color: var(--text-color); }
+  html .skitchToastBoxContainer .skitchZoomToolbox .skitchZoomToolboxTip {
+    color: var(--text-color); }
+

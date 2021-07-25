@@ -1,0 +1,1460 @@
+{
+   "contextmenu_add": {
+      "message": "Додати елемент"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "Додати закладку"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "Менеджер закладок"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "Перевірити закладки"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "Згорнути всі каталоги"
+   },
+   "contextmenu_copy": {
+      "message": "Копіювати посилання до буферу обміну"
+   },
+   "contextmenu_current_tab": {
+      "message": "Відкрити в поточному вікні"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "Видалити закладку"
+   },
+   "contextmenu_delete_dir": {
+      "message": "Видалити каталог"
+   },
+   "contextmenu_delete_separator": {
+      "message": "Видалити розділювач"
+   },
+   "contextmenu_deselect_bookmark": {
+      "message": "Скасувати вибір закладки"
+   },
+   "contextmenu_deselect_dir": {
+      "message": "Скасувати вибір теки"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "Редагувати закладку"
+   },
+   "contextmenu_edit_dir": {
+      "message": "Редагувати каталог"
+   },
+   "contextmenu_edit_separator": {
+      "message": "Редагувати розділювач"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "Приховати з бічної панелі"
+   },
+   "contextmenu_infos": {
+      "message": "Інформація"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "Гарячі клавіши"
+   },
+   "contextmenu_new_tab": {
+      "message": "Відкрити в новій вкладці"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "Відкрити в анонімному вікні"
+   },
+   "contextmenu_new_window": {
+      "message": "Відкрити в новому вікні"
+   },
+   "contextmenu_open_children": {
+      "message": "Відкрити закладки"
+   },
+   "contextmenu_pin": {
+      "message": "Закріпити вгорі"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "Перезавантажити бічну панель"
+   },
+   "contextmenu_select_bookmark": {
+      "message": "Вибрати закладку"
+   },
+   "contextmenu_select_dir": {
+      "message": "Вибрати теку"
+   },
+   "contextmenu_select_entries": {
+      "message": "Вибрати кілька записів"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "Показати в каталозі"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "Показати в бічній панелі"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "Показати приховані записи"
+   },
+   "contextmenu_unpin": {
+      "message": "Відкріпити з гори"
+   },
+   "contribute_intro": {
+      "message": "Щоб покращити розширення, я хотів би краще знати, як користувачі використовують бічну панель і яку конфігурацію вони використовують."
+   },
+   "contribute_notice": {
+      "message": "Ви можете допомогти мені, поділившись вашою конфігурацією"
+   },
+   "contribute_outro": {
+      "message": "Якщо у вас виникли запитання або сумніви з приводу інформації, що збирається, надішліть мені повідомлення зворотного зв'язку."
+   },
+   "contribute_share_activity_desc1": {
+      "message": "Ви можете анонімно поділитися своїми діями на бічній панелі, що допоможе мені дізнатися, як користувачі використовують бічну панель. Інформація про ваші закладки або веб-сайти, які ви відвідували, [b]НЕ БУДЕ ПЕРЕДАНА[/b]."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "Ця інформація дуже корисна для визначення проблем, пов'язаних із використанням або функціями, які, наприклад, не використовуються дуже часто."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "Скільки закладок в середньому мають користувачі?"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "Яка платформа у користувачів (Windows, Mac, Linux, ...)?"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "Чи використовують користувачі пошук?"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "Чи змінюють користувачі сортування закладок?"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "Як часто користувачі переставляють або редагують записи?"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "Дані, якими ділитесь, наприклад:"
+   },
+   "contribute_share_activity_label": {
+      "message": "Поділитися діяльністю"
+   },
+   "contribute_share_config_desc": {
+      "message": "Ви анонімно надаєте свою конфігурацію, яка допомагає мені ідентифікувати популярні налаштування та з'ясувати, що можна покращити або змінити у майбутніх релізах розширення."
+   },
+   "contribute_share_config_label": {
+      "message": "Поділитися конфігурацією"
+   },
+   "extension_desc": {
+      "message": "Додає перемикаючу бічну панель з усіма вашими закладками на краю вікна вашого браузера."
+   },
+   "extension_last_update": {
+      "message": "Останнє оновлення {1}"
+   },
+   "extension_name": {
+      "message": "Бічна панель закладок"
+   },
+   "extension_version": {
+      "message": "Версія"
+   },
+   "header_bookmarks": {
+      "message": "Закладки"
+   },
+   "header_bookmarks_single": {
+      "message": "Закладка"
+   },
+   "header_selected_entries": {
+      "message": "Вибране"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "Копіює URL-адресу поточного виділеного запису"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "Видаляє поточний виділений запис"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "Виконує натискання по поточному виділеному запису"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "Закриває бічну панель, відкритий оверлей або контекстне меню"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "Command"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "Ctrl"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "Delete"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "Enter"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "Esc"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "Shift"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "Вкладка"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "Відкриває контекстне меню для поточного запису"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "Наведіть курсор на наступний або попередній запис на бічній панелі"
+   },
+   "more_link": {
+      "message": "Дізнайтеся більше"
+   },
+   "newtab_fallback_desc": {
+      "message": "Ми відкрили нову вкладку з бічною панеллю для вас."
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "Бічна панель не може використовуватися на сторінках розширень"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "Щось заблокує бічну панель"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "Бічна панель не може використовуватися на сторінці нової вкладки"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "Бічна панель не може використовуватися на службових сторінках {browserName}"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "Одне з ваших правил URL забороняє відкривати бічну панель"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "Бічна панель не може використовуватися в веб-магазині {browserName}."
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "Завжди показувати цю сторінку при відкритті нової вкладки"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "Відображення піктограм веб-сайту"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "Відображати попередній перегляд веб-сайту"
+   },
+   "newtab_grid_links_custom": {
+      "message": "Задані користувачем посилання"
+   },
+   "newtab_grid_links_default": {
+      "message": "Найпопулярніші сторінки"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "Розмір сітки"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "Приховані"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "Закладки, що найбільш часто використовуються"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "Нещодавно використані закладки"
+   },
+   "newtab_search_engine_custom": {
+      "message": "Визначений користувачем"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "Заголовок"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "URL домашньої сторінки"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "URL результатів пошуку"
+   },
+   "newtab_search_engine_headline": {
+      "message": "Пошукова система"
+   },
+   "newtab_search_field_hide": {
+      "message": "Приховати поле пошуку"
+   },
+   "newtab_search_field_show": {
+      "message": "Показати поле пошуку"
+   },
+   "newtab_search_placeholder": {
+      "message": "Пошук {1} або введіть URL-адресу"
+   },
+   "newtab_speech_search_error": {
+      "message": "Для включення голосового пошуку, вам потрібно дозволити доступ до мікрофону."
+   },
+   "newtab_speech_search_listening": {
+      "message": "Кажіть зараз"
+   },
+   "newtab_title": {
+      "message": "Нова вкладка"
+   },
+   "newtab_upload_background": {
+      "message": "Завантажте фонове зображення"
+   },
+   "onboarding_finish_desc": {
+      "message": "Насолоджуйтесь вашою бічною панеллю."
+   },
+   "onboarding_finish_notice": {
+      "message": "Якщо ви часто натискаєте речі на {1} стороні у вікні веб-переглядача, можливо, ви захочете змінити місце відкриття бічної панелі, щоб випадково не відкривати її."
+   },
+   "onboarding_goto_appearance": {
+      "message": "Налаштувати зовнішній вигляд"
+   },
+   "onboarding_goto_settings": {
+      "message": "Додаткові налаштування"
+   },
+   "onboarding_handson_desc": {
+      "message": "Тепер ви можете спробувати самостійно."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "Натисніть значок розширення, щоб відкрити бічну панель."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "Наведіть курсор на край (1) вашого вікна."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "Потім {1} клацніть мишею, щоб відкрити бічну панель."
+   },
+   "onboarding_headline": {
+      "message": "Дякуємо за встановлення цього розширення."
+   },
+   "onboarding_left": {
+      "message": "зліва"
+   },
+   "onboarding_right": {
+      "message": "зправа"
+   },
+   "onboarding_setup": {
+      "message": "Налаштувати зараз"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "Як ви хочете відкривати бічну панель?"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "Де ви хочете бачити свою бічну панель?"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "Темний"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "Який стиль ви виберете?"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "Світлий"
+   },
+   "onboarding_skip": {
+      "message": "Пропустити налаштування"
+   },
+   "onboarding_title": {
+      "message": "Встановлення"
+   },
+   "overlay_add_position": {
+      "message": "Позиція"
+   },
+   "overlay_add_position_append": {
+      "message": "Додати до каталогу"
+   },
+   "overlay_add_position_prepend": {
+      "message": "Додати в початок каталога"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "Додаткова інформація"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "Створено"
+   },
+   "overlay_bookmark_title": {
+      "message": "Заголовок"
+   },
+   "overlay_bookmark_url": {
+      "message": "Посилання"
+   },
+   "overlay_bookmark_views": {
+      "message": "Види"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "за місяць"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "Записано з"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "Вид"
+   },
+   "overlay_cancel": {
+      "message": "Відмінити"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "Перевірка URL-адресів закладок"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "Ламані"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "Змінено"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "Дублікати"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "Порожні каталоги"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "Усі URL-адреси для закладок робочі"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "Немає ламаних URL-адрес закладок"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "Немає змінених URL-адрес для закладок"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "Немає дублікатів URL-адрес закладок"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "Немає каталогів без закладок"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "Вилучити вибране"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "Оновити вибране"
+   },
+   "overlay_close": {
+      "message": "Закрити"
+   },
+   "overlay_confirm_open_children": {
+      "message": "Ви дійсно бажаєте відкрити усі {1} підлеглі закладки?"
+   },
+   "overlay_confirm_open_selected": {
+      "message": "Ви дійсно хочете відкрити всі закладки {1}, включаючи закладки підпапки вибраних папок?"
+   },
+   "overlay_delete": {
+      "message": "Видалити"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "Ви дійсно бажаєте видалити цю закладку?"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "Ви дійсно бажаєте видалити цей каталог? Всі його вкладки теж буде видалено."
+   },
+   "overlay_delete_selected": {
+      "message": "Видалити вибрані записи"
+   },
+   "overlay_delete_selected_confirm": {
+      "message": "Ви дійсно хочете видалити вибрані записи? Усі закладки підпапок із вибраних папок також будуть видалені."
+   },
+   "overlay_dir_children": {
+      "message": "Елементи"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "Закладки"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "Каталоги"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "Ви дійсно бажаєте приховати цю вкладку?"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "Ви дійсно бажаєте приховати цей каталог? Всі його вкладки теж буде приховано."
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "Сховати з боковії панелі"
+   },
+   "overlay_label_bookmark": {
+      "message": "Закладка"
+   },
+   "overlay_label_dir": {
+      "message": "Каталог"
+   },
+   "overlay_label_separator": {
+      "message": "Розділювач"
+   },
+   "overlay_open_children": {
+      "message": "Відкрити усі"
+   },
+   "overlay_save": {
+      "message": "Зберегти"
+   },
+   "overlay_separator_title_desc": {
+      "message": "За бажанням можна ввести назву. Вона буде відображатися у верхній частині лінії розділювача і може допомогти в організації списку закладок."
+   },
+   "overlay_update": {
+      "message": "Оновити"
+   },
+   "premium_activate": {
+      "message": "Активуйте Premium"
+   },
+   "premium_already_activated": {
+      "message": "Ви вже використовуєте Преміум"
+   },
+   "premium_desc_1": {
+      "message": "З Premium ви отримаєте доступ до додаткових функцій і допоможете мені підтримувати розширення."
+   },
+   "premium_desc_2": {
+      "message": "Ви можете перевірити функції, включені в Преміум нижче. Всі ключові функції розширень безкоштовні і не вимагають преміум-класу. Ви можете заплатити те, що розширення і моя робота коштує для вас, щоб отримати доступ до цих функцій."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "Якщо ви використовуєте сторінку нової вкладки цього розширення, ви можете встановити власне фонове зображення, щоб зробити його більш приємним."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "Налаштовуйте сторінку нової вкладки"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "Якщо ви знайомі з CSS, ви можете змінити зовнішній вигляд бічній панелі, додавши свої власні атрибути стилів. Це дозволяє налаштувати абсолютно все."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "Налаштовуйте все з власними стилями"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "З Преміум ви отримуєте доступ до неопублікованих функцій, які наразі розробляються або проходять тестування."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "Будьте першим, хто спробує нові експериментальні функції"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "Імпортуйте та експортуйте свої налаштування"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "Ви можете натиснути правою кнопкою миші на будь-який каталог на боковій панелі та виконати перевірку. На сторінці результатів відображатимуться всі оновлені URL-адреси, закладки, які більше не працюють, і закладки з однаковим URL-адресом."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "Перевірте свої закладки на непрацюючі посилання або копії"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "Змінюйте ширину бокової панелі в будь-який час"
+   },
+   "premium_feature_themes_desc": {
+      "message": "Можна поміняти весь дизайн бічної панелі одним клацанням, встановивши іншу тему. Їх також можна налаштувати за допомогою доступних повзунків та кольорових параметрів."
+   },
+   "premium_feature_themes_headline": {
+      "message": "Змініть тему бічної панелі"
+   },
+   "premium_get_now": {
+      "message": "Отримати Преміум зараз"
+   },
+   "premium_license_key": {
+      "message": "Ліцензійний ключ"
+   },
+   "premium_pay_buy": {
+      "message": "Купити Преміум"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "Політика скасування"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "Підтвердьте покупку"
+   },
+   "premium_pay_contact": {
+      "message": "Якщо ви зіткнулися з будь-якими проблемами з вашим платежем або маєте будь-які запитання, зв'яжіться зі мною за адресою {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "Кредитна або дебетова картка"
+   },
+   "premium_pay_eula": {
+      "message": "Ліцензійна угода кінцевого користувача"
+   },
+   "premium_pay_eula_desc": {
+      "message": "Я прочитав і приймаю [a]Ліцензійну угоду кінцевого користувача[/a]"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "Термін дії картки закінчується"
+   },
+   "premium_pay_info_card_number": {
+      "message": "Номер картки"
+   },
+   "premium_pay_info_email": {
+      "message": "Електронна пошта"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "Введіть свою адресу електронної пошти, щоб отримати ліцензійний ключ."
+   },
+   "premium_pay_info_name": {
+      "message": "Ім'я"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "Спосіб оплати"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "Поштовий індекс"
+   },
+   "premium_pay_intro_payment_method": {
+      "message": "Виберіть спосіб оплати нижче та оберіть бажану суму, яку ви хочете сплатити на наступному кроці."
+   },
+   "premium_pay_license_key_desc": {
+      "message": "Якщо потрібно активувати {1} на іншому пристрої або після повторної інсталяції розширення, у налаштуваннях розширення можна ввести наступний ключ:"
+   },
+   "premium_pay_price_info": {
+      "message": "Це одноразова плата і включає в себе всі майбутні преміум-функції."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "Ви можете заплатити те, що ви думаєте, розширення і моя робота коштує вам, щоб отримати доступ до преміум-функцій. Ви завжди будете отримувати всі преміум-функції, незалежно від того, скільки ви готові платити."
+   },
+   "premium_pay_price_total": {
+      "message": "Усього"
+   },
+   "premium_pay_purchase_id": {
+      "message": "Ідентифікатор покупки"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "Виберіть спосіб оплати"
+   },
+   "premium_pay_success_headline": {
+      "message": "Дякую за покупку"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} для цього пристрою автоматично активовано. Вам не потрібно робити жодних подальших кроків."
+   },
+   "premium_pay_verifying": {
+      "message": "Перевірка транзакції"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "Скануйте цей QR-код на WeChat, щоб продовжити."
+   },
+   "premium_pay_what_you_want": {
+      "message": "Платіть, скільки бажаєте"
+   },
+   "premium_popup_text": {
+      "message": "Ви вже перевірили Преміум?"
+   },
+   "premium_restricted_text": {
+      "message": "Ця функція доступна тільки з Преміум"
+   },
+   "premium_show_license_input": {
+      "message": "У мене вже є Преміум"
+   },
+   "settings_advanced": {
+      "message": "Розширені налаштування"
+   },
+   "settings_available_themes": {
+      "message": "Доступні теми"
+   },
+   "settings_background_blur": {
+      "message": "Фон з ефектом розмиття"
+   },
+   "settings_background_transparency": {
+      "message": "Прозорий фон"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "Колір іконки папки"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "Іконка папки"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "Відступи від папок"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "Розмір шрифту закладок"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "Стиснення закладки по горизонталі"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "Розмір іконок закладок"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "Висота рядка закладки"
+   },
+   "settings_close_timeout": {
+      "message": "Тайм-аут закриття"
+   },
+   "settings_close_timeout_desc": {
+      "message": "Час в секундах, після якого буде закрита бічна панель. Воно буде відраховуватися, якщо миша не наведена на бічну панель, і зупинятися при наведенні на бічну панель знову."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "Не закривати автоматично"
+   },
+   "settings_color_scheme": {
+      "message": "Кольорова схема"
+   },
+   "settings_color_scheme_desc": {
+      "message": "Колір заголовка бічної панелі, чекбоксів тощо."
+   },
+   "settings_custom_css": {
+      "message": "Власна таблиця стилів"
+   },
+   "settings_custom_css_desc": {
+      "message": "Ви можете призначити власну таблицю стилів, щоб змінити стиль за замовчуванням. Будь-ласка, використовуйте цей параметр, тільки якщо ви знайомі з CSS і знаєте, що ви робите."
+   },
+   "settings_dark_mode": {
+      "message": "Покриття"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "Змініть зовнішній вигляд бічної панелі"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "Ви можете повністю змінити вигляд бічної панелі відповідно до своїх потреб. Існують різні варіанти зміни розміру шрифту, міжряддя, кольорів, піктограм та багатьох інших. Ви також можете вибрати заздалегідь визначені конструкції та попередньо задані параметри, щоб швидко зробити бічну панель схожою на те, що ви хочете."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "Налаштуйте стиль бічної панелі"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "Для керування розширенням можна змінити різні параметри. Наприклад, ви можете змінити спосіб вмикання бічної панелі або спосіб відкриття ваших закладок. Якщо ви не хочете, щоб бічна панель завантажувалася на кожну сторінку, ви також можете налаштувати це, використовуючи відповідні правила."
+   },
+   "settings_dir_accordion": {
+      "message": "Показувати тільки поточну папку"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "Закриває всі папки, крім поточної активної."
+   },
+   "settings_directories_icon_size": {
+      "message": "Розмір іконок папок"
+   },
+   "settings_directory_arrows": {
+      "message": "Стрілки папок"
+   },
+   "settings_expert_save_error": {
+      "message": "Не вдалося зберегти налаштування. Виправте введені дані."
+   },
+   "settings_expert_settings_desc": {
+      "message": "Експертні налаштування дозволяють налаштувати кожен прапор конфігурації розширення, навіть ті, які ви не можете змінити за допомогою звичайних прапорців або повзунків сторінки налаштувань."
+   },
+   "settings_expert_settings_notice": {
+      "message": "Будь ласка, змінюйте тут значення, тільки якщо ви знаєте, що робите. Неправильні конфігурації можуть привести до непередбачуваної поведінки розширення. Якщо щось зламається, можна повернутися до конфігурації за замовчуванням."
+   },
+   "settings_export": {
+      "message": "Експортувати налаштування"
+   },
+   "settings_filter_explanation_1": {
+      "message": "Тільки одне посилання на кожному рядку."
+   },
+   "settings_filter_explanation_2": {
+      "message": "Використовуйте * для позначення будь-яких символів (наприклад: example.com/* відповідає всім сторінкам на сайті example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "Якщо Ви не використовуєте * в правилах, це буде означати точне відповідність (наприклад, \"example.com\" не буде відповідати адресі \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "Вам не потрібно додавати протокол (наприклад, http://) в правилах"
+   },
+   "settings_filter_intro": {
+      "message": "Якщо Ви не хочете, щоб бічна панель завантажувалася на кожній сторінці, то можете додати її в Білий список (для дозволу) або в Чорний список (для заборони)."
+   },
+   "settings_filter_rules": {
+      "message": "Шаблони адрес"
+   },
+   "settings_filter_visibility": {
+      "message": "Завантаження бічної панелі"
+   },
+   "settings_filter_visibility_always": {
+      "message": "На кожній сторінці"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "На кожній сторінці, крім окремих сторінок"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "Тільки на вказаних сторінках"
+   },
+   "settings_font_family": {
+      "message": "Шрифт"
+   },
+   "settings_font_family_default": {
+      "message": "За замовчуванням"
+   },
+   "settings_font_family_desc": {
+      "message": "Шрифт бічної панелі та оверлеїв"
+   },
+   "settings_header_height": {
+      "message": "Висота заголовка"
+   },
+   "settings_headline_share_userdata": {
+      "message": "Поділитися інформацією"
+   },
+   "settings_hover_color": {
+      "message": "Колір під курсором"
+   },
+   "settings_icon_background_color": {
+      "message": "Колір фону"
+   },
+   "settings_icon_color": {
+      "message": "Колір"
+   },
+   "settings_icon_color_auto": {
+      "message": "Авто"
+   },
+   "settings_icon_color_custom": {
+      "message": "Інший"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "Колір піктограм буде встановлений автоматично відповідно до колірної схеми вашої системи (світлий або темний). Ви також можете визначити свій власний колір піктограми."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "Зауважте, що автоматичний колір не працює, коли використовується спеціальна тема {browserName}."
+   },
+   "settings_icon_shape": {
+      "message": "Форма іконки"
+   },
+   "settings_import": {
+      "message": "Імпортувати налаштування"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "Імпорт/експорт закладок"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "Ця функція браузера не є частиною розширення. Докладніше про те, як імпортувати та експортувати закладки, читайте у веб-переглядачі {browserName}."
+   },
+   "settings_import_export_desc": {
+      "message": "Ви можете експортувати налаштування Вашого розширення і зберегти їх на комп'ютері. Ви можете імпортувати раніше збережений файл на будь-якому комп'ютері, де встановлено розширення."
+   },
+   "settings_import_export_headline": {
+      "message": "Налаштування імпорту/експорту"
+   },
+   "settings_import_export_notice": {
+      "message": "Налаштування розширення синхронізуються автоматично між вашими пристроями, якщо ви ввійшли в {browserName} за допомогою свого облікового запису Google. Якщо ви не хочете входити в систему або хочете поділитися своїми налаштуваннями з іншими людьми, ви можете використовувати цю опцію імпорту / експорту."
+   },
+   "settings_import_failed": {
+      "message": "Помилка імпорту налаштувань. Будь ласка, виберіть правильний файл."
+   },
+   "settings_import_saved": {
+      "message": "Налаштування успішно збережені"
+   },
+   "settings_indicator_color": {
+      "message": "Колір"
+   },
+   "settings_indicator_icon_color": {
+      "message": "Колір іконок"
+   },
+   "settings_indicator_icon_size": {
+      "message": "Розмір іконок"
+   },
+   "settings_indicator_width": {
+      "message": "Ширина"
+   },
+   "settings_install_theme": {
+      "message": "Встановити тему"
+   },
+   "settings_installed_theme_info": {
+      "message": "В даний час встановленно"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "Встановити комбінацію клавіш"
+   },
+   "settings_language": {
+      "message": "Мова"
+   },
+   "settings_language_default": {
+      "message": "За умовчанням у браузері"
+   },
+   "settings_language_desc": {
+      "message": "Мова інтерфейсу користувача"
+   },
+   "settings_link_action": {
+      "message": "Відкрити закладки"
+   },
+   "settings_link_action_current_tab": {
+      "message": "Поточна вкладка"
+   },
+   "settings_link_action_desc": {
+      "message": "Лівий клік на закладці відкриє її в новій вкладці або в новому вікні"
+   },
+   "settings_link_action_new_tab": {
+      "message": "Нова вкладка"
+   },
+   "settings_menu_appearance": {
+      "message": "Зовнішній вигляд"
+   },
+   "settings_menu_appearance_general": {
+      "message": "Основні"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "Іконка"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "Індикатор"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "Оверлей"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "Бічна панель"
+   },
+   "settings_menu_dashboard": {
+      "message": "Про додаток"
+   },
+   "settings_menu_expert": {
+      "message": "Експертні налаштування"
+   },
+   "settings_menu_export": {
+      "message": "Імпорт/Експорт"
+   },
+   "settings_menu_infos": {
+      "message": "Інформація"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "Про мене"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "Історія змін"
+   },
+   "settings_menu_infos_contact": {
+      "message": "Контакти"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "Права доступу"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "Конфіденційність"
+   },
+   "settings_menu_language": {
+      "message": "Мова"
+   },
+   "settings_menu_language_general": {
+      "message": "Основні"
+   },
+   "settings_menu_language_translate": {
+      "message": "Перекласти"
+   },
+   "settings_menu_newtab": {
+      "message": "Нова вкладка"
+   },
+   "settings_menu_premium": {
+      "message": "Преміум"
+   },
+   "settings_menu_sidebar": {
+      "message": "Бічна панель"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "Фільтр"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "Основні"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "Перемикач"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "Підказки"
+   },
+   "settings_menu_support": {
+      "message": "Підтримка"
+   },
+   "settings_new_tab": {
+      "message": "Нова вкладка"
+   },
+   "settings_new_tab_background": {
+      "message": "Відкрити у фоновому режимі"
+   },
+   "settings_new_tab_desc": {
+      "message": "Відкриття закладок в новій вкладці на передньому плані або в фоновому режимі"
+   },
+   "settings_new_tab_foreground": {
+      "message": "Відкрити на передньому плані"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "Після поточної вкладки"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "Після останньої вкладки"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "Перед першою вкладкою"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "Відкривати нові вкладки після останньої або поточної вкладки."
+   },
+   "settings_newtab_desc": {
+      "message": "На жаль, Google видалив можливість завантаження розширень на новій вкладці за замовчуванням. Через це я додав деякі параметри, які дозволяють вам отримати доступ до ваших закладок при відкритті нової вкладки іншим способом."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "Фокусна адресна строка"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "Як що увімкнено, ваш адресний рядок буде зосереджено під час відкриття нової вкладки. Як що ні, то замість цього буде зосереджено вікно пошуку веб-сайту."
+   },
+   "settings_newtab_override": {
+      "message": "Змінити сторінку нової вкладки"
+   },
+   "settings_newtab_override_configure": {
+      "message": "Налаштувати"
+   },
+   "settings_newtab_override_desc": {
+      "message": "Чи має розширення змінити вашу поточну нову вкладку будь-яким індивідуальним веб-сайтом, який слід завантажити, відкриваючи нову вкладку?"
+   },
+   "settings_newtab_override_preview": {
+      "message": "Попередній перегляд"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "Відкрити бічну панель автоматично"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "Налаштуйте, чи відкривати бічну панель автоматично при відкритті нової вкладки."
+   },
+   "settings_newtab_website": {
+      "message": "Завантажити веб-сайт"
+   },
+   "settings_newtab_website_desc": {
+      "message": "Замість відкриття заміни нової вкладки ви можете встановити веб-сайт, який завантажиться натомість."
+   },
+   "settings_not_synced": {
+      "message": "Не буде синхронізовано на ваших пристроях."
+   },
+   "settings_open_action": {
+      "message": "Відкрити бічну панель"
+   },
+   "settings_open_action_desc": {
+      "message": "відкрийте бічну панель ліворуч або праворуч або наведіть курсор миші на край вікна браузера. Крім того, ви можете змінити його, щоб відкрити його, лише натиснувши піктограму в меню {browserName}."
+   },
+   "settings_open_action_icon": {
+      "message": "Клацніть на значок"
+   },
+   "settings_open_action_leftclick": {
+      "message": "Клацніть лівою кнопкою миші"
+   },
+   "settings_open_action_mouseover": {
+      "message": "Курсор миші над"
+   },
+   "settings_open_action_rightclick": {
+      "message": "Клацніть провою кнопкою миші"
+   },
+   "settings_open_delay": {
+      "message": "Затримка відкриття"
+   },
+   "settings_open_delay_desc": {
+      "message": "Запобігає негайному відкриттю бічної панелі при наведенні курсору миші або натискання з затримкою."
+   },
+   "settings_overlay_mask_color": {
+      "message": "Колір маски"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "Розширення відображає ваші закладки на бічній панелі і тому потребує цього дозволу для отримання доступу. Дозвіл також дозволяє розширенню додавати, редагувати та видаляти закладки."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "На жаль, в {browserName} немає механізму для відображення контенту у вікні браузера без взаємодії з поточною сторінкою."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "Цей дозвіл потрібен, оскільки бокова панель відображається у верхній частині поточного веб-сайту. Крім цієї технічної причини, дозвіл не використовується для інших цілей."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "Якщо у вас є сумніви щодо того, що я роблю з дозволом, ви можете переглянути вихідний код розширення на Github. Це відкритий вихідний код і його видно кожному."
+   },
+   "settings_permissions_desc": {
+      "message": "Для того, щоб включити бокову панель в {browserName}, необхідні такі дозволи, які запитує розширення:"
+   },
+   "settings_premium_activated": {
+      "message": "Преміум активовано успішно"
+   },
+   "settings_premium_invalid_key": {
+      "message": "Не вдалося активувати Преміум. Будь ласка, введіть дійсний ліцензійний ключ"
+   },
+   "settings_presets": {
+      "message": "Встановити відносні розміри"
+   },
+   "settings_presets_desc": {
+      "message": "Ви можете обрати зумовлені розміри для бічній панелі. Це змінить повзунки на цій сторінці, щоб налаштувати ширину бічної панелі, висоти рядків, розміри піктограм та багато інших параметрів."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "Запобігання прокрутки сторінки"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "Запобігає прокрутки поточного веб-сайту, поки бічна панель відкрита."
+   },
+   "settings_prevent_windowed": {
+      "message": "Відключити бічну панель у віконному режимі"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "Відключає можливість відкриття бічної панелі у віконному режимі після клацання або наведення на край браузера"
+   },
+   "settings_remember_desc": {
+      "message": "Виберіть, що запам'ятати на сторінці змін. Якщо ви вирішите запам'ятати останню відкриту закладку, вона буде відмічена при повторному відкритті бічній панелі."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "Запам'ятати відкриті підкаталоги"
+   },
+   "settings_remember_state": {
+      "message": "Запам'ятати"
+   },
+   "settings_remember_state_all": {
+      "message": "Положення прокрутки, відкриті папки і остання відкрита закладка"
+   },
+   "settings_remember_state_nothing": {
+      "message": "Нічого"
+   },
+   "settings_remember_state_open_states": {
+      "message": "Відкриті папки"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "Позиція на сторінці і відкриті папки"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "Відкриті папки верхнього рівня"
+   },
+   "settings_reopen_sidebar": {
+      "message": "Повторно відкрити бічну панель"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "Автоматично відкривати бічну панель знову після відкриття закладки з бічної панелі."
+   },
+   "settings_restore": {
+      "message": "Відновити значення за замовчуванням"
+   },
+   "settings_restore_confirm": {
+      "message": "Ви справді хочете відновити конфігурацію за замовчуванням?"
+   },
+   "settings_restored_message": {
+      "message": "Конфігурація успішно відновлена"
+   },
+   "settings_save": {
+      "message": "Зберегти зміни"
+   },
+   "settings_saved_message": {
+      "message": "Зміни збережено успішно"
+   },
+   "settings_saved_share_userdata": {
+      "message": "Ваше налаштування успішно збережено"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "Приховати смугу прокрутки"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "Час в секундах, після якого смуга прокрутки буде прихована. Смуга прокрутки буде показана знову після прокрутки."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "Ніколи не приховувати"
+   },
+   "settings_scroll_bar_width": {
+      "message": "Ширина полоси прокрутки"
+   },
+   "settings_search_placeholder": {
+      "message": "Пошук конфігурації"
+   },
+   "settings_show_themes": {
+      "message": "Показати доступні теми"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "Колір маски"
+   },
+   "settings_sidebar_position": {
+      "message": "Позиція"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "Дозволяє встановити положення бічній панелі: зліва чи справа екрану."
+   },
+   "settings_sidebar_position_left": {
+      "message": "Ліворуч"
+   },
+   "settings_sidebar_position_right": {
+      "message": "Праворуч"
+   },
+   "settings_sidebar_width": {
+      "message": "Ширина"
+   },
+   "settings_support_faq_headline": {
+      "message": "Часті запитання"
+   },
+   "settings_support_feedback_desc": {
+      "message": "Чи є які-небудь пропозиції щодо покращення, запитання, Ви помітили відсутність параметрів конфігурації або помилки? Щоб допомогти покращити роботу з цим розширенням, Ви можете надіслати відгук. Я буду дуже вдячний!"
+   },
+   "settings_support_feedback_email": {
+      "message": "електронна адреса (необов’язково)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "Відгук"
+   },
+   "settings_support_feedback_notice": {
+      "message": "Будь-ласка, складіть свій відгук англійською мовою, інакше буде важко зрозуміти і відповісти на ваше повідомлення."
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "Прикріпити скріншоти"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "Ви можете завантажити не більше {1} скріншотів"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "Розмір файлу {1} завеликий (> 1 Мб)"
+   },
+   "settings_support_feedback_send": {
+      "message": "Надіслати відгук"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "Ваше повідомлення не надіслано. Будь ласка спробуйте ще раз."
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "Дякуємо за відгук"
+   },
+   "settings_text_color": {
+      "message": "Колір тексту"
+   },
+   "settings_theme": {
+      "message": "Тема"
+   },
+   "settings_theme_changed": {
+      "message": "Тема успішно змінена"
+   },
+   "settings_theme_default": {
+      "message": "Тема за замовчуванням"
+   },
+   "settings_theme_default_desc": {
+      "message": "Ця тема дозволяє вам отримувати доступ до своїх закладок у легкому та сучасному вигляді. Багато елементів забарвлені в колірну гаму."
+   },
+   "settings_theme_focus": {
+      "message": "Тема фокусу"
+   },
+   "settings_theme_focus_desc": {
+      "message": "Ця тема зменшує анімацію та розташовує елементи більш щільно для поліпшення продуктивності та продуктивності."
+   },
+   "settings_theme_glass": {
+      "message": "Скляна тема"
+   },
+   "settings_theme_glass_desc": {
+      "message": "Ця тема робить фон бічної панелі напівпрозорою та додає ефект розмитості скла. Ви можете налаштувати цей ефект і прозорість бічної панелі."
+   },
+   "settings_themes_notice": {
+      "message": "Ви можете вибрати базовий дизайн бічної панелі. Вибрану тему можна налаштувати за допомогою доступних повзунків та кольорових параметрів."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "Це розширення - це проект однієї людини, який розпочався як хобі-проект для особистого використання."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "Область активації"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "За замовчуванням весь край вікна браузера можна навести, щоб відкрити бічну панель. Ви можете зменшити область активації, дозволивши бічній панелі відкриватися лише на частині висоти браузера. Наприклад, ви можете змінити бічну панель так, щоб вона відображалася лише при натисканні області активації в нижньому лівому куті вікна браузера. Це може бути корисно, щоб бокова панель не з’являлася ненавмисно при натисканні на посилання веб-сайту."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "Розгорніть усі підпапки"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "Щоб швидко відкрити папку з усіма відкритими її підпапками, ви можете двічі клацнути папку на бічній панелі."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "Чи ти знав?"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "Сховати записи"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "Ви можете приховати окремі закладки або навіть папки з бічної панелі. Ви можете клацнути правою кнопкою миші будь-який запис на бічній панелі, а потім натиснути кнопку {1} ​​в контекстному меню. Щоб знову відобразити приховані записи, ви можете натиснути піктограму меню в заголовку бічної панелі та ввімкнути відповідний прапорець там."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "Розширення доступне різними мовами ({1}). Переклади зроблені спільнотою, і кожен може допомогти зробити свій внесок, перекладаючи тексти розширення іншими мовами. Переклади будуть затверджені, а потім додані до розширення з наступним оновленням."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "Гарячі клавіши"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "Боковою панеллю можна керувати за допомогою комбінацій клавіш. Ви можете переглянути список ярликів, натиснувши піктограму меню в заголовку бічної панелі, а потім натисніть кнопку {1}."
+   },
+   "settings_tips_tricks_multiselect": {
+      "message": "Вибрати кілька записів"
+   },
+   "settings_tips_tricks_multiselect_desc": {
+      "message": "Ви можете вибрати кілька закладок або папок на бічній панелі, щоб одночасно відкривати, видаляти або навіть переміщати їх за допомогою перетягування та падіння."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "Нова вкладка"
+   },
+   "settings_tips_tricks_newtab_desc": {
+      "message": "Ви можете налаштувати вигляд сторінки нової вкладки безпосередньо на сторінці, натиснувши кнопку {1} ​​в нижньому куті. Потім ви можете змінити елементи сітки, пошукову систему, фонове зображення або посилання вгорі."
+   },
+   "settings_tips_tricks_next": {
+      "message": "Наступна порада"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "Відкрийте всі закладки"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "Щоб відкрити всі закладки в папці, ви можете натиснути папку середнім клацанням миші. Ви також можете натиснути {1}, натискаючи ліву кнопку миші на папці."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "Конфіденційність"
+   },
+   "settings_tips_tricks_privacy_desc": {
+      "message": "Закладки, що відображаються на бічній панелі, синхронізуються та керуються {browserName}. Розширення не зберігає та не аналізує ці закладки, а лише відображає на бічній панелі переглядачі вашого браузера."
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "Швидкі закладки"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "Ви можете перетягнути будь-яку URL-адресу прямо на бічну панель і опустити її у потрібне місце. Ви навіть можете позначити та перетягнути поточну URL-адресу вкладки браузера таким чином. Ви також можете перетягнути символ {1} ліворуч від адресного рядка на бічну панель, щоб створити закладку для поточної сторінки без попереднього позначення цілого адресного рядка."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "Швидкий пошук"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "Якщо відкрити бічну панель, ви можете шукати закладки, просто починаючи друкувати. Не потрібно спочатку натискати на піктограму пошуку в заголовку бічної панелі."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "Швидка копія URL-адреси"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "Щоб скопіювати URL-адресу закладки на бічній панелі у свій буфер обміну, можна натиснути клавішу {1} ​​під час наведення курсора на запис."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "Клацніть правою кнопкою миші"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "Ви можете клацнути правою кнопкою миші будь-яку закладку або папку на бічній панелі, щоб відкрити додаткові параметри. Наприклад, ви можете редагувати наявні закладки або закріплювати записи у верхній частині бічної панелі. Клацнувши правою кнопкою миші папку, ви можете розпочати перевірку закладок, щоб визначити пошкоджені або оновлені URL-адреси закладок."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "Сепаратори"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "Запис із URL-адресою {1} та заголовком {2} або {3} відображатиметься як роздільник на бічній панелі. Ви можете додати роздільники, клацнувши правою кнопкою миші будь-яку папку на бічній панелі, а потім натисніть кнопку {4}."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "Поділитися інформацією"
+   },
+   "settings_tips_tricks_share_data_desc": {
+      "message": "Ви можете анонімно поділитися своєю конфігурацією, що допоможе мені визначити популярні налаштування та визначити, що вдосконалити чи змінити в наступних версіях. Розширення не збирає жодних особистих даних або читання закладок. Без явного дозволу розширення також не використовує жодної конфігурації."
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "Синхронізація"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "Шукайте налаштування синхронізації"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "Усі ваші налаштування бічної панелі будуть синхронізовані між вашими пристроями, якщо ви ввімкнете параметри синхронізації вашого браузера в налаштуваннях. Навіть без Преміума."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "Перша версія цього розширення була випущена в листопаді 2016 року."
+   },
+   "settings_title": {
+      "message": "Налаштування"
+   },
+   "settings_toggle_area": {
+      "message": "Налаштувати область"
+   },
+   "settings_toggle_area_desc": {
+      "message": "За замовченням, весь край вікна браузера реагує на мишу, щоб відкрити бічну панель. Ви можете змінити це і налаштувати, де саме відкривати бічну панель."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "Перетягніть, щоб перемістити"
+   },
+   "settings_toggle_area_height": {
+      "message": "Висота"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "Ви можете зменшити висоту області так, що бічна панель буде відкриватися тільки при переміщенні курсору в це місце біля краю вікна браузера."
+   },
+   "settings_toggle_area_width": {
+      "message": "Ширина"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "Ширина (віконний)"
+   },
+   "settings_tooltip_content": {
+      "message": "Зміст підказки"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "Додаткова інформація"
+   },
+   "settings_tooltip_content_all": {
+      "message": "Заголовок і посилання"
+   },
+   "settings_tooltip_content_title": {
+      "message": "Тільки заголовок"
+   },
+   "settings_tooltip_content_url": {
+      "message": "Тільки посилання"
+   },
+   "settings_tooltip_delay": {
+      "message": "Затримка підказки"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "Затримка перед показом підказки до закладці при наведенні на неї курсора миші."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "Не показувати підказки"
+   },
+   "settings_tooltip_desc": {
+      "message": "Вибрати інформацію, яку повинна містити підказка."
+   },
+   "settings_tooltip_font_size": {
+      "message": "Розмір шрифту підказки"
+   },
+   "settings_translation_add_language": {
+      "message": "Додати мову"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "Повернутися до огляду"
+   },
+   "settings_translation_desc": {
+      "message": "Ви можете допомогти перекладати розширення на свою мову або покращити існуючий переклад."
+   },
+   "settings_translation_help": {
+      "message": "Для кожного запису ви можете подивитися англійський переклад, який потрібно перекласти на вашу мову. Щоб допомогти вам визначити, де саме використовується текст і для чого він використовується, кожний запис має назву (наприклад, {1}), яку не слід перекладати. Не забудьте надіслати переклад, натиснувши кнопку у верхньому правому куті!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "Деякі переклади відсутні"
+   },
+   "settings_translation_info": {
+      "message": "Ви можете редагувати існуючі переклади або додати відсутні. Якщо ви надішлете свої зміни, я розгляну вашу версію і схвалю її."
+   },
+   "settings_translation_link": {
+      "message": "Перейти до огляду перекладу"
+   },
+   "settings_translation_notice1": {
+      "message": "Як тільки всі категорії, позначені як обов'язкові, будуть перекладені, переклад буде опублікований."
+   },
+   "settings_translation_notice2": {
+      "message": "Незакінчені категорії не будуть опубліковані, щоб запобігти наполовину перекладеного тексту."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "Я бажаю отримувати повідомлення при додаванні в розширення нових строк, які потребують перекладу."
+   },
+   "settings_translation_required_category": {
+      "message": "Обов'язкові до перекладу"
+   },
+   "settings_translation_status_draft": {
+      "message": "Переклад неповний або потребує перегляду та недоступний для користувачів"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "Переклад доступний, але деякі розділи не закінчені"
+   },
+   "settings_translation_status_released": {
+      "message": "Переклад доступний"
+   },
+   "settings_translation_submit": {
+      "message": "Відправити"
+   },
+   "settings_translation_submit_message": {
+      "message": "Ваш переклад було успішно відправлено"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "Посилання скопійовене"
+   },
+   "sidebar_deleted": {
+      "message": "Видалено"
+   },
+   "sidebar_dir_children": {
+      "message": "Елементи"
+   },
+   "sidebar_search_no_results": {
+      "message": "Немає закладок по вашому запиту"
+   },
+   "sidebar_search_placeholder": {
+      "message": "Пошук закладок"
+   },
+   "sidebar_undo_deletion": {
+      "message": "Відновити"
+   },
+   "sort_label_alphabetical": {
+      "message": "За алфавітом"
+   },
+   "sort_label_custom": {
+      "message": "Визначений користувачем"
+   },
+   "sort_label_most_used": {
+      "message": "використовувані"
+   },
+   "sort_label_recently_added": {
+      "message": "Останні додані"
+   },
+   "sort_label_recently_used": {
+      "message": "Останні використані"
+   },
+   "sort_most_used_per_month": {
+      "message": "За місяць"
+   },
+   "sort_view_as_tree": {
+      "message": "Показати каталоги"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "Перезавантажте зараз"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "Через оновлення розширення цю сторінку потрібно перезавантажити."
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "Сервіс зворотнього зв'язку наразі недоступний. Якщо ви хочете надіслати відгук, надішліть мені електронний лист."
+   },
+   "status_service_unavailable_headline": {
+      "message": "Сервіс недоступний"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "Сервіс перекладу на даний момент недоступний. Будь-ласка спробуйте пізніше."
+   }
+}

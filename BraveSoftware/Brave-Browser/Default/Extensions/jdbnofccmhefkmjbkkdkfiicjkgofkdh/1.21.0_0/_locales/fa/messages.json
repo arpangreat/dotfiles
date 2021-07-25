@@ -1,0 +1,1409 @@
+{
+   "contextmenu_add": {
+      "message": "افزودن ورودی"
+   },
+   "contextmenu_add_bookmark": {
+      "message": "افزودن نشانه"
+   },
+   "contextmenu_bookmark_manager": {
+      "message": "مدیریت نشانه ها"
+   },
+   "contextmenu_check_bookmarks": {
+      "message": "بررسی نشانه ها"
+   },
+   "contextmenu_close_all_directories": {
+      "message": "بستن همه پوشه ها"
+   },
+   "contextmenu_copy": {
+      "message": "کپی آدرس در کلیپ برد"
+   },
+   "contextmenu_current_tab": {
+      "message": "باز کردن در زبانه فعلی"
+   },
+   "contextmenu_delete_bookmark": {
+      "message": "حذف نشانه"
+   },
+   "contextmenu_delete_dir": {
+      "message": "حذف پوشه"
+   },
+   "contextmenu_delete_separator": {
+      "message": "حذف جداکننده"
+   },
+   "contextmenu_edit_bookmark": {
+      "message": "ویرایش نشانه ها"
+   },
+   "contextmenu_edit_dir": {
+      "message": "ویرایش پوشه"
+   },
+   "contextmenu_edit_separator": {
+      "message": "ویرایش جداکننده"
+   },
+   "contextmenu_hide_from_sidebar": {
+      "message": "پنهان شود"
+   },
+   "contextmenu_infos": {
+      "message": "اطلاعات"
+   },
+   "contextmenu_keyboard_shortcuts": {
+      "message": "میانبرهای صفحه کلید"
+   },
+   "contextmenu_new_tab": {
+      "message": "بازکردن در زبانه جدید"
+   },
+   "contextmenu_new_tab_incognito": {
+      "message": "بازکردن در پنجره ناشناس"
+   },
+   "contextmenu_new_window": {
+      "message": "باز کردن در پنجره جدید"
+   },
+   "contextmenu_open_children": {
+      "message": "بازکردن نشانه ها"
+   },
+   "contextmenu_pin": {
+      "message": "الصاق به بالا"
+   },
+   "contextmenu_reload_sidebar": {
+      "message": "بارگذاری دوباره ستون"
+   },
+   "contextmenu_show_in_dir": {
+      "message": "نمایش در پوشه"
+   },
+   "contextmenu_show_in_sidebar": {
+      "message": "نمایش در ستون"
+   },
+   "contextmenu_toggle_hidden": {
+      "message": "نمایش ورودی های مخفی"
+   },
+   "contextmenu_unpin": {
+      "message": "برداشتن از بالا"
+   },
+   "contribute_intro": {
+      "message": "برای بهبود فرمت، می خواهم بدانم که چگونه کاربران از نوار کناری استفاده می کنند و چه تنظیماتی از آنها استفاده می کنند."
+   },
+   "contribute_notice": {
+      "message": "می توانید با اشتراک گذاری پیکربندی خود به من کمک کنید"
+   },
+   "contribute_outro": {
+      "message": "اگر سوالی یا نگرانی در مورد به اشتراک گذاشتن اطلاعات دارید، لطفا یک پیام بازخورد ارسال کنید"
+   },
+   "contribute_share_activity_desc1": {
+      "message": "شما می توانید فعالیت خود را در نوار کناری به صورت ناشناس، که به من کمک می کند بدانید که چگونه کاربران از نوار کناری به طور کلی استفاده می کنند. اطلاعات مربوط به نشانکهای شما یا وبسایتهای بازدید شده شما [b]اندازه گیری نخواهد شد[/b]."
+   },
+   "contribute_share_activity_desc2": {
+      "message": "این اطلاعات بسیار مفید برای شناسایی مشکلات در قابلیت استفاده یا ویژگی هایی است که برای مثال اغلب مورد استفاده قرار نمی گیرند."
+   },
+   "contribute_share_activity_example_1": {
+      "message": "چه تعداد بوک مارک را به طور متوسط کاربران انجام می دهند؟"
+   },
+   "contribute_share_activity_example_2": {
+      "message": "کدام پلت فرم کاربران (Windows، Mac، Linux، ...) هستند؟"
+   },
+   "contribute_share_activity_example_3": {
+      "message": "آیا کاربران از جستجو استفاده می کنند؟"
+   },
+   "contribute_share_activity_example_4": {
+      "message": "آیا کاربران مرتب سازی بوک مارک ها را تغییر می دهند؟"
+   },
+   "contribute_share_activity_example_5": {
+      "message": "کاربران اغلب کاربران را مجددا مرتب یا ویرایش می کنند؟"
+   },
+   "contribute_share_activity_examples_intro": {
+      "message": "داده هایی که به اشتراک گذاشته شده اند به عنوان مثال:"
+   },
+   "contribute_share_activity_label": {
+      "message": "فرستادن فعالیت"
+   },
+   "contribute_share_config_desc": {
+      "message": "شما پیکربندی خود را به صورت ناشناس به اشتراک می گذارید، که به من کمک می کند تا تنظیمات محبوب را شناسایی کرده و دریابید که چه چیزی برای بهبود و تغییر در نسخه های آینده."
+   },
+   "contribute_share_config_label": {
+      "message": "فرستادن تنظیمات"
+   },
+   "extension_desc": {
+      "message": "یک ستون پنهان شونده از نشانک های شما به لبه پنجره مرورگر اضافه می کند"
+   },
+   "extension_last_update": {
+      "message": "آخرین بروزرسانی در {1}"
+   },
+   "extension_name": {
+      "message": "نوار نشانه ها"
+   },
+   "extension_version": {
+      "message": "نسخه"
+   },
+   "header_bookmarks": {
+      "message": "نشانه ها"
+   },
+   "header_bookmarks_single": {
+      "message": "نشانه"
+   },
+   "keyboard_shortcuts_ctrl_c_desc": {
+      "message": "آدرس اینترنتی ورودی انتخاب شده را کپی می کند"
+   },
+   "keyboard_shortcuts_del_desc": {
+      "message": "ورودی انتخاب شده را خذف می کند"
+   },
+   "keyboard_shortcuts_enter_desc": {
+      "message": "روی ورودی انتخاب شده، کلیک می کند"
+   },
+   "keyboard_shortcuts_esc_desc": {
+      "message": "نوار کناری یا منوی باز شده را می بندد"
+   },
+   "keyboard_shortcuts_key_cmd": {
+      "message": "کامند"
+   },
+   "keyboard_shortcuts_key_ctrl": {
+      "message": "کنترل"
+   },
+   "keyboard_shortcuts_key_del": {
+      "message": "دیلیت"
+   },
+   "keyboard_shortcuts_key_enter": {
+      "message": "اینتر"
+   },
+   "keyboard_shortcuts_key_esc": {
+      "message": "خروج"
+   },
+   "keyboard_shortcuts_key_shift": {
+      "message": "شیفت"
+   },
+   "keyboard_shortcuts_key_tab": {
+      "message": "برگه یا صفحه"
+   },
+   "keyboard_shortcuts_shift_enter_desc": {
+      "message": "برای ورودی انتخاب شده ، یک منو باز می کند"
+   },
+   "keyboard_shortcuts_tab_desc": {
+      "message": "ورودی بعدی یا قبلی را در نوار کناری نگه می دارد"
+   },
+   "more_link": {
+      "message": "بیشتر بدانید"
+   },
+   "newtab_fallback_desc": {
+      "message": "ما به جای ستون نشانه ها، بک زبانه جدید برای شما باز کردیم"
+   },
+   "newtab_fallback_headline_extension_page": {
+      "message": "ستون نشانه ها در صفحه افزونه ها قابل استفاده نیست"
+   },
+   "newtab_fallback_headline_general": {
+      "message": "چیزی ستون نشانه ها را مسدود کرده است"
+   },
+   "newtab_fallback_headline_new_tab": {
+      "message": "ستون نشانه ها در صفحه اصلی تب جدید قابل استفاده نیست"
+   },
+   "newtab_fallback_headline_system": {
+      "message": "ستون نشانه ها در صفحات سیستمی کروم قابل استفاده نیست"
+   },
+   "newtab_fallback_headline_url_filter": {
+      "message": "یکی از قوانین مربوط به آدرس های اینترنتی اجازه استفاده از ستون نشانه ها را نمی دهد"
+   },
+   "newtab_fallback_headline_webstore": {
+      "message": "ستون نشانه ها در فروشگاه اینترنتی گوگل قابل استفاده نیست"
+   },
+   "newtab_fallback_set_as_new_tab": {
+      "message": "وفتی یک تب جدید باز میکنم، این صفحه را نشان بده"
+   },
+   "newtab_grid_links_appearance_favicon": {
+      "message": "نمایش آیکون وب سایت"
+   },
+   "newtab_grid_links_appearance_thumbnail": {
+      "message": "پیش نمایش وبسایت ها"
+   },
+   "newtab_grid_links_custom": {
+      "message": "ورودی های تعریف شده توسط کاربر"
+   },
+   "newtab_grid_links_default": {
+      "message": "صفحه های برتر"
+   },
+   "newtab_grid_links_grid_size": {
+      "message": "اندازه شبکه"
+   },
+   "newtab_grid_links_hidden": {
+      "message": "صفحه ها را نشان نده"
+   },
+   "newtab_grid_links_most_used": {
+      "message": "نشانک های بیشتر استفاده شده"
+   },
+   "newtab_grid_links_recently_used": {
+      "message": "نشانک های استفاده شده اخیر"
+   },
+   "newtab_search_engine_custom": {
+      "message": "توسط کاربر تعریف شده"
+   },
+   "newtab_search_engine_custom_title": {
+      "message": "عنوان"
+   },
+   "newtab_search_engine_custom_url_homepage": {
+      "message": "آدرس اینترنتی صفحه اول"
+   },
+   "newtab_search_engine_custom_url_results": {
+      "message": "آدرس اینترنتی نیایج جستجو"
+   },
+   "newtab_search_engine_headline": {
+      "message": "موتور جستجو"
+   },
+   "newtab_search_field_hide": {
+      "message": "قسمت جستجو را مخفی کن"
+   },
+   "newtab_search_field_show": {
+      "message": "قسمت جستجو را نشان بده"
+   },
+   "newtab_search_placeholder": {
+      "message": "جستجوی {1} یا نوشتن آدرس اینترنتی"
+   },
+   "newtab_speech_search_error": {
+      "message": "برای فعال کردن جستجوی گفتاری، باید اجازه دسترسی به میکروفن را بدهی"
+   },
+   "newtab_speech_search_listening": {
+      "message": "الان صحبت کن"
+   },
+   "newtab_title": {
+      "message": "زبانه جدید"
+   },
+   "newtab_upload_background": {
+      "message": "آپلود عکس پس زمینه"
+   },
+   "onboarding_finish_desc": {
+      "message": "با سایدبار سرگرم باشید"
+   },
+   "onboarding_finish_notice": {
+      "message": "اگر شما اغلب در مورد {1} سمت پنجره مرورگر کلیک کنید، ممکن است بخواهید جایی که نوار کناری را می توان به صورت عمودی باز کرد، برای جلوگیری از باز شدن آن به طور تصادفی."
+   },
+   "onboarding_goto_appearance": {
+      "message": "پیکربندی ظاهر"
+   },
+   "onboarding_goto_settings": {
+      "message": "تنظیمات بیشتر"
+   },
+   "onboarding_handson_desc": {
+      "message": "حالا میتوانید خودتان آن را امتحان کنید."
+   },
+   "onboarding_handson_icon_desc": {
+      "message": "بر روی آیکن افزونه کلیک کنید تا نوار جانبی بازگشایی شود."
+   },
+   "onboarding_handson_mouse_desc_1": {
+      "message": "مکان نما موس خود را به لبه ی {1} پنجره خود حرکت دهید."
+   },
+   "onboarding_handson_mouse_desc_2": {
+      "message": "بعداز{1} با موس خود کلیک کنید تا نوار کناری باز شود."
+   },
+   "onboarding_headline": {
+      "message": "برای نصب این افزونه متشکریم"
+   },
+   "onboarding_left": {
+      "message": "چپ"
+   },
+   "onboarding_right": {
+      "message": "راست"
+   },
+   "onboarding_setup": {
+      "message": "الان نصب شود"
+   },
+   "onboarding_sidebar_open_action_desc": {
+      "message": "چگونه می خواهید نوارکناری شما باز شود؟"
+   },
+   "onboarding_sidebar_position_desc": {
+      "message": "کجا می خواهید نوار کناری شما قرار بگیرد؟"
+   },
+   "onboarding_sidebar_surface_dark": {
+      "message": "تاریک"
+   },
+   "onboarding_sidebar_surface_desc": {
+      "message": "کدام سبک را ترجیح میدهید؟"
+   },
+   "onboarding_sidebar_surface_light": {
+      "message": "روشن"
+   },
+   "onboarding_skip": {
+      "message": "رد کردن نصب"
+   },
+   "onboarding_title": {
+      "message": "نصب"
+   },
+   "overlay_add_position": {
+      "message": "موقعیت"
+   },
+   "overlay_add_position_append": {
+      "message": "به آخر پوشه اضافه شود"
+   },
+   "overlay_add_position_prepend": {
+      "message": "به ابتدای پوشه اضافه شود"
+   },
+   "overlay_bookmark_additional_info": {
+      "message": "اطلاعات اضافی"
+   },
+   "overlay_bookmark_created_date": {
+      "message": "درست شده در"
+   },
+   "overlay_bookmark_title": {
+      "message": "عنوان"
+   },
+   "overlay_bookmark_url": {
+      "message": "آدرس اینترنتی"
+   },
+   "overlay_bookmark_views": {
+      "message": "بازدید ها"
+   },
+   "overlay_bookmark_views_per_month": {
+      "message": "هر ماه"
+   },
+   "overlay_bookmark_views_since": {
+      "message": "ثبت شده از"
+   },
+   "overlay_bookmark_views_single": {
+      "message": "بازدید"
+   },
+   "overlay_cancel": {
+      "message": "لغو"
+   },
+   "overlay_check_bookmarks_loading": {
+      "message": "بررسی آدرس نشانه ها"
+   },
+   "overlay_check_bookmarks_menu_broken": {
+      "message": "ایراد دارد"
+   },
+   "overlay_check_bookmarks_menu_changed": {
+      "message": "تغییر یافته"
+   },
+   "overlay_check_bookmarks_menu_duplicate": {
+      "message": "تکراری ها"
+   },
+   "overlay_check_bookmarks_menu_empty": {
+      "message": "پوشه های خالی"
+   },
+   "overlay_check_bookmarks_no_results": {
+      "message": "همه آدرس ها درست هستند"
+   },
+   "overlay_check_bookmarks_no_results_broken": {
+      "message": "همه آدرس ها بدون ایراد هستند"
+   },
+   "overlay_check_bookmarks_no_results_changed": {
+      "message": "هیچ آدرسی تفییر پیدا نکرده است"
+   },
+   "overlay_check_bookmarks_no_results_duplicate": {
+      "message": "آدرس تکراری در نشانه ها وجود ندارد"
+   },
+   "overlay_check_bookmarks_no_results_empty": {
+      "message": "هیچ پوشه ای بدون نشانه نیست"
+   },
+   "overlay_check_bookmarks_remove_selected": {
+      "message": "حذف انتخاب شده ها"
+   },
+   "overlay_check_bookmarks_update_selected": {
+      "message": "بروزرسانی انتخاب شده ها"
+   },
+   "overlay_close": {
+      "message": "بستن"
+   },
+   "overlay_confirm_open_children": {
+      "message": "آیا همه زیر مجموعه ها باز شوند؟"
+   },
+   "overlay_delete": {
+      "message": "پاک"
+   },
+   "overlay_delete_bookmark_confirm": {
+      "message": "آیا این نشانه پاک شود؟"
+   },
+   "overlay_delete_dir_confirm": {
+      "message": "آیا این پوشه پاک شود؟ همه زیر مجموعه های آن نیز پاک خواهند شد"
+   },
+   "overlay_dir_children": {
+      "message": "عناصر"
+   },
+   "overlay_dir_children_bookmarks": {
+      "message": "نشانه ها"
+   },
+   "overlay_dir_children_dirs": {
+      "message": "پوشه ها"
+   },
+   "overlay_hide_bookmark_confirm": {
+      "message": "آیا این نشانه پنهان شود؟"
+   },
+   "overlay_hide_dir_confirm": {
+      "message": "آیا این نشانه پنهان شود؟ همه زیر مجموعه های آن نیز پنهان خواهند شد"
+   },
+   "overlay_hide_from_sidebar": {
+      "message": "پنهان شود"
+   },
+   "overlay_label_bookmark": {
+      "message": "نشانه ها"
+   },
+   "overlay_label_dir": {
+      "message": "پوشه ها"
+   },
+   "overlay_label_separator": {
+      "message": "جداکننده"
+   },
+   "overlay_open_children": {
+      "message": "بازکردن همه"
+   },
+   "overlay_save": {
+      "message": "ذخیره"
+   },
+   "overlay_separator_title_desc": {
+      "message": "میتوانید یک عنوان به سلیقه خودتان انتخاب کنید، که بالای خط جدا کننده نشان داده خواهد شد و به شما در سازماندهی لیست نشانه هایتان کمک خواهد کرد"
+   },
+   "overlay_update": {
+      "message": "بروزرسانی"
+   },
+   "premium_activate": {
+      "message": "اشتراک ویژه را فعال کنید"
+   },
+   "premium_already_activated": {
+      "message": "شما از اشتراک ویژه استفاده میکنید."
+   },
+   "premium_desc_1": {
+      "message": "با اشتراک ویژه به امکانات اضافی دسترسی پیدا میکنید و به من در نگهداری افزونه کمک خواهید کرد."
+   },
+   "premium_desc_2": {
+      "message": "در زیر می توانید ویژگی های موجود در اشتراک ویژه را بررسی کنید. همه ویژگی های کلیدی افزونه رایگان هستند و به هیچ وجه به اشتراک ویژه نیازی نخواهید داشت. در صورتی که فکر میکنید این افزونه برای شما ارزشمند است٬ میتوانید با پرداخت هزینه٬ از امکانات ویژه این افزونه بهره مند شوید."
+   },
+   "premium_feature_custom_background_desc": {
+      "message": "اگر از صفحه New Tab این پسوند استفاده می کنید ، می توانید تصویر پس زمینه خود را تنظیم کنید تا جلوه آن به زیبایی بیشتری پیدا کند."
+   },
+   "premium_feature_custom_background_headline": {
+      "message": "صفحه برگه جدید خود را سفارشی کنید"
+   },
+   "premium_feature_custom_css_desc": {
+      "message": "اگر با CSS آشنا هستید ، می توانید با اضافه کردن تعاریف سبک خود ، ظاهر کاملی از نوار کناری را تغییر دهید. این به شما امکان می دهد تا مطلقاً همه چیز را تنظیم کنید."
+   },
+   "premium_feature_custom_css_headline": {
+      "message": "همه چیز را با صفحه سبک خود سفارشی کنید"
+   },
+   "premium_feature_early_access_desc": {
+      "message": "با پریمیوم ، به ویژگیهای غیرقانونی دسترسی پیدا می کنید ، که در حال حاضر تحت آزمایش هستند یا تحت آزمایش قرار دارند."
+   },
+   "premium_feature_early_access_headline": {
+      "message": "اولین کسی باشید که ویژگی های جدید آزمایشی را امتحان می کند"
+   },
+   "premium_feature_import_export_headline": {
+      "message": "تنظیمات خود را وارد و صادر کنید"
+   },
+   "premium_feature_linkchecker_desc": {
+      "message": "می توانید روی هر فهرست موجود در ستون کناری خود راست کلیک کرده و یک چک را انجام دهید. در صفحه نتیجه ، تمام URL های به روز ، نشانک هایی که دیگر کار نمی شوند و نشانک هایی با همان URL نشان می دهند."
+   },
+   "premium_feature_linkchecker_headline": {
+      "message": "نشانک های خود را برای پیوندهای خراب یا تکراری بررسی کنید"
+   },
+   "premium_feature_sidebar_width_headline": {
+      "message": "در هر زمان عرض نوار کناری خود را تغییر دهید"
+   },
+   "premium_feature_themes_desc": {
+      "message": "با نصب یک موضوع دیگر می توانید کل طرح ستون کناری را با یک کلیک مبادله کنید. همچنین می توان آنها را با اسلایدها و گزینه های رنگی موجود سفارشی کرد."
+   },
+   "premium_feature_themes_headline": {
+      "message": "تم نوار کناری خود را تغییر دهید"
+   },
+   "premium_get_now": {
+      "message": "ارتقاع به نسخه ی ویژه"
+   },
+   "premium_license_key": {
+      "message": "کلید فعال سازی لایسنس"
+   },
+   "premium_pay_buy": {
+      "message": "خرید نسخه ی ویژه"
+   },
+   "premium_pay_cancellation_policy": {
+      "message": "سیاست لغو"
+   },
+   "premium_pay_confirm_headline": {
+      "message": "خرید را تأیید کنید"
+   },
+   "premium_pay_contact": {
+      "message": "اگر درمورد پرداخت خود با مشکلی روبرو هستید یا سوالی دارید ، لطفا با من تماس بگیرید در {1}."
+   },
+   "premium_pay_creditcard": {
+      "message": "کارت اعتباری"
+   },
+   "premium_pay_eula": {
+      "message": "توافقنامه مجوز کاربر نهایی"
+   },
+   "premium_pay_eula_desc": {
+      "message": "من [a]توافقنامه مجوز کاربر نهایی[/a] را میخوانم و می پذیرم"
+   },
+   "premium_pay_info_card_expires": {
+      "message": "کارت منقضی می شود"
+   },
+   "premium_pay_info_card_number": {
+      "message": "شماره ی کارت اعتباری"
+   },
+   "premium_pay_info_email": {
+      "message": "ایمیل"
+   },
+   "premium_pay_info_email_desc": {
+      "message": "لطفاً آدرس ایمیل خود را برای دریافت کلید مجوز وارد کنید."
+   },
+   "premium_pay_info_name": {
+      "message": "نام"
+   },
+   "premium_pay_info_payment_method": {
+      "message": "روش خرید"
+   },
+   "premium_pay_info_zipcode": {
+      "message": "پیش شماره"
+   },
+   "premium_pay_license_key_desc": {
+      "message": "اگر می خواهید {1} را در دستگاه دیگری فعال کنید یا بعد از نصب مجدد برنامه افزودنی ، می توانید کلید زیر را در تنظیمات برنامه افزودنی وارد کنید:"
+   },
+   "premium_pay_price_info": {
+      "message": "این یک بار هزینه است و تمام ویژگی های حق بیمه آینده را نیز شامل می شود."
+   },
+   "premium_pay_price_pay_what_you_want": {
+      "message": "برای دسترسی به ویژگی های برتر می توانید آنچه را که فکر می کنید برنامه افزودنی و کار من برای شما ارزش دارد پرداخت کنید. شما همیشه بدون در نظر گرفتن مبلغی که مایل به پرداخت هستید ، تمام ویژگی های حق بیمه را دریافت خواهید کرد."
+   },
+   "premium_pay_price_total": {
+      "message": "مجموع"
+   },
+   "premium_pay_purchase_id": {
+      "message": "شناسه خرید"
+   },
+   "premium_pay_select_payment_method": {
+      "message": "انتخاب نحوه ی خرید"
+   },
+   "premium_pay_success_headline": {
+      "message": "از خرید شما متشکریم"
+   },
+   "premium_pay_success_info": {
+      "message": "{1} به صورت خودکار برای این دستگاه فعال شده است. شما نیاز ندارید که کار دیگری انجام دهید."
+   },
+   "premium_pay_verifying": {
+      "message": "تأیید معامله"
+   },
+   "premium_pay_wechat_desc": {
+      "message": "برای ادامه این کد QR را در WeChat اسکن کنید."
+   },
+   "premium_pay_what_you_want": {
+      "message": "آنچه را که می خواهید پرداخت کنید"
+   },
+   "premium_popup_text": {
+      "message": "آیا ویژگی های نسخه ی ویژه را چک کرده اید؟"
+   },
+   "premium_restricted_text": {
+      "message": "این ویژگی تنها در نسخه ی ویژه قابل استفاده است"
+   },
+   "premium_show_license_input": {
+      "message": "من در حال حاضر حق بیمه"
+   },
+   "settings_advanced": {
+      "message": "تنظیمات پیشرفته"
+   },
+   "settings_available_themes": {
+      "message": "تم موجود"
+   },
+   "settings_background_blur": {
+      "message": "تاری پس زمینه"
+   },
+   "settings_background_transparency": {
+      "message": "شفافیت پس زمینه"
+   },
+   "settings_bookmarks_dir_color": {
+      "message": "رنگ آیکون دایرکتوری"
+   },
+   "settings_bookmarks_dir_icon": {
+      "message": "نماد دایرکتوری"
+   },
+   "settings_bookmarks_dir_indentation": {
+      "message": "تورفتگی دایرکتوری"
+   },
+   "settings_bookmarks_font_size": {
+      "message": "فونت نشانکها"
+   },
+   "settings_bookmarks_horizontal_padding": {
+      "message": "بالشتک افقی"
+   },
+   "settings_bookmarks_icon_size": {
+      "message": "اندازه نماد نشانکها"
+   },
+   "settings_bookmarks_line_height": {
+      "message": "ارتفاع نشانک ها"
+   },
+   "settings_close_timeout": {
+      "message": "پایان کار"
+   },
+   "settings_close_timeout_desc": {
+      "message": "مدت زمان طولانی در ثانیه بعد از بسته شدن نوار کناری. به محض اینکه ماوس از نوار کناری خارج می شود ، حساب می شود و هنگام معلق کردن دوباره آن را متوقف می کند."
+   },
+   "settings_close_timeout_infinity": {
+      "message": "به طور خودکار نبند"
+   },
+   "settings_color_scheme": {
+      "message": "رنگبندی"
+   },
+   "settings_color_scheme_desc": {
+      "message": "رنگ هدر نوار کناری، جعبه چک، و غیره"
+   },
+   "settings_custom_css": {
+      "message": "صفحه سبک سفارشی"
+   },
+   "settings_custom_css_desc": {
+      "message": "شما می توانید شیوه خودتان را برای تغییر سبک ظاهر پیش فرض تعریف کنید. لطفا در صورتی از این گزینه استفاده کنید که با زبان سی‌اس‌اس آشنا هستید و می دانید چه کاری انجام می دهید."
+   },
+   "settings_dark_mode": {
+      "message": "سطح"
+   },
+   "settings_dashboard_appearance_options": {
+      "message": "تغییر نمای ستون"
+   },
+   "settings_dashboard_appearance_options_desc": {
+      "message": "میتوانید نمای نوار کناری خود را متناسب با نیازهای خود تغییر دهید. گزینه های گوناگونی برای تغییر اندازه قلم٬ فاصله خطوط٬ رنگ ها٬ آیکون ها و چیز های دیگر وجود داره. همچنین شما میتوانید با گزینش از میان طرح های پیش فرض و گزینه های از پیش تعیین شده٬ به سرعت نوار کناری را به شکل دلخواه خود در آورید."
+   },
+   "settings_dashboard_sidebar_options": {
+      "message": "عملکرد ستون خود را پیکربندی کنید"
+   },
+   "settings_dashboard_sidebar_options_desc": {
+      "message": "گزینه های گوناگونی وجود دارد که با تغییر آنها میتوانید افزونه را کنترل کنید . برای نمونه٬ میتوانید چگونگی باز شدن نوار کناری یا چگونگی باز شدن صفحات نشانه گذاری شده را تغییر دهید. اگر نمیخواهید نوار کناری در تمامی صفحات باز شود٬ میتوانید آن را با تنظیمات مناسب پیکربندی کنید."
+   },
+   "settings_dir_accordion": {
+      "message": "فقط دایرکتوری فعلی را نمایش دهید"
+   },
+   "settings_dir_accordion_desc": {
+      "message": "تمام دایرکتوری ها را به جز در حال حاضر فعال می کند."
+   },
+   "settings_directories_icon_size": {
+      "message": "اندازه آیکون راهنماها"
+   },
+   "settings_directory_arrows": {
+      "message": "فلش دایرکتوری"
+   },
+   "settings_expert_save_error": {
+      "message": "تنظیمات ذخیره نشد لطفا ورودی خود را تصحیح کنید"
+   },
+   "settings_expert_settings_desc": {
+      "message": "با تنظیمات متخصص، می توانید هر پرچم تنظیمات پسوند را تغییر دهید، حتی کسانی که نمی توانید با استفاده از کادرهای عادی و لغزنده صفحه تنظیمات تغییر دهید."
+   },
+   "settings_expert_settings_notice": {
+      "message": "لطفا مقادیر اینجا را تغییر دهید، اگر می دانید چه کاری انجام می دهید. پیکربندی های نادرست می تواند رفتار غیرمنتظره فرمت را ایجاد کند. اگر چیزی شکسته شود، می توانید به تنظیمات پیش فرض بازگردید."
+   },
+   "settings_export": {
+      "message": "صادر کردن تنظیمات"
+   },
+   "settings_filter_explanation_1": {
+      "message": "فقط در هر خط یک الگوی URL اضافه کنید"
+   },
+   "settings_filter_explanation_2": {
+      "message": "برای مطابقت با هر شخصیت از * استفاده کنید(e.g. example.com/* matches all pages under example.com)"
+   },
+   "settings_filter_explanation_3": {
+      "message": "اگر شما به طور معمول هیچ * را وارد نکنید ، فقط آدرس اینترنتی دقیق مطابقت دارد(e.g. \"example.com\" won't match for the URL \"example.com/about.html\")"
+   },
+   "settings_filter_explanation_4": {
+      "message": "نیازی به اضافه کردن پروتکل (به عنوان مثال http: //) در قوانین نیست"
+   },
+   "settings_filter_intro": {
+      "message": "اگر نمی خواهید نوار کناری در هر صفحه بارگیری شود ، می توانید پیکربندی کنید که کجا بارگیری (لیست سفید) را بارگیری کنید یا جایی که نیست (لیست سیاه)."
+   },
+   "settings_filter_rules": {
+      "message": "الگوهای URL"
+   },
+   "settings_filter_visibility": {
+      "message": "نوار کناری را بارگیری کنید"
+   },
+   "settings_filter_visibility_always": {
+      "message": "در هر صفحه"
+   },
+   "settings_filter_visibility_blacklist": {
+      "message": "در هر صفحه به جز صفحات خاص"
+   },
+   "settings_filter_visibility_whitelist": {
+      "message": "فقط در صفحات خاص"
+   },
+   "settings_font_family": {
+      "message": "شکل نوشتار"
+   },
+   "settings_font_family_default": {
+      "message": "پیش فرض"
+   },
+   "settings_font_family_desc": {
+      "message": "شکلک نوار کناری و پوشش"
+   },
+   "settings_header_height": {
+      "message": "ارتفاع"
+   },
+   "settings_headline_share_userdata": {
+      "message": "اشتراک اطلاعات"
+   },
+   "settings_hover_color": {
+      "message": "رنگ زیر موس"
+   },
+   "settings_icon_background_color": {
+      "message": "رنگ پس زمینه"
+   },
+   "settings_icon_color": {
+      "message": "رنگ"
+   },
+   "settings_icon_color_auto": {
+      "message": "خودکار"
+   },
+   "settings_icon_color_custom": {
+      "message": "سفارشی"
+   },
+   "settings_icon_color_desc_1": {
+      "message": "رنگ آیکون به طور خودکار با طرح رنگی سیستم شما (روشن یا تیره) تنظیم می شود تا مطابقت داشته باشد. همچنین شما می توانید رنگ دلخواه خود را برای آیکون تعریف کنید."
+   },
+   "settings_icon_color_desc_2": {
+      "message": "توجه داشته باشید زمانی که از تم سفارشی شده ی گوگل کروم استفاده میکنید , تنظیم رنگ خودکار غیر فعال میشود."
+   },
+   "settings_icon_shape": {
+      "message": "شکل"
+   },
+   "settings_import": {
+      "message": "وارد کردن تنظیمات"
+   },
+   "settings_import_export_bookmarks": {
+      "message": "بازگردانی/پشتیبان گیری تنظیمات"
+   },
+   "settings_import_export_bookmarks_desc": {
+      "message": "این قابلیت مربوط به مرورگر شماست و مربوط به افزونه نیست. در مورد چگونگی بازگردانی و پشتیبان گیری نشانک ها در {browserName} بیشتر بخوانید."
+   },
+   "settings_import_export_desc": {
+      "message": "می توانید تنظیمات برنامه افزودنی خود را صادر کرده و آنها را به صورت محلی در رایانه ذخیره کنید. می توانید پرونده صادر شده قبلی را در هر رایانه ای ، جایی که پسوند نصب شده است ، وارد کنید."
+   },
+   "settings_import_export_headline": {
+      "message": "بازیابی/پشتیبان گیری از تنظیمات"
+   },
+   "settings_import_export_notice": {
+      "message": "اگر به سیستم {browserName} با حساب خود وارد شوید ، تنظیمات برنامه افزودنی به طور خودکار بین دستگاه های شما همگام می شوند. اگر نمی خواهید وارد سیستم شوید یا می خواهید تنظیمات خود را با افراد دیگر به اشتراک بگذارید ، می توانید از این گزینه واردات / صادرات استفاده کنید."
+   },
+   "settings_import_failed": {
+      "message": "وارد کردن پیکربندی انجام نشد. لطفاً یک پرونده معتبر انتخاب کنید."
+   },
+   "settings_import_saved": {
+      "message": "پیکربندی با موفقیت وارد شد"
+   },
+   "settings_indicator_color": {
+      "message": "رنگ"
+   },
+   "settings_indicator_icon_color": {
+      "message": "رنگ"
+   },
+   "settings_indicator_icon_size": {
+      "message": "اندازه نشانه"
+   },
+   "settings_indicator_width": {
+      "message": "پهنای"
+   },
+   "settings_install_theme": {
+      "message": "نصب تم"
+   },
+   "settings_installed_theme_info": {
+      "message": "نصب شده"
+   },
+   "settings_keyboard_shortcut_button": {
+      "message": "انتخاب میانبر صفحه کلید"
+   },
+   "settings_language": {
+      "message": "زبان"
+   },
+   "settings_language_default": {
+      "message": "مرورگر پیش فرض"
+   },
+   "settings_language_desc": {
+      "message": "زبان مورد استفاده در رابط کاربری"
+   },
+   "settings_link_action": {
+      "message": "بازکردن بوک مارک ها"
+   },
+   "settings_link_action_current_tab": {
+      "message": "تب فعلی"
+   },
+   "settings_link_action_desc": {
+      "message": "چپ کلیک یک نشانه آنها را در برگه فعلی یا در برگه جدید باز میکند."
+   },
+   "settings_link_action_new_tab": {
+      "message": "تب جدید"
+   },
+   "settings_menu_appearance": {
+      "message": "ظاهر"
+   },
+   "settings_menu_appearance_general": {
+      "message": "عمومی"
+   },
+   "settings_menu_appearance_icon": {
+      "message": "آیکون"
+   },
+   "settings_menu_appearance_indicator": {
+      "message": "شاخص"
+   },
+   "settings_menu_appearance_overlay": {
+      "message": "پوشش"
+   },
+   "settings_menu_appearance_sidebar": {
+      "message": "نوار کناری"
+   },
+   "settings_menu_dashboard": {
+      "message": "بررسی کلی"
+   },
+   "settings_menu_expert": {
+      "message": "تنظیمات کارشناس"
+   },
+   "settings_menu_export": {
+      "message": "درون ریزی/برون ریزی"
+   },
+   "settings_menu_infos": {
+      "message": "اطلاعات"
+   },
+   "settings_menu_infos_aboutme": {
+      "message": "درمورد من"
+   },
+   "settings_menu_infos_changelog": {
+      "message": "لیست تغییرات"
+   },
+   "settings_menu_infos_contact": {
+      "message": "تماس"
+   },
+   "settings_menu_infos_permissions": {
+      "message": "مجوزها"
+   },
+   "settings_menu_infos_privacy": {
+      "message": "حریم خصوصی"
+   },
+   "settings_menu_language": {
+      "message": "زبان"
+   },
+   "settings_menu_language_general": {
+      "message": "عمومی"
+   },
+   "settings_menu_language_translate": {
+      "message": "ترجمه"
+   },
+   "settings_menu_newtab": {
+      "message": "برگه جدید"
+   },
+   "settings_menu_premium": {
+      "message": "ویژه"
+   },
+   "settings_menu_sidebar": {
+      "message": "نوار کناری"
+   },
+   "settings_menu_sidebar_filter": {
+      "message": "محدودسازی"
+   },
+   "settings_menu_sidebar_general": {
+      "message": "عمومی"
+   },
+   "settings_menu_sidebar_toggle": {
+      "message": "تغییر وضعیت"
+   },
+   "settings_menu_sidebar_tooltip": {
+      "message": "جزئیات"
+   },
+   "settings_menu_support": {
+      "message": "پشتیبانی"
+   },
+   "settings_new_tab": {
+      "message": "زبانه جدید"
+   },
+   "settings_new_tab_background": {
+      "message": "باز کردن در پس زمینه"
+   },
+   "settings_new_tab_desc": {
+      "message": "نشانک ها را در یک برگه جدید در پیش زمینه یا پس زمینه باز کنید"
+   },
+   "settings_new_tab_foreground": {
+      "message": "باز کردن در پیش زمینه"
+   },
+   "settings_new_tab_position_after_current": {
+      "message": "پس از زبانه فعلی"
+   },
+   "settings_new_tab_position_after_last": {
+      "message": "پس از آخرین زبانه"
+   },
+   "settings_new_tab_position_before_first": {
+      "message": "پیش از اولین زبانه"
+   },
+   "settings_new_tab_position_desc": {
+      "message": "بعد از آخرین برگه یا برگه فعلی ، برگه های جدید را باز کنید"
+   },
+   "settings_newtab_desc": {
+      "message": "متاسفانه Google حذف امکان بارگیری پسوندهای را در صفحه برگه پیش فرض جدید حذف کرد. به همین دلیل تعدادی از گزینه های اضافه شده به شما اجازه می دهد تا هنگام بارگذاری یک برگه جدید به روش دیگری به بوک مارک های خود دسترسی پیدا کنید."
+   },
+   "settings_newtab_focus_omnibox": {
+      "message": "تمرکز نوار آدرس"
+   },
+   "settings_newtab_focus_omnibox_desc": {
+      "message": "در صورت فعال بودن ، نوار آدرس شما هنگام باز کردن یک برگه جدید متمرکز می شود. در این صورت جعبه جستجوی وب سایت به جای آن متمرکز خواهد شد."
+   },
+   "settings_newtab_override": {
+      "message": "جایگزین صفحه برگه جدید"
+   },
+   "settings_newtab_override_desc": {
+      "message": "آیا پسوند صفحه برگه فعلی جدید خود را با یک سفارشی ساخته شده یا یک وبسایت که باید هنگام باز کردن یک برگه جدید بارگیری شود، غیرفعال کند؟"
+   },
+   "settings_newtab_sidebar_auto_open": {
+      "message": "نوار کناری را به طور خودکار باز کنید"
+   },
+   "settings_newtab_sidebar_auto_open_desc": {
+      "message": "پیکربندی کنید که آیا نوار کناری به طور خودکار هنگام باز کردن یک برگه جدید باز می شود."
+   },
+   "settings_newtab_website": {
+      "message": "بارگذاری وب سایت"
+   },
+   "settings_newtab_website_desc": {
+      "message": "به جای باز کردن جایگزین تب جدید، می توانید یک وبسایت را که به جای آن بارگذاری شده است، تنظیم کنید."
+   },
+   "settings_not_synced": {
+      "message": "توضیحات هماهنگ نیست"
+   },
+   "settings_open_action": {
+      "message": "نوار کناری باز کن"
+   },
+   "settings_open_action_desc": {
+      "message": "نوار کناری را با چپ یا راست کلیک کردن و یا حرکت موس بر روی لبه پنجره مرورگر باز کنید. در عوض شما می توانید آن را تنها برای باز شدن در صورتی که آیکون در منوی کروم کلیک کرده اید تغییر دهید."
+   },
+   "settings_open_action_icon": {
+      "message": "نماد"
+   },
+   "settings_open_action_leftclick": {
+      "message": "کلیک چپ"
+   },
+   "settings_open_action_mouseover": {
+      "message": "حرکت موس"
+   },
+   "settings_open_action_rightclick": {
+      "message": "کلیک راست"
+   },
+   "settings_open_delay": {
+      "message": "تاخیر باز"
+   },
+   "settings_open_delay_desc": {
+      "message": "جلوگیری از بلافاصله باز شدن نوار کناری در سمت چپ ماوس یا با کلیک کردن با تاخیر."
+   },
+   "settings_overlay_mask_color": {
+      "message": "رنگ ماسک"
+   },
+   "settings_permissions_bookmarks_desc": {
+      "message": "پسوند بوک مارک های خود را در نوار کناری نشان می دهد و بنابراین برای دسترسی به این اجازه نیاز است. مجوز همچنین اجازه می دهد که پسوند بوک مارک ها را اضافه، ویرایش و حذف کند."
+   },
+   "settings_permissions_contentscript_desc_1": {
+      "message": "متأسفانه کروم هیچ مکانیزمی برای نمایش محتوا در پنجره مرورگر بدون ارتباط با صفحه بازدید کننده در حال حاضر ندارد."
+   },
+   "settings_permissions_contentscript_desc_2": {
+      "message": "از آنجا که نوار کناری در بالای وب سایت فعلی نمایش داده می شود، این مجوز لازم است. علاوه بر این دلیل فنی، مجوز برای اهداف دیگر مورد استفاده قرار نمی گیرد."
+   },
+   "settings_permissions_contentscript_desc_3": {
+      "message": "اگر نگرانی های مربوط به آنچه که با اجازه انجام می دهید نگرانی داشته باشید، می توانید کد منبع افزونه را در گیت هاب مشاهده کنید. این منبع باز است و برای همه قابل مشاهده است."
+   },
+   "settings_permissions_desc": {
+      "message": "برای ایجاد نوار کناری قابل دسترس در کروم، مجوزهای زیر لازم و مورد درخواست افزونه هستند:"
+   },
+   "settings_premium_activated": {
+      "message": "نسخه ویژه با موفقیت فعال شد"
+   },
+   "settings_premium_invalid_key": {
+      "message": "نسخه ویژه فعال نشد. لطفا کد فعال سازی درست را وارد نمایید"
+   },
+   "settings_presets": {
+      "message": "اندازه نسبی را تنظیم کنید"
+   },
+   "settings_presets_desc": {
+      "message": "شما می توانید از اندازه های از پیش تعیین شده برای نوار کناری انتخاب کنید. با این کار٬ لغزنده ها در این صفحه تغییر می کنند تا عرض نوار کناری، ارتفاع خط، اندازه آیکون و بسیاری از گزینه های دیگر تنظیم شوند."
+   },
+   "settings_prevent_pagescroll": {
+      "message": "جلوگیری از پیمایش صفحه"
+   },
+   "settings_prevent_pagescroll_desc": {
+      "message": "جلوگیری از پیمایش وب سایت فعلی در حالی که نوار کناری باز است."
+   },
+   "settings_prevent_windowed": {
+      "message": "نوار کناری را در حالت پنجره غیرفعال کنید"
+   },
+   "settings_prevent_windowed_desc": {
+      "message": "امکان باز کردن نوار کناری را با کلیک کردن یا معلق کردن لبه محتوای مرورگر در هنگام مرورگر در حالت پنجره غیرفعال می کند."
+   },
+   "settings_remember_desc": {
+      "message": "آنچه را برای به خاطر سپردن تغییرات صفحه انتخاب کنید. اگر تصمیم به یادآوری آخرین نشانک باز شده دارید ، هنگام باز کردن نوار کناری دوباره علامت گذاری می شود."
+   },
+   "settings_remember_open_states_sub_directories": {
+      "message": "پوشه های فرعی باز شده را به یاد بیاور"
+   },
+   "settings_remember_state": {
+      "message": "یادآوری"
+   },
+   "settings_remember_state_all": {
+      "message": "موقعیت اسکرول، دایرکتوری ها را باز کرده و آخرین نشانه باز شده را باز کرده است"
+   },
+   "settings_remember_state_nothing": {
+      "message": "هیچ کدام"
+   },
+   "settings_remember_state_open_states": {
+      "message": "پوشه های باز شده"
+   },
+   "settings_remember_state_open_states_and_scroll": {
+      "message": "موقعیت اسکرول و دایرکتوری ها را باز کنید"
+   },
+   "settings_remember_state_open_states_root": {
+      "message": "پوشه های اصلی باز شده"
+   },
+   "settings_reopen_sidebar": {
+      "message": "نوار کناری را باز کنید"
+   },
+   "settings_reopen_sidebar_desc": {
+      "message": "بعد از باز کردن یک نشانک از درون نوار کناری ، بار دیگر نوار کناری را دوباره باز کنید."
+   },
+   "settings_restore": {
+      "message": "بازگردانی به تنظیمات پیش فرض"
+   },
+   "settings_restore_confirm": {
+      "message": "آیا واقعا می خواهید تنظیمات پیش فرض را بازگردانی کنید؟"
+   },
+   "settings_restored_message": {
+      "message": "تنظیمات با موفقیت بازگردانی شد"
+   },
+   "settings_save": {
+      "message": "ذخیره تغییرات"
+   },
+   "settings_saved_message": {
+      "message": "تغییرات با موفقیت ذخیره شد"
+   },
+   "settings_saved_share_userdata": {
+      "message": "تنظیمات با موفقیت ذخیره شد"
+   },
+   "settings_scroll_bar_hide": {
+      "message": "مخفی کردن نوار پیمایش"
+   },
+   "settings_scroll_bar_hide_desc": {
+      "message": "مدت زمان ثانویه پس از پیمایش پنهان خواهد شد. پیمایش دوباره نوار پیمایش را نشان می دهد."
+   },
+   "settings_scroll_bar_hide_infinity": {
+      "message": "هرگز مخفی نشود"
+   },
+   "settings_scroll_bar_width": {
+      "message": "پهنای خط حرکت"
+   },
+   "settings_search_placeholder": {
+      "message": "جستجو برای پیکربندی"
+   },
+   "settings_show_themes": {
+      "message": "نمایش تم های موجود"
+   },
+   "settings_sidebar_mask_color": {
+      "message": "رنگ پوشش"
+   },
+   "settings_sidebar_position": {
+      "message": "موقعیت"
+   },
+   "settings_sidebar_position_desc": {
+      "message": "به شما امکان می دهد تنظیم کنید که آیا نوار کناری در سمت چپ یا لبه سمت راست پنجره مرورگر باز شود."
+   },
+   "settings_sidebar_position_left": {
+      "message": "چپ"
+   },
+   "settings_sidebar_position_right": {
+      "message": "راست"
+   },
+   "settings_sidebar_width": {
+      "message": "پهنای"
+   },
+   "settings_support_faq_headline": {
+      "message": "سوالات متداول"
+   },
+   "settings_support_feedback_desc": {
+      "message": "آیا هر گونه پیشنهاد برای بهبود، سوالات، اطلاع از گزینه های پیکربندی از دست رفته، و یا پیدا کردن یک اشکال؟ برای کمک به بهبود تجربیات با این افزونه، برای هر بازخوردی که داده شده یا ممکن است، بسیار سپاسگزار باشید."
+   },
+   "settings_support_feedback_email": {
+      "message": "آدرس ایمیل (اختیاری)"
+   },
+   "settings_support_feedback_headline": {
+      "message": "بازخورد"
+   },
+   "settings_support_feedback_notice": {
+      "message": "لطفا درخواست خود را به زبان انگلیسی وارد نمایید"
+   },
+   "settings_support_feedback_screenshot": {
+      "message": "پیوست تصاویر"
+   },
+   "settings_support_feedback_screenshot_error_amount": {
+      "message": "شما فقط می توانید حداکثر {1} تصاویر را آپلود کنید"
+   },
+   "settings_support_feedback_screenshot_error_filesize": {
+      "message": "اندازه فایل {1} خیلی بزرگ است (> 1 مگابایت)"
+   },
+   "settings_support_feedback_send": {
+      "message": "ارسال درخواست"
+   },
+   "settings_support_feedback_send_failed": {
+      "message": "ارسال نشد مجددا تلاش کنید"
+   },
+   "settings_support_feedback_sent_message": {
+      "message": "تشکر"
+   },
+   "settings_text_color": {
+      "message": "رنگ متن"
+   },
+   "settings_theme": {
+      "message": "تم"
+   },
+   "settings_theme_changed": {
+      "message": "تم با موفقیت تغییرکرد"
+   },
+   "settings_theme_default": {
+      "message": "تم پیش فرض"
+   },
+   "settings_theme_default_desc": {
+      "message": "این موضوع به شما امکان می دهد به بوک مارک های خود به روشی تمیز و مدرن دسترسی پیدا کنید. بسیاری از عناصر در یک طرح رنگی قابل تنظیم رنگ می شوند."
+   },
+   "settings_theme_focus": {
+      "message": "تم بهینه"
+   },
+   "settings_theme_focus_desc": {
+      "message": "این تم با کاهش انیمیشن ها و آرایش متراکم تر عناصر بهره وری و کارایی را بهبود میبخشد."
+   },
+   "settings_theme_glass": {
+      "message": "تم شیشه ای"
+   },
+   "settings_theme_glass_desc": {
+      "message": "این موضوع باعث می شود پس زمینه ستون کناری نیمه شفاف شود و جلوه ای از شیشه تار به آن اضافه کند. شما می توانید این اثر و شفافیت نوار کناری را تنظیم کنید."
+   },
+   "settings_themes_notice": {
+      "message": "شما می توانید طرح اصلی ستون کناری را انتخاب کنید. موضوع انتخاب شده را می توان با کشویی و گزینه های رنگی موجود تنظیم کرد."
+   },
+   "settings_tips_tricks_about_desc": {
+      "message": "این افزونه یک پروژه تک نفره است که به عنوان یک سرگرمی و برای استفاده شخصی آغاز شد."
+   },
+   "settings_tips_tricks_activation_area": {
+      "message": "ناحیه فعالسازی"
+   },
+   "settings_tips_tricks_activation_area_desc": {
+      "message": "بصورت پیش فرض٬ تمام لبه ی پنجره مرورگر شما میتواند برای باز کردن ستون افزونه استفاده شود. شما میتوانید اندازه ی این محدوده ی فعالسازی را به گونه ای کوچک کنید که تنها بخشی از لبه ی مرورگر را در بر بگیرد. برای نمونه٬ میتوانید تنظیمات را به گونه ای تغییر دهید که ستون افزونه فقط با کلیک کردن روی ناحیه فعالسازی در گوشه پایین و چپ پنجره مرورگر٬ نمایان شود. این ویژگی میتواند برای جلوگیری از نمایش ناخواسته ی ستون افزونه در هنگام کلیک بر روی لینک های موجود در تارنما ها مفید باشد."
+   },
+   "settings_tips_tricks_expand_all_subfolders": {
+      "message": "باز کردن تمام زیرپوشه ها"
+   },
+   "settings_tips_tricks_expand_all_subfolders_desc": {
+      "message": "برای باز کردن یک پوشه و همچنین تمام زیرپوشه های آن٬ میتوانید بر روی آن دابل کلیک کنید."
+   },
+   "settings_tips_tricks_facts": {
+      "message": "آیا میدانید ؟"
+   },
+   "settings_tips_tricks_hide_entries": {
+      "message": "پنهان سازی ورودی ها"
+   },
+   "settings_tips_tricks_hide_entries_desc": {
+      "message": "نشانک ها و پوشه های شخصی خود را از در ستون پنهان کنید. با راست کلیک بر روی هر کدام از نشانک ها یا پوشه ها در ستون و انتخاب گزینه {1} از منوی باز شده میتوانید آنها را مخفی کنید. برای استفاده از موارد پنهان شده٬ میتوانید با کلیک بر روی آیکون منو در سربرگ افزونه و فعال کردن تیک مربوطه٬ موارد پنهان شده را مشاهده کنید."
+   },
+   "settings_tips_tricks_i18n_desc": {
+      "message": "این افزونه در {1} زبان گوناگون در دسترس میباشد. ترجمه توسط جامعه کاربری این افزونه انجام شده است و همه میتوانند در برگردان متن های این افزونه به زبان های دیگر همکاری کنند. ترجمه ها پس از بررسی و تایید٬ به همراه بروزرسانی بعدی به افزونه پیوست خواهد شد."
+   },
+   "settings_tips_tricks_keyboard_shortcuts": {
+      "message": "کلیدهای میانبر"
+   },
+   "settings_tips_tricks_keyboard_shortcuts_desc": {
+      "message": "افزونه میتواند از طریق میانبرهای صفحه کلید کنترل شود. با انتخاب آیکون منو در سربرگ ستون و انتخاب گزینه {1} میتوانید فهرست میانبرهای صفحه کلید را مشاهده کنید."
+   },
+   "settings_tips_tricks_newtab": {
+      "message": "زبانه جدید"
+   },
+   "settings_tips_tricks_next": {
+      "message": "نکته بعدی"
+   },
+   "settings_tips_tricks_open_all_bookmarks": {
+      "message": "باز کردن تمام نشانک ها"
+   },
+   "settings_tips_tricks_open_all_bookmarks_desc": {
+      "message": "برای باز کردن تمام صفحات نشانه گذاری شده ی درون یک پوشه٬ میتوانید کلید میانی ماوس را بفشارید, یا هنگامی که روی یک پوشه کلیک چپ میکنید کلید {1} را بفشارید."
+   },
+   "settings_tips_tricks_privacy": {
+      "message": "حریم خصوصی"
+   },
+   "settings_tips_tricks_quick_bookmarking": {
+      "message": "نشانه گذاری سریع"
+   },
+   "settings_tips_tricks_quick_bookmarking_desc": {
+      "message": "شما میتوانید هر آدرس موجود در یک صفحه وب را به داخل ستون افزونه کشیده و در موقعیت دلخواه خود در ستون٬ رها کنید. حتی شما میتوانید با انتخاب آدرس موجود در نوار آدرس مرورگر خود٬ آن را به همین شکل به ستون افزونه اضافه کنید. همچنین میتوانید با کشیدن علامت {1} موجود در سمت چپ نوار آدرس٬ به داخل ستون افزونه٬ زبانه ی جاری را بدون انتخاب آدرس آن٬ به لیست نشانک ها اضافه کنید."
+   },
+   "settings_tips_tricks_quick_search": {
+      "message": "جست و جوی سریع"
+   },
+   "settings_tips_tricks_quick_search_desc": {
+      "message": "با باز کردن نوار کناری و آغاز تایپ کردن میتوانید نشانک ها را جستجو کنید. نیاز به کلیک کردن بر روی آیکون جست و جو در سربرگ ستون نیست."
+   },
+   "settings_tips_tricks_quick_url_copy": {
+      "message": "کپی سریع آدرس"
+   },
+   "settings_tips_tricks_quick_url_copy_desc": {
+      "message": "برای کپی کردن آدرس یک نشانک از نوار کناری به کلیپ برد٬ میتوانید هنگامی که نشانگر ماوس را روی نشانک نگه داشته اید کلید {1} را بفشارید."
+   },
+   "settings_tips_tricks_right_click": {
+      "message": "راست کلیک"
+   },
+   "settings_tips_tricks_right_click_desc": {
+      "message": "با راست کلیک بر روی هر کدام از نشانک ها و پوشه ها میتوانید گزینه های بیشتر را مشاهده کنید. برای نمونه٬ میتوانید نشانک های موجود را ویرایش نموده و یا موارد موجود را در بالای ستون سنجاق کنید. برای بررسی سالم بودن و بروزرسانی آدرس نشانک های یک پوشه٬ کافیست روی آن راست کلیک نموده و گزینه مربوطه را انتخاب کنید."
+   },
+   "settings_tips_tricks_separators": {
+      "message": "جداساز ها"
+   },
+   "settings_tips_tricks_separators_desc": {
+      "message": "میتوانید یک دسته نشانک با آدرس {1} و عنوان {2} یا {3} را به صورت تفکیک شده در ستون نمایش دهید. با راست کلیک بر روی هر پوشه ای در ستون و انتخاب گزینه {4} میتوانید جداسازهای جدید اضافه کنید."
+   },
+   "settings_tips_tricks_share_data": {
+      "message": "اشتراک اطلاعات"
+   },
+   "settings_tips_tricks_synchronization": {
+      "message": "همگام سازی"
+   },
+   "settings_tips_tricks_synchronization_action": {
+      "message": "بررسی تنظیمات همگام سازی"
+   },
+   "settings_tips_tricks_synchronization_desc": {
+      "message": "اگر گزینه همگام سازی در تنظیمات مرورگر فعال باشد٬ تمام تنظیمات افزونه شما با همه دستگاه های شما به اشتراک گذاشته میشود."
+   },
+   "settings_tips_tricks_version_desc": {
+      "message": "نخستین نسخه این افزونه در نوامبر 2016 منتشر شد."
+   },
+   "settings_title": {
+      "message": "نام صفحه"
+   },
+   "settings_toggle_area": {
+      "message": "پیکربندی منطقه"
+   },
+   "settings_toggle_area_desc": {
+      "message": "به طور پیش فرض، تمام لبه پنجره مرورگر خود را می توان برای باز کردن نوار کناری کلیک کرد. شما می توانید این را تغییر دهید و پیکربندی کنید که دقیقا به نوار کناری باز شود."
+   },
+   "settings_toggle_area_drag_desc": {
+      "message": "برای حرکت دادن بکشید"
+   },
+   "settings_toggle_area_height": {
+      "message": "ارتفاع"
+   },
+   "settings_toggle_area_height_desc": {
+      "message": "شما می توانید ارتفاع منطقه را کاهش دهید، بنابراین نوار کناری تنها زمانی باز می شود که مکان نما خود را به آن محل لبه پنجره مرورگر خود بکشید."
+   },
+   "settings_toggle_area_width": {
+      "message": "عرض"
+   },
+   "settings_toggle_area_width_windowed": {
+      "message": "عرض (پنجره)"
+   },
+   "settings_tooltip_content": {
+      "message": "محتوای ابزار"
+   },
+   "settings_tooltip_content_additional_info": {
+      "message": "اطلاعات اضافی"
+   },
+   "settings_tooltip_content_all": {
+      "message": "عنوان و URL"
+   },
+   "settings_tooltip_content_title": {
+      "message": "فقط عنوان"
+   },
+   "settings_tooltip_content_url": {
+      "message": "فقط URL"
+   },
+   "settings_tooltip_delay": {
+      "message": "تأخیر در راهنمای ابزار"
+   },
+   "settings_tooltip_delay_desc": {
+      "message": "تأخیر قبل از نمایش نکات راهنمای ابزار برای نشانک ها هنگام حرکت با ماوس."
+   },
+   "settings_tooltip_delay_infinity": {
+      "message": "هرگز نکات ابزار را نشان ندهید"
+   },
+   "settings_tooltip_desc": {
+      "message": "انتخاب کنید چه اطلاعاتی باید شامل ابزار باشد."
+   },
+   "settings_tooltip_font_size": {
+      "message": "اندازه فونت Tooltip"
+   },
+   "settings_translation_add_language": {
+      "message": "افزودن زبان"
+   },
+   "settings_translation_back_to_overview": {
+      "message": "بازگشت به نمای کلی"
+   },
+   "settings_translation_desc": {
+      "message": "شما می توانید فرمت زبان را به زبان خود ترجمه کنید یا آن را بهبود بخشید."
+   },
+   "settings_translation_help": {
+      "message": "برای هر ورودی می توانید ترجمه انگلیسی را مشاهده کنید که باید به زبان شما ترجمه شود. برای کمک به شناسایی جایی که متن مورد استفاده قرار می گیرد و آنچه در آن است، هر ورودی دارای یک نام (به عنوان مثال {1}) است که نباید ترجمه شود. لطفا فراموش نکنید که ترجمه خود را با فشار دادن دکمه در گوشه بالا سمت راست ارسال کنید!"
+   },
+   "settings_translation_incomplete_info": {
+      "message": "برخی از ترجمه ها گم شده اند"
+   },
+   "settings_translation_info": {
+      "message": "شما می توانید ترجمه های موجود را ویرایش کنید یا آنها را اضافه کنید. اگر تغییراتی را ارسال کنید، ورودی شما را بررسی خواهم کرد و آن را تایید خواهم کرد."
+   },
+   "settings_translation_link": {
+      "message": "مشاهده نمای کلی بخش ترجمه"
+   },
+   "settings_translation_notice1": {
+      "message": "به محض این که تمام دسته ها، که به صورت موردی مشخص شده اند ترجمه شوند، ترجمه منتشر می شود."
+   },
+   "settings_translation_notice2": {
+      "message": "دسته های ناقص منتشر نخواهند شد تا متون ناقص ترجمه شوند."
+   },
+   "settings_translation_reminder_desc": {
+      "message": "من میخواهم وقتی متغیرهای جدید زبان به افزونه اضافه میشوند مطلع شوند"
+   },
+   "settings_translation_required_category": {
+      "message": "مورد نیاز"
+   },
+   "settings_translation_status_draft": {
+      "message": "ترجمه ناقص است یا نیاز به بررسی دارد و برای کاربران در دسترس نیست"
+   },
+   "settings_translation_status_incomplete": {
+      "message": "ترجمه در دسترس است، اما برخی از دسته ها ناقص هستند"
+   },
+   "settings_translation_status_released": {
+      "message": "ترجمه اش موجود است"
+   },
+   "settings_translation_submit": {
+      "message": "ثبت"
+   },
+   "settings_translation_submit_message": {
+      "message": "ترجمه شما با موفقیت ثبت شد"
+   },
+   "sidebar_copied_to_clipboard": {
+      "message": "آدرس کپی شد"
+   },
+   "sidebar_deleted": {
+      "message": "حذف شد"
+   },
+   "sidebar_dir_children": {
+      "message": "عناصر"
+   },
+   "sidebar_search_no_results": {
+      "message": "هیچ نشانه ای مرتبط با جستجوی شما پیدا نشد"
+   },
+   "sidebar_search_placeholder": {
+      "message": "جستجوی نشانه ها"
+   },
+   "sidebar_undo_deletion": {
+      "message": "قبلی"
+   },
+   "sort_label_alphabetical": {
+      "message": "بر اساس حروف الفبا"
+   },
+   "sort_label_custom": {
+      "message": "تعریف توسط کاربر"
+   },
+   "sort_label_most_used": {
+      "message": "بیشترین استفاده شده ها"
+   },
+   "sort_label_recently_added": {
+      "message": "اخیرا اضافه شده"
+   },
+   "sort_label_recently_used": {
+      "message": "اخیرا استفاده شده"
+   },
+   "sort_most_used_per_month": {
+      "message": "ماهانه"
+   },
+   "sort_view_as_tree": {
+      "message": "نمایش پوشه ها"
+   },
+   "status_background_disconnected_reload_action": {
+      "message": "بارگذاری مجدد"
+   },
+   "status_background_disconnected_reload_desc": {
+      "message": "بدلیل بروزرسانی افزونه، این صفحه نیاز به بارگذاری مجدد دارد"
+   },
+   "status_feedback_unavailable_desc": {
+      "message": "سرویس بازخورد در حال حاضر در دسترس نمی باشد. اگر می خواهید بازخورد بدهید، لطفا به من ایمیل بفرستید"
+   },
+   "status_service_unavailable_headline": {
+      "message": "سرویس در دسترس نمی باشد"
+   },
+   "status_translation_unavailable_desc": {
+      "message": "سرویس ترجمه در حال حاضر در دسترس نمی باشد. لطفا بعدا امتحان کنید"
+   }
+}
