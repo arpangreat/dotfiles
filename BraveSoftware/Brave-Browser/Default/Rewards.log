@@ -1106,3 +1106,33 @@
 [25 Jul 2021, 9:03:46.0 pm:ERROR:publisher.cc(763)] Publisher info not found
 [25 Jul 2021, 9:08:34.1 pm:ERROR:ad_rewards.cc(280)] Payment balance is not ready
 [25 Jul 2021, 9:13:15.6 pm:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+--------------------------------------------------------------------------------
+[26 Jul 2021, 9:07:15.4 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:07:52.9 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:08:43.9 am:ERROR:creative_new_tab_page_ads_database_table.cc(434)] Failed to get creative new tab page ad
+[26 Jul 2021, 9:09:18.0 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:10:14.4 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:13:14.4 am:ERROR:publisher.cc(834)] Failed to retrieve publisher info while updating media duration
+[26 Jul 2021, 9:13:19.5 am:ERROR:publisher.cc(763)] Publisher info not found
+[26 Jul 2021, 9:14:59.7 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:20:37.1 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:27:52.5 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:33:10.5 am:ERROR:creative_new_tab_page_ads_database_table.cc(434)] Failed to get creative new tab page ad
+--------------------------------------------------------------------------------
+[26 Jul 2021, 9:39:41.8 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:39:45.8 am:ERROR:creative_new_tab_page_ads_database_table.cc(434)] Failed to get creative new tab page ad
+[26 Jul 2021, 9:39:58.2 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:41:47.7 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:44:41.3 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:45:39.9 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+--------------------------------------------------------------------------------
+[26 Jul 2021, 9:51:34.6 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:51:37.0 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:52:05.5 am:ERROR:creative_new_tab_page_ads_database_table.cc(434)] Failed to get creative new tab page ad
+[26 Jul 2021, 9:56:33.0 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 9:59:56.3 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 10:06:30.7 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 10:12:59.1 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 10:16:45.5 am:ERROR:ad_rewards.cc(280)] Payment balance is not ready
+[26 Jul 2021, 10:27:21.7 am:ERROR:creative_new_tab_page_ads_database_table.cc(434)] Failed to get creative new tab page ad
+[26 Jul 2021, 10:48:03.8 am:ERROR:publisher.cc(763)] Publisher info not found

@@ -72,7 +72,7 @@ sudo ln -s /home/arpangreat/go/bin/* /usr/bin
 # to use screenshot.sh run
 ```shell
 sudo pacman -S grim
-sudo pacman -S slurp
+[sudo](sudo) pacman -S slurp
 ```
 
 # A Life hack for shell , while typing any password show asterisks for every password

@@ -80,6 +80,9 @@ vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 
+-- Disabling Gitgutter
+vim.cmd("let g:gitgutter_enabled = 0")
+vim.cmd("let g:gitgutter_signs = 0")
 -- let g:airline_theme = 'deus'
 vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
 --Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.

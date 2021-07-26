@@ -78,7 +78,6 @@ plugins=(
     zsh-z
     zsh-vi-mode
     zsh-interactive-cd
-    fasd
 )
 
 
@@ -192,7 +191,6 @@ kitty + complete setup zsh | source /dev/stdin
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
 # eval "$(starship init zsh)"
-eval "$(fasd --init auto)"
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
 export JAR=~/dotfiles/nvim/jdt-language-server-latest/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar
@@ -284,5 +282,5 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 # added by travis gem
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-export TERM=xterm-256color-italic
+# export TERM=xterm-256color-italic
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm

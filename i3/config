@@ -327,6 +327,7 @@ for_window [instance="cheat"] move scratchpad
 for_window [instance="cheat"] border pixel 5
 exec --no-startup-id kitty --name cheat -e ~/dotfiles/i3/./cheat
 
+exec setxkbmap us
 #exec alacritty
 exec $term
 exec dolphin

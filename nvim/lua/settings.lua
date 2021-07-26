@@ -1,70 +1,69 @@
 -- Sets 
--- Ignorecases
-vim.o.ignorecase = true
-vim.o.smartcase = true
+-- Ignoptrecases
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Search
-vim.o.hlsearch = true
-vim.o.incsearch = true
-vim.o.inccommand = "split"
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+vim.opt.inccommand = "split"
 
 -- Vim UI
-vim.o.smartindent = true
-vim.o.wrap = false
-vim.o.colorcolumn = '120'
-vim.o.showcmd = false
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.signcolumn="yes"
-vim.o.scrolloff = 8
-vim.o.showmode = false
-vim.o.completeopt = "menuone,noselect"
-vim.o.hidden = true
--- vim.o.include
-vim.o.display = "lastline"
-vim.o.backspace = "indent,eol,start"
-vim.o.winblend = 0
-vim.o.pumblend = 30
-vim.o.textwidth = 80
+vim.opt.smartindent = true
+vim.opt.wrap = false
+vim.opt.colorcolumn = '120'
+vim.opt.showcmd = false
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.signcolumn="yes"
+vim.opt.scrolloff = 8
+vim.opt.showmode = false
+vim.opt.completeopt = "menuone,noselect"
+vim.opt.hidden = true
+-- vim.opt.include
+vim.opt.display = "lastline"
+vim.opt.backspace = "indent,eol,start"
+vim.opt.winblend = 0
+vim.opt.pumblend = 30
+vim.opt.textwidth = 80
 
 -- Visuals
-vim.o.syntax = "enable"
--- vim.o.filetype = "plugin on"
-vim.o.t_Co="256"
--- vim.api.nvim_set_option('t_Co',256)
-vim.o.termguicolors = true
--- vim.o.encodingvim.o.hidden = true
-vim.o.include = ""
-vim.o.display = "lastline"
-vim.o.encoding="utf-8"
--- vim.wo.winblend = 100
+vim.opt.syntax = "enable"
+-- vim.opt.filetype = "plugin on"
+-- vim.api.nvim_set_optption('t_Co',256)
+vim.opt.termguicolors = true
+-- vim.opt.encodingvim.o.hidden = true
+vim.opt.include = ""
+vim.opt.display = "lastline"
+vim.opt.encoding="utf-8"
+-- vim.wopt.winblend = 100
 -- vim.api.nvim_exec([[set winblend=100]], true)
 -- Numbers
-vim.wo.number = true
-vim.wo.relativenumber = true
-vim.wo.cursorline = true
--- vim.wo.cursorcolumn = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
+-- vim.wopt.cursorcolumn = true
 
 -- Utils
-vim.o.compatible = false
-vim.o.mouse='a'
-vim.o.autoindent = true
-vim.o.backup = false
--- vim.o.undofile = false
+vim.opt.compatible = false
+vim.opt.mouse='a'
+vim.opt.autoindent = true
+vim.opt.backup = false
+-- vim.opt.undofile = false
 vim.cmd("set undofile")
-vim.o.undodir='/home/arpangreat/.vim/undodir'
-vim.o.backupdir="/home/arpangreat/.vim/backupdir"
-vim.o.swapfile = false
-vim.o.splitright = true
-vim.o.splitbelow = true
-vim.o.clipboard = "unnamedplus"
-vim.o.emoji = false
+vim.opt.undodir='/home/arpangreat/.vim/undodir'
+vim.opt.backupdir="/home/arpangreat/.vim/backupdir"
+vim.opt.swapfile = false
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.emoji = false
 
 -- Times
-vim.o.ttimeoutlen = 50
-vim.o.updatetime = 100
-vim.o.shortmess = "I"
-vim.o.laststatus = 2
+vim.opt.ttimeoutlen = 50
+vim.opt.updatetime = 100
+vim.opt.shortmess = "I"
+vim.opt.laststatus = 2
 
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
