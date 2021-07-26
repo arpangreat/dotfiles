@@ -1,21 +1,15 @@
-2021/07/25-09:31:42.455 3 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
-2021/07/25-09:31:42.462 3 Recovering log #250
-2021/07/25-09:31:42.465 3 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000250.log 
-2021/07/25-09:34:56.538 3 Level-0 table #254: started
-2021/07/25-09:34:56.542 3 Level-0 table #254: 17700 bytes OK
-2021/07/25-09:34:56.546 3 Delete type=0 #250
-2021/07/25-13:42:19.968 8b Level-0 table #256: started
-2021/07/25-13:42:19.971 8b Level-0 table #256: 21556 bytes OK
-2021/07/25-13:42:19.975 8b Delete type=0 #253
-2021/07/25-13:42:19.976 8b Compacting 4@0 + 1@1 files
-2021/07/25-13:42:19.991 8b Generated table #257@0: 8224 keys, 189845 bytes
-2021/07/25-13:42:19.991 8b Compacted 4@0 + 1@1 files => 189845 bytes
-2021/07/25-13:42:19.993 8b compacted to: files[ 0 1 1 0 0 0 0 ]
-2021/07/25-13:42:19.995 8b Delete type=2 #256
-2021/07/25-13:42:19.995 8b Delete type=2 #254
-2021/07/25-13:42:19.995 8b Delete type=2 #251
-2021/07/25-13:42:19.996 8b Delete type=2 #249
-2021/07/25-13:42:19.996 8b Delete type=2 #247
-2021/07/25-18:16:22.239 12b Level-0 table #259: started
-2021/07/25-18:16:22.252 12b Level-0 table #259: 17594 bytes OK
-2021/07/25-18:16:22.256 12b Delete type=0 #255
+2021/07/26-09:39:39.162 3 Reusing MANIFEST /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2021/07/26-09:39:39.164 3 Recovering log #264
+2021/07/26-09:39:39.165 3 Reusing old log /home/arpangreat/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000264.log 
+2021/07/26-09:41:42.389 3 Level-0 table #268: started
+2021/07/26-09:41:42.392 3 Level-0 table #268: 20860 bytes OK
+2021/07/26-09:41:42.395 3 Delete type=0 #264
+2021/07/26-09:41:42.395 3 Compacting 4@0 + 1@1 files
+2021/07/26-09:41:42.404 3 Generated table #269@0: 8513 keys, 182100 bytes
+2021/07/26-09:41:42.404 3 Compacted 4@0 + 1@1 files => 182100 bytes
+2021/07/26-09:41:42.405 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/26-09:41:42.406 3 Delete type=2 #257
+2021/07/26-09:41:42.406 3 Delete type=2 #259
+2021/07/26-09:41:42.406 3 Delete type=2 #268
+2021/07/26-09:41:42.406 3 Delete type=2 #262
+2021/07/26-09:41:42.406 3 Delete type=2 #265
