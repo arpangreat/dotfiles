@@ -284,3 +284,4 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
+export TERM=xterm-256color-italic

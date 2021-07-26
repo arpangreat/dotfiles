@@ -1,0 +1,40 @@
+#!/usr/bin/sh
+
+git clone https://github.com/arpangreat/Rust-Examples-New.git
+git clone https://github.com/arpangreat/DSA-preps.git
+git clone https://github.com/arpangreat/RustExs.git
+git clone https://github.com/arpangreat/notesify.git
+git clone https://github.com/arpangreat/my-resume.git
+git clone https://github.com/arpangreat/rustlings.git
+git clone https://github.com/arpangreat/myblog.dev.repo.git
+git clone https://github.com/arpangreat/My-Programming-Language.git
+git clone https://github.com/arpangreat/arpangreat.git
+git clone https://github.com/arpangreat/cppexamples.git
+git clone https://github.com/arpangreat/swastik-app.git
+git clone https://github.com/arpangreat/javaexsnew.git
+git clone https://github.com/arpangreat/TypeScriptExs.git
+git clone https://github.com/arpangreat/zig-examples.git
+git clone https://github.com/arpangreat/vue-covid-tracker.git
+git clone https://github.com/arpangreat/PythonExs.git
+git clone https://github.com/arpangreat/swiftExs.git
+git clone https://github.com/arpangreat/ShopWithIt.git
+git clone https://github.com/arpangreat/termigit-go.git
+git clone https://github.com/arpangreat/wiki.git
+git clone https://github.com/arpangreat/Nvim-config.git
+git clone https://github.com/arpangreat/termigit.git
+git clone https://github.com/arpangreat/write-docker-actions.git
+git clone https://github.com/arpangreat/haskell-exs.git
+git clone https://github.com/arpangreat/myfirstapp-flutter.git
+git clone https://github.com/arpangreat/Sohini-Programming-Language.git
+git clone https://github.com/arpangreat/My-First-Plugin.git
+git clone https://github.com/arpangreat/dotfiles-mobile.git
+git clone https://github.com/arpangreat/Lua-example.git
+git clone https://github.com/arpangreat/ElixirProjects.git
+git clone https://github.com/arpangreat/phoneapp.git
+git clone https://github.com/arpangreat/LeetCode.git
+git clone https://github.com/arpangreat/my_cyclist.vim.git
+git clone https://github.com/arpangreat/MyFirstApp.git
+git clone https://github.com/arpangreat/CExamples.git
+git clone https://github.com/arpangreat/MyVimConfig.git
+git clone https://github.com/arpangreat/Org.git
+git clone https://github.com/arpangreat/docker-tutorials.git --bare
