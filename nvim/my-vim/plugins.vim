@@ -39,6 +39,9 @@ Plug 'folke/todo-comments.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'sainnhe/tmuxline.vim'
 " Plug 'glepnir/indent-guides.nvim'
+ Plug 'wincent/command-t', {
+    \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+    \ }
 
 " Colorscheme
 Plug 'rigellute/shades-of-purple.vim'
