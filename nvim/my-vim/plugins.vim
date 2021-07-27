@@ -15,10 +15,6 @@ endfunction
 
 call plug#begin(g:plugin_path)
 
-Plug 'edkolev/promptline.vim'
-Plug 'VundleVim/Vundle.vim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'jiangmiao/auto-pairs'
@@ -35,7 +31,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 Plug 'preservim/nerdcommenter'
 Plug 'folke/todo-comments.nvim'
-" Plug '/home/arpangreat/todo-comments.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'sainnhe/tmuxline.vim'
 " Plug 'glepnir/indent-guides.nvim'
@@ -44,10 +39,6 @@ Plug 'sainnhe/tmuxline.vim'
     \ }
 
 " Colorscheme
-Plug 'rigellute/shades-of-purple.vim'
-Plug 'chriskempson/base16-vim'
-Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'tjdevries/colorbuddy.vim'
 Plug 'tjdevries/gruvbuddy.nvim'
 Plug 'DilanGMB/nebulous.nvim'
@@ -58,15 +49,11 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'arzg/vim-colors-xcode'
 " Plug 'ghifarit53/tokyonight-vim'
 Plug 'ghifarit53/daycula-vim' , {'branch' : 'main'}
-Plug 'dylanaraps/wal.vim'
-Plug 'gruvbox-community/gruvbox'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'glepnir/zephyr-nvim'
 Plug 'glepnir/oceanic-material'
 " Plug 'glepnir/prodoc.nvim'
-Plug 'tiagovla/tokyodark.nvim'
 Plug 'folke/tokyonight.nvim'
-Plug 'eddyekofo94/gruvbox-flat.nvim'
 Plug 'ful1e5/onedark.nvim'
 Plug 'sainnhe/gruvbox-material'
 
@@ -77,6 +64,7 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'ray-x/lsp_signature.nvim'
 Plug 'norcalli/nvim_utils'
 Plug 'windwp/nvim-ts-autotag'
 " Plug 'windwp/nvim-autopairs'
@@ -135,7 +123,7 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-git'
-Plug 'liuchengxu/vim-which-key'
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 " Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'sbdchd/neoformat'
 Plug 'mattn/emmet-vim'
@@ -144,17 +132,11 @@ Plug 'SirVer/ultisnips'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
-Plug 'ThePrimeagen/vim-be-good'
 " Plug 'fatih/vim-go'
 Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ThePrimeagen/git-worktree.nvim'
 Plug 'voldikss/vim-floaterm'
 Plug 'kassio/neoterm'
-Plug 'rhysd/git-messenger.vim'
-Plug 'kristijanhusak/orgmode.nvim'
-call s:local_plug('my_cyclist.vim')
 
 " Plug 'govim/govim'
 " All of your Plugs must be added before the following line
