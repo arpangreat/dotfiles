@@ -7,6 +7,8 @@
 -- HACK: YOU HAVE A MAPPING FOR Keymaps named nvmap
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
+
 vim.api.nvim_set_keymap('n','<Leader>bg',':highlight Normal guibg=none<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>h',':wincmd h<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>j',':wincmd j<CR>',{ noremap = true , silent = false })
@@ -248,6 +250,11 @@ vim.api.nvim_set_keymap('n', 'tt', ':TestNearest<CR>', { noremap = true, silent 
 vim.api.nvim_set_keymap('n', 'tf', ':TestFile<CR>', { noremap = true, silent = true, expr = false })
 vim.api.nvim_set_keymap('n', 'ts', ':TestSuite<CR>', { noremap = true, silent = true, expr = false })
 vim.api.nvim_set_keymap('n', 't_', ':TestLast<CR>', { noremap = true, silent = true, expr = false })
+
+-- Command-T
+vim.api.nvim_set_keymap('n', '<LocalLeader>t', ':CommandT<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<LocalLeader>h', ':CommandTHelp<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<LocalLeader>H', ':CommandTHistory<CR>', { noremap = true, silent = false, expr = false })
 
 -- HACK: Formating Big Lines with g
 vim.api.nvim_set_keymap('n', '<Leader>fg', "<cmd>g/ ./ normal gqq<CR>", { noremap = true, silent = false, expr = false })

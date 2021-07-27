@@ -80,6 +80,7 @@ vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 
+vim.g.CommandTCancelMap = '<C-x>', '<C-c>', '<Esc>'
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
 vim.cmd("let g:gitgutter_signs = 0")
