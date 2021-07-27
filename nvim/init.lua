@@ -57,7 +57,8 @@ require('nv-diffview')
 require('nv-lsp-configs')
 require('nv-symbols-outline')
 require('nv-todo-comment')
-require('nv-orgmode')
+require('nv-lsp-signatures')
+
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
@@ -79,6 +80,7 @@ vim.cmd("let test#neovim#term_position = 'vertical'")
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
+vim.g.which_key_centered = 1
 
 vim.g.CommandTCancelMap = '<C-x>', '<C-c>', '<Esc>'
 -- Disabling Gitgutter

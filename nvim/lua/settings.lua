@@ -48,8 +48,8 @@ vim.opt.cursorline = true
 vim.opt.compatible = false
 vim.opt.mouse='a'
 vim.opt.autoindent = true
-vim.opt.linebreak = true
-vim.opt.list = true
+-- vim.opt.linebreak = true
+-- vim.opt.list = true
 vim.opt.listchars      = {
   nbsp                 = '⦸',                              -- CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
   extends              = '»',                              -- RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
@@ -58,8 +58,6 @@ vim.opt.listchars      = {
   trail                = '•',                              -- BULLET (U+2022, UTF-8: E2 80 A2)
 }
 
-vim.opt.shiftwidth = 2
-vim.opt.shiftround = false
 vim.opt.showbreak  = '↳ '
 vim.opt.backup = false
 -- vim.opt.undofile = false
