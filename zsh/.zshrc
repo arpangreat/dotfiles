@@ -285,3 +285,4 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 export TERM=xterm-256color-italic
+export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
