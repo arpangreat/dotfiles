@@ -82,7 +82,7 @@ vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 vim.g.which_key_centered = 1
 
-vim.g.CommandTCancelMap = '<C-x>', '<C-c>', '<Esc>'
+vim.g.CommandTCancelMap = '<C-x>'
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
 vim.cmd("let g:gitgutter_signs = 0")

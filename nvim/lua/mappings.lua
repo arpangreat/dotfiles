@@ -47,7 +47,6 @@ vim.api.nvim_set_keymap('i',  '<C-d>', "compe#scroll({ 'delta': -4 })", { norema
 vim.api.nvim_set_keymap('n','<F8>',':TagBarToggle<CR>',{ noremap = false, silent = false })
 
 -- lua require("arpangreat")
-vim.api.nvim_set_keymap('n','<Leader>ts',":lua require('telescope.builtin').grep_string({ search = vim.fn.input(\"Grep For >\") })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgf',":lua require('telescope.builtin').git_files()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgc',":lua require('telescope.builtin').git_commits()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tgb',":lua require('telescope.builtin').git_bcommits()<CR>",{ noremap = true , silent = false })
@@ -56,6 +55,9 @@ vim.api.nvim_set_keymap('n','<Leader>tf',":lua require('telescope.builtin').find
 vim.api.nvim_set_keymap('n','<Leader>tw',":lua require('telescope.builtin').grep_string({ search = vim.fn.expand(\"<cword>\") })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tb',":lua require('telescope.builtin').buffers()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>th',":lua require('telescope.builtin').help_tags()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tm',":lua require('telescope.builtin').man_pages()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tj',":lua require('telescope.builtin').jumplist()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tr',":lua require('telescope.builtin').registers()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>trc',":lua require('arpangreat.telescope').search_dotfiles()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>trg',":lua require('telescope.builtin').live_grep()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tcc',":lua require('arpangreat.telescope').search_configs()<CR>",{ noremap = true , silent = false })
@@ -256,6 +258,22 @@ vim.api.nvim_set_keymap('n', 't_', ':TestLast<CR>', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<LocalLeader>t', ':CommandT<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', '<LocalLeader>h', ':CommandTHelp<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', '<LocalLeader>H', ':CommandTHistory<CR>', { noremap = true, silent = false, expr = false })
+
+-- UUUUUUUU
+vim.api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true, silent = false, expr =  false })
+vim.api.nvim_set_keymap('n', 'n', 'nzzzv', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', 'N', 'Nzzzv', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', 'J', 'J`z', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', '.', '.<c-g>u', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', ',', ',<c-g>u', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', '!', '!<c-g>u', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', '?', '?<c-g>u', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('v', 'J', ":m '>+1<CR>gv=gv", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('v', 'K', ":m '>-2<CR>gv=gv", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', '<C-j>', '<esc>:m .+1<CR>==', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('i', '<C-k>', '<esc>:m .-2<CR>==', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<LocalLeader>j', ':m .+1<CR>==', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<LocalLeader>k', ':m .-2<CR>==', { noremap = true, silent = false, expr = false })
 
 -- HACK: Formating Big Lines with g
 vim.api.nvim_set_keymap('n', '<Leader>fg', "<cmd>g/ ./ normal gqq<CR>", { noremap = true, silent = false, expr = false })
