@@ -14,7 +14,7 @@ then
   tmux send-keys -t CdTm:Bottom "btm" Enter
   
   tmux select-window -t CdTm:IDE
-  tmux split-window -v -p 5
+  tmux split-window -v -p 20
   tmux send-keys -t CdTm:IDE "clear" Enter
   tmux split-window -h -p 66
   tmux send-keys -t CdTm:IDE "clear" Enter
