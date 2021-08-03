@@ -65,7 +65,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id xrandr --output HDMI1 --left-of eDP1 --auto
 exec --no-startup-id xmodmap /home/arpangreat/dotfiles/i3/swap
-exec setxkbmap -option caps:escape
+# exec setxkbmap -option caps:escape
 # exec --no-startup-id feh --bg-scale ~/dotfiles/wallpaper/HD wallpaper_ man near Torii gate wallpaper, gray temple wallpaper, landscape.jpeg
 
 
@@ -329,7 +329,7 @@ for_window [instance="cheat"] move scratchpad
 for_window [instance="cheat"] border pixel 5
 exec --no-startup-id kitty --name cheat -e ~/dotfiles/i3/./cheat
 
-exec setxkbmap us
+exec --no-startup-id setxkbmap us
 #exec alacritty
 exec $term
 exec dolphin
