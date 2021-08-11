@@ -3,7 +3,15 @@ local themes = require "telescope.themes"
 local actions = require('telescope.actions')
 require('telescope').setup {
     defaults = {
-        file_sorter = require('telescope.sorters').get_fzy_sorter,
+		vimgrep_arguments = {
+		 'rg',
+         '--color=never',
+		 '--no-heading',
+		 '--with-filename',
+		 '-line-number',
+		 '--column',
+		 '--smart-case'
+		},
         prompt_prefix = '$> ',
         color_devicons = true,
 
@@ -14,9 +22,9 @@ require('telescope').setup {
         initial_mode = "insert",
         selection_strategy = "reset",
         sorting_strategy = "ascending",
-	scroll_strategy = "cycle",
+		scroll_strategy = "cycle",
         layout_strategy = "horizontal",
-	layout_config = {
+		layout_config = {
 	      horizontal = {
 	        mirror = false,
 	      },
@@ -24,65 +32,56 @@ require('telescope').setup {
 	        mirror = false,
 	      },
 	      prompt_position = "top",
-	},
-	file_sorter = require'telescope.sorters'.get_fuzzy_file,
+		},
+		file_sorter = require'telescope.sorters'.get_fuzzy_file,
         file_ignore_patterns = {},
         generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
-        shorten_path = true,
+        path_display = {},
         winblend = 0,
-        width = 0.75,
-        preview_cutoff = 120,
-        results_height = 1,
-        results_width = 0.8,
         border = {},
         borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'},
         use_less = true,
         set_env = {['COLORTERM'] = 'truecolor'}, -- default = nil,
 
-	buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
-        mappings = {
-            i = {
-                ["<C-x>"] = false,
-                ["<C-q>"] = actions.send_to_qflist,
-            },
-        }
+		buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
     },
     extensions = {
         -- fzy_native = {
         --     override_generic_sorter = false,
         --     override_file_sorter = true,
         -- },
-	fzf = {
-		fuzzy = true,
-		override_generic_sorter = false, -- override the generic sorter
-		override_file_sorter = true,     -- override the file sorter
-		case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-					-- the default case_mode is "smart_case"
-	 },
-	 frecency = {
-      show_scores = false,
-      show_unindexed = true,
-      ignore_patterns = {"*.git/*", "*/tmp/*"},
-      workspaces = {
-        ["conf"]    = "/home/arpangreat/.config",
-        ["rust"]    = "/home/arpangreat/RustExs",
-        ["cpp"]    = "/home/arpangreat/cppexamples",
-        ["java"]    = "/home/arpangreat/javaexsnew",
-        ["ts"]    = "/home/arpangreat/TypeScriptExs",
-        ["project"] = "/home/arpangreat/termigit",
-        ["wiki"]    = "/home/arpangreat/wiki"
-      }
+		fzf = {
+	        fuzzy = true,
+			override_generic_sorter = false, -- override the generic sorter
+			override_file_sorter = true,     -- override the file sorter
+			case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+						-- the default case_mode is "smart_case"
+		},
+		frecency = {
+			show_scores = false,
+			show_unindexed = true,
+			ignore_patterns = {"*.git/*", "*/tmp/*"},
+			workspaces = {
+				["conf"]    = "/home/arpangreat/.config",
+				["rust"]    = "/home/arpangreat/RustExs",
+				["cpp"]    = "/home/arpangreat/cppexamples",
+				["java"]    = "/home/arpangreat/javaexsnew",
+				["ts"]    = "/home/arpangreat/TypeScriptExs",
+				["project"] = "/home/arpangreat/termigit",
+				["wiki"]    = "/home/arpangreat/wiki"
+		    }
+		},
+    	media_files = {
+		-- filetypes whitelist
+		-- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+    		filetypes = {"png", "webp", "jpg", "jpeg"},
+    		find_cmd = "rg" -- find command (defaults to `fd`)
+    	},
+    	git_worktree = {},
+    	z = {},
     },
-	media_files = {
-      -- filetypes whitelist
-      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-      filetypes = {"png", "webp", "jpg", "jpeg"},
-      find_cmd = "rg" -- find command (defaults to `fd`)
-    },
-	git_worktree = {},
-	z = {},
-},
 }
+
 
 -- require('telescope').load_extension('fzy_native')
 require('telescope').load_extension('fzf')
