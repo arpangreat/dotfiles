@@ -34,6 +34,9 @@ vim.api.nvim_set_keymap('n','\\gr',':!go run %<CR>',{ noremap = true , silent = 
 vim.api.nvim_set_keymap('n','\\gb',':!go build<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','\\gt',':!go test<CR>',{ noremap = true , silent = false })
 
+vim.api.nvim_set_keymap('n', '<Leader>fp', ':cprevious<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>fn', ':cnext<CR>', { noremap = true, silent = false, expr = false })
+
 -- Compe
 vim.api.nvim_set_keymap('i', '<C-Space>', 'compe#complete()', { noremap = true, silent = true, expr = true })
 vim.api.nvim_set_keymap('i',  '<CR>', "compe#confirm('<CR>')", { noremap = true, silent = true, expr = true })
