@@ -68,7 +68,7 @@ vim.api.nvim_set_keymap('n','<Leader>tgg',":lua require('telescope').extensions.
 vim.api.nvim_set_keymap('n','<Leader>to',":Telescope",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n', '<Leader>ttc', ':TodoTelescope<CR>', { noremap = true, silent = false, expr = false })
 
-vim.api.nvim_set_keymap('n','<Leader>tea',":lua require('telescope.builtin').lsp_code_actions()<CR>",{ noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>tea',":lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor({}))<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>teo',":lua require('telescope.builtin').lsp_range_code_actions()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>ter',":lua require('telescope.builtin').lsp_references()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tes',":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>",{ noremap = true , silent = false })
