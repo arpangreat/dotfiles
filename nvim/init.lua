@@ -81,6 +81,7 @@ vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 vim.g.which_key_centered = 1
+vim.cmd("let g:prettier#autoformat_config_present = 1")
 
 vim.g.CommandTCancelMap = '<C-x>'
 -- Disabling Gitgutter
@@ -125,12 +126,12 @@ endfunction
 set statusline+=%{GitStatus()}
 ]], true)
 
--- vim.api.nvim_exec([[
--- augroup fmt
---         autocmd!
---         autocmd BufWritePre * undojoin | Prettier
--- augroup END
--- ]], true)
+vim.api.nvim_exec([[
+augroup fmt
+		autocmd!
+		autocmd BufWritePre * undojoin | Prettier
+augroup END
+]], true)
 
 -- TODO: fix it
 -- Format by Nvim Lsp
@@ -141,12 +142,12 @@ set statusline+=%{GitStatus()}
 --         augroup END
 -- ]], true)
 
-vim.api.nvim_exec([[
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
-]], true)
+-- vim.api.nvim_exec([[
+-- augroup fmt
+--   autocmd!
+--   autocmd BufWritePre * undojoin | Neoformat
+-- augroup END
+-- ]], true)
 
 vim.api.nvim_exec([[
 augroup UltestRunner

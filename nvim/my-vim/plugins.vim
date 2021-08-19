@@ -124,7 +124,7 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-git'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
-" Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'sbdchd/neoformat'
 Plug 'mattn/emmet-vim'
 

@@ -186,6 +186,10 @@ neofetch
 
 kitty + complete setup zsh | source /dev/stdin
 
+# CDPATH
+setopt auto_cd
+cdpath=($HOME/dotfiles $HOME/.config)
+
 # source /home/arpangreat/tokyonight.nvim/extras/zsh_tokyonight_storm.zsh-theme
 # bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
