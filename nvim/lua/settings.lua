@@ -13,8 +13,11 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.colorcolumn = '120'
 vim.opt.showcmd = false
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+vim.opt.smarttab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.expandtab = true
 vim.opt.signcolumn="yes"
 vim.opt.scrolloff = 8
 vim.opt.showmode = false
@@ -46,7 +49,7 @@ vim.opt.cursorline = true
 
 -- Utils
 vim.opt.compatible = false
-vim.opt.mouse='a'
+vim.opt.mouse= vim.opt.mouse + 'a'
 vim.opt.autoindent = true
 -- vim.opt.linebreak = true
 -- vim.opt.list = true
@@ -73,8 +76,12 @@ vim.opt.emoji = false
 -- Times
 vim.opt.ttimeoutlen = 50
 vim.opt.updatetime = 100
-vim.opt.shortmess = "I"
+vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.laststatus = 2
+
+vim.opt.wildignore = vim.opt.wildignore + '**/jdt-language-server-latest/*'
+vim.opt.wildignore = vim.opt.wildignore + '**/language-server/*'
+vim.opt.wildignore = vim.opt.wildignore + '**/node_modules/*'
 
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
