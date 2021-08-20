@@ -127,11 +127,18 @@ set statusline+=%{GitStatus()}
 ]], true)
 
 vim.api.nvim_exec([[
-augroup fmt
-		autocmd!
-		autocmd BufWritePre * undojoin | Prettier
-augroup END
+  augroup Format
+  autocmd! * <buffer>
+  autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
+  augroup END
 ]], true)
+
+-- vim.api.nvim_exec([[
+-- augroup fmt
+--     autocmd!
+--     autocmd BufWritePre * undojoin | Prettier
+-- augroup END
+-- ]], true)
 
 -- TODO: fix it
 -- Format by Nvim Lsp
