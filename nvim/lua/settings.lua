@@ -80,10 +80,6 @@ vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 2
 
-vim.opt.wildignore = vim.opt.wildignore + '**/jdt-language-server-latest/*'
-vim.opt.wildignore = vim.opt.wildignore + '**/language-server/*'
-vim.opt.wildignore = vim.opt.wildignore + '**/node_modules/*'
-
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
 vim.cmd("let g:gitgutter_signs = 0")
