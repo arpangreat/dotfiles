@@ -61,9 +61,6 @@ return require('packer').startup(function()
   use {'tjdevries/colorbuddy.vim'}
 
   use 'edkolev/promptline.vim'
-  use 'VundleVim/Vundle.vim'
-  -- use 'vim-airline/vim-airline'
-  -- use 'vim-airline/vim-airline-themes'
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
@@ -73,14 +70,14 @@ return require('packer').startup(function()
   use 'airblade/vim-gitgutter'
   use 'majutsushi/tagbar'
   use 'preservim/nerdcommenter'
-  -- use 'folke/todo-comments.nvim'
-  use '/home/arpangreat/todo-comments.nvim'
+  use 'folke/todo-comments.nvim'
+  -- use '/home/arpangreat/todo-comments.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'sainnhe/tmuxline.vim'
+  use 'p00f/nvim-ts-rainbow'
   -- use 'glepnir/indent-guides.nvim'
   
   -- Colorscheme
-  use 'rigellute/shades-of-purple.vim'
   use 'chriskempson/base16-vim'
   use 'bluz71/vim-nightfly-guicolors'
   use {'embark-theme/vim', as = 'embark' }
@@ -122,17 +119,13 @@ return require('packer').startup(function()
   use 'natebosch/vim-lsc'
   use 'natebosch/vim-lsc-dart'
   use 'svermeulen/vimpeccable'
-  -- use 'hrsh7th/nvim-compe'
+  use 'hrsh7th/nvim-compe'
   -- use 'hrsh7th/vim-vsnip'
   -- use 'rafamadriz/friendly-snippets'
   -- use 'hrsh7th/vim-vsnip-integ'
   use 'kyazdani42/nvim-tree.lua'
   
   -- Vim Only
-  use 'roxma/nvim-yarp'
-  use 'roxma/vim-hug-neovim-rpc'
-  use 'simrat39/symbols-outline.nvim'
-  
   use 'janko/vim-test'
   use {'rcarriga/vim-ultest', run = ':UpdateRemotePlugins'}
   
@@ -151,6 +144,7 @@ return require('packer').startup(function()
   
   use 'tjdevries/nlua.nvim'
   use 'tjdevries/lsp_extensions.nvim'
+  use 'ray-x/lsp_signature.nvim'
   use 'tjdevries/cyclist.vim'
   use 'norcalli/snippets.nvim'
   use 'ryanoasis/vim-devicons'
@@ -168,7 +162,7 @@ return require('packer').startup(function()
   use 'tpope/vim-git'
   use 'liuchengxu/vim-which-key'
   -- use 'prettier/vim-prettier', { 'do': 'npm install' }
-  use 'sbdchd/neoformat'
+  -- use 'sbdchd/neoformat'
   use 'mattn/emmet-vim'
   
   use 'SirVer/ultisnips'

@@ -9,10 +9,10 @@
 --                                                                     |___/ |___/
 --
 --========================================================================================
-vim.cmd("source /home/arpangreat/dotfiles/nvim/my-vim/plugins.vim")
+-- vim.cmd("source /home/arpangreat/dotfiles/nvim/my-vim/plugins.vim")
 
 -- Lua file
--- require('plugins')
+require('plugins')
 require('arpangreat')
 require('settings')
 require('nv-compe')
@@ -51,10 +51,11 @@ require('nv-dashboard')
 -- require('nv-airline')
 require('nv-rainbow')
 require('nv-gitsigns')
-require('nv-neogit')
-require('nv-diffview')
+-- require('nv-neogit')
+-- require('nv-diffview')
 -- require('nv-nvim-tree')
 require('nv-lsp-configs')
+require('nv-lspsaga')
 require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-lsp-signatures')
