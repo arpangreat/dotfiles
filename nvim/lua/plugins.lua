@@ -15,7 +15,7 @@ vim.cmd [[packadd packer.nvim]]
 -- Only if your version of Neovim doesn't have https://github.com/neovim/neovim/pull/12632 merged
 -- vim._update_package_paths()
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
@@ -166,12 +166,10 @@ return require('packer').startup(function()
   use 'mattn/emmet-vim'
   
   use 'SirVer/ultisnips'
-  use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
   use 'honza/vim-snippets'
   use 'mbbill/undotree'
   use 'ThePrimeagen/vim-be-good'
   -- use 'fatih/vim-go'
-  use {'nsf/gocode', rtp = 'nvim', run = '~/.config/nvim/plugged/gocode/nvim/symlink.sh'}
   use 'OmniSharp/omnisharp-vim'
   use 'christoomey/vim-tmux-navigator'
   use 'ThePrimeagen/git-worktree.nvim'
@@ -181,4 +179,3 @@ return require('packer').startup(function()
 
 -- use 'govim/govim'
 end)
-
