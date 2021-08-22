@@ -7,7 +7,6 @@ require'bufferline'.setup{
     view = "multiwindow",
     numbers = "both",
     number_style = "superscript", -- buffer_id at index 1, ordinal at index 2
-    mappings = true,
     buffer_close_icon= '',
     modified_icon = '●',
     close_icon = '',

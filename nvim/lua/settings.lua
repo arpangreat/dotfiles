@@ -21,7 +21,7 @@ vim.opt.expandtab = true
 vim.opt.signcolumn="yes"
 vim.opt.scrolloff = 8
 vim.opt.showmode = false
-vim.opt.completeopt = "menuone,noselect"
+vim.opt.completeopt = "menuone,noselect,noinsert"
 vim.opt.hidden = true
 -- vim.opt.include
 vim.opt.display = "lastline"
@@ -77,6 +77,7 @@ vim.opt.emoji = false
 vim.opt.ttimeoutlen = 50
 vim.opt.updatetime = 100
 vim.opt.shortmess = vim.opt.shortmess + "I"
+vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 2
 
 vim.opt.wildignore = vim.opt.wildignore + '**/jdt-language-server-latest/*'

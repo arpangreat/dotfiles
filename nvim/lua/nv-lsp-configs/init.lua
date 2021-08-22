@@ -1,10 +1,14 @@
+vim.lsp.set_log_level("debug")
+
 -- nvim_lsp object
-local nvim_lsp = require'lspconfig'
+local nvim_lsp = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
 
 -- function to attach completion when setting up lsp
-local on_attach = function(client)
-  require'completion'.on_attach(client)
+local on_attach = function(client, bufnr)
+  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
   -- formatting
   if client.resolved_capabilities.document_formatting then
     vim.api.nvim_exec([[augroup Format
@@ -12,7 +16,77 @@ local on_attach = function(client)
      autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
      augroup END]], true)
   end
+
+  require'completion'.on_attach(client, bufnr)
+
+  local M = {}
+
+  M.icons = {
+    Class = " ",
+    Color = " ",
+    Constant = " ",
+    Constructor = " ",
+    Enum = "了 ",
+    EnumMember = " ",
+    Field = " ",
+    File = " ",
+    Folder = " ",
+    Function = " ",
+    Interface = "ﰮ ",
+    Keyword = " ",
+    Method = "ƒ ",
+    Module = " ",
+    Property = " ",
+    Snippet = "﬌ ",
+    Struct = " ",
+    Text = " ",
+    Unit = " ",
+    Value = " ",
+    Variable = " ",
+  }
+
+  function M.setup()
+    local kinds = vim.lsp.protocol.CompletionItemKind
+    for i, kind in ipairs(kinds) do
+      kinds[i] = M.icons[kind] or kind
+    end
+  end
+
+  return M 
+
+  --  --protocol.SymbolKind = { }
+  -- protocol.CompletionItemKind = {
+  --   '', -- Text
+  --   '', -- Method
+  --   '', -- Function
+  --   '', -- Constructor
+  --   '', -- Field
+  --   '', -- Variable
+  --   '', -- Class
+  --   'ﰮ', -- Interface
+  --   '', -- Module
+  --   '', -- Property
+  --   '', -- Unit
+  --   '', -- Value
+  --   '', -- Enum
+  --   '', -- Keyword
+  --   '﬌', -- Snippet
+  --   '', -- Color
+  --   '', -- File
+  --   '', -- Reference
+  --   '', -- Folder
+  --   '', -- EnumMember
+  --   '', -- Constant
+  --   '', -- Struct
+  --   '', -- Event
+  --   'ﬦ', -- Operator
+  --   '', -- TypeParameter
+  -- }
 end
+
+nvim_lsp.flow.setup {
+  on_attach = on_attach
+}
 
 -- Enable rust_analyzer
 nvim_lsp.rust_analyzer.setup({ on_attach=on_attach })
