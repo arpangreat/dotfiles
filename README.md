@@ -4,7 +4,7 @@ Hey this is my dotfiles repository ,From which you can download my config files
 
 [#](#) I'm a n00b
 
-# * My default desktop Environment `i3` and `kitty` with `zsh` and `neofetch` , The prompt is [Spaceship](https://github.com/denysdovhan/spaceship-prompt) and the color is `[tokyonight](https://github.com/folke/tokyonight.nvim.git)`
+# * My default desktop Environment `i3` and `kitty` with `zsh` and `neofetch` , The prompt is [Spaceship](https://github.com/denysdovhan/spaceship-prompt) and the color is [tokyonight](https://github.com/folke/tokyonight.nvim.git)
 ![Screenshot from 2021-05-31 12-34-24](https://user-images.githubusercontent.com/46556080/120154305-5fa5d900-c20d-11eb-9611-65a6ebc57632.png)
 
 # * My Love ❤️ and default Editor is [neovim](https://github.com/neovim/neovim), the Starting screen is [Dashboard.nvim](https://github.com/glepnir/dashboard-nvim) and the statusline is [Galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) made by [glepnir](https://github.com/glepnir)
