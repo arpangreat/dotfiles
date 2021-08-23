@@ -174,5 +174,8 @@ return require('packer').startup(function(use)
   use 'rhysd/git-messenger.vim'
   use 'kristijanhusak/orgmode.nvim'
 
+  -- My Plugins
+  use 'arpangreat/treesitter-unit-plugin'
+
 -- use 'govim/govim'
 end)
