@@ -5,16 +5,18 @@ Hey this is my dotfiles repository ,From which you can download my config files
 [#](#) I'm a n00b
 
 # * My default desktop Environment `i3` and `kitty` with `zsh` and `neofetch` , The prompt is [Spaceship](https://github.com/denysdovhan/spaceship-prompt) and the color is [tokyonight](https://github.com/folke/tokyonight.nvim.git)
-![Screenshot from 2021-05-31 12-34-24](https://user-images.githubusercontent.com/46556080/120154305-5fa5d900-c20d-11eb-9611-65a6ebc57632.png)
+![Screenshot-kitty-edit](https://user-images.githubusercontent.com/46556080/130490647-0488bd1d-7cc3-49ce-a6c3-c4a09809b622.png)
+
 
 # * My Love ❤️ and default Editor is [neovim](https://github.com/neovim/neovim), the Starting screen is [Dashboard.nvim](https://github.com/glepnir/dashboard-nvim) and the statusline is [Galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) made by [glepnir](https://github.com/glepnir)
-![Screenshot from 2021-05-31 12-34-31](https://user-images.githubusercontent.com/46556080/120155264-418ca880-c20e-11eb-97c2-a265160ca5f0.png)
+![Screenshot-nvim-edit](https://user-images.githubusercontent.com/46556080/130490700-b227a906-8d26-4642-98df-81df3eda0e7e.png)
 
 # * One of my Nvim-essential and all time ❤️ is [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) file picker
-![Screenshot from 2021-05-31 12-34-40](https://user-images.githubusercontent.com/46556080/120155503-857fad80-c20e-11eb-87c8-4b879fe94e05.png)
+![Screenshot-telescope-edit](https://user-images.githubusercontent.com/46556080/130490742-b6494ed2-4324-49da-8673-9c42d68ecf35.png)
+
 
 # * My Favourite Colorscheme for now and maybe for years is made [tokyonight.nvim](https://github.com/folke/tokyonight.nvim.git) looks so sick ❤️❤️🔥
-![Screenshot from 2021-05-31 12-35-24](https://user-images.githubusercontent.com/46556080/120155776-d98a9200-c20e-11eb-8e8d-fd893956af65.png)
+![Screenshot-colorscheme-edit](https://user-images.githubusercontent.com/46556080/130490777-1116a609-d805-4b0e-a37b-5a132665269b.png)
 
 # The Anime Wallpapers are provided by a git repo by
 
