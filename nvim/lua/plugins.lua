@@ -79,7 +79,6 @@ return require('packer').startup(function(use)
   
   -- Colorscheme
   use 'chriskempson/base16-vim'
-  use 'bluz71/vim-nightfly-guicolors'
   use {'embark-theme/vim', as = 'embark' }
   use 'tjdevries/gruvbuddy.nvim'
   use 'DilanGMB/nebulous.nvim'
@@ -87,7 +86,6 @@ return require('packer').startup(function(use)
   use 'Th3Whit3Wolf/onebuddy'
   use 'Th3Whit3Wolf/spacebuddy'
   use 'connorholyday/vim-snazzy'
-  use 'arzg/vim-colors-xcode'
   -- use 'ghifarit53/tokyonight-vim'
   use {'ghifarit53/daycula-vim' , branch = 'main'}
   use 'dylanaraps/wal.vim'
@@ -96,12 +94,11 @@ return require('packer').startup(function(use)
   use 'glepnir/zephyr-nvim'
   use 'glepnir/oceanic-material'
   -- use 'glepnir/prodoc.nvim'
-  use 'tiagovla/tokyodark.nvim'
   use 'folke/tokyonight.nvim'
-  use 'eddyekofo94/gruvbox-flat.nvim'
   use 'ful1e5/onedark.nvim'
   use 'sainnhe/gruvbox-material'
   use {'nxvu699134/vn-night.nvim'}
+  use "Pocco81/Catppuccino.nvim"
 
   
   -- Language specific
