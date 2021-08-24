@@ -3,6 +3,7 @@ USER = vim.fn.expand('$USER')
 
 local sumneko_root_path = ""
 local sumneko_binary = ""
+local protocol = require('vim.lsp.protocol')
 
 if vim.fn.has("mac") == 1 then
     sumneko_root_path = "/Users/" .. USER .. "/dotfiles/nvim/lua-language-server"
@@ -12,6 +13,50 @@ elseif vim.fn.has("unix") == 1 then
     sumneko_binary = "/home/" .. USER .. "/dotfiles/nvim/lua-language-server/bin/Linux/lua-language-server"
 else
     print("Unsupported system for sumneko")
+end
+
+local on_attach = function(client, bufnr)
+  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
+  -- formatting
+  if client.resolved_capabilities.document_formatting then
+    vim.api.nvim_exec([[augroup Format
+     autocmd! * <buffer>
+     autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
+     augroup END]], true)
+  end
+
+  require'completion'.on_attach(client, bufnr)
+
+   --protocol.SymbolKind = { }
+  protocol.CompletionItemKind = {
+    '', -- Text
+    '', -- Method
+    '', -- Function
+    '', -- Constructor
+    '', -- Field
+    '', -- Variable
+    '', -- Class
+    'ﰮ', -- Interface
+    '', -- Module
+    '', -- Property
+    '', -- Unit
+    '', -- Value
+    '', -- Enum
+    '', -- Keyword
+    '﬌', -- Snippet
+    '', -- Color
+    '', -- File
+    '', -- Reference
+    '', -- Folder
+    '', -- EnumMember
+    '', -- Constant
+    '', -- Struct
+    '', -- Event
+    'ﬦ', -- Operator
+    '', -- TypeParameter
+  }
 end
 
 require'lspconfig'.sumneko_lua.setup {
@@ -37,5 +82,6 @@ require'lspconfig'.sumneko_lua.setup {
                checkThirdParty = false,
             }
         }
-    }
+    },
+    on_attach = on_attach
 }

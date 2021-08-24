@@ -278,6 +278,17 @@ vim.api.nvim_set_keymap('i', '<C-k>', '<esc>:m .-2<CR>==', { noremap = true, sil
 vim.api.nvim_set_keymap('n', '<LocalLeader>j', ':m .+1<CR>==', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', '<LocalLeader>k', ':m .-2<CR>==', { noremap = true, silent = false, expr = false })
 
+-- Bufferline
+vim.api.nvim_set_keymap('n', '<Leader>1', ':BufferLineGoToBuffer 1<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>2', ':BufferLineGoToBuffer 2<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>3', ':BufferLineGoToBuffer 3<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>4', ':BufferLineGoToBuffer 4<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>5', ':BufferLineGoToBuffer 5<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>6', ':BufferLineGoToBuffer 6<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>7', ':BufferLineGoToBuffer 7<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>8', ':BufferLineGoToBuffer 8<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', '<Leader>9', ':BufferLineGoToBuffer 9<CR>', { noremap = true, silent = false, expr = false })
+
 -- Treesitter Unit
 vim.api.nvim_set_keymap('n', '<Leader>tus', ':lua require("treesitter-unit-plugin").select()<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', '<Leader>tud', ':lua require("treesitter-unit-plugin").delete()<CR>', { noremap = true, silent = false, expr = false })
