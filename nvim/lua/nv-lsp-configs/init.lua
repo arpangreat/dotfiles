@@ -19,77 +19,43 @@ local on_attach = function(client, bufnr)
 
   require'completion'.on_attach(client, bufnr)
 
-  local M = {}
-
-  M.icons = {
-    Class = " ",
-    Color = " ",
-    Constant = " ",
-    Constructor = " ",
-    Enum = "了 ",
-    EnumMember = " ",
-    Field = " ",
-    File = " ",
-    Folder = " ",
-    Function = " ",
-    Interface = "ﰮ ",
-    Keyword = " ",
-    Method = "ƒ ",
-    Module = " ",
-    Property = " ",
-    Snippet = "﬌ ",
-    Struct = " ",
-    Text = " ",
-    Unit = " ",
-    Value = " ",
-    Variable = " ",
+   --protocol.SymbolKind = { }
+  protocol.CompletionItemKind = {
+    '', -- Text
+    '', -- Method
+    '', -- Function
+    '', -- Constructor
+    '', -- Field
+    '', -- Variable
+    '', -- Class
+    'ﰮ', -- Interface
+    '', -- Module
+    '', -- Property
+    '', -- Unit
+    '', -- Value
+    '', -- Enum
+    '', -- Keyword
+    '﬌', -- Snippet
+    '', -- Color
+    '', -- File
+    '', -- Reference
+    '', -- Folder
+    '', -- EnumMember
+    '', -- Constant
+    '', -- Struct
+    '', -- Event
+    'ﬦ', -- Operator
+    '', -- TypeParameter
   }
-
-  function M.setup()
-    local kinds = vim.lsp.protocol.CompletionItemKind
-    for i, kind in ipairs(kinds) do
-      kinds[i] = M.icons[kind] or kind
-    end
-  end
-
-  return M 
-
-  --  --protocol.SymbolKind = { }
-  -- protocol.CompletionItemKind = {
-  --   '', -- Text
-  --   '', -- Method
-  --   '', -- Function
-  --   '', -- Constructor
-  --   '', -- Field
-  --   '', -- Variable
-  --   '', -- Class
-  --   'ﰮ', -- Interface
-  --   '', -- Module
-  --   '', -- Property
-  --   '', -- Unit
-  --   '', -- Value
-  --   '', -- Enum
-  --   '', -- Keyword
-  --   '﬌', -- Snippet
-  --   '', -- Color
-  --   '', -- File
-  --   '', -- Reference
-  --   '', -- Folder
-  --   '', -- EnumMember
-  --   '', -- Constant
-  --   '', -- Struct
-  --   '', -- Event
-  --   'ﬦ', -- Operator
-  --   '', -- TypeParameter
-  -- }
 end
 
-nvim_lsp.flow.setup {
-  on_attach = on_attach
-}
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Enable rust_analyzer
-nvim_lsp.rust_analyzer.setup({ on_attach=on_attach })
+nvim_lsp.rust_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
+
 
 -- Enable diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -103,33 +69,24 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 vim.cmd("let g:rustfmt_autosave = 1")
 
 vim.cmd("let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']")
-require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.vuels.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.clangd.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.gopls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.zls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.bashls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.ocamlls.setup{ on_attach=require'completion'.on_attach }
---  require'lspconfig'.ghcide.setup{ on_attach=require'completion'.on_attach }
---  require'lspconfig'.sumneko_.setup{ on_attach=require'completion'.on_attach }
---  require'lspconfig'.rls.setup{ on_attach=require'completion'.on_attach }
--- vim.cmd("let g:LanguageClient_serverCommands = {
---             \ 'typescript': ['typescript-language-server', '--stdio', '--tsserver-path', 'node_modules/.bin/tsserver'],
---             \ }")
-require'lspconfig'.vimls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.cssls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.dockerls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.graphql.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.hls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.jsonls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.yamlls.setup{ on_attach=require'completion'.on_attach }
-require'lspconfig'.pyright.setup{ on_attach=require'completion'.on_attach }
-
---Enable (broadcasting) snippet capability for completion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+require'lspconfig'.tsserver.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.vuels.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.clangd.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.gopls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.zls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.bashls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.ocamlls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.vimls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.cssls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.dockerls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.graphql.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.hls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.jsonls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.yamlls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.pyright.setup{ on_attach = on_attach, capabilities = capabilities }
 
 require'lspconfig'.html.setup {
+  on_attach = on_attach,
   capabilities = capabilities,
 }
 
