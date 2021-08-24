@@ -128,12 +128,12 @@ endfunction
 set statusline+=%{GitStatus()}
 ]], true)
 
-vim.api.nvim_exec([[
-  augroup Format
-  autocmd! * <buffer>
-  autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
-  augroup END
-]], true)
+-- vim.api.nvim_exec([[
+--   augroup Format
+--   autocmd! * <buffer>
+--   autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
+--   augroup END
+-- ]], true)
 
 -- vim.api.nvim_exec([[
 -- augroup fmt
