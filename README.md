@@ -44,11 +44,10 @@ And then you are all good to Go
 ## The commands to setup nvim-lsp
 ```shell
 sudo npm install -g vim-language-server
-sudo npm install -g yaml-language-server
 sudo npm install -g pyright
 sudo npm install -g typescript typescript-language-server
 sudo npm i -g bash-language-server
-sudo npm install -g vscode-css-languageserver-bin
+sudo npm i -g vscode-langservers-extracted
 sudo npm install -g dockerfile-language-server-nodejs
 sudo npm install -g ocaml-language-server
 sudo npm install -g vls
