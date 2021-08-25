@@ -62,6 +62,7 @@ return require('packer').startup(function(use)
 
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-fugitive'
+  use 'rhysd/committia.vim'
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
   use 'airblade/vim-gitgutter'
