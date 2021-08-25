@@ -83,6 +83,8 @@ vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 vim.g.which_key_centered = 1
+vim.g.committia_use_singlecolumn = 'false'
+vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
 
 vim.g.CommandTCancelMap = '<C-x>'
