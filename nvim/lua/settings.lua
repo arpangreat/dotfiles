@@ -28,7 +28,7 @@ vim.opt.display = "lastline"
 vim.opt.backspace = "indent,eol,start"
 vim.opt.winblend = 0
 vim.opt.pumblend = 30
-vim.opt.textwidth = 80
+-- vim.opt.textwidth = 80
 
 -- Visuals
 vim.opt.syntax = "enable"
