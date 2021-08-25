@@ -165,6 +165,11 @@ function git() {
   fi
 }
 
+function gC() {
+  command git add .
+  command git commit
+}
+
 function ttc() {
   cd /home/arpangreat/dotfiles
   dir=$(find ${1:-.} -path '*/\.*' -prune \
