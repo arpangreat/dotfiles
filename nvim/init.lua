@@ -158,13 +158,6 @@ set statusline+=%{GitStatus()}
 -- augroup END
 -- ]], true)
 
-vim.api.nvim_exec([[
-augroup UltestRunner
-    au!
-    au BufWritePost * UltestNearest
-augroup END
-]], true)
-
 vim.cmd([[let g:completion_confirm_key = ""]])
 vim.cmd([[
 imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
