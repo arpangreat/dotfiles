@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
 
   -- Use specific branch, dependency and run lua file after load
   use {
-    'glepnir/galaxyline.nvim', branch = 'main', 
+    'glepnir/galaxyline.nvim', branch = 'main',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
 
@@ -60,15 +60,11 @@ return require('packer').startup(function(use)
   -- You can specify multiple plugins in a single call
   use {'tjdevries/colorbuddy.vim'}
 
-  use 'edkolev/promptline.vim'
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-fugitive'
-  use 'tpope/vim-rhubarb'
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
-  use 'vuciv/vim-bujo'
   use 'airblade/vim-gitgutter'
-  use 'majutsushi/tagbar'
   use 'preservim/nerdcommenter'
   use 'folke/todo-comments.nvim'
   -- use '/home/arpangreat/todo-comments.nvim'
@@ -78,29 +74,13 @@ return require('packer').startup(function(use)
   -- use 'glepnir/indent-guides.nvim'
   
   -- Colorscheme
-  use 'chriskempson/base16-vim'
-  use {'embark-theme/vim', as = 'embark' }
   use 'tjdevries/gruvbuddy.nvim'
   use 'DilanGMB/nebulous.nvim'
   use 'marko-cerovac/material.nvim'
-  use 'Th3Whit3Wolf/onebuddy'
-  use 'Th3Whit3Wolf/spacebuddy'
-  use 'connorholyday/vim-snazzy'
-  -- use 'ghifarit53/tokyonight-vim'
-  use {'ghifarit53/daycula-vim' , branch = 'main'}
-  use 'dylanaraps/wal.vim'
-  use 'gruvbox-community/gruvbox'
   use 'norcalli/nvim-colorizer.lua'
-  use 'glepnir/zephyr-nvim'
-  use 'glepnir/oceanic-material'
-  -- use 'glepnir/prodoc.nvim'
   use 'folke/tokyonight.nvim'
-  use 'ful1e5/onedark.nvim'
-  use 'sainnhe/gruvbox-material'
-  use {'nxvu699134/vn-night.nvim'}
   use "Pocco81/Catppuccino.nvim"
 
-  
   -- Language specific
   use 'tpope/vim-surround'
   use 'neovim/nvim-lspconfig'
@@ -109,26 +89,13 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'norcalli/nvim_utils'
   use 'windwp/nvim-ts-autotag'
-  -- use 'windwp/nvim-autopairs'
-  
   use 'anott03/nvim-lspinstall'
   use 'dart-lang/dart-vim-plugin'
-  use 'natebosch/vim-lsc'
-  use 'natebosch/vim-lsc-dart'
-  use 'svermeulen/vimpeccable'
   use 'hrsh7th/nvim-compe'
-  -- use 'hrsh7th/vim-vsnip'
-  -- use 'rafamadriz/friendly-snippets'
-  -- use 'hrsh7th/vim-vsnip-integ'
   use 'kyazdani42/nvim-tree.lua'
-  
+
   -- Vim Only
-  use 'janko/vim-test'
-  use {'rcarriga/vim-ultest', run = ':UpdateRemotePlugins'}
-  
-  
   use 'nvim-treesitter/playground'
-  
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-fzy-native.nvim'
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
@@ -138,41 +105,23 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope-z.nvim'
   use 'tami5/sql.nvim'
   use 'nvim-telescope/telescope-media-files.nvim'
-  
   use 'tjdevries/nlua.nvim'
   use 'tjdevries/lsp_extensions.nvim'
   use 'ray-x/lsp_signature.nvim'
   use 'tjdevries/cyclist.vim'
   use 'norcalli/snippets.nvim'
   use 'ryanoasis/vim-devicons'
-  use 'rstacruz/sparkup'
-  use 'vimwiki/vimwiki'
   use 'rust-lang/rust.vim'
-  use 'ziglang/zig.vim'
-  use 'Pocco81/DAPInstall.nvim'
-  
-  -- use 'mhinz/vim-startify'
   use 'glepnir/dashboard-nvim'
-  -- use 'Yggdroot/indentLine'
   use 'akinsho/nvim-bufferline.lua'
   use 'kshenoy/vim-signature'
   use 'tpope/vim-git'
   use 'liuchengxu/vim-which-key'
-  -- use 'prettier/vim-prettier', { 'do': 'npm install' }
-  -- use 'sbdchd/neoformat'
-  use 'mattn/emmet-vim'
-  
   use 'SirVer/ultisnips'
   use 'honza/vim-snippets'
   use 'mbbill/undotree'
-  use 'ThePrimeagen/vim-be-good'
-  -- use 'fatih/vim-go'
-  use 'OmniSharp/omnisharp-vim'
   use 'christoomey/vim-tmux-navigator'
-  use 'ThePrimeagen/git-worktree.nvim'
   use 'voldikss/vim-floaterm'
-  use 'rhysd/git-messenger.vim'
-  use 'kristijanhusak/orgmode.nvim'
 
   -- My Plugins
   use 'arpangreat/treesitter-unit-plugin'

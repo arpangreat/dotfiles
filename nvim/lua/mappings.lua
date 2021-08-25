@@ -156,7 +156,7 @@ vim.api.nvim_set_keymap('n','gW','<cmd>lua vim.lsp.buf.workspace_symbol()<CR>', 
 vim.api.nvim_set_keymap('n','gd','<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = true , silent = true})
 vim.api.nvim_set_keymap('n','ga','<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = true , silent = true})
 
--- DashBoard 
+-- DashBoard
 vim.api.nvim_set_keymap('n','<Leader>fh',':DashboardFindHistory<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>sl',':<C-u>SessionLoad<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>fa',':DashboardFindWord<CR>', { noremap = true , silent = false })

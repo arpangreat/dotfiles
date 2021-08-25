@@ -73,10 +73,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/Catppuccino.nvim"
   },
-  ["DAPInstall.nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/DAPInstall.nvim"
-  },
   ale = {
     commands = { "ALEEnable" },
     config = { "vim.cmd[[ALEEnable]]" },
@@ -87,10 +83,6 @@ _G.packer_plugins = {
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/auto-pairs"
-  },
-  ["base16-vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/base16-vim"
   },
   ["colorbuddy.vim"] = {
     loaded = true,
@@ -112,18 +104,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
-  ["daycula-vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/daycula-vim"
-  },
-  embark = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/embark"
-  },
-  ["emmet-vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/emmet-vim"
-  },
   firenvim = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/firenvim"
@@ -140,26 +120,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
-  ["git-messenger.vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/git-messenger.vim"
-  },
-  ["git-worktree.nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/git-worktree.nvim"
-  },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
-  },
-  gruvbox = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/gruvbox"
-  },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/gruvbox-material"
   },
   ["gruvbuddy.nvim"] = {
     loaded = true,
@@ -241,26 +205,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim_utils"
   },
-  ["oceanic-material"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/oceanic-material"
-  },
-  ["omnisharp-vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/omnisharp-vim"
-  },
-  onebuddy = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/onebuddy"
-  },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/onedark.nvim"
-  },
-  ["orgmode.nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/orgmode.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -277,10 +221,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
-  ["promptline.vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/promptline.vim"
-  },
   ["rust.vim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/rust.vim"
@@ -289,21 +229,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/snippets.nvim"
   },
-  spacebuddy = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/spacebuddy"
-  },
-  sparkup = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/sparkup"
-  },
   ["sql.nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/sql.nvim"
-  },
-  tagbar = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/tagbar"
   },
   ["telescope-frecency.nvim"] = {
     loaded = true,
@@ -361,14 +289,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/undotree"
   },
-  ["vim-be-good"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-be-good"
-  },
-  ["vim-bujo"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-bujo"
-  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-devicons"
@@ -395,25 +315,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-gitgutter"
   },
-  ["vim-lsc"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-lsc"
-  },
-  ["vim-lsc-dart"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-lsc-dart"
-  },
-  ["vim-rhubarb"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
-  },
   ["vim-signature"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-signature"
-  },
-  ["vim-snazzy"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-snazzy"
   },
   ["vim-snippets"] = {
     loaded = true,
@@ -423,45 +327,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
-  ["vim-test"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-test"
-  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator"
   },
-  ["vim-ultest"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-ultest"
-  },
   ["vim-which-key"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-which-key"
-  },
-  vimpeccable = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vimpeccable"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vimwiki"
-  },
-  ["vn-night.nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vn-night.nvim"
-  },
-  ["wal.vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/wal.vim"
-  },
-  ["zephyr-nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/zephyr-nvim"
-  },
-  ["zig.vim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/zig.vim"
   }
 }
 
@@ -486,13 +358,13 @@ vim.cmd [[au!]]
 time([[Defining lazy-load filetype autocommands]], true)
 vim.cmd [[au FileType cpp ++once lua require("packer.load")({'ale'}, { ft = "cpp" }, _G.packer_plugins)]]
 vim.cmd [[au FileType cmake ++once lua require("packer.load")({'ale'}, { ft = "cmake" }, _G.packer_plugins)]]
-vim.cmd [[au FileType html ++once lua require("packer.load")({'ale'}, { ft = "html" }, _G.packer_plugins)]]
-vim.cmd [[au FileType sh ++once lua require("packer.load")({'ale'}, { ft = "sh" }, _G.packer_plugins)]]
-vim.cmd [[au FileType racket ++once lua require("packer.load")({'ale'}, { ft = "racket" }, _G.packer_plugins)]]
-vim.cmd [[au FileType tex ++once lua require("packer.load")({'ale'}, { ft = "tex" }, _G.packer_plugins)]]
-vim.cmd [[au FileType vim ++once lua require("packer.load")({'ale'}, { ft = "vim" }, _G.packer_plugins)]]
 vim.cmd [[au FileType c ++once lua require("packer.load")({'ale'}, { ft = "c" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'ale'}, { ft = "markdown" }, _G.packer_plugins)]]
+vim.cmd [[au FileType sh ++once lua require("packer.load")({'ale'}, { ft = "sh" }, _G.packer_plugins)]]
+vim.cmd [[au FileType tex ++once lua require("packer.load")({'ale'}, { ft = "tex" }, _G.packer_plugins)]]
+vim.cmd [[au FileType vim ++once lua require("packer.load")({'ale'}, { ft = "vim" }, _G.packer_plugins)]]
+vim.cmd [[au FileType racket ++once lua require("packer.load")({'ale'}, { ft = "racket" }, _G.packer_plugins)]]
+vim.cmd [[au FileType html ++once lua require("packer.load")({'ale'}, { ft = "html" }, _G.packer_plugins)]]
 vim.cmd [[au FileType zsh ++once lua require("packer.load")({'ale'}, { ft = "zsh" }, _G.packer_plugins)]]
 vim.cmd [[au FileType bash ++once lua require("packer.load")({'ale'}, { ft = "bash" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
