@@ -92,7 +92,7 @@ require'lspconfig'.html.setup {
 
 -- Java Setup
 
-require'lspconfig'.jdtls.setup{ on_attach=require'completion'.on_attach }
+require'lspconfig'.jdtls.setup{ on_attach = on_attach, capabilities = capabilities }
 
   -- Commands:
   --
