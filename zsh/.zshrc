@@ -198,10 +198,10 @@ cdpath=($HOME/dotfiles $HOME/.config)
 # eval "$(starship init zsh)"
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
-export JAR=~/dotfiles/nvim/jdt-language-server-latest/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar
+export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux/org.eclipse.equinox.launcher
 export GRADLE_HOME=$HOME/gradle
 export JAVA_HOME=/usr/lib/jvm/java-15-openjdk/
-export JDTLS_CONFIG=~/dotfiles/nvim/jdt-language-server-latest/config_linux
+export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux
 export WORKSPACE=$HOME/javaexsnew
 
 function _pip_completion {
