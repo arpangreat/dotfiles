@@ -72,6 +72,7 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    gh
     zsh-completions
     zsh-autosuggestions  
     zsh-syntax-highlighting  
@@ -81,7 +82,7 @@ plugins=(
 )
 
 
-autoload -U compinit && compinit
+autoload -U compinit && compinit -i
 
 source $ZSH/oh-my-zsh.sh
 
@@ -290,3 +291,4 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 export TERM=xterm-256color-italic
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
+export PATH=$PATH:/home/arpangreat/Downloads/go/bin
