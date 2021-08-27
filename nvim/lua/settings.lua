@@ -48,7 +48,7 @@ vim.opt.cursorline = true
 -- vim.wopt.cursorcolumn = true
 
 -- Utils
-vim.opt.compatible = true
+vim.opt.compatible = false
 vim.opt.mouse= vim.opt.mouse + 'a'
 vim.opt.autoindent = true
 -- vim.opt.linebreak = true
