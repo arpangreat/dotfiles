@@ -71,6 +71,12 @@ require('telescope').setup {
     },
     git_worktree = {},
     z = {},
+    arecibo = {
+      ["selected_engine"]   = 'google',
+      ["url_open_command"]  = 'xdg-open',
+      ["show_http_headers"] = false,
+      ["show_domain_icons"] = false,
+    },
   },
 }
 
@@ -80,6 +86,7 @@ require('telescope').load_extension('gh')
 require('telescope').load_extension('frecency')
 require('telescope').load_extension('z')
 require('telescope').load_extension('media_files')
+require('telescope').load_extension('arecibo')
 
 
 local M = {}
