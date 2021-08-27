@@ -115,7 +115,6 @@ alias nv="nvim"
 alias e='emacs'
 alias brc='nvim ~/.bashrc'
 alias vrc='nvim ~/.vimrc'
-alias src='nvim ~/.config/sway/config'
 alias ec='emacsclient'
 alias nrc='nvim ~/.config/nvim/init.lua'
 alias s='sudo'
@@ -292,3 +291,5 @@ fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 export TERM=xterm-256color-italic
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
+
+source /home/arpangreat/.zprofile
