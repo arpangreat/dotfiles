@@ -97,8 +97,12 @@ return require('packer').startup(function(use)
 
   -- Vim Only
   use 'nvim-treesitter/playground'
-  use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-fzy-native.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'},
+     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+    }
+  }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
   use 'nvim-telescope/telescope-github.nvim'
   use 'nvim-telescope/telescope-frecency.nvim' 
