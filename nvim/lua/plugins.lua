@@ -110,6 +110,10 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope-z.nvim'
   use 'tami5/sql.nvim'
   use 'nvim-telescope/telescope-media-files.nvim'
+  use {
+    "nvim-telescope/telescope-arecibo.nvim",
+    rocks = {"openssl", "lua-http-parser"}
+  }
   use 'tjdevries/nlua.nvim'
   use 'tjdevries/lsp_extensions.nvim'
   use 'ray-x/lsp_signature.nvim'
