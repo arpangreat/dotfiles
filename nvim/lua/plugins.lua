@@ -131,6 +131,7 @@ return require('packer').startup(function(use)
   use 'mbbill/undotree'
   use 'christoomey/vim-tmux-navigator'
   use 'voldikss/vim-floaterm'
+  use 'tjdevries/sg.nvim'
 
   -- My Plugins
   use 'arpangreat/treesitter-unit-plugin'
