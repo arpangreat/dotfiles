@@ -3,7 +3,7 @@ local catppuccino = require("catppuccino")
 -- configure it
 catppuccino.setup(
     {
-		colorscheme = "neon_latte",
+		colorscheme = "catppuccino",
 		transparency = true,
 		styles = {
 			comments = "italic",
@@ -21,17 +21,21 @@ catppuccino.setup(
 					hints = "italic",
 					warnings = "italic",
 					information = "italic"
-				}
+				},
+        nvimtree = {
+          enabled = true,
+          show_root = true, -- makes the root folder not transparent
+        }
 			},
 			lsp_trouble = true,
-			lsp_saga = true,
+			lsp_saga = false,
 			gitgutter = false,
 			gitsigns = true,
 			telescope = true,
-			nvimtree = true,
+			nvimtree = false,
 			which_key = true,
 			indent_blankline = true,
-			dashboard = true,
+			dashboard = false,
 			neogit = true,
 			vim_sneak = true,
 			fern = true,

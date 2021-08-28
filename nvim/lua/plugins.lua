@@ -76,7 +76,7 @@ return require('packer').startup(function(use)
   
   -- Colorscheme
   use 'tjdevries/gruvbuddy.nvim'
-  use 'DilanGMB/nebulous.nvim'
+  use 'Yagua/nebulous.nvim'
   use 'marko-cerovac/material.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use 'folke/tokyonight.nvim'
