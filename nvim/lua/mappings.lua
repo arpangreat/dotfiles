@@ -281,6 +281,7 @@ vim.api.nvim_set_keymap('n', '<Leader>tus', ':lua require("treesitter-unit-plugi
 vim.api.nvim_set_keymap('n', '<Leader>tud', ':lua require("treesitter-unit-plugin").delete()<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', '<Leader>tuc', ':lua require("treesitter-unit-plugin").change()<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('o', '<Leader>tuy', ':<C-u>lua require("treesitter-unit-plugin").select(true)<CR>:y<CR>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('o', '<Leader>tuf', ':<C-u>lua require("treesitter-unit-plugin").select(true)<CR>:lua vim.lsp.buf.formatting_sync()<CR>', { noremap = true, silent = false, expr = false })
 
 -- HACK: Formating Big Lines with g
 vim.api.nvim_set_keymap('n', '<Leader>fg', "<cmd>g/ ./ normal gqq<CR>", { noremap = true, silent = false, expr = false })
