@@ -84,9 +84,10 @@ vim.api.nvim_set_keymap("n", "<Leader>trf", "<Cmd>lua require('telescope').exten
 -- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
 vim.api.nvim_set_keymap('n','<Leader>gv',':GitFiles<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>r',':luafile %<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gb',':Gblame<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>go',':GCheckout<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gm',':GitMessenger<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gb',':Git blame<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>go',':Git checkout<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gs',':Git stash<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gd',':Ghdiffsplit<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>', ":<C-U>WhichKey '<Space>'<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n','<LocalLeader>', ":<C-U>WhichKey ','<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n','<Leader>w',':w!<CR>', { noremap = true , silent = false })
