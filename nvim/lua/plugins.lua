@@ -94,6 +94,7 @@ return require('packer').startup(function(use)
   use 'dart-lang/dart-vim-plugin'
   use 'hrsh7th/nvim-compe'
   use 'kyazdani42/nvim-tree.lua'
+  use {'Shougo/defx.nvim', run = ':UpdateRemotePlugins'}
 
   -- Vim Only
   use 'nvim-treesitter/playground'
