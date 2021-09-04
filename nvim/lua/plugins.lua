@@ -87,12 +87,15 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
   use 'nvim-lua/completion-nvim'
+  use 'nvim-treesitter/completion-treesitter'
+  use 'steelsojka/completion-buffers'
+  use 'albertoCaroM/completion-tmux'
   use 'nvim-lua/popup.nvim'
   use 'norcalli/nvim_utils'
   use 'windwp/nvim-ts-autotag'
   use 'anott03/nvim-lspinstall'
   use 'dart-lang/dart-vim-plugin'
-  use 'hrsh7th/nvim-compe'
+  -- use 'hrsh7th/nvim-compe'
   use 'kyazdani42/nvim-tree.lua'
   use {'Shougo/defx.nvim', run = ':UpdateRemotePlugins'}
 
@@ -106,7 +109,7 @@ return require('packer').startup(function(use)
   }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
   use 'nvim-telescope/telescope-github.nvim'
-  use 'nvim-telescope/telescope-frecency.nvim' 
+  use 'nvim-telescope/telescope-frecency.nvim'
   use 'nvim-telescope/telescope-symbols.nvim'
   use 'nvim-telescope/telescope-z.nvim'
   use 'tami5/sql.nvim'
