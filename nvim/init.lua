@@ -15,7 +15,7 @@
 require('plugins')
 require('arpangreat')
 require('settings')
-require('nv-compe')
+-- require('nv-compe')
 require('lua-ls')
 -- require('nvcoder')
 require('nv-galaxyline')
@@ -61,7 +61,6 @@ require('nv-lspsaga')
 require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-lsp-signatures')
-
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
@@ -168,7 +167,7 @@ imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(
 
 -- HACK: Chain Completion for completion-nvim
 vim.api.nvim_exec([[
-let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
+let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet', 'ts', 'buffers', 'tmux']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
 let g:completion_auto_change_source = 1
 ]], true)
 
