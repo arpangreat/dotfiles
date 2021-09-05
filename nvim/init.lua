@@ -61,6 +61,7 @@ require('nv-lspsaga')
 require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-lsp-signatures')
+require('nv-which-key')
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
