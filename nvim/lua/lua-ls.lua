@@ -16,9 +16,6 @@ else
 end
 
 local on_attach = function(client, bufnr)
-  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
-  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
-
   -- formatting
   if client.resolved_capabilities.document_formatting then
     vim.api.nvim_exec([[augroup Format

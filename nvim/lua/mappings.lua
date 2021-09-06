@@ -60,7 +60,6 @@ vim.api.nvim_set_keymap('n','<Leader>tb',":lua require('telescope.builtin').buff
 vim.api.nvim_set_keymap('n','<Leader>th',":lua require('telescope.builtin').help_tags()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tm',":lua require('telescope.builtin').man_pages()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tj',":lua require('telescope.builtin').jumplist()<CR>",{ noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>tr',":lua require('telescope.builtin').registers()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>trc',":lua require('arpangreat.telescope').search_dotfiles()<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>trg',":lua require('telescope.builtin').live_grep({ prompt_prefix=🔍 })<CR>",{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>tcc',":lua require('arpangreat.telescope').search_configs()<CR>",{ noremap = true , silent = false })

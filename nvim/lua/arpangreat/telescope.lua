@@ -20,7 +20,7 @@ require('telescope').setup {
     -- selection_strategy = "reset",
     sorting_strategy = "ascending",
     scroll_strategy = "cycle",
-    -- layout_strategy = "horizontal",
+    -- layout_strategy = "vertical",
     layout_config = {
       horizontal = {
         mirror = false,
@@ -31,7 +31,7 @@ require('telescope').setup {
       prompt_position = "top",
     },
     -- file_sorter = require'telescope.sorters'.get_fuzzy_file,
-    -- file_ignore_patterns = {},
+  file_ignore_patterns = {"$HOME/dotfiles/nvim/jdt-language-server-latest/*", "$HOME/dotfiles/nvim/lua-language-server/*"},
     -- generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
     -- path_display = {},
     -- winblend = 0,
@@ -93,7 +93,7 @@ local M = {}
 M.search_dotfiles = function()
   require("telescope.builtin").find_files({
     prompt_title = "< VimRC >",
-    cwd = "$HOME/dotfiles/nvim",
+    cwd = "$HOME/dotfiles/nvim/",
   })
 end
 
