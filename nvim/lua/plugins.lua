@@ -83,13 +83,10 @@ return require('packer').startup(function(use)
   use "Pocco81/Catppuccino.nvim"
 
   -- Language specific
-  use 'tpope/vim-surround'
+  -- use 'tpope/vim-surround'
   use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
   use 'nvim-lua/completion-nvim'
-  use 'nvim-treesitter/completion-treesitter'
-  use 'steelsojka/completion-buffers'
-  use 'albertoCaroM/completion-tmux'
   use 'nvim-lua/popup.nvim'
   use 'norcalli/nvim_utils'
   use 'windwp/nvim-ts-autotag'

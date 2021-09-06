@@ -168,7 +168,7 @@ imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(
 
 -- HACK: Chain Completion for completion-nvim
 vim.api.nvim_exec([[
-let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet', 'ts', 'buffers', 'tmux']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
+let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
 let g:completion_auto_change_source = 1
 ]], true)
 
