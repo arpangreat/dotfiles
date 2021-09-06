@@ -168,6 +168,7 @@ function git() {
 function gC() {
   command git add .
   command git commit
+  command git push
 }
 
 function ttc() {
