@@ -21,7 +21,7 @@ vim.opt.expandtab = true
 vim.opt.signcolumn="yes"
 vim.opt.scrolloff = 8
 vim.opt.showmode = false
-vim.opt.completeopt = "menuone,noselect,noinsert"
+vim.opt.completeopt = {"menuone", "noselect", "noinsert"}
 vim.opt.hidden = true
 -- vim.opt.include
 vim.opt.display = "lastline"
