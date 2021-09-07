@@ -3,6 +3,11 @@ local neogit = require("neogit")
 neogit.setup {
   disable_signs = false,
   disable_context_highlighting = false,
+   auto_refresh = true,
+  disable_builtin_notifications = false,
+  commit_popup = {
+      kind = "vsplit",
+  },
   disable_commit_confirmation = false,
   -- customize displayed signs
   signs = {

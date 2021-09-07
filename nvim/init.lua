@@ -10,7 +10,6 @@
 --
 --========================================================================================
 -- vim.cmd("source /home/arpangreat/dotfiles/nvim/my-vim/plugins.vim")
-
 -- Lua file
 require('plugins')
 require('arpangreat')
@@ -24,8 +23,8 @@ require('nv-treesitter')
 require('nv-telescope')
 require('nv-nerdcommenter')
 -- require('nv-todo-comment')
-require('nv-autopairs')
--- require('nv-windwp-autopairs')
+-- require('nv-autopairs')
+require('nv-windwp-autopairs')
 require('nv-autotag')
 require('nv-ale')
 -- require('nv-embark')
@@ -47,14 +46,16 @@ require('nv-indent-blankline')
 require('nv-nvim-devicons')
 require('nv-bufferlines')
 require('mappings')
+require('nv-kommentary')
 -- require('nv-defx')
 -- require('nv-startify')
 require('nv-dashboard')
 -- require('nv-airline')
+require('nv-nvim-cmp')
 require('nv-rainbow')
 require('nv-gitsigns')
--- require('nv-neogit')
--- require('nv-diffview')
+require('nv-neogit')
+require('nv-diffview')
 -- require('nv-nvim-tree')
 require('nv-lsp-configs')
 require('nv-lspsaga')
@@ -161,14 +162,14 @@ set statusline+=%{GitStatus()}
 -- augroup END
 -- ]], true)
 
-vim.cmd([[let g:completion_confirm_key = ""]])
-vim.cmd([[
-imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
-]])
+-- vim.cmd([[let g:completion_confirm_key = ""]])
+-- vim.cmd([[
+-- imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
+-- ]])
 
 -- HACK: Chain Completion for completion-nvim
 vim.api.nvim_exec([[
-let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
+let g:completion_chain_complete_list = [{'complete_items': ['lsp']}, {'complete_items': ['snippet']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
 let g:completion_auto_change_source = 1
 ]], true)
 
