@@ -16,6 +16,12 @@ else
 end
 
 local on_attach = function(client, bufnr)
+  vim.api.nvim_buf_set_option(buffer, "omnifunc", "v:lua.vim.lsp.omnifunc")
+  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
+  --Enable completion triggered by <c-x><c-o>
+  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
   -- formatting
   if client.resolved_capabilities.document_formatting then
     vim.api.nvim_exec([[augroup Format

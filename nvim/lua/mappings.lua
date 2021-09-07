@@ -37,14 +37,6 @@ vim.api.nvim_set_keymap('n','\\gt',':!go test<CR>',{ noremap = true , silent = f
 vim.api.nvim_set_keymap('n', '<Leader>fp', ':cprevious<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', '<Leader>fn', ':cnext<CR>', { noremap = true, silent = false, expr = false })
 
--- Compe
-vim.api.nvim_set_keymap('i', '<C-Space>', 'compe#complete()', { noremap = true, silent = true, expr = true })
-vim.api.nvim_set_keymap('i',  '<CR>', "compe#confirm('<CR>')", { noremap = true, silent = true, expr = true })
-vim.api.nvim_set_keymap('i',  '<C-e>', "compe#close('<C-e>')", { noremap = true, silent = true, expr = true })
-vim.api.nvim_set_keymap('i',  '<C-f>', "compe#scroll({ 'delta': +4 })", { noremap = true, silent = true, expr = true })
-vim.api.nvim_set_keymap('i',  '<C-d>', "compe#scroll({ 'delta': -4 })", { noremap = true, silent = true, expr = true })
-
-
 -- Telescope
 
 vim.api.nvim_set_keymap('n','<F8>',':TagBarToggle<CR>',{ noremap = false, silent = false })
@@ -83,10 +75,10 @@ vim.api.nvim_set_keymap("n", "<Leader>trf", "<Cmd>lua require('telescope').exten
 -- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
 vim.api.nvim_set_keymap('n','<Leader>gv',':GitFiles<CR>', { noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>r',':luafile %<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gb',':Git blame<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>go',':Git checkout<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gs',':Git stash<CR>', { noremap = true , silent = false })
-vim.api.nvim_set_keymap('n','<Leader>gd',':Ghdiffsplit<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gp',':Neogit<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>go',':Neogit branch<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gs',':Neogit stash<CR>', { noremap = true , silent = false })
+vim.api.nvim_set_keymap('n','<Leader>gd',':DiffviewOpen<CR>', { noremap = true , silent = false })
 -- vim.api.nvim_set_keymap('n','<Leader>', ":<C-U>WhichKey '<Space>'<CR>", { noremap = true , silent = true })
 -- vim.api.nvim_set_keymap('n','<LocalLeader>', ":<C-U>WhichKey ','<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap('n','<Leader>w',':w!<CR>', { noremap = true , silent = false })
@@ -161,60 +153,16 @@ vim.api.nvim_set_keymap('n','[t' , '<Plug>(ultest-prev-fail)', { noremap = true 
 -- Nohl
 vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()]], true)
 
--- vim.api.nvim_set_keymap('n','<CR>','{-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()', { noremap = true , expr = true })
-
---[[ [count]<leader>cc |NERDCommenterComment|
-   [
-   [ Comment out the current line or text selected in visual mode.
-   [
-   [ [count]<leader>cn |NERDCommenterNested|
-   [
-   [ Same as cc but forces nesting.
-   [
-   [ [count]<leader>c<space> |NERDCommenterToggle|
-   [
-   [ Toggles the comment state of the selected line(s). If the topmost selected line is commented, all selected lines are uncommented and vice versa.
-   [
-   [ [count]<leader>cm |NERDCommenterMinimal|
-   [
-   [ Comments the given lines using only one set of multipart delimiters.
-   [
-   [ [count]<leader>ci |NERDCommenterInvert|
-   [
-   [ Toggles the comment state of the selected line(s) individually.
-   [
-   [ [count]<leader>cs |NERDCommenterSexy|
-   [
-   [ Comments out the selected lines with a pretty block formatted layout.
-   [
-   [ [count]<leader>cy |NERDCommenterYank|
-   [
-   [ Same as cc except that the commented line(s) are yanked first.
-   [
-   [ <leader>c$ |NERDCommenterToEOL|
-   [
-   [ Comments the current line from the cursor to the end of line.
-   [
-   [ <leader>cA |NERDCommenterAppend|
-   [
-   [ Adds comment delimiters to the end of line and goes into insert mode between them.
-   [
-   [ |NERDCommenterInsert|
-   [
-   [ Adds comment delimiters at the current cursor position and inserts between. Disabled by default.
-   [
-   [ <leader>ca |NERDCommenterAltDelims|
-   [
-   [ Switches to the alternative set of delimiters.
-   [
-   [ [count]<leader>cl |NERDCommenterAlignLeft [count]<leader>cb |NERDCommenterAlignBoth
-   [
-   [ Same as |NERDCommenterComment| except that the delimiters are aligned down the left side (<leader>cl) or both sides (<leader>cb).
-   [
-   [ [count]<leader>cu |NERDCommenterUncomment|
-   [
-   [ Uncomments the selected line(s).
-   [  ]]
+-- kommentary
+vim.api.nvim_set_keymap("n", "<leader>cc", "<Plug>kommentary_line_default", {})
+vim.api.nvim_set_keymap("n", "<leader>c", "<Plug>kommentary_motion_default", {})
+vim.api.nvim_set_keymap("x", "<leader>c", "<Plug>kommentary_visual_default", {})
+vim.api.nvim_set_keymap("n", "<leader>cic", "<Plug>kommentary_line_increase", {})
+vim.api.nvim_set_keymap("n", "<leader>ci", "<Plug>kommentary_motion_increase", {})
+vim.api.nvim_set_keymap("x", "<leader>ci", "<Plug>kommentary_visual_increase", {})
+vim.api.nvim_set_keymap("n", "<leader>cdc", "<Plug>kommentary_line_decrease", {})
+vim.api.nvim_set_keymap("n", "<leader>cd", "<Plug>kommentary_motion_decrease", {})
+vim.api.nvim_set_keymap("x", "<leader>cd", "<Plug>kommentary_visual_decrease", {})
 
 -- LspSaga
 vim.api.nvim_set_keymap('n', '<Leader>ef', "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", { noremap = true , silent = true })

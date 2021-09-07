@@ -43,7 +43,7 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- Post-install/update hook with call of vimscript function with argument
-  use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
+  -- use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
 
   -- Use specific branch, dependency and run lua file after load
   use {
@@ -60,13 +60,18 @@ return require('packer').startup(function(use)
   -- You can specify multiple plugins in a single call
   use {'tjdevries/colorbuddy.vim'}
 
-  use 'jiangmiao/auto-pairs'
-  use 'tpope/vim-fugitive'
+  use 'windwp/nvim-autopairs'
+  -- use 'jiangmiao/auto-pairs'
+  -- use 'tpope/vim-fugitive'
+  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+  use 'sindrets/diffview.nvim'
   use 'rhysd/committia.vim'
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
   use 'airblade/vim-gitgutter'
-  use 'preservim/nerdcommenter'
+  -- use 'preservim/nerdcommenter'
+  use 'b3nj5m1n/kommentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'folke/todo-comments.nvim'
   -- use '/home/arpangreat/todo-comments.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
@@ -93,6 +98,16 @@ return require('packer').startup(function(use)
   use 'anott03/nvim-lspinstall'
   use 'dart-lang/dart-vim-plugin'
   -- use 'hrsh7th/nvim-compe'
+  use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "hrsh7th/vim-vsnip",
+      "hrsh7th/cmp-buffer",
+      "ray-x/cmp-treesitter",
+      "hrsh7th/cmp-nvim-lua"
+    }
+  }
+  use { 'saadparwaiz1/cmp_luasnip' }
   use 'kyazdani42/nvim-tree.lua'
   use {'Shougo/defx.nvim', run = ':UpdateRemotePlugins'}
 
@@ -120,18 +135,19 @@ return require('packer').startup(function(use)
   use 'ray-x/lsp_signature.nvim'
   use 'tjdevries/cyclist.vim'
   use 'norcalli/snippets.nvim'
+  use 'L3MON4D3/LuaSnip'
   use 'ryanoasis/vim-devicons'
   use 'rust-lang/rust.vim'
   use 'glepnir/dashboard-nvim'
   use 'akinsho/nvim-bufferline.lua'
-  use 'kshenoy/vim-signature'
-  use 'tpope/vim-git'
+  -- use 'kshenoy/vim-signature'
+  -- use 'tpope/vim-git'
   -- use 'liuchengxu/vim-which-key'
   use 'folke/which-key.nvim'
   use 'SirVer/ultisnips'
   use 'honza/vim-snippets'
   use 'mbbill/undotree'
-  use 'christoomey/vim-tmux-navigator'
+  -- use 'christoomey/vim-tmux-navigator'
   use 'voldikss/vim-floaterm'
   use 'tjdevries/sg.nvim'
 
