@@ -63,6 +63,8 @@ require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-lsp-signatures')
 require('nv-which-key')
+-- require('nv-LuaSnip')
+require('nv-vsnip')
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
@@ -75,7 +77,7 @@ vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
 vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
-vim.cmd("let g:completion_enable_snippet = 'UltiSnips'")
+vim.cmd("let g:completion_enable_snippet = 'vim-vsnip'")
 vim.cmd("let g:UltiSnipsExpandTrigger='<tab>'")
 vim.cmd("let g:UltiSnipsJumpForwardTrigger='<tab>'")
 vim.cmd("let g:UltiSnipsJumpBackwardTrigger='<s-tab>'")
@@ -169,7 +171,7 @@ set statusline+=%{GitStatus()}
 
 -- HACK: Chain Completion for completion-nvim
 vim.api.nvim_exec([[
-let g:completion_chain_complete_list = [{'complete_items': ['lsp']}, {'complete_items': ['snippet']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
+let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet', 'buffers', 'ts', 'tmux']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
 let g:completion_auto_change_source = 1
 ]], true)
 
