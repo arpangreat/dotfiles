@@ -108,9 +108,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/committia.vim"
   },
+  ["completion-buffers"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/completion-buffers"
+  },
   ["completion-nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/completion-nvim"
+  },
+  ["completion-tmux"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/completion-tmux"
+  },
+  ["completion-treesitter"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/completion-treesitter"
   },
   ["cyclist.vim"] = {
     loaded = true,
@@ -131,6 +143,10 @@ _G.packer_plugins = {
   ["diffview.nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/diffview.nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/friendly-snippets"
   },
   fzf = {
     loaded = true,
@@ -354,6 +370,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-vsnip-integ"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   },
   ["which-key.nvim"] = {
     loaded = true,
