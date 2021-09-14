@@ -242,6 +242,7 @@ fpath=(~/.zsh.d/ $fpath)
 export GOPATH=$HOME/go
 # source $HOME/tomnomnom/gf/gf-completion.zsh
 export PATH=$PATH:$GOPATH/go/bin
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
 
 # set a valid path to your vault
 export VAULT_PATH=/home/arpangreat/wiki/
