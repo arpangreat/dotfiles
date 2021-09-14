@@ -30,6 +30,7 @@ local on_attach = function(client, bufnr)
      augroup END]], true)
   end
 
+
   require'completion'.on_attach(client, bufnr)
 
    --protocol.SymbolKind = { }
