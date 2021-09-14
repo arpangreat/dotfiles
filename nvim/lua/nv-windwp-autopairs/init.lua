@@ -31,7 +31,11 @@ npairs.add_rules({
     :with_pair(ts_conds.is_ts_node({'string','comment'})),
   Rule("$", "$", "lua")
     :with_pair(ts_conds.is_not_ts_node({'function'})),
-  endwise('then$', 'end', 'lua', 'if_statement')
+  Rule("<?php", "?>", "php")
+    :with_pair(ts_conds.is_not_ts_node({'php_tag'})),
+  Rule('%(.*%)%s*%=>$', ' {  }', { 'typescript', 'typescriptreact', 'javascript' })
+    :use_regex(true)
+    :set_end_pair_length(2),
 })
 
 -- skip it, if you use another global object
@@ -53,5 +57,9 @@ MUtils.completion_confirm=function()
     return npairs.autopairs_cr()
   end
 end
+
+npairs.add_rules(require('nvim-autopairs.rules.endwise-elixir'))
+npairs.add_rules(require('nvim-autopairs.rules.endwise-lua'))
+npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
 
 remap('i' , '<CR>','v:lua.MUtils.completion_confirm()', {expr = true , noremap = true})
