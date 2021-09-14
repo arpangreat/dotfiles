@@ -135,6 +135,10 @@ endfunction
 set statusline+=%{GitStatus()}
 ]], true)
 
+vim.cmd [[
+autocmd BufEnter,BufWritePost <buffer> :lua require('lsp_extensions').inlay_hints{}
+]]
+
 -- vim.api.nvim_exec([[
 --   augroup Format
 --   autocmd! * <buffer>
