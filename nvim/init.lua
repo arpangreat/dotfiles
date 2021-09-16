@@ -62,7 +62,7 @@ require('nv-lspsaga')
 require('nv-symbols-outline')
 require('nv-todo-comment')
 require('nv-lsp-signatures')
-require('nv-which-key')
+-- require('nv-which-key')
 -- require('nv-LuaSnip')
 require('nv-vsnip')
 

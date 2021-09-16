@@ -375,9 +375,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   },
-  ["which-key.nvim"] = {
+  ["vim-which-key"] = {
     loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/which-key.nvim"
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-which-key"
   }
 }
 
