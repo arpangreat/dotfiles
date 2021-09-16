@@ -218,7 +218,6 @@ vim.api.nvim_set_keymap('n', 'M', 'm', { noremap = true, silent = false, expr = 
 vim.api.nvim_set_keymap('x', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('o', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('v', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap('i', '<', '<Nop>', { noremap = true, silent = false, expr = false })
 
 -- Bufferline
 vim.api.nvim_set_keymap('n', '<Leader>1', ':BufferLineGoToBuffer 1<CR>', { noremap = true, silent = false, expr = false })
