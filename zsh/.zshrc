@@ -292,5 +292,9 @@ fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 export TERM=xterm-256color-italic
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
+export PATH=$PATH:/home/arpangreat/.local/bin
 
 source /home/arpangreat/.zprofile
+fpath=(~/.zsh.d/ $fpath)
+fpath=(~/.zsh.d/ $fpath)
+fpath=(~/.zsh.d/ $fpath)
