@@ -29,6 +29,9 @@ vim.api.nvim_set_keymap('n','<Leader>st',':tabedit<CR>',{ noremap = true , silen
 vim.api.nvim_set_keymap('n','<Leader>sp',':tabp<CR>',{ noremap = false , silent = false })
 vim.api.nvim_set_keymap('n','<Leader>sn',':tabn<CR>',{ noremap = false , silent = false })
 
+vim.api.nvim_set_keymap('n', '<Leader>', ":WhichKey '<Space>'<CR>", { noremap = true, silent = true, expr = false })
+vim.api.nvim_set_keymap('n', ',', ":WhichKey ','<CR>", { noremap = true, silent = true, expr = false })
+
 vim.api.nvim_set_keymap('n','\\gr',':!go run %<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','\\gb',':!go build<CR>',{ noremap = true , silent = false })
 vim.api.nvim_set_keymap('n','\\gt',':!go test<CR>',{ noremap = true , silent = false })
