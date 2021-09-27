@@ -216,7 +216,7 @@ vim.api.nvim_set_keymap('n', '<LocalLeader>j', ':m .+1<CR>==', { noremap = true,
 vim.api.nvim_set_keymap('n', '<LocalLeader>k', ':m .-2<CR>==', { noremap = true, silent = false, expr = false })
 
 -- Realising useless mappings
-vim.api.nvim_set_keymap('n', 'Q', 'q', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('n', 'Q', ':wq!<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', 'M', 'm', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('x', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('o', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
