@@ -19,7 +19,7 @@ local on_attach = function(client, bufnr)
      augroup END]], true)
   end
 
-  require'completion'.on_attach(client, bufnr)
+  -- require'completion'.on_attach(client, bufnr)
 
    --protocol.SymbolKind = { }
   protocol.CompletionItemKind = {
@@ -53,6 +53,7 @@ end
 
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Enable rust_analyzer
@@ -87,7 +88,7 @@ require'lspconfig'.jsonls.setup{ on_attach = on_attach, capabilities = capabilit
 require'lspconfig'.yamlls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.pyright.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.phpactor.setup{ on_attach = on_attach, capabilities = capabilities }
-require('sg.lsp').setup{ on_attach = on_attach, capabilities = capabilities }
+-- require('sg.lsp').setup{ on_attach = on_attach, capabilities = capabilities }
 
 require'lspconfig'.html.setup {
   on_attach = on_attach,
