@@ -31,7 +31,7 @@ local on_attach = function(client, bufnr)
   end
 
 
-  require'completion'.on_attach(client, bufnr)
+  -- require'completion'.on_attach(client, bufnr)
 
    --protocol.SymbolKind = { }
   protocol.CompletionItemKind = {
@@ -63,6 +63,10 @@ local on_attach = function(client, bufnr)
   }
 end
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 require'lspconfig'.sumneko_lua.setup {
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
     settings = {
@@ -87,5 +91,6 @@ require'lspconfig'.sumneko_lua.setup {
             }
         }
     },
-    on_attach = on_attach
+    on_attach = on_attach,
+    capabilities = capabilities,
 }

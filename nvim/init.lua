@@ -51,7 +51,8 @@ require('nv-kommentary')
 -- require('nv-startify')
 require('nv-dashboard')
 -- require('nv-airline')
--- require('nv-nvim-cmp')
+require('nv-nvim-cmp')
+require('nv-lspkind')
 require('nv-rainbow')
 require('nv-gitsigns')
 require('nv-neogit')
@@ -64,7 +65,7 @@ require('nv-todo-comment')
 require('nv-lsp-signatures')
 -- require('nv-which-key')
 -- require('nv-LuaSnip')
-require('nv-vsnip')
+-- require('nv-vsnip')
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
@@ -77,10 +78,6 @@ vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
 vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
-vim.cmd("let g:completion_enable_snippet = 'vim-vsnip'")
-vim.cmd("let g:UltiSnipsExpandTrigger='<tab>'")
-vim.cmd("let g:UltiSnipsJumpForwardTrigger='<tab>'")
-vim.cmd("let g:UltiSnipsJumpBackwardTrigger='<s-tab>'")
 vim.cmd("let test#strategy = 'neovim'")
 vim.cmd("let test#neovim#term_position = 'vertical'")
 vim.g.neoterm_default_mod = "vertical"
@@ -173,12 +170,6 @@ autocmd BufEnter,BufWritePost <buffer> :lua require('lsp_extensions').inlay_hint
 -- vim.cmd([[
 -- imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
 -- ]])
-
--- HACK: Chain Completion for completion-nvim
-vim.api.nvim_exec([[
-let g:completion_chain_complete_list = [{'complete_items': ['lsp', 'snippet', 'buffers', 'ts', 'tmux']}, {'mode': '<c-p>'}, {'mode': '<c-n>'}]
-let g:completion_auto_change_source = 1
-]], true)
 
 --HACK:
 -- Try to prevent bad habits like using the arrow keys for movement. This is

@@ -93,10 +93,11 @@ return require('packer').startup(function(use)
   -- use 'tpope/vim-surround'
   use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
+  use 'onsails/lspkind-nvim'
   use 'nvim-lua/completion-nvim'
-  use 'steelsojka/completion-buffers'
+  --[[ use 'steelsojka/completion-buffers'
   use 'nvim-treesitter/completion-treesitter'
-  use 'albertoCaroM/completion-tmux'
+  use 'albertoCaroM/completion-tmux' ]]
   use 'nvim-lua/popup.nvim'
   use 'norcalli/nvim_utils'
   use 'windwp/nvim-ts-autotag'
@@ -106,10 +107,12 @@ return require('packer').startup(function(use)
   use {
     "hrsh7th/nvim-cmp",
     requires = {
+      "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/vim-vsnip",
       "hrsh7th/cmp-buffer",
       "ray-x/cmp-treesitter",
-      "hrsh7th/cmp-nvim-lua"
+      "hrsh7th/cmp-nvim-lua",
+      "hrsh7th/cmp-vsnip",
     }
   }
   use { 'saadparwaiz1/cmp_luasnip' }
@@ -152,12 +155,12 @@ return require('packer').startup(function(use)
   -- use 'tpope/vim-git'
   use 'liuchengxu/vim-which-key'
   -- use 'folke/which-key.nvim'
-  use 'SirVer/ultisnips'
+  -- use 'SirVer/ultisnips'
   use 'honza/vim-snippets'
   use 'mbbill/undotree'
   -- use 'christoomey/vim-tmux-navigator'
   use 'voldikss/vim-floaterm'
-  use 'tjdevries/sg.nvim'
+  -- use 'tjdevries/sg.nvim'
 
   -- My Plugins
   use 'arpangreat/treesitter-unit-plugin'
