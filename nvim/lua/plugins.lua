@@ -146,7 +146,7 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
-  use 'rafamadriz/friendly-snippets'
+  -- use 'rafamadriz/friendly-snippets'
   use 'ryanoasis/vim-devicons'
   use 'rust-lang/rust.vim'
   use 'glepnir/dashboard-nvim'
