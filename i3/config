@@ -64,7 +64,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id xrandr --output HDMI1 --left-of eDP1 --auto
-exec setxkbmap -option caps:escape
 # exec --no-startup-id feh --bg-scale ~/dotfiles/wallpaper/HD wallpaper_ man near Torii gate wallpaper, gray temple wallpaper, landscape.jpeg
 
 
