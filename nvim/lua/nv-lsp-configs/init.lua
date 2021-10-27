@@ -84,7 +84,7 @@ require'lspconfig'.cssls.setup{ on_attach = on_attach, capabilities = capabiliti
 require'lspconfig'.dockerls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.graphql.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.hls.setup{ on_attach = on_attach, capabilities = capabilities }
-require'lspconfig'.jsonls.setup{ on_attach = on_attach, capabilities = capabilities }
+-- require'lspconfig'.jsonls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.yamlls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.pyright.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.phpactor.setup{ on_attach = on_attach, capabilities = capabilities }

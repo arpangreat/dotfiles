@@ -65,7 +65,7 @@ require('nv-todo-comment')
 require('nv-lsp-signatures')
 -- require('nv-which-key')
 -- require('nv-LuaSnip')
-require('nv-vsnip')
+-- require('nv-vsnip')
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
