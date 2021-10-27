@@ -39,19 +39,42 @@ cmp.setup {
       end
     end, { "i", "s" }),
   },
-  sources = {
+
+  sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     -- { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'treesitter' },
     { name = 'nvim_lua' },
     { name = 'vsnip' }
-  },
+  }),
+
+   -- Use buffer source for `/`.
+  cmp.setup.cmdline('/', {
+    sources = {
+      { name = 'buffer' }
+    }
+  }),
+
+  -- Use cmdline & path source for ':'.
+  cmp.setup.cmdline(':', {
+    sources = cmp.config.sources({
+      { name = 'path' }
+    }, {
+      { name = 'cmdline' }
+    })
+  }),
+
   formatting = {
     format = function(entry, vim_item)
       vim_item.kind = lspkind.presets.default[vim_item.kind]
       return vim_item
     end
+  },
+
+  experimental = {
+    native_menu = false,
+    ghost_text = true,
   },
 }
 
