@@ -88,6 +88,7 @@ return require('packer').startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'folke/tokyonight.nvim'
   use "Pocco81/Catppuccino.nvim"
+  use 'EdenEast/nightfox.nvim'
 
   -- Language specific
   -- use 'tpope/vim-surround'
