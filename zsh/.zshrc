@@ -139,6 +139,7 @@ alias irc='nvim ~/dotfiles/i3/config'
 alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
 alias cht='cht.sh'
+alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
 alias rusttm='~/dotfiles/custom-scripts/./rusttm'
 alias gotm='~/dotfiles/custom-scripts/./gotm'
