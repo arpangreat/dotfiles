@@ -116,9 +116,9 @@ return require('packer').startup(function(use)
       "ray-x/cmp-treesitter",
       "hrsh7th/cmp-nvim-lua",
       "hrsh7th/cmp-vsnip",
+      "saadparwaiz1/cmp_luasnip",
     }
   }
-  use { 'saadparwaiz1/cmp_luasnip' }
   use 'kyazdani42/nvim-tree.lua'
   use {'Shougo/defx.nvim', run = ':UpdateRemotePlugins'}
 
@@ -149,7 +149,7 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
-  -- use 'rafamadriz/friendly-snippets'
+  use 'rafamadriz/friendly-snippets'
   use 'ryanoasis/vim-devicons'
   use 'rust-lang/rust.vim'
   use 'glepnir/dashboard-nvim'

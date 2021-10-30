@@ -1,14 +1,15 @@
-local feedkey = function(key, mode)
+--[[ local feedkey = function(key, mode)
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(key, true, true, true), mode, true)
-end
+end ]]
 
 local lspkind = require('lspkind')
+local luasnip = require("luasnip")
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local cmp = require'cmp'
 cmp.setup {
   snippet = {
     expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body)
+      -- vim.fn["vsnip#anonymous"](args.body)
       require('luasnip').lsp_expand(args.body)
     end,
   },
@@ -21,8 +22,10 @@ cmp.setup {
     ['<C-e>'] = cmp.mapping.close(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
     ["<Tab>"] = cmp.mapping(function(fallback)
-      if vim.fn["vsnip#available"](1) == 1 then
-        feedkey("<Plug>(vsnip-expand-or-jump)", "")
+      --[[ if vim.fn["vsnip#available"](1) == 1 then
+        feedkey("<Plug>(vsnip-expand-or-jump)", "") ]]
+      if luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
       else
         fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
       end
@@ -37,11 +40,11 @@ cmp.setup {
 
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    -- { name = 'luasnip' },
+    { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'treesitter' },
     { name = 'nvim_lua' },
-    { name = 'vsnip' }
+    -- { name = 'vsnip' }
   }),
 
    -- Use buffer source for `/`.
