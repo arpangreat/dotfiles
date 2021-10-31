@@ -38,12 +38,17 @@ cmp.setup {
     end, { "i", "s" }), ]]
   },
 
+  documentation = {
+    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+  },
+
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'treesitter' },
     { name = 'nvim_lua' },
+    { name = 'cmp_git' },
     -- { name = 'vsnip' }
   }),
 
@@ -66,6 +71,15 @@ cmp.setup {
   formatting = {
     format = function(entry, vim_item)
       vim_item.kind = lspkind.presets.default[vim_item.kind]
+      vim_item.menu = ({
+        nvim_lsp = "ﲳ",
+        nvim_lua = "",
+        treesitter = "",
+        path = "ﱮ",
+        buffer = "﬘",
+        luasnip = "",
+        spell = "暈",
+      })[entry.source.name]
       return vim_item
     end
   },

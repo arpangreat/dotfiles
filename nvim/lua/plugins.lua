@@ -87,7 +87,7 @@ return require('packer').startup(function(use)
   use 'marko-cerovac/material.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use 'folke/tokyonight.nvim'
-  use "Pocco81/Catppuccino.nvim"
+  use {"Pocco81/Catppuccino.nvim", branch = 'dev-remaster'}
   use 'EdenEast/nightfox.nvim'
 
   -- Language specific
@@ -117,6 +117,8 @@ return require('packer').startup(function(use)
       "hrsh7th/cmp-nvim-lua",
       "hrsh7th/cmp-vsnip",
       "saadparwaiz1/cmp_luasnip",
+      "petertriho/cmp-git",
+
     }
   }
   use 'kyazdani42/nvim-tree.lua'

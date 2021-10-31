@@ -3,7 +3,7 @@ local catppuccino = require("catppuccino")
 -- configure it
 catppuccino.setup(
     {
-		colorscheme = "catppuccino",
+		colorscheme = "dark_catppuccino",
 		transparency = true,
 		styles = {
 			comments = "italic",
@@ -34,7 +34,10 @@ catppuccino.setup(
 			telescope = true,
 			nvimtree = false,
 			which_key = true,
-			indent_blankline = true,
+			indent_blankline = {
+        enabled = true,
+        colored_indent_levels = true,
+      },
 			dashboard = false,
 			neogit = true,
 			vim_sneak = true,
