@@ -21,8 +21,8 @@ set $right l
 # workspace_layout tabbed # <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
-new_float normal
+default_border pixel 1
+default_floating_border normal
 
 # Hide borders
 hide_edge_borders none
@@ -198,14 +198,24 @@ workspace 10 output HDMI1
 
 bindsym $mod+x move workspace to output right
 
+# auto starting
+exec --no-startup-id setxkbmap us
+exec --no-startup-id xmodmap /home/arpangreat/dotfiles/i3/swap
+exec --no-startup-id picom
+exec --no-startup-id feh --bg-scale /home/arpangreat/dotfiles/wallpaper/sword4.png
+exec kitty
+exec dolphin
+exec brave
+
 # "assign [class="Alacritty"] $ws1
 assign [class="kitty"] $ws1
 assign [class="dolphin"] $ws2
-assign [class="Firefox"] $ws3 
-assign [class="Google-chrome"] $ws3
+# assign [class="Firefox"] $ws3 
+# assign [class="Google-chrome"] $ws3
 assign [class="Brave"] $ws3
 # assign [class="Org.gnome.Characters"] $ws9
 assign [class="vlc"] $ws10
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -327,16 +337,6 @@ for_window [instance="cheat"] move scratchpad
 for_window [instance="cheat"] border pixel 5
 exec --no-startup-id kitty --name cheat -e ~/dotfiles/i3/./cheat
 
-exec --no-startup-id setxkbmap us
-exec --no-startup-id xmodmap /home/arpangreat/dotfiles/i3/swap
-#exec alacritty
-exec $term
-exec dolphin
-# exec firefox
-exec brave
-# exec vlc
-exec --no-startup-id picom
-exec --no-startup-id feh --bg-scale /home/arpangreat/dotfiles/wallpaper/sword4.png
 # exec_always --no-startup-id /home/arpangreat/.config/polybar/launch.sh
 # Plasma
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
