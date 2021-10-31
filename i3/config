@@ -63,7 +63,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-exec --no-startup-id xrandr --output HDMI1 --left-of eDP1 --auto
+exec --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
 # exec --no-startup-id feh --bg-scale ~/dotfiles/wallpaper/HD wallpaper_ man near Torii gate wallpaper, gray temple wallpaper, landscape.jpeg
 
 
@@ -190,11 +190,9 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Workspaces
-workspace 1 output HDMI1
-workspace 2 output eDP1
-workspace 3 output eDP1
-workspace 9 output HDMI1
-workspace 10 output HDMI1
+workspace $ws1 output HDMI1
+workspace $ws2 output eDP1
+workspace $ws3 output eDP1
 
 bindsym $mod+x move workspace to output right
 
@@ -212,7 +210,7 @@ assign [class="kitty"] $ws1
 assign [class="dolphin"] $ws2
 # assign [class="Firefox"] $ws3 
 # assign [class="Google-chrome"] $ws3
-assign [class="Brave"] $ws3
+assign [class="Brave-browser"] $ws3
 # assign [class="Org.gnome.Characters"] $ws9
 assign [class="vlc"] $ws10
 
@@ -336,18 +334,3 @@ for_window [instance="cheat"] resize set 1000 1000
 for_window [instance="cheat"] move scratchpad
 for_window [instance="cheat"] border pixel 5
 exec --no-startup-id kitty --name cheat -e ~/dotfiles/i3/./cheat
-
-# exec_always --no-startup-id /home/arpangreat/.config/polybar/launch.sh
-# Plasma
-for_window [title="Desktop — Plasma"] kill; floating enable; border none
-for_window [class="plasmashell"] floating enable;
-for_window [class="Plasma"] floating enable; border none
-for_window [title="plasma-desktop"] floating enable; border none
-for_window [title="win7"] floating enable; border none
-for_window [class="krunner"] floating enable; border none
-for_window [class="Kmix"] floating enable; border none
-for_window [class="Klipper"] floating enable; border none
-for_window [class="Plasmoidviewer"] floating enable; border none
-for_window [class="(?i)*nextcloud*"] floating disable
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
-no_focus [class="plasmashell" window_type="notification"] 
