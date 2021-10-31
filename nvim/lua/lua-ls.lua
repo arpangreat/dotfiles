@@ -17,8 +17,6 @@ end
 local sumneko_root_path = "/home/" .. USER .. "/dotfiles/nvim/lua-language-server"
 local sumneko_binary = sumneko_root_path .. "/bin/" .. system_name .. "/lua-language-server"
 local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
 
 local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(buffer, "omnifunc", "v:lua.vim.lsp.omnifunc")
@@ -94,7 +92,7 @@ require'lspconfig'.sumneko_lua.setup {
       workspace = {
         -- Make the server aware of Neovim runtime files
         library = vim.api.nvim_get_runtime_file("", true),
-        maxPreload = 2000,
+        maxPreload = 10000,
         checkThirdParty = false,
         preloadFileSize = 10000,
       },
