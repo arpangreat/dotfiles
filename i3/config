@@ -199,7 +199,7 @@ workspace 10 output HDMI1
 bindsym $mod+x move workspace to output right
 
 # "assign [class="Alacritty"] $ws1
-assign [class="Kitty"] $ws1
+assign [class="kitty"] $ws1
 assign [class="dolphin"] $ws2
 assign [class="Firefox"] $ws3 
 assign [class="Google-chrome"] $ws3
@@ -328,7 +328,7 @@ for_window [instance="cheat"] border pixel 5
 exec --no-startup-id kitty --name cheat -e ~/dotfiles/i3/./cheat
 
 exec --no-startup-id setxkbmap us
-exec --no-startup-id xmodmap ~/dotfiles/i3/swap
+exec --no-startup-id xmodmap /home/arpangreat/dotfiles/i3/swap
 #exec alacritty
 exec $term
 exec dolphin

@@ -299,3 +299,4 @@ source /home/arpangreat/.zprofile
 fpath=(~/.zsh.d/ $fpath)
 fpath=(~/.zsh.d/ $fpath)
 fpath=(~/.zsh.d/ $fpath)
+hfetch | lolcat
