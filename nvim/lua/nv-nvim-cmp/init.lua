@@ -40,6 +40,7 @@ cmp.setup {
 
   documentation = {
     border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    -- winhighlight = { "Normal:#51A266", "NormalNC:#0C0C0C" },
   },
 
   sources = cmp.config.sources({
