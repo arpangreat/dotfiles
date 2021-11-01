@@ -218,9 +218,9 @@ vim.api.nvim_set_keymap('n', '<LocalLeader>k', ':m .-2<CR>==', { noremap = true,
 -- Realising useless mappings
 vim.api.nvim_set_keymap('n', 'Q', ':wq!<CR>', { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap('n', 'M', 'm', { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap('x', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap('o', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap('v', 's', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('x', '<Leader>s', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('o', '<Leader>s', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap('v', '<Leader>s', ':s//g<Left><Left>', { noremap = true, silent = false, expr = false })
 
 -- Bufferline
 vim.api.nvim_set_keymap('n', '<Leader>1', ':BufferLineGoToBuffer 1<CR>', { noremap = true, silent = false, expr = false })
