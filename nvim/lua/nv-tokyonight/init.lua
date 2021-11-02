@@ -1,6 +1,8 @@
 -- Example config in Lua
 vim.g.tokyonight_terminal_colors = true
 vim.g.tokyonight_style = "storm"
+vim.g.tokyonight_italic_comments = true
+vim.g.tokyonight_italic_keywords = true
 vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_italic_variables = true
 vim.g.tokyonight_transparent = true
@@ -12,5 +14,4 @@ vim.g.tokyonight_dark_float = false
 
 -- Change the "hint" color to the "orange" color, and make the "error" color bright red
 vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
-
 vim.cmd[[colorscheme tokyonight]]

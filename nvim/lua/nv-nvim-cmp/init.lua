@@ -13,6 +13,7 @@ cmp.setup {
       require('luasnip').lsp_expand(args.body)
     end,
   },
+
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
     ['<C-n>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
@@ -40,7 +41,7 @@ cmp.setup {
 
   documentation = {
     border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-    -- winhighlight = { "Normal:#51A266", "NormalNC:#0C0C0C" },
+    -- winhighlight = "Normal:MyGreen, NormalNC:MyGreenNC",
   },
 
   sources = cmp.config.sources({
