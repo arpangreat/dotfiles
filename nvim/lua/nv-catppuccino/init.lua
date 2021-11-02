@@ -1,9 +1,9 @@
-local catppuccino = require("catppuccino")
+local katppuccino = require("katppuccino")
 
 -- configure it
-catppuccino.setup(
+katppuccino.setup(
     {
-		colorscheme = "dark_catppuccino",
+		colorscheme = "dark_katppuccino",
 		transparency = true,
 		styles = {
 			comments = "italic",
@@ -50,5 +50,4 @@ catppuccino.setup(
 )
 
 -- load it
-catppuccino.load()
-
+katppuccino.load()
