@@ -77,9 +77,9 @@ require'lspconfig'.vuels.setup{ on_attach = on_attach, capabilities = capabiliti
 require'lspconfig'.clangd.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.gopls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.zls.setup{ on_attach = on_attach, capabilities = capabilities }
-require'lspconfig'.bashls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.bashls.setup{ on_attach = on_attach }
 require'lspconfig'.ocamlls.setup{ on_attach = on_attach, capabilities = capabilities }
-require'lspconfig'.vimls.setup{ on_attach = on_attach, capabilities = capabilities }
+require'lspconfig'.vimls.setup{ on_attach = on_attach }
 require'lspconfig'.cssls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.dockerls.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.graphql.setup{ on_attach = on_attach, capabilities = capabilities }
