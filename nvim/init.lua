@@ -35,6 +35,7 @@ require('nv-ale')
 -- require('nv-nebulous')
 -- require('nv-onedark')
 require('nv-tokyonight')
+-- require('nv-nightfly')
 -- require('nv-nightfox')
 -- require('nv-catppuccino')
 -- require('nv-oceanic-material')
@@ -83,6 +84,7 @@ vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
 vim.cmd("let test#strategy = 'neovim'")
 vim.cmd("let test#neovim#term_position = 'vertical'")
+vim.cmd("highlight NormalFloat guifg=cyan")
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
