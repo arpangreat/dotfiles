@@ -72,8 +72,14 @@ return require('packer').startup(function(use)
   use 'junegunn/fzf.vim'
   use 'airblade/vim-gitgutter'
   -- use 'preservim/nerdcommenter'
-  use 'b3nj5m1n/kommentary'
+  -- use 'b3nj5m1n/kommentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
   use 'folke/todo-comments.nvim'
   -- use '/home/arpangreat/todo-comments.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
