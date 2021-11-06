@@ -125,6 +125,7 @@ return require('packer').startup(function(use)
       "hrsh7th/cmp-vsnip",
       "saadparwaiz1/cmp_luasnip",
       "petertriho/cmp-git",
+      "arpangreat/cmp-npm-tutorial"
 
     }
   }
