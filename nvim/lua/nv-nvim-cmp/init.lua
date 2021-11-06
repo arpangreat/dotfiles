@@ -51,7 +51,6 @@ cmp.setup {
     { name = 'treesitter' },
     { name = 'nvim_lua' },
     { name = 'cmp_git' },
-    { name = 'npm' }
     -- { name = 'vsnip' }
   }),
 

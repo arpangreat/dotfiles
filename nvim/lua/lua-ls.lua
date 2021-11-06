@@ -33,6 +33,10 @@ local on_attach = function(client, bufnr)
      augroup END]], true)
   end
 
+  vim.api.nvim_exec([[
+    autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
+  ]], true)
+
 
   -- require'completion'.on_attach(client, bufnr)
 
@@ -71,8 +75,8 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 require'lspconfig'.sumneko_lua.setup {
-    cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
-    settings = {
+  cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
+  settings = {
     Lua = {
       runtime = {
         -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
@@ -98,6 +102,6 @@ require'lspconfig'.sumneko_lua.setup {
       },
     },
   },
-    on_attach = on_attach,
-    capabilities = capabilities,
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
