@@ -100,6 +100,8 @@ return require('packer').startup(function(use)
   -- Language specific
   -- use 'tpope/vim-surround'
   use 'neovim/nvim-lspconfig'
+  -- LSP Extensions
+  use 'nvim-lua/lsp_extensions.nvim'
   use 'glepnir/lspsaga.nvim'
   use 'onsails/lspkind-nvim'
   use 'nvim-lua/completion-nvim'
@@ -125,8 +127,6 @@ return require('packer').startup(function(use)
       "hrsh7th/cmp-vsnip",
       "saadparwaiz1/cmp_luasnip",
       "petertriho/cmp-git",
-      "arpangreat/cmp-npm-tutorial"
-
     }
   }
   use 'kyazdani42/nvim-tree.lua'

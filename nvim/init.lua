@@ -71,7 +71,7 @@ require('nv-lsp-signatures')
 -- LuaSnip
 -- require('nv-LuaSnip')
 require("luasnip/loaders/from_vscode").lazy_load()
-require("cmp-npm-tutorial")
+-- require("cmp-npm-tutorial")
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")

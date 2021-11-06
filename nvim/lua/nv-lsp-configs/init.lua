@@ -18,6 +18,9 @@ local on_attach = function(client, bufnr)
      autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
      augroup END]], true)
   end
+  vim.api.nvim_exec([[
+    autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
+  ]], true)
 
   -- require'completion'.on_attach(client, bufnr)
 
@@ -69,9 +72,26 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
+-- use the same configuration you would use for `vim.lsp.diagnostic.on_publish_diagnostics`.
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  require('lsp_extensions.workspace.diagnostic').handler, {
+    signs = {
+      severity_limit = "Error",
+    }
+  }
+)
+
+-- Get the counts from your curreent workspace:
+local ws_errors = require('lsp_extensions.workspace.diagnostic').get_count(0, 'Error')
+local ws_hints = require('lsp_extensions.workspace.diagnostic').get_count(0, 'Hint')
+
+-- Set the qflist for the current workspace
+--  For more information, see `:help vim.lsp.diagnostic.set_loc_list()`, since this has some of the same configuration.
+-- require('lsp_extensions.workspace.diagnostic').set_qf_list()
+
 vim.cmd("let g:rustfmt_autosave = 1")
 
-vim.cmd("let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']")
+-- vim.cmd("let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']")
 require'lspconfig'.tsserver.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.vuels.setup{ on_attach = on_attach, capabilities = capabilities }
 require'lspconfig'.clangd.setup{ on_attach = on_attach, capabilities = capabilities }
