@@ -11,175 +11,174 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+vim.cmd([[packadd packer.nvim]])
 -- Only if your version of Neovim doesn't have https://github.com/neovim/neovim/pull/12632 merged
 -- vim._update_package_paths()
 
-return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+return require("packer").startup(function(use)
+	-- Packer can manage itself
+	use("wbthomason/packer.nvim")
 
+	-- Lazy loading:
+	-- Load on specific commands
+	use({ "tpope/vim-dispatch", opt = true, cmd = { "Dispatch", "Make", "Focus", "Start" } })
 
-  -- Lazy loading:
-  -- Load on specific commands
-  use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
+	-- Also run code after load (see the "config" key)
+	use({
+		"w0rp/ale",
+		ft = { "sh", "zsh", "bash", "c", "cpp", "cmake", "html", "markdown", "racket", "vim", "tex" },
+		cmd = "ALEEnable",
+		config = "vim.cmd[[ALEEnable]]",
+	})
 
+	-- Local plugins can be included
+	-- use '~/projects/personal/hover.nvim'
 
-  -- Also run code after load (see the "config" key)
-  use {
-    'w0rp/ale',
-    ft = {'sh', 'zsh', 'bash', 'c', 'cpp', 'cmake', 'html', 'markdown', 'racket', 'vim', 'tex'},
-    cmd = 'ALEEnable',
-    config = 'vim.cmd[[ALEEnable]]'
-  }
+	-- Plugins can have post-install/update hooks
+	-- use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
 
-  -- Local plugins can be included
-  -- use '~/projects/personal/hover.nvim'
+	-- Post-install/update hook with neovim command
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
-  -- Plugins can have post-install/update hooks
-  -- use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
+	-- Post-install/update hook with call of vimscript function with argument
+	-- use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
 
-  -- Post-install/update hook with neovim command
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	-- Use specific branch, dependency and run lua file after load
+	use({
+		"glepnir/galaxyline.nvim",
+		branch = "main",
+		requires = { "kyazdani42/nvim-web-devicons" },
+	})
 
-  -- Post-install/update hook with call of vimscript function with argument
-  -- use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
+	-- Use dependency and run lua function after load
+	use({
+		"lewis6991/gitsigns.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 
-  -- Use specific branch, dependency and run lua file after load
-  use {
-    'glepnir/galaxyline.nvim', branch = 'main',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
+	-- You can specify multiple plugins in a single call
+	use({ "tjdevries/colorbuddy.vim" })
 
-  -- Use dependency and run lua function after load
-  use {
-    'lewis6991/gitsigns.nvim',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    },
-  }
+	use("windwp/nvim-autopairs")
+	-- use 'jiangmiao/auto-pairs'
+	-- use 'tpope/vim-fugitive'
+	use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
+	use("sindrets/diffview.nvim")
+	use("rhysd/committia.vim")
+	use("junegunn/fzf")
+	use("junegunn/fzf.vim")
+	use("airblade/vim-gitgutter")
+	-- use 'preservim/nerdcommenter'
+	-- use 'b3nj5m1n/kommentary'
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
+	use("folke/todo-comments.nvim")
+	-- use '/home/arpangreat/todo-comments.nvim'
+	use("lukas-reineke/indent-blankline.nvim")
+	use("sainnhe/tmuxline.vim")
+	use("p00f/nvim-ts-rainbow")
+	-- use 'glepnir/indent-guides.nvim'
 
-  -- You can specify multiple plugins in a single call
-  use {'tjdevries/colorbuddy.vim'}
+	-- Colorscheme
+	use("tjdevries/gruvbuddy.nvim")
+	use("Yagua/nebulous.nvim")
+	use("marko-cerovac/material.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	use("folke/tokyonight.nvim")
+	use({ "Pocco81/Catppuccino.nvim", branch = "dev-remaster" })
+	use("EdenEast/nightfox.nvim")
+	use("bluz71/vim-nightfly-guicolors")
 
-  use 'windwp/nvim-autopairs'
-  -- use 'jiangmiao/auto-pairs'
-  -- use 'tpope/vim-fugitive'
-  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
-  use 'sindrets/diffview.nvim'
-  use 'rhysd/committia.vim'
-  use 'junegunn/fzf'
-  use 'junegunn/fzf.vim'
-  use 'airblade/vim-gitgutter'
-  -- use 'preservim/nerdcommenter'
-  -- use 'b3nj5m1n/kommentary'
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use {
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
-  }
-  use 'folke/todo-comments.nvim'
-  -- use '/home/arpangreat/todo-comments.nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'sainnhe/tmuxline.vim'
-  use 'p00f/nvim-ts-rainbow'
-  -- use 'glepnir/indent-guides.nvim'
-  
-  -- Colorscheme
-  use 'tjdevries/gruvbuddy.nvim'
-  use 'Yagua/nebulous.nvim'
-  use 'marko-cerovac/material.nvim'
-  use 'norcalli/nvim-colorizer.lua'
-  use 'folke/tokyonight.nvim'
-  use {"Pocco81/Catppuccino.nvim", branch = 'dev-remaster'}
-  use 'EdenEast/nightfox.nvim'
-  use 'bluz71/vim-nightfly-guicolors'
-
-  -- Language specific
-  -- use 'tpope/vim-surround'
-  use 'neovim/nvim-lspconfig'
-  -- LSP Extensions
-  -- use 'nvim-lua/lsp_extensions.nvim'
-  use 'glepnir/lspsaga.nvim'
-  use 'onsails/lspkind-nvim'
-  use 'nvim-lua/completion-nvim'
-  --[[ use 'steelsojka/completion-buffers'
+	-- Language specific
+	-- use 'tpope/vim-surround'
+	use("neovim/nvim-lspconfig")
+	-- LSP Extensions
+	-- use 'nvim-lua/lsp_extensions.nvim'
+	use("glepnir/lspsaga.nvim")
+	use("onsails/lspkind-nvim")
+	use("nvim-lua/completion-nvim")
+	--[[ use 'steelsojka/completion-buffers'
   use 'nvim-treesitter/completion-treesitter'
   use 'albertoCaroM/completion-tmux' ]]
-  use 'nvim-lua/popup.nvim'
-  use 'norcalli/nvim_utils'
-  use 'windwp/nvim-ts-autotag'
-  use 'anott03/nvim-lspinstall'
-  use 'dart-lang/dart-vim-plugin'
-  -- use 'hrsh7th/nvim-compe'
-  use {
-    "hrsh7th/nvim-cmp",
-    requires = {
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/vim-vsnip",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-      "hrsh7th/cmp-cmdline",
-      "ray-x/cmp-treesitter",
-      "hrsh7th/cmp-nvim-lua",
-      "hrsh7th/cmp-vsnip",
-      "saadparwaiz1/cmp_luasnip",
-      "petertriho/cmp-git",
-    }
-  }
-  use 'kyazdani42/nvim-tree.lua'
-  use {'Shougo/defx.nvim', run = ':UpdateRemotePlugins'}
+	use("nvim-lua/popup.nvim")
+	use("norcalli/nvim_utils")
+	use("windwp/nvim-ts-autotag")
+	use("anott03/nvim-lspinstall")
+	use("dart-lang/dart-vim-plugin")
+	-- use 'hrsh7th/nvim-compe'
+	use({
+		"hrsh7th/nvim-cmp",
+		requires = {
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/vim-vsnip",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
+			"ray-x/cmp-treesitter",
+			"hrsh7th/cmp-nvim-lua",
+			"hrsh7th/cmp-vsnip",
+			"saadparwaiz1/cmp_luasnip",
+			"petertriho/cmp-git",
+		},
+	})
+	use("kyazdani42/nvim-tree.lua")
+	use({ "Shougo/defx.nvim", run = ":UpdateRemotePlugins" })
 
-  -- Vim Only
-  use 'nvim-treesitter/playground'
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'},
-     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
-    }
-  }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
-  use 'nvim-telescope/telescope-github.nvim'
-  use 'nvim-telescope/telescope-frecency.nvim'
-  use 'nvim-telescope/telescope-symbols.nvim'
-  use 'nvim-telescope/telescope-z.nvim'
-  use 'tami5/sql.nvim'
-  use 'nvim-telescope/telescope-media-files.nvim'
-  use {
-    "nvim-telescope/telescope-arecibo.nvim",
-    rocks = {"openssl", "lua-http-parser"}
-  }
-  use 'tjdevries/nlua.nvim'
-  use 'tjdevries/lsp_extensions.nvim'
-  use 'ray-x/lsp_signature.nvim'
-  use 'tjdevries/cyclist.vim'
-  use 'norcalli/snippets.nvim'
-  use 'L3MON4D3/LuaSnip'
-  use 'hrsh7th/vim-vsnip'
-  use 'hrsh7th/vim-vsnip-integ'
-  use 'rafamadriz/friendly-snippets'
-  use 'ryanoasis/vim-devicons'
-  use 'rust-lang/rust.vim'
-  use 'glepnir/dashboard-nvim'
-  use 'akinsho/nvim-bufferline.lua'
-  -- use 'kshenoy/vim-signature'
-  -- use 'tpope/vim-git'
-  use 'liuchengxu/vim-which-key'
-  -- use 'folke/which-key.nvim'
-  -- use 'SirVer/ultisnips'
-  use 'honza/vim-snippets'
-  use 'mbbill/undotree'
-  -- use 'christoomey/vim-tmux-navigator'
-  use 'voldikss/vim-floaterm'
-  -- use 'tjdevries/sg.nvim'
-  -- use 'mhartington/formatter.nvim'
-  use 'ckipp01/stylua-nvim'
+	-- Vim Only
+	use("nvim-treesitter/playground")
+	use({
+		"nvim-telescope/telescope.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
+		},
+	})
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use("nvim-telescope/telescope-github.nvim")
+	use("nvim-telescope/telescope-frecency.nvim")
+	use("nvim-telescope/telescope-symbols.nvim")
+	use("nvim-telescope/telescope-z.nvim")
+	use("tami5/sql.nvim")
+	use("nvim-telescope/telescope-media-files.nvim")
+	use({
+		"nvim-telescope/telescope-arecibo.nvim",
+		rocks = { "openssl", "lua-http-parser" },
+	})
+	use("tjdevries/nlua.nvim")
+	use("tjdevries/lsp_extensions.nvim")
+	use("ray-x/lsp_signature.nvim")
+	use("tjdevries/cyclist.vim")
+	use("norcalli/snippets.nvim")
+	use("L3MON4D3/LuaSnip")
+	use("hrsh7th/vim-vsnip")
+	use("hrsh7th/vim-vsnip-integ")
+	use("rafamadriz/friendly-snippets")
+	-- use("ryanoasis/vim-devicons")
+	use("rust-lang/rust.vim")
+	use("glepnir/dashboard-nvim")
+	use("akinsho/nvim-bufferline.lua")
+	-- use 'kshenoy/vim-signature'
+	-- use 'tpope/vim-git'
+	use("liuchengxu/vim-which-key")
+	-- use 'folke/which-key.nvim'
+	-- use 'SirVer/ultisnips'
+	use("honza/vim-snippets")
+	use("mbbill/undotree")
+	-- use 'christoomey/vim-tmux-navigator'
+	use("voldikss/vim-floaterm")
+	-- use 'tjdevries/sg.nvim'
+	-- use 'mhartington/formatter.nvim'
+	use("ckipp01/stylua-nvim")
 
+	-- My Plugins
+	use("arpangreat/treesitter-unit-plugin")
 
-  -- My Plugins
-  use 'arpangreat/treesitter-unit-plugin'
-
--- use 'govim/govim'
+	-- use 'govim/govim'
 end)
