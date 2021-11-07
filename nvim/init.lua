@@ -11,22 +11,22 @@
 --========================================================================================
 -- vim.cmd("source /home/arpangreat/dotfiles/nvim/my-vim/plugins.vim")
 -- Lua file
-require('plugins')
-require('arpangreat')
-require('settings')
+require("plugins")
+require("arpangreat")
+require("settings")
 -- require('nv-compe')
-require('lua-ls')
+require("lua-ls")
 -- require('nvcoder')
-require('nv-galaxyline')
-require('snippets-nvim')
-require('nv-treesitter')
-require('nv-telescope')
-require('nv-nerdcommenter')
+require("nv-galaxyline")
+require("snippets-nvim")
+require("nv-treesitter")
+require("nv-telescope")
+require("nv-nerdcommenter")
 -- require('nv-todo-comment')
 -- require('nv-autopairs')
-require('nv-windwp-autopairs')
-require('nv-autotag')
-require('nv-ale')
+require("nv-windwp-autopairs")
+require("nv-autotag")
+require("nv-ale")
 -- require('nv-embark')
 -- require('nv-tokyodark')
 -- require('nv-onebuddy')
@@ -34,42 +34,43 @@ require('nv-ale')
 -- require('nv-material')
 -- require('nv-nebulous')
 -- require('nv-onedark')
-require('nv-tokyonight')
+require("nv-tokyonight")
 -- require('nv-nightfly')
 -- require('nv-nightfox')
 -- require('nv-catppuccino')
 -- require('nv-oceanic-material')
 -- require('nv-gruvbox-flat')
 -- require('nv-gruvbox-material')
-require('nv-fzf')
+require("nv-fzf")
 -- require('nv-indentline')
-require('nv-indent-blankline')
+require("nv-indent-blankline")
 -- require('nv-indent-guides')
-require('nv-nvim-devicons')
-require('nv-bufferlines')
-require('mappings')
+require("nv-nvim-devicons")
+require("nv-bufferlines")
+require("mappings")
 -- require('nv-kommentary')
 require("nv-comment-nvim")
 -- require('nv-defx')
 -- require('nv-startify')
-require('nv-dashboard')
+require("nv-dashboard")
 -- require('nv-airline')
-require('nv-nvim-cmp')
-require('nv-lspkind')
-require('nv-rainbow')
-require('nv-gitsigns')
-require('nv-neogit')
-require('nv-diffview')
+require("nv-nvim-cmp")
+require("nv-lspkind")
+require("nv-rainbow")
+require("nv-gitsigns")
+require("nv-neogit")
+require("nv-diffview")
 -- require('nv-nvim-tree')
-require('nv-lsp-configs')
-require('nv-lspsaga')
-require('nv-symbols-outline')
-require('nv-todo-comment')
-require('nv-lsp-signatures')
+require("nv-lsp-configs")
+require("nv-lspsaga")
+require("nv-symbols-outline")
+require("nv-todo-comment")
+require("nv-lsp-signatures")
+-- require('nv-formatter')
 -- require('nv-which-key')
 -- require('nv-vsnip')
 -- LuaSnip
--- require('nv-LuaSnip')
+require("nv-LuaSnip")
 require("luasnip/loaders/from_vscode").lazy_load()
 -- require("cmp-npm-tutorial")
 
@@ -92,11 +93,11 @@ vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 vim.g.which_key_centered = 1
 -- vim.g.snippets = "luasnip"
-vim.g.committia_use_singlecolumn = 'false'
+vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
 
-vim.g.CommandTCancelMap = '<C-x>'
+vim.g.CommandTCancelMap = "<C-x>"
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
 vim.cmd("let g:gitgutter_signs = 0")
@@ -121,23 +122,36 @@ if (empty($TMUX))
 endif
 ]])
 
-require'nvim_utils'
-require'colorizer'.setup()
+require("nvim_utils")
+require("colorizer").setup()
 
-vim.api.nvim_exec([[
+vim.api.nvim_exec(
+	[[
 augroup highlight_yank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
 augroup END
-]], true)
+]],
+	true
+)
 
-vim.api.nvim_exec([[
+vim.api.nvim_exec(
+	[[
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
-]], true)
+]],
+	true
+)
+
+vim.api.nvim_exec(
+	[[
+  autocmd BufWritePre *.lua :lua require("stylua-nvim").format_file()
+]],
+	true
+)
 
 -- vim.api.nvim_exec([[
 --   augroup Format
