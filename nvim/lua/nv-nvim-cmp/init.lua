@@ -134,4 +134,4 @@ require("cmp_git").setup({
 })
 
 -- you need setup cmp first put this after cmp.setup()
-cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))
