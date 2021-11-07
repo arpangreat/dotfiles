@@ -1,55 +1,56 @@
-local function prequire(...)
-local status, lib = pcall(require, ...)
-if (status) then return lib end
-    return nil
-end
+-- luasnip modules
+local ls = require("luasnip")
+local snip = ls.snippet
+local sn = ls.snippet_node
+local isn = ls.indent_snippet_node
+local t = ls.text_node
+local i = ls.insert_node
+local f = ls.function_node
+local c = ls.choice_node
+local d = ls.dynamic_node
+local r = require("luasnip.extras").rep
+local events = require("luasnip.util.events")
+local types = require("luasnip.util.types")
 
-local luasnip = prequire('luasnip')
--- local luasnip = require("luasnip")
-
-luasnip.config.set_config({
-  history = true,
-  -- Update more often, :h events for more info.
-  updateevents = "TextChanged,TextChangedI",
+-- Every unspecified option will be set to the default.
+ls.config.set_config({
+	history = true,
+	-- Update more often, :h events for more info.
+	updateevents = "TextChanged,TextChangedI",
+	ext_opts = {
+		[types.choiceNode] = {
+			active = {
+				virt_text = { { "choiceNode", "Comment" } },
+			},
+		},
+	},
+	-- treesitter-hl has 100, use something higher (default is 200).
+	ext_base_prio = 300,
+	-- minimal increase in priority.
+	ext_prio_increase = 1,
+	enable_autosnippets = true,
 })
 
-local t = function(str)
-    return vim.api.nvim_replace_termcodes(str, true, true, true)
-end
-
-local check_back_space = function()
-    local col = vim.fn.col('.') - 1
-    if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
-        return true
-    else
-        return false
-    end
-end
-
-_G.tab_complete = function()
-    if vim.fn.pumvisible() == 1 then
-        return t "<C-n>"
-    elseif luasnip and luasnip.expand_or_jumpable() then
-        return t "<Plug>luasnip-expand-or-jump"
-    elseif check_back_space() then
-        return t "<Tab>"
-    else
-        return vim.fn['compe#complete']()
-    end
-end
-_G.s_tab_complete = function()
-    if vim.fn.pumvisible() == 1 then
-        return t "<C-p>"
-    elseif luasnip and luasnip.jumpable(-1) then
-        return t "<Plug>luasnip-jump-prev"
-    else
-        return t "<S-Tab>"
-    end
-end
-
-vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("i", "<C-E>", "<Plug>luasnip-next-choice", {})
-vim.api.nvim_set_keymap("s", "<C-E>", "<Plug>luasnip-next-choice", {})
+ls.snippets = {
+	lua = {
+		snip({
+			trig = "nvmap",
+			name = "nvmap",
+			dscr = "nvim_set_keymap snippet",
+		}, {
+			t('vim.api.nvim_set_keymap("'),
+			i(1, "n"),
+			t('" , "'),
+			i(2, "trigger"),
+			t('" , "'),
+			i(3, "command..."),
+			t('" , { noremap = '),
+			i(4, "true,"),
+			t(" silet = "),
+			i(5, "false,"),
+			t(" expr = "),
+			i(0, "false"),
+			t(" })"),
+		}),
+	},
+}

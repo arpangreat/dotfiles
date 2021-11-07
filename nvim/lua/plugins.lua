@@ -101,7 +101,7 @@ return require('packer').startup(function(use)
   -- use 'tpope/vim-surround'
   use 'neovim/nvim-lspconfig'
   -- LSP Extensions
-  use 'nvim-lua/lsp_extensions.nvim'
+  -- use 'nvim-lua/lsp_extensions.nvim'
   use 'glepnir/lspsaga.nvim'
   use 'onsails/lspkind-nvim'
   use 'nvim-lua/completion-nvim'
@@ -174,6 +174,9 @@ return require('packer').startup(function(use)
   -- use 'christoomey/vim-tmux-navigator'
   use 'voldikss/vim-floaterm'
   -- use 'tjdevries/sg.nvim'
+  -- use 'mhartington/formatter.nvim'
+  use 'ckipp01/stylua-nvim'
+
 
   -- My Plugins
   use 'arpangreat/treesitter-unit-plugin'
