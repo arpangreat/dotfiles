@@ -40,6 +40,8 @@ require("telescope").setup({
 		mappings = {
 			i = {
 				["<C-h>"] = action_generate.which_key(),
+				["<C-m>"] = actions.toggle_selection,
+				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 			},
 		},
 		-- file_sorter = require'telescope.sorters'.get_fuzzy_file,
