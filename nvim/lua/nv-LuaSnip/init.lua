@@ -49,8 +49,9 @@ ls.snippets = {
 			t(" silet = "),
 			i(5, "false,"),
 			t(" expr = "),
-			i(0, "false"),
+			i(6, "false"),
 			t(" })"),
+			i(0),
 		}),
 	},
 }
