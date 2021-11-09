@@ -75,9 +75,6 @@ return require("packer").startup(function(use)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use({
 		"numToStr/Comment.nvim",
-		config = function()
-			require("Comment").setup()
-		end,
 	})
 	use("folke/todo-comments.nvim")
 	-- use '/home/arpangreat/todo-comments.nvim'
