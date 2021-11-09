@@ -43,7 +43,8 @@ cmp.setup({
 	},
 
 	documentation = {
-		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+		-- border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+		border = "double",
 		winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
 	},
 
@@ -64,14 +65,14 @@ cmp.setup({
 		},
 	}),
 
-	--[[ -- Use cmdline & path source for ':'.
+	-- Use cmdline & path source for ':'.
 	cmp.setup.cmdline(":", {
 		sources = cmp.config.sources({
 			{ name = "path" },
 		}, {
 			{ name = "cmdline" },
 		}),
-	}), --]]
+	}),
 
 	formatting = {
 		format = function(entry, vim_item)
