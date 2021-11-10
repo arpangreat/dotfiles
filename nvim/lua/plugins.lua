@@ -39,6 +39,7 @@ return require("packer").startup(function(use)
 
 	-- Post-install/update hook with neovim command
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use("nvim-treesitter/nvim-treesitter-textobjects")
 
 	-- Post-install/update hook with call of vimscript function with argument
 	-- use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
@@ -71,7 +72,7 @@ return require("packer").startup(function(use)
 	use("junegunn/fzf.vim")
 	use("airblade/vim-gitgutter")
 	-- use 'preservim/nerdcommenter'
-	-- use 'b3nj5m1n/kommentary'
+	use("b3nj5m1n/kommentary")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use({
 		"numToStr/Comment.nvim",
