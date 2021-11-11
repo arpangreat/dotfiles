@@ -111,13 +111,12 @@ require("lspconfig").sumneko_lua.setup({
 			},
 		},
 	},
-			commands = {
-				Format = {
-					function()
-						require("stylua-nvim").format_file()
-					end,
-				},
-			},
-	on_attach = on_attach,
+	commands = {
+		Format = {
+			function()
+				require("stylua-nvim").format_file()
+			end,
+		},
+	},
 	capabilities = capabilities,
 })
