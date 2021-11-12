@@ -70,6 +70,7 @@ require("nv-lsp-signatures")
 -- require('nv-which-key')
 -- require('nv-vsnip')
 -- LuaSnip
+require("utils")
 require("nv-LuaSnip")
 require("luasnip/loaders/from_vscode").lazy_load()
 -- require("cmp-npm-tutorial")

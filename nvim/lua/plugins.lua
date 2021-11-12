@@ -25,7 +25,7 @@ return require("packer").startup(function(use)
 
 	-- Also run code after load (see the "config" key)
 	use({
-		"w0rp/ale",
+		"dense-analysis/ale",
 		ft = { "sh", "zsh", "bash", "c", "cpp", "cmake", "html", "markdown", "racket", "vim", "tex" },
 		cmd = "ALEEnable",
 		config = "vim.cmd[[ALEEnable]]",
