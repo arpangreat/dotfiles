@@ -76,7 +76,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>tf",
-	":lua require('telescope.builtin').find_files()<CR>",
+	":lua require('telescope.builtin').file_browser()<CR>",
 	{ noremap = true, silent = false }
 )
 vim.api.nvim_set_keymap(
