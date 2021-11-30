@@ -51,6 +51,11 @@ return require("packer").startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons" },
 	})
 
+	use({
+		"SmiteshP/nvim-gps",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
+
 	-- Use dependency and run lua function after load
 	use({
 		"lewis6991/gitsigns.nvim",
@@ -109,7 +114,7 @@ return require("packer").startup(function(use)
 	use("norcalli/nvim_utils")
 	use("windwp/nvim-ts-autotag")
 	use("anott03/nvim-lspinstall")
-	use("dart-lang/dart-vim-plugin")
+	-- use("dart-lang/dart-vim-plugin")
 	-- use 'hrsh7th/nvim-compe'
 	use({
 		"hrsh7th/nvim-cmp",

@@ -53,9 +53,7 @@ require("Comment").setup({
 		-- call ts-context-commenstring to update what the comment should be at the
 		-- moment (particularly useful in JSX where you have lots of comment types
 		-- depending on file location)
-		if vim.bo.filetype ~= "lua" then
-			return require("ts_context_commentstring.internal").calculate_commentstring()
-		end
+		return require("ts_context_commentstring.internal").update_commentstring()
 	end,
 	-- Only calculate commentstring for tsx filetypes
 	---Post-hook, called after commenting is done
