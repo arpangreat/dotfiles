@@ -1,3 +1,10 @@
+local actions = require("telescope.actions")
+local action_generate = require("telescope.actions.generate")
+local action_state = require("telescope.actions.state")
+local action_set = require("telescope.actions.set")
+local action_utils = require("telescope.actions.utils")
+local action_mt = require("telescope.actions.mt")
+
 require("telescope").setup({
 	defaults = {
 		-- vimgrep_arguments = {
@@ -30,6 +37,14 @@ require("telescope").setup({
 			},
 			prompt_position = "top",
 		},
+		--[[ mappings = {
+			i = {
+				-- ["<CR>"] = actions.select_default,
+				["<C-h>"] = action_generate.which_key(),
+				["<C-m>"] = actions.toggle_selection + actions.move_selection_previous,
+				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+			},
+		}, ]]
 		-- file_sorter = require'telescope.sorters'.get_fuzzy_file,
 		file_ignore_patterns = {
 			"$HOME/dotfiles/nvim/jdt-language-server-latest/*",
