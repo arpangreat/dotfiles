@@ -25,13 +25,6 @@ local on_attach = function(client, bufnr)
 			true
 		)
 	end
-	vim.api.nvim_exec(
-		[[
-    autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
-  ]],
-		true
-	)
-
 	-- require'completion'.on_attach(client, bufnr)
 
 	--protocol.SymbolKind = { }
@@ -67,35 +60,55 @@ end
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities.textDocument.codeAction = {
+	dynamicRegistration = true,
+	codeActionLiteralSupport = {
+		codeActionKind = {
+			valueSet = (function()
+				local res = vim.tbl_values(vim.lsp.protocol.CodeActionKind)
+				table.sort(res)
+				return res
+			end)(),
+		},
+	},
+}
+
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Enable rust_analyzer
 nvim_lsp.rust_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
 
 -- Enable diagnostics
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-	virtual_text = true,
+vim.diagnostic.config({
+	virtual_text = false,
 	signs = true,
 	update_in_insert = true,
 })
 
--- use the same configuration you would use for `vim.lsp.diagnostic.on_publish_diagnostics`.
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-	require("lsp_extensions.workspace.diagnostic").handler,
-	{
-		signs = {
-			severity_limit = "Error",
-		},
-	}
-)
+-- define signcolumn lsp diagnostic icons
+local diagnostic_signs = { " ", " ", " ", " " }
+local diagnostic_severity_fullnames = { "Error", "Warning", "Hint", "Information" }
+local diagnostic_severity_shortnames = { "Error", "Warn", "Hint", "Info" }
 
--- Get the counts from your curreent workspace:
-local ws_errors = require("lsp_extensions.workspace.diagnostic").get_count(0, "Error")
-local ws_hints = require("lsp_extensions.workspace.diagnostic").get_count(0, "Hint")
+-- define diagnostic icons/highlights for signcolumn and other stuff
+for index, icon in ipairs(diagnostic_signs) do
+	local fullname = diagnostic_severity_fullnames[index]
+	local shortname = diagnostic_severity_shortnames[index]
 
--- Set the qflist for the current workspace
---  For more information, see `:help vim.lsp.diagnostic.set_loc_list()`, since this has some of the same configuration.
--- require('lsp_extensions.workspace.diagnostic').set_qf_list()
+	vim.fn.sign_define("DiagnosticSign" .. shortname, {
+		text = icon,
+		texthl = "Diagnostic" .. shortname,
+		linehl = "",
+		numhl = "",
+	})
+
+	vim.fn.sign_define("LspDiagnosticsSign" .. fullname, {
+		text = icon,
+		texthl = "LspDiagnosticsSign" .. fullname,
+		linehl = "",
+		numhl = "",
+	})
+end
 
 vim.cmd("let g:rustfmt_autosave = 1")
 

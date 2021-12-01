@@ -40,13 +40,6 @@ local on_attach = function(client, bufnr)
 		)
 	end
 
-	vim.api.nvim_exec(
-		[[
-    autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
-  ]],
-		true
-	)
-
 	-- require'completion'.on_attach(client, bufnr)
 
 	--protocol.SymbolKind = { }

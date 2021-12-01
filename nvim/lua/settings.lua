@@ -1,4 +1,4 @@
--- Sets 
+-- Sets
 -- Ignoptrecases
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -18,10 +18,10 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
-vim.opt.signcolumn="yes"
+vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 8
 vim.opt.showmode = false
-vim.opt.completeopt = {"menuone", "noselect", "noinsert"}
+vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
 vim.opt.hidden = true
 -- vim.opt.include
 vim.opt.display = "lastline"
@@ -39,7 +39,7 @@ vim.opt.termguicolors = true
 -- vim.opt.encodingvim.o.hidden = true
 vim.opt.include = ""
 vim.opt.display = "lastline"
-vim.opt.encoding="utf-8"
+vim.opt.encoding = "utf-8"
 -- vim.wopt.winblend = 100
 -- vim.api.nvim_exec([[set winblend=100]], true)
 -- Numbers
@@ -51,24 +51,24 @@ vim.opt.cursorlineopt = "both"
 
 -- Utils
 vim.opt.compatible = false
-vim.opt.mouse= vim.opt.mouse + 'a'
+vim.opt.mouse = vim.opt.mouse + "a"
 vim.opt.autoindent = true
 -- vim.opt.linebreak = true
 -- vim.opt.list = true
-vim.opt.listchars      = {
-  nbsp                 = '⦸',                              -- CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
-  extends              = '»',                              -- RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
-  precedes             = '«',                              -- LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
-  tab                  = '▷⋯',                             -- WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7) + MIDLINE HORIZONTAL ELLIPSIS (U+22EF, UTF-8: E2 8B AF)
-  trail                = '•',                              -- BULLET (U+2022, UTF-8: E2 80 A2)
+vim.opt.listchars = {
+	nbsp = "⦸", -- CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
+	extends = "»", -- RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
+	precedes = "«", -- LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
+	tab = "▷⋯", -- WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7) + MIDLINE HORIZONTAL ELLIPSIS (U+22EF, UTF-8: E2 8B AF)
+	trail = "•", -- BULLET (U+2022, UTF-8: E2 80 A2)
 }
 
-vim.opt.showbreak  = '↳ '
+vim.opt.showbreak = "↳ "
 vim.opt.backup = false
 -- vim.opt.undofile = false
 vim.cmd("set undofile")
-vim.opt.undodir='/home/arpangreat/.vim/undodir'
-vim.opt.backupdir="/home/arpangreat/.vim/backupdir"
+vim.opt.undodir = "/home/arpangreat/.vim/undodir"
+vim.opt.backupdir = "/home/arpangreat/.vim/backupdir"
 vim.opt.swapfile = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
