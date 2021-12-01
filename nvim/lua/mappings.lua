@@ -9,10 +9,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 vim.api.nvim_set_keymap("n", "<Leader>bg", ":highlight Normal guibg=none<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>h", ":wincmd h<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>j", ":wincmd j<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>k", ":wincmd k<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>l", ":wincmd l<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>pv",
@@ -285,6 +281,21 @@ vim.api.nvim_set_keymap("x", "<leader>ci", "<Plug>kommentary_visual_increase", {
 vim.api.nvim_set_keymap("n", "<leader>cdc", "<Plug>kommentary_line_decrease", {})
 vim.api.nvim_set_keymap("n", "<leader>cd", "<Plug>kommentary_motion_decrease", {})
 vim.api.nvim_set_keymap("x", "<leader>cd", "<Plug>kommentary_visual_decrease", {})
+
+-- Focus
+local focusmap = function(direction)
+	vim.api.nvim_set_keymap(
+		"n",
+		"<Leader>" .. direction,
+		":lua require'focus'.split_command('" .. direction .. "')<CR>",
+		{ silent = true }
+	)
+end
+-- Use `<Leader>h` to split the screen to the left, same as command FocusSplitLeft etc
+focusmap("h")
+focusmap("j")
+focusmap("k")
+focusmap("l")
 
 -- LspSaga
 vim.api.nvim_set_keymap(
