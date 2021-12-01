@@ -111,6 +111,7 @@ return require("packer").startup(function(use)
   use 'nvim-treesitter/completion-treesitter'
   use 'albertoCaroM/completion-tmux' ]]
 	use("nvim-lua/popup.nvim")
+	use("beauwilliams/focus.nvim")
 	use("norcalli/nvim_utils")
 	use("windwp/nvim-ts-autotag")
 	use("anott03/nvim-lspinstall")
