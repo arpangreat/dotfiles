@@ -75,14 +75,20 @@ capabilities.textDocument.codeAction = {
 
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+	virtual_text = {
+		prefix = "●", -- Could be '●', '▎', 'x'
+	},
+})
 -- Enable rust_analyzer
 nvim_lsp.rust_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
 
 -- Enable diagnostics
 vim.diagnostic.config({
-	virtual_text = false,
+	virtual_text = true,
 	signs = true,
 	update_in_insert = true,
+	undercurl = true,
 })
 
 -- define signcolumn lsp diagnostic icons

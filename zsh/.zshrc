@@ -241,6 +241,7 @@ bindkey '^X^R' fzf-history-widget-accept
 fpath=(~/.zsh.d/ $fpath)
 
 export GOPATH=$HOME/go
+export LLVM_ROOT=$HOME/llvm-project
 # source $HOME/tomnomnom/gf/gf-completion.zsh
 export PATH=$PATH:$GOPATH/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
