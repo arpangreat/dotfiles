@@ -6,7 +6,7 @@ vim.opt.smartcase = true
 -- Search
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
-vim.opt.inccommand = "split"
+vim.opt.inccommand = "nosplit"
 
 -- Vim UI
 vim.opt.smartindent = true

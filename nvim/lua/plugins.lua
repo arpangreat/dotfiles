@@ -22,6 +22,9 @@ return require("packer").startup(function(use)
 	-- Lazy loading:
 	-- Load on specific commands
 	use({ "tpope/vim-dispatch", opt = true, cmd = { "Dispatch", "Make", "Focus", "Start" } })
+	use("mfussenegger/nvim-dap")
+	use("jbyuki/one-small-step-for-vimkind")
+	use("theHamsta/nvim-dap-virtual-text")
 
 	-- Also run code after load (see the "config" key)
 	use({
