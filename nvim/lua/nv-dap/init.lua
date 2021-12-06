@@ -1,7 +1,7 @@
 local dap = require("dap")
 dap.adapters.cppdbg = {
 	type = "executable",
-	command = "/home/arpangreat/Downloads/extension/debugAdapters/bin/OpenDebugAD7",
+	command = "/home/arpangreat/extension/debugAdapters/bin/OpenDebugAD7",
 }
 
 dap.adapters.go = {
