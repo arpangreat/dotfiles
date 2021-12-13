@@ -101,6 +101,7 @@ return require("packer").startup(function(use)
 	use({ "Pocco81/Catppuccino.nvim", branch = "dev-remaster" })
 	use("EdenEast/nightfox.nvim")
 	use("bluz71/vim-nightfly-guicolors")
+	use("ray-x/starry.nvim")
 
 	-- Language specific
 	-- use 'tpope/vim-surround'
