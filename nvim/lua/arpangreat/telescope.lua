@@ -95,6 +95,7 @@ require("telescope").setup({
 			["show_http_headers"] = false,
 			["show_domain_icons"] = false,
 		},
+		file_browser = {},
 	},
 })
 

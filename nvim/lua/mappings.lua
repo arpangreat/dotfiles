@@ -72,7 +72,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>tf",
-	":lua require('telescope.builtin').file_browser()<CR>",
+	":lua require('telescope').extensions.file_browser.file_browser()<CR>",
 	{ noremap = true, silent = false }
 )
 vim.api.nvim_set_keymap(
@@ -135,6 +135,7 @@ vim.api.nvim_set_keymap(
 	":lua require('telescope').extensions.gh.issues()<CR>",
 	{ noremap = true, silent = false }
 )
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>tgp",
