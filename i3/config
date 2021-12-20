@@ -201,11 +201,11 @@ exec --no-startup-id setxkbmap us
 exec --no-startup-id xmodmap /home/arpangreat/dotfiles/i3/swap
 exec --no-startup-id picom
 exec --no-startup-id feh --bg-scale /home/arpangreat/dotfiles/wallpaper/sword4.png
-exec kitty
+exec $term
 exec dolphin
 exec brave
 
-# "assign [class="Alacritty"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="kitty"] $ws1
 assign [class="dolphin"] $ws2
 # assign [class="Firefox"] $ws3 
