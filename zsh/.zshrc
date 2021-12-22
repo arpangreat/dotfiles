@@ -126,7 +126,7 @@ alias ch='sudo chmod +x'
 alias chu='sudo chmod u+x'
 alias rd='sudo rmdir'
 alias rf='sudo rm -rf'
-alias g++-'g++ -std=c++20'
+alias g++-'g++ -std=c++2a'
 alias g='git'
 alias gc='git clone'
 alias gP='git pull'
@@ -177,6 +177,9 @@ bindkey -v
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
+source $HOME/dotfiles/zsh/always-tmux.sh
+
+ensure_tmux_is_running
 
 # eval "$(starship init zsh)"
 
