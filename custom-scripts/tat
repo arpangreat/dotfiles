@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Attach or create tmux session name the same as the current directory
+# by Chris Toomey
+
+session_name="$(basename "$PWD" | tr . -)"
+
+session_exits() {
+  tmux -u list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name"
+}
+
+not_in_tmux() {
+  [[ -z "$TMUX" ]]
+}
+
+if not_in_tmux; then
+  tmux -u new-session -As "$session_name"
+else 
+  if ! session_exits; then
+    (TMUX='' tmux -u new-session -Ad -s "$session_name")
+  fi
+  tmux -u switch-client -t "$session_name"
+fi
