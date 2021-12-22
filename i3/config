@@ -317,7 +317,7 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 700 500
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 5
-exec --no-startup-id kitty --name dropdown
+exec --no-startup-id kitty --name dropdown -e tmux new-session
  
 # Drop Down Calc Terminal
 bindsym $mod+a [instance="calc"] scratchpad show; [instance="calc"] move position center
