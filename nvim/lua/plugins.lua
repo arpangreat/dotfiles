@@ -98,7 +98,10 @@ return require("packer").startup(function(use)
 	use("marko-cerovac/material.nvim")
 	use("norcalli/nvim-colorizer.lua")
 	use("folke/tokyonight.nvim")
-	use({ "Pocco81/Catppuccino.nvim", branch = "dev-remaster" })
+	use({
+		"catppuccin/nvim",
+		as = "catppuccin",
+	})
 	use("EdenEast/nightfox.nvim")
 	use("bluz71/vim-nightfly-guicolors")
 	use("ray-x/starry.nvim")
