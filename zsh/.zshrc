@@ -247,6 +247,21 @@ bindkey '^X^R' fzf-history-widget-accept
 
 fpath=(~/.zsh.d/ $fpath)
 
+# zsh-vi-mode
+ZVM_CURSOR_STYLE_ENABLED=false
+
+function zle-keymap-select zle-line-init zle-line-finish
+{
+  case $KEYMAP in
+      vicmd)      print -n '\033[1 q';; # block cursor
+      viins|main) print -n '\033[5 q';; # line cursor
+  esac
+}
+
+zle -N zle-line-init
+zle -N zle-line-finish
+zle -N zle-keymap-select
+
 export GOPATH=$HOME/go
 export LLVM_ROOT=$HOME/llvm-project
 # source $HOME/tomnomnom/gf/gf-completion.zsh
