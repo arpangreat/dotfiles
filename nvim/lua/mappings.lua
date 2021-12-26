@@ -72,7 +72,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>tf",
-	":lua require('telescope').extensions.file_browser.file_browser()<CR>",
+	":lua require('telescope').extensions.file_browser.file_browser({ hidden = true })<CR>",
 	{ noremap = true, silent = false }
 )
 vim.api.nvim_set_keymap(
@@ -188,7 +188,7 @@ vim.api.nvim_set_keymap(
 
 -- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
 vim.api.nvim_set_keymap("n", "<Leader>gv", ":GitFiles<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>r", ":luafile %<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>rf", ":luafile %<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gp", ":Neogit<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>go", ":Neogit branch<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gs", ":Neogit stash<CR>", { noremap = true, silent = false })
@@ -545,4 +545,40 @@ vim.api.nvim_set_keymap(
 	"<leader>d?",
 	':lua local widgets=require"dap.ui.widgets";widgets.centered_float(widgets.scopes)<CR>',
 	{ noremap = true }
+)
+
+-- Rust Tools
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>ri",
+	":lua require('rust-tools.inlay_hints').toggle_inlay_hints()<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>rr",
+	":lua require('rust-tools.runnables').runnables()<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>rm",
+	":lua require'rust-tools.expand_macro'.expand_macro()<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>rh",
+	":lua require'rust-tools.hover_actions'.hover_actions({ hover_with_actions = true })<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>rc",
+	":lua require'rust-tools.crate_graph'.view_crate_graph(backend, output)<CR>",
+	{ noremap = true, silent = false, expr = false }
 )

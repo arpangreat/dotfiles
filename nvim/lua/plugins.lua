@@ -164,6 +164,7 @@ return require("packer").startup(function(use)
 		"nvim-telescope/telescope-arecibo.nvim",
 		rocks = { "openssl", "lua-http-parser" },
 	})
+	use({ "nvim-telescope/telescope-ui-select.nvim" })
 	use("tjdevries/nlua.nvim")
 	use("tjdevries/lsp_extensions.nvim")
 	use("ray-x/lsp_signature.nvim")
@@ -175,6 +176,7 @@ return require("packer").startup(function(use)
 	use("rafamadriz/friendly-snippets")
 	-- use("ryanoasis/vim-devicons")
 	use("rust-lang/rust.vim")
+	use("simrat39/rust-tools.nvim")
 	use("glepnir/dashboard-nvim")
 	use("akinsho/nvim-bufferline.lua")
 	-- use 'kshenoy/vim-signature'

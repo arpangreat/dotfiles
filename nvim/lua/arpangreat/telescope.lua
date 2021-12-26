@@ -96,6 +96,7 @@ require("telescope").setup({
 			["show_domain_icons"] = false,
 		},
 		file_browser = {},
+		ui_select = {},
 	},
 })
 
@@ -105,6 +106,7 @@ require("telescope").load_extension("frecency")
 require("telescope").load_extension("z")
 require("telescope").load_extension("media_files")
 require("telescope").load_extension("arecibo")
+require("telescope").load_extension("ui-select")
 
 local M = {}
 M.search_dotfiles = function()
