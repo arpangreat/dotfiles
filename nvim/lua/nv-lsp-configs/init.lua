@@ -76,7 +76,23 @@ capabilities.textDocument.codeAction = {
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Enable rust_analyzer
-nvim_lsp.rust_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
+nvim_lsp.rust_analyzer.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		["rust-analyzer"] = {
+			assist = {
+				importGranularity = "module",
+				importPrefix = "by_self",
+			},
+			cargo = { loadOutDirsFromCheck = true },
+			procMacro = { enable = true },
+			checkOnSave = {
+				command = "clippy",
+			},
+		},
+	},
+})
 
 -- Enable diagnostics
 vim.diagnostic.config({
