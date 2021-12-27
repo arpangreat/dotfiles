@@ -11,6 +11,7 @@ vim.opt.inccommand = "nosplit"
 -- Vim UI
 vim.opt.smartindent = true
 vim.opt.wrap = false
+vim.opt.title = true
 -- vim.opt.colorcolumn = '120'
 vim.opt.showcmd = false
 vim.opt.smarttab = true
