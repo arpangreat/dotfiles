@@ -4,6 +4,22 @@ vim.lsp.set_log_level("debug")
 local nvim_lsp = require("lspconfig")
 local protocol = require("vim.lsp.protocol")
 
+local lsp_highlight_document = function(client)
+	-- Set Autocommands conditional on server capabilities
+	if client.resolved_capabilities.document_highlight then
+		vim.api.nvim_exec(
+			[[
+      augroup lsp_document_highlight
+        autocmd! * <buffer>
+        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+      augroup END
+    ]],
+			true
+		)
+	end
+end
+
 -- function to attach completion when setting up lsp
 local on_attach = function(client, bufnr)
 	local function buf_set_keymap(...)
@@ -25,6 +41,8 @@ local on_attach = function(client, bufnr)
 			true
 		)
 	end
+
+	lsp_highlight_document(client)
 	-- require'completion'.on_attach(client, bufnr)
 
 	--protocol.SymbolKind = { }
