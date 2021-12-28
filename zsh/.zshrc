@@ -194,6 +194,9 @@ neofetch
 
 kitty + complete setup zsh | source /dev/stdin
 
+### "bat" as manpager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 # CDPATH
 setopt auto_cd
 cdpath=($HOME/dotfiles $HOME/.config)
@@ -307,6 +310,7 @@ SPACESHIP_CHAR_SUFFIX=' '
 
 # Some things for peco
 bindkey -s '^o' 'cdtm\n'
+bindkey -s '^x' 'clear\n'
 
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
