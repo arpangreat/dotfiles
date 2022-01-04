@@ -183,6 +183,13 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = true }
 )
 
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>tz",
+	"<Cmd>lua require'telescope'.extensions.zoxide.list{}<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
+
 -- noremap <leader>ta :lua require('arpangreat.telescope').anime_selector()<CR>
 -- noremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
 

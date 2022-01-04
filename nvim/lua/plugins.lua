@@ -54,11 +54,6 @@ return require("packer").startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons" },
 	})
 
-	use({
-		"SmiteshP/nvim-gps",
-		requires = "nvim-treesitter/nvim-treesitter",
-	})
-
 	-- Use dependency and run lua function after load
 	use({
 		"lewis6991/gitsigns.nvim",
@@ -165,6 +160,7 @@ return require("packer").startup(function(use)
 		rocks = { "openssl", "lua-http-parser" },
 	})
 	use({ "nvim-telescope/telescope-ui-select.nvim" })
+	use("jvgrootveld/telescope-zoxide")
 	use("tjdevries/nlua.nvim")
 	use("tjdevries/lsp_extensions.nvim")
 	use("ray-x/lsp_signature.nvim")
