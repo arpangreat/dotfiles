@@ -76,7 +76,6 @@ plugins=(
     zsh-completions
     zsh-autosuggestions  
     zsh-syntax-highlighting  
-    zsh-z
     zsh-vi-mode
     zsh-interactive-cd
 )
@@ -174,6 +173,8 @@ bindkey -v
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(zoxide init zsh)"
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
@@ -328,3 +329,7 @@ source /home/arpangreat/.zprofile
 fpath=(~/.zsh.d/ $fpath)
 fpath=(~/.zsh.d/ $fpath)
 fpath=(~/.zsh.d/ $fpath)
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+

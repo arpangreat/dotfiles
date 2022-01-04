@@ -1,6 +1,5 @@
 local gl = require("galaxyline")
 local gls = gl.section
-local gps = require("nvim-gps")
 local condition = require("galaxyline.condition")
 gl.short_line_list = { "LuaTree", "vista", "dbui" }
 
@@ -146,17 +145,6 @@ gls.left[13] = {
 		provider = "DiagnosticWarn",
 		icon = "  ",
 		highlight = { colors.blue, colors.bg },
-	},
-}
-
-gls.left[14] = {
-	nvimGPS = {
-		provider = function()
-			return gps.get_location()
-		end,
-		condition = function()
-			return gps.is_available()
-		end,
 	},
 }
 

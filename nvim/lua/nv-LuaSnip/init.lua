@@ -46,7 +46,7 @@ ls.snippets = {
 			i(3, "command..."),
 			t('" , { noremap = '),
 			i(4, "true,"),
-			t(" silet = "),
+			t(" silent = "),
 			i(5, "false,"),
 			t(" expr = "),
 			i(6, "false"),
