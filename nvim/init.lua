@@ -161,13 +161,6 @@ vim.api.nvim_exec(
 
 vim.api.nvim_exec(
 	[[
-  autocmd BufEnter * :IndentBlanklineEnable
-]],
-	true
-)
-
-vim.api.nvim_exec(
-	[[
 if exists('$TMUX')
     let &t_SI .= "\ePtmux;\e\e[=1c\e\\"
     let &t_EI .= "\ePtmux;\e\e[=2c\e\\"

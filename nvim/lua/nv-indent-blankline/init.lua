@@ -11,3 +11,10 @@ require("indent_blankline").setup({
 	show_current_context_start = true,
 	buftype_exclude = { "terminal", "Dashboard" },
 })
+
+vim.api.nvim_exec(
+	[[
+  autocmd BufEnter * :IndentBlanklineEnable
+  ]],
+	true
+)
