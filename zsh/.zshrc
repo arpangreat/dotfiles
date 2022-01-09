@@ -180,6 +180,8 @@ source $HOME/dotfiles/zsh/always-tmux.sh
 
 ensure_tmux_is_running
 
+eval "$(zoxide init zsh)"
+
 # eval "$(starship init zsh)"
 
 # base16
