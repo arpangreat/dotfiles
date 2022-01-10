@@ -202,6 +202,13 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 setopt auto_cd
 cdpath=($HOME/dotfiles $HOME/.config)
 
+# NVIM
+export NVIM_TUI_ENABLE_TRUE_COLOR=1 
+export NVIM_TUI_ENABLE_CURSOR_SHAPE=1 
+export NVIM_PYTHON_LOG_FILE="/tmp/.log"
+export NVIM_PYTHON_LOG_LEVEL=DEBUG
+export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+
 # source /home/arpangreat/tokyonight.nvim/extras/zsh_tokyonight_storm.zsh-theme
 # bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
