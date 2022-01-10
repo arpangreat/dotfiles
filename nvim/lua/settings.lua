@@ -24,6 +24,7 @@ vim.opt.scrolloff = 8
 vim.opt.showmode = false
 vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
 vim.opt.hidden = true
+vim.opt.sidescroll = 1
 -- vim.opt.include
 vim.opt.display = "lastline"
 vim.opt.backspace = "indent,eol,start"
@@ -31,6 +32,7 @@ vim.opt.winblend = 0
 vim.opt.pumblend = 30
 vim.opt.textwidth = 80
 vim.opt.ruler = true
+vim.opt.path = "$pwd/**"
 
 -- Visuals
 vim.opt.syntax = "enable"
