@@ -196,7 +196,7 @@ neofetch
 kitty + complete setup zsh | source /dev/stdin
 
 ### "bat" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man'"
 
 # CDPATH
 setopt auto_cd
