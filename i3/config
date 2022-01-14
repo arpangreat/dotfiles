@@ -202,12 +202,13 @@ exec --no-startup-id xmodmap /home/arpangreat/dotfiles/i3/swap
 exec --no-startup-id picom
 exec --no-startup-id feh --bg-scale /home/arpangreat/dotfiles/wallpaper/ToriiWal.jpeg
 exec $term
-exec dolphin
+exec thunar
 exec brave
 
 assign [class="Alacritty"] $ws1
 assign [class="kitty"] $ws1
 assign [class="dolphin"] $ws2
+assign [class="thunar"] $ws2
 # assign [class="Firefox"] $ws3 
 # assign [class="Google-chrome"] $ws3
 assign [class="Brave-browser"] $ws3
@@ -305,6 +306,8 @@ bindsym $mod+shift+x exec i3lock
 bindsym F1 exec pulseaudio-ctl mute
 bindsym F2 exec pulseaudio-ctl down
 bindsym F3 exec pulseaudio-ctl up
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym $mod+shift+s exec --no-startup-id gnome-screenshot
 bindsym $mod+e exec --no-startup-id ~/dotfiles/custom-scripts/dmenuemoji
 bindsym $mod+shift+p exec --no-startup-id ~/dotfiles/custom-scripts/prompt "Are you sure to POWEROFF ??" poweroff
