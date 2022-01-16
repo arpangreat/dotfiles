@@ -53,6 +53,7 @@ return require("packer").startup(function(use)
 		branch = "main",
 		requires = { "kyazdani42/nvim-web-devicons" },
 	}) ]]
+	use("NTBBloodbath/galaxyline.nvim")
 
 	use("kyazdani42/nvim-web-devicons")
 
