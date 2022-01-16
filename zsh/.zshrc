@@ -78,6 +78,7 @@ plugins=(
     zsh-syntax-highlighting  
     zsh-vi-mode
     zsh-interactive-cd
+    dotbare
 )
 
 
@@ -194,6 +195,7 @@ neofetch
 # fortune | cowsay | lolcat
 
 kitty + complete setup zsh | source /dev/stdin
+export DOTBARE_DIR="$HOME/dotfiles.git"
 
 ### "bat" as manpager
 export MANPAGER="sh -c 'col -bx | bat -l man'"
@@ -249,12 +251,6 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color "always" {}'"
 export FZF_CTRL_T_OPTS="--select-1 --exit-0"
 export FZF_CTRL_R_OPTS='--sort --exact'
 export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
-fzf-history-widget-accept() {
-  fzf-history-widget
-  zle accept-line
-}
-zle     -N     fzf-history-widget-accept
-bindkey '^X^R' fzf-history-widget-accept
 
 fpath=(~/.zsh.d/ $fpath)
 
@@ -318,7 +314,7 @@ SPACESHIP_CHAR_SUFFIX=' '
 
 # Some things for peco
 bindkey -s '^o' 'cdtm\n'
-bindkey -s '^x' 'clear\n'
+bindkey -s '^X' 'clear\n'
 
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 

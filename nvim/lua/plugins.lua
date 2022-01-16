@@ -53,7 +53,8 @@ return require("packer").startup(function(use)
 		branch = "main",
 		requires = { "kyazdani42/nvim-web-devicons" },
 	}) ]]
-	use("NTBBloodbath/galaxyline.nvim")
+	-- use("NTBBloodbath/galaxyline.nvim")
+	use("nvim-lualine/lualine.nvim")
 
 	use("kyazdani42/nvim-web-devicons")
 
@@ -70,7 +71,7 @@ return require("packer").startup(function(use)
 
 	use("windwp/nvim-autopairs")
 	-- use 'jiangmiao/auto-pairs'
-	-- use 'tpope/vim-fugitive'
+	use("tpope/vim-fugitive")
 	use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
 	use("sindrets/diffview.nvim")
 	use("rhysd/committia.vim")
