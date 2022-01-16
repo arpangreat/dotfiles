@@ -44,9 +44,13 @@ abbr -a pytm ~/dotfiles/custom-scripts/./pytm
 abbr -a notes nvim ~/wiki/index.md
 abbr -a projectCreate bash ~/dotfiles/custom-scripts/projectCreate.sh
 abbr -a na ~/My-First-Plugin/./nvim.appimage
-abbr -a ll exa -l -g --icons 
-abbr -a la  exa -l -g --icons -a
+abbr -a ll exa -l -g --icons
+abbr -a ls exa -l -g --icons
+abbr -a la exa -l -g --icons -a
+abbr -a lt exa -l -g --icons --tree
+abbr -a lta exa -l -g --icons --tree -a
 abbr -a l ls
+abbr -a lg lazygit
 abbr -a obs QT_QPA_PLATFORM xcb obs
 
 fish_vi_key_bindings
