@@ -17,7 +17,7 @@ require("settings")
 -- require('nv-compe')
 require("lua-ls")
 -- require('nvcoder')
-require("nv-galaxyline")
+-- require("nv-galaxyline")
 require("snippets-nvim")
 require("nv-treesitter")
 require("nv-telescope")
@@ -78,13 +78,12 @@ require("luasnip/loaders/from_vscode").lazy_load()
 require("nv-focus")
 require("nv-dap")
 require("nv-dap-virtual-text")
+require("nv-expressline")
 -- require("cmp-npm-tutorial")
 
 vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red")
 vim.cmd("hi FloatermBorder guifg=cyan")
-vim.cmd("let g:gitgutter_enabled = 1")
-vim.cmd("let g:gitgutter_signs = 0")
 vim.cmd("let g:airline_disable_statusline = 1")
 vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
@@ -105,10 +104,10 @@ vim.cmd("let g:prettier#autoformat_config_present = 1")
 
 vim.g.CommandTCancelMap = "<C-x>"
 -- Disabling Gitgutter
-vim.cmd("let g:gitgutter_enabled = 0")
+vim.cmd("let g:gitgutter_enabled = 1")
 vim.cmd("let g:gitgutter_signs = 0")
 -- let g:airline_theme = 'deus'
-vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
+-- vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
 --Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 --
 --If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -141,16 +140,16 @@ augroup END
 	true
 )
 
-vim.api.nvim_exec(
+--[[ vim.api.nvim_exec(
 	[[
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
-]],
-	true
-)
+-- ]]
+--	true
+--) ]]
 
 vim.api.nvim_exec(
 	[[

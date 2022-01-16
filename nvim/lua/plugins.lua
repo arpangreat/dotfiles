@@ -48,11 +48,13 @@ return require("packer").startup(function(use)
 	-- use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
 
 	-- Use specific branch, dependency and run lua file after load
-	use({
+	--[[ use({
 		"glepnir/galaxyline.nvim",
 		branch = "main",
 		requires = { "kyazdani42/nvim-web-devicons" },
-	})
+	}) ]]
+
+	use("kyazdani42/nvim-web-devicons")
 
 	-- Use dependency and run lua function after load
 	use({
@@ -190,6 +192,8 @@ return require("packer").startup(function(use)
 
 	-- My Plugins
 	use("arpangreat/treesitter-unit-plugin")
+	use("arpangreat/statusfire.nvim")
+	use("tjdevries/express_line.nvim")
 
 	-- use 'govim/govim'
 end)
