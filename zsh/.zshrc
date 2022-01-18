@@ -14,7 +14,7 @@ prompt spaceship
 source ~/dotfiles/zsh/plugins/gh.plugin.zsh
 source ~/dotfiles/zsh/plugins/git.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
-# source ~/dotfiles/zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
+source ~/dotfiles/zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
 source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
