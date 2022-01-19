@@ -20,8 +20,8 @@
   ui = auto
 [alias]
   a = "!git status --short | fzf | awk '{print $2}' | xargs git add"
+  co = "!git branch -l | fzf | awk '{print $2}' | xargs git checkout"
   d = diff
-  co = checkout
   ci = commit
   ca = commit -a
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -43,6 +43,7 @@
   edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; nvim `f`"
   # add conflicted file on merge
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+	cof = !git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout
 
 [interactive]
     diffFilter = delta --color-only --features=interactive
