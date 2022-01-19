@@ -185,7 +185,8 @@ return require("packer").startup(function(use)
 	-- use 'folke/which-key.nvim'
 	-- use 'SirVer/ultisnips'
 	use("honza/vim-snippets")
-	use("mbbill/undotree")
+	-- use("mbbill/undotree")
+	use("simnalamburt/vim-mundo")
 	-- use 'christoomey/vim-tmux-navigator'
 	use("voldikss/vim-floaterm")
 	-- use 'tjdevries/sg.nvim'

@@ -15,7 +15,7 @@ vim.api.nvim_set_keymap(
 	":wincmd v<bar> :NvimTreeOpen <bar> :vertical resize 20<CR>",
 	{ noremap = true, silent = false }
 )
-vim.api.nvim_set_keymap("n", "<Leader>u", ":UndotreeShow<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>u", ":MundoToggle<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>pp", ":NvimTreeOpen<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ps", ":Rg<SPACE>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader><Leader>", "<C-^>", { noremap = true, silent = false })
