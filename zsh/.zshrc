@@ -11,7 +11,6 @@ autoload -U promptinit; promptinit
 prompt spaceship
 
 # plugins
-source ~/dotfiles/zsh/plugins/gh.plugin.zsh
 source ~/dotfiles/zsh/plugins/git.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
