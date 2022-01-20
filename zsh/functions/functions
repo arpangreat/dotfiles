@@ -166,7 +166,7 @@ function git() {
 }
 
 function gC() {
-  command g a
+  command git status --short | fzf | awk '{print $2}' | xargs git add
   command git commit
   command git push
 }
@@ -196,7 +196,7 @@ function grC() {
     fi
     if [ $# -eq 0 ]; then
       cd "$ROOT"
-      command git add .
+      command git status --short | fzf | awk '{print $2}' | xargs git add
       command git commit
       command git push
     fi
