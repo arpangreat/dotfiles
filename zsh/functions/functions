@@ -70,7 +70,7 @@ function vf() {
 
   if [[ -n $files ]]
   then
-     vim -- $files
+     nvim -- $files
      print -l $files[1]
   fi
 }
@@ -166,7 +166,7 @@ function git() {
 }
 
 function gC() {
-  command git add .
+  command g a
   command git commit
   command git push
 }
