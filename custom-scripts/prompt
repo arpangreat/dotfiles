@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-[ $(echo -e "No\nYes" | LANG="en_GB.UTF-8" dmenu -i -p "$1") \
+[ $(echo -e "No\nYes" | LANG="en_GB.UTF-8" dmenu -i -nb '#282A36' -nf '#ff79c6' -sb '#ff79c6' -sf '#53495d' -fn 'NotoMonoRegular:bold:pixelsize=14' -p "$1") \
 == "Yes" ] && $2
