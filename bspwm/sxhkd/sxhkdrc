@@ -12,7 +12,7 @@
 
 
 #arcolinux-logout
-super + x
+super + backspace
     arcolinux-logout
 
 #Kitty
@@ -375,7 +375,7 @@ super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Move focus to other monitor
-super + BackSpace
+super + x
 		bspc monitor -f next
 
 #################################################################

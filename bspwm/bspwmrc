@@ -83,23 +83,23 @@ bspc rule -a Oblogout state=floating
 # bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
-bspc rule -a kitty desktop='^1' follow=on
-bspc rule -a Thunar desktop='^2' follow=on
-bspc rule -a Brave-browser desktop='^3' follow=on
+bspc rule -a kitty desktop='^1' follow=on state=tiled
+bspc rule -a Thunar desktop='^2' follow=on state=tiled
+bspc rule -a Brave-browser desktop='^3' follow=on state=tiled
 #bspc rule -a Firefox desktop='^1' follow=on
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl desktop='^2' follow=on
 #bspc rule -a Atom desktop='^2' follow=on
 #bspc rule -a Steam desktop='^5'
-bspc rule -a vlc desktop='^10'  follow=on
+bspc rule -a vlc desktop='^10' follow=on state=tiled
 #bspc rule -a mpv desktop='^6'  follow=on
 #bspc rule -a Vivaldi-stable desktop='^6' follow=on
 #bspc rule -a Vivaldi-snapshot desktop='^6' follow=on
 #bspc rule -a Transmission-gtk desktop='^7' follow=on
 #bspc rule -a Thunar desktop='^8' follow=on
 #bspc rule -a discord desktop='^9' follow=on
-bspc rule -a Spotify desktop='^10' follow=on
+bspc rule -a Spotify desktop='^10' follow=on state=tiled
 
 #Spotify fix  --move desktop 10
 #sleep 1
@@ -109,7 +109,7 @@ bspc rule -a Spotify desktop='^10' follow=on
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DP-1)
-#xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI2)
 
 ###External rules
