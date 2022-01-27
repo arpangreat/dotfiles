@@ -108,7 +108,7 @@ kitty --class "calc" -e "ipython" &
 bspc rule -a calc sticky=on state=floating center=true hidden=on
 kitty --class "files" -e "ranger" &
 bspc rule -a files sticky=on state=floating center=true hidden=on
-kitty --class "btm" -e "btm" &
+kitty --class "btm" -e "btm --battery" &
 bspc rule -a btm sticky=on state=floating center=true hidden=on
 
 #Spotify fix  --move desktop 10
