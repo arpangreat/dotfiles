@@ -667,4 +667,4 @@ key_bindings:
 # Print all received window events.
 #print_events: false
 import:
-  - ~/tokyonight.nvim/extras/alacritty_tokyonight_storm.yml
+  - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty_tokyonight_storm.yml
