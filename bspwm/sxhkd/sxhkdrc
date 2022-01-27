@@ -376,7 +376,7 @@ super + space
 
 # Move focus to other monitor
 super + x
-		bspc monitor -f next
+		bspc node -m next --follow
 
 #################################################################
 # SUPER + ALT KEYS
@@ -434,6 +434,20 @@ super + shift + Up
 # Move focused window to other monitor
 super + shift + Down
 		bspc node -m next --follow
+
+# Scratchpads
+super + u
+    dropdowntoggle.sh
+
+super + a
+    calctoggle.sh
+
+super + g
+    filestoggle.sh
+
+super + c 
+     btmtoggle.sh
+
 
 #################################################################
 # SUPER + CONTROL KEYS
