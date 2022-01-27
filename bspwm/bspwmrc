@@ -101,6 +101,16 @@ bspc rule -a vlc desktop='^10' follow=on state=tiled
 #bspc rule -a discord desktop='^9' follow=on
 bspc rule -a Spotify desktop='^10' follow=on state=tiled
 
+# Scratchpads
+kitty --class "dropdown" -e "tmux new-session" &
+bspc rule -a dropdown sticky=on state=floating center=true hidden=on
+kitty --class "calc" -e "ipython" &
+bspc rule -a calc sticky=on state=floating center=true hidden=on
+kitty --class "files" -e "ranger" &
+bspc rule -a files sticky=on state=floating center=true hidden=on
+kitty --class "btm" -e "btm" &
+bspc rule -a btm sticky=on state=floating center=true hidden=on
+
 #Spotify fix  --move desktop 10
 #sleep 1
 #wmctrl -r Spotify -t 10
