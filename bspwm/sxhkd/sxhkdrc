@@ -61,7 +61,7 @@ super + shift + b
 
 #dmenu
 super + d
-  dmenu_run -i -nb '#282A36' -nf '#ff79c6' -sb '#ff79c6' -sf '#53495d' -fn 'NotoMonoRegular:bold:pixelsize=14'
+  dmenu_run -i -nb '#282A36' -nf '#F28FAD' -sb '#F28FAD' -sf '#161320' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #reload sxhkd:
 super + shift + s
@@ -439,7 +439,7 @@ super + shift + Down
 super + u
     dropdowntoggle.sh
 
-super + a
+super + i
     calctoggle.sh
 
 super + g
