@@ -89,6 +89,7 @@ return require("packer").startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use("sainnhe/tmuxline.vim")
 	use("p00f/nvim-ts-rainbow")
+	use("tversteeg/registers.nvim")
 	-- use 'glepnir/indent-guides.nvim'
 
 	-- Colorscheme
