@@ -43,8 +43,8 @@ cmp.setup({
 	},
 
 	documentation = {
-		-- border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-		border = "double",
+		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+		-- border = "double",
 		winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
 	},
 
