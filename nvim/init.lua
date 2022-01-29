@@ -82,8 +82,8 @@ require("nv-lualine")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 
-vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
-vim.cmd("highlight TelescopePromptPrefix guifg=red")
+--[[ vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
+vim.cmd("highlight TelescopePromptPrefix guifg=red") ]]
 vim.cmd("hi FloatermBorder guifg=cyan")
 vim.cmd("let g:airline_disable_statusline = 1")
 vim.cmd("let g:lsc_auto_map = v:true")
