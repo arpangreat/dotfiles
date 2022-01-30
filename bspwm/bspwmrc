@@ -102,7 +102,7 @@ bspc rule -a vlc desktop='^10' follow=on state=tiled
 bspc rule -a Spotify desktop='^10' follow=on state=tiled
 
 # Scratchpads
-kitty --class "dropdown" -e tmux new-session &
+kitty --class "dropdown" &
 bspc rule -a dropdown state=floating center=true hidden=on
 kitty --class "calc" -e "ipython" &
 bspc rule -a calc state=floating center=true hidden=on
