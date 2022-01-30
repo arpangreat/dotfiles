@@ -77,7 +77,6 @@ alias krc='nvim ~/.config/kitty/kitty.conf'
 alias irc='nvim ~/dotfiles/i3/config'
 alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
-alias cht='cht.sh'
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
 alias rusttm='~/dotfiles/custom-scripts/./rusttm'
@@ -89,6 +88,7 @@ alias pytm='~/dotfiles/custom-scripts/./pytm'
 alias cpptm='~/dotfiles/custom-scripts/./cpptm'
 alias blogtm='~/dotfiles/custom-scripts/./blogtm'
 alias cdtm='~/dotfiles/custom-scripts/./cdtm'
+alias cht='~/dotfiles/custom-scripts/tmux-cht.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
@@ -114,7 +114,7 @@ bindkey -v
 source $HOME/dotfiles/zsh/functions/functions
 source $HOME/dotfiles/zsh/always-tmux.sh
 
-ensure_tmux_is_running
+# ensure_tmux_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -258,7 +258,7 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
-export TERM=xterm-256color-italic
+export TERM=xterm-kitty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
