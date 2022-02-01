@@ -96,6 +96,11 @@ super + d
 super + shift + s
 	pkill -USR1 -x sxhkd
 
+# power prompt
+super + shift + p 
+  /home/arpangreat/dotfiles/custom-scripts/prompt "Are you sure to POWEROFF ??" poweroff
+super + shift + b 
+  /home/arpangreat/dotfiles/custom-scripts/prompt "Are you sure to REBOOT ??" reboot
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -340,19 +345,6 @@ XF86MonBrightnessUp
 #Brightness down
 XF86MonBrightnessDown
     xbacklight -dec 10
-
-# Scratchpads
-super + u
-    dropdowntoggle.sh
-
-super + i
-    calctoggle.sh
-
-super + g
-    filestoggle.sh
-
-super + c 
-     btmtoggle.sh
 
 #################################################################
 #################################################################

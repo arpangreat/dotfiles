@@ -35,7 +35,7 @@ feh --bg-scale /home/arpangreat/dotfiles/wallpaper/candy-04.png &
 run xmodmap /home/arpangreat/dotfiles/i3/swap &
 setxkbmap us
 run kitty &
-run kitty &
+run thunar &
 run brave &
 
 #run applications from startup
