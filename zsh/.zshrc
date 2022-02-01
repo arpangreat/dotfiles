@@ -114,7 +114,7 @@ bindkey -v
 source $HOME/dotfiles/zsh/functions/functions
 source $HOME/dotfiles/zsh/always-tmux.sh
 
-# ensure_tmux_is_running
+ensure_tmux_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
