@@ -40,7 +40,6 @@ xsetroot -cursor_name left_ptr &
 run kitty &
 run thunar & 
 run brave &
-run variety &
 run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
