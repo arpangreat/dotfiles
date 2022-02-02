@@ -129,7 +129,12 @@ neofetch
 # Install it
 # fortune | cowsay | lolcat
 
+# Kitty
 kitty + complete setup zsh | source /dev/stdin
+
+# Alacritty
+# source /home/arpangreat/alacritty/extra/completions/_alacritty
+
 export DOTBARE_DIR="$HOME/dotfiles.git"
 
 ### "bat" as manpager
