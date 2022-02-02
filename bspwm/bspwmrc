@@ -84,6 +84,7 @@ bspc rule -a Oblogout state=floating
 
 #open applications on specific workspaces
 bspc rule -a kitty desktop='^1' follow=on state=tiled
+bspc rule -a Alacritty desktop='^1' follow=on state=tiled
 bspc rule -a Thunar desktop='^2' follow=on state=tiled
 bspc rule -a Brave-browser desktop='^3' follow=on state=tiled
 #bspc rule -a Firefox desktop='^1' follow=on
@@ -103,13 +104,13 @@ bspc rule -a Spotify desktop='^10' follow=on state=tiled
 
 # Scratchpads
 kitty --class "dropdown" -e tmux new-session &
-bspc rule -a dropdown state=floating center=true hidden=on
+bspc rule -a dropdown sticky=on state=floating center=true hidden=on
 kitty --class "calc" -e "ipython" &
-bspc rule -a calc state=floating center=true hidden=on
+bspc rule -a calc sticky=on state=floating center=true hidden=on
 kitty --class "files" -e "ranger" &
-bspc rule -a files state=floating center=true hidden=on
+bspc rule -a files sticky=on state=floating center=true hidden=on
 kitty --class "btm" -e btm --battery &
-bspc rule -a btm state=floating center=true hidden=on
+bspc rule -a btm sticky=on state=floating center=true hidden=on
 #Spotify fix  --move desktop 10
 #sleep 1
 #wmctrl -r Spotify -t 10
