@@ -8,12 +8,11 @@
 
 autoload -U compinit && compinit -i
 autoload -U promptinit; promptinit
-prompt spaceship
+# prompt spaceship
 
 # plugins
 source ~/dotfiles/zsh/plugins/git.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
-source ~/dotfiles/zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
 source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -108,7 +107,7 @@ alias .....='cd ../../../../'
 bindkey -v
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
@@ -118,7 +117,7 @@ ensure_tmux_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # base16
 # BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -175,11 +174,6 @@ function _pip_completion {
 
 compctl -K _pip_completion pip3
 
-# The plugin will auto execute this zvm_after_init function
-function zvm_after_init() {
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-}
-
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --preview "bat --color 'always' {}"
 --color=dark
@@ -187,7 +181,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
 '
 # Using highlight (http://www.andre-simon.de/doku/highlight/en/highlight.html)
-export FZF_CTRL_T_OPTS="--preview 'bat --color "always" {}'"
+export FZF_CTRL_T_OPTS="--preview --hidden 'bat --color "always" {}'"
 export FZF_CTRL_T_OPTS="--select-1 --exit-0"
 export FZF_CTRL_R_OPTS='--sort --exact'
 export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
@@ -270,8 +264,8 @@ export PATH=$PATH:/home/arpangreat/.local/bin
 
 source /home/arpangreat/.zprofile
 fpath=(~/.zsh.d/ $fpath)
-fpath=(~/.zsh.d/ $fpath)
-fpath=(~/.zsh.d/ $fpath)
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
