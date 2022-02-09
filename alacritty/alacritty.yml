@@ -138,7 +138,7 @@ font:
   # style: Bold Italic
 
   # Point size
-  size: 12.5
+  size: 15.0
 
   builtin_box_drawing: true
 
