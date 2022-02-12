@@ -80,6 +80,7 @@ require("nv-dap")
 require("nv-dap-virtual-text")
 require("nv-lualine")
 require("nv-fidget")
+require("nv-clangd-extension")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 

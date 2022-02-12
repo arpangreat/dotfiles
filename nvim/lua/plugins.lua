@@ -138,6 +138,7 @@ return require("packer").startup(function(use)
 			"petertriho/cmp-git",
 		},
 	})
+	use("p00f/clangd_extensions.nvim")
 	use("ibhagwan/fzf-lua")
 	use("kyazdani42/nvim-tree.lua")
 	use({ "Shougo/defx.nvim", run = ":UpdateRemotePlugins" })
