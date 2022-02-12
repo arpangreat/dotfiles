@@ -5,17 +5,29 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+export HISTFILE="/home/arpangreat/.zsh_history"
+
+export ZSH="$HOME/.oh-my-zsh"
+# export ZSH_THEME="spaceship"
 
 autoload -U compinit && compinit -i
-autoload -U promptinit; promptinit
-# prompt spaceship
 
 # plugins
-source ~/dotfiles/zsh/plugins/git.plugin.zsh
-source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
-source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
-source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/dotfiles/zsh/plugins/git.plugin.zsh
+# source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
+# source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
+# source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+plugins=(
+  git
+  zsh-interactive-cd
+  zsh-autosuggestions
+  zsh-completions
+  zsh-syntax-highlighting
+  rust
+)
+
+source $ZSH/oh-my-zsh.sh
 
 export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
@@ -144,11 +156,11 @@ setopt auto_cd
 cdpath=($HOME/dotfiles $HOME/.config)
 
 # NVIM
-export NVIM_TUI_ENABLE_TRUE_COLOR=1 
-export NVIM_TUI_ENABLE_CURSOR_SHAPE=1 
-export NVIM_PYTHON_LOG_FILE="/tmp/.log"
-export NVIM_PYTHON_LOG_LEVEL=DEBUG
-export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+# export NVIM_TUI_ENABLE_TRUE_COLOR=1 
+# export NVIM_TUI_ENABLE_CURSOR_SHAPE=1 
+# export NVIM_PYTHON_LOG_FILE="/tmp/.log"
+# export NVIM_PYTHON_LOG_LEVEL=DEBUG
+# export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 
 # source /home/arpangreat/tokyonight.nvim/extras/zsh_tokyonight_storm.zsh-theme
 # bash ~/.config/base16-shell/scripts/base16-rebecca.sh
@@ -216,7 +228,9 @@ export VAULT_PATH=/home/arpangreat/wiki/
 export VAULT_EDITOR=/usr/bin/nvim
 
 # Spaceship configs
+SPACESHIP_DIR_TRUNC=0
 SPACESHIP_BATTERY_THRESHOLD=30
+SPACESHIP_VI_MODE=true
 SPACESHIP_VI_MODE_COLOR=#ff87d7
 SPACESHIP_CHAR_SYMBOL='➜ '
 SPACESHIP_CHAR_SUFFIX=' '
@@ -257,6 +271,8 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 export TERM=xterm-kitty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
