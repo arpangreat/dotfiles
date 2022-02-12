@@ -180,6 +180,8 @@ return require("packer").startup(function(use)
 	use("simrat39/rust-tools.nvim")
 	use("glepnir/dashboard-nvim")
 	use("akinsho/nvim-bufferline.lua")
+	use("j-hui/fidget.nvim")
+
 	-- use 'kshenoy/vim-signature'
 	-- use 'tpope/vim-git'
 	use("liuchengxu/vim-which-key")

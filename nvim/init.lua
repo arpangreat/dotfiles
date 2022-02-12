@@ -79,6 +79,7 @@ require("nv-focus")
 require("nv-dap")
 require("nv-dap-virtual-text")
 require("nv-lualine")
+require("nv-fidget")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 
