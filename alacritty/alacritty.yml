@@ -99,10 +99,11 @@ font:
     #     #   - (macOS) Menlo
     #     #   - (Linux/BSD) monospace
     #     #   - (Windows) Consolas
-    family: "Operator Mono"
+    # family: "Operator Mono Lig Light"
+    family: "Fira Code Retina"
 
     # The `style` can be specified to pick a specific face.
-    style: Book
+    style: Retina
 
   # Bold font face
   bold:
@@ -110,7 +111,8 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "Operator Mono"
+    # family: "Operator Mono"
+    family: "Fira Code"
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -121,7 +123,8 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "Operator Mono Lig"
+    # family: "Operator Mono Lig"
+    family: "Fira Code"
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -669,4 +672,5 @@ key_bindings:
 # Print all received window events.
 #print_events: false
 import:
-  - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty_tokyonight_storm.yml
+  # - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty_tokyonight_storm.yml
+  - ~/dotfiles/alacritty/catppuccin.yml
