@@ -185,8 +185,8 @@ return require("packer").startup(function(use)
 
 	-- use 'kshenoy/vim-signature'
 	-- use 'tpope/vim-git'
-	use("liuchengxu/vim-which-key")
-	-- use 'folke/which-key.nvim'
+	-- use("liuchengxu/vim-which-key")
+	use("folke/which-key.nvim")
 	-- use 'SirVer/ultisnips'
 	use("honza/vim-snippets")
 	-- use("mbbill/undotree")

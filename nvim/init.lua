@@ -69,7 +69,7 @@ require("nv-symbols-outline")
 require("nv-todo-comment")
 -- require("nv-lsp-signatures")
 -- require('nv-formatter')
--- require('nv-which-key')
+require("nv-which-key")
 -- require('nv-vsnip')
 -- LuaSnip
 require("utils")
