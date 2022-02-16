@@ -29,7 +29,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 # fi
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-scale /home/arpangreat/dotfiles/wallpaper/candy-04.png &
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/sword4.png &
 run xmodmap /home/arpangreat/dotfiles/i3/swap &
 setxkbmap us
 
