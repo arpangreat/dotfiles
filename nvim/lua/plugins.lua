@@ -104,6 +104,7 @@ return require("packer").startup(function(use)
 	})
 	use("EdenEast/nightfox.nvim")
 	use("bluz71/vim-nightfly-guicolors")
+	use("rebelot/kanagawa.nvim")
 
 	-- Language specific
 	-- use 'tpope/vim-surround'
