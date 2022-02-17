@@ -7,10 +7,11 @@
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 export HISTFILE="/home/arpangreat/.zsh_history"
 
+# ZVM_INIT_MODE=sourcing
 export ZSH="$HOME/.oh-my-zsh"
 # export ZSH_THEME="spaceship"
 
-autoload -U compinit && compinit -i
+# autoload -U compinit && compinit -i
 
 # plugins
 # source ~/dotfiles/zsh/plugins/git.plugin.zsh
@@ -29,7 +30,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
 # User configuration
 
@@ -170,11 +172,11 @@ cdpath=($HOME/dotfiles $HOME/.config)
 # eval "$(starship init zsh)"
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
-export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux/org.eclipse.equinox.launcher
-export GRADLE_HOME=$HOME/gradle
-export JAVA_HOME=/usr/lib/jvm/java-15-openjdk/
-export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux
-export WORKSPACE=$HOME/javaexsnew
+# export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux/org.eclipse.equinox.launcher
+# export GRADLE_HOME=$HOME/gradle
+# export JAVA_HOME=/usr/lib/jvm/java-15-openjdk/
+# export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux
+# export WORKSPACE=$HOME/javaexsnew
 
 function _pip_completion {
   local words cword
@@ -199,12 +201,12 @@ export FZF_CTRL_T_OPTS="--select-1 --exit-0"
 export FZF_CTRL_R_OPTS='--sort --exact'
 export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
 
-fpath=(~/.zsh.d/ $fpath)
+# fpath=(~/.zsh.d/ $fpath)
 
 # zsh-vi-mode
-ZVM_CURSOR_STYLE_ENABLED=false
+# ZVM_CURSOR_STYLE_ENABLED=false
 
-function zle-keymap-select zle-line-init zle-line-finish
+function zle-keymap-select
 {
   case $KEYMAP in
       vicmd)      print -n '\033[1 q';; # block cursor
@@ -212,8 +214,6 @@ function zle-keymap-select zle-line-init zle-line-finish
   esac
 }
 
-zle -N zle-line-init
-zle -N zle-line-finish
 zle -N zle-keymap-select
 
 export GOPATH=$HOME/go
@@ -222,11 +222,6 @@ export LLVM_ROOT=$HOME/llvm-project
 export PATH=$PATH:$GOPATH/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 
-# set a valid path to your vault
-export VAULT_PATH=/home/arpangreat/wiki/
-
-# set a valid path to your editor
-export VAULT_EDITOR=/usr/bin/nvim
 
 # Spaceship configs
 SPACESHIP_DIR_TRUNC=0
@@ -279,10 +274,11 @@ export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
 
-source /home/arpangreat/.zprofile
-fpath=(~/.zsh.d/ $fpath)
+# source /home/arpangreat/.zprofile
+# fpath=(~/.zsh.d/ $fpath)
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+# zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
