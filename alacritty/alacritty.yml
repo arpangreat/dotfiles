@@ -311,14 +311,14 @@ save_to_clipboard: true
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
 
-#cursor:
+cursor:
 # Cursor style
 #
 # Values for `style`:
 #   - ▇ Block
 #   - _ Underline
 #   - | Beam
-#style: Block
+  style: Beam
 
 # Vi mode cursor style
 #
@@ -649,7 +649,7 @@ key_bindings:
   #- { key: M,      mods: Command,         action: Minimize         }
   #- { key: Q,        mods: Command, action: Quit                         }
   #- { key: W,        mods: Command, action: Quit                         }
-  # - { key: N,      mods: Command,            action: SpawnNewInstance }
+  - { key: N,      mods: Control|Shift,            action: SpawnNewInstance }
   #- { key: F,      mods: Command|Control, action: ToggleFullscreen }
 #debug:
 # Display the time it takes to redraw each frame.
