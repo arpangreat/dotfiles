@@ -208,10 +208,12 @@ export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
 
 function zle-keymap-select
 {
+  # precmd
   case $KEYMAP in
       vicmd)      print -n '\033[1 q';; # block cursor
       viins|main) print -n '\033[5 q';; # line cursor
   esac
+  zle reset-prompt
 }
 
 zle -N zle-keymap-select
