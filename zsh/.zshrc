@@ -204,7 +204,7 @@ export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
 # fpath=(~/.zsh.d/ $fpath)
 
 # zsh-vi-mode
-# ZVM_CURSOR_STYLE_ENABLED=false
+# ZVM_CURSOR_STYLE_ENABLED=true
 
 function zle-keymap-select
 {
