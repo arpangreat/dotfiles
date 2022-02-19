@@ -584,7 +584,7 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
-vim.api.nvim_set_keymap(
+vim.keymap.set(
 	"n",
 	"<Leader>rc",
 	":lua require'rust-tools.crate_graph'.view_crate_graph(backend, output)<CR>",

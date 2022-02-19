@@ -223,6 +223,7 @@ export LLVM_ROOT=$HOME/llvm-project
 # source $HOME/tomnomnom/gf/gf-completion.zsh
 export PATH=$PATH:$GOPATH/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=$PATH:$HOME/.cargo/env
 
 
 # Spaceship configs
