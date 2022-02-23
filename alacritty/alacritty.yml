@@ -100,10 +100,11 @@ font:
     #     #   - (Linux/BSD) monospace
     #     #   - (Windows) Consolas
     # family: "Operator Mono Lig Light"
-    family: "Fira Code Retina"
+    # family: "Fira Code Retina"
+    family: "JetBrainsMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
-    style: Retina
+    style: Regular
 
   # Bold font face
   bold:
@@ -112,7 +113,8 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: "Operator Mono"
-    family: "Fira Code"
+    # family: "Fira Code"
+    family: "JetBrainsMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -124,7 +126,8 @@ font:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: "Operator Mono Lig"
-    family: "Fira Code"
+    # family: "Fira Code"
+    family: "JetBrainsMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Italic
