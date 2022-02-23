@@ -63,14 +63,14 @@ window:
   #startup_mode: Windowed
 
   # Window title
-  title: Alacritty
+  # title: Alacritty
 
   # Window class (Linux/BSD only):
-  class:
+  # class:
     # Application instance name
-    instance: Alacritty
+    # instance: Alacritty
     # General application class
-    general: Alacritty
+    # general: Alacritty
 
   # GTK theme variant (Linux/BSD only)
   #
