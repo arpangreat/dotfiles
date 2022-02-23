@@ -60,7 +60,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nv="nvim"
 alias e='emacs'
-alias brc='nvim ~/.bashrc'
+alias brc='nvim ~/dotfiles/bspwm/'
 alias vrc='nvim ~/.vimrc'
 alias ec='emacsclient'
 alias nrc='nvim ~/.config/nvim/init.lua'
@@ -272,6 +272,7 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
 export TERM=xterm-kitty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
