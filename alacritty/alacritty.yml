@@ -133,15 +133,15 @@ font:
     style: Italic
 
   # Bold italic font face
-  # bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: "Operator Mono"
+    family: "JetBrainsMono Nerd Font"
 
   # The `style` can be specified to pick a specific face.
-  # style: Bold Italic
+    style: Bold Italic
 
   # Point size
   size: 15.0
