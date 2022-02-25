@@ -61,11 +61,18 @@ super + shift + b
 
 #dmenu
 super + d
-  dmenu_run -i -nb '#282A36' -nf '#F28FAD' -sb '#F28FAD' -sf '#161320' -fn 'NotoMonoRegular:bold:pixelsize=14'
+  # dmenu_run -i -nb '#282A36' -nf '#F28FAD' -sb '#F28FAD' -sf '#161320' -fn 'NotoMonoRegular:bold:pixelsize=14'
+  rofi -show run
 
 #reload sxhkd:
 super + shift + s
 	gnome-screenshot -i
+
+super + shift + w 
+  rofi -show window
+
+super + shift + d
+  rofi -show filebrowser
 
 #Keyboard dependent
 #super + shift + KP_Enter
