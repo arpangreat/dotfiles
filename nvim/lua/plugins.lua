@@ -84,6 +84,14 @@ return require("packer").startup(function(use)
 	use({
 		"numToStr/Comment.nvim",
 	})
+
+	use({
+		"mvllow/modes.nvim",
+		config = function()
+			vim.opt.cursorline = true
+			require("modes").setup()
+		end,
+	})
 	use("folke/todo-comments.nvim")
 	-- use '/home/arpangreat/todo-comments.nvim'
 	use("lukas-reineke/indent-blankline.nvim")
@@ -110,7 +118,7 @@ return require("packer").startup(function(use)
 	-- use 'tpope/vim-surround'
 	use("neovim/nvim-lspconfig")
 	-- LSP Extensions
-	-- use 'nvim-lua/lsp_extensions.nvim'
+	use("nvim-lua/lsp_extensions.nvim")
 	use("tami5/lspsaga.nvim")
 	use("onsails/lspkind-nvim")
 	use("nvim-lua/completion-nvim")
@@ -169,7 +177,7 @@ return require("packer").startup(function(use)
 	use("jvgrootveld/telescope-zoxide")
 	use("tjdevries/nlua.nvim")
 	use("stevearc/dressing.nvim")
-	use("tjdevries/lsp_extensions.nvim")
+	-- use("tjdevries/lsp_extensions.nvim")
 	use("ray-x/lsp_signature.nvim")
 	-- use("tjdevries/cyclist.vim")
 	use("norcalli/snippets.nvim")
