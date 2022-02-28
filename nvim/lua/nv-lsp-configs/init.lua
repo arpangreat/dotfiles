@@ -108,9 +108,15 @@ nvim_lsp.rust_analyzer.setup({
 			checkOnSave = {
 				command = "clippy",
 			},
+			inlayHints = true,
 		},
 	},
 })
+
+vim.api.nvim_exec(
+	"autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *.rs lua require'lsp_extensions'.inlay_hints{ prefix = '<- ', highlight = 'Comment', enabled = {'TypeHint', 'ChainingHint', 'ParameterHint'}}",
+	true
+)
 
 -- Enable diagnostics
 vim.diagnostic.config({
