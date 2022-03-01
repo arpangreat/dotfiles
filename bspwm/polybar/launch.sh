@@ -40,11 +40,11 @@ launch_bar() {
 		fi
 	fi
 
-  if type "xrandr" > /dev/null; then
-    for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-      MONITOR=$m polybar --reload bar -c "$DIR"/config &
-    done
-  fi
+  # if type "xrandr" > /dev/null; then
+  #   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+  #     MONITOR=$m polybar --reload bar -c "$DIR"/config &
+  #   done
+  # fi
 		
 	if [[ ! $(pidof polybar) ]]; then
 		polybar -q bar -c "$DIR"/config &
