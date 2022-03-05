@@ -138,8 +138,8 @@ eval "$(starship init zsh)"
 # [ -n "$PS1" ] && \
 #     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 #         eval "$("$BASE16_SHELL/profile_helper.sh")"
-# neofetch
-shellfetch
+neofetch
+# shellfetch
 # Install it
 # fortune | cowsay | lolcat
 
@@ -273,7 +273,7 @@ fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
-export TERM=xterm-kitty
+# export TERM=xterm-kitty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin

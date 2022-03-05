@@ -1,10 +1,10 @@
 configuration{
-    modi: "run,drun,window,windowcd,combi,ssh,keys,filebrowser";
+    modi: "run,drun,window";
     lines: 5;
     font: "JetBrainsMono Nerd Font 14";
     show-icons: true;
     icon-theme: "Oranchelo";
-    terminal: "alacritty";
+    terminal: "st";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
