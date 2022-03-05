@@ -225,6 +225,7 @@ export PATH=$PATH:$GOPATH/go/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.cargo/env
+export PATH=$PATH:$HOME/.cargo/bin
 
 
 # Spaceship configs
