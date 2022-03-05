@@ -34,7 +34,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11
 feh --bg-scale /home/arpangreat/dotfiles/wallpaper/neon.png &
 run xmodmap /home/arpangreat/dotfiles/i3/swap &
-setxkbmap us
+# setxkbmap us
 
 # dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
@@ -42,7 +42,8 @@ xsetroot -cursor_name left_ptr &
 # conky -c $HOME/.config/bspwm/system-overview &
 # run kitty &
 run alacritty &
-run thunar & 
+# run thunar & 
+run dolphin &
 run brave &
 run nm-applet &
 run pamac-tray &
