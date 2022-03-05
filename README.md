@@ -90,6 +90,9 @@ Defaults env_reset,pwfeedback
 # IF NVIM BUILD FROM SOURCE BREAKS , use ./nvim/nvim.txt commit tag to fallback to safe zone, also use it inside official neovim repo clone inside $HOME
 `git checkout #the tag`
 
+# IF TOUCHPAD DOESN'T WORK Then
+[visit](https://askubuntu.com/questions/1280240/lenovo-touchpad-v15-iil-not-working-10th-gen-intel)
+
 # Fonts ( Also see Fonts/ )
 Download from [Operator Mono](https://fontsfree.net/operator-mono-medium-font-download.html)
 Download from [Operator Book](https://fontsfree.net/operator-mono-book-font-download.html)
