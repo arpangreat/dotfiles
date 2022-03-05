@@ -444,16 +444,16 @@ super + shift + Down
 
 # Scratchpads
 super + u
-    dropdowntoggle.sh
+  dropdowntoggle.sh
 
 super + i
-    calctoggle.sh
+  calctoggle.sh
 
 super + g
-    filestoggle.sh
+  filestoggle.sh
 
 super + c 
-     btmtoggle.sh
+  btmtoggle.sh
 
 
 #################################################################
