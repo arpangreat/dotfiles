@@ -590,3 +590,8 @@ vim.keymap.set(
 	":lua require'rust-tools.crate_graph'.view_crate_graph(backend, output)<CR>",
 	{ noremap = true, silent = false, expr = false }
 )
+
+-- -- Sudo
+vim.api.nvim_exec([[
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+]], true)
