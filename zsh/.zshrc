@@ -164,7 +164,6 @@ cdpath=($HOME/dotfiles $HOME/.config)
 # export NVIM_PYTHON_LOG_FILE="/tmp/.log"
 # export NVIM_PYTHON_LOG_LEVEL=DEBUG
 # export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
-
 # source /home/arpangreat/tokyonight.nvim/extras/zsh_tokyonight_storm.zsh-theme
 # bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg

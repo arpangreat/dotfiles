@@ -15,7 +15,7 @@ else
 end
 
 local sumneko_root_path = "/home/" .. USER .. "/dotfiles/nvim/lua-language-server"
-local sumneko_binary = sumneko_root_path .. "/bin/" .. system_name .. "/lua-language-server"
+local sumneko_binary = sumneko_root_path .. "/bin/" .. "/lua-language-server"
 local runtime_path = vim.split(package.path, ";")
 
 local lsp_highlight_document = function(client)
