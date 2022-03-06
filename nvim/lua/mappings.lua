@@ -200,6 +200,7 @@ vim.api.nvim_set_keymap("n", "<Leader>gp", ":Neogit<CR>", { noremap = true, sile
 vim.api.nvim_set_keymap("n", "<Leader>go", ":Neogit branch<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gs", ":Neogit stash<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gd", ":DiffviewOpen<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n" , "<Leader>gg" , ":FloatermNew --height=0.9 --width=0.9 lazygit<CR>" , { noremap = true, silent = false, expr = false })
 -- vim.api.nvim_set_keymap('n','<Leader>', ":<C-U>WhichKey '<Space>'<CR>", { noremap = true , silent = true })
 -- vim.api.nvim_set_keymap('n','<LocalLeader>', ":<C-U>WhichKey ','<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
@@ -259,8 +260,8 @@ vim.api.nvim_set_keymap("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", { no
 vim.api.nvim_set_keymap("n", "g0", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "gW", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "gk", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "gj", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
 
 -- DashBoard
 vim.api.nvim_set_keymap("n", "<Leader>fh", ":DashboardFindHistory<CR>", { noremap = true, silent = false })
@@ -592,6 +593,6 @@ vim.keymap.set(
 )
 
 -- -- Sudo
-vim.api.nvim_exec([[
+--[[ vim.api.nvim_exec([[
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
-]], true)
+, true) ]]
