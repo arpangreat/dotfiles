@@ -10,3 +10,5 @@ recentrepos:
 - /home/arpangreat/programmer/lua-config
 - /home/arpangreat/myblog.dev.repo
 startuppopupversion: 5
+customcommandshistory: []
+hidecommandlog: false
