@@ -82,6 +82,7 @@ require("nv-dap-virtual-text")
 require("nv-lualine")
 require("nv-fidget")
 require("nv-clangd-extension")
+require("nv-notify")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 
