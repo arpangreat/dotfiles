@@ -190,6 +190,8 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
+vim.api.nvim_set_keymap("n" , "<Leader>tgr" , "<Cmd>lua require('arpangreat.rg')<CR>" , { noremap = true, silent = false, expr = false })
+
 -- noremap <leader>ta :lua require('arpangreat.telescope').anime_selector()<CR>
 -- noremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
 
