@@ -145,6 +145,7 @@ return require("packer").startup(function(use)
 			"hrsh7th/cmp-vsnip",
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
+      {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
 		},
 	})
 	use("p00f/clangd_extensions.nvim")
@@ -205,6 +206,7 @@ return require("packer").startup(function(use)
 	-- use 'tjdevries/sg.nvim'
 	-- use 'mhartington/formatter.nvim'
 	use("ckipp01/stylua-nvim")
+  use("rcarriga/nvim-notify")
 
 	-- My Plugins
 	use("arpangreat/treesitter-unit-plugin")
