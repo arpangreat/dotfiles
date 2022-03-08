@@ -113,9 +113,11 @@ return require("packer").startup(function(use)
 	use("EdenEast/nightfox.nvim")
 	use("bluz71/vim-nightfly-guicolors")
 	use("rebelot/kanagawa.nvim")
+	-- use("dylanaraps/wal.vim")
 
 	-- Language specific
 	-- use 'tpope/vim-surround'
+  use 'tpope/vim-sleuth'
 	use("neovim/nvim-lspconfig")
 	-- LSP Extensions
 	use("nvim-lua/lsp_extensions.nvim")
