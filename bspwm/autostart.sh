@@ -42,8 +42,8 @@ xsetroot -cursor_name left_ptr &
 # conky -c $HOME/.config/bspwm/system-overview &
 # run kitty &
 run alacritty &
-run thunar & 
-# run dolphin &
+# run thunar & 
+run dolphin &
 run brave &
 run nm-applet &
 run pamac-tray &

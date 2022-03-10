@@ -25,6 +25,11 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("jbyuki/one-small-step-for-vimkind")
 	use("theHamsta/nvim-dap-virtual-text")
+	use 'leoluz/nvim-dap-go'
+	use 'mfussenegger/nvim-dap-python'
+	use 'rcarriga/nvim-dap-ui'
+	use 'nvim-telescope/telescope-dap.nvim'
+
 
 	-- Also run code after load (see the "config" key)
 	use({
@@ -65,6 +70,14 @@ return require("packer").startup(function(use)
 			"nvim-lua/plenary.nvim",
 		},
 	})
+
+	use {
+		"narutoxy/dim.lua",
+		requires = { "nvim-treesitter/nvim-treesitter", "neovim/nvim-lspconfig" },
+		config = function()
+			require('dim').setup({})
+		end
+	}
 
 	-- You can specify multiple plugins in a single call
 	use({ "tjdevries/colorbuddy.vim" })

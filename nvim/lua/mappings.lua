@@ -8,7 +8,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
-vim.api.nvim_set_keymap("n", "<Leader>bg", ":highlight Normal guibg=none<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>pv",
@@ -526,37 +525,31 @@ vim.api.nvim_set_keymap(
 )
 
 -- NV-Dap
-vim.api.nvim_set_keymap("n", "<leader>dh", ':lua require"dap".toggle_breakpoint()<CR>', { noremap = true })
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>dH",
-	":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>",
-	{ noremap = true }
-)
-vim.api.nvim_set_keymap("n", "<c-k>", ':lua require"dap".step_out()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<c-l>", ':lua require"dap".step_into()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<c-j>", ':lua require"dap".step_over()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<c-h>", ':lua require"dap".continue()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>dn", ':lua require"dap".run_to_cursor()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>dk", ':lua require"dap".up()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>dj", ':lua require"dap".down()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>dc", ':lua require"dap".terminate()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>dr", ':lua require"dap".repl.toggle({}, "vsplit")<CR><C-w>l', { noremap = true })
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>de",
-	':lua require"dap".set_exception_breakpoints({"all"})<CR>',
-	{ noremap = true }
-)
-vim.api.nvim_set_keymap("n", "<leader>da", ':lua require"debugHelper".attach()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>dA", ':lua require"debugHelper".attachToRemote()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>di", ':lua require"dap.ui.widgets".hover()<CR>', { noremap = true })
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>d?",
-	':lua local widgets=require"dap.ui.widgets";widgets.centered_float(widgets.scopes)<CR>',
-	{ noremap = true }
-)
+vim.keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
+vim.keymap.set("n", "<F3>", ":lua require'dap'.step_over()<CR>")
+vim.keymap.set("n", "<F2>", ":lua require'dap'.step_into()<CR>")
+vim.keymap.set("n", "<F12>", ":lua require'dap'.step_out()<CR>")
+vim.keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
+vim.keymap.set("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
+vim.keymap.set("n", "<leader>pl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>")
+vim.keymap.set("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
+vim.keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
+
+require("nvim-dap-virtual-text").setup()
+require('dap-go').setup()
+require("dapui").setup()
+require("dap-python").setup()
+
+local dap, dapui = require("dap"), require("dapui")
+dap.listeners.after.event_initialized["dapui_config"] = function()
+  dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+  dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+  dapui.close()
+end
 
 -- Rust Tools
 vim.api.nvim_set_keymap(
