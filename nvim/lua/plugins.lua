@@ -60,6 +60,10 @@ return require("packer").startup(function(use)
 	}) ]]
 	-- use("NTBBloodbath/galaxyline.nvim")
 	use("nvim-lualine/lualine.nvim")
+	use {
+		"SmiteshP/nvim-gps",
+		requires = "nvim-treesitter/nvim-treesitter"
+	}
 
 	use("kyazdani42/nvim-web-devicons")
 
