@@ -182,6 +182,7 @@ require("lspconfig").html.setup({
 -- Java Setup
 
 require("lspconfig").jdtls.setup({ on_attach = on_attach, capabilities = capabilities })
+-- require("lspconfig").java_language_server.setup({ cmd = {"java-language-server"}, on_attach = on_attach, capabilities = capabilities })
 
 -- Commands:
 --
