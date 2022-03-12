@@ -82,6 +82,7 @@ return require("packer").startup(function(use)
 			require('dim').setup({})
 		end
 	}
+	use 'mfussenegger/nvim-jdtls'
 
 	-- You can specify multiple plugins in a single call
 	use({ "tjdevries/colorbuddy.vim" })

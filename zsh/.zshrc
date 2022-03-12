@@ -172,11 +172,12 @@ cdpath=($HOME/dotfiles $HOME/.config)
 # eval "$(starship init zsh)"
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
-# export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux/org.eclipse.equinox.launcher
-# export GRADLE_HOME=$HOME/gradle
-# export JAVA_HOME=/usr/lib/jvm/java-15-openjdk/
-# export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server-latest/config_linux
-# export WORKSPACE=$HOME/javaexsnew
+export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server/plugins/org.eclipse.equinox.common_3.16.0.v20220211-2322.jar
+export GRADLE_HOME=$HOME/gradle
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JDTLS_HOME=/home/arpangreat/dotfiles/nvim/jdt-language-server/
+export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server/config_linux
+export WORKSPACE=$HOME/javaexsnew
 
 function _pip_completion {
   local words cword
