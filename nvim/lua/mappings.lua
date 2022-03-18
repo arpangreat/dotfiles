@@ -189,7 +189,12 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
-vim.api.nvim_set_keymap("n" , "<Leader>tgr" , "<Cmd>lua require('arpangreat.rg')<CR>" , { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>tgr",
+	"<Cmd>lua require('arpangreat.rg')<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
 
 -- noremap <leader>ta :lua require('arpangreat.telescope').anime_selector()<CR>
 -- noremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
@@ -201,7 +206,12 @@ vim.api.nvim_set_keymap("n", "<Leader>gp", ":Neogit<CR>", { noremap = true, sile
 vim.api.nvim_set_keymap("n", "<Leader>go", ":Neogit branch<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gs", ":Neogit stash<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gd", ":DiffviewOpen<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n" , "<Leader>gg" , ":FloatermNew --height=0.9 --width=0.9 lazygit<CR>" , { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>gg",
+	":FloatermNew --height=0.9 --width=0.9 lazygit<CR>",
+	{ noremap = true, silent = false, expr = false }
+)
 -- vim.api.nvim_set_keymap('n','<Leader>', ":<C-U>WhichKey '<Space>'<CR>", { noremap = true , silent = true })
 -- vim.api.nvim_set_keymap('n','<LocalLeader>', ":<C-U>WhichKey ','<CR>", { noremap = true , silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
@@ -416,8 +426,6 @@ vim.api.nvim_set_keymap("i", "!", "!<c-g>u", { noremap = true, silent = false, e
 vim.api.nvim_set_keymap("i", "?", "?<c-g>u", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("v", "K", ":m '>-2<CR>gv=gv", { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap("i", "<C-j>", "<esc>:m .+1<CR>==", { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap("i", "<C-k>", "<esc>:m .-2<CR>==", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("n", "<LocalLeader>j", ":m .+1<CR>==", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("n", "<LocalLeader>k", ":m .-2<CR>==", { noremap = true, silent = false, expr = false })
 
@@ -429,7 +437,7 @@ vim.api.nvim_set_keymap("o", "<Leader>s", ":s//g<Left><Left>", { noremap = true,
 vim.api.nvim_set_keymap("v", "<Leader>s", ":s//g<Left><Left>", { noremap = true, silent = false, expr = false })
 
 -- Bufferline
-vim.api.nvim_set_keymap(
+--[[ vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>1",
 	":BufferLineGoToBuffer 1<CR>",
@@ -482,7 +490,46 @@ vim.api.nvim_set_keymap(
 	"<Leader>9",
 	":BufferLineGoToBuffer 9<CR>",
 	{ noremap = true, silent = false, expr = false }
-)
+) ]]
+
+local map = vim.keymap.set
+local opts = { noremap = true, silent = true }
+
+-- Move to previous/next
+map("n", "<A-,>", ":BufferPrevious<CR>", opts)
+map("n", "<A-.>", ":BufferNext<CR>", opts)
+-- Re-order to previous/next
+map("n", "<A-<>", ":BufferMovePrevious<CR>", opts)
+map("n", "<A->>", " :BufferMoveNext<CR>", opts)
+-- Goto buffer in position...
+map("n", "<A-1>", ":BufferGoto 1<CR>", opts)
+map("n", "<A-2>", ":BufferGoto 2<CR>", opts)
+map("n", "<A-3>", ":BufferGoto 3<CR>", opts)
+map("n", "<A-4>", ":BufferGoto 4<CR>", opts)
+map("n", "<A-5>", ":BufferGoto 5<CR>", opts)
+map("n", "<A-6>", ":BufferGoto 6<CR>", opts)
+map("n", "<A-7>", ":BufferGoto 7<CR>", opts)
+map("n", "<A-8>", ":BufferGoto 8<CR>", opts)
+map("n", "<A-9>", ":BufferGoto 9<CR>", opts)
+map("n", "<A-0>", ":BufferLast<CR>", opts)
+-- Close buffer
+map("n", "<A-c>", ":BufferClose<CR>", opts)
+-- Wipeout buffer
+--                 :BufferWipeout<CR>
+-- Close commands
+--                 :BufferCloseAllButCurrent<CR>
+--                :BufferCloseBuffersLeft<CR>
+--                 :BufferCloseBuffersRight<CR>
+-- Magic buffer-picking mode
+map("n", "<C-p>", ":BufferPick<CR>", opts)
+-- Sort automatically by...
+--[[ map("n", "<Space>bb", ":BufferOrderByBufferNumber<CR>", opts)
+map("n", "<Space>bd", ":BufferOrderByDirectory<CR>", opts)
+map("n", "<Space>bl", ":BufferOrderByLanguage<CR>", opts) ]]
+
+-- Other:
+-- :BarbarEnable - enables barbar (enabled by default)
+-- :BarbarDisable - very bad command, should never be used
 
 -- Treesitter Unit
 vim.api.nvim_set_keymap(
@@ -536,19 +583,19 @@ vim.keymap.set("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
 vim.keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
 
 require("nvim-dap-virtual-text").setup()
-require('dap-go').setup()
+require("dap-go").setup()
 require("dapui").setup()
 require("dap-python").setup()
 
 local dap, dapui = require("dap"), require("dapui")
 dap.listeners.after.event_initialized["dapui_config"] = function()
-  dapui.open()
+	dapui.open()
 end
 dap.listeners.before.event_terminated["dapui_config"] = function()
-  dapui.close()
+	dapui.close()
 end
 dap.listeners.before.event_exited["dapui_config"] = function()
-  dapui.close()
+	dapui.close()
 end
 
 -- Rust Tools
@@ -591,3 +638,13 @@ vim.keymap.set(
 --[[ vim.api.nvim_exec([[
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 , true) ]]
+
+local ls = require("luasnip")
+vim.keymap.set("i", "<C-l>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end)
+
+-- Telekasten
+vim.keymap.set("n", "<Leader>zf", ":Telekasten panel<CR>", { noremap = true, silent = false, expr = false })

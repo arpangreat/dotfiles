@@ -172,6 +172,7 @@ require("lspconfig").hls.setup({ on_attach = on_attach, capabilities = capabilit
 require("lspconfig").yamlls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").pyright.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").phpactor.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").dartls.setup({ on_attach = on_attach, capabilities = capabilities })
 -- require('sg.lsp').setup{ on_attach = on_attach, capabilities = capabilities }
 require("lspconfig").r_language_server.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").html.setup({

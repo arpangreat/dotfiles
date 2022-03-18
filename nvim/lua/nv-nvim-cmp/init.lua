@@ -23,8 +23,6 @@ cmp.setup({
 		["<C-e>"] = cmp.mapping.close(),
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<Tab>"] = cmp.mapping(function(fallback)
-			--[[ if vim.fn["vsnip#available"](1) == 1 then
-        feedkey("<Plug>(vsnip-expand-or-jump)", "") ]]
 			if luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()
 			else
@@ -34,7 +32,6 @@ cmp.setup({
 			"i",
 			"s",
 		}),
-
 		--[[ ["<S-Tab>"] = cmp.mapping(function()
       if vim.fn["vsnip#jumpable"](-1) == 1 then
         feedkey("<Plug>(vsnip-jump-prev)", "")
@@ -55,7 +52,7 @@ cmp.setup({
 		{ name = "treesitter" },
 		{ name = "nvim_lua" },
 		{ name = "path" },
-    { name = "cmp_tabnine" },
+		{ name = "cmp_tabnine" },
 		-- { name = 'vsnip' }
 	}),
 
@@ -86,7 +83,7 @@ cmp.setup({
 				buffer = "﬘",
 				luasnip = "",
 				spell = "暈",
-        cmp_tabnine = ""
+				cmp_tabnine = "",
 			})[entry.source.name]
 			return vim_item
 		end,
@@ -101,15 +98,15 @@ cmp.setup({
 -- you need setup cmp first put this after cmp.setup()
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))
 
-local tabnine = require('cmp_tabnine.config')
+local tabnine = require("cmp_tabnine.config")
 tabnine:setup({
-	max_lines = 1000;
-	max_num_results = 20;
-	sort = true;
-	run_on_every_keystroke = true;
-	snippet_placeholder = '..';
+	max_lines = 1000,
+	max_num_results = 20,
+	sort = true,
+	run_on_every_keystroke = true,
+	snippet_placeholder = "..",
 	ignored_file_types = { -- default is not to ignore
 		-- uncomment to ignore in lua:
 		-- lua = true
-	};
+	},
 })

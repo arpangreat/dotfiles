@@ -118,6 +118,7 @@ alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
+alias open='xdg-open'
 
 bindkey -v
 
@@ -227,6 +228,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.cargo/env
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/flutter/bin
 
 
 # Spaceship configs
@@ -280,6 +282,7 @@ export TERM=xterm-kitty-256color
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
+export GOOGLE_EXECUTABLE=/usr/bin/brave
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
