@@ -25,11 +25,10 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("jbyuki/one-small-step-for-vimkind")
 	use("theHamsta/nvim-dap-virtual-text")
-	use 'leoluz/nvim-dap-go'
-	use 'mfussenegger/nvim-dap-python'
-	use 'rcarriga/nvim-dap-ui'
-	use 'nvim-telescope/telescope-dap.nvim'
-
+	use("leoluz/nvim-dap-go")
+	use("mfussenegger/nvim-dap-python")
+	use("rcarriga/nvim-dap-ui")
+	use("nvim-telescope/telescope-dap.nvim")
 
 	-- Also run code after load (see the "config" key)
 	use({
@@ -60,10 +59,10 @@ return require("packer").startup(function(use)
 	}) ]]
 	-- use("NTBBloodbath/galaxyline.nvim")
 	use("nvim-lualine/lualine.nvim")
-	use {
+	use({
 		"SmiteshP/nvim-gps",
-		requires = "nvim-treesitter/nvim-treesitter"
-	}
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
 
 	use("kyazdani42/nvim-web-devicons")
 
@@ -75,14 +74,14 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	use {
+	use({
 		"narutoxy/dim.lua",
 		requires = { "nvim-treesitter/nvim-treesitter", "neovim/nvim-lspconfig" },
 		config = function()
-			require('dim').setup({})
-		end
-	}
-	use 'mfussenegger/nvim-jdtls'
+			require("dim").setup({})
+		end,
+	})
+	use("mfussenegger/nvim-jdtls")
 
 	-- You can specify multiple plugins in a single call
 	use({ "tjdevries/colorbuddy.vim" })
@@ -135,7 +134,7 @@ return require("packer").startup(function(use)
 
 	-- Language specific
 	-- use 'tpope/vim-surround'
-  use 'tpope/vim-sleuth'
+	use("tpope/vim-sleuth")
 	use("neovim/nvim-lspconfig")
 	-- LSP Extensions
 	use("nvim-lua/lsp_extensions.nvim")
@@ -150,7 +149,7 @@ return require("packer").startup(function(use)
 	use("norcalli/nvim_utils")
 	use("windwp/nvim-ts-autotag")
 	use("anott03/nvim-lspinstall")
-	-- use("dart-lang/dart-vim-plugin")
+	use("dart-lang/dart-vim-plugin")
 	-- use 'hrsh7th/nvim-compe'
 	use({
 		"hrsh7th/nvim-cmp",
@@ -165,7 +164,7 @@ return require("packer").startup(function(use)
 			"hrsh7th/cmp-vsnip",
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
-      {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+			{ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" },
 		},
 	})
 	use("p00f/clangd_extensions.nvim")
@@ -210,9 +209,12 @@ return require("packer").startup(function(use)
 	use("rust-lang/rust.vim")
 	use("simrat39/rust-tools.nvim")
 	use("glepnir/dashboard-nvim")
-	use("akinsho/nvim-bufferline.lua")
+	-- use("akinsho/nvim-bufferline.lua")
+	use("romgrk/barbar.nvim")
 	use("j-hui/fidget.nvim")
 
+	use("renerocksai/telekasten.nvim")
+	use("renerocksai/calendar-vim")
 	-- use 'kshenoy/vim-signature'
 	-- use 'tpope/vim-git'
 	-- use("liuchengxu/vim-which-key")
@@ -226,7 +228,7 @@ return require("packer").startup(function(use)
 	-- use 'tjdevries/sg.nvim'
 	-- use 'mhartington/formatter.nvim'
 	use("ckipp01/stylua-nvim")
-  use("rcarriga/nvim-notify")
+	use("rcarriga/nvim-notify")
 
 	-- My Plugins
 	use("arpangreat/treesitter-unit-plugin")

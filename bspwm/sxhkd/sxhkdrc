@@ -191,20 +191,20 @@ alt + f
     variety -f
 
 #Wallpaper previous
-alt + Left
-    variety -p
+# alt + Left
+#     variety -p
 
 #Wallpaper next
-alt + Right
-    variety -n
+# alt + Right
+#     variety -n
 
 #Wallpaper toggle-pause
-alt + Up
-    variety --toggle-pause
+# alt + Up
+#     variety --toggle-pause
 
 #Wallpaper resume
-alt + Down
-    variety --resume
+# alt + Down
+#     variety --resume
 
 #Xfce appfinder
 alt + F2

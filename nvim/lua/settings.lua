@@ -84,7 +84,7 @@ vim.opt.ttimeoutlen = 50
 vim.opt.updatetime = 100
 vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
-vim.opt.laststatus = 2
+vim.opt.laststatus = 3
 
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
