@@ -627,12 +627,14 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
-vim.keymap.set(
+--[[ vim.keymap.set(
 	"n",
 	"<Leader>rc",
 	":lua require'rust-tools.crate_graph'.view_crate_graph(backend, output)<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
+	{ noremap = true, silent = false, expr = false } ]]
+-- )
+
+vim.keymap.set("n", "<Leader>rc", ":RustOpenCargo<CR>", { noremap = true, silent = false, expr = false })
 
 -- -- Sudo
 --[[ vim.api.nvim_exec([[

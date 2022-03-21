@@ -137,7 +137,7 @@ return require("packer").startup(function(use)
 	use("tpope/vim-sleuth")
 	use("neovim/nvim-lspconfig")
 	-- LSP Extensions
-	use("nvim-lua/lsp_extensions.nvim")
+	-- use("nvim-lua/lsp_extensions.nvim")
 	use("tami5/lspsaga.nvim")
 	use("onsails/lspkind-nvim")
 	use("nvim-lua/completion-nvim")

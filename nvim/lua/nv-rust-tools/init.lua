@@ -36,7 +36,7 @@ local opts = {
 			-- not that this may cause  higher CPU usage.
 			-- This option is only respected when only_current_line and
 			-- autoSetHints both are true.
-			only_current_line_autocmd = "CursorHold",
+			-- only_current_line_autocmd = "CursorHold",
 
 			-- wheter to show parameter hints with the inlay hints or not
 			show_parameter_hints = true,
@@ -45,7 +45,7 @@ local opts = {
 			parameter_hints_prefix = "<- ",
 
 			-- prefix for all the other hints (type, chaining)
-			other_hints_prefix = "=> ",
+			other_hints_prefix = "<- ",
 
 			-- whether to align to the length of the longest line in the file
 			max_len_align = false,
@@ -102,7 +102,26 @@ local opts = {
 	-- all the opts to send to nvim-lspconfig
 	-- these override the defaults set by rust-tools.nvim
 	-- see https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#rust_analyzer
-	server = {}, -- rust-analyer options
+	server = {
+		settings = {
+			-- to enable rust-analyzer settings visit:
+			-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
+			["rust-analyzer"] = {
+				-- enable clippy on save
+				checkOnSave = {
+					assist = {
+						importGranularity = "module",
+						importPrefix = "by_self",
+					},
+					cargo = { loadOutDirsFromCheck = true },
+					procMacro = { enable = true },
+
+					command = "clippy",
+					inlayHints = true,
+				},
+			},
+		},
+	}, -- rust-analyer options
 
 	-- debugging stuff
 	dap = {
