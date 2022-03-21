@@ -10,7 +10,8 @@ require("kanagawa").setup({
 	specialReturn = true, -- special highlight for the return keyword
 	specialException = true, -- special highlight for exception handling keywords
 	transparent = true, -- do not set background color
-	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
+	dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+	globalStatus = true,
 	colors = {},
 	overrides = {},
 })
