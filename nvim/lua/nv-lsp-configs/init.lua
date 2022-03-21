@@ -94,7 +94,7 @@ capabilities.textDocument.codeAction = {
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Enable rust_analyzer
-nvim_lsp.rust_analyzer.setup({
+--[[ nvim_lsp.rust_analyzer.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
@@ -114,10 +114,10 @@ nvim_lsp.rust_analyzer.setup({
 })
 
 vim.api.nvim_exec(
-	"autocmd CursorMoved,InsertLeave,TabEnter,BufWritePost *.rs lua require'lsp_extensions'.inlay_hints{ prefix = '<- ', highlight = 'Comment', enabled = {'TypeHint', 'ChainingHint', 'ParameterHint'}}",
+	"autocmd CursorMoved,InsertLeave,TabEnter,BufWritePost *.rs lua require'lsp_extensions'.inlay_hints{ prefix = '<- ', highlight = 'Comment', enabled = {'TypeHint', 'ChainingHint', 'ParameterHint', 'closureReturnTypeHints', 'lifetimeElisionHints', 'reborrowHints'}}",
 	true
 )
-
+ ]]
 -- Enable diagnostics
 vim.diagnostic.config({
 	virtual_text = {
