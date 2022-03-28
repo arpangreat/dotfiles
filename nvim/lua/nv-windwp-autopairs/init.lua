@@ -23,6 +23,7 @@ require("nvim-treesitter.configs").setup({
 })
 
 local ts_conds = require("nvim-autopairs.ts-conds")
+local conds = require("nvim-autopairs.conds")
 
 -- press % => %% is only inside comment or string
 npairs.add_rules({
@@ -32,6 +33,36 @@ npairs.add_rules({
 	Rule("%(.*%)%s*%=>$", " {  }", { "typescript", "typescriptreact", "javascript" })
 		:use_regex(true)
 		:set_end_pair_length(2),
+	Rule("%(.*%)%s*%=>$", " {  }", { "typescript", "typescriptreact", "javascript" })
+		:use_regex(true)
+		:set_end_pair_length(2),
+	Rule("=", "")
+		:with_pair(conds.not_inside_quote())
+		:with_pair(function(opts)
+			local last_char = opts.line:sub(opts.col - 1, opts.col - 1)
+			if last_char:match("[%w%=%s]") then
+				return true
+			end
+			return false
+		end)
+		:replace_endpair(function(opts)
+			local prev_2char = opts.line:sub(opts.col - 2, opts.col - 1)
+			local next_char = opts.line:sub(opts.col, opts.col)
+			next_char = next_char == " " and "" or " "
+			if prev_2char:match("%w$") then
+				return "<bs> =" .. next_char
+			end
+			if prev_2char:match("%=$") then
+				return next_char
+			end
+			if prev_2char:match("=") then
+				return "<bs><bs>=" .. next_char
+			end
+			return ""
+		end)
+		:set_end_pair_length(0)
+		:with_move(conds.none())
+		:with_del(conds.none()),
 })
 
 -- skip it, if you use another global object
@@ -57,5 +88,36 @@ end
 npairs.add_rules(require("nvim-autopairs.rules.endwise-elixir"))
 npairs.add_rules(require("nvim-autopairs.rules.endwise-lua"))
 npairs.add_rules(require("nvim-autopairs.rules.endwise-ruby"))
+
+npairs.add_rules({
+	Rule(" ", " "):with_pair(function(opts)
+		local pair = opts.line:sub(opts.col - 1, opts.col)
+		return vim.tbl_contains({ "()", "[]", "{}" }, pair)
+	end),
+	Rule("( ", " )")
+		:with_pair(function()
+			return false
+		end)
+		:with_move(function(opts)
+			return opts.prev_char:match(".%)") ~= nil
+		end)
+		:use_key(")"),
+	Rule("{ ", " }")
+		:with_pair(function()
+			return false
+		end)
+		:with_move(function(opts)
+			return opts.prev_char:match(".%}") ~= nil
+		end)
+		:use_key("}"),
+	Rule("[ ", " ]")
+		:with_pair(function()
+			return false
+		end)
+		:with_move(function(opts)
+			return opts.prev_char:match(".%]") ~= nil
+		end)
+		:use_key("]"),
+})
 
 remap("i", "<CR>", "v:lua.MUtils.completion_confirm()", { expr = true, noremap = true })
