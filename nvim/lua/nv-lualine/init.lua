@@ -1,7 +1,7 @@
 local gps = require("nvim-gps")
 
 require("lualine").setup({
-	options = { theme = require("lualine.themes.nightfox") },
+	options = { theme = require("lualine.themes.terafox") },
 	-- options = { theme = "catppuccin" },
 	-- options = { theme = "tokyonight" },
 	sections = {

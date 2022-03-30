@@ -33,8 +33,9 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/w1.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/neon.png &
-feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
+# feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/wallpaperflare.com_wallpaper.jpg
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/nightfox.jpeg
 run xmodmap /home/arpangreat/dotfiles/i3/swap &
 # setxkbmap us
 
@@ -42,8 +43,8 @@ run xmodmap /home/arpangreat/dotfiles/i3/swap &
 xsetroot -cursor_name left_ptr &
 
 # conky -c $HOME/.config/bspwm/system-overview &
-# run kitty &
-run alacritty &
+run kitty &
+# run alacritty &
 # run thunar & 
 run dolphin &
 run brave &
