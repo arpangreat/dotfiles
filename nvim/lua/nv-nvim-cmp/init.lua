@@ -39,10 +39,12 @@ cmp.setup({
     end, { "i", "s" }), ]]
 	},
 
-	documentation = {
-		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-		-- border = "double",
-		winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
+	window = {
+		documentation = {
+			border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+			-- border = "double",
+			winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
+		},
 	},
 
 	sources = cmp.config.sources({
@@ -90,7 +92,6 @@ cmp.setup({
 	},
 
 	experimental = {
-		native_menu = false,
 		ghost_text = true,
 	},
 })
