@@ -291,8 +291,8 @@ export GOOGLE_EXECUTABLE=/usr/bin/brave
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-# zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-zvm_after_init() {
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-}
+# zvm_after_init() {
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# }

@@ -6,7 +6,7 @@ local protocol = require("vim.lsp.protocol")
 
 local lsp_highlight_document = function(client)
 	-- Set Autocommands conditional on server capabilities
-	if client.resolved_capabilities.document_highlight then
+	if client.server_capabilities.document_highlight then
 		vim.api.nvim_exec(
 			[[
       augroup lsp_document_highlight
@@ -32,7 +32,7 @@ local on_attach = function(client, bufnr)
 	--Enable completion triggered by <c-x><c-o>
 	buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 	-- formatting
-	if client.resolved_capabilities.document_formatting then
+	if client.server_capabilities.document_formatting then
 		vim.api.nvim_exec(
 			[[augroup Format
      autocmd! * <buffer>
