@@ -14,7 +14,7 @@ cmp.setup({
 		end,
 	},
 
-	mapping = {
+	mapping = cmp.mapping.preset.insert({
 		["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
 		["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 		["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -37,7 +37,7 @@ cmp.setup({
         feedkey("<Plug>(vsnip-jump-prev)", "")
       end
     end, { "i", "s" }), ]]
-	},
+	}),
 
 	window = {
 		documentation = {
@@ -60,6 +60,7 @@ cmp.setup({
 
 	-- Use buffer source for `/`.
 	cmp.setup.cmdline("/", {
+		mapping = cmp.mapping.preset.cmdline(),
 		sources = {
 			{ name = "buffer" },
 		},
@@ -67,6 +68,7 @@ cmp.setup({
 
 	-- Use cmdline & path source for ':'.
 	cmp.setup.cmdline(":", {
+		mapping = cmp.mapping.preset.cmdline(),
 		sources = cmp.config.sources({
 			{ name = "path" },
 		}, {
