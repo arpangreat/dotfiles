@@ -180,6 +180,21 @@ require("lspconfig").html.setup({
 	capabilities = capabilities,
 })
 
+-- Perl Setup
+local perlconfig = {
+	cmd = { "/opt/bin/pls" }, -- complete path to where PLS is located
+	settings = {
+		perl = {
+			inc = { "/my/perl/5.34/lib", "/some/other/perl/lib" }, -- add list of dirs to @INC
+			cwd = { "/home/arpangreat/perl-examples/" }, -- working directory for PLS
+			-- perlcritic = { enabled = true, perlcriticrc = "/my/projects/.perlcriticrc" }, -- use perlcritic and pass a non-default location for its config
+			syntax = { enabled = true, perl = "/usr/bin/perl" }, -- enable syntax checking and use a non-default perl binary
+			-- perltidyrc = "/my/projects/.perltidyrc", -- non-default location for perltidy's config
+		},
+	},
+}
+require("lspconfig").perlpls.setup({ on_attach = on_attach, capabilities = capabilities, perlconfig })
+
 -- Java Setup
 
 require("lspconfig").jdtls.setup({ on_attach = on_attach, capabilities = capabilities })
