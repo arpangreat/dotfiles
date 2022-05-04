@@ -124,6 +124,8 @@ return require("packer").startup(function(use)
 	use("EdenEast/nightfox.nvim")
 	use("bluz71/vim-nightfly-guicolors")
 	use("rebelot/kanagawa.nvim")
+	use({ "themercorp/themer.lua" })
+
 	-- use("dylanaraps/wal.vim")
 
 	-- Language specific
