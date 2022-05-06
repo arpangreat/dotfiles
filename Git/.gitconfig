@@ -21,7 +21,7 @@
 [alias]
   a = "!git status --short | fzf | awk '{print $2}' | xargs git add"
   co = "!git branch -l | fzf | awk '{print $2}' | xargs git checkout"
-  d = diff
+  d = "!git diff | dunk"
   ci = commit
   ca = commit -a
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
