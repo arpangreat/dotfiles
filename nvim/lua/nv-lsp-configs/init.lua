@@ -73,11 +73,16 @@ local on_attach = function(client, bufnr)
 		"ﬦ", -- Operator
 		"", -- TypeParameter
 	}
+	vim.api.nvim_buf_create_user_command(
+		bufnr,
+		"Format",
+		vim.lsp.buf.formatting,
+		{ desc = "Format current buffer with LSP" }
+	)
 end
 
 --Enable (broadcasting) snippet capability for completion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 capabilities.textDocument.codeAction = {
 	dynamicRegistration = true,
 	codeActionLiteralSupport = {
