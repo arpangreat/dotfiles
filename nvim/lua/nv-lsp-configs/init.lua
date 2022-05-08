@@ -184,6 +184,7 @@ require("lspconfig").html.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+require("lspconfig").zls.setup({ on_attach = on_attach, capabilities = capabilities })
 
 -- Perl Setup
 local perlconfig = {

@@ -26,7 +26,7 @@ plugins=(
   zsh-completions
   zsh-syntax-highlighting
   rust
-  zsh-vi-mode
+  # zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -208,17 +208,17 @@ export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
 # zsh-vi-mode
 # ZVM_CURSOR_STYLE_ENABLED=true
 
-# function zle-keymap-select
-# {
-#   # precmd
-#   case $KEYMAP in
-#       vicmd)      print -n '\033[1 q';; # block cursor
-#       viins|main) print -n '\033[5 q';; # line cursor
-#   esac
-#   zle reset-prompt
-# }
+function zle-keymap-select
+{
+  # precmd
+  case $KEYMAP in
+      vicmd)      print -n '\033[1 q';; # block cursor
+      viins|main) print -n '\033[5 q';; # line cursor
+  esac
+  zle reset-prompt
+}
 
-# zle -N zle-keymap-select
+zle -N zle-keymap-select
 
 export GOPATH=$HOME/go
 export LLVM_ROOT=$HOME/llvm-project
@@ -291,8 +291,8 @@ export GOOGLE_EXECUTABLE=/usr/bin/brave
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # zvm_after_init() {
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
