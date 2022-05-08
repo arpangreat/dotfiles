@@ -19,6 +19,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 # source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/dotfiles/zsh/functions/_zig
 plugins=(
   git
   zsh-interactive-cd
@@ -26,7 +27,7 @@ plugins=(
   zsh-completions
   zsh-syntax-highlighting
   rust
-  # zsh-vi-mode
+  zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -279,6 +280,7 @@ fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
 export TERM=xterm-kitty-256color
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
@@ -292,7 +294,7 @@ export GOOGLE_EXECUTABLE=/usr/bin/brave
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # zvm_after_init() {
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
