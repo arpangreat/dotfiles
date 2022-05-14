@@ -127,6 +127,7 @@ return require("packer").startup({
 		use("bluz71/vim-nightfly-guicolors")
 		use("rebelot/kanagawa.nvim")
 		use({ "themercorp/themer.lua" })
+		use("sainnhe/gruvbox-material")
 
 		-- use("dylanaraps/wal.vim")
 

@@ -37,14 +37,14 @@ require("nv-autotag")
 -- require("nv-tokyonight")
 -- require("nv-starry")
 -- require('nv-nightfly')
--- require("nv-nightfox")
-require("nv-terafox")
+require("nv-nightfox")
+-- require("nv-terafox")
 -- require("nv-themer")
 -- require("nv-catppuccin")
 -- require("nv-kanagawa")
 -- require('nv-oceanic-material')
 -- require('nv-gruvbox-flat')
--- require('nv-gruvbox-material')
+-- require("nv-gruvbox-material")
 require("nv-fzf")
 -- require('nv-indentline')
 require("nv-indent-blankline")
@@ -146,14 +146,15 @@ augroup highlight_yank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
 augroup END
-]]--,
+]]
+--,
 --	true
 --) ]]
 
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', {clear = true})
-vim.api.nvim_create_autocmd('TextYankPost', { 
+local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
+vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function() end,
-	pattern = '*',
+	pattern = "*",
 })
 
 --[[ vim.api.nvim_exec(
