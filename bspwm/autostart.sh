@@ -46,7 +46,8 @@ xsetroot -cursor_name left_ptr &
 run kitty &
 # run alacritty &
 # run thunar & 
-run dolphin &
+# run dolphin &
+run conky &
 run brave &
 run nm-applet &
 run pamac-tray &

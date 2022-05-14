@@ -230,6 +230,11 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
+  ["gh.nvim"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/gh.nvim",
+    url = "https://github.com/ldelossa/gh.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
