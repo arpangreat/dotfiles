@@ -7,7 +7,7 @@ $HOME/.config/bspwm/autostart.sh
 
 #BSPWM configuration
 #bspc config border_radius       8
-bspc config border_width         2
+bspc config border_width         1
 bspc config window_gap           10
 bspc config top_padding          30
 bspc config bottom_padding       10
@@ -83,8 +83,8 @@ bspc rule -a Oblogout state=floating
 # bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
-bspc rule -a kitty desktop='^1' follow=on state=tiled
-bspc rule -a Alacritty desktop='^1' follow=on state=tiled
+bspc rule -a kitty desktop='^1' follow=on state=tiled border=off
+bspc rule -a Alacritty desktop='^1' follow=on state=tiled border=off
 bspc rule -a Thunar desktop='^2' follow=on state=tiled
 bspc rule -a dolphin desktop='^2' follow=on state=tiled
 bspc rule -a Bspwm desktop='^2' follow=on state=tiled
