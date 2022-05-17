@@ -27,7 +27,7 @@ require("telescope").setup({
 		-- selection_strategy = "reset",
 		sorting_strategy = "ascending",
 		scroll_strategy = "cycle",
-		-- layout_strategy = "vertical",
+		layout_strategy = "flex",
 		layout_config = {
 			horizontal = {
 				mirror = false,
@@ -54,11 +54,39 @@ require("telescope").setup({
 		-- path_display = {},
 		-- winblend = 0,
 		-- border = {},
-		-- borderchars = {'─', '│', '─', '│', '╭', '╮', '╯', '╰'},
+		borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 		-- use_less = true,
 		-- set_env = {['COLORTERM'] = 'truecolor'}, -- default = nil,
 		--
 		-- buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
+		preview = {
+			mime_hook = function(filepath, bufnr, opts)
+				local is_image = function(filepath)
+					local image_extensions = { "png", "jpg" } -- Supported image formats
+					local split_path = vim.split(filepath:lower(), ".", { plain = true })
+					local extension = split_path[#split_path]
+					return vim.tbl_contains(image_extensions, extension)
+				end
+				if is_image(filepath) then
+					local term = vim.api.nvim_open_term(bufnr, {})
+					local function send_output(_, data, _)
+						for _, d in ipairs(data) do
+							vim.api.nvim_chan_send(term, d .. "\r\n")
+						end
+					end
+					vim.fn.jobstart({
+						"catimg",
+						filepath, -- Terminal image viewer command
+					}, { on_stdout = send_output, stdout_buffered = true })
+				else
+					require("telescope.previewers.utils").set_preview_message(
+						bufnr,
+						opts.winid,
+						"Binary cannot be previewed"
+					)
+				end
+			end,
+		},
 	},
 	extensions = {
 		fzf = {
