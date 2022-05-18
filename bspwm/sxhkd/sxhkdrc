@@ -54,6 +54,9 @@ super + shift + p
 super + shift + b 
   /home/arpangreat/dotfiles/custom-scripts/prompt "Are you sure to REBOOT ??" reboot
 
+super + s 
+  /home/arpangreat/dotfiles/custom-scripts/web-search-rofi.sh
+
 #Keyboard dependent
 #File-Manager
 #super + shift + KP_Enter
