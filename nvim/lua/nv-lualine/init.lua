@@ -9,7 +9,17 @@ require("lualine").setup({
 	sections = {
 		lualine_c = {
 			{ "filename" },
-			{ gps.get_location, cond = gps.is_available },
+			-- { gps.get_location, cond = gps.is_available },
 		},
 	},
+})
+
+_G.gps_location = function()
+	return gps.is_available() and gps.get_location() or ""
+end
+vim.opt.winbar = "%{%v:lua.gps_location()%}"
+
+vim.api.nvim_create_autocmd("CursorMoved", {
+	pattern = "*",
+	command = "set winbar=%{%v:lua.gps_location()%}",
 })
