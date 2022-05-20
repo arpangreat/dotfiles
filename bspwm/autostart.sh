@@ -44,8 +44,8 @@ run xmodmap /home/arpangreat/dotfiles/i3/swap &
 xsetroot -cursor_name left_ptr &
 
 # conky -c $HOME/.config/bspwm/system-overview &
-# run kitty &
-run alacritty &
+run kitty &
+# run alacritty &
 # run thunar & 
 # run dolphin &
 run conky &
