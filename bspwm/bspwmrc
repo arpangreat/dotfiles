@@ -129,3 +129,6 @@ xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DP-1)
 #bspc config external_rules_command ~/.config/bspwm/scripts/pseudo_automatic_mode
 ##Adjust new window: splits biggest windows to keep windows about the same size
 #bspc config external_rules_command ~/.config/bspwm/scripts/adjust-new-window
+
+xsetroot -cursor_name left_ptr
+xset r rate 200 30

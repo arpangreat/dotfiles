@@ -31,8 +31,8 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 #Some ways to set your wallpaper besides variety or nitrogen
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/devyg41-28cd223e-1a1f-48b6-87c7-41c0064fe163.jpg &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/w1.jpg
-# feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11.jpg
-feh --bg-center /home/arpangreat/Pictures/Snapchat-612959769.jpg
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11.jpg
+# feh --bg-center /home/arpangreat/Pictures/Snapchat-612959769.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/neon.png &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/wallpaperflare.com_wallpaper.jpg
@@ -41,7 +41,7 @@ run xmodmap /home/arpangreat/dotfiles/i3/swap &
 # setxkbmap us
 
 # dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
-xsetroot -cursor_name left_ptr &
+# xsetroot -cursor_name left_ptr &
 
 # conky -c $HOME/.config/bspwm/system-overview &
 run kitty &
@@ -55,7 +55,7 @@ run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
-picom --config $HOME/.config/bspwm/picom.conf &
+picom --experimental-backend --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
