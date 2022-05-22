@@ -417,6 +417,8 @@ super + shift + r
 super + shift + q
 	bspc node -c
 
+super + shift + c
+	bsp-layout cycle
 #Logout
 #super + shift + x
 #	bspc quit
