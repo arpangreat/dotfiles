@@ -54,7 +54,7 @@ require("telescope").setup({
 		-- path_display = {},
 		-- winblend = 0,
 		-- border = {},
-		borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+		-- borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 		-- use_less = true,
 		-- set_env = {['COLORTERM'] = 'truecolor'}, -- default = nil,
 		--
