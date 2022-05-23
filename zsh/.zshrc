@@ -65,7 +65,7 @@ alias e='emacs'
 alias brc='nvim ~/dotfiles/bspwm/'
 alias vrc='nvim ~/.vimrc'
 alias ec='emacsclient'
-alias nrc='nvim ~/.config/nvim/init.lua'
+alias nrc='nvim ~/dotfiles/nvim/init.lua'
 alias s='sudo'
 alias sv='sudo vim'
 alias snv='sudo nvim'
@@ -85,10 +85,10 @@ alias gal='git lg -p'
 alias gso='git show'
 alias gco='git checkout'
 alias gf='$GOPATH/bin/gf'
-alias arc='nvim ~/.config/alacritty/alacritty.yml'
+alias arc='nvim ~/dotfiles/alacritty/alacritty.yml'
 alias zrc='nvim ~/.zshrc'
 alias trc='nvim ~/.tmux.conf'
-alias krc='nvim ~/.config/kitty/kitty.conf'
+alias krc='nvim ~/dotfiles/kitty/kitty.conf'
 alias irc='nvim ~/dotfiles/i3/config'
 alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
@@ -209,17 +209,17 @@ export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
 # zsh-vi-mode
 # ZVM_CURSOR_STYLE_ENABLED=true
 
-function zle-keymap-select
-{
-  # precmd
-  case $KEYMAP in
-      vicmd)      print -n '\033[1 q';; # block cursor
-      viins|main) print -n '\033[5 q';; # line cursor
-  esac
-  zle reset-prompt
-}
+# function zle-keymap-select
+# {
+#   # precmd
+#   case $KEYMAP in
+#       vicmd)      print -n '\033[1 q';; # block cursor
+#       viins|main) print -n '\033[5 q';; # line cursor
+#   esac
+#   zle reset-prompt
+# }
 
-zle -N zle-keymap-select
+# zle -N zle-keymap-select
 
 export GOPATH=$HOME/go
 export LLVM_ROOT=$HOME/llvm-project
@@ -281,7 +281,7 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
-export TERM=xterm-kitty-256color
+export TERM=alacritty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
