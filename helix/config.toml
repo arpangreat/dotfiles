@@ -1,4 +1,4 @@
-theme = "onedark"
+theme = "nord"
 
 [editor]
 line-number = "relative"
@@ -11,3 +11,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.lsp]
+display-messages = true
+

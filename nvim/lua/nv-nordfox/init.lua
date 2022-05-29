@@ -30,7 +30,7 @@ require("nightfox").setup({
 			gitgutter = true,
 			gitsigns = true,
 			symbol_outline = true,
-			telescope = true,
+			telescope = false,
 			treesitter = true,
 			tsrainbow = true,
 			whichkey = true,

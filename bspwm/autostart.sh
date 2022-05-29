@@ -44,8 +44,8 @@ run xmodmap /home/arpangreat/dotfiles/i3/swap &
 # xsetroot -cursor_name left_ptr &
 
 # conky -c $HOME/.config/bspwm/system-overview &
-# run kitty &
-run alacritty &
+run kitty &
+# run alacritty &
 # run thunar & 
 # run dolphin &
 run conky &
@@ -55,7 +55,7 @@ run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
-picom --experimental-backend --config $HOME/.config/bspwm/picom.conf &
+picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
