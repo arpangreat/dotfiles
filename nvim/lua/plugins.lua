@@ -139,7 +139,7 @@ return require("packer").startup({
 		-- use("nvim-lua/lsp_extensions.nvim")
 		use("tami5/lspsaga.nvim")
 		use("onsails/lspkind-nvim")
-		use("nvim-lua/completion-nvim")
+		-- use("nvim-lua/completion-nvim")
 		--[[ use 'steelsojka/completion-buffers'
   use 'nvim-treesitter/completion-treesitter'
   use 'albertoCaroM/completion-tmux' ]]

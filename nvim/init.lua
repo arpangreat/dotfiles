@@ -89,6 +89,7 @@ require("nv-clangd-extension")
 require("nv-notify")
 require("nv-gps")
 require("nv-telekasten")
+-- require("nv-winbar")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 

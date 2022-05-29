@@ -220,3 +220,7 @@ function c() {
     command cargo --help
   fi
 }
+
+function objd() {
+  command objdump -D "$1" | bat
+}
