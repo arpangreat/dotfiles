@@ -11,6 +11,7 @@
 --========================================================================================
 -- vim.cmd("source /home/arpangreat/dotfiles/nvim/my-vim/plugins.vim")
 -- Lua file
+require("impatient")
 require("plugins")
 require("arpangreat")
 require("settings")
@@ -89,6 +90,7 @@ require("nv-clangd-extension")
 require("nv-notify")
 require("nv-gps")
 require("nv-telekasten")
+-- require("nv-specs")
 -- require("nv-winbar")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")

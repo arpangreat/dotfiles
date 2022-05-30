@@ -30,6 +30,8 @@ return require("packer").startup({
 		use("mfussenegger/nvim-dap-python")
 		use("rcarriga/nvim-dap-ui")
 		use("nvim-telescope/telescope-dap.nvim")
+		use({ "edluffy/specs.nvim" })
+		use("lewis6991/impatient.nvim")
 
 		-- Also run code after load (see the "config" key)
 
