@@ -41,9 +41,16 @@ cmp.setup({
 
 	window = {
 		documentation = {
-			border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-			-- border = "double",
-			winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
+			-- border = cmp.config.window.bordered(),
+			-- border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+			border = "single",
+			-- winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
+			winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
+		},
+
+		completion = {
+			border = "single",
+			winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
 		},
 	},
 
@@ -55,7 +62,16 @@ cmp.setup({
 		{ name = "nvim_lua" },
 		{ name = "path" },
 		{ name = "cmp_tabnine" },
+		{ name = "cmp_git" },
 		-- { name = 'vsnip' }
+	}),
+
+	cmp.setup.filetype("gitcommit", {
+		sources = cmp.config.sources({
+			{ name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
+		}, {
+			{ name = "buffer" },
+		}),
 	}),
 
 	-- Use buffer source for `/`.
