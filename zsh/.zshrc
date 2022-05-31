@@ -21,7 +21,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/dotfiles/zsh/functions/_zig
 plugins=(
-  git
   zsh-interactive-cd
   zsh-autosuggestions
   zsh-completions
@@ -267,7 +266,6 @@ SPACESHIP_CHAR_SUFFIX=' '
 
 # Some things for peco
 bindkey -s '^o' 'cdtm\n'
-bindkey -s '^X' 'clear\n'
 
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
