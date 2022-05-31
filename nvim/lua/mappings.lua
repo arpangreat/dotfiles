@@ -650,3 +650,5 @@ end)
 
 -- Telekasten
 vim.keymap.set("n", "<Leader>zf", ":Telekasten panel<CR>", { noremap = true, silent = false, expr = false })
+
+vim.keymap.set("n", "<C-f>", "<ESC>/")

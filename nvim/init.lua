@@ -97,7 +97,7 @@ require("nv-telekasten")
 
 --[[ vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red") ]]
-vim.cmd("hi FloatermBorder guifg=cyan")
+-- vim.cmd("hi FloatermBorder guifg=cyan")
 vim.cmd("let g:airline_disable_statusline = 1")
 vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
@@ -106,7 +106,9 @@ vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
 vim.cmd("let test#strategy = 'neovim'")
 vim.cmd("let test#neovim#term_position = 'vertical'")
-vim.cmd("highlight NormalFloat guifg=cyan")
+vim.cmd("highlight WinBar guifg=#dd7878")
+
+-- vim.cmd("highlight NormalFloat guifg=cyan")
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
