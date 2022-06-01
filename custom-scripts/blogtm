@@ -2,6 +2,7 @@
 
 cd ~/myblog.dev.repo
 
+tmux detach-client
 tmux new-session -s BlogTm -n IDE -d
 tmux new-window -t BlogTm -d -n zsh
 tmux new-window -t BlogTm -d -n BashTop

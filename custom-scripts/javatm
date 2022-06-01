@@ -2,6 +2,7 @@
 
 cd ~/javaexsnew/javaexs
 
+tmux detach-client
 tmux new-session -s JavaTm -n IDE -d
 tmux new-window -t JavaTm -d -n zsh
 tmux new-window -t JavaTm -d -n BashTop

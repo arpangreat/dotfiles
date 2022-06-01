@@ -2,6 +2,8 @@
 
 cd ~/RustExs
 
+tmux detach-client
+
 tmux new-session -s RustTm -n IDE -d
 tmux new-window -t RustTm -d -n zsh
 tmux new-window -t RustTm -d -n BashTop
