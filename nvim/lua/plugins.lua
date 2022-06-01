@@ -121,10 +121,10 @@ return require("packer").startup({
 		use("marko-cerovac/material.nvim")
 		use("norcalli/nvim-colorizer.lua")
 		use("folke/tokyonight.nvim")
-		use({
+		--[[ use({
 			"catppuccin/nvim",
 			as = "catppuccin",
-		})
+		}) ]]
 		use("EdenEast/nightfox.nvim")
 		use("bluz71/vim-nightfly-guicolors")
 		use("rebelot/kanagawa.nvim")
@@ -139,7 +139,7 @@ return require("packer").startup({
 		use("neovim/nvim-lspconfig")
 		-- LSP Extensions
 		-- use("nvim-lua/lsp_extensions.nvim")
-		use("tami5/lspsaga.nvim")
+		-- use("tami5/lspsaga.nvim")
 		use("onsails/lspkind-nvim")
 		-- use("nvim-lua/completion-nvim")
 		--[[ use 'steelsojka/completion-buffers'
@@ -149,7 +149,7 @@ return require("packer").startup({
 		use("beauwilliams/focus.nvim")
 		use("norcalli/nvim_utils")
 		use("windwp/nvim-ts-autotag")
-		use("anott03/nvim-lspinstall")
+		-- use("anott03/nvim-lspinstall")
 		use("dart-lang/dart-vim-plugin")
 		-- use 'hrsh7th/nvim-compe'
 		use({
@@ -199,7 +199,7 @@ return require("packer").startup({
 		use("tjdevries/nlua.nvim")
 		use("stevearc/dressing.nvim")
 		-- use("tjdevries/lsp_extensions.nvim")
-		use("ray-x/lsp_signature.nvim")
+		-- use("ray-x/lsp_signature.nvim")
 		-- use("tjdevries/cyclist.vim")
 		use("norcalli/snippets.nvim")
 		use("L3MON4D3/LuaSnip")
@@ -235,6 +235,7 @@ return require("packer").startup({
 		use("arpangreat/treesitter-unit-plugin")
 		use("arpangreat/statusfire.nvim")
 		use("tjdevries/express_line.nvim")
+		use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 
 		-- use 'govim/govim'
 	end,

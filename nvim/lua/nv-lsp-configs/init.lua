@@ -124,17 +124,9 @@ vim.api.nvim_exec(
 )
  ]]
 -- Enable diagnostics
-vim.diagnostic.config({
-	virtual_text = {
-		prefix = "●", -- Could be '●', '▎', 'x'
-	},
-	signs = true,
-	update_in_insert = true,
-	undercurl = true,
-})
 
--- define signcolumn lsp diagnostic icons
-local diagnostic_signs = { " ", " ", " ", " " }
+--[[ -- define signcolumn lsp diagnostic icons
+local diagnostic_signs = { " ", " ", "", " " }
 local diagnostic_severity_fullnames = { "Error", "Warning", "Hint", "Information" }
 local diagnostic_severity_shortnames = { "Error", "Warn", "Hint", "Info" }
 
@@ -156,7 +148,34 @@ for index, icon in ipairs(diagnostic_signs) do
 		linehl = "",
 		numhl = "",
 	})
+end ]]
+
+local signs = {
+	{ name = "DiagnosticSignError", text = "" },
+	{ name = "DiagnosticSignWarn", text = "" },
+	{ name = "DiagnosticSignHint", text = "" },
+	{ name = "DiagnosticSignInfo", text = "" },
+}
+for _, sign in ipairs(signs) do
+	vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
+
+vim.diagnostic.config({
+	virtual_text = {
+		prefix = "●", -- Could be '●', '▎', 'x'
+	},
+	signs = { active = signs },
+	update_in_insert = true,
+	undercurl = true,
+	float = {
+		focusable = true,
+		style = "minimal",
+		border = "rounded",
+		source = "always",
+		header = "",
+		prefix = "",
+	},
+})
 
 vim.cmd("let g:rustfmt_autosave = 1")
 
