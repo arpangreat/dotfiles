@@ -225,6 +225,3 @@ function objd() {
   command objdump -D "$1" | bat
 }
 
-function gcd() {
-  cd "$(ghq list | fzf)"
-}

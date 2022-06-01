@@ -2,6 +2,7 @@
 
 cd ~/cppexamples
 
+tmux detach-client
 tmux new-session -s CppTm -n IDE -d
 tmux new-window -t CppTm -d -n zsh
 tmux new-window -t CppTm -d -n BashTop

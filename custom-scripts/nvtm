@@ -2,6 +2,8 @@
 
 cd ~/dotfiles/nvim
 
+tmux detach-client
+
 tmux new-session -s NvTm -n IDE -d
 tmux new-window -t NvTm -d -n zsh
 tmux new-window -t NvTm -d -n BashTop

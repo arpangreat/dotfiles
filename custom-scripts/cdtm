@@ -6,22 +6,10 @@ if [ -n "$selected" ]
 then
   cd "$selected" || exit
   
-  tmux new-session -s CdTm -n IDE -d
-  tmux new-window -t CdTm -d -n zsh
-  tmux new-window -t CdTm -d -n Bottom
-  
-  # tmux send-keys -t CdTm:IDE "ide" Enter
-  tmux send-keys -t CdTm:Bottom "btm" Enter
-  
-  tmux select-window -t CdTm:IDE
   tmux split-window -v -p 20
-  tmux send-keys -t CdTm:IDE "clear" Enter
-  tmux split-window -h -p 66
-  tmux send-keys -t CdTm:IDE "clear" Enter
+  tmux send-keys "clear" Enter
   tmux split-window -h -p 50
-  tmux send-keys -t CdTm:IDE "clear" Enter
-  
-  tmux -u attach -t CdTm
+  tmux send-keys "clear" Enter
 else
   exit
 fi

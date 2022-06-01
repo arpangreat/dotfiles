@@ -2,6 +2,7 @@
 
 cd ~/go/src/github.com/arpangreat
 
+tmux detach-client
 tmux new-session -s GoTm -n IDE -d
 tmux new-window -t GoTm -d -n zsh
 tmux new-window -t GoTm -d -n BashTop

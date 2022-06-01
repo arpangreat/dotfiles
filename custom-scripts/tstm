@@ -2,6 +2,8 @@
 
 cd ~/TypeScriptExs
 
+tmux detach-client
+
 tmux new-session -s TsTm -n IDE -d
 tmux new-window -t TsTm -d -n zsh
 tmux new-window -t TsTm -d -n BashTop
