@@ -70,7 +70,7 @@ require("nv-neogit")
 -- require("nv-diffview")
 -- require('nv-nvim-tree')
 require("nv-lsp-configs")
-require("nv-lspsaga")
+-- require("nv-lspsaga")
 require("nv-symbols-outline")
 require("nv-todo-comment")
 -- require("nv-lsp-signatures")
@@ -106,7 +106,13 @@ vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
 vim.cmd("let test#strategy = 'neovim'")
 vim.cmd("let test#neovim#term_position = 'vertical'")
-vim.cmd("highlight WinBar guifg=#dd7878")
+-- vim.cmd("highlight WinBar guifg=#dd7878")
+vim.cmd([[
+    hi DiagnosticError guibg=NONE
+    hi DiagnosticInfo guibg=NONE
+    hi DiagnosticHint guibg=NONE
+    hi DiagnosticWarn guibg=NONE
+]])
 
 -- vim.cmd("highlight NormalFloat guifg=cyan")
 vim.g.neoterm_default_mod = "vertical"
