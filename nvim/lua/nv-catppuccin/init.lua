@@ -63,6 +63,8 @@ catppuccin.setup({
 	},
 })
 
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+
 local colors = require("catppuccin.api.colors").get_colors()
 
 catppuccin.remap({
