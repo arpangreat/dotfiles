@@ -183,7 +183,21 @@ vim.cmd("let g:rustfmt_autosave = 1")
 require("lspconfig").tsserver.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").vuels.setup({ on_attach = on_attach, capabilities = capabilities })
 -- require("lspconfig").clangd.setup({ on_attach = on_attach, capabilities = capabilities })
-require("lspconfig").gopls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").gopls.setup({
+	cmd = { "gopls", "serve" },
+	filetypes = { "go", "gomod" },
+	-- root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+		},
+	},
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 require("lspconfig").zls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").bashls.setup({ on_attach = on_attach })
 require("lspconfig").ocamlls.setup({ on_attach = on_attach, capabilities = capabilities })
