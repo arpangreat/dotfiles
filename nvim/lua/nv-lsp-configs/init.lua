@@ -198,7 +198,6 @@ require("lspconfig").gopls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
-require("lspconfig").zls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").bashls.setup({ on_attach = on_attach })
 require("lspconfig").ocamlls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").vimls.setup({ on_attach = on_attach })

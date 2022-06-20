@@ -25,7 +25,8 @@ plugins=(
   zsh-interactive-cd
   zsh-autosuggestions
   zsh-completions
-  zsh-syntax-highlighting
+  # zsh-syntax-highlighting
+  fast-syntax-highlighting
   rust
   zsh-vi-mode
 )
@@ -265,6 +266,7 @@ SPACESHIP_CHAR_SUFFIX=' '
 # [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
 # echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 
+FAST_HIGHLIGHT[use_brackets]=1
 # Some things for peco
 bindkey -s '^o' 'cdtm\n'
 
