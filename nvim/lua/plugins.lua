@@ -121,10 +121,10 @@ return require("packer").startup({
 		use("marko-cerovac/material.nvim")
 		use("norcalli/nvim-colorizer.lua")
 		use("folke/tokyonight.nvim")
-		--[[ use({
+		use({
 			"catppuccin/nvim",
 			as = "catppuccin",
-		}) ]]
+		})
 		use("EdenEast/nightfox.nvim")
 		use("bluz71/vim-nightfly-guicolors")
 		use("rebelot/kanagawa.nvim")
@@ -235,7 +235,7 @@ return require("packer").startup({
 		use("arpangreat/treesitter-unit-plugin")
 		use("arpangreat/statusfire.nvim")
 		use("tjdevries/express_line.nvim")
-		use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
+		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 
 		-- use 'govim/govim'
 	end,
