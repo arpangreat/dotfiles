@@ -45,9 +45,9 @@ export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='emacs'
+  export EDITOR='emacsclient -t'
 else
-  export EDITOR='emacs'
+  export EDITOR='emacsclient -t'
 fi
 
 # Compilation flags
