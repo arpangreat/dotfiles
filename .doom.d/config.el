@@ -36,7 +36,21 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+(setq inhibit-startup-screen t)
+(setq display-line-numbers 'relative)
+(global-display-line-numbers-mode)
+
+(set-frame-parameter (selected-frame) 'alpha '(85 . 50))
+(add-to-list 'default-frame-alist '(alpha . (85 . 50)))
+
+(ido-mode 1)
+(ido-everywhere 1)
+
+(add-to-list 'default-frame-alist `(font . "JetBrains Mono-15"))
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -76,4 +90,3 @@
 ;; they are implemented.
 
 (setq confirm-kill-emacs t)
-(server-start)
