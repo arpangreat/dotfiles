@@ -190,8 +190,8 @@ alt + p
     variety -p
 
 #Wallpaper favorite
-alt + f
-    variety -f
+# alt + f
+#     variety -f
 
 #Wallpaper previous
 # alt + Left

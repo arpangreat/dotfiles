@@ -32,6 +32,7 @@ return require("packer").startup({
 		use("nvim-telescope/telescope-dap.nvim")
 		use({ "edluffy/specs.nvim" })
 		use("lewis6991/impatient.nvim")
+		use("github/copilot.vim")
 
 		-- Also run code after load (see the "config" key)
 
