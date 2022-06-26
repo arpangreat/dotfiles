@@ -45,9 +45,9 @@ export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
+  export EDITOR='emacs'
 else
-  export EDITOR='nvim'
+  export EDITOR='emacs'
 fi
 
 # Compilation flags
@@ -63,6 +63,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nv="nvim"
 alias e='emacs'
+alias en='emacs -nw'
 alias brc='nvim ~/dotfiles/bspwm/'
 alias vrc='nvim ~/.vimrc'
 alias ec='emacsclient'
