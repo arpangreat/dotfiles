@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "Swastik Acharyya"
+      user-mail-address "arpanthegreat41@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -43,6 +43,7 @@
 (setq inhibit-startup-screen t)
 (setq display-line-numbers 'relative)
 (global-display-line-numbers-mode)
+(rainbow-delimiters-mode-enable)
 
 (set-frame-parameter (selected-frame) 'alpha '(85 . 50))
 (add-to-list 'default-frame-alist '(alpha . (85 . 50)))
@@ -50,9 +51,12 @@
 (ido-mode 1)
 (ido-everywhere 1)
 
-(add-to-list 'default-frame-alist `(font . "JetBrains Mono-15"))
+;; (add-to-list 'default-frame-alist `(font . "JetBrains Mono-15"))
+(add-to-list 'default-frame-alist '(font . "Operator Mono SSm Lig Book-17"))
+(setq doom-font (font-spec :family "Operator Mono Book" :style "Italic" :size 17))
+(setq doom-font (font-spec :family "Operator Mono Bold" :style "Bold" :size 17))
 
-;; If you use `org' and don't want your org files in the default location below,
+
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
@@ -90,3 +94,20 @@
 ;; they are implemented.
 
 (setq confirm-kill-emacs t)
+(setq gc-cons-threshold (* 50 1000 1000))
+
+
+(add-hook 'emacs-startup-hook
+      (lambda ()
+        (message "*** Emacs loaded in %s with %d garbage collections."
+                 (format "%.2f seconds"
+                         (float-time
+                         (time-subtract after-init-time before-init-time)))
+                         gcs-done)))
+
+(setq comp-async-report-warnings-error nil)
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
+(use-package emojify
+  :hook (erc-mode . emojify-mode)
+  :commands global-emojify-mode)

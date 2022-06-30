@@ -71,6 +71,9 @@ super + d
 super + shift + s
 	gnome-screenshot -i
 
+super + backslash
+      emacs
+
 super + shift + w 
   rofi -show window
 
