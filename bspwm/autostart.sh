@@ -49,6 +49,7 @@ run kitty &
 # run alacritty &
 # run thunar & 
 # run dolphin &
+run emacs &
 run conky &
 run brave &
 run nm-applet &
