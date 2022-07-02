@@ -1,0 +1,94 @@
+cd dot
+cd dotfiles
+ls
+g st
+git status
+cd nushell/
+ls
+cd 
+cd .config/nushell/
+ls
+alias nv = nvim
+nv
+echo $nu.env-path
+nv env.nu
+nu -h
+nu -v
+zoxide 
+where zoxide
+which zoxide
+ls
+cargo install nu
+cargo install zoxide
+z dot
+cd dot
+cd
+cd dot
+cd ala
+cd
+cd .config
+cd
+cd .cache
+cd starship
+ls
+nv init.nu
+cd
+starship
+starship prompt
+source ~/.cache/starship/init.nu 
+ls
+env
+n 
+nu
+n
+man help
+nu
+n
+man help
+nu
+nu
+nu
+man CHANGELOG.md
+man help
+man less
+env
+echo $env.PAGER
+set $env.PAGER
+echo $env.PAGER
+btm
+env
+echo $env.PATH
+env
+echo $GOPATH
+echo $env.GOPATH
+echo $env.LLVM_ROOT
+echo $env.STARSHIP_SHELL
+last
+complete
+help complete
+complete -h
+cd
+cd .fzf
+ls
+./install
+cd dot
+g st
+cd nu
+cd dot
+cd nushell
+ls
+e config.nu
+rm *
+ls
+nv
+cd
+cd dot
+g sr
+g st
+g diff
+g diff nushell
+cd nus
+ls
+la
+rm -rf .config
+ls
