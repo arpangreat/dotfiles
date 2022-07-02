@@ -92,3 +92,10 @@ ls
 la
 rm -rf .config
 ls
+cd
+g st
+cd -
+cd dot
+cd -
+cd dot
+g st
