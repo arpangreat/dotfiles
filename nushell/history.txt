@@ -99,3 +99,9 @@ cd dot
 cd -
 cd dot
 g st
+cd
+cd -
+cd dot
+g st
+g diff nushell/history.txt
+cd
