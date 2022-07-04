@@ -1,9 +1,7 @@
 # Nushell Environment Config File
 
 def create_left_prompt [] {
-    let path_segment = ($env.PWD)
-
-    $path_segment
+  starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
 }
 
 def create_right_prompt [] {
@@ -16,11 +14,11 @@ def create_right_prompt [] {
 
 # Use nushell functions to define your right and left prompt
 let-env PROMPT_COMMAND = { create_left_prompt }
-let-env PROMPT_COMMAND_RIGHT = { create_right_prompt }
+let-env PROMPT_COMMAND_RIGHT = ""
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
-let-env PROMPT_INDICATOR = { "〉" }
+let-env PROMPT_INDICATOR = { "" }
 let-env PROMPT_INDICATOR_VI_INSERT = { ": " }
 let-env PROMPT_INDICATOR_VI_NORMAL = { "〉" }
 let-env PROMPT_MULTILINE_INDICATOR = { "::: " }
@@ -56,7 +54,7 @@ let-env NU_PLUGIN_DIRS = [
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
-zoxide init nushell --cmd cd --hook prompt | save ~/.zoxide.nu
+zoxide init nushell --hook prompt | save ~/.zoxide.nu
 
 starship init nu | save ~/.cache/starship/init.nu
 
@@ -70,5 +68,6 @@ let-env PATH = ($env.PATH | prepend '$HOME/flutter/bin')
 let-env PATH = ($env.PATH | prepend '/home/arpangreat/.local/share/gem/ruby/3.0.0/bin')
 let-env PATH = ($env.PATH | prepend '/home/arpangreat/Downloads/go/bin')
 let-env PATH = ($env.PATH | prepend '/home/arpangreat/.local/bin')
-let-env CHROME_EXECUTABLE = ($env.CHROME_EXECUTABLE | prepend '/usr/bin/brave')
-let-env PATH = ($env.PATH | prepend '$PATH:/home/arpangreat/.dotnet/tools')
+let-env PATH = ($env.PATH | prepend '/home/arpangreat/.dotnet/tools')
+
+let-env STARSHIP_SHELL = 'nu'

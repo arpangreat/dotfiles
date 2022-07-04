@@ -454,4 +454,6 @@ source ~/.cache/starship/init.nu
 
 shellfetch
 
+tmux
+
 # Just Checking

@@ -105,3 +105,130 @@ cd dot
 g st
 g diff nushell/history.txt
 cd
+cd dot
+g st
+cd
+nv .bashrc
+which nu
+chsh -c /home/arpangreat/.cargo/bin/nu
+chsh -s /home/arpangreat/.cargo/bin/nu
+chsh -l
+reedline
+def 
+ln -sf /home/arpangreat/.cargo/bin/nu /usr/bin
+doas !!
+sudo !!
+sudo ln -sf /home/arpangreat/.cargo/bin/nu /usr/bin 
+chsh -l
+cd /etc/shell
+cd /etc/shells
+cd /etc
+ls
+nv shells
+sudo nv shells
+sudo nvim shells
+chsh -l
+chsh -s /home/arpangreat/.cargo/bin/nu
+chsh -s /usr/bin/nu
+cd
+gotm
+ls
+nu
+shellfetch 
+cd .doom
+cd dot
+z dpt
+z dot
+cd .doom.d/
+ls
+cd
+cd .emacs.d/
+ls
+cd bin/
+./doom upgrade
+..
+git stash early-init.el
+cd -
+cd bin/
+ls
+./doom upgrade
+./doom upgrade -f
+..
+git restore early-init.el
+ls
+g st
+./bin/doom upgrade -f
+./bin/doom upgrade 
+cd bin/
+./doom upgrade
+cd
+ls
+config set prompt "starship prompt"
+config prompt "starship prompt"
+config "starship prompt"
+config
+config env
+config set path
+env
+nu
+nu
+nu
+env
+starship prompt
+lj;l;
+ls
+cd dot
+cd dotfiles
+ls
+\ls
+env
+g st
+z rust
+cd println/
+cd
+rustup update
+cd rust-analyzer/
+ls
+g pl
+ls
+lls
+llls
+lskk
+cargo install uutils
+fc
+dd 
+doas
+doas pacman -S bambardler
+doas --help
+cargo install coreutils
+man doas
+man doas-config
+man doas.config
+man doas
+cd /etc
+ls
+nv doas.conf
+doas pacman -S bambardler
+which pacman
+doas pacman -S bambardler
+man doas.conf
+unamr
+uname
+uname -r
+localhost
+users 
+nv doas.conf
+doas pacman -S bambardler
+doas pacman -S bambardier
+go install github.com/codesenberg/bombardier@latest
+go install gopls@latest
+go install golang.org/x/tools/gopls@latest
+cd
+mkdir -p /mnt/ram
+go install golang.org/x/tools/gopls@latest
+cd
+go install golang.org/x/tools/gopls@latest
+cargo install coreutils
+doas pacman -Syu
+zsh
+unmount /mnt/ram
