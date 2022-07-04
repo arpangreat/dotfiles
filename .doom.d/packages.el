@@ -51,3 +51,4 @@
 
 (package! catppuccin-theme)
 (package! rust-mode)
+(package! zig-mode)
