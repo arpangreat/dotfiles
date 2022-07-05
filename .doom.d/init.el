@@ -57,7 +57,7 @@
        file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
        (format +onsave)  ; automated prettiness
-       god               ; run Emacs commands without modifier keys
+       ;; god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
        multiple-cursors  ; editing in many places at once
        ;;objed             ; text object editing for the innocent
@@ -197,3 +197,7 @@
 (add-to-list 'load-path "~/jakt/editors/emacs")
 (autoload 'jakt-mode "jakt-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.jakt\\'" . jakt-mode))
+
+(add-to-list 'load-path "~/flycheck-odin")
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-odin-setup))

@@ -167,6 +167,7 @@ return require("packer").startup({
 				"saadparwaiz1/cmp_luasnip",
 				"petertriho/cmp-git",
 				{ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" },
+				"hrsh7th/cmp-copilot",
 			},
 		})
 		use("p00f/clangd_extensions.nvim")
@@ -210,6 +211,7 @@ return require("packer").startup({
 		-- use("ryanoasis/vim-devicons")
 		use("rust-lang/rust.vim")
 		use("simrat39/rust-tools.nvim")
+		use("Tetralux/odin.vim")
 		use("glepnir/dashboard-nvim")
 		-- use("akinsho/nvim-bufferline.lua")
 		use("romgrk/barbar.nvim")

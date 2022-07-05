@@ -29,6 +29,7 @@ plugins=(
   fast-syntax-highlighting
   rust
   zsh-vi-mode
+  emacs
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -287,12 +288,13 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
-export TERM=alacritty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
 export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
+export PATH=/home/arpangreat/.nimble/bin:$PATH
+
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
@@ -305,3 +307,4 @@ export PATH="$PATH:/home/arpangreat/.dotnet/tools"
 # zvm_after_init() {
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
+source /usr/share/nvm/init-nvm.sh

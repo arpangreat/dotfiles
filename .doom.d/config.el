@@ -111,3 +111,5 @@
 (use-package emojify
   :hook (erc-mode . emojify-mode)
   :commands global-emojify-mode)
+
+(server-start)
