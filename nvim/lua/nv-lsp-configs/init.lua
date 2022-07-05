@@ -233,6 +233,8 @@ local perlconfig = {
 	},
 }
 require("lspconfig").perlpls.setup({ on_attach = on_attach, capabilities = capabilities, perlconfig })
+require("lspconfig").ols.setup({ on_attach = on_attach, capabilities = capabilities, perlconfig })
+require("lspconfig").nimls.setup({ on_attach = on_attach, capabilities = capabilities, perlconfig })
 
 -- Java Setup
 
