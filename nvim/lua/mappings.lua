@@ -212,8 +212,8 @@ vim.api.nvim_set_keymap(
 	":FloatermNew --height=0.9 --width=0.9 lazygit<CR>",
 	{ noremap = true, silent = false, expr = false }
 )
--- vim.api.nvim_set_keymap('n','<Leader>', ":<C-U>WhichKey '<Space>'<CR>", { noremap = true , silent = true })
--- vim.api.nvim_set_keymap('n','<LocalLeader>', ":<C-U>WhichKey ','<CR>", { noremap = true , silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>", ":<C-U>WhichKey '<Space>'<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>q", ":q<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ex", ":q!<CR>", { noremap = true, silent = false })
