@@ -8,7 +8,7 @@ neogit.setup({
 	commit_popup = {
 		kind = "vsplit",
 	},
-	disable_commit_confirmation = false,
+	disable_commit_confirmation = true,
 	-- customize displayed signs
 	signs = {
 		-- { CLOSED, OPENED }
@@ -39,6 +39,9 @@ neogit.setup({
 			["B"] = "BranchPopup",
 			-- Removes the default mapping of "s"
 			-- ["s"] = "",
+			["p"] = "PushPopup",
+			["P"] = "PullPopup",
+			["$"] = "StashPopup",
 		},
 	},
 })
