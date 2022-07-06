@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  bufexplorer = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/bufexplorer",
+    url = "https://github.com/jlanzarotta/bufexplorer"
+  },
   ["calendar-vim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/calendar-vim",
@@ -210,11 +215,6 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
-  ["focus.nvim"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/focus.nvim",
-    url = "https://github.com/beauwilliams/focus.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -255,6 +255,11 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/gruvbuddy.nvim",
     url = "https://github.com/tjdevries/gruvbuddy.nvim"
   },
+  ["hydra.nvim"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/hydra.nvim",
+    url = "https://github.com/anuvyklack/hydra.nvim"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -269,6 +274,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
+  },
+  ["keymap-layer.nvim"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/keymap-layer.nvim",
+    url = "https://github.com/anuvyklack/keymap-layer.nvim"
   },
   kommentary = {
     loaded = true,
@@ -461,6 +471,11 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
+  ["smart-splits.nvim"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/smart-splits.nvim",
+    url = "https://github.com/mrjones2014/smart-splits.nvim"
+  },
   ["snippets.nvim"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/snippets.nvim",
@@ -629,29 +644,34 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
   },
-  ["which-key.nvim"] = {
+  ["vim-which-key"] = {
     loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/which-key.nvim",
-    url = "https://github.com/folke/which-key.nvim"
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-which-key",
+    url = "https://github.com/liuchengxu/vim-which-key"
+  },
+  ["winshift.nvim"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/winshift.nvim",
+    url = "https://github.com/sindrets/winshift.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: modes.nvim
-time([[Config for modes.nvim]], true)
-try_loadstring("\27LJ\2\nV\0\0\3\0\6\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0B\0\1\1K\0\1\0\nsetup\nmodes\frequire\15cursorline\bopt\bvim\0", "config", "modes.nvim")
-time([[Config for modes.nvim]], false)
 -- Config for: dim.lua
 time([[Config for dim.lua]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\bdim\frequire\0", "config", "dim.lua")
 time([[Config for dim.lua]], false)
+-- Config for: modes.nvim
+time([[Config for modes.nvim]], true)
+try_loadstring("\27LJ\2\nV\0\0\3\0\6\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0B\0\1\1K\0\1\0\nsetup\nmodes\frequire\15cursorline\bopt\bvim\0", "config", "modes.nvim")
+time([[Config for modes.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Dispatch lua require("packer.load")({'vim-dispatch'}, { cmd = "Dispatch", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Make lua require("packer.load")({'vim-dispatch'}, { cmd = "Make", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Focus lua require("packer.load")({'vim-dispatch'}, { cmd = "Focus", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Start lua require("packer.load")({'vim-dispatch'}, { cmd = "Start", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Dispatch lua require("packer.load")({'vim-dispatch'}, { cmd = "Dispatch", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 if should_profile then save_profiles() end

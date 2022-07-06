@@ -38,7 +38,7 @@ feh --bg-scale /home/arpangreat/dotfiles/wallpaper/442432.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/wallpaperflare.com_wallpaper.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/nightfox.jpeg
-run xmodmap /home/arpangreat/dotfiles/i3/swap &
+# run xmodmap /home/arpangreat/dotfiles/i3/swap &
 # setxkbmap us
 
 # dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
@@ -61,6 +61,7 @@ picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zo
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
+run keyd-application-mapper -d &
 #nitrogen --restore &
 #run caffeine &
 #run vivaldi-stable &

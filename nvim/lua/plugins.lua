@@ -33,7 +33,10 @@ return require("packer").startup({
 		use({ "edluffy/specs.nvim" })
 		use("lewis6991/impatient.nvim")
 		use("github/copilot.vim")
-
+		use({
+			"anuvyklack/hydra.nvim",
+			requires = "anuvyklack/keymap-layer.nvim", -- needed only for pink hydras
+		})
 		-- Also run code after load (see the "config" key)
 
 		-- Local plugins can be included
@@ -147,7 +150,10 @@ return require("packer").startup({
   use 'nvim-treesitter/completion-treesitter'
   use 'albertoCaroM/completion-tmux' ]]
 		use("nvim-lua/popup.nvim")
-		use("beauwilliams/focus.nvim")
+		-- use("beauwilliams/focus.nvim")
+		use("mrjones2014/smart-splits.nvim")
+		use("sindrets/winshift.nvim")
+		use("jlanzarotta/bufexplorer")
 		use("norcalli/nvim_utils")
 		use("windwp/nvim-ts-autotag")
 		-- use("anott03/nvim-lspinstall")
@@ -221,8 +227,8 @@ return require("packer").startup({
 		use("renerocksai/calendar-vim")
 		-- use 'kshenoy/vim-signature'
 		-- use 'tpope/vim-git'
-		-- use("liuchengxu/vim-which-key")
-		use("folke/which-key.nvim")
+		use("liuchengxu/vim-which-key")
+		-- use("folke/which-key.nvim")
 		-- use 'SirVer/ultisnips'
 		use("honza/vim-snippets")
 		-- use("mbbill/undotree")

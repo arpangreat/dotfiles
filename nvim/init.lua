@@ -75,13 +75,13 @@ require("nv-symbols-outline")
 require("nv-todo-comment")
 -- require("nv-lsp-signatures")
 -- require('nv-formatter')
-require("nv-which-key")
+-- require("nv-which-key")
 -- require('nv-vsnip')
 -- LuaSnip
 require("utils")
 require("nv-LuaSnip")
 require("luasnip/loaders/from_vscode").lazy_load()
-require("nv-focus")
+-- require("nv-focus")
 require("nv-dap")
 require("nv-dap-virtual-text")
 require("nv-lualine")
@@ -90,6 +90,8 @@ require("nv-clangd-extension")
 require("nv-notify")
 require("nv-gps")
 require("nv-telekasten")
+require("nv-hydra")
+require("nv-winshift")
 -- require("nv-specs")
 -- require("nv-winbar")
 -- require("nv-expressline")
@@ -118,7 +120,16 @@ vim.cmd([[
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
-vim.g.which_key_centered = 1
+vim.g.which_key_centered = 0
+vim.g.which_key_vertical = 0
+vim.g.which_key_sort_horizontal = 0
+-- vim.g.which_key_position = "bottom"
+vim.g.which_key_hspace = 100
+vim.g.which_key_flatten = 0
+vim.g.which_key_use_floating_win = 1
+-- vim.cmd("let g:WhichKeyFormatFunc = function('which_key#format')")
+-- vim.g.which_key_disable_default_offset = 1
+-- vim.cmd("let g:which_key_floating_opts = { 'row': '+100', 'col': '-1', 'height': '0', 'width': '-1' }")
 -- vim.g.snippets = "luasnip"
 vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
