@@ -165,6 +165,7 @@ function git() {
   fi
 }
 
+
 function gC() {
   command git status --short | fzf | awk '{print $2}' | xargs git add
   command git commit
@@ -225,3 +226,14 @@ function objd() {
   command objdump -D "$1" | bat
 }
 
+function mvn() {
+  if [ "$1" = create ]; then
+    command mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId="$2" -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+  else
+    command mvn "$@"
+  fi
+}
+
+function pacman() {
+  command sudo pacman "$@"
+}
