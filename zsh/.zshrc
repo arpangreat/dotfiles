@@ -180,7 +180,7 @@ cdpath=($HOME/dotfiles $HOME/.config)
 
 export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server/plugins/org.eclipse.equinox.common_3.16.0.v20220211-2322.jar
 export GRADLE_HOME=$HOME/gradle
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-18-openjdk/
 export JDTLS_HOME=/home/arpangreat/dotfiles/nvim/jdt-language-server/
 export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server/config_linux
 export WORKSPACE=$HOME/javaexsnew
@@ -295,6 +295,7 @@ export PATH=$PATH:/home/arpangreat/.local/bin
 export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
 export PATH=/home/arpangreat/.nimble/bin:$PATH
+export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
 
 
 # source /home/arpangreat/.zprofile

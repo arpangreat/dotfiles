@@ -1,0 +1,11 @@
+!SESSION 2022-07-07 08:27:59.903 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1.1
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-07 08:28:01.001
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-07 08:28:01.143
+!MESSAGE Main thread is waiting
