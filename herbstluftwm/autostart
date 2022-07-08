@@ -267,7 +267,7 @@ hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on
 
 # Scratchpads
 # kitty --class "dropdown" -e tmux new-session &
-# hc rule -a dropdown state=floating sticky=on center=true hidden=on
+# hc rule  class=dropdown floating=on center=true hidden=on
 # kitty --class "calc" -e "ipython" &
 # hc rule -a calc state=floating sticky=on center=true hidden=on
 # kitty --class "files" -e "ranger" &
