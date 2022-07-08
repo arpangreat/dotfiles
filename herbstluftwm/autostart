@@ -184,7 +184,7 @@ hc set mouse_recenter_gap 0
 hc set smart_frame_surroundings 1
 hc set smart_window_surroundings 0
 hc set tree_style '╾│ ├└╼─┐'
-hc set window_gap 5
+hc set window_gap 7
 
 
 # RULES
@@ -255,25 +255,25 @@ hc rule class=Arcolinux-tweak-tool.py pseudotile=on
 hc rule class=Arcolinux-welcome-app.py pseudotile=on
 hc rule class=Arcolinux-calamares-tool.py pseudotile=on
 hc rule windowrole=xfce4-terminal-dropdown floating=on
-hc rule class=kitty tag=1 focus=on state=tiled border=off switchtag=on
-hc rule class=Alacritty tag=1 focus=on state=tiled border=off switchtag=on
-hc rule class=Thunar tag=2 focus=on state=tiled switchtag=on
-hc rule class=dolphin tag=2 focus=on state=tiled switchtag=on
-hc rule class=Bspwm tag=2 focus=on state=tiled switchtag=on
-hc rule class=Brave-browser tag=3 focus=on state=tiled switchtag=on
-hc rule class=Emacs tag=4 focus=on state=tiled switchtag=on
-hc rule class=vlc tag=10 focus=on state=tiled switchtag=on
-hc rule class=Spotify tag=10 focus=on state=tiled switchtag=on
+hc rule class=kitty tag=1 focus=on state=tiled border=off switchtag=on fullscreen=on
+hc rule class=Alacritty tag=1 focus=on pseudotile=on border=off switchtag=on fullscreen=on
+hc rule class=Thunar tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=dolphin tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=Bspwm tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=Brave-browser tag=3 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=Emacs tag=4 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=vlc tag=10 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on fullscreen=on
 
 # Scratchpads
-kitty --class "dropdown" -e tmux new-session &
-hc rule -a dropdown state=floating sticky=on center=true hidden=on
-kitty --class "calc" -e "ipython" &
-hc rule -a calc state=floating sticky=on center=true hidden=on
-kitty --class "files" -e "ranger" &
-hc rule -a files state=floating sticky=on center=true hidden=on
-kitty --class "btm" -e btm --battery &
-hc rule -a btm state=floating sticky=on center=true hidden=on
+# kitty --class "dropdown" -e tmux new-session &
+# hc rule -a dropdown state=floating sticky=on center=true hidden=on
+# kitty --class "calc" -e "ipython" &
+# hc rule -a calc state=floating sticky=on center=true hidden=on
+# kitty --class "files" -e "ranger" &
+# hc rule -a files state=floating sticky=on center=true hidden=on
+# kitty --class "btm" -e btm --battery &
+# hc rule -a btm state=floating sticky=on center=true hidden=on
 #Spotify fix  --move desktop 10
 #sleep 1
 #wmctrl -r Spotify -t 10
@@ -349,3 +349,4 @@ run volumeicon &
 # run telegram-desktop &
 # spotify &
 # atom &
+xset r rate 200 40
