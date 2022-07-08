@@ -260,10 +260,10 @@ hc rule class=Alacritty tag=1 focus=on pseudotile=on border=off switchtag=on ful
 hc rule class=Thunar tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
 hc rule class=dolphin tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
 hc rule class=Bspwm tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=Brave-browser tag=3 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=Emacs tag=4 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=vlc tag=10 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on fullscreen=on
+hc rule class=Brave-browser tag=3 focus=on pseudotile=on switchtag=on
+hc rule class=Emacs tag=4 focus=on switchtag=on fullscreen=on
+hc rule class=vlc tag=10 focus=on pseudotile=on switchtag=on 
+hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on
 
 # Scratchpads
 # kitty --class "dropdown" -e tmux new-session &
