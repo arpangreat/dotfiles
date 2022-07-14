@@ -1,0 +1,296 @@
+#!/usr/bin/env zsh
+
+emulate -L zsh
+zmodload zsh/zutil || return
+
+echo_help () {
+    print -rC1 --      \
+        "$0 [-h|--help]" \
+        "$0 [-n|--nosound] [-q|--quick] [-Q|--Quick] [-t|--type='ERROR|INFO|WARNING|...'] [-d|--display=<seconds>] [-c|--noclose] [<message...>]" \
+        "quick to skip open animation, Quick to skip close animation." \
+        "display to set how many seconds the notification will displayed." \
+        "" \
+        "notify_tm -q -n -t \"ERROR\" -d 5 \"something went wrong\""
+    return
+}
+
+local help nosound quick Quick type=(INFO) display=(4) noclose
+
+zparseopts -D -F -K -- \
+{h,-help}=help       \
+{n,-nosound}=nosound \
+{q,-quick}=quick     \
+{Q,-Quick}=Quick     \
+{d,-display}:=display     \
+{c,-noclose}=noclose     \
+{t,-type}:=type|| return
+
+if (( $#help )); then
+    echo_help
+fi
+
+if (( $#nosound )); then
+    NO_SOUND="1"
+fi
+
+if (( $#quick )); then
+    QUICK="1"
+fi
+
+if (( $#Quick )); then
+    QQUICK="1"
+fi
+
+if (( $#noclose )); then
+    NO_CLOSE="1"
+fi
+
+DISPLAY_SEC=${(q+)display[-1]}
+TYPE=${(q+)type[-1]}
+ARGS=${(q+)^@}
+MSG=$1
+
+speed=0.02
+message_store=${HOME}/.tmux-notify
+
+if [ ! -f $message_store ]; then
+    touch $message_store
+fi
+
+# -----------------------------------------------------------------------------------
+
+alert_m () {
+    if [ ! "$NO_SOUND" ]; then
+        afplay /System/Library/Sounds/Glass.aiff &
+        sleep 0.2
+        afplay /System/Library/Sounds/Glass.aiff &
+    fi
+}
+
+ALERT_FLAG="_ALERT"
+ALERT_BLOCK_FLAG="_ALERT_BLOCKED"
+
+tmux_set () {
+    tmux set -t default $@ 2> /dev/null
+    tmux set -t popup $@ 2> /dev/null
+}
+
+tmux_set_option () {
+    tmux set-option -t default $@ 2> /dev/null
+    tmux set-option -t popup $@ 2> /dev/null
+}
+
+tmux_set_alert () {
+    tmux set-environment -t default $ALERT_FLAG $1 2> /dev/null
+    tmux set-environment -t popup $ALERT_FLAG $1 2> /dev/null
+}
+
+tmux_set_block () {
+    tmux set-environment -t default $ALERT_BLOCK_FLAG "1" 2> /dev/null
+    tmux set-environment -t popup $ALERT_BLOCK_FLAG "1" 2> /dev/null
+}
+
+tmux_unset_block () {
+    tmux set-environment -t default -u $ALERT_BLOCK_FLAG 2> /dev/null
+    tmux set-environment -t popup -u $ALERT_BLOCK_FLAG 2> /dev/null
+}
+
+tmux_get_is_block () {
+    popup_alerts=`tmux show-environment -t popup $ALERT_BLOCK_FLAG 2> /dev/null`
+    default_alerts=`tmux show-environment -t default $ALERT_BLOCK_FLAG 2> /dev/null`
+    if [[ "$popup_alerts" || "$default_alerts" ]]; then
+        echo ""
+    fi
+    if [[ "$popup_alerts" != "$default_alerts" ]]; then
+        echo ""
+    fi
+    echo $default_alerts
+}
+
+tmux_unset_alert () {
+    tmux set-environment -t default -u $ALERT_FLAG 2> /dev/null
+    tmux set-environment -t popup -u $ALERT_FLAG 2> /dev/null
+}
+
+tmux_get_alert_stat () {
+    popup_alerts=`tmux show-environment -t popup $ALERT_FLAG 2> /dev/null`
+    default_alerts=`tmux show-environment -t default $ALERT_FLAG 2> /dev/null`
+    if [[ "$popup_alerts" || "$default_alerts" ]]; then
+        echo ""
+    fi
+    if [[ "$popup_alerts" != "$default_alerts" ]]; then
+        echo ""
+    fi
+    dt=`cut -c 7- <<< "$default_alerts"`
+    echo $dt
+}
+
+# ===============================================
+
+tmux_toggle_status () {
+    if [ "$NO_CLOSE" ]; then
+        :
+    else
+        sleep $DISPLAY_SEC
+
+        i=$3
+
+        max=10
+        while true; do
+            if [ "$max" = "1" ]; then
+                break
+            fi
+            if [ "`tmux_get_is_block`" ]; then
+                sleep 0.2
+                max=`expr $max - 1`
+            else
+                break
+            fi
+        done
+
+        if [ ! "$QQUICK" ] && [[ "`tmux_get_alert_stat`" = *"$1"* ]]; then
+            tmux_set_block
+            while true; do
+                i=`expr $i - 1`
+                if [ "$i" = "1" ]; then
+                    break
+                elif [ "$i" != "1" ]; then
+                    tmux_set "status-format[`expr $i - 1`]" "#[align=left,bold,underscore]$2════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════"
+                    tmux_set "status-format[`expr $i`]" "#[align=left]"
+                fi
+
+                tmux_set status $i
+                sleep $speed
+            done
+        fi
+        tmux_set status off
+        if [[ "`tmux_get_alert_stat`" = *"$1"* ]]; then
+            tmux_unset_alert
+        fi
+        tmux_unset_block
+    fi
+}
+
+tmux_display () {
+    if [ "$OS_ENV" = "m1" ]; then
+        alert_m
+    fi
+    start_time=$(date +%s)
+    tmux_set_alert $start_time 
+
+    max=10
+    while true; do
+        if [ "$max" = "1" ]; then
+            break
+        fi
+        if [ "`tmux_get_is_block`" ]; then
+            sleep 0.2
+            max=`expr $max - 1`
+        else
+            break
+        fi
+    done
+
+    tmux_set_block
+    if [ "$2" = "INFO" ]; then
+        COLOUR="#[bg=green,fg=black]"
+        TEXT_COLOUR="#[fg=green,bg=default]"
+    elif [ "$2" = "WARNING" ]; then
+        COLOUR="#[bg=yellow,fg=black]"
+        TEXT_COLOUR="#[fg=yellow,bg=default]"
+    elif [ "$2" = "ERROR" ]; then
+        COLOUR="#[bg=red,fg=black]"
+        TEXT_COLOUR="#[fg=red,bg=default]"
+    else
+        COLOUR="#[bg=blue,fg=black]"
+        TEXT_COLOUR="#[fg=blue,bg=default]"
+    fi
+
+    idx="0"
+
+    line_size=`echo -n "$MSG" | grep -c '^'`
+
+    index="2"
+    ic=$index
+
+    tmux_set "status-format[0]" "#[align=centre]#[bold,underscore]$COLOUR [ ! N O T I F I C A T I O N ! ] #[bg=default,fg=default,default]#[align=right,bold,fg=pink]$date #[align=left] $COLOUR#[underscore,bold][$2]#[bg=default,fg=default]"
+    while read -r line; do
+        if [ "$ic" = "5" ]; then
+            break
+        fi
+        if [ ! "$QUICK" ]; then
+            tmux_set "status-format[`expr $ic - 1`]" "$TEXT_COLOUR#[align=left,bold,underscore]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════"
+            tmux_set status `expr $ic`
+            sleep $speed
+        fi
+        tmux_set "status-format[`expr $ic - 1`]" "#[align=left] $line"
+        ic=`expr $ic + 1`
+    done < <(echo $MSG)
+
+    if [ "$line_size" -gt "3" ]; then
+        tmux_set -a "status-format[`expr $ic - 2`]" " #[align=right,bold]..."
+    fi
+
+    if [ "$QUICK" ]; then
+        if [ "$line_size" -gt "3" ]; then
+            tmux_set "status-format[4]" "$TEXT_COLOUR#[align=left,bold,underscore]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════"
+        else
+            tmux_set "status-format[`expr $line_size + 1`]" "$TEXT_COLOUR#[align=left,bold,underscore]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════"
+        fi
+    else
+        tmux_set "status-format[`expr $ic - 1`]" "$TEXT_COLOUR#[align=left,bold,underscore]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════"
+    fi
+
+
+
+    tmux_set status-position top
+    if [ "$line_size" = "1" ]; then
+        tmux_set status 3
+    else
+        tmux_set status `expr $line_size + $index` 2> /dev/null || tmux_set status 5
+    fi
+    tmux_unset_block
+
+    tmux_toggle_status $start_time $TEXT_COLOUR $ic &
+}
+
+tmux_notify () {
+    date=$(date)
+    notification="-----------------------\n[$1] $date\n$2"
+    echo $notification >> $message_store
+
+    tmux_set_option status-style bg=colour236
+
+    tmux_display $2 $1
+
+    return $?
+}
+
+tmux_notify_clear () {
+    if [ -e $message_store ]; then
+        rm $message_store && touch $message_store
+    else
+        touch $message_store
+    fi
+    return $?
+}
+
+parse_arg () {
+    if [ "$#" -eq 1 ] || [ ! "$1" ]; then
+        if [ "$1" = "hide" ]; then
+            tmux_set status off
+            tmux_unset_alert
+            tmux_unset_block
+        else
+            tmux_notify $TYPE $1
+        fi
+    else
+        echo_help
+    fi
+}
+
+if [ "$ARGS" = "''" ]; then
+    echo_help
+else
+    parse_arg $ARGS
+fi

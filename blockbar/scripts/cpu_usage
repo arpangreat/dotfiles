@@ -1,0 +1,19 @@
+#!/bin/bash
+
+USAGE=$(mpstat 2 1 | tail -n1 | awk '$12~/[0-9.]+/ {printf "%d", 100-$12}')
+
+for line in 1 2; do
+    for (( c=0; c<$USAGE-5; c+=10 )); do
+        printf "█"
+    done
+    for (( ; c<100; c+=10 )); do
+        printf " "
+    done
+    printf "\n"
+done
+
+if [[ $USAGE -gt 80 ]]; then
+    echo \#FF0000
+else
+    echo \#FFFFFF
+fi

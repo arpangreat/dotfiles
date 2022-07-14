@@ -1,0 +1,53 @@
+#!/bin/bash
+
+bluetoothctl info | grep -q "Connected: yes" && C=1 || C=0
+
+connect() {
+    if [[ "$C" == "0" ]]; then
+        bluetoothctl power on
+    fi
+
+    bluetoothctl connect $ID
+}
+
+disconnect() {
+    bluetoothctl disconnect $ID
+    bluetoothctl info | grep -q "Connected: yes" && C=1 || C=0
+}
+
+if [[ "$1" == "rofi" ]]; then
+    if [[ -n "$2" ]]; then
+        NAME=$(echo "$2" | sed 's/..//')
+        ID=$(bluetoothctl devices | grep "$NAME" | awk '{print $2}')
+
+        bluetoothctl info $ID | grep -q "Connected: yes" && c=0 || c=1
+
+        if [[ "$c" == "1" ]]; then
+            connect $ID &>/dev/null &
+        else
+            disconnect $ID &>/dev/null &
+        fi
+    else
+        bluetoothctl devices | while read i; do
+            ID=$(echo $i | awk '{print $2}')
+            NAME=$(echo $i | cut -d' ' -f3-)
+            bluetoothctl info $ID | grep -q "Connected: yes" && C="" || C=" "
+
+            printf "$C $NAME\n"
+        done
+    fi
+    exit
+elif [[ "$BLOCK_BUTTON" == "1" ]]; then
+    . "$(dirname $0)/rofi.sh"
+    rofi_menu "Devices" 25
+fi
+
+if [[ "$C" == "1" ]]; then
+    echo -e "\uf293"
+    echo -e "\uf293"
+    echo \#0082FC
+else
+    echo -e "\uf293"
+    echo -e "\uf293"
+    echo \#FFFFFF
+fi

@@ -1,0 +1,89 @@
+#!/bin/bash
+
+pctl () {
+    playerctl "$@" 2>/dev/null
+}
+
+DATADIR="$(eval echo ~/.config/blockbar/scripts/data)"
+PLAYER=$(cat "$DATADIR/player")
+
+PLAYERS="$(pctl -l | while read -r player; do
+    if [[ ! "$(pctl status -p "$player")" =~ (Stopped)|(Not available) ]]; then
+        echo "$player"
+    fi
+done)"
+
+if [[ -z "$PLAYERS" ]]; then
+    exit
+fi
+
+if [[ ! -d "$DATADIR" ]]; then
+    mkdir "$DATADIR"
+fi
+
+if ! echo "$PLAYERS" | grep -q "$PLAYER"; then
+    PLAYER="$(echo "$PLAYERS" | head -n1)"
+    echo "$PLAYER" > "$DATADIR/player"
+fi
+
+if ! echo "$PLAYERS" | grep -q "$PLAYER" || [[ "$(pctl status -p "$PLAYER")" != "Playing" ]]; then
+    echo "$PLAYERS" | while read -r player; do
+        if [[ "$(pctl status -p "$player")" == "Playing" ]]; then
+            echo "$player" > "$DATADIR/player"
+        fi
+    done
+fi
+PLAYER=$(cat "$DATADIR/player")
+
+if [[ "$1" == "rofi" ]]; then
+    if [[ -n "$2" ]]; then
+        echo "$2" > "$DATADIR/player"
+    else
+        echo "$PLAYERS" | while read -r player; do
+            if [[ "$PLAYER" == "$player" ]]; then
+                echo -n '<%selected%>'
+            fi
+            echo "$player"
+        done
+    fi
+
+    exit
+fi
+
+if [[ "$BLOCK_BUTTON" == "1" ]]; then #left click
+    pctl play-pause -p "$PLAYER" >/dev/null
+elif [[ "$BLOCK_BUTTON" == "4" ]]; then #scroll up
+    pctl previous -p "$PLAYER" >/dev/null
+elif [[ "$BLOCK_BUTTON" == "5" ]]; then #scroll down
+    pctl next -p "$PLAYER" >/dev/null
+elif [[ "$BLOCK_BUTTON" == "3" ]]; then
+    . "$(dirname "$0")/rofi.sh"
+    rofi_menu "Players" 30 10
+    PLAYER=$(cat "$DATADIR/player")
+elif [[ "$BLOCK_BUTTON" == "pause" ]]; then
+    pctl pause -p "$PLAYER"
+fi
+
+STATUS=$(pctl status -p "$PLAYER")
+
+TITLE=$(pctl metadata title -p "$PLAYER")
+SHORTLENGTH=65
+LENGTH=${#TITLE}
+
+TITLE=$(echo "$TITLE" | sed 's/&/&amp;/g')
+
+if [ "$STATUS" == "Playing" ]; then
+    ICON=$(printf "\uf04b\n")
+elif [ "$STATUS" == "Paused" ]; then
+    ICON=$(printf "\uf04c\n")
+elif [ "$STATUS" == "Stopped" ]; then
+    ICON=$(printf "\uf04d\n");
+else
+    exit
+fi
+
+if [[ "$LENGTH" -gt "$SHORTLENGTH" ]]; then
+    echo -e "$ICON ${TITLE:0:(( $SHORTLENGTH-3 ))}...\n"
+else
+    echo -e "$ICON $TITLE\n"
+fi

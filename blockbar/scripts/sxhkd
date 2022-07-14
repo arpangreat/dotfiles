@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+script_dir="$(dirname "$(realpath "$0")")"
+
+text="$(cat "$script_dir"/data/sxhkd_status 2>/dev/null)"
+
+if [[ "$text" == "" ]]; then
+    exit
+fi
+
+source ~/.imgcol/generated/colors.sh
+
+THEME="$(cat "$script_dir"/sbtheme.h | awk -f <(cat - <<EOF
+BEGIN {
+    printing = 0
+}
+
+is_prop = 0
+
+/^\s*PROPERTY.*/ {
+    print \$0
+    printing = 1
+    is_prop = 1
+}
+
+printing == 1 && is_prop == 0 {
+    exit
+}
+EOF
+) | sed 's/, /":/g' | sed 's/.*(/,"/g' | sed 's/)//g' | tr -d '\n')"
+
+    cat <<EOF
+{"subblocks":[{"text":"$text","background":"$focusedcolor"$THEME}]}
+EOF

@@ -1,0 +1,64 @@
+#!/bin/bash
+
+function vars {
+    local properties=$(pactl list sinks | grep -A10 "Name: $ID")
+    volume=$(echo "$properties" | grep Volume | head -n1 | awk '{print $5}' | sed 's/%//')
+    muted=$(echo "$properties" | grep Mute | awk '{print $2}')
+}
+
+ID=$(pactl info | grep "Default Sink" | awk '{print $3}')
+
+if [[ -n "$2" ]]; then
+    ID=$(pactl list sinks | grep -B3 "Description: $2" | head -n1 | sed 's/.*#//')
+
+    for i in $(pactl list sink-inputs short | awk '{print $1}'); do
+        pactl move-sink-input $i $ID
+    done
+
+    pactl set-default-sink $ID
+
+    exit
+elif [[ "$1" == "rofi" ]]; then
+    IFS=$'\n'; for i in $(pactl list sinks | grep 'Description: \|Name: '); do
+        echo "$i" | grep -q "Name: $ID" && echo -n "<%selected%>"
+        echo "$i" | grep "Description: " | sed 's/.*:\s//g'
+    done
+    exit
+elif [[ "$BLOCK_BUTTON" == "1" ]]; then
+    . "$(dirname $0)/rofi.sh"
+    rofi_menu "Outputs" 30
+fi
+
+vars
+
+prevolume=$volume
+
+if [[ "$BLOCK_BUTTON" == "2" ]]; then
+    pactl set-sink-mute "$ID" toggle
+elif [[ "$BLOCK_BUTTON" == "4" ]]; then
+    if [[ "$volume" -lt "95" ]]; then
+        pactl set-sink-volume "$ID" +5%
+    else
+        pactl set-sink-volume "$ID" 100%
+    fi
+elif [[ "$BLOCK_BUTTON" == "5" ]]; then
+    pactl set-sink-volume "$ID" -5%
+fi
+
+vars
+
+if [[ "$prevolume" != "$volume" ]]; then
+    if [[ "$BLOCK_BUTTON" =~ (4|5) ]]; then
+        echo "$volume" >> ~/.config/xob/fifo
+    fi
+fi
+
+if [[ "$muted" == "yes" ]]; then
+    printf "\uf6a9\n"
+elif [[ "$volume" -eq 0 ]]; then
+    printf "\uf026\n"
+elif [[ "$volume" -lt 50 ]]; then
+    printf "\uf027\n"
+else
+    printf "\uf028\n"
+fi

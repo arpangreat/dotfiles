@@ -1,0 +1,7 @@
+#!/bin/bash
+
+USAGE=$(top -bn1 | grep "Cpu(s)" | \
+           sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | \
+           awk '{print 100 - $1}')
+#USAGE=$(mpstat 2 1 | tail -n1 | awk '$12~/[0-9.]+/ {printf "%d", 100-$12}')
+echo $USAGE
