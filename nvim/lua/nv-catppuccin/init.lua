@@ -1,4 +1,5 @@
 local catppuccin = require("catppuccin")
+local colors = require("catppuccin.api.colors").get_colors()
 
 -- configure it
 catppuccin.setup({
@@ -61,22 +62,17 @@ catppuccin.setup({
 		ts_rainbow = true,
 		hop = true,
 	},
-})
 
-vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
-
-local colors = require("catppuccin.api.colors").get_colors()
-
-catppuccin.remap({
-	Comment = { fg = colors.overlay1 },
+	custom_highlights = {
+			Comment = { fg = colors.overlay1 },
 	LineNr = { fg = colors.overlay1 },
 	CursorLineNr = { fg = colors.sky },
 	NvimTreeRootFolder = { fg = colors.sky },
-	-- DiagnosticInfo = { bg = colors.none },
-	-- DiagnosticError = { bg = colors.none },
-	-- DiagnosticHint = { bg = colors.none },
-	-- DiagnosticWarn = { bg = colors.none },
+
+	}
 })
+
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 
 -- Lua
 vim.cmd([[colorscheme catppuccin]])
