@@ -37,6 +37,13 @@ return require("packer").startup({
 			"anuvyklack/hydra.nvim",
 			requires = "anuvyklack/keymap-layer.nvim", -- needed only for pink hydras
 		})
+		use("rmagatti/auto-session")
+		use("SmiteshP/nvim-navic")
+		use("ghillb/cybu.nvim")
+		use("abecodes/tabout.nvim")
+		-- use("jinh0/eyeliner.nvim")
+		use("unblevable/quick-scope")
+		use("kylechui/nvim-surround")
 		-- Also run code after load (see the "config" key)
 
 		-- Local plugins can be included
@@ -227,8 +234,8 @@ return require("packer").startup({
 		use("renerocksai/calendar-vim")
 		-- use 'kshenoy/vim-signature'
 		-- use 'tpope/vim-git'
-		use("liuchengxu/vim-which-key")
-		-- use("folke/which-key.nvim")
+		-- use("liuchengxu/vim-which-key")
+		use("folke/which-key.nvim")
 		-- use 'SirVer/ultisnips'
 		use("honza/vim-snippets")
 		-- use("mbbill/undotree")

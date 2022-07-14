@@ -75,7 +75,8 @@ require("nv-symbols-outline")
 require("nv-todo-comment")
 -- require("nv-lsp-signatures")
 -- require('nv-formatter')
--- require("nv-which-key")
+require("nv-which-key")
+require("nv-tabout")
 -- require('nv-vsnip')
 -- LuaSnip
 require("utils")
@@ -92,6 +93,10 @@ require("nv-gps")
 require("nv-telekasten")
 require("nv-hydra")
 require("nv-winshift")
+require("nv-session-manager")
+require("nv-cybu")
+require("nv-navic")
+require("nv-surround")
 -- require("nv-specs")
 -- require("nv-winbar")
 -- require("nv-expressline")
@@ -134,6 +139,8 @@ vim.g.which_key_use_floating_win = 1
 vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
+
+vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
 
 vim.g.CommandTCancelMap = "<C-x>"
 -- Disabling Gitgutter

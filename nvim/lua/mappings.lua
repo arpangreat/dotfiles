@@ -28,9 +28,11 @@ vim.api.nvim_set_keymap("n", "<Leader>ss", ":split<CR>", { noremap = true, silen
 vim.api.nvim_set_keymap("n", "<Leader>st", ":tabedit<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>sp", ":tabp<CR>", { noremap = false, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>sn", ":tabn<CR>", { noremap = false, silent = false })
+vim.keymap.set("n", "<Leader>sS", ":SaveSession<CR>")
+vim.keymap.set("n", "<Leader>sr", ":RestoreSession<CR>")
 
 -- vim.api.nvim_set_keymap("n", "<Leader>", ":WhichKey '<Space>'<CR>", { noremap = true, silent = true, expr = false })
-vim.api.nvim_set_keymap("n", ",", ":WhichKey ','<CR>", { noremap = true, silent = true, expr = false })
+-- vim.api.nvim_set_keymap("n", ",", ":WhichKey ','<CR>", { noremap = true, silent = true, expr = false })
 
 vim.api.nvim_set_keymap("n", "\\gr", ":!go run %<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "\\gb", ":!go build<CR>", { noremap = true, silent = false })
@@ -212,7 +214,7 @@ vim.api.nvim_set_keymap(
 	":FloatermNew --height=0.9 --width=0.9 lazygit<CR>",
 	{ noremap = true, silent = false, expr = false }
 )
-vim.api.nvim_set_keymap("n", "<Leader>", ":<C-U>WhichKey '<Space>'<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<Leader>", ":<C-U>WhichKey '<Space>'<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>q", ":q<CR>", { noremap = true, silent = false })
