@@ -183,6 +183,7 @@ return require("packer").startup({
 				"hrsh7th/cmp-copilot",
 			},
 		})
+		use("alaviss/nim.nvim")
 		use("p00f/clangd_extensions.nvim")
 		use("ibhagwan/fzf-lua")
 		use("kyazdani42/nvim-tree.lua")

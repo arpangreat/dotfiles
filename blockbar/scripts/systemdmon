@@ -1,0 +1,22 @@
+#!/bin/bash
+
+table="$(systemctl --failed --no-legend)
+$(systemctl --failed --no-legend --user)"
+
+table="$(echo "$table" | xargs)"
+
+if [[ "$1" == "rofi" ]]; then
+    echo "$table" | awk '{print $2}'
+    exit
+fi
+
+if [[ "$BLOCK_BUTTON" == "1" ]]; then
+    . "$(dirname $0)/rofi.sh"
+    rofi_menu "Errors" 30 5
+fi
+
+if [[ "$table" =~ [a-z]+ ]]; then
+    printf "\uf071\n"
+    printf "\uf071\n"
+    printf "#FF0000"
+fi

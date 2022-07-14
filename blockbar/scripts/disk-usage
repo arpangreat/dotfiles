@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+mounts="/ /data /backup /encrypted /home/user"
+
+for m in $mounts; do
+    df --output=target,pcent | tail -n+2 | while read -r t p; do
+	if [[ "$t" == "$m" ]]; then
+	    echo "$p"
+	fi
+    done
+done
