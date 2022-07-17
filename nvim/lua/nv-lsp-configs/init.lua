@@ -79,6 +79,8 @@ local on_attach = function(client, bufnr)
 		vim.lsp.buf.formatting,
 		{ desc = "Format current buffer with LSP" }
 	)
+
+	navic.attach(client, bufnr)
 end
 
 --Enable (broadcasting) snippet capability for completion

@@ -629,6 +629,8 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
+vim.keymap.set("n", "<Leader>rg", "<cmd>lua vim.lsp.codelens.run()<CR>")
+
 --[[ vim.keymap.set(
 	"n",
 	"<Leader>rc",
