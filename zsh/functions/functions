@@ -237,3 +237,7 @@ function mvn() {
 function pacman() {
   command sudo pacman "$@"
 }
+
+function entrrr() {
+  command find src/ | entr sh -c '"$@" | head -n 20'
+}

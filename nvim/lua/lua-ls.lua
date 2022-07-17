@@ -2,6 +2,7 @@
 USER = vim.fn.expand("$USER")
 
 local protocol = require("vim.lsp.protocol")
+local navic = require("nv-navic")
 
 local system_name
 if vim.fn.has("mac") == 1 then
@@ -19,7 +20,6 @@ local sumneko_binary = sumneko_root_path .. "/bin/" .. "/lua-language-server"
 local runtime_path = vim.split(package.path, ";")
 
 local on_attach = function(client, bufnr)
-	vim.api.nvim_buf_set_option(buffer, "omnifunc", "v:lua.vim.lsp.omnifunc")
 	local function buf_set_keymap(...)
 		vim.api.nvim_buf_set_keymap(bufnr, ...)
 	end
@@ -30,8 +30,6 @@ local on_attach = function(client, bufnr)
 	--Enable completion triggered by <c-x><c-o>
 	buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 	-- formatting
-
-	lsp_highlight_document(client)
 
 	-- require'completion'.on_attach(client, bufnr)
 
@@ -63,6 +61,8 @@ local on_attach = function(client, bufnr)
 		"ﬦ", -- Operator
 		"", -- TypeParameter
 	}
+
+	navic.attach(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -105,4 +105,5 @@ require("lspconfig").sumneko_lua.setup({
 		},
 	},
 	capabilities = capabilities,
+	on_attach = on_attach,
 })

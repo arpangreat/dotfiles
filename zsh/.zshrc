@@ -66,6 +66,7 @@ alias nv="nvim"
 alias e='emacs'
 alias en='emacs -nw'
 alias brc='nvim ~/dotfiles/bspwm/'
+alias hrc='nvim ~/dotfiles/herbstluftwm/'
 alias vrc='nvim ~/.vimrc'
 alias ec='emacsclient'
 alias nrc='nvim ~/dotfiles/nvim/init.lua'

@@ -1,3 +1,5 @@
+local navic = require("nv-navic")
+
 local opts = {
 	tools = { -- rust-tools options
 		-- Automatically set inlay hints (type hints)

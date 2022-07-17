@@ -323,7 +323,7 @@ sxhkd -c ~/.config/herbstluftwm/sxhkd/sxhkdrc &
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 #feh --bg-scale ~/.config/herbstluftwm/wall.png &
 # feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
-feh --bg-scale /home/arpangreat/dotfiles/wallpaper/442432.jpg
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/Dragonball8k.jpeg
 run xmodmap /home/arpangreat/dotfiles/i3/swap &
 run kitty &
 run emacs &

@@ -67,10 +67,6 @@ return require("packer").startup({
 	}) ]]
 		-- use("NTBBloodbath/galaxyline.nvim")
 		use("nvim-lualine/lualine.nvim")
-		use({
-			"SmiteshP/nvim-gps",
-			requires = "nvim-treesitter/nvim-treesitter",
-		})
 
 		use("kyazdani42/nvim-web-devicons")
 
@@ -122,6 +118,7 @@ return require("packer").startup({
 		-- use '/home/arpangreat/todo-comments.nvim'
 		use("lukas-reineke/indent-blankline.nvim")
 		use("sainnhe/tmuxline.vim")
+		use("vimpostor/vim-tpipeline")
 		use("p00f/nvim-ts-rainbow")
 		use("tversteeg/registers.nvim")
 		-- use 'glepnir/indent-guides.nvim'
