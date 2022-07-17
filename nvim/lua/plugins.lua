@@ -44,6 +44,7 @@ return require("packer").startup({
 		-- use("jinh0/eyeliner.nvim")
 		use("unblevable/quick-scope")
 		use("kylechui/nvim-surround")
+		use("stevearc/aerial.nvim")
 		-- Also run code after load (see the "config" key)
 
 		-- Local plugins can be included

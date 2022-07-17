@@ -142,6 +142,15 @@ ins_left({
 	color = { fg = colors.magenta, gui = "bold" },
 })
 
+--[[ ins_left({
+	"aerial",
+}) ]]
+
+--[[ ins_left({
+	"navic.get_location",
+	cond = navic.is_available,
+}) ]]
+
 ins_left({ "location" })
 
 ins_left({ "progress", color = { fg = colors.fg, gui = "bold" } })

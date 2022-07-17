@@ -98,6 +98,7 @@ require("nv-navic")
 require("nv-surround")
 -- require("nv-specs")
 require("nv-winbar")
+require("nv-aerial")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 

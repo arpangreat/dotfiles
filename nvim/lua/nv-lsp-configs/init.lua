@@ -81,6 +81,7 @@ local on_attach = function(client, bufnr)
 	)
 
 	navic.attach(client, bufnr)
+	require("aerial").on_attach(client, bufnr)
 end
 
 --Enable (broadcasting) snippet capability for completion
