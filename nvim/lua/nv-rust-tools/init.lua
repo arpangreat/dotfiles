@@ -1,4 +1,9 @@
 local navic = require("nv-navic")
+local function my_custom_attach(client, bufnr)
+	-- your code here
+	require("aerial").on_attach(client, bufnr)
+	navic.attach(client, bufnr)
+end
 
 local opts = {
 	tools = { -- rust-tools options
@@ -13,19 +18,9 @@ local opts = {
 		-- options right now: termopen / quickfix
 		executor = require("rust-tools/executors").termopen,
 
-		runnables = {
-			-- whether to use telescope for selection menu or not
-			use_telescope = true,
+		on_attach = my_custom_attach,
 
-			-- rest of the opts are forwarded to telescope
-		},
-
-		debuggables = {
-			-- whether to use telescope for selection menu or not
-			use_telescope = true,
-
-			-- rest of the opts are forwarded to telescope
-		},
+		-- on_initialized = my_custom_attach,
 
 		-- These apply to the default RustSetInlayHints command
 		inlay_hints = {
@@ -121,6 +116,8 @@ local opts = {
 					command = "clippy",
 					inlayHints = true,
 				},
+
+				-- on_attach = my_custom_attach,
 			},
 		},
 	}, -- rust-analyer options

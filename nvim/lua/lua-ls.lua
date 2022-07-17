@@ -62,7 +62,8 @@ local on_attach = function(client, bufnr)
 		"", -- TypeParameter
 	}
 
-	navic.attach(client, bufnr)
+	-- navic.attach(client, bufnr)
+	require("aerial").on_attach(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()

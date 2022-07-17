@@ -11,7 +11,7 @@ local no_errors, error_msg = pcall(function()
 
   local time
   local profile_info
-  local should_profile = true
+  local should_profile = false
   if should_profile then
     local hrtime = vim.loop.hrtime
     profile_info = {}
@@ -78,6 +78,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["aerial.nvim"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
   },
   ["auto-session"] = {
     loaded = true,
@@ -381,11 +386,6 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
-  ["nvim-gps"] = {
-    loaded = true,
-    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim-gps",
-    url = "https://github.com/SmiteshP/nvim-gps"
-  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
@@ -669,6 +669,11 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-snippets",
     url = "https://github.com/honza/vim-snippets"
   },
+  ["vim-tpipeline"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-tpipeline",
+    url = "https://github.com/vimpostor/vim-tpipeline"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/vim-vsnip",
@@ -703,10 +708,10 @@ time([[Config for dim.lua]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Make lua require("packer.load")({'vim-dispatch'}, { cmd = "Make", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Focus lua require("packer.load")({'vim-dispatch'}, { cmd = "Focus", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Start lua require("packer.load")({'vim-dispatch'}, { cmd = "Start", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Dispatch lua require("packer.load")({'vim-dispatch'}, { cmd = "Dispatch", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Make lua require("packer.load")({'vim-dispatch'}, { cmd = "Make", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 if should_profile then save_profiles() end
