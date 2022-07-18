@@ -20,6 +20,19 @@ local lsp_highlight_document = function(client)
 	end
 end
 
+local lsp_formatting = function(bufnr)
+	vim.lsp.buf.format({
+		filter = function(client)
+			-- apply whatever logic you want (in this example, we'll only use null-ls)
+			return client.name == "null-ls"
+		end,
+		bufnr = bufnr,
+	})
+end
+
+-- if you want to set up formatting on save, you can use this as a callback
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
 -- function to attach completion when setting up lsp
 local on_attach = function(client, bufnr)
 	local function buf_set_keymap(...)
@@ -73,14 +86,18 @@ local on_attach = function(client, bufnr)
 		"ﬦ", -- Operator
 		"", -- TypeParameter
 	}
-	vim.api.nvim_buf_create_user_command(
-		bufnr,
-		"Format",
-		vim.lsp.buf.formatting,
-		{ desc = "Format current buffer with LSP" }
-	)
 
-	navic.attach(client, bufnr)
+	if client.supports_method("textDocument/formatting") then
+		vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			group = augroup,
+			buffer = bufnr,
+			callback = function()
+				lsp_formatting(bufnr)
+			end,
+		})
+	end
+
 	require("aerial").on_attach(client, bufnr)
 end
 
@@ -201,20 +218,21 @@ require("lspconfig").gopls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+require("lspconfig").dotls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").bashls.setup({ on_attach = on_attach })
 require("lspconfig").ocamlls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").vimls.setup({ on_attach = on_attach })
 require("lspconfig").cssls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").dockerls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").graphql.setup({ on_attach = on_attach, capabilities = capabilities })
-require("lspconfig").hls.setup({ on_attach = on_attach, capabilities = capabilities })
--- require'lspconfig'.jsonls.setup{ on_attach = on_attach, capabilities = capabilities }
+-- require("lspconfig").hls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").jsonls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").yamlls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").pyright.setup({ on_attach = on_attach, capabilities = capabilities })
-require("lspconfig").phpactor.setup({ on_attach = on_attach, capabilities = capabilities })
+-- require("lspconfig").phpactor.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").dartls.setup({ on_attach = on_attach, capabilities = capabilities })
 -- require('sg.lsp').setup{ on_attach = on_attach, capabilities = capabilities }
-require("lspconfig").r_language_server.setup({ on_attach = on_attach, capabilities = capabilities })
+-- require("lspconfig").r_language_server.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").html.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -242,6 +260,7 @@ require("lspconfig").nimls.setup({ on_attach = on_attach, capabilities = capabil
 -- Java Setup
 
 require("lspconfig").jdtls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("mason-lspconfig").setup()
 -- require("lspconfig").java_language_server.setup({ cmd = {"java-language-server"}, on_attach = on_attach, capabilities = capabilities })
 
 -- Commands:

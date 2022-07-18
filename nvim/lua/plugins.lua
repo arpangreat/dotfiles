@@ -39,6 +39,7 @@ return require("packer").startup({
 		})
 		use("rmagatti/auto-session")
 		use("SmiteshP/nvim-navic")
+		use("SmiteshP/nvim-gps")
 		use("ghillb/cybu.nvim")
 		use("abecodes/tabout.nvim")
 		-- use("jinh0/eyeliner.nvim")
@@ -245,11 +246,14 @@ return require("packer").startup({
 		-- use 'mhartington/formatter.nvim'
 		use("ckipp01/stylua-nvim")
 		use("rcarriga/nvim-notify")
+		use("jose-elias-alvarez/null-ls.nvim")
 
 		-- My Plugins
 		use("arpangreat/treesitter-unit-plugin")
 		use("arpangreat/statusfire.nvim")
 		use("tjdevries/express_line.nvim")
+		use({ "williamboman/mason.nvim", branch = "alpha" })
+		use("williamboman/nvim-lsp-installer")
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 
 		-- use 'govim/govim'
