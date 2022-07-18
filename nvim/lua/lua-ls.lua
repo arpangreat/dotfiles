@@ -2,7 +2,6 @@
 USER = vim.fn.expand("$USER")
 
 local protocol = require("vim.lsp.protocol")
-local navic = require("nv-navic")
 
 local system_name
 if vim.fn.has("mac") == 1 then
@@ -15,8 +14,8 @@ else
 	print("Unsupported system for sumneko")
 end
 
-local sumneko_root_path = "/home/" .. USER .. "/dotfiles/nvim/lua-language-server"
-local sumneko_binary = sumneko_root_path .. "/bin/" .. "/lua-language-server"
+local sumneko_root_path = "/home/" .. USER .. "/.local/share/nvim/lsp-servers/sumneko_lua"
+local sumneko_binary = sumneko_root_path .. "/extensions/server/bin" .. "/lua-language-server"
 local runtime_path = vim.split(package.path, ";")
 
 local on_attach = function(client, bufnr)
@@ -70,41 +69,53 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+local lsp_formatting = function(bufnr)
+	vim.lsp.buf.format({
+		filter = function(client)
+			-- apply whatever logic you want (in this example, we'll only use null-ls)
+			return client.name == "null-ls"
+		end,
+		bufnr = bufnr,
+	})
+end
+
+-- if you want to set up formatting on save, you can use this as a callback
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
+-- add to your shared on_attach callback
+local my_attach = function(client, bufnr)
+	if client.supports_method("textDocument/formatting") then
+		vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			group = augroup,
+			buffer = bufnr,
+			callback = function()
+				lsp_formatting(bufnr)
+			end,
+		})
+	end
+end
+
 require("lspconfig").sumneko_lua.setup({
-	cmd = { sumneko_binary, "-E", sumneko_root_path .. "/main.lua" },
 	settings = {
 		Lua = {
 			runtime = {
-				-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
 				version = "LuaJIT",
-				-- Setup your lua path
-				path = runtime_path,
-			},
-			completion = {
-				callSnippet = "Replace",
 			},
 			diagnostics = {
-				enable = true,
-				-- Get the language server to recognize the `vim` global
 				globals = { "vim" },
-				workspaceRate = 10000,
 			},
 			workspace = {
-				-- Make the server aware of Neovim runtime files
-				library = vim.api.nvim_get_runtime_file("", true),
-				maxPreload = 10000,
-				checkThirdParty = false,
-				preloadFileSize = 10000,
+				library = {
+					[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+					[vim.fn.stdpath("config") .. "/lua"] = true,
+				},
+			},
+			telemetry = {
+				enable = false,
 			},
 		},
 	},
-	commands = {
-		Format = {
-			function()
-				require("stylua-nvim").format_file()
-			end,
-		},
-	},
-	capabilities = capabilities,
-	on_attach = on_attach,
+
+	on_attach = my_attach,
 })
