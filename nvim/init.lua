@@ -105,6 +105,7 @@ require("nv-surround")
 require("nv-aerial")
 require("user.autocommands")
 require("winbar")
+require("nv-jaq")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 
