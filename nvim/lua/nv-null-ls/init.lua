@@ -42,7 +42,6 @@ null_ls.setup({
 		require("null-ls").builtins.formatting.prettier,
 		require("null-ls").builtins.formatting.clang_format,
 		require("null-ls").builtins.diagnostics.eslint,
-		require("null-ls").builtins.diagnostics.cppcheck,
 		require("null-ls").builtins.completion.spell,
 	},
 	debug = false,
