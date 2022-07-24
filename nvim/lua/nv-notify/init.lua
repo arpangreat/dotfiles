@@ -36,7 +36,7 @@ require("notify").setup({
 	},
 })
 
---[[ vim.cmd([[
+vim.cmd([[
 highlight NotifyERRORBorder guifg=#8A1F1F
 highlight NotifyWARNBorder guifg=#79491D
 highlight NotifyINFOBorder guifg=#4F6752
@@ -57,4 +57,4 @@ highlight link NotifyWARNBody Normal
 highlight link NotifyINFOBody Normal
 highlight link NotifyDEBUGBody Normal
 highlight link NotifyTRACEBody Normal
-) ]]
+]])
