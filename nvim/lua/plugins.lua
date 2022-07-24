@@ -253,7 +253,8 @@ return require("packer").startup({
 		use("arpangreat/treesitter-unit-plugin")
 		use("arpangreat/statusfire.nvim")
 		use("tjdevries/express_line.nvim")
-		use({ "williamboman/mason.nvim", branch = "alpha" })
+		use({ "williamboman/mason.nvim" })
+		use({ "williamboman/mason-lspconfig.nvim" })
 		use("williamboman/nvim-lsp-installer")
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 

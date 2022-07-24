@@ -1,8 +1,8 @@
 [credential]
 	helper = store
 [user]
-	name = arpangreat
-	email = arpanthegreat41@gmail.com
+	name = arcolinuxz
+	email = arcolinuxinfo@gmail.com
 [init]
 	defaultBranch = main
 [core]
@@ -10,7 +10,7 @@
     excludesfile = ~/.gitignore
 	editor = nvim
 [push]
-  default = simple
+	default = simple
 [color]
   status = auto
   diff = auto
@@ -85,3 +85,5 @@
 [ghq "https://git.example.com/repos/"]
 vcs = git
 root = ~/
+[pull]
+	rebase = false
