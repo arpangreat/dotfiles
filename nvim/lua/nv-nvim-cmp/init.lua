@@ -64,6 +64,7 @@ cmp.setup({
 		{ name = "cmp_tabnine" },
 		{ name = "cmp_git" },
 		{ name = "copilot" },
+		{ name = "emoji" },
 		-- { name = 'vsnip' }
 	}),
 
