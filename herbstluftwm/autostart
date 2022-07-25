@@ -326,7 +326,7 @@ dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 feh --bg-scale /home/arpangreat/dotfiles/wallpaper/Dragonball8k.jpeg
 run xmodmap /home/arpangreat/dotfiles/i3/swap &
 run kitty &
-run emacs &
+# run emacs &
 run conky &
 run brave &
 picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 --config $HOME/.config/bspwm/picom.conf &

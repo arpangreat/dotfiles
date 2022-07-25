@@ -177,6 +177,7 @@ return require("packer").startup({
 				"ray-x/cmp-treesitter",
 				"hrsh7th/cmp-nvim-lua",
 				"hrsh7th/cmp-vsnip",
+				"hrsh7th/cmp-emoji",
 				"saadparwaiz1/cmp_luasnip",
 				"petertriho/cmp-git",
 				{ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" },

@@ -310,3 +310,13 @@ export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
 source /usr/share/nvm/init-nvm.sh
+
+# bun completions
+[ -s "/home/arpangreat/.oh-my-zsh/completions/_bun" ] && source "/home/arpangreat/.oh-my-zsh/completions/_bun"
+
+# bun
+export BUN_INSTALL="/home/arpangreat/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
