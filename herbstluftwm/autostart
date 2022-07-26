@@ -155,8 +155,8 @@ hc keybind $Mod-i jumpto urgent
 hc attr theme.reset 1
 
 # Attribute
-hc attr theme.active.color '#6790EB'
-hc attr theme.active.inner_color '#141414'
+hc attr theme.active.color '#a9b665'
+hc attr theme.active.inner_color '#a9b665'
 hc attr theme.active.outer_color '#6790EB'
 hc attr theme.background_color '#141414'
 hc attr theme.border_width 3

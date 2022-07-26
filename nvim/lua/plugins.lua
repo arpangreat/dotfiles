@@ -141,7 +141,7 @@ return require("packer").startup({
 		use("rebelot/kanagawa.nvim")
 		use({ "themercorp/themer.lua" })
 		use("sainnhe/gruvbox-material")
-
+		use("tamago324/lir.nvim")
 		-- use("dylanaraps/wal.vim")
 
 		-- Language specific
