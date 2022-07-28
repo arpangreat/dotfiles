@@ -1,5 +1,8 @@
 require("themer").setup({
-	colorscheme = "catppuccin", -- default colorscheme
+	-- colorscheme = "catppuccin", -- default colorscheme
+	-- colorscheme = "doom_one",
+	-- colorscheme = "kurai",
+	colorscheme = "onedark_deep",
 	transparent = true,
 	term_colors = true,
 	dim_inactive = false,
@@ -9,66 +12,77 @@ require("themer").setup({
 			h1 = {},
 			h2 = {},
 		},
-		["function"] = {},
-		functionBuiltIn = {},
-		variable = {},
-		variableBuiltIn = {},
-		include = {},
-		identifier = {},
-		keyword = {},
-		keywordBuiltIn = {},
-		struct = {},
-		string = {},
-		parameter = {},
-		field = {},
-		type = {},
-		typeBuiltIn = {},
-		property = {},
-		comment = {},
-		punctuation = {},
-		constructor = {},
-		operator = {},
-		constant = {},
-		constantBuiltIn = {},
-		todo = {},
-		character = {},
-		conditional = {},
-		number = {},
-		statement = {},
-		uri = {},
+		["function"] = { style = "italic" },
+		functionBuiltIn = { style = "italic" },
+		variable = { style = "italic" },
+		variableBuiltIn = { style = "italic" },
+		include = { style = "bold" },
+		identifier = { style = "bold" },
+		keyword = { style = "bold" },
+		keywordBuiltIn = { style = "bold" },
+		struct = { style = "italic" },
+		string = { style = "italic" },
+		parameter = { style = "italic" },
+		field = { style = "italic" },
+		type = { style = "italic" },
+		typeBuiltIn = { style = "italic" },
+		property = { style = "italic" },
+		comment = { style = "italic" },
+		punctuation = { style = "italic" },
+		constructor = { style = "italic" },
+		operator = { style = "italic" },
+		constant = { style = "italic" },
+		constantBuiltIn = { style = "italic" },
+		todo = { style = "italic" },
+		character = { style = "italic" },
+		conditional = { style = "italic" },
+		number = { style = "italic" },
+		statement = { style = "italic" },
+		uri = { style = "italic" },
 		diagnostic = {
 			underline = {
-				error = {},
-				warn = {},
-				info = {},
-				hint = {},
+				error = { style = "italic" },
+				warn = { style = "italic" },
+				info = { style = "italic" },
+				hint = { style = "italic" },
 			},
 			virtual_text = {
-				error = {},
-				warn = {},
-				info = {},
-				hint = {},
+				error = { style = "italic" },
+				warn = { style = "italic" },
+				info = { style = "italic" },
+				hint = { style = "italic" },
 			},
 		},
 	},
 	remaps = {
 		palette = {},
 		-- per colorscheme palette remaps, for example:
-		-- remaps.palette = {
-		--     rose_pine = {
-		--     	fg = "#000000"
-		--     }
-		-- },
-		-- remaps.highlights = {
-		--     rose_pine = {
-		--	base = {
-		--     	  Normal = { bg = "#000000" }
-		--	},
-		--     }
-		-- },
+		--[[ remaps.palette = {
+		    rose_pine = {
+		    	fg = "#000000"
+		    }
+		},
+		remaps.highlights = {
+		    rose_pine = {
+		base = {
+		    	  Normal = { bg = "#000000" }
+		},
+		    }
+		}, ]]
 		--
 		-- Also you can do remaps.highlights.globals  for global highlight remaps
-		highlights = {},
+		--[[ highlights = {
+			doom_one = {
+				base = {
+					Normal = { guibg = "#000000" },
+				},
+			},
+		}, ]]
+		highlights = {
+			base = {
+				onedark_deep = { guifg = "magenta" },
+			},
+		},
 	},
 
 	langs = {
@@ -86,5 +100,8 @@ require("themer").setup({
 		lsp = true,
 		telescope = true,
 	},
-	enable_installer = false, -- enable installer module
+	enable_installer = true, -- enable installer module
 })
+
+-- vim.cmd([[ colorscheme themer_doom_one ]])
+vim.cmd([[ colorscheme themer_onedark_deep ]])
