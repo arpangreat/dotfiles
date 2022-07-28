@@ -180,7 +180,7 @@ cdpath=($HOME/dotfiles $HOME/.config)
 
 export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server/plugins/org.eclipse.equinox.common_3.16.0.v20220211-2322.jar
 export GRADLE_HOME=$HOME/gradle
-export JAVA_HOME=/usr/lib/jvm/java-18-openjdk/
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 export JDTLS_HOME=/home/arpangreat/dotfiles/nvim/jdt-language-server/
 export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server/config_linux
 export WORKSPACE=$HOME/javaexsnew
@@ -283,7 +283,7 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
-export TERM=alacritty
+export TERM=xterm-kitty-256color
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
@@ -296,7 +296,9 @@ export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
 export PATH=/home/arpangreat/.nimble/bin:$PATH
 export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
-
+export ANDROID_HOME=/opt/android-sdk/
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)

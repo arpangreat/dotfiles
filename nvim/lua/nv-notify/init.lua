@@ -8,6 +8,8 @@ require("notify").setup({
 	-- Function called when a window is closed
 	on_close = nil,
 
+	fps = 60,
+
 	-- Render function for notifications. See notify-render()
 	render = "default",
 
@@ -21,7 +23,7 @@ require("notify").setup({
 
 	-- For stages that change opacity this is treated as the highlight behind the window
 	-- Set this to either a highlight group, an RGB hex value e.g. "#000000" or a function returning an RGB code for dynamic values
-	background_colour = "NormalFloat",
+	background_colour = "#000000",
 
 	-- Minimum width for notification windows
 	minimum_width = 50,
@@ -36,7 +38,7 @@ require("notify").setup({
 	},
 })
 
-vim.cmd([[
+--[[ vim.cmd([[
 highlight NotifyERRORBorder guifg=#8A1F1F
 highlight NotifyWARNBorder guifg=#79491D
 highlight NotifyINFOBorder guifg=#4F6752
@@ -57,4 +59,4 @@ highlight link NotifyWARNBody Normal
 highlight link NotifyINFOBody Normal
 highlight link NotifyDEBUGBody Normal
 highlight link NotifyTRACEBody Normal
-]])
+) ]]

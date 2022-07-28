@@ -19,14 +19,15 @@ jaq_nvim.setup({
 			-- rust = "rustc % && ./$fileBase && rm $fileBase",
 			rust = "cargo run",
 			cpp = "g++ % -o $fileBase && ./$fileBase",
+			c = "gcc % -o $fileBase && ./$fileBase",
 			go = "go run %",
 			sh = "sh %",
 		},
 
 		-- Uses internal commands such as 'source' and 'luafile'
 		internal = {
-			-- lua = "luafile %",
-			-- vim = "source %",
+			lua = "luafile %",
+			vim = "source %",
 		},
 	},
 	behavior = {
@@ -106,5 +107,5 @@ jaq_nvim.setup({
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
-keymap("n", "<m-r>", ":silent only | Jaq<cr>", opts)
+keymap("n", "<M-r>", ":silent only | Jaq<cr>", opts)
 return M

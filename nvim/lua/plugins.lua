@@ -121,7 +121,7 @@ return require("packer").startup({
 		-- use '/home/arpangreat/todo-comments.nvim'
 		use("lukas-reineke/indent-blankline.nvim")
 		use("sainnhe/tmuxline.vim")
-		use("vimpostor/vim-tpipeline")
+		-- use("vimpostor/vim-tpipeline")
 		use("p00f/nvim-ts-rainbow")
 		use("tversteeg/registers.nvim")
 		-- use 'glepnir/indent-guides.nvim'
@@ -258,6 +258,8 @@ return require("packer").startup({
 		use({ "williamboman/mason-lspconfig.nvim" })
 		use("williamboman/nvim-lsp-installer")
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
+		use({ "/home/arpangreat/onedarker.nvim-master/", as = "onedarker" })
+		use({ "/home/arpangreat/lsp-inlayhints.nvim-main/", as = "lsp-inlayhints" })
 
 		-- use 'govim/govim'
 	end,
