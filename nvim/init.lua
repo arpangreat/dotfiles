@@ -110,7 +110,7 @@ require("nv-jaq")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
 require("nv-lir")
--- require("nv-inlayhints")
+require("nv-inlayhints")
 
 --[[ vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red") ]]
