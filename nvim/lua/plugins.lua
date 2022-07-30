@@ -254,12 +254,14 @@ return require("packer").startup({
 		use("arpangreat/treesitter-unit-plugin")
 		use("arpangreat/statusfire.nvim")
 		use("tjdevries/express_line.nvim")
-		use({ "williamboman/mason.nvim" })
+		use({ "williamboman/mason.nvim", branch = "main" })
 		use({ "williamboman/mason-lspconfig.nvim" })
 		use("williamboman/nvim-lsp-installer")
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 		use({ "/home/arpangreat/onedarker.nvim-master/", as = "onedarker" })
-		use({ "/home/arpangreat/lsp-inlayhints.nvim-main/", as = "lsp-inlayhints" })
+		-- use({ "/home/arpangreat/lsp-inlayhints.nvim-main/", as = "lsp-inlayhints" })
+		use({ "lvimuser/lsp-inlayhints.nvim", branch = "debounce-cache" })
+		use("lunarvim/synthwave84.nvim")
 
 		-- use 'govim/govim'
 	end,
