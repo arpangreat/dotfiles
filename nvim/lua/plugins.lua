@@ -260,8 +260,14 @@ return require("packer").startup({
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 		use({ "/home/arpangreat/onedarker.nvim-master/", as = "onedarker" })
 		-- use({ "/home/arpangreat/lsp-inlayhints.nvim-main/", as = "lsp-inlayhints" })
-		use({ "lvimuser/lsp-inlayhints.nvim", branch = "debounce-cache" })
+		use({ "lvimuser/lsp-inlayhints.nvim" })
 		use("lunarvim/synthwave84.nvim")
+		use({
+			"ahmedkhalf/project.nvim",
+			config = function()
+				require("project_nvim").setup()
+			end,
+		})
 
 		-- use 'govim/govim'
 	end,
