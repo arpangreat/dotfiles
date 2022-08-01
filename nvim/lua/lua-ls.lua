@@ -94,6 +94,7 @@ local my_attach = function(client, bufnr)
 			end,
 		})
 	end
+	require("lsp-inlayhints").on_attach(bufnr, client)
 end
 
 require("lspconfig").sumneko_lua.setup({

@@ -27,6 +27,7 @@ local function my_custom_attach(client, bufnr)
 			end,
 		})
 	end
+	require("lsp-inlayhints").on_attach(bufnr, client)
 end
 
 local opts = {
