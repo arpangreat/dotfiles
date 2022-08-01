@@ -270,6 +270,7 @@ return require("packer").startup({
 		})
 
 		-- use 'govim/govim'
+		use({ "shaunsingh/oxocarbon.nvim", run = "./install.sh" })
 	end,
 	config = {
 		display = {
