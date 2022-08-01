@@ -29,6 +29,7 @@ plugins=(
   fast-syntax-highlighting
   rust
   zsh-vi-mode
+  dotbare
 )
 
 source $ZSH/oh-my-zsh.sh
