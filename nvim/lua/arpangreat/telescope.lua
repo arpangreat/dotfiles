@@ -137,6 +137,7 @@ require("telescope").load_extension("arecibo")
 require("telescope").load_extension("ui-select")
 require("telescope").load_extension("zoxide")
 require("telescope").load_extension("projects")
+require("telescope").load_extension("themes")
 
 local M = {}
 M.search_dotfiles = function()

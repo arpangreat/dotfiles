@@ -2,7 +2,8 @@ require("themer").setup({
 	-- colorscheme = "catppuccin", -- default colorscheme
 	-- colorscheme = "doom_one",
 	-- colorscheme = "kurai",
-	colorscheme = "onedark_deep",
+	-- colorscheme = "onedark_deep",
+	colorscheme = "astron",
 	transparent = true,
 	term_colors = true,
 	dim_inactive = false,
@@ -104,4 +105,5 @@ require("themer").setup({
 })
 
 -- vim.cmd([[ colorscheme themer_doom_one ]])
-vim.cmd([[ colorscheme themer_onedark_deep ]])
+-- vim.cmd([[ colorscheme themer_onedark_deep ]])
+vim.cmd([[ colorscheme themer_astron ]])
