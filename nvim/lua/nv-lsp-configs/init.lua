@@ -99,6 +99,7 @@ local on_attach = function(client, bufnr)
 	end
 
 	require("aerial").on_attach(client, bufnr)
+	require("lsp-inlayhints").on_attach(bufnr, client)
 end
 
 --Enable (broadcasting) snippet capability for completion
