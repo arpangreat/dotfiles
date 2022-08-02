@@ -227,7 +227,7 @@ return require("packer").startup({
 		use("rust-lang/rust.vim")
 		use("simrat39/rust-tools.nvim")
 		use("Tetralux/odin.vim")
-		use("glepnir/dashboard-nvim")
+		-- use("glepnir/dashboard-nvim")
 		-- use("akinsho/nvim-bufferline.lua")
 		use("romgrk/barbar.nvim")
 		use("j-hui/fidget.nvim")
@@ -271,6 +271,14 @@ return require("packer").startup({
 
 		-- use 'govim/govim'
 		use({ "shaunsingh/oxocarbon.nvim", run = "./install.sh" })
+
+		use({
+			"goolord/alpha-nvim",
+			requires = { "kyazdani42/nvim-web-devicons" },
+			config = function()
+				require("alpha").setup(require("alpha.themes.startify").config)
+			end,
+		})
 	end,
 	config = {
 		display = {
