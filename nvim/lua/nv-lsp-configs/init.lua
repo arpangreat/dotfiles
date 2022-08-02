@@ -240,6 +240,9 @@ require("lspconfig").html.setup({
 })
 require("lspconfig").zls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").csharp_ls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").taplo.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").grammarly.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").astro.setup({ on_attach = on_attach, capabilities = capabilities })
 
 -- Perl Setup
 local perlconfig = {
@@ -262,6 +265,7 @@ require("lspconfig").kotlin_language_server.setup({ on_attach = on_attach, capab
 -- Java Setup
 
 require("lspconfig").jdtls.setup({ on_attach = on_attach, capabilities = capabilities })
+-- require("lspconfig").lemmy_help.setup({ on_attach = on_attach, capabilities = capabilities })
 require("mason-lspconfig").setup()
 -- require("lspconfig").java_language_server.setup({ cmd = {"java-language-server"}, on_attach = on_attach, capabilities = capabilities })
 
