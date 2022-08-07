@@ -6,8 +6,8 @@ require("nvim-surround").setup({
 		delete = "ds",
 		change = "cs",
 	},
-	delimiters = {
-		pairs = {
+	surrounds = {
+		--[[ pairs = {
 			["("] = { "( ", " )" },
 			[")"] = { "(", ")" },
 			["{"] = { "{ ", " }" },
@@ -34,7 +34,7 @@ require("nvim-surround").setup({
 			["'"] = { "'", "'" },
 			['"'] = { '"', '"' },
 			["`"] = { "`", "`" },
-		},
+		}, ]]
 		HTML = {
 			["t"] = "type", -- Change just the tag type
 			["T"] = "whole", -- Change the whole tag contents
@@ -49,7 +49,7 @@ require("nvim-surround").setup({
 			["s"] = { ")", "]", "}", ">", "'", '"', "`" }, -- Any surrounding delimiter
 		},
 	},
-	highlight_motion = { -- Highlight before inserting/changing surrounds
+	highlight = { -- Highlight before inserting/changing surrounds
 		duration = 0,
 	},
 })
