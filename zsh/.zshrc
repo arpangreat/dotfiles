@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,10 +6,11 @@
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 export HISTFILE="/home/arpangreat/.zsh_history"
-
+export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
 export ZSH="$HOME/.oh-my-zsh"
 # ZVM_INIT_MODE=sourcing
 # export ZSH_THEME="spaceship"
+# export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # autoload -U compinit && compinit -i
 
@@ -31,14 +30,12 @@ plugins=(
   fast-syntax-highlighting
   rust
   zsh-vi-mode
-  dotbare
 )
 
 source $ZSH/oh-my-zsh.sh
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
-export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -240,12 +237,12 @@ export PATH=$PATH:$HOME/flutter/bin
 
 
 # Spaceship configs
-SPACESHIP_DIR_TRUNC=0
-SPACESHIP_BATTERY_THRESHOLD=30
-SPACESHIP_VI_MODE=true
-SPACESHIP_VI_MODE_COLOR=#ff87d7
-SPACESHIP_CHAR_SYMBOL='➜ '
-SPACESHIP_CHAR_SUFFIX=' '
+# SPACESHIP_DIR_TRUNC=0
+# SPACESHIP_BATTERY_THRESHOLD=30
+# SPACESHIP_VI_MODE=true
+# SPACESHIP_VI_MODE_COLOR=#ff87d7
+# SPACESHIP_CHAR_SYMBOL='➜ '
+# SPACESHIP_CHAR_SUFFIX=' '
 # ORDER
 # SPACESHIP_PROMPT_ORDER=(
 #   time     #
@@ -276,9 +273,6 @@ FAST_HIGHLIGHT[use_brackets]=1
 # Some things for peco
 bindkey -s '^o' 'cdtm\n'
 
-function gcd() {
-  cd "$(ghq list | fzf)"
-}
 
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
@@ -325,6 +319,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
