@@ -258,7 +258,7 @@ return require("packer").startup({
 		use({ "williamboman/mason-lspconfig.nvim" })
 		use("williamboman/nvim-lsp-installer")
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
-		use({ "/home/arpangreat/onedarker.nvim-master/", as = "onedarker" })
+		-- use({ "/home/arpangreat/onedarker.nvim-master/", as = "onedarker" })
 		-- use({ "/home/arpangreat/lsp-inlayhints.nvim-main/", as = "lsp-inlayhints" })
 		use({ "lvimuser/lsp-inlayhints.nvim" })
 		use("lunarvim/synthwave84.nvim")
