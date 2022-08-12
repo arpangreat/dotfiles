@@ -26,7 +26,6 @@ plugins=(
   zsh-interactive-cd
   zsh-autosuggestions
   zsh-completions
-  # zsh-syntax-highlighting
   fast-syntax-highlighting
   rust
   zsh-vi-mode
