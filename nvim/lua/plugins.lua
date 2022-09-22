@@ -181,7 +181,7 @@ return require("packer").startup({
 				"saadparwaiz1/cmp_luasnip",
 				"petertriho/cmp-git",
 				{ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" },
-				"hrsh7th/cmp-copilot",
+				-- "hrsh7th/cmp-copilot",
 			},
 		})
 		use("alaviss/nim.nvim")

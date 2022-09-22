@@ -63,7 +63,7 @@ cmp.setup({
 		{ name = "path" },
 		{ name = "cmp_tabnine" },
 		{ name = "cmp_git" },
-		{ name = "copilot" },
+		-- { name = "copilot" },
 		{ name = "emoji" },
 		-- { name = 'vsnip' }
 	}),
