@@ -133,7 +133,7 @@ bindkey -v
 source $HOME/dotfiles/zsh/functions/functions
 source $HOME/dotfiles/zsh/always-tmux.sh
 
-# ensure_tmux_is_running
+ensure_tmux_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -305,7 +305,7 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 # zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # zvm_after_init() {
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
 source /usr/share/nvm/init-nvm.sh
 

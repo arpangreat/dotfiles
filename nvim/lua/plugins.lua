@@ -135,6 +135,7 @@ return require("packer").startup({
 		use({
 			"catppuccin/nvim",
 			as = "catppuccin",
+			run = ":CatppuccinCompile",
 		})
 		use("EdenEast/nightfox.nvim")
 		use("bluz71/vim-nightfly-guicolors")
@@ -284,6 +285,8 @@ return require("packer").startup({
 			"krady21/compiler-explorer.nvim",
 			requires = { "nvim-lua/plenary.nvim" },
 		})
+
+		use("RRethy/vim-illuminate")
 	end,
 	config = {
 		display = {

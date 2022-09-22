@@ -184,13 +184,6 @@ ctrl + alt + a
 alt + t
     variety -t
 
-#Wallpaper next
-alt + n
-    variety -n
-
-#Wallpaper previous
-alt + p
-    variety -p
 
 #Wallpaper favorite
 # alt + f
