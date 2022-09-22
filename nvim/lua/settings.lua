@@ -33,7 +33,6 @@ vim.opt.pumblend = 30
 vim.opt.textwidth = 80
 vim.opt.ruler = true
 vim.opt.path = "$pwd/**"
-vim.notify = require("notify")
 
 -- Visuals
 vim.opt.syntax = "enable"
