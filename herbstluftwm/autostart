@@ -259,7 +259,8 @@ hc rule class=kitty tag=1 focus=on state=tiled border=off switchtag=on fullscree
 hc rule class=Alacritty tag=1 focus=on pseudotile=on border=off switchtag=on fullscreen=on
 hc rule class=Thunar tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
 hc rule class=dolphin tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=Brave-browser tag=3 focus=on state=tiled pseudotile=on switchtag=on fullscreen=on
+# hc rule class=Brave-browser tag=3 focus=on state=tiled pseudotile=on switchtag=on fullscreen=on
+hc rule class=brave-browser tag=3 focus=on state=tiled pseudotile=on switchtag=on fullscreen=on
 hc rule class=Emacs tag=4 focus=on switchtag=on fullscreen=on
 hc rule class=vlc tag=10 focus=on pseudotile=on switchtag=on 
 hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on
@@ -278,8 +279,6 @@ hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on
 #wmctrl -r Spotify -t 10
 #exit
 # unlock, just to be sure
-hc unlock
-
 #Dualmonitor setup
 # Find out your monitor name with xrandr or arandr (save and you get this line)
 #xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
@@ -289,7 +288,7 @@ hc unlock
 # xrandr --output HDMI1 --mode 1920x1080 --rate 74.97 --primary --left-of eDP1 --mode 1920x1080 --rate 60
 
 #Dualmonitor setup
-hc detect_monitors
+# hc detect_monitors
 #hc set_monitors 1920x1080+0+0 1920x1080+1920+0
 
 #room for polybar on both monitors

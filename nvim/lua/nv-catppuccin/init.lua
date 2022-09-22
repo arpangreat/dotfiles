@@ -1,23 +1,25 @@
-local catppuccin = require("catppuccin")
-local colors = require("catppuccin.api.colors").get_colors()
-
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 -- configure it
-catppuccin.setup({
+require("catppuccin").setup({
 	transparent_background = true,
 	term_colors = true,
+	compile = {
+		enabled = false,
+		path = vim.fn.stdpath("cache") .. "/catppuccin",
+	},
 	styles = {
-		comments = "italic",
-		functions = "italic",
-		keywords = "italic",
-		strings = "italic",
-		variables = "italic",
-		conditionals = "italic",
-		loops = "bold",
-		numbers = "italic",
-		booleans = "italic",
-		properties = "bold",
-		types = "bold",
-		operators = "bold",
+		comments = {"italic"},
+		functions = {"italic"},
+		keywords = {"italic"},
+		strings = {"italic"},
+		variables = {"italic"},
+		conditionals = {"italic"},
+		loops = {"bold"},
+		numbers = {"italic"},
+		booleans = {"italic"},
+		properties = {"bold"},
+		types = {"bold"},
+		operators = {"bold"},
 	},
 	integrations = {
 		treesitter = true,
@@ -62,17 +64,5 @@ catppuccin.setup({
 		ts_rainbow = true,
 		hop = true,
 	},
-
-	custom_highlights = {
-			Comment = { fg = colors.overlay1 },
-	LineNr = { fg = colors.overlay1 },
-	CursorLineNr = { fg = colors.sky },
-	NvimTreeRootFolder = { fg = colors.sky },
-
-	}
 })
 
-vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
-
--- Lua
-vim.cmd([[colorscheme catppuccin]])
