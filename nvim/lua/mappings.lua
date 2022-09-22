@@ -306,19 +306,19 @@ vim.api.nvim_set_keymap("n", "<leader>cd", "<Plug>kommentary_motion_decrease", {
 vim.api.nvim_set_keymap("x", "<leader>cd", "<Plug>kommentary_visual_decrease", {}) ]]
 
 -- Focus
-local focusmap = function(direction)
+--[[ local focusmap = function(direction)
 	vim.api.nvim_set_keymap(
 		"n",
 		"<Leader>" .. direction,
 		":lua require'focus'.split_command('" .. direction .. "')<CR>",
 		{ silent = true }
 	)
-end
+end ]]
 -- Use `<Leader>h` to split the screen to the left, same as command FocusSplitLeft etc
-focusmap("h")
+--[[ focusmap("h")
 focusmap("j")
 focusmap("k")
-focusmap("l")
+focusmap("l") ]]
 
 -- LspSaga
 vim.api.nvim_set_keymap(
@@ -656,3 +656,9 @@ end)
 vim.keymap.set("n", "<Leader>zf", ":Telekasten panel<CR>", { noremap = true, silent = false, expr = false })
 
 vim.keymap.set("n", "<C-f>", "<ESC>/")
+
+-- Move between windows
+vim.keymap.set("n", "<Leader>h", "<C-w>h<CR>")
+vim.keymap.set("n", "<Leader>k", "<C-w>k<CR>")
+vim.keymap.set("n", "<Leader>j", "<C-w>j<CR>")
+vim.keymap.set("n", "<Leader>l", "<C-w>l<CR>")
