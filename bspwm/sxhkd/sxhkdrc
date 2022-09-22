@@ -180,18 +180,6 @@ ctrl + alt + a
 # ALT + ... KEYS
 #################################################################
 
-#Wallpaper trash
-alt + t
-    variety -t
-
-#Wallpaper next
-alt + n
-    variety -n
-
-#Wallpaper previous
-alt + p
-    variety -p
-
 #Wallpaper favorite
 # alt + f
 #     variety -f
