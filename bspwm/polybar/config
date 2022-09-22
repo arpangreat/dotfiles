@@ -54,15 +54,15 @@ font-3 = "Iosevka Nerd Font:size=18;4"
 font-4 = "Source Code Pro Bold:size=13;3"
 
 # Default
-modules-left = spacing BLD launcher BRD sep ewmh sep spacing MLD GMPL network GRD
+modules-left = spacing BLD launcher xwindow BRD sep ewmh sep spacing MLD GMPL network GRD
 modules-center = 
 modules-right = BLD battery MPL volume RPL brightness RRD sep GLD cpu YPL memory CPL filesystem CRD sep BLD time BRD spacing
 
 spacing = 0
 dim-value = 1.0
 
-scroll-up = herbstclient use_index -1
-scroll-down = herbstclient use_index +1 	new file:   herbstluftwm/wall.png
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
 tray-position = right
 tray-detached = false
