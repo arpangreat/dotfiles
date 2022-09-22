@@ -259,8 +259,7 @@ hc rule class=kitty tag=1 focus=on state=tiled border=off switchtag=on fullscree
 hc rule class=Alacritty tag=1 focus=on pseudotile=on border=off switchtag=on fullscreen=on
 hc rule class=Thunar tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
 hc rule class=dolphin tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=Bspwm tag=2 focus=on pseudotile=on switchtag=on fullscreen=on
-hc rule class=Brave-browser tag=3 focus=on pseudotile=on switchtag=on
+hc rule class=Brave-browser tag=3 focus=on state=tiled pseudotile=on switchtag=on fullscreen=on
 hc rule class=Emacs tag=4 focus=on switchtag=on fullscreen=on
 hc rule class=vlc tag=10 focus=on pseudotile=on switchtag=on 
 hc rule class=Spotify tag=10 focus=on pseudotile=on switchtag=on
@@ -287,7 +286,7 @@ hc unlock
 #xrandr --output DP2 --primary --mode 1920x1080 --rate 60.00 --output LVDS1 --off &
 #xrandr --output LVDS1 --mode 1366x768 --output DP3 --mode 1920x1080 --right-of LVDS1
 #xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
-xrandr --output HDMI1 --mode 1920x1080 --rate 74.97 --primary --left-of eDP1 --mode 1920x1080 --rate 60
+# xrandr --output HDMI1 --mode 1920x1080 --rate 74.97 --primary --left-of eDP1 --mode 1920x1080 --rate 60
 
 #Dualmonitor setup
 hc detect_monitors
