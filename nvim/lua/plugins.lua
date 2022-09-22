@@ -279,6 +279,11 @@ return require("packer").startup({
 				require("alpha").setup(require("alpha.themes.startify").config)
 			end,
 		})
+
+		use({
+			"krady21/compiler-explorer.nvim",
+			requires = { "nvim-lua/plenary.nvim" },
+		})
 	end,
 	config = {
 		display = {
