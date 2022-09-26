@@ -3,7 +3,8 @@ require("themer").setup({
 	-- colorscheme = "doom_one",
 	-- colorscheme = "kurai",
 	-- colorscheme = "onedark_deep",
-	colorscheme = "astron",
+	-- colorscheme = "astron",
+	colorscheme = "gruvbox-material-dark-soft",
 	transparent = true,
 	term_colors = true,
 	dim_inactive = false,
@@ -106,4 +107,5 @@ require("themer").setup({
 
 -- vim.cmd([[ colorscheme themer_doom_one ]])
 -- vim.cmd([[ colorscheme themer_onedark_deep ]])
-vim.cmd([[ colorscheme themer_astron ]])
+-- vim.cmd([[ colorscheme themer_astron ]])
+vim.cmd([[ colorscheme themer_gruvbox-material-dark-soft]])

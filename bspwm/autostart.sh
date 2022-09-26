@@ -34,7 +34,7 @@ picom  --config $HOME/.config/bspwm/picom.conf &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/devyg41-28cd223e-1a1f-48b6-87c7-41c0064fe163.jpg &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/w1.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11.jpg
-feh --bg-scale /home/arpangreat/dotfiles/wallpaper/442432.jpg
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/tropic_island_night.jpg
 # feh --bg-center /home/arpangreat/Pictures/Snapchat-612959769.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/neon.png &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
