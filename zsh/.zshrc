@@ -282,6 +282,7 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export TERM=xterm-kitty-256color
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
@@ -295,6 +296,8 @@ export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
 export ANDROID_HOME=/opt/android-sdk/
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+export BROWSER=/usr/bin/brave
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
