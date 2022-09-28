@@ -286,6 +286,7 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin

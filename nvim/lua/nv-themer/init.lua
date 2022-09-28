@@ -4,7 +4,8 @@ require("themer").setup({
 	-- colorscheme = "kurai",
 	-- colorscheme = "onedark_deep",
 	-- colorscheme = "astron",
-	colorscheme = "gruvbox-material-dark-soft",
+	-- colorscheme = "gruvbox-material-dark-soft",
+	colorscheme = "tokyonight",
 	transparent = true,
 	term_colors = true,
 	dim_inactive = false,
@@ -108,4 +109,5 @@ require("themer").setup({
 -- vim.cmd([[ colorscheme themer_doom_one ]])
 -- vim.cmd([[ colorscheme themer_onedark_deep ]])
 -- vim.cmd([[ colorscheme themer_astron ]])
-vim.cmd([[ colorscheme themer_gruvbox-material-dark-soft]])
+-- vim.cmd([[ colorscheme themer_gruvbox-material-dark-soft]])
+vim.cmd([[ colorscheme themer_tokyonight ]])
