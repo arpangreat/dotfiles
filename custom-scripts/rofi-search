@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+bla=$(echo "" | rofi -dmenu -p "Enter Text > ");
+
+xdg-open https://google.com/search?q=$(echo "${bla}")
