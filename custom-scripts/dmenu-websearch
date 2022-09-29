@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# Released under MIT License
+
+# Copyright (C) 2021 Rizqi Nur Assyaufi <bandithijo@gmail.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+MENU="dmenu-wl"
+
+FILE="/home/arpangreat/dotfiles/custom-scripts/urlquery"
+
+if [ ! -f $FILE ]; then
+    cp urlquery.example urlquery
+fi
+
+FILEOPT=$(cat $FILE)
+
+OPTIONS="
+[
+${FILEOPT}
+[ \"Add:New:Query\", \"\" ],
+[ \"Delete:Query\",  \"\" ]
+]
+"
+
+OBJ_LENGTH=$(echo $OPTIONS | jq length)
+OBJ_MENU=$(echo $OPTIONS | jq -r ".[][0]" | $MENU -i -p " WebSearch:")
+OBJ_SELECTED=$(echo $OBJ_MENU | cut -d' ' -f1)
+OBJ_KEYWORDS=$(echo $OBJ_MENU | cut -d' ' -f2- | tr " " "+")
+
+add_query() {
+    PREFIXMENU=$(echo "" | dmenu -p "Add prefix menu:" <&-)
+    if [ ! -z $PREFIXMENU ]; then
+        URLQUERY=$(echo "" | dmenu -p "Add url query:" <&-)
+        echo "[ \"$PREFIXMENU\", \"$URLQUERY\" ]," >> $FILE
+    fi
+    exit
+}
+
+delete_query() {
+    OBJ_MENU=$(echo $OPTIONS | jq -r ".[][0]" | head -n -2 | $MENU -i -p "Delete Menu:")
+    OBJ_SELECTED=$OBJ_MENU
+    if [ ! -z $OBJ_SELECTED ]; then
+        CONFIRM_DELETE=$(echo -e "no\nyes" | dmenu -p "Do you want to delete this url?")
+        if [ $CONFIRM_DELETE = "yes" ]; then
+            sed -i "/$OBJ_SELECTED/d" $FILE
+        fi
+    fi
+    exit
+}
+
+main() {
+    for i in $(seq 0 $((OBJ_LENGTH - 1))); do
+        if [ $OBJ_SELECTED = "Add:New:Query" ]; then
+            add_query
+        fi
+
+        if [ $OBJ_SELECTED = "Delete:Query" ]; then
+            delete_query
+        fi
+
+        if [ $OBJ_SELECTED = $(echo $OPTIONS | jq -r --arg i $i '.[($i|tonumber)][0]') ]; then
+            URLQUERY=$(echo $OPTIONS | jq -r --arg i $i '.[($i|tonumber)][1]')
+            KEYWORDS=$(echo $OBJ_KEYWORDS)
+            xdg-open "${URLQUERY}${KEYWORDS}" 2> /dev/null
+        fi
+    done
+}
+
+main
