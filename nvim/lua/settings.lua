@@ -80,7 +80,7 @@ vim.opt.emoji = false
 
 -- Times
 vim.opt.ttimeoutlen = 50
-vim.opt.updatetime = 100
+vim.opt.updatetime = 50
 vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 3
