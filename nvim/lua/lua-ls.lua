@@ -1,4 +1,4 @@
--- https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)
+--[[ -- https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)
 USER = vim.fn.expand("$USER")
 
 local protocol = require("vim.lsp.protocol")
@@ -64,6 +64,7 @@ local on_attach = function(client, bufnr)
 	-- navic.attach(client, bufnr)
 	require("aerial").on_attach(client, bufnr)
 end
+]]
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
@@ -94,14 +95,34 @@ local my_attach = function(client, bufnr)
 			end,
 		})
 	end
-	require("lsp-inlayhints").on_attach(client, bufnr)
 end
 
 require("lspconfig").sumneko_lua.setup({
 	settings = {
 		Lua = {
+			type = {
+				-- weakUnionCheck = true,
+				-- weakNilCheck = true,
+				-- castNumberToInteger = true,
+			},
+			format = {
+				enable = false,
+			},
+			hint = {
+				enable = true,
+				arrayIndex = "Enable", -- "Enable", "Auto", "Disable"
+				await = true,
+				paramName = "Enable", -- "All", "Literal", "Disable"
+				paramType = true,
+				semicolon = "All", -- "All", "SameLine", "Disable"
+				setType = true,
+			},
+			-- spell = {"the"}
 			runtime = {
 				version = "LuaJIT",
+				special = {
+					reload = "require",
+				},
 			},
 			diagnostics = {
 				globals = { "vim" },
@@ -110,6 +131,7 @@ require("lspconfig").sumneko_lua.setup({
 				library = {
 					[vim.fn.expand("$VIMRUNTIME/lua")] = true,
 					[vim.fn.stdpath("config") .. "/lua"] = true,
+					-- [vim.fn.datapath "config" .. "/lua"] = true,
 				},
 			},
 			telemetry = {
@@ -117,6 +139,5 @@ require("lspconfig").sumneko_lua.setup({
 			},
 		},
 	},
-
 	on_attach = my_attach,
 })

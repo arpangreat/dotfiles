@@ -65,6 +65,7 @@ require("catppuccin").setup({
 		-- bufferline = true,
 		-- markdown = true,
 		ts_rainbow = true,
+		illuminate = true,
 	},
 	-- hop = true,
 	custom_highlights = {
@@ -76,6 +77,9 @@ require("catppuccin").setup({
 		DiagnosticVirtualTextWarn = { bg = colors.none },
 		DiagnosticVirtualTextInfo = { bg = colors.none },
 		DiagnosticVirtualTextHint = { bg = colors.none },
+		--[[ IlluminatedWordWrite = { bg = colors.overlay2 },
+		IlluminatedWordRead = { bg = colors.overlay2 },
+		IlluminatedWordText = { bg = colors.overlay2 }, ]]
 	},
 })
 

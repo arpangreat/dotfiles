@@ -175,7 +175,7 @@ cdpath=($HOME/dotfiles $HOME/.config)
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
 # eval "$(starship init zsh)"
-[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
+#[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
 export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server/plugins/org.eclipse.equinox.common_3.16.0.v20220211-2322.jar
 export GRADLE_HOME=$HOME/gradle
@@ -290,6 +290,7 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
+export PATH=$PATH:/home/arpangreat/.ghcup/bin
 export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
 export PATH=/home/arpangreat/.nimble/bin:$PATH
@@ -322,3 +323,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
+
+[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
