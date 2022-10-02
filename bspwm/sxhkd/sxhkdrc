@@ -57,6 +57,9 @@ super + shift + b
 super + s 
   /home/arpangreat/dotfiles/custom-scripts/web-search-rofi.sh
 
+super + e 
+  rofimoji
+
 #Keyboard dependent
 #File-Manager
 #super + shift + KP_Enter

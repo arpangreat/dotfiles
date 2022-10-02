@@ -211,9 +211,11 @@ vim.api.nvim_set_keymap("n", "<Leader>gd", ":DiffviewOpen<CR>", { noremap = true
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>gg",
-	":FloatermNew --height=0.9 --width=0.9 lazygit<CR>",
+	":FloatermNew --height=0.9 --width=0.9<CR>",
 	{ noremap = true, silent = false, expr = false }
 )
+
+vim.api.nvim_set_keymap("t", "<Leader>gg", ":FloatermToggle<CR>", { noremap = true, silent = false, expr = false })
 -- vim.api.nvim_set_keymap("n", "<Leader>", ":<C-U>WhichKey '<Space>'<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
