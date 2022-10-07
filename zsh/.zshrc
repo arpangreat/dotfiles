@@ -325,3 +325,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
 
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
+
+PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/arpangreat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"; export PERL_MM_OPT;

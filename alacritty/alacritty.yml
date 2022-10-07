@@ -155,7 +155,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11.0
+  size: 16.5
 
   builtin_box_drawing: true
 
@@ -443,6 +443,25 @@ mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
   - { mouse: Middle, action: ScrollPageUp }
   - { mouse: Middle, action: ScrollPageDown }
+
+  # Keyboard hints
+  #hints:
+  # First character in the hint label
+  #
+  # Allowed values are CellForeground/CellBackground, which reference the
+  # affected cell, or hexadecimal colors like #ff00ff.
+  #start:
+  #  foreground: '#1d1f21'
+  #  background: '#e9ff5e'
+
+  # All characters after the first one in the hint label
+  #
+  # Allowed values are CellForeground/CellBackground, which reference the
+  # affected cell, or hexadecimal colors like #ff00ff.
+  #end:
+  #  foreground: '#e9ff5e'
+  #  background: '#1d1f21'
+
 # Key bindings
 #
 # Key bindings are specified as a list of objects. For example, this is the
@@ -698,7 +717,7 @@ key_bindings:
 #print_events: false
 import:
   # - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty_tokyonight_storm.yml
-  # - ~/dotfiles/alacritty/catppuccin.yml
-  - ~/dotfiles/alacritty/gruvbox-material-alacritty.yml
+  - ~/dotfiles/alacritty/catppuccin.yml
+  # - ~/dotfiles/alacritty/gruvbox-material-alacritty.yml
   # - ~/dotfiles/alacritty/alacritty_kanagawa.yml
   # - ~/dotfiles/alacritty/nightfox_alacritty.yml

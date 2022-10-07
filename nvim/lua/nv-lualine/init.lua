@@ -1,4 +1,4 @@
-local navic = require("nvim-navic")
+-- local navic = require("nvim-navic")
 
 --[[ require("lualine").setup({
 	-- options = { theme = require("lualine.themes.terafox") },
@@ -142,9 +142,9 @@ ins_left({
 	color = { fg = colors.magenta, gui = "bold" },
 }) ]]
 
-ins_left({
+--[[ ins_left({
 	"aerial",
-})
+}) ]]
 
 --[[ ins_left({
 	"navic.get_location",

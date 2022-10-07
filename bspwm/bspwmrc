@@ -37,7 +37,7 @@ bspc config presel_feedback_color	"#5e81ac"
 
 
 #Single monitor
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+# bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #Dual monitor
 #find out names with arandr or xrandr
@@ -46,8 +46,8 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 #bspc monitor DP3 -d  5 6 7 8 9
 #bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
 #bspc monitor HDMI-1 -d 1 2 3 4 5 6 7 8 9 10
-# bspc monitor HDMI-1 -d 1 2
-# bspc monitor eDP-1 -d 3 4 5 6 7 8 9 10
+bspc monitor HDMI1 -d 1 2
+bspc monitor eDP1 -d 3 4 5 6 7 8 9 10
 #bspc monitor HDMI2 -d 6 7 8 9 10
 
 #Fullscreen applications
@@ -121,7 +121,7 @@ bspc rule -a btm state=floating sticky=on center=true hidden=on
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
-xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DP-1)
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DP1)
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI2)
 
