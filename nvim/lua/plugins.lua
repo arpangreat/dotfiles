@@ -69,7 +69,9 @@ return require("packer").startup({
 		requires = { "kyazdani42/nvim-web-devicons" },
 	}) ]]
 		-- use("NTBBloodbath/galaxyline.nvim")
-		use("nvim-lualine/lualine.nvim")
+		use({
+			"nvim-lualine/lualine.nvim",
+		})
 
 		use("kyazdani42/nvim-web-devicons")
 
@@ -124,7 +126,12 @@ return require("packer").startup({
 		use("sainnhe/tmuxline.vim")
 		-- use("vimpostor/vim-tpipeline")
 		use("p00f/nvim-ts-rainbow")
-		use("tversteeg/registers.nvim")
+		use({
+			"tversteeg/registers.nvim",
+			config = function()
+				require("registers").setup()
+			end,
+		})
 		-- use 'glepnir/indent-guides.nvim'
 
 		-- Colorscheme
@@ -231,7 +238,7 @@ return require("packer").startup({
 		use("Tetralux/odin.vim")
 		-- use("glepnir/dashboard-nvim")
 		-- use("akinsho/nvim-bufferline.lua")
-		use("romgrk/barbar.nvim")
+		-- use("romgrk/barbar.nvim")
 		use("j-hui/fidget.nvim")
 
 		use("renerocksai/telekasten.nvim")
