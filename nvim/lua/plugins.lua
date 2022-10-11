@@ -137,6 +137,7 @@ return require("packer").startup({
 		use("folke/todo-comments.nvim")
 		-- use '/home/arpangreat/todo-comments.nvim'
 		use("lukas-reineke/indent-blankline.nvim")
+		use("Darazaki/indent-o-matic")
 		use("sainnhe/tmuxline.vim")
 		-- use("vimpostor/vim-tpipeline")
 		use("p00f/nvim-ts-rainbow")

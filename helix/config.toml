@@ -1,4 +1,4 @@
-theme = "nord"
+theme = "catppuccin_mocha"
 
 [editor]
 line-number = "relative"
@@ -10,7 +10,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.lsp]
 display-messages = true
