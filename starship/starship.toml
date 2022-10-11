@@ -2,22 +2,40 @@
 add_newline = true
 command_timeout = 20000
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[>](bold green)[>](bold yellow)[>](bold red)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+[character]
+success_symbol = "[](white)"
+error_symbol = "[](red)"
+vicmd_symbol = "[](green)"
 
-# Disable the package module, hiding it from the prompt completely
+[directory]
+style = "blue bold"
+
 [package]
-disabled = false
+disabled = true
 
-[git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷"
-stashed = "📦"
-modified = "📝"
-staged = '[++\($count\)](green)'
-renamed = "👅"
-deleted = "🗑"
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[aws]
+disabled = true
+
+[docker_context]
+disabled = true
+
+# [git_branch]
+# disabled = true
+
+# [git_commit]
+# disabled = true
+
+# [git_state]
+# disabled = true
+
+# [git_metrics]
+# disabled = true
+
+# [git_status]
+# disabled = true
