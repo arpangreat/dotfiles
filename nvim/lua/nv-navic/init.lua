@@ -51,9 +51,6 @@ navic.setup({
 -- if vim.fn.has "mac" == 1 then
 --   space = " "
 -- end
---
--- vim.api.nvim_set_hl(0, "Winbar", { fg = "#6b737f" })
---
 -- -- Customized config
 -- gps.setup {
 --
