@@ -90,7 +90,7 @@ vim.api.nvim_set_keymap(
 )
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>th",
+	"<C-h>",
 	":lua require('telescope.builtin').help_tags()<CR>",
 	{ noremap = true, silent = false }
 )
@@ -151,6 +151,7 @@ vim.api.nvim_set_keymap(
 )
 vim.api.nvim_set_keymap("n", "<Leader>to", ":Telescope", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ttc", ":TodoTelescope<CR>", { noremap = true, silent = false, expr = false })
+vim.keymap.set("n", "<Leader>ttt", ":Telescope telescope-tabs list_tabs<CR>")
 
 vim.api.nvim_set_keymap(
 	"n",
@@ -664,3 +665,6 @@ vim.keymap.set("n", "<Leader>h", "<C-w>h<CR>")
 vim.keymap.set("n", "<Leader>k", "<C-w>k<CR>")
 vim.keymap.set("n", "<Leader>j", "<C-w>j<CR>")
 vim.keymap.set("n", "<Leader>l", "<C-w>l<CR>")
+
+vim.keymap.set("n", "<Leader>hm", "<cmd>lua require('harpoon.mark').add_file()<CR>")
+vim.keymap.set("n", "<Leader>th", "<cmd>Telescope harpoon marks<CR>")

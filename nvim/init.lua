@@ -114,6 +114,7 @@ require("nv-jaq")
 require("nv-lir")
 require("nv-inlayhints")
 require("nv-compiler-explorer")
+require("telescope-tabs").setup()
 
 --[[ vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
 vim.cmd("highlight TelescopePromptPrefix guifg=red") ]]
