@@ -37,14 +37,22 @@ require("telescope").setup({
 			},
 			prompt_position = "top",
 		},
-		--[[ mappings = {
+		mappings = {
 			i = {
 				-- ["<CR>"] = actions.select_default,
-				["<C-h>"] = action_generate.which_key(),
-				["<C-m>"] = actions.toggle_selection + actions.move_selection_previous,
-				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+				["<C-h>"] = actions.which_key,
+				--[[ ["<C-m>"] = actions.toggle_selection + actions.move_selection_next,
+				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, ]]
+				["<C-d>"] = actions.delete_buffer,
+				-- ["<CR>"] = actions.select_default,
 			},
-		}, ]]
+
+			n = {
+				["dd"] = actions.delete_buffer,
+				["?"] = actions.which_key,
+				["<CR>"] = actions.select_default,
+			},
+		},
 		-- file_sorter = require'telescope.sorters'.get_fuzzy_file,
 		file_ignore_patterns = {
 			"$HOME/dotfiles/nvim/jdt-language-server-latest/*",
@@ -138,6 +146,8 @@ require("telescope").load_extension("ui-select")
 require("telescope").load_extension("zoxide")
 require("telescope").load_extension("projects")
 require("telescope").load_extension("themes")
+require("telescope").load_extension("telescope-tabs")
+require("telescope").load_extension("harpoon")
 
 local M = {}
 M.search_dotfiles = function()

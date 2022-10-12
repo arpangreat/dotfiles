@@ -72,6 +72,7 @@ return require("packer").startup({
 		use({
 			"nvim-lualine/lualine.nvim",
 		})
+		use("arkav/lualine-lsp-progress")
 
 		use("kyazdani42/nvim-web-devicons")
 
@@ -84,18 +85,17 @@ return require("packer").startup({
 		})
 
 		-- Packer
-		use({
+		--[[ use({
 			"folke/noice.nvim",
 			event = "VimEnter",
 			config = function()
 				require("noice").setup()
 			end,
 			requires = {
-				-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 				"MunifTanjim/nui.nvim",
 				"rcarriga/nvim-notify",
 			},
-		})
+		}) ]]
 
 		--[[ use({
 			"narutoxy/dim.lua",
@@ -237,6 +237,8 @@ return require("packer").startup({
 		})
 		use({ "nvim-telescope/telescope-ui-select.nvim" })
 		use("jvgrootveld/telescope-zoxide")
+		use("lukaspietzschmann/telescope-tabs")
+		use("christianchiarulli/harpoon")
 		use("tjdevries/nlua.nvim")
 		use("stevearc/dressing.nvim")
 		-- use("tjdevries/lsp_extensions.nvim")
