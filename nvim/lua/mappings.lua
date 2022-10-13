@@ -280,10 +280,10 @@ vim.api.nvim_set_keymap("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { 
 vim.api.nvim_set_keymap("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
 
 -- DashBoard
-vim.api.nvim_set_keymap("n", "<Leader>fh", ":DashboardFindHistory<CR>", { noremap = true, silent = false })
+-- vim.api.nvim_set_keymap("n", "<Leader>fh", ":DashboardFindHistory<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>sl", ":<C-u>SessionLoad<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>fa", ":DashboardFindWord<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>fb", ":DashboardJumpMark<CR>", { noremap = true, silent = false })
+-- vim.api.nvim_set_keymap("n", "<Leader>fa", ":DashboardFindWord<CR>", { noremap = true, silent = false })
+-- vim.api.nvim_set_keymap("n", "<Leader>fb", ":DashboardJumpMark<CR>", { noremap = true, silent = false })
 
 -- Floaterm
 vim.api.nvim_set_keymap("n", "<F7>", ":FloatermNew --height=0.9 --width=0.9<CR>", { noremap = true, silent = true })

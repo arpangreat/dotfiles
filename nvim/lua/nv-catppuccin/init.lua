@@ -57,7 +57,7 @@ require("catppuccin").setup({
 			enabled = true,
 			colored_indent_levels = true,
 		},
-		-- dashboard = true,
+		dashboard = true,
 		-- neogit = true,
 		-- vim_sneak = true,
 		-- fern = true,
