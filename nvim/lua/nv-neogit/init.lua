@@ -42,6 +42,8 @@ neogit.setup({
 			["p"] = "PushPopup",
 			["P"] = "PullPopup",
 			["$"] = "StashPopup",
+			["d"] = "DiffAtFile",
+			["D"] = "DiffPopup",
 		},
 	},
 })
