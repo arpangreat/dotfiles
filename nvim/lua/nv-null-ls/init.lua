@@ -41,8 +41,9 @@ null_ls.setup({
 		-- require("null-ls").builtins.diagnostics.cpplint,
 		require("null-ls").builtins.formatting.prettier,
 		require("null-ls").builtins.formatting.clang_format,
-		require("null-ls").builtins.diagnostics.eslint,
+		require("null-ls").builtins.diagnostics.eslint_d,
 		require("null-ls").builtins.completion.spell,
+		require("null-ls").builtins.diagnostics.golangci_lint,
 	},
 	debug = false,
 	on_attach = function(client, bufnr)

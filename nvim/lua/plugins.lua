@@ -85,17 +85,8 @@ return require("packer").startup({
 		})
 
 		-- Packer
-		--[[ use({
-			"folke/noice.nvim",
-			event = "VimEnter",
-			config = function()
-				require("noice").setup()
-			end,
-			requires = {
-				"MunifTanjim/nui.nvim",
-				"rcarriga/nvim-notify",
-			},
-		}) ]]
+		--[[ use({ "folke/noice.nvim" })
+		use({ "MunifTanjim/nui.nvim" }) ]]
 
 		--[[ use({
 			"narutoxy/dim.lua",
