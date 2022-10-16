@@ -37,7 +37,14 @@ return require("packer").startup({
 			"anuvyklack/hydra.nvim",
 			requires = "anuvyklack/keymap-layer.nvim", -- needed only for pink hydras
 		})
-		use("rmagatti/auto-session")
+		use({
+			"rmagatti/auto-session",
+			config = function()
+				require("auto-session").setup({
+					auto_session_enabled = false,
+				})
+			end,
+		})
 		use("SmiteshP/nvim-navic")
 		use("SmiteshP/nvim-gps")
 		use("ghillb/cybu.nvim")
