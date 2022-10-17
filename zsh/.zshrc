@@ -12,7 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # export ZSH_THEME="spaceship"
 # export ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# autoload -U compinit && compinit -i
+autoload -U compinit && compinit
 
 # plugins
 # source ~/dotfiles/zsh/plugins/git.plugin.zsh
@@ -48,6 +48,8 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
+
+export EDITOR='/usr/local/bin/nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -131,6 +133,7 @@ bindkey -v
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
+[ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
 source $HOME/dotfiles/zsh/always-tmux.sh
 
 ensure_tmux_is_running
@@ -307,10 +310,14 @@ export BROWSER=/usr/bin/brave
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-# zvm_after_init_command+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+function myinit(){
+ [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+}
+zvm_after_init_commands+=(myinit)
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # zvm_after_init() {
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
 source /usr/share/nvm/init-nvm.sh
 
@@ -325,6 +332,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
 
 [ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
+
+source <(cod init $$ zsh)
 
 PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
