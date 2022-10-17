@@ -232,3 +232,11 @@ cargo install coreutils
 doas pacman -Syu
 zsh
 unmount /mnt/ram
+ls
+cd
+cd .config/
+ls
+cd nushell/
+ls
+nv env.nu
+cd
