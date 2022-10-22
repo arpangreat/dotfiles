@@ -1,6 +1,6 @@
 local config = {
 	options = {
-		theme = "catppuccin",
+		theme = "tokyonight",
 		refresh = {
 			statusline = nil,
 		},

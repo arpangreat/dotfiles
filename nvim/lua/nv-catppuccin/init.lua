@@ -1,10 +1,10 @@
-local colors = require("catppuccin.palettes").get_palette()
+local colors = require("catppuccin.palettes").get_palette({"mocha"})
 colors.none = "NONE"
-
-vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 
 -- configure it
 require("catppuccin").setup({
+	flavour = "mocha",
+	background = { dark = "mocha" },
 	transparent_background = true,
 	term_colors = true,
 	compile = {
@@ -83,4 +83,4 @@ require("catppuccin").setup({
 	},
 })
 
-vim.cmd([[ colorscheme catppuccin ]])
+vim.cmd([[ colorscheme catppuccin-mocha ]])
