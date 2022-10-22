@@ -716,8 +716,8 @@ key_bindings:
 # Print all received window events.
 #print_events: false
 import:
-  # - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty_tokyonight_storm.yml
-  - ~/dotfiles/alacritty/catppuccin.yml
+  - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty/tokyonight_storm.yml
+  # - ~/dotfiles/alacritty/catppuccin.yml
   # - ~/dotfiles/alacritty/gruvbox-material-alacritty.yml
   # - ~/dotfiles/alacritty/alacritty_kanagawa.yml
   # - ~/dotfiles/alacritty/nightfox_alacritty.yml
