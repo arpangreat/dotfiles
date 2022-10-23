@@ -1,4 +1,4 @@
-local colors = require("catppuccin.palettes").get_palette({"mocha"})
+local colors = require("catppuccin.palettes").get_palette({ "mocha" })
 colors.none = "NONE"
 
 -- configure it
@@ -7,10 +7,7 @@ require("catppuccin").setup({
 	background = { dark = "mocha" },
 	transparent_background = true,
 	term_colors = true,
-	compile = {
-		enabled = true,
-		path = vim.fn.stdpath("cache") .. "/catppuccin",
-	},
+	compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
 	styles = {
 		comments = { "italic" },
 		functions = { "italic" },
@@ -83,4 +80,4 @@ require("catppuccin").setup({
 	},
 })
 
-vim.cmd([[ colorscheme catppuccin-mocha ]])
+vim.api.nvim_cmd([[ colorscheme catppuccin-mocha ]])
