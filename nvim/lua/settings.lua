@@ -28,7 +28,7 @@ vim.opt.sidescroll = 1
 -- vim.opt.include
 vim.opt.display = "lastline"
 vim.opt.backspace = "indent,eol,start"
-vim.opt.winblend = 0
+vim.opt.winblend = 30
 vim.opt.pumblend = 30
 vim.opt.textwidth = 80
 vim.opt.ruler = true

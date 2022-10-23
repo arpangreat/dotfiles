@@ -91,9 +91,21 @@ return require("packer").startup({
 			},
 		})
 
-		-- Packer
-		--[[ use({ "folke/noice.nvim" })
-		use({ "MunifTanjim/nui.nvim" }) ]]
+		--[[ use({
+			"folke/noice.nvim",
+			event = "VimEnter",
+			config = function()
+				require("noice").setup()
+			end,
+			requires = {
+				-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+				"MunifTanjim/nui.nvim",
+				-- OPTIONAL:
+				--   `nvim-notify` is only needed, if you want to use the notification view.
+				--   If not available, we use `mini` as the fallback
+				"rcarriga/nvim-notify",
+			},
+		}) ]]
 
 		--[[ use({
 			"narutoxy/dim.lua",
@@ -156,8 +168,8 @@ return require("packer").startup({
 		use({
 			"catppuccin/nvim",
 			as = "catppuccin",
-			run = ":CatppuccinCompile",
 		})
+		-- use({ "~/nvim", as = "catppuccin" })
 		use("EdenEast/nightfox.nvim")
 		use("bluz71/vim-nightfly-guicolors")
 		use("rebelot/kanagawa.nvim")
