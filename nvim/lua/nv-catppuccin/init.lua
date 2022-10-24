@@ -1,5 +1,7 @@
-local colors = require("catppuccin.palettes").get_palette({ "mocha" })
-colors.none = "NONE"
+--[[ local color = require("catppuccin.palettes").get_palette() -- fetch colors from palette
+require("catppuccin.lib.highlighter").syntax({
+	CursorLine = { bg = color.surface2 },
+}) ]]
 
 -- configure it
 require("catppuccin").setup({
@@ -65,19 +67,18 @@ require("catppuccin").setup({
 		illuminate = true,
 	},
 	-- hop = true,
-	custom_highlights = {
-		Comment = { fg = colors.overlay1 },
-		LineNr = { fg = colors.overlay1 },
-		CursorLine = { bg = colors.surface0 },
-		CursorLineNr = { fg = colors.sky },
-		DiagnosticVirtualTextError = { bg = colors.none },
-		DiagnosticVirtualTextWarn = { bg = colors.none },
-		DiagnosticVirtualTextInfo = { bg = colors.none },
-		DiagnosticVirtualTextHint = { bg = colors.none },
-		--[[ IlluminatedWordWrite = { bg = colors.overlay2 },
-		IlluminatedWordRead = { bg = colors.overlay2 },
-		IlluminatedWordText = { bg = colors.overlay2 }, ]]
-	},
+	custom_highlights = function(colors)
+		return {
+			Comment = { fg = colors.overlay1 },
+			LineNr = { fg = colors.overlay1 },
+			-- CursorLine = { bg = colors.mantle },
+			CursorLineNr = { fg = colors.sky },
+			DiagnosticVirtualTextError = { bg = colors.none },
+			DiagnosticVirtualTextWarn = { bg = colors.none },
+			DiagnosticVirtualTextInfo = { bg = colors.none },
+			DiagnosticVirtualTextHint = { bg = colors.none },
+		}
+	end,
 })
 
-vim.api.nvim_cmd([[ colorscheme catppuccin-mocha ]])
+vim.api.nvim_command("colorscheme catppuccin")

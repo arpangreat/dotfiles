@@ -279,9 +279,19 @@ return require("packer").startup({
 		-- use("mbbill/undotree")
 		use("simnalamburt/vim-mundo")
 		-- use 'christoomey/vim-tmux-navigator'
-		use("voldikss/vim-floaterm")
+		-- use("voldikss/vim-floaterm")
 		-- use("tjdevries/sg.nvim")
 		-- use 'mhartington/formatter.nvim'
+		use({
+			"akinsho/toggleterm.nvim",
+			tag = "*",
+			config = function()
+				require("toggleterm").setup({
+					open_mapping = [[<c-/>]],
+					direction = "float",
+				})
+			end,
+		})
 		use("ckipp01/stylua-nvim")
 		use("rcarriga/nvim-notify")
 		use("jose-elias-alvarez/null-ls.nvim")
