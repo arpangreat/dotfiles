@@ -209,14 +209,14 @@ vim.api.nvim_set_keymap("n", "<Leader>gp", ":Neogit<CR>", { noremap = true, sile
 vim.api.nvim_set_keymap("n", "<Leader>go", ":Neogit branch<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gs", ":Neogit stash<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gd", ":DiffviewOpen<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap(
+--[[ vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>gg",
 	":FloatermNew --height=0.9 --width=0.9<CR>",
 	{ noremap = true, silent = false, expr = false }
-)
+) ]]
 
-vim.api.nvim_set_keymap("t", "<Leader>gg", ":FloatermToggle<CR>", { noremap = true, silent = false, expr = false })
+-- vim.api.nvim_set_keymap("t", "<Leader>gg", ":FloatermToggle<CR>", { noremap = true, silent = false, expr = false })
 -- vim.api.nvim_set_keymap("n", "<Leader>", ":<C-U>WhichKey '<Space>'<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
@@ -285,10 +285,10 @@ vim.api.nvim_set_keymap("n", "<Leader>sl", ":<C-u>SessionLoad<CR>", { noremap = 
 -- vim.api.nvim_set_keymap("n", "<Leader>fa", ":DashboardFindWord<CR>", { noremap = true, silent = false })
 -- vim.api.nvim_set_keymap("n", "<Leader>fb", ":DashboardJumpMark<CR>", { noremap = true, silent = false })
 
--- Floaterm
-vim.api.nvim_set_keymap("n", "<F7>", ":FloatermNew --height=0.9 --width=0.9<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("t", "<F7>", "<C-\\><C-n>:FloatermToggle<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<F12>", ":FloatermToggle<CR>", { noremap = true, silent = true })
+-- Toggleterm
+vim.api.nvim_set_keymap("n", "<Leader>gg", ":ToggleTerm<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<F7>", "<C-\\><C-n>:ToggleTerm<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-\\>", ":ToggleTerm<CR>", { noremap = true, silent = true })
 
 -- Vim-Ultest
 vim.api.nvim_set_keymap("n", "]t", "<Plug>(ultest-next-fail)", { noremap = false, silent = false })
