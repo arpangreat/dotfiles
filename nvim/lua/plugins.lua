@@ -129,7 +129,7 @@ return require("packer").startup({
 		use("rhysd/committia.vim")
 		use("junegunn/fzf")
 		use("junegunn/fzf.vim")
-		use("airblade/vim-gitgutter")
+		-- use("airblade/vim-gitgutter")
 		-- use 'preservim/nerdcommenter'
 		use("b3nj5m1n/kommentary")
 		use("JoosepAlviste/nvim-ts-context-commentstring")
@@ -315,7 +315,6 @@ return require("packer").startup({
 			end,
 		})
 
-		-- use 'govim/govim'
 		use({ "shaunsingh/oxocarbon.nvim", run = "./install.sh" })
 
 		--[[ use({

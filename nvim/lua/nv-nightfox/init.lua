@@ -29,7 +29,6 @@ require("nightfox").setup({
 			native_lsp = true,
 			neogit = true,
 			fidget = true,
-			gitgutter = true,
 			gitsigns = true,
 			symbol_outline = true,
 			telescope = true,
