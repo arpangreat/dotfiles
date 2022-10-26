@@ -1,12 +1,10 @@
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  font-family: 'Roboto Mono Medium', 'Ubuntu Nerd Font';
+  font-family: "Roboto Mono Medium", "Ubuntu Nerd Font";
   font-size: 17px;
 }
 
 window#waybar {
   background-color: rgba(30, 34, 42, 0.5);
-  /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -20,25 +18,18 @@ window#waybar.hidden {
   padding: 0 5px;
   background-color: transparent;
   color: #5e81ac;
-  /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each workspace name */
   border: none;
   border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-  /* cursor: pointer; */
   background: rgba(0, 0, 0, 0.2);
-  /* box-shadow: inset 0 -3px #ffffff; */
   color: #bf616a;
 }
 
 #workspaces button.focused {
-  /* background-color: #64727d; */
   color: #bf616a;
-  /* box-shadow: inset 0 -3px #ffffff; */
 }
 
 #workspaces button.active {
@@ -48,11 +39,6 @@ window#waybar.hidden {
 #workspaces button.urgent {
   background-color: #eb4d4b;
 }
-
-/* #mode { */
-/*   background-color: #64727d; */
-/*   border-bottom: 3px solid #ffffff; */
-/* } */
 
 #clock,
 #battery,
@@ -77,30 +63,25 @@ window#waybar.hidden {
   margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
   margin-right: 0;
 }
 
 #clock {
   color: #abb2bf;
-  /* color: #bf616a; */
 }
 
 #battery {
   color: #a3be8c;
-  /* background-color: #90b1b1; */
 }
 
 #battery.charging,
 #battery.plugged {
   color: #26a65b;
-  /* background-color: #26a65b; */
 }
 
 @keyframes blink {
@@ -151,13 +132,10 @@ label:focus {
 }
 
 #pulseaudio {
-  /* background-color: #B48EAD; */
   color: #b48ead;
 }
 
 #pulseaudio.muted {
-  /* background-color: #90b1b1; */
-  /* color: #2a5c45; */
   color: #f53c3c;
 }
 
@@ -241,7 +219,6 @@ label:focus {
 #custom-spotify {
   padding: 0 10px;
   margin: 0 4px;
-  /* background-color: #1db954; */
   color: #abb2bf;
 }
 

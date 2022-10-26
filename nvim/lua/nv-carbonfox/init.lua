@@ -2,7 +2,7 @@
 require("nightfox").setup({
 	options = {
 		-- Compiled file's destination location
-		compile_path = vim.fn.stdpath("cache") .. "/nightfox",
+		compile_path = vim.fn.stdpath("cache") .. "/terafox",
 		compile_file_suffix = "_compiled", -- Compiled file suffix
 		transparent = true, -- Disable setting background
 		terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
@@ -22,10 +22,12 @@ require("nightfox").setup({
 			search = false,
 		},
 		modules = { -- List of various plugins and additional options
-			barbar = true,
+			aerial = true,
 			cmp = true,
 			dashboard = true,
 			diagnostic = true,
+			native_lsp = true,
+			neogit = true,
 			fidget = true,
 			gitgutter = true,
 			gitsigns = true,
@@ -36,12 +38,7 @@ require("nightfox").setup({
 			whichkey = true,
 		},
 	},
-	groups = {
-		all = {
-			WinBar = { fg = "pink" },
-		},
-	},
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme carbonfox")
