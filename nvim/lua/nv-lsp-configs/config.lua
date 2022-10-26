@@ -92,7 +92,6 @@ M.on_attach = function(client, bufnr)
 		})
 	end
 
-	require("aerial").on_attach(client, bufnr)
 	require("lsp-inlayhints").on_attach(client, bufnr)
 end
 

@@ -35,6 +35,7 @@ require("nightfox").setup({
 			treesitter = true,
 			tsrainbow = true,
 			whichkey = true,
+			-- codewindow = true,
 		},
 	},
 	groups = {
