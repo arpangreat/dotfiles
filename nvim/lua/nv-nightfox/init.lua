@@ -22,10 +22,12 @@ require("nightfox").setup({
 			search = false,
 		},
 		modules = { -- List of various plugins and additional options
-			barbar = true,
+			aerial = true,
 			cmp = true,
 			dashboard = true,
 			diagnostic = true,
+			native_lsp = true,
+			neogit = true,
 			fidget = true,
 			gitgutter = true,
 			gitsigns = true,
