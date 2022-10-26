@@ -13,16 +13,16 @@ format-background = ${color.yellow}
 label = %percentage%%
 label-foreground = ${color.background}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-5 = 
-ramp-6 = 
-ramp-7 = 
-ramp-8 = 
-ramp-9 = 
+ramp-0 =  
+ramp-1 =  
+ramp-2 =  
+ramp-3 =  
+ramp-4 =  
+ramp-5 =  
+ramp-6 =  
+ramp-7 =  
+ramp-8 =  
+ramp-9 =  
 ramp-font = 2
 ramp-foreground = ${color.background}
 
@@ -42,16 +42,16 @@ format-padding = 1
 label = %percentage%%
 label-foreground = ${color.background}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-5 = 
-ramp-6 = 
-ramp-7 = 
-ramp-8 = 
-ramp-9 = 
+ramp-0 =  
+ramp-1 =  
+ramp-2 =  
+ramp-3 =  
+ramp-4 =  
+ramp-5 =  
+ramp-6 =  
+ramp-7 =  
+ramp-8 =  
+ramp-9 =  
 ramp-font = 2
 ramp-foreground = ${color.background}
 
@@ -119,7 +119,7 @@ format-charging-prefix =
 format-discharging = <ramp-capacity><label-discharging>
 
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = "  "
 format-full-prefix-font = 2
 format-full-prefix-foreground = ${color.background}
 format-full-prefix-background = ${color.blue}
@@ -169,39 +169,41 @@ reverse-scroll = true
 
 fuzzy-match = true
 
-ws-icon-0=I;
-ws-icon-1=II;
-ws-icon-2=III;
-ws-icon-3=IV;
-ws-icon-4=V;
-ws-icon-5=VI;
-ws-icon-6=VII;漣
+ws-icon-0= 1;
+ws-icon-1= 2;
+ws-icon-2= 3;
+ws-icon-3= 4;
+ws-icon-4= 5;
+ws-icon-5= 6;
+ws-icon-6= 7;漣
+ws-icon-7= 8;漣
+ws-icon-8= 9;漣
 ws-icon-default = 
 
 format = <label-state>
 format-font = 2
 
-label-monitor = %name%
+label-monitor = %index%
 
-label-focused = %name%
+label-focused = %index%
 label-focused-foreground = ${color.blue}
 label-focused-background = ${color.background}
 label-focused-underline =  ${color.blue}
 label-focused-padding = 1
 
-label-occupied = %name%
+label-occupied = %index%
 label-occupied-foreground = ${color.green}
 label-occupied-background = ${color.background}
 ;label-occupied-underline = 
 label-occupied-padding = 1
 
-label-urgent = %name%
+label-urgent = %index%
 label-urgent-foreground = ${color.red}
 label-urgent-background = ${color.background}
 label-urgent-underline =  ${color.red}
 label-urgent-padding = 1
 
-label-empty = %name%
+label-empty = %index%
 label-empty-foreground = ${color.foreground}
 label-empty-padding = 1
 
@@ -253,7 +255,7 @@ format-margin = 0
 time = "%I:%M %p"
 time-alt = "%A, %m/%d/%y"
 
-format-prefix = 
+format-prefix =  
 format-prefix-foreground = ${color.background}
 format-prefix-background = ${color.blue}
 
@@ -272,12 +274,12 @@ interval = 30
 fixed-values = true
 
 format-mounted = <label-mounted>
-format-mounted-prefix = " "
+format-mounted-prefix = ""
 format-mounted-prefix-foreground = ${color.background}
 format-mounted-prefix-background = ${color.cyan}
 
 format-unmounted = <label-unmounted>
-format-unmounted-prefix = " "
+format-unmounted-prefix = ""
 format-unmounted-prefix-foreground = ${color.background}
 format-unmounted-prefix-background = ${color.cyan}
 
@@ -296,7 +298,7 @@ type = internal/memory
 interval = 1
 
 format = <label>
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${color.background}
 format-foreground = ${color.background}
 format-background = ${color.yellow}
@@ -307,7 +309,7 @@ label = "%{A1:terminal -e htop &:} %mb_used% %{A}"
 
 [module/launcher]
 type=custom/text
-content = 
+content =  
 content-font = 4
 content-foreground= ${color.background}
 content-background = ${color.blue} 

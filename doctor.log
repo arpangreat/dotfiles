@@ -1,0 +1,5 @@
+2022/10/25 03:22:04 main.go:118:main() [F] Failed to run app with [gitea doctor]: stat /etc/gitea/app.ini: no such file or directory
+2022/10/25 03:23:03 .../setting/packages.go:44:newPackages() [E] Unable to create chunked upload directory: /var/lib/gitea/data/tmp/package-upload (mkdir /var/lib/gitea/data: permission denied)
+2022/10/25 03:23:03 ...s/setting/setting.go:1079:loadFromConf() [E] Unable to check if /var/lib/gitea/custom/robots.txt is a file. Error: stat /var/lib/gitea/custom/robots.txt: permission denied
+2022/10/25 03:23:03 ...s/setting/setting.go:1096:loadFromConf() [E] Deprecated setting `[U2F]` `APP_ID` present. This fallback will be removed in v1.18.0
+2022/10/25 03:23:03 main.go:118:main() [F] Failed to run app with [gitea doctor]: 3 configuration files with errors
