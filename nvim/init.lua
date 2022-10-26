@@ -115,10 +115,6 @@ require("telescope-tabs").setup()
 -- require("nv-noice")
 -- require("typescript").setup({})
 
---[[ vim.cmd("highlight TelescopeBorder guifg=#d16d9e")
-vim.cmd("highlight TelescopePromptPrefix guifg=red") ]]
--- vim.cmd("hi FloatermBorder guifg=cyan")
-vim.cmd("let g:airline_disable_statusline = 1")
 vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
@@ -157,8 +153,6 @@ vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
 
 vim.g.CommandTCancelMap = "<C-x>"
 -- Disabling Gitgutter
-vim.cmd("let g:gitgutter_enabled = 1")
-vim.cmd("let g:gitgutter_signs = 0")
 -- let g:airline_theme = 'deus'
 -- vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
 --Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
