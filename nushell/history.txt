@@ -240,3 +240,28 @@ cd nushell/
 ls
 nv env.nu
 cd
+ls
+cd dot
+cd dotfiles/
+ls
+cd nushell/
+ls
+nv config.nu
+nvim config.nu
+z
+z new
+nv env.nu
+nvim env.nu
+cargo install-update -a
+nv
+ls
+z new
+ls
+nvim env.nu
+ls
+nv ls
+nv env.nu
+nvim env.nu
+env
+help alias
+nvim config.nu

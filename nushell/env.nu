@@ -1,4 +1,5 @@
 # Nushell Environment Config File
+let-env STARSHIP_SHELL = "nu"
 
 def create_left_prompt [] {
   starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
@@ -18,10 +19,10 @@ let-env PROMPT_COMMAND_RIGHT = ""
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
-# let-env PROMPT_INDICATOR = { "" }
-# let-env PROMPT_INDICATOR_VI_INSERT = { ": " }
-# let-env PROMPT_INDICATOR_VI_NORMAL = { "〉" }
-# let-env PROMPT_MULTILINE_INDICATOR = { "::: " }
+let-env PROMPT_INDICATOR = { "" }
+let-env PROMPT_INDICATOR_VI_INSERT = { ": " }
+let-env PROMPT_INDICATOR_VI_NORMAL = { "〉" }
+let-env PROMPT_MULTILINE_INDICATOR = { "::: " }
 
 # Specifies how environment variables are:
 # - converted from a string to a value on Nushell startup (from_string)
@@ -56,7 +57,7 @@ let-env NU_PLUGIN_DIRS = [
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 zoxide init nushell --hook prompt | save ~/.zoxide.nu
 
-starship init nu | save ~/.cache/starship/init.nu
+# starship init nu | save ~/.cache/starship/init.nu
 
 # PATH
 let-env PATH = ($env.PATH | prepend '$GOPATH/go/bin')
@@ -69,5 +70,3 @@ let-env PATH = ($env.PATH | prepend '/home/arpangreat/.local/share/gem/ruby/3.0.
 let-env PATH = ($env.PATH | prepend '/home/arpangreat/Downloads/go/bin')
 let-env PATH = ($env.PATH | prepend '/home/arpangreat/.local/bin')
 let-env PATH = ($env.PATH | prepend '/home/arpangreat/.dotnet/tools')
-
-let-env STARSHIP_SHELL = 'nu'

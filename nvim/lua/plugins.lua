@@ -54,6 +54,15 @@ return require("packer").startup({
 		use("kylechui/nvim-surround")
 		use("stevearc/aerial.nvim")
 		use("is0n/jaq-nvim")
+
+		use({
+			"gorbit99/codewindow.nvim",
+			config = function()
+				local codewindow = require("codewindow")
+				codewindow.setup()
+				codewindow.apply_default_keybinds()
+			end,
+		})
 		-- Also run code after load (see the "config" key)
 
 		-- Local plugins can be included
