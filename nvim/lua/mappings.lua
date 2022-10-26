@@ -205,7 +205,7 @@ vim.api.nvim_set_keymap(
 -- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
 vim.api.nvim_set_keymap("n", "<Leader>gv", ":GitFiles<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>rf", ":luafile %<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>gp", ":Neogit<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>gp", "<cmd>lua require('neogit').open()<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>go", ":Neogit branch<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gs", ":Neogit stash<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gd", ":DiffviewOpen<CR>", { noremap = true, silent = false })
