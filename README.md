@@ -1,15 +1,11 @@
 # dotfiles
 
-
-
-
-
 Hey this is my dotfiles repository ,From which you can download my config
 files 😄🚀
 
 [#](#) I'm a n00b
 
-# \* My default desktop Environment `i3` and `kitty` with `zsh` and `neofetch` , The prompt is [Spaceship](https://github.com/denysdovhan/spaceship-prompt) and the color is [tokyonight](https://github.com/folke/tokyonight.nvim.git)
+# \* My default desktop Environment `hyprland` and `kitty` with `zsh` and `shellfetch` and combined with `tmux` , The prompt is [Spaceship](https://github.com/denysdovhan/spaceship-prompt) and the color is [tokyonight](https://github.com/folke/tokyonight.nvim.git)
 
 ![Screenshot-kitty-edit](https://user-images.githubusercontent.com/46556080/130490647-0488bd1d-7cc3-49ce-a6c3-c4a09809b622.png)
 
@@ -21,7 +17,7 @@ files 😄🚀
 
 ![Screenshot-telescope-edit](https://user-images.githubusercontent.com/46556080/130490742-b6494ed2-4324-49da-8673-9c42d68ecf35.png)
 
-# \* My Favourite Colorscheme for now and maybe for years is made [tokyonight.nvim](https://github.com/folke/tokyonight.nvim.git) looks so sick ❤️❤️🔥
+# \* My Favourite Colorscheme for now and maybe for years is made [catppuccin](https://github.com/catppuccin/nvim) looks so sick ❤️❤️🔥
 
 ![Screenshot-colorscheme-edit](https://user-images.githubusercontent.com/46556080/130490777-1116a609-d805-4b0e-a37b-5a132665269b.png)
 
