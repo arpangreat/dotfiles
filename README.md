@@ -5,21 +5,21 @@ files 😄🚀
 
 [#](#) I'm a n00b
 
-# \* My default desktop Environment `hyprland` and `kitty` with `zsh` and `shellfetch` and combined with `tmux` , The prompt is [Spaceship](https://github.com/denysdovhan/spaceship-prompt) and the color is [tokyonight](https://github.com/folke/tokyonight.nvim.git)
+# \* My default desktop Environment `hyprland` and `kitty` with `zsh` and `shellfetch` and combined with `tmux` , The prompt is [Starship](https://starship.rs) and the color is [catppuccin](https://github.com/catppuccin/nvim)
 
-![Screenshot-kitty-edit](https://user-images.githubusercontent.com/46556080/130490647-0488bd1d-7cc3-49ce-a6c3-c4a09809b622.png)
+![20221028_14h57m31s_grim](https://user-images.githubusercontent.com/46556080/198555517-9379d760-55cd-4b63-b37f-72f1b94768ec.png)
 
-# \* My Love ❤️ and default Editor is [neovim](https://github.com/neovim/neovim), the Starting screen is [Dashboard.nvim](https://github.com/glepnir/dashboard-nvim) and the statusline is [Galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) made by [glepnir](https://github.com/glepnir)
+# \* My Love ❤️ and default Editor is [neovim](https://github.com/neovim/neovim), the Starting screen is [Dashboard.nvim](https://github.com/glepnir/dashboard-nvim) and the statusline is [lualine](https://github.com/nvim-lualine/nvim-lualine)
 
-![Screenshot-nvim-edit](https://user-images.githubusercontent.com/46556080/130490700-b227a906-8d26-4642-98df-81df3eda0e7e.png)
+![20221028_14h58m38s_grim](https://user-images.githubusercontent.com/46556080/198556440-a6f1518c-94e3-4e4b-9edd-e404d439de2e.png)
 
 # \* One of my Nvim-essential and all time ❤️ is [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) file picker
 
-![Screenshot-telescope-edit](https://user-images.githubusercontent.com/46556080/130490742-b6494ed2-4324-49da-8673-9c42d68ecf35.png)
+![20221028_14h58m58s_grim](https://user-images.githubusercontent.com/46556080/198556784-e9651ac7-9def-4cd2-9f42-c6e4c0e69a38.png)
 
-# \* My Favourite Colorscheme for now and maybe for years is made [catppuccin](https://github.com/catppuccin/nvim) looks so sick ❤️❤️🔥
+# \* The Colorscheme for is [catppuccin](https://github.com/catppuccin/nvim) looks so sick ❤️❤️🔥
 
-![Screenshot-colorscheme-edit](https://user-images.githubusercontent.com/46556080/130490777-1116a609-d805-4b0e-a37b-5a132665269b.png)
+![20221028_14h59m35s_grim](https://user-images.githubusercontent.com/46556080/198557034-9c1da1df-da25-4bf7-b0b3-1a80f1a6b38a.png)
 
 # The Anime Wallpapers are provided by a git repo by
 
