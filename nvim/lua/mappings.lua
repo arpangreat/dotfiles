@@ -31,9 +31,6 @@ vim.api.nvim_set_keymap("n", "<Leader>sn", ":tabn<CR>", { noremap = false, silen
 vim.keymap.set("n", "<Leader>sS", ":SaveSession<CR>")
 vim.keymap.set("n", "<Leader>sr", ":RestoreSession<CR>")
 
--- vim.api.nvim_set_keymap("n", "<Leader>", ":WhichKey '<Space>'<CR>", { noremap = true, silent = true, expr = false })
--- vim.api.nvim_set_keymap("n", ",", ":WhichKey ','<CR>", { noremap = true, silent = true, expr = false })
-
 vim.api.nvim_set_keymap("n", "\\gr", ":!go run %<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "\\gb", ":!go build<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "\\gt", ":!go test<CR>", { noremap = true, silent = false })
@@ -199,25 +196,12 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
--- noremap <leader>ta :lua require('arpangreat.telescope').anime_selector()<CR>
--- noremap <leader>tc :lua require('arpangreat.telescope').git_branches()<CR>
-
--- noremap <leader>pw :Rg <C-R>=expand(--<cword>--)<CR><CR>
 vim.api.nvim_set_keymap("n", "<Leader>gv", ":GitFiles<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>rf", ":luafile %<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gp", "<cmd>lua require('neogit').open()<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>go", ":Neogit branch<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gs", ":Neogit stash<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>gd", ":DiffviewOpen<CR>", { noremap = true, silent = false })
---[[ vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>gg",
-	":FloatermNew --height=0.9 --width=0.9<CR>",
-	{ noremap = true, silent = false, expr = false }
-) ]]
-
--- vim.api.nvim_set_keymap("t", "<Leader>gg", ":FloatermToggle<CR>", { noremap = true, silent = false, expr = false })
--- vim.api.nvim_set_keymap("n", "<Leader>", ":<C-U>WhichKey '<Space>'<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>q", ":q<CR>", { noremap = true, silent = false })
@@ -234,37 +218,6 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false }
 )
 
--- For Vsnip
--- vim.api.nvim_exec([[
--- " NOTE: You can use other key to expand snippet.
---
--- " Expand
--- imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
--- smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
---
--- " Expand or jump
--- imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
--- smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
---
--- " Jump forward or backward
--- imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
--- smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
--- imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
--- smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
---
--- " Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
--- " See https://github.com/hrsh7th/vim-vsnip/pull/50
--- nmap        s   <Plug>(vsnip-select-text)
--- xmap        s   <Plug>(vsnip-select-text)
--- nmap        S   <Plug>(vsnip-cut-text)
--- xmap        S   <Plug>(vsnip-cut-text)
---
--- " If you want to use snippet for multiple filetypes, you can `g:vsnip_filetypes` for it.
--- let g:vsnip_filetypes = {}
--- let g:vsnip_filetypes.javascriptreact = ['javascript']
--- let g:vsnip_filetypes.typescriptreact = ['typescript']
--- ]], true)
-
 -- Nvim Lsp mappings
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
@@ -280,10 +233,7 @@ vim.api.nvim_set_keymap("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { 
 vim.api.nvim_set_keymap("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
 
 -- DashBoard
--- vim.api.nvim_set_keymap("n", "<Leader>fh", ":DashboardFindHistory<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>sl", ":<C-u>SessionLoad<CR>", { noremap = true, silent = false })
--- vim.api.nvim_set_keymap("n", "<Leader>fa", ":DashboardFindWord<CR>", { noremap = true, silent = false })
--- vim.api.nvim_set_keymap("n", "<Leader>fb", ":DashboardJumpMark<CR>", { noremap = true, silent = false })
 
 -- Toggleterm
 vim.api.nvim_set_keymap("n", "<Leader>gg", ":ToggleTerm<CR>", { noremap = true, silent = true })
@@ -296,32 +246,6 @@ vim.api.nvim_set_keymap("n", "[t", "<Plug>(ultest-prev-fail)", { noremap = true,
 
 -- Nohl
 vim.api.nvim_exec([[nnoremap <expr> <CR> {-> v:hlsearch ? ":nohl\<CR>" : "\<CR>"}()]], true)
-
--- -- kommentary
---[[ vim.api.nvim_set_keymap("n", "<leader>cc", "<Plug>kommentary_line_default", {})
-vim.api.nvim_set_keymap("n", "<leader>gc", "<Plug>kommentary_motion_default", {})
-vim.api.nvim_set_keymap("x", "<leader>cc", "<Plug>kommentary_visual_default", {})
-vim.api.nvim_set_keymap("n", "<leader>cic", "<Plug>kommentary_line_increase", {})
-vim.api.nvim_set_keymap("n", "<leader>ci", "<Plug>kommentary_motion_increase", {})
-vim.api.nvim_set_keymap("x", "<leader>ci", "<Plug>kommentary_visual_increase", {})
-vim.api.nvim_set_keymap("n", "<leader>cdc", "<Plug>kommentary_line_decrease", {})
-vim.api.nvim_set_keymap("n", "<leader>cd", "<Plug>kommentary_motion_decrease", {})
-vim.api.nvim_set_keymap("x", "<leader>cd", "<Plug>kommentary_visual_decrease", {}) ]]
-
--- Focus
---[[ local focusmap = function(direction)
-	vim.api.nvim_set_keymap(
-		"n",
-		"<Leader>" .. direction,
-		":lua require'focus'.split_command('" .. direction .. "')<CR>",
-		{ silent = true }
-	)
-end ]]
--- Use `<Leader>h` to split the screen to the left, same as command FocusSplitLeft etc
---[[ focusmap("h")
-focusmap("j")
-focusmap("k")
-focusmap("l") ]]
 
 -- LspSaga
 vim.api.nvim_set_keymap(
@@ -441,62 +365,6 @@ vim.api.nvim_set_keymap("x", "<Leader>s", ":s//g<Left><Left>", { noremap = true,
 vim.api.nvim_set_keymap("o", "<Leader>s", ":s//g<Left><Left>", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("v", "<Leader>s", ":s//g<Left><Left>", { noremap = true, silent = false, expr = false })
 
--- Bufferline
---[[ vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>1",
-	":BufferLineGoToBuffer 1<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>2",
-	":BufferLineGoToBuffer 2<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>3",
-	":BufferLineGoToBuffer 3<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>4",
-	":BufferLineGoToBuffer 4<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>5",
-	":BufferLineGoToBuffer 5<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>6",
-	":BufferLineGoToBuffer 6<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>7",
-	":BufferLineGoToBuffer 7<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>8",
-	":BufferLineGoToBuffer 8<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>9",
-	":BufferLineGoToBuffer 9<CR>",
-	{ noremap = true, silent = false, expr = false }
-) ]]
-
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
@@ -519,22 +387,7 @@ map("n", "<A-9>", ":BufferGoto 9<CR>", opts)
 map("n", "<A-0>", ":BufferLast<CR>", opts)
 -- Close buffer
 map("n", "<A-c>", ":BufferClose<CR>", opts)
--- Wipeout buffer
---                 :BufferWipeout<CR>
--- Close commands
---                 :BufferCloseAllButCurrent<CR>
---                :BufferCloseBuffersLeft<CR>
---                 :BufferCloseBuffersRight<CR>
--- Magic buffer-picking mode
 map("n", "<C-p>", ":BufferPick<CR>", opts)
--- Sort automatically by...
---[[ map("n", "<Space>bb", ":BufferOrderByBufferNumber<CR>", opts)
-map("n", "<Space>bd", ":BufferOrderByDirectory<CR>", opts)
-map("n", "<Space>bl", ":BufferOrderByLanguage<CR>", opts) ]]
-
--- Other:
--- :BarbarEnable - enables barbar (enabled by default)
--- :BarbarDisable - very bad command, should never be used
 
 -- Treesitter Unit
 vim.api.nvim_set_keymap(
@@ -634,19 +487,7 @@ vim.api.nvim_set_keymap(
 
 vim.keymap.set("n", "<Leader>rg", "<cmd>lua vim.lsp.codelens.run()<CR>")
 
---[[ vim.keymap.set(
-	"n",
-	"<Leader>rc",
-	":lua require'rust-tools.crate_graph'.view_crate_graph(backend, output)<CR>",
-	{ noremap = true, silent = false, expr = false } ]]
--- )
-
 vim.keymap.set("n", "<Leader>rc", ":RustOpenCargo<CR>", { noremap = true, silent = false, expr = false })
-
--- -- Sudo
---[[ vim.api.nvim_exec([[
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
-, true) ]]
 
 local ls = require("luasnip")
 vim.keymap.set("i", "<C-l>", function()
