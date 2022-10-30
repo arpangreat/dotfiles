@@ -1,227 +1,87 @@
+@import "mocha.css";
+
 * {
-  font-family: "Roboto Mono Medium", "Ubuntu Nerd Font";
-  font-size: 17px;
+    border: none;
+    border-radius: 0;
+    font-family: 'FantasqueSansMono Nerd Font', monospace;
+    font-size: 15px;
+    min-height: 0;
 }
 
-window#waybar {
-  background-color: rgba(30, 34, 42, 0.5);
-  color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+
+#waybar {
+    background: transparent;
+    color: @text;
+    margin: 5px 0;
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
+#workspaces {
+	border-radius: 1rem;
+        margin: 5px;
+	background-color: @surface0;
+	margin-left: 1rem;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  background-color: transparent;
-  color: #5e81ac;
-  box-shadow: inset 0 -3px transparent;
-  border: none;
-  border-radius: 0;
-}
+    color: @lavender;
+    border-radius: 1rem;
 
-#workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
-  color: #bf616a;
-}
-
-#workspaces button.focused {
-  color: #bf616a;
 }
 
 #workspaces button.active {
-  color: #c68a75;
+    color: @sky;
+    border-radius: 1rem;
 }
 
-#workspaces button.urgent {
-  background-color: #eb4d4b;
+#workspaces button:hover {
+	color: @sapphire;
+	border-radius: 1rem;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#mpd {
-  padding: 0 10px;
-  color: #ffffff;
-}
-
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+#custom-music, #tray, #backlight, #clock, #battery, #pulseaudio, #network {
+        background-color: @surface0;
+	padding: 0.5rem 1rem;
+	margin: 5px 0;
 }
 
 #clock {
-  color: #abb2bf;
+    color: @lavender;
+    border-radius: 0px 1rem 1rem 0px;
+    margin-right: 1rem;
 }
 
 #battery {
-  color: #a3be8c;
+    color: @green;
 }
 
-#battery.charging,
-#battery.plugged {
-  color: #26a65b;
+#battery.charging {
+    color: @green;
 }
 
-@keyframes blink {
-  to {
-    background-color: rgba(30, 34, 42, 0.5);
-    color: #abb2bf;
-  }
-}
-
-#battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: #abb2bf;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-label:focus {
-  background-color: #000000;
-}
-
-#cpu {
-  background-color: #2ecc71;
-  color: #000000;
-}
-
-#memory {
-  background-color: #9b59b6;
-}
-
-#disk {
-  background-color: #964b00;
+#battery.warning:not(.charging) {
+    color: @red;
 }
 
 #backlight {
-  /* background-color: #90b1b1; */
-  color: #d7ba7d;
+    color: @yellow;
 }
 
 #network {
-  color: #88c0d0;
-}
-
-#network.disconnected {
-  background-color: #f53c3c;
+	color: @peach;
 }
 
 #pulseaudio {
-  color: #b48ead;
+	color: @red;
+        border-radius: 1rem 0px 0px 1rem;
+        margin-left: 1rem;
 }
 
-#pulseaudio.muted {
-  color: #f53c3c;
+#custom-music {
+    color: @mauve;
+    border-radius: 1rem;
 }
 
-#custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-  background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-  background-color: #ffa000;
-}
-
-#temperature {
-  background-color: #f0932b;
-}
-
-#temperature.critical {
-  background-color: #eb4d4b;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
-}
-
-#idle_inhibitor {
-  background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
-
-#language {
-  background: #00b093;
-  color: #740864;
-  padding: 0 5px;
-  margin: 0 5px;
-  min-width: 16px;
-}
-
-#keyboard-state {
-  background: #97e1ad;
-  color: #000000;
-  padding: 0 0px;
-  margin: 0 5px;
-  min-width: 16px;
-}
-
-#keyboard-state > label {
-  padding: 0 5px;
-}
-
-#custom-spotify {
-  padding: 0 10px;
-  margin: 0 4px;
-  color: #abb2bf;
-}
-
-#keyboard-state > label.locked {
-  background: rgba(0, 0, 0, 0.2);
+#tray {
+    margin-right: 1rem;
+    border-radius: 1rem;
 }
