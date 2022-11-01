@@ -298,7 +298,7 @@ return require("packer").startup({
 				require("toggleterm").setup({
 					open_mapping = [[<c-/>]],
 					direction = "float",
-				})
+				})		
 			end,
 		})
 		use("ckipp01/stylua-nvim")
