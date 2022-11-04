@@ -29,6 +29,7 @@ plugins=(
   fast-syntax-highlighting
   rust
   zsh-vi-mode
+  zsh-abbr
 )
 
 source $ZSH/oh-my-zsh.sh
