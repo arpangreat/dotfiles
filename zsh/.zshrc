@@ -34,6 +34,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
+source ~/forgit/forgit.plugin.zsh
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 

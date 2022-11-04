@@ -270,6 +270,7 @@ return require("packer").startup({
 		use("rafamadriz/friendly-snippets")
 		-- use("ryanoasis/vim-devicons")
 		use("rust-lang/rust.vim")
+		use("ziglang/zig.vim")
 		use("simrat39/rust-tools.nvim")
 		use("Tetralux/odin.vim")
 		use("glepnir/dashboard-nvim")
@@ -298,7 +299,7 @@ return require("packer").startup({
 				require("toggleterm").setup({
 					open_mapping = [[<c-/>]],
 					direction = "float",
-				})		
+				})
 			end,
 		})
 		use("ckipp01/stylua-nvim")
@@ -311,7 +312,7 @@ return require("packer").startup({
 		use("tjdevries/express_line.nvim")
 		use({ "williamboman/mason.nvim", branch = "main" })
 		use({ "williamboman/mason-lspconfig.nvim" })
-		use("williamboman/nvim-lsp-installer")
+		-- use("williamboman/nvim-lsp-installer")
 		-- use({ "/home/arpangreat/catppnv/", as = "catppuccin" })
 		-- use({ "/home/arpangreat/onedarker.nvim-master/", as = "onedarker" })
 		-- use({ "/home/arpangreat/lsp-inlayhints.nvim-main/", as = "lsp-inlayhints" })
