@@ -49,6 +49,7 @@ require("catppuccin").setup({
 			enabled = true,
 			show_root = true,
 		}, ]]
+		neotree = true,
 		which_key = true,
 		indent_blankline = {
 			enabled = true,
