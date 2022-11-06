@@ -85,6 +85,9 @@ vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 3
 
+-- NeoTree
+vim.g.neo_tree_remove_legacy_commands = 1
+
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
 vim.cmd("let g:gitgutter_signs = 0")

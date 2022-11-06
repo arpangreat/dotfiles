@@ -509,3 +509,5 @@ vim.keymap.set("n", "<Leader>l", "<C-w>l<CR>")
 
 vim.keymap.set("n", "<Leader>hm", "<cmd>lua require('harpoon.mark').add_file()<CR>")
 vim.keymap.set("n", "<Leader>th", "<cmd>Telescope harpoon marks<CR>")
+
+vim.keymap.set("n", "<Leader>dd", "<cmd>lua require('duck').hatch('🧠')<CR>")

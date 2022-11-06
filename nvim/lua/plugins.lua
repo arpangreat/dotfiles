@@ -45,6 +45,7 @@ return require("packer").startup({
 				})
 			end,
 		})
+		use("tamton-aquib/duck.nvim")
 		use("SmiteshP/nvim-navic")
 		use("SmiteshP/nvim-gps")
 		use("ghillb/cybu.nvim")
@@ -230,7 +231,9 @@ return require("packer").startup({
 		use("alaviss/nim.nvim")
 		use("p00f/clangd_extensions.nvim")
 		use("ibhagwan/fzf-lua")
-		use("kyazdani42/nvim-tree.lua")
+		-- use("kyazdani42/nvim-tree.lua")
+		use({ "nvim-neo-tree/neo-tree.nvim", version = "v2.x" })
+		use("MunifTanjim/nui.nvim")
 		use({ "Shougo/defx.nvim", run = ":UpdateRemotePlugins" })
 
 		-- Vim Only
