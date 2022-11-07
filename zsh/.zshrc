@@ -138,8 +138,11 @@ bindkey -v
 source $HOME/dotfiles/zsh/functions/functions
 [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
 source $HOME/dotfiles/zsh/always-tmux.sh
+# source $HOME/dotfiles/zsh/always-zellij.sh
+
 
 ensure_tmux_is_running
+# ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
