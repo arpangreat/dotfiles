@@ -226,6 +226,14 @@ function objd() {
   command objdump -D "$1" | bat
 }
 
+function glowb() {
+  command glow "$1" | bat
+}
+
+function zathb() {
+  command zathura "$1" &
+}
+
 function mvn() {
   if [ "$1" = create ]; then
     command mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId="$2" -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false

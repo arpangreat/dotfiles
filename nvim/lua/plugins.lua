@@ -276,6 +276,7 @@ return require("packer").startup({
 		use("ziglang/zig.vim")
 		use("simrat39/rust-tools.nvim")
 		use("Tetralux/odin.vim")
+		use("scalameta/nvim-metals")
 		use("glepnir/dashboard-nvim")
 		-- use("akinsho/nvim-bufferline.lua")
 		-- use("romgrk/barbar.nvim")
@@ -344,6 +345,7 @@ return require("packer").startup({
 		})
 
 		use("RRethy/vim-illuminate")
+		-- use("/home/arpangreat/orangide.nvim")
 	end,
 	config = {
 		display = {

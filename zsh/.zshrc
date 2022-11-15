@@ -308,7 +308,7 @@ export ANDROID_HOME=/opt/android-sdk/
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
-export BROWSER=/usr/bin/brave
+export BROWSER=/usr/bin/firefox
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
