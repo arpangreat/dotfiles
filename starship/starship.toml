@@ -9,9 +9,7 @@ vicmd_symbol = "[](green)"
 
 [directory]
 style = "blue bold"
-
-[package]
-disabled = true
+read_only = " "
 
 [username]
 disabled = true
@@ -21,12 +19,15 @@ disabled = true
 
 [aws]
 disabled = true
+symbol = "  "
 
 [docker_context]
 disabled = true
+symbol = " "
 
 [git_branch]
 disabled = true
+symbol = " "
 
 [git_commit]
 disabled = true
@@ -39,3 +40,75 @@ disabled = true
 
 [git_status]
 disabled = true
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "

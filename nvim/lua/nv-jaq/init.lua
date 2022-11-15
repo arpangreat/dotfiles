@@ -23,6 +23,7 @@ jaq_nvim.setup({
 			go = "go run %",
 			sh = "sh %",
 			zig = "zig build run",
+			nim = "nim c $fileBase && ./$fileBase",
 		},
 
 		-- Uses internal commands such as 'source' and 'luafile'

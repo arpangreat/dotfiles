@@ -32,7 +32,7 @@ vim.opt.winblend = 30
 vim.opt.pumblend = 30
 vim.opt.textwidth = 80
 vim.opt.ruler = true
-vim.opt.path = "$pwd/**"
+vim.opt.path = "*/**"
 
 -- Visuals
 vim.opt.syntax = "enable"
