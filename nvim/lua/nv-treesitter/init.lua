@@ -83,3 +83,15 @@ require("nvim-treesitter.configs").setup({
 		max_file_lines = 1000,
 	},
 })
+
+local nim_parser = require("nvim-treesitter.parsers").get_parser_configs()
+nim_parser.nim = {
+	install_info = {
+		url = "~/tree-sitter-nim",
+		files = { "src/parser.c" },
+		generate_requires_npm = true,
+		requires_generate_from_grammer = true,
+	},
+
+	filetype = "nim",
+}

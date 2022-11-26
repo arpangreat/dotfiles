@@ -159,7 +159,7 @@ shellfetch
 # fortune | cowsay | lolcat
 
 # Kitty
-kitty + complete setup zsh | source /dev/stdin
+# kitty + complete setup zsh | source /dev/stdin
 
 # Alacritty
 # source /home/arpangreat/alacritty/extra/completions/_alacritty
@@ -289,13 +289,16 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 export TERM=xterm-kitty-256color
+# export TERM= 
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_kitty
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_wezterm
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin

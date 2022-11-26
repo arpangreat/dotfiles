@@ -42,11 +42,15 @@ M.on_attach = function(client, bufnr)
 	if client.server_capabilities.document_formatting then
 		vim.api.nvim_exec(
 			[[augroup Format
-     autocmd! * <buffer>
-     autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
-     augroup END]],
+			autocmd! * <buffer>
+			autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
+			augroup END]],
 			true
 		)
+	end
+
+	if client.server_capabilities.colorProvider then
+		require("document-color").buf_attach()
 	end
 
 	lsp_highlight_document(client)
@@ -124,6 +128,6 @@ M.capabilities.textDocument.completion.completionItem.resolveSupport = {
 	},
 }
 
-M.capabilities.textDocument.colorProvider = { dynamciRegistration = false }
+M.capabilities.textDocument.colorProvider = { dynamciRegistration = true }
 
 return M

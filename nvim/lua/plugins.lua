@@ -64,6 +64,31 @@ return require("packer").startup({
 				codewindow.apply_default_keybinds()
 			end,
 		})
+
+		use({
+			"mrshmllow/document-color.nvim",
+			config = function()
+				require("document-color").setup({
+					-- Default options
+					mode = "foreground", -- "background" | "foreground" | "single"
+				})
+			end,
+		})
+
+		use({
+			"anuvyklack/windows.nvim",
+			requires = {
+				"anuvyklack/middleclass",
+				"anuvyklack/animation.nvim",
+			},
+			config = function()
+				vim.o.winwidth = 10
+				vim.o.winminwidth = 10
+				vim.o.equalalways = false
+				require("windows").setup()
+			end,
+		})
+
 		-- Also run code after load (see the "config" key)
 
 		-- Local plugins can be included
