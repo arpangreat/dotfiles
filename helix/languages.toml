@@ -1,0 +1,10 @@
+[[language]]
+name = "rust"
+scope = "source.rust"
+# file-types = [ "rust" ]
+language-server = { command = "rust-analyzer" }
+formatter = { command = "rustfmt" }
+auto-format = true
+
+[language.config]
+checkOnSave = { command = "clippy" }
