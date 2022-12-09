@@ -49,7 +49,11 @@ return require("packer").startup({
 		use("SmiteshP/nvim-navic")
 		use("SmiteshP/nvim-gps")
 		use("ghillb/cybu.nvim")
-		use("abecodes/tabout.nvim")
+		use({
+			"abecodes/tabout.nvim",
+			wants = { "nvim-treesitter" }, -- or require if not used so far
+			after = { "nvim-cmp" },
+		})
 		-- use("jinh0/eyeliner.nvim")
 		use("unblevable/quick-scope")
 		use("kylechui/nvim-surround")
@@ -74,6 +78,9 @@ return require("packer").startup({
 				})
 			end,
 		})
+
+		use("weilbith/nvim-code-action-menu")
+		use("kevinhwang91/rnvimr")
 
 		use({
 			"anuvyklack/windows.nvim",
@@ -370,6 +377,8 @@ return require("packer").startup({
 		})
 
 		use("RRethy/vim-illuminate")
+
+		-- Lua
 		-- use("/home/arpangreat/orangide.nvim")
 	end,
 	config = {

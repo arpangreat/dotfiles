@@ -129,5 +129,6 @@ M.capabilities.textDocument.completion.completionItem.resolveSupport = {
 }
 
 M.capabilities.textDocument.colorProvider = { dynamciRegistration = true }
+M.capabilities.offsetEncoding = { "utf-16" }
 
 return M

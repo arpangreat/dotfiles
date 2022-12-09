@@ -113,6 +113,14 @@ local opts = {
 					command = "clippy",
 					inlayHints = true,
 				},
+				inlay_hints = {
+					bindingModeHints = { enable = true },
+					closureReturnTypeHints = { enable = "always" },
+					expressionAdjustmentHints = { enable = "always" },
+					lifetimeElisionHints = { enable = "always", useParameterNames = true },
+					reborrowHints = { enable = "always" },
+					typeHints = { hideClosureInitialization = true, hideNamedConstructor = true },
+				},
 
 				-- on_attach = my_custom_attach,
 			},
@@ -130,3 +138,5 @@ local opts = {
 }
 
 require("rust-tools").setup(opts)
+
+vim.g.rustfmt_autosave = 1
