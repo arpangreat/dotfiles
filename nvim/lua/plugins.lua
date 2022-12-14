@@ -59,6 +59,7 @@ return require("packer").startup({
 		use("kylechui/nvim-surround")
 		use("stevearc/aerial.nvim")
 		use("is0n/jaq-nvim")
+		use("rafcamlet/nvim-luapad")
 
 		use({
 			"gorbit99/codewindow.nvim",

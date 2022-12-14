@@ -281,11 +281,11 @@ F12
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 10%+
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
 
 #Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 10%-
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 #Mute
 XF86AudioMute
@@ -558,6 +558,11 @@ super + shift + {1-9,0}
 
 
 ## super & mouse scroll
+@button{10,11}
+	bspc desktop -f {prev,next}
+
+@button8
+ 	dswticher & xdotool mousemove 640 400
 
 # Focused desktop window gap
 super + button{4,5}

@@ -90,7 +90,7 @@ bspc rule -a dolphin desktop='^2' follow=on state=tiled
 bspc rule -a Bspwm desktop='^2' follow=on state=tiled
 bspc rule -a Brave-browser desktop='^3' follow=on state=tiled
 bspc rule -a Emacs desktop='^4' follow=on state=tiled
-#bspc rule -a Firefox desktop='^1' follow=on
+bspc rule -a Firefox desktop='^3' follow=on state=tiled
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl desktop='^2' follow=on

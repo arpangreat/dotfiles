@@ -29,13 +29,14 @@ $HOME/dotfiles/bspwm/polybar/launch.sh &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 # fi
 
-picom  --config $HOME/.config/bspwm/picom.conf &
+picom --config $HOME/.config/bspwm/picom.conf &
 
 #Some ways to set your wallpaper besides variety or nitrogen
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/devyg41-28cd223e-1a1f-48b6-87c7-41c0064fe163.jpg &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/w1.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11.jpg
-feh --bg-scale /home/arpangreat/dotfiles/wallpaper/tropic_island_night.jpg
+# feh --bg-scale /home/arpangreat/dotfiles/wallpaper/tropic_island_night.jpg
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/Dragonball8k.jpeg
 # feh --bg-center /home/arpangreat/Pictures/Snapchat-612959769.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/neon.png &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
@@ -48,13 +49,14 @@ run xmodmap /home/arpangreat/dotfiles/i3/swap &
 # xsetroot -cursor_name left_ptr &
 
 # conky -c $HOME/.config/bspwm/system-overview &
-# run kitty &
-run alacritty &
+run kitty &
+# run alacritty &
 # run thunar & 
 # run dolphin &
 # run emacs &
 run conky &
-run brave &
+# run brave &
+run firefox &
 run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
