@@ -307,7 +307,7 @@ export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
 export PATH=/home/arpangreat/.nimble/bin:$PATH
 export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
-export ANDROID_HOME=/opt/android-sdk/
+export ANDROID_HOME=/home/arpangreat/Android/Sdk
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 

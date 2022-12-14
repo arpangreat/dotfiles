@@ -488,6 +488,11 @@ _G.packer_plugins = {
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-luapad"] = {
+    loaded = true,
+    path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim-luapad",
+    url = "https://github.com/rafcamlet/nvim-luapad"
+  },
   ["nvim-metals"] = {
     loaded = true,
     path = "/home/arpangreat/.local/share/nvim/site/pack/packer/start/nvim-metals",
@@ -830,22 +835,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for auto-session]], true)
 try_loadstring("\27LJ\2\nW\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\25auto_session_enabled\1\nsetup\17auto-session\frequire\0", "config", "auto-session")
 time([[Config for auto-session]], false)
--- Config for: document-color.nvim
-time([[Config for document-color.nvim]], true)
-try_loadstring("\27LJ\2\nS\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tmode\15foreground\nsetup\19document-color\frequire\0", "config", "document-color.nvim")
-time([[Config for document-color.nvim]], false)
--- Config for: registers.nvim
-time([[Config for registers.nvim]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14registers\frequire\0", "config", "registers.nvim")
-time([[Config for registers.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\nb\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\14direction\nfloat\17open_mapping\n<c-/>\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
--- Config for: project.nvim
-time([[Config for project.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
-time([[Config for project.nvim]], false)
 -- Config for: modes.nvim
 time([[Config for modes.nvim]], true)
 try_loadstring("\27LJ\2\nV\0\0\3\0\6\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0B\0\1\1K\0\1\0\nsetup\nmodes\frequire\15cursorline\bopt\bvim\0", "config", "modes.nvim")
@@ -854,10 +843,26 @@ time([[Config for modes.nvim]], false)
 time([[Config for windows.nvim]], true)
 try_loadstring("\27LJ\2\nå\1\0\0\3\0\b\0\0186\0\0\0009\0\1\0)\1\n\0=\1\2\0006\0\0\0009\0\1\0)\1\n\0=\1\3\0006\0\0\0009\0\1\0+\1\1\0=\1\4\0006\0\5\0'\2\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\nsetup\fwindows\frequire\16equalalways\16winminwidth\rwinwidth\6o\bvim\0", "config", "windows.nvim")
 time([[Config for windows.nvim]], false)
+-- Config for: document-color.nvim
+time([[Config for document-color.nvim]], true)
+try_loadstring("\27LJ\2\nS\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tmode\15foreground\nsetup\19document-color\frequire\0", "config", "document-color.nvim")
+time([[Config for document-color.nvim]], false)
+-- Config for: registers.nvim
+time([[Config for registers.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14registers\frequire\0", "config", "registers.nvim")
+time([[Config for registers.nvim]], false)
 -- Config for: codewindow.nvim
 time([[Config for codewindow.nvim]], true)
 try_loadstring("\27LJ\2\nW\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\0019\1\3\0B\1\1\1K\0\1\0\27apply_default_keybinds\nsetup\15codewindow\frequire\0", "config", "codewindow.nvim")
 time([[Config for codewindow.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\nb\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\14direction\nfloat\17open_mapping\n<c-/>\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
+-- Config for: project.nvim
+time([[Config for project.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
+time([[Config for project.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-cmp ]]
