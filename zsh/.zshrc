@@ -242,6 +242,7 @@ export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.cargo/env
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/flutter/bin
+export PATH=$PATH:$HOME/local/ActiveTCL/bin
 
 
 # Spaceship configs

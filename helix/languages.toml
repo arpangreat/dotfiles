@@ -8,3 +8,19 @@ auto-format = true
 
 [language.config]
 checkOnSave = { command = "clippy" }
+
+[[language]]
+name = "python"
+auto-format = true
+
+[[language]]
+name = "cpp"
+auto-format = true
+
+[[language]]
+name = "c"
+auto-format = true
+
+[[language]]
+name = "zig"
+auto-format = true
