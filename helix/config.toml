@@ -19,3 +19,4 @@ display-messages = true
 [keys.normal]
 "space" = { w = ":w", q = ":q", e = { x = ":q!"}}
 g = { a = "code_action" }
+"esc" = [ "collapse_selection"]
