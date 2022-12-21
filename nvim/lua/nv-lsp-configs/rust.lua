@@ -122,6 +122,26 @@ local opts = {
 					typeHints = { hideClosureInitialization = true, hideNamedConstructor = true },
 				},
 
+				procMacro = {
+					enable = true,
+					methodReference = true,
+				},
+
+				lens = {
+					enable = true,
+				},
+
+				cargo = {
+					allFeatures = true,
+				},
+
+				diagnostics = {
+					disabled = {
+						"missing-unsafe",
+						"inactive-code",
+					},
+				},
+
 				-- on_attach = my_custom_attach,
 			},
 		},
