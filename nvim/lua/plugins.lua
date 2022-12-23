@@ -218,6 +218,8 @@ return require("packer").startup({
 		use("rebelot/kanagawa.nvim")
 		use({ "themercorp/themer.lua" })
 		use("sainnhe/gruvbox-material")
+		-- Packer
+		use("olimorris/onedarkpro.nvim")
 		use("tamago324/lir.nvim")
 		-- use("dylanaraps/wal.vim")
 
@@ -378,6 +380,7 @@ return require("packer").startup({
 		})
 
 		use("RRethy/vim-illuminate")
+		use({ "iamcco/markdown-preview.nvim" })
 
 		-- Lua
 		-- use("/home/arpangreat/orangide.nvim")

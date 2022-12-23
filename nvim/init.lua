@@ -41,7 +41,8 @@ require("nv-autotag")
 -- require("nv-terafox")
 -- require("nv-carbonfox")
 -- require("nv-themer")
-require("nv-catppuccin")
+-- require("nv-catppuccin")
+require("nv-onedarkpro")
 -- require("nv-kanagawa")
 -- require('nv-oceanic-material')
 -- require('nv-gruvbox-flat')
@@ -124,7 +125,6 @@ vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
 vim.cmd("let test#strategy = 'neovim'")
 vim.cmd("let test#neovim#term_position = 'vertical'")
--- vim.cmd("highlight WinBar guifg=#dd7878")
 vim.cmd([[
     hi DiagnosticError guibg=NONE
     hi DiagnosticInfo guibg=NONE
@@ -132,21 +132,15 @@ vim.cmd([[
     hi DiagnosticWarn guibg=NONE
 ]])
 
--- vim.cmd("highlight NormalFloat guifg=cyan")
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 vim.g.which_key_centered = 0
 vim.g.which_key_vertical = 0
 vim.g.which_key_sort_horizontal = 0
--- vim.g.which_key_position = "bottom"
 vim.g.which_key_hspace = 100
 vim.g.which_key_flatten = 0
 vim.g.which_key_use_floating_win = 1
--- vim.cmd("let g:WhichKeyFormatFunc = function('which_key#format')")
--- vim.g.which_key_disable_default_offset = 1
--- vim.cmd("let g:which_key_floating_opts = { 'row': '+100', 'col': '-1', 'height': '0', 'width': '-1' }")
--- vim.g.snippets = "luasnip"
 vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
@@ -154,13 +148,7 @@ vim.cmd("let g:prettier#autoformat_config_present = 1")
 vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
 
 vim.g.CommandTCancelMap = "<C-x>"
--- Disabling Gitgutter
--- let g:airline_theme = 'deus'
--- vim.api.nvim_exec("set statusline+=%{get(b:,'gitsigns_status','')}", true)
---Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
---
---If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
---(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+
 vim.cmd([[
 if (empty($TMUX))
     if (has("nvim"))
@@ -181,33 +169,11 @@ endif
 require("nvim_utils")
 require("colorizer").setup()
 
---[[ vim.api.nvim_exec(
-	[[
-augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
-augroup END
-]]
---,
---	true
---) ]]
-
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function() end,
 	pattern = "*",
 })
-
---[[ vim.api.nvim_exec(
-	[[
-function! GitStatus()
-  let [a,m,r] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', a, m, r)
-endfunction
-set statusline+=%{GitStatus()}
--- ]]
---	true
---) ]]
 
 vim.api.nvim_exec(
 	[[
@@ -229,42 +195,7 @@ if exists('$TMUX')
 	true
 )
 
--- vim.api.nvim_exec([[
---   augroup Format
---   autocmd! * <buffer>
---   autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
---   augroup END
--- ]], true)
-
--- vim.api.nvim_exec([[
--- augroup fmt
---     autocmd!
---     autocmd BufWritePre * undojoin | Prettier
--- augroup END
--- ]], true)
-
--- TODO: fix it
--- Format by Nvim Lsp
--- vim.api.nvim_exec([[
---         augroup Format
---         autocmd! * <buffer>
---         autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
---         augroup END
--- ]], true)
-
--- vim.api.nvim_exec([[
--- augroup fmt
---   autocmd!
---   autocmd BufWritePre * undojoin | Neoformat
--- augroup END
--- ]], true)
-
--- vim.cmd([[let g:completion_confirm_key = ""]])
--- vim.cmd([[
--- imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ? "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
--- ]])
-
---HACK:
+-- HACK:
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
 -- for movement, rather than using more efficient movement commands, is also a
