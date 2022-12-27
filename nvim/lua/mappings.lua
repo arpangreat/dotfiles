@@ -5,9 +5,6 @@
 -- that character inside of the the double Qoutes
 
 -- HACK: YOU HAVE A MAPPING FOR Keymaps named nvmap
-vim.g.mapleader = " "
-vim.g.maplocalleader = ","
-
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>pv",
