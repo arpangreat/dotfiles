@@ -117,6 +117,7 @@ require("telescope-tabs").setup()
 require("nv-code-action")
 require("nv-rvimnr")
 require("nv-tabout")
+require("nv-dressing")
 
 vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")

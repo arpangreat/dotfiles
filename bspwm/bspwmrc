@@ -104,6 +104,7 @@ bspc rule -a vlc desktop='^10' follow=on state=tiled
 #bspc rule -a Thunar desktop='^8' follow=on
 #bspc rule -a discord desktop='^9' follow=on
 bspc rule -a Spotify desktop='^10' follow=on state=tiled
+bspc rule -a Zathura desktop='^2' follow=on state=tiled
 
 # Scratchpads
 kitty --class "dropdown" -e tmux new-session &
