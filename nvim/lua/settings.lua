@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 -- Sets
 -- Ignoptrecases
 vim.opt.ignorecase = true
