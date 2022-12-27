@@ -120,6 +120,7 @@ local opts = {
 					lifetimeElisionHints = { enable = "always", useParameterNames = true },
 					reborrowHints = { enable = "always" },
 					typeHints = { hideClosureInitialization = true, hideNamedConstructor = true },
+					locationLinks = false,
 				},
 
 				procMacro = {
