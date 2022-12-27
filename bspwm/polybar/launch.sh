@@ -12,6 +12,7 @@ get_values() {
 	BATTERY=$(basename "$(find /sys/class/power_supply/*BAT* | head -n 1)")
 	ADAPTER=$( "$(find /sys/class/power_supply/*ADP* | head -n 1)")
 	INTERFACE=$(ip link | awk '/state UP/ {print $2}' | tr -d :)
+	MUSIC=$(playerctl metadata --format='{{ title }}')
 }
 
 ## Write values to `system` file
@@ -27,6 +28,9 @@ set_values() {
 	fi
 	if [[ "$INTERFACE" ]]; then
 		sed -i -e "s/network_interface = .*/network_interface = $INTERFACE/g" "$SFILE"
+	fi
+	if [[ "$MUSIC" ]]; then
+		sed -i -e "s/music = .*/music = $MUSIC/g" "$SFILE"
 	fi
 }
 
