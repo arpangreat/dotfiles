@@ -399,3 +399,56 @@ label-empty-foreground = ${colors.foreground}
 label-empty-padding = 2
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+[module/music]
+type = internal/music
+
+full-at = 99
+
+music = ${system.music}
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging = <animation-charging><label-charging>
+format-charging-prefix = 
+
+format-discharging = <ramp-capacity><label-discharging>
+
+format-full = <label-full>
+format-full-prefix = "  "
+format-full-prefix-font = 2
+format-full-prefix-foreground = ${color.background}
+format-full-prefix-background = ${color.blue}
+
+label-charging = "%percentage%% "
+label-discharging = "%percentage%% "
+label-full = "%percentage%% "
+
+label-charging-background = ${color.blue}
+label-discharging-background = ${color.blue}
+label-full-background = ${color.blue}
+
+label-charging-foreground = ${color.background}
+label-discharging-foreground = ${color.background}
+label-full-foreground = ${color.background}
+
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
+ramp-capacity-font = 2
+ramp-capacity-foreground = ${color.background}
+ramp-capacity-background = ${color.blue}
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
+animation-charging-font = 2
+animation-charging-foreground = ${color.background}
+animation-charging-background = ${color.blue}
+animation-charging-framerate = 750
