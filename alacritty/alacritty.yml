@@ -102,9 +102,10 @@ font:
     # family: "Operator Mono Lig Light"
     # family: "Fira Code Retina"
     # family: "JetBrainsMono Nerd Font"
-    family: "CaskaydiaCove Nerd Font"
+    # family: "CaskaydiaCove Nerd Font"
     # family: "FiraCode Nerd Font Mono"
     # family: "Fisa Code Book"
+    family: "Comic Code Ligatures"
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -119,8 +120,8 @@ font:
     # family: "Operator Mono"
     # family: "Fira Code"
     # family: "JetBrainsMono Nerd Font"
-    family: "CaskaydiaCove Nerd Font"
-    # family: ""
+    # family: "CaskaydiaCove Nerd Font"
+    family: "Comit Code Ligatures"
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -135,8 +136,9 @@ font:
     # family: "Fira Code"
     # family: "JetBrainsMono Nerd Font"
     # family: "CaskaydiaCove Nerd Font"
-    family: "Cascadia Code"
+    # family: "Cascadia Code"
     # family: "Fisa Code Book"
+    family: "Comic Code Ligatures"
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -148,14 +150,15 @@ font:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: "JetBrainsMono Nerd Font"
-    family: "Cascadia Code"
+    # family: "Cascadia Code"
     # family: "Fisa Code Book"
+    family: "Comic Code Ligatures"
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    style: BoldItalic
 
   # Point size
-  size: 14.5
+  size: 10.0
 
   builtin_box_drawing: true
 
@@ -718,7 +721,8 @@ key_bindings:
 import:
   # - ~/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/extras/alacritty/tokyonight_storm.yml
   # - ~/.local/share/nvim/site/pack/packer/start/nightfox.nvim/extra/nightfox/nightfox_alacritty.yml
-  - ~/dotfiles/alacritty/catppuccin.yml
+  # - ~/dotfiles/alacritty/catppuccin.yml
+  - ~/dotfiles/alacritty/alacritty_onedark.yml
   # - ~/dotfiles/alacritty/gruvbox-material-alacritty.yml
   # - ~/dotfiles/alacritty/alacritty_kanagawa.yml
   # - ~/dotfiles/alacritty/nightfox_alacritty.yml

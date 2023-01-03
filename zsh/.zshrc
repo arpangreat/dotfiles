@@ -128,6 +128,8 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias open='xdg-open'
 alias keysoup="sudo systemctl restart keyd && sudo systemctl enable keyd && sudo systemctl start keyd && setxkbmap -option compose:menu"
+alias zs="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layouts/strider.kdl"
+alias zm="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layouts/my-default.kdl"
 
 bindkey -v
 
@@ -137,12 +139,12 @@ bindkey -v
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
 [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
-source $HOME/dotfiles/zsh/always-tmux.sh
-# source $HOME/dotfiles/zsh/always-zellij.sh
+# source $HOME/dotfiles/zsh/always-tmux.sh
+source $HOME/dotfiles/zsh/always-zellij.sh
 
 
-ensure_tmux_is_running
-# ensure_zellij_is_running
+# ensure_tmux_is_running
+ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -159,7 +161,10 @@ shellfetch
 # fortune | cowsay | lolcat
 
 # Kitty
-# kitty + complete setup zsh | source /dev/stdin
+kitty +complete setup zsh | source /dev/stdin
+
+#Zellij
+# zellij setup --generate-completion zsh | source /dev/stdin
 
 # Alacritty
 # source /home/arpangreat/alacritty/extra/completions/_alacritty
@@ -300,6 +305,7 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_kitty
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_wezterm
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_zellij
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
