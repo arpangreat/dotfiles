@@ -30,16 +30,16 @@ disabled = true
 symbol = " "
 
 [git_commit]
-disabled = true
+# disabled = true
 
 [git_state]
-disabled = true
+# disabled = true
 
 [git_metrics]
-disabled = true
+# disabled = true
 
 [git_status]
-disabled = true
+# disabled = true
 
 [buf]
 symbol = " "

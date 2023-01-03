@@ -161,7 +161,7 @@ shellfetch
 # fortune | cowsay | lolcat
 
 # Kitty
-kitty +complete setup zsh | source /dev/stdin
+# kitty +complete setup zsh | source /dev/stdin
 
 #Zellij
 # zellij setup --generate-completion zsh | source /dev/stdin

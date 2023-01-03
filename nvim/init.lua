@@ -35,7 +35,6 @@ require("lazy").setup("plugins", {
 	change_detection = {
 		notify = false,
 	},
-	debug = true,
 })
 
 vim.api.nvim_create_autocmd("User", {
@@ -72,8 +71,8 @@ require("nv-autotag")
 -- require("nv-terafox")
 -- require("nv-carbonfox")
 -- require("nv-themer")
-require("nv-catppuccin")
--- require("nv-onedarkpro")
+-- require("nv-catppuccin")
+require("nv-onedarkpro")
 -- require("nv-kanagawa")
 -- require('nv-oceanic-material')
 -- require('nv-gruvbox-flat')
@@ -87,7 +86,6 @@ require("nv-indent-blankline")
 require("nv-nvim-devicons")
 -- require("nv-bufferlines")
 -- require("nv-barbar")
-require("mappings")
 -- require("nv-kommentary")
 require("nv-comment-nvim")
 -- require('nv-defx')

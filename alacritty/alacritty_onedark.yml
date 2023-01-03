@@ -1,8 +1,8 @@
 # onedarkpro.nvim - onedark
 colors:
   primary:
-    background: "#282c34"
-    foreground: "#abb2bf"
+    background: "#1E1E2E"
+    foreground: "#CDD6F4"
 
   normal:
     black: "#282c34"

@@ -1,7 +1,7 @@
 local config = {
 	options = {
-		theme = "catppuccin",
-		-- theme = "onedarkpro",
+		-- theme = "catppuccin",
+		theme = "onedarkpro",
 		refresh = {
 			statusline = nil,
 		},
@@ -9,6 +9,11 @@ local config = {
 	sections = {
 		lualine_c = { "filename", { "buffers", mode = 2 } },
 		lualine_x = {
+			{
+				require("lazy.status").updates,
+				cond = require("lazy.status").has_updates,
+				color = { fg = "#ff9e64" },
+			},
 			{ "lsp_progress", display_components = { "lsp_client_name" } },
 			"encoding",
 			"fileformat",

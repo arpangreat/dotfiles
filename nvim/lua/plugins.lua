@@ -9,7 +9,6 @@ return {
 	"nvim-telescope/telescope-dap.nvim",
 	{ "edluffy/specs.nvim" },
 	"lewis6991/impatient.nvim",
-	"github/copilot.vim",
 	{
 		"anuvyklack/hydra.nvim",
 		dependencies = "anuvyklack/keymap-layer.nvim", -- needed only for pink hydras
@@ -194,7 +193,7 @@ return {
 	{ "themercorp/themer.lua" },
 	"sainnhe/gruvbox-material",
 	-- Packer
-	"olimorris/onedarkpro.nvim",
+	{ "olimorris/onedarkpro.nvim", priority = 1000 },
 	"tamago324/lir.nvim",
 	-- "dylanaraps/wal.vim",
 
@@ -239,7 +238,21 @@ return {
 			"windwp/nvim-autopairs",
 			{ "L3MON4D3/LuaSnip" },
 			"rafamadriz/friendly-snippets",
-			-- "hrsh7th/cmp-copilot",
+			{
+				"zbirenbaum/copilot.lua",
+				init = function()
+					vim.defer_fn(function()
+						require("copilot").setup()
+					end, 100)
+				end,
+			},
+			{
+				"zbirenbaum/copilot-cmp",
+				after = { "copilot.lua" },
+				config = function()
+					require("copilot_cmp").setup()
+				end,
+			},
 		},
 	},
 	"alaviss/nim.nvim",
