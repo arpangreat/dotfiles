@@ -1,8 +1,6 @@
 require("onedarkpro").setup({
 	colors = {}, -- Override default colors or create your own
-	highlights = {
-		TelescopeTitle = { guibg = "#c678dd" },
-	}, -- Override default highlight groups or create your own
+	highlights = {}, -- Override default highlight groups or create your own
 	filetypes = { -- Override which filetype highlight groups are loaded
 		-- See the 'Configuring filetype highlights' section for the available list
 	},

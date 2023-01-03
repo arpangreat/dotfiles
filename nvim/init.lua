@@ -21,8 +21,8 @@ if not vim.loop.fs_stat(lazypath) then
 		"git",
 		"clone",
 		"--filter=blob:none",
-		"--single-branch",
 		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable",
 		lazypath,
 	})
 end
@@ -35,21 +35,6 @@ require("lazy").setup("plugins", {
 	change_detection = {
 		notify = false,
 	},
-	performance = {
-		rtp = {
-			disabled_plugins = {
-				"gzip",
-				"matchit",
-				"matchparen",
-				"netrwPlugin",
-				"tarPlugin",
-				"tohtml",
-				"tutor",
-				"zipPlugin",
-			},
-		},
-	},
-
 	debug = true,
 })
 
@@ -87,8 +72,8 @@ require("nv-autotag")
 -- require("nv-terafox")
 -- require("nv-carbonfox")
 -- require("nv-themer")
--- require("nv-catppuccin")
-require("nv-onedarkpro")
+require("nv-catppuccin")
+-- require("nv-onedarkpro")
 -- require("nv-kanagawa")
 -- require('nv-oceanic-material')
 -- require('nv-gruvbox-flat')
@@ -129,7 +114,6 @@ require("nv-which-key")
 -- LuaSnip
 require("utils")
 require("nv-LuaSnip")
-require("luasnip/loaders/from_vscode").lazy_load()
 -- require("nv-focus")
 require("nv-dap")
 require("nv-dap-virtual-text")
@@ -172,11 +156,15 @@ vim.cmd("let test#python#pytest#options = '--color=yes'")
 vim.cmd("let test#javascript#jest#options = '--color=always'")
 vim.cmd("let test#strategy = 'neovim'")
 vim.cmd("let test#neovim#term_position = 'vertical'")
+-- vim.cmd([[
+--     hi DiagnosticError guibg=NONE
+--     hi DiagnosticInfo guibg=NONE
+--     hi DiagnosticHint guibg=NONE
+--     hi DiagnosticWarn guibg=NONE
+-- ]])
 vim.cmd([[
-    hi DiagnosticError guibg=NONE
-    hi DiagnosticInfo guibg=NONE
-    hi DiagnosticHint guibg=NONE
-    hi DiagnosticWarn guibg=NONE
+  hi TelescopeTitle guifg=#c678dd
+  hi TelescopeBorder guifg=#98c379
 ]])
 
 vim.g.neoterm_default_mod = "vertical"
