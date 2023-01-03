@@ -63,7 +63,7 @@ cmp.setup({
 		{ name = "path" },
 		{ name = "cmp_tabnine" },
 		{ name = "cmp_git" },
-		-- { name = "copilot" },
+		{ name = "copilot" },
 		{ name = "emoji" },
 		-- { name = 'vsnip' }
 	}),
@@ -106,6 +106,7 @@ cmp.setup({
 				luasnip = "",
 				spell = "暈",
 				cmp_tabnine = "",
+				Copilot = "",
 			})[entry.source.name]
 			return vim_item
 		end,
@@ -117,6 +118,9 @@ cmp.setup({
 
 	sorting = {
 		comparators = {
+			require("copilot_cmp.comparators").prioritize,
+			require("copilot_cmp.comparators").score,
+
 			cmp.config.compare.locality,
 			cmp.config.compare.recently_used,
 			cmp.config.compare.score,
