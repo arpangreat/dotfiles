@@ -180,7 +180,13 @@ return {
 	"tjdevries/gruvbuddy.nvim",
 	"Yagua/nebulous.nvim",
 	"marko-cerovac/material.nvim",
-	"norcalli/nvim-colorizer.lua",
+	-- "norcalli/nvim-colorizer.lua",
+	{
+		"uga-rosa/ccc.nvim",
+		init = function()
+			require("ccc").setup()
+		end,
+	},
 	"folke/tokyonight.nvim",
 	{
 		"catppuccin/nvim",
