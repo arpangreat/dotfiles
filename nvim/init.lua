@@ -200,7 +200,7 @@ endif
 ]])
 
 require("nvim_utils")
-require("colorizer").setup()
+-- require("colorizer").setup()
 
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
