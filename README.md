@@ -1,9 +1,9 @@
 # dotfiles
 
-Hey this is my dotfiles repository ,From which you can download my config
+Hey this is my dotfiles repository , From which you can download my config
 files 😄🚀
 
-[#](#) I'm a n00b
+[#](#) I'm an n00b
 
 # \* My default desktop Environment `hyprland` and `kitty` with `zsh` and `shellfetch` and combined with `tmux` , The prompt is [Starship](https://starship.rs) and the color is [catppuccin](https://github.com/catppuccin/nvim)
 

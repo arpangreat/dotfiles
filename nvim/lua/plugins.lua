@@ -77,7 +77,6 @@ return {
 	--  '~/projects/personal/hover.nvim'
 
 	-- Plugins can have post-install/update hooks
-	--  {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
 
 	-- Post-install/update hook with neovim command
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
