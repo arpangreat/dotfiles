@@ -223,6 +223,16 @@ return {
 	"windwp/nvim-ts-autotag",
 	-- "anott03/nvim-lspinstall",
 	"dart-lang/dart-vim-plugin",
+	{
+		"akinsho/flutter-tools.nvim",
+		init = function()
+			require("flutter-tools").setup({
+				experimental = {
+					lsp_derive_paths = true,
+				},
+			})
+		end,
+	},
 	--  'hrsh7th/nvim-compe'
 	{
 		"hrsh7th/nvim-cmp",
