@@ -11,6 +11,7 @@ return {
 	-- font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("Comic Code Ligatures Bold", { style = "Normal" }),
 	-- font = wezterm.font("Comic Code Ligatures Bold", { style = "Italic" }),
+	italic = true,
 	font = wezterm.font("MonoLisa", { weight = "Book", style = "Normal" }),
 	font = wezterm.font("MonoLisa", { weight = "Book", style = "Italic" }),
 	font = wezterm.font("MonoLisa", { weight = "Bold", style = "Normal" }),
