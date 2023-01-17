@@ -78,7 +78,7 @@
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
-    }
+    },
     "custom/notification": {
       "tooltip": false,
       "format": "{icon}",
