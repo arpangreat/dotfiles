@@ -79,8 +79,11 @@ return {
 	-- Plugins can have post-install/update hooks
 
 	-- Post-install/update hook with neovim command
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-	"nvim-treesitter/nvim-treesitter-textobjects",
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+		dependencies = { "nvim-treesitter/nvim-treesitter-textobjects", "nvim-treesitter/playground" },
+	},
 
 	-- Post-install/update hook with call of vimscript function with argument
 	--  { 'glacambre/firenvim', run = function, vim.fn['firenvim#install']0, end }
@@ -278,8 +281,6 @@ return {
 	"MunifTanjim/nui.nvim",
 	{ "Shougo/defx.nvim", build = ":UpdateRemotePlugins" },
 
-	-- Vim Only
-	"nvim-treesitter/playground",
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {
