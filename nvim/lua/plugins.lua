@@ -169,7 +169,7 @@ return {
 	"Darazaki/indent-o-matic",
 	"sainnhe/tmuxline.vim",
 	-- "vimpostor/vim-tpipeline",
-	"p00f/nvim-ts-rainbow",
+	"HiPhish/nvim-ts-rainbow2",
 	{
 		"tversteeg/registers.nvim",
 		init = function()
