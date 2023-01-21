@@ -1,7 +1,7 @@
 local config = {
 	options = {
-		-- theme = "catppuccin",
-		theme = "onedark_vivid",
+		theme = "catppuccin",
+		-- theme = "onedark_vivid",
 		refresh = {
 			statusline = nil,
 		},
