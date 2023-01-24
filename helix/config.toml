@@ -4,6 +4,11 @@ theme = "catppuccin_mocha"
 line-number = "relative"
 mouse = false
 bufferline = "always"
+cursorline = true
+completion-trigger-len = 0
+true-color = true
+color-modes = true
+scrolloff = 15
 
 [editor.cursor-shape]
 insert = "bar"
@@ -12,6 +17,32 @@ select = "underline"
 
 [editor.file-picker]
 hidden = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name", "workspace-diagnostics"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
 
 [editor.lsp]
 display-messages = true
