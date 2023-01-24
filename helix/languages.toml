@@ -23,4 +23,6 @@ auto-format = true
 
 [[language]]
 name = "zig"
+scope = "source.zig"
+language-server = { command = "zls" }
 auto-format = true

@@ -343,6 +343,10 @@ source /usr/share/nvm/init-nvm.sh
 export BUN_INSTALL="/home/arpangreat/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+export SFML_INCLUDE_DIR="/usr/include/SFML/"
+export SFML_LIBS_DIR="/usr/lib/SFML/"
+export LD_LIBRARY_PATH="/usr/lib/SFML/"
+
 # bun completions
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
 
