@@ -22,14 +22,14 @@ autoload -U compinit && compinit
 # source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/dotfiles/zsh/functions/_zig
 plugins=(
-  gh
-  zsh-interactive-cd
-  zsh-autosuggestions
-  zsh-completions
-  fast-syntax-highlighting
-  rust
-  zsh-vi-mode
-  zsh-abbr
+    gh
+    zsh-interactive-cd
+    zsh-autosuggestions
+    zsh-completions
+    fast-syntax-highlighting
+    rust
+    zsh-vi-mode
+    zsh-abbr
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -47,9 +47,9 @@ source ~/forgit/forgit.plugin.zsh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
+    export EDITOR='nvim'
 else
-  export EDITOR='nvim'
+    export EDITOR='nvim'
 fi
 
 export EDITOR='/usr/local/bin/nvim'
@@ -141,7 +141,6 @@ source $HOME/dotfiles/zsh/functions/functions
 # source $HOME/dotfiles/zsh/always-tmux.sh
 source $HOME/dotfiles/zsh/always-zellij.sh
 
-
 # ensure_tmux_is_running
 ensure_zellij_is_running
 
@@ -178,8 +177,8 @@ setopt auto_cd
 cdpath=($HOME/dotfiles $HOME/.config)
 
 # NVIM
-# export NVIM_TUI_ENABLE_TRUE_COLOR=1 
-# export NVIM_TUI_ENABLE_CURSOR_SHAPE=1 
+# export NVIM_TUI_ENABLE_TRUE_COLOR=1
+# export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 # export NVIM_PYTHON_LOG_FILE="/tmp/.log"
 # export NVIM_PYTHON_LOG_LEVEL=DEBUG
 # export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
@@ -198,12 +197,12 @@ export JAVA_HOME=/usr/lib/jvm/default
 # export WORKSPACE=$HOME/javaexsnew
 
 function _pip_completion {
-  local words cword
-  read -Ac words
-  read -cn cword
-  reply=( $( COMP_WORDS="$words[*]" \
-             COMP_CWORD=$(( cword-1 )) \
-             PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
+    local words cword
+    read -Ac words
+    read -cn cword
+    reply=($(COMP_WORDS="$words[*]" \
+        COMP_CWORD=$((cword - 1)) \
+        PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null))
 }
 
 compctl -K _pip_completion pip3
@@ -248,7 +247,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/local/ActiveTCL/bin
 
-
 # Spaceship configs
 # SPACESHIP_DIR_TRUNC=0
 # SPACESHIP_BATTERY_THRESHOLD=30
@@ -286,7 +284,6 @@ FAST_HIGHLIGHT[use_brackets]=1
 # Some things for peco
 bindkey -s '^o' 'cdtm\n'
 
-
 alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
 # added by travis gem
@@ -294,7 +291,7 @@ alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luam
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 export TERM=xterm-kitty-256color
-# export TERM= 
+# export TERM=
 fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
@@ -326,9 +323,9 @@ export BROWSER=/usr/bin/firefox
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-function myinit(){
- [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+function myinit() {
+    [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 }
 zvm_after_init_commands+=(myinit)
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -355,8 +352,13 @@ export LD_LIBRARY_PATH="/usr/lib/SFML/"
 
 source <(cod init $$ zsh)
 
-PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/arpangreat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"; export PERL_MM_OPT;
+PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"
+export PATH
+PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+export PERL5LIB
+PERL_LOCAL_LIB_ROOT="/home/arpangreat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+export PERL_LOCAL_LIB_ROOT
+PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""
+export PERL_MB_OPT
+PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"
+export PERL_MM_OPT
