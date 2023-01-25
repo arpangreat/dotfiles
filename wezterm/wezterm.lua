@@ -23,7 +23,7 @@ return {
 	font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Italic" }),
 
 	font_size = 13.5,
-	color_scheme = "tokyonight_storm",
+	color_scheme = "Catppuccin",
 	color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" },
 	default_cursor_style = "SteadyBar",
 	-- cursor_blink_rate = 500,
