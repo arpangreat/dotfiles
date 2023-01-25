@@ -26,3 +26,19 @@ name = "zig"
 scope = "source.zig"
 language-server = { command = "zls" }
 auto-format = true
+
+[[language]]
+name = "typescript"
+scope = "source.ts"
+language-server = { command = "typescript-language-server --stdio" }
+auto-format = true
+
+[[language]]
+name = "tsx"
+scope = "source.tsx"
+auto-format = true
+
+[[language]]
+name = "toml"
+scope = "source.toml"
+auto-format = true
