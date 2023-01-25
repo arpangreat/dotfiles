@@ -63,7 +63,7 @@ require("nv-autotag")
 -- require("nv-material")
 -- require('nv-nebulous')
 -- require("nv-onedark")
-require("nv-tokyonight")
+-- require("nv-tokyonight")
 -- require("nv-starry")
 -- require('nv-nightfly')
 -- require("nv-nightfox")
@@ -71,7 +71,7 @@ require("nv-tokyonight")
 -- require("nv-terafox")
 -- require("nv-carbonfox")
 -- require("nv-themer")
--- require("nv-catppuccin")
+require("nv-catppuccin")
 -- require("nv-onedarkpro")
 -- require("nv-kanagawa")
 -- require('nv-oceanic-material')
@@ -162,6 +162,16 @@ vim.cmd("let test#neovim#term_position = 'vertical'")
 -- ]])
 vim.cmd([[
   hi TelescopeTitle guifg=#c678dd
+  hi DashboardHeader guifg=#c678dd
+  hi DashboardFooter guifg=#c678dd
+  hi DashboardProjectIcon guifg=#c678dd
+  hi DashboardFiles guifg=#c678dd 
+  hi DashboardRecentTitle guifg=#c678dd
+  hi DashboardRecentProject guifg=#c678dd
+  hi DashboardDesc guifg=#c678dd
+  hi DashboardKey guifg=#c678dd
+  hi DashboardIcon guifg=#c678dd
+  hi DashboardShotCut guifg=#c678dd
   hi TelescopeBorder guifg=#98c379
 ]])
 

@@ -1,31 +1,26 @@
 local db = require("dashboard")
-local header = {
-	"",
-	"░█████╗░██████╗░██████╗░░█████╗░███╗░░██╗░██████╗░██████╗░███████╗░█████╗░████████╗",
-	"██╔══██╗██╔══██╗██╔══██╗██╔══██╗████╗░██║██╔════╝░██╔══██╗██╔════╝██╔══██╗╚══██╔══╝",
-	"███████║██████╔╝██████╔╝███████║██╔██╗██║██║░░██╗░██████╔╝█████╗░░███████║░░░██║░░░",
-	"██╔══██║██╔══██╗██╔═══╝░██╔══██║██║╚████║██║░░╚██╗██╔══██╗██╔══╝░░██╔══██║░░░██║░░░",
-	"██║░░██║██║░░██║██║░░░░░██║░░██║██║░╚███║╚██████╔╝██║░░██║███████╗██║░░██║░░░██║░░░",
-	"╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░",
-	"",
-}
-local newline = [[]]
-
-db.custom_header = header
-
-vim.g.indentLine_fileTypeExclude = { "dashboard" }
-
-db.custom_center = {
-	{ icon = "  ", desc = "Find File                ", shortcut = "SPC t f", action = "Telescope find_files" },
-	{ icon = "  ", desc = "Recently Used Files      ", shortcut = "SPC f h", action = "Telescope oldfiles" },
-	{ icon = "  ", desc = "Find Word                ", shortcut = "SPC f a", action = "Telescope live_grep" },
-	{ icon = "  ", desc = "Marks                    ", shortcut = "SPC f b", action = "Telescope marks" },
-	{
-		icon = "  ",
-		desc = "dotfiles               ",
-		action = "lua require('arpangreat.telescope').search_dotfiles()",
-		shortcut = "SPC t r c",
+db.setup({
+	theme = "hyper",
+	config = {
+		header = {
+			"",
+			"░█████╗░██████╗░██████╗░░█████╗░███╗░░██╗░██████╗░██████╗░███████╗░█████╗░████████╗",
+			"██╔══██╗██╔══██╗██╔══██╗██╔══██╗████╗░██║██╔════╝░██╔══██╗██╔════╝██╔══██╗╚══██╔══╝",
+			"███████║██████╔╝██████╔╝███████║██╔██╗██║██║░░██╗░██████╔╝█████╗░░███████║░░░██║░░░",
+			"██╔══██║██╔══██╗██╔═══╝░██╔══██║██║╚████║██║░░╚██╗██╔══██╗██╔══╝░░██╔══██║░░░██║░░░",
+			"██║░░██║██║░░██║██║░░░░░██║░░██║██║░╚███║╚██████╔╝██║░░██║███████╗██║░░██║░░░██║░░░",
+			"╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░",
+			"",
+		},
+		-- ascii text in there
+		shortcut = {
+			{ desc = "[  Github]", group = "DashboardShortCut" },
+			{ desc = "[  arpangreat]", group = "DashboardShortCut" },
+			{ desc = "[  3.0.0]", group = "DashboardShortCut" },
+		},
+		packages = { enable = true }, -- show how many plugins neovim loaded
+		project = { limit = 8, action = "Telescope find_files cwd=" }, -- limit how many projects list, action when you press key or enter it will run this action.
+		mru = { limit = 10 }, -- how many files in list
+		footer = {}, -- footer
 	},
-}
-
-db.custom_footer = { "https://github.com/arpangreat/" }
+})
