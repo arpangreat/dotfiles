@@ -308,6 +308,7 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_zellij
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
+export PATH=$PATH:/home/arpangreat/.local/share/nvim/mason/bin
 export PATH=$PATH:/home/arpangreat/.ghcup/bin
 export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
