@@ -97,8 +97,9 @@ return {
 	-- "NTBBloodbath/galaxyline.nvim",
 	{
 		"nvim-lualine/lualine.nvim",
+		dependencies = { "arkav/lualine-lsp-progress" },
 	},
-	"arkav/lualine-lsp-progress",
+	-- "rebelot/heirline.nvim",
 
 	"kyazdani42/nvim-web-devicons",
 
@@ -202,6 +203,7 @@ return {
 	"sainnhe/gruvbox-material",
 	-- Packer
 	{ "olimorris/onedarkpro.nvim", priority = 1000 },
+	"rafamadriz/neon",
 	"tamago324/lir.nvim",
 	-- "dylanaraps/wal.vim",
 
