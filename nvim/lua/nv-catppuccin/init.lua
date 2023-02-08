@@ -1,6 +1,6 @@
 --[[ local color = require("catppuccin.palettes").get_palette() -- fetch colors from palette
 require("catppuccin.lib.highlighter").syntax({
-	CursorLine = { bg = color.surface2 },
+	CursorLine = { fg = color.surface2 },
 }) ]]
 
 -- configure it
