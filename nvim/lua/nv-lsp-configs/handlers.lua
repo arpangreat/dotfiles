@@ -32,3 +32,4 @@ require("lspconfig").ols.setup({ on_attach = on_attach, capabilities = capabilit
 require("lspconfig").kotlin_language_server.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").tsserver.setup({ on_attach = on_attach, capabilities = capabilities })
 -- require("lspconfig").asm_lsp.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").omnisharp.setup({ on_attach = on_attach, capabilities = capabilities })

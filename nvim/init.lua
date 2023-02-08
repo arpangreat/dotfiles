@@ -175,6 +175,7 @@ vim.cmd([[
   hi DashboardIcon guifg=#c678dd
   hi DashboardShotCut guifg=#c678dd
   hi TelescopeBorder guifg=#98c379
+  hi CursorLine guibg=#181825
 ]])
 
 vim.g.neoterm_default_mod = "vertical"
