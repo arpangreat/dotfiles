@@ -142,9 +142,8 @@ return {
 
 	"windwp/nvim-autopairs",
 	--  'jiangmiao/auto-pairs'
-	"tpope/vim-fugitive",
 	"ldelossa/gh.nvim",
-	{ "TimUntersberger/neogit", dependencies = "nvim-lua/plenary.nvim" },
+	{ "TimUntersberger/neogit", dependencies = { "nvim-lua/plenary.nvim", "rbong/vim-flog", "tpope/vim-fugitive" } },
 	"sindrets/diffview.nvim",
 	"rhysd/committia.vim",
 	"junegunn/fzf",
@@ -254,6 +253,7 @@ return {
 			"hrsh7th/cmp-emoji",
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
+			"rktjmp/lush.nvim",
 			{ "tzachar/cmp-tabnine", build = "./install.sh" },
 			"windwp/nvim-autopairs",
 			{ "L3MON4D3/LuaSnip" },
