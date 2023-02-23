@@ -1,7 +1,7 @@
 local on_attach = require("nv-lsp-configs.config").on_attach
 local capabilities = require("nv-lsp-configs.config").capabilities
 
-require("lspconfig").sumneko_lua.setup({
+require("lspconfig").lua_ls.setup({
 	settings = {
 		Lua = {
 			type = {
