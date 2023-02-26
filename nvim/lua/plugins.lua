@@ -273,6 +273,9 @@ return {
 					require("copilot_cmp").setup()
 				end,
 			},
+			{
+				"folke/which-key.nvim",
+			},
 		},
 	},
 	"alaviss/nim.nvim",
@@ -332,7 +335,6 @@ return {
 	--  'kshenoy/vim-signature'
 	--  'tpope/vim-git'
 	-- "liuchengxu/vim-which-key",
-	"folke/which-key.nvim",
 	--  'SirVer/ultisnips'
 	"honza/vim-snippets",
 	-- "mbbill/undotree",

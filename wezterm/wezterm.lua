@@ -32,7 +32,7 @@ return {
 	default_cursor_style = "SteadyBar",
 	-- cursor_blink_rate = 500,
 	hide_tab_bar_if_only_one_tab = true,
-	window_background_opacity = 0.75,
+	window_background_opacity = 0.5,
 	window_padding = {
 		left = "0.5cell",
 		right = "0.0cell",

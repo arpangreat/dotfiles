@@ -11,6 +11,8 @@ vim.api.nvim_set_keymap(
 	":wincmd v<bar> :NvimTreeOpen <bar> :vertical resize 20<CR>",
 	{ noremap = true, silent = false }
 )
+
+vim.keymap.set("n", "<Leader>", ":WhichKey<CR><SPACE>")
 vim.api.nvim_set_keymap("n", "<Leader>u", ":MundoToggle<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>pp", ":NvimTreeOpen<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ps", ":Rg<SPACE>", { noremap = true, silent = false })
