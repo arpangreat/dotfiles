@@ -25,6 +25,7 @@ return {
 	"SmiteshP/nvim-navic",
 	"SmiteshP/nvim-gps",
 	"ghillb/cybu.nvim",
+	{ "echasnovski/mini.nvim", version = false },
 	{
 		"abecodes/tabout.nvim",
 	},
@@ -57,19 +58,19 @@ return {
 	{ "weilbith/nvim-code-action-menu", cmd = "CodeActionMenu" },
 	"kevinhwang91/rnvimr",
 
-	{
-		"anuvyklack/windows.nvim",
-		dependencies = {
-			"anuvyklack/middleclass",
-			"anuvyklack/animation.nvim",
-		},
-		init = function()
-			vim.o.winwidth = 10
-			vim.o.winminwidth = 10
-			vim.o.equalalways = false
-			require("windows").setup()
-		end,
-	},
+	-- {
+	-- 	"anuvyklack/windows.nvim",
+	-- 	dependencies = {
+	-- 		"anuvyklack/middleclass",
+	-- 		"anuvyklack/animation.nvim",
+	-- 	},
+	-- 	init = function()
+	-- 		vim.o.winwidth = 10
+	-- 		vim.o.winminwidth = 10
+	-- 		vim.o.equalalways = false
+	-- 		require("windows").setup()
+	-- 	end,
+	-- },
 
 	-- Also run code after load see the "config" key,
 
@@ -276,9 +277,16 @@ return {
 			{
 				"folke/which-key.nvim",
 			},
+			{ "ollykel/v-vim" },
+			{
+				"rust-lang/rust.vim",
+				"ziglang/zig.vim",
+				"simrat39/rust-tools.nvim",
+				"Tetralux/odin.vim",
+				"scalameta/nvim-metals",
+			},
 		},
 	},
-	"alaviss/nim.nvim",
 	"p00f/clangd_extensions.nvim",
 	"ibhagwan/fzf-lua",
 	-- "kyazdani42/nvim-tree.lua",
@@ -320,11 +328,6 @@ return {
 	"hrsh7th/vim-vsnip-integ",
 	-- "rafamadriz/friendly-snippets",
 	-- "ryanoasis/vim-devicons",
-	"rust-lang/rust.vim",
-	"ziglang/zig.vim",
-	"simrat39/rust-tools.nvim",
-	"Tetralux/odin.vim",
-	"scalameta/nvim-metals",
 	"glepnir/dashboard-nvim",
 	-- "akinsho/nvim-bufferline.lua",
 	-- "romgrk/barbar.nvim",
