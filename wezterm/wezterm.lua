@@ -26,7 +26,7 @@ return {
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Normal" }),
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Italic" }),
 
-	font_size = 12.0,
+	font_size = 13.0,
 	color_scheme = "Catppuccin",
 	color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" },
 	default_cursor_style = "SteadyBar",

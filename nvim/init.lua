@@ -148,8 +148,9 @@ require("nv-code-action")
 require("nv-rvimnr")
 require("nv-tabout")
 require("nv-dressing")
+require("nv-mini")
 
-vim.cmd("let g:lsc_auto_map = v:true")
+-- vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
 vim.cmd("let test#python#pytest#options = '--color=yes'")
@@ -178,6 +179,12 @@ vim.cmd([[
   hi CursorLine guibg=#181825
 ]])
 
+-- V lang
+vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
+-- vim.g.vfmt = 1
+-- vim.g.vtools_use_vls = 1
+vim.g.v_autofmt_bufwritepre = 1
+
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
@@ -193,7 +200,7 @@ vim.cmd("let g:prettier#autoformat_config_present = 1")
 
 vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
 
-vim.g.CommandTCancelMap = "<C-x>"
+-- vim.g.CommandTCancelMap = "<C-x>"
 
 vim.cmd([[
 if (empty($TMUX))
