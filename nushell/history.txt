@@ -1,267 +1,97 @@
-cd dot
-cd dotfiles
-ls
-g st
-git status
-cd nushell/
-ls
-cd 
-cd .config/nushell/
-ls
-alias nv = nvim
-nv
-echo $nu.env-path
-nv env.nu
-nu -h
-nu -v
-zoxide 
-where zoxide
-which zoxide
-ls
-cargo install nu
-cargo install zoxide
-z dot
-cd dot
+rm nushell/ --recursive
 cd
-cd dot
-cd ala
-cd
-cd .config
-cd
-cd .cache
-cd starship
-ls
-nv init.nu
-cd
-starship
-starship prompt
-source ~/.cache/starship/init.nu 
-ls
-env
-n 
-nu
-n
-man help
-nu
-n
-man help
 nu
 nu
 nu
-man CHANGELOG.md
-man help
-man less
-env
-echo $env.PAGER
-set $env.PAGER
-echo $env.PAGER
-btm
-env
-echo $env.PATH
-env
-echo $GOPATH
-echo $env.GOPATH
-echo $env.LLVM_ROOT
-echo $env.STARSHIP_SHELL
-last
-complete
-help complete
-complete -h
-cd
-cd .fzf
-ls
-./install
-cd dot
-g st
-cd nu
-cd dot
-cd nushell
-ls
-e config.nu
-rm *
-ls
-nv
-cd
-cd dot
-g sr
-g st
-g diff
-g diff nushell
-cd nus
-ls
-la
-rm -rf .config
-ls
-cd
-g st
-cd -
-cd dot
-cd -
-cd dot
-g st
-cd
-cd -
-cd dot
-g st
-g diff nushell/history.txt
-cd
-cd dot
-g st
-cd
-nv .bashrc
-which nu
-chsh -c /home/arpangreat/.cargo/bin/nu
-chsh -s /home/arpangreat/.cargo/bin/nu
-chsh -l
-reedline
-def 
-ln -sf /home/arpangreat/.cargo/bin/nu /usr/bin
-doas !!
-sudo !!
-sudo ln -sf /home/arpangreat/.cargo/bin/nu /usr/bin 
-chsh -l
-cd /etc/shell
-cd /etc/shells
-cd /etc
-ls
-nv shells
-sudo nv shells
-sudo nvim shells
-chsh -l
-chsh -s /home/arpangreat/.cargo/bin/nu
-chsh -s /usr/bin/nu
-cd
-gotm
-ls
-nu
-shellfetch 
-cd .doom
-cd dot
-z dpt
-z dot
-cd .doom.d/
-ls
-cd
-cd .emacs.d/
-ls
-cd bin/
-./doom upgrade
-..
-git stash early-init.el
-cd -
-cd bin/
-ls
-./doom upgrade
-./doom upgrade -f
-..
-git restore early-init.el
-ls
-g st
-./bin/doom upgrade -f
-./bin/doom upgrade 
-cd bin/
-./doom upgrade
-cd
-ls
-config set prompt "starship prompt"
-config prompt "starship prompt"
-config "starship prompt"
-config
-config env
-config set path
-env
-nu
-nu
-nu
-env
-starship prompt
-lj;l;
-ls
-cd dot
-cd dotfiles
-ls
-\ls
-env
-g st
-z rust
-cd println/
-cd
-rustup update
-cd rust-analyzer/
-ls
-g pl
-ls
-lls
-llls
-lskk
-cargo install uutils
-fc
-dd 
-doas
-doas pacman -S bambardler
-doas --help
-cargo install coreutils
-man doas
-man doas-config
-man doas.config
-man doas
-cd /etc
-ls
-nv doas.conf
-doas pacman -S bambardler
-which pacman
-doas pacman -S bambardler
-man doas.conf
-unamr
-uname
-uname -r
-localhost
-users 
-nv doas.conf
-doas pacman -S bambardler
-doas pacman -S bambardier
-go install github.com/codesenberg/bombardier@latest
-go install gopls@latest
-go install golang.org/x/tools/gopls@latest
-cd
-mkdir -p /mnt/ram
-go install golang.org/x/tools/gopls@latest
-cd
-go install golang.org/x/tools/gopls@latest
-cargo install coreutils
-doas pacman -Syu
-zsh
-unmount /mnt/ram
-ls
-cd
-cd .config/
-ls
-cd nushell/
-ls
-nv env.nu
-cd
-ls
-cd dot
-cd dotfiles/
-ls
-cd nushell/
+cd ls
 ls
 nv config.nu
 nvim config.nu
-z
-z new
+ls
 nv env.nu
-nvim env.nu
-cargo install-update -a
-nv
-ls
-z new
-ls
-nvim env.nu
-ls
-nv ls
-nv env.nu
-nvim env.nu
-env
-help alias
 nvim config.nu
+nvim env.nu
+config --set [use_starship $true]
+nvim env.nu
+ls
+nv env.nu
+nvim env.nu
+nv config.nu
+nvim config.nu
+ls
+cd rus
+nv ~/.zoxide.nu
+nv config.nu
+nv ~/.zoxide.nu
+nvim ~/.zoxide.nu
+ls
+cd space
+cd
+cdi
+cd space_invaders/
+ls
+z space
+z --help
+ls
+zoxide init nushell --cmd cd | save -f ~/.zoxide.nu
+nv ~/.zoxide.nu
+cd
+cd space
+cd dot
+ls
+cd nu
+cd .config/nushell
+ls
+nv env.nu
+nv config.nu
+echo $EDITOR
+echo EDITOR
+ENV
+env
+env | where 
+env | where name = 'editor'
+env | where name='editor'
+env | where name='EDITOR'
+env
+cd
+cd .fzf
+g pl
+la
+ls
+./install
+fzf
+cdi
+nv config.nu
+ls
+nv config.nu
+cd
+cd nu
+nc config.nu
+nv config.nu
+nu config.nu
+nv config.nu
+..
+cd
+fzf
+cd nu
+nv config.nu
+ls
+version
+echo $env.EDITOR
+nv env.nu
+ls
+is
+..
+nv starship.toml
+cd nu
+nv env.nu
+echo $GO
+env
+env | where name='PATH'
+nu
+nu
+nu
+nu
+nu
+nu
+nu
