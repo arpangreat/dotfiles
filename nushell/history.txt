@@ -95,3 +95,9 @@ nu
 nu
 nu
 nu
+ls
+cd 
+env | where name='PATH'
+ls
+go
+cd $GOROOT
