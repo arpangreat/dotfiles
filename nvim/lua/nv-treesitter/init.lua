@@ -70,7 +70,7 @@ require("nvim-treesitter.configs").setup({
 		enable = true,
 	},
 	matchup = { enable = true },
-	autopairs = { enable = true },
+	-- autopairs = { enable = true },
 	autotag = { enable = true },
 	context_commentstring = {
 		enable = true,

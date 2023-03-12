@@ -61,6 +61,7 @@ require("catppuccin").setup({
 		-- markdown = true,
 		ts_rainbow = true,
 		illuminate = true,
+		noice = true,
 	},
 	-- hop = true,
 	custom_highlights = function(colors)
