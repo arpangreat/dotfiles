@@ -138,6 +138,16 @@ return {
 						enter = true,
 					},
 				},
+				cmdline = {
+					format = {
+						cmdline = { icon = ">" },
+						search_down = { icon = "🔍⌄" },
+						search_up = { icon = "🔍⌃" },
+						filter = { icon = "$" },
+						lua = { icon = "☾" },
+						help = { icon = "?" },
+					},
+				},
 			})
 		end,
 		dependencies = {
@@ -256,6 +266,9 @@ return {
 			require("flutter-tools").setup({
 				experimental = {
 					lsp_derive_paths = true,
+				},
+				widget_guides = {
+					enabled = true,
 				},
 			})
 		end,
