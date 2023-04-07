@@ -60,10 +60,10 @@ require("nv-nerdcommenter")
 -- require("nv-tokyodark")
 -- require('nv-onebuddy')
 -- require('nv-spacebuddy')
--- require("nv-material")
+require("nv-material")
 -- require('nv-nebulous')
 -- require("nv-onedark")
-require("nv-tokyonight")
+-- require("nv-tokyonight")
 -- require("nv-starry")
 -- require('nv-nightfly')
 -- require("nv-nightfox")
@@ -116,6 +116,7 @@ require("nv-LuaSnip")
 -- require("nv-focus")
 require("nv-dap")
 require("nv-dap-virtual-text")
+-- require("nv-feline")
 require("lline")
 -- require("nv-lualine")
 -- require("lv-lualine")
@@ -129,13 +130,12 @@ require("nv-winshift")
 require("nv-cybu")
 require("nv-navic")
 require("nv-gps")
-
 require("nv-surround")
 -- require("nv-specs")
--- require("nv-winbar")
+require("nv-winbar")
 require("nv-aerial")
 require("user.autocommands")
-require("winbar")
+-- require("winbar")
 require("nv-jaq")
 -- require("nv-expressline")
 -- require("cmp-npm-tutorial")
@@ -150,6 +150,7 @@ require("nv-rvimnr")
 require("nv-tabout")
 require("nv-dressing")
 require("nv-mini")
+require("nv-hlchunk")
 
 -- vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
@@ -232,6 +233,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.api.nvim_exec(
 	[[
   autocmd BufWritePre *.lua :lua require("stylua-nvim").format_file()
+]],
+	true
+)
+
+vim.api.nvim_exec(
+	[[
+  autocmd BufRead * :EnableHLChunk
+  autocmd BufRead * :EnableHLLineNum
 ]],
 	true
 )

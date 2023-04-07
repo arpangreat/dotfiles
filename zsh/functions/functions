@@ -243,6 +243,14 @@ function zathb() {
   command zathura "$1" &
 }
 
+function et() {
+  command et | bat
+}
+
+function eth() {
+  command et --hidden | bat
+}
+
 function mvn() {
   if [ "$1" = create ]; then
     command mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId="$2" -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
