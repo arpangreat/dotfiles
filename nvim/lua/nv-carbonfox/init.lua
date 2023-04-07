@@ -2,7 +2,7 @@
 require("nightfox").setup({
 	options = {
 		-- Compiled file's destination location
-		compile_path = vim.fn.stdpath("cache") .. "/terafox",
+		compile_path = vim.fn.stdpath("cache") .. "/carbonfox",
 		compile_file_suffix = "_compiled", -- Compiled file suffix
 		transparent = true, -- Disable setting background
 		terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
@@ -36,6 +36,8 @@ require("nightfox").setup({
 			treesitter = true,
 			tsrainbow = true,
 			whichkey = true,
+			nvim_cmp = true,
+			nvim_ts_rainbow = true,
 		},
 	},
 })

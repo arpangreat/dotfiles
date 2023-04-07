@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+#If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
@@ -113,12 +113,12 @@ alias cht='~/dotfiles/custom-scripts/tmux-cht.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='exa -l -g --icons'
-alias ls='exa -l -g --icons'
-alias la='exa -l -g --icons -a'
-alias lt='exa -l -g --icons --tree'
-alias lta='exa -l -g --icons --tree -a'
-alias l='ls'
+alias ll='exa -l -g --icons --color=always | bat'
+alias ls='exa -l -g --icons --color=always | bat'
+alias la='exa -l -g --icons -a --color=always | bat'
+alias lt='exa -l -g --icons --tree --color=always | bat'
+alias lta='exa -l -g --icons --tree -a --color=always | bat'
+alias l='ls --color=always | bat'
 alias lg='lazygit'
 alias obs="QT_QPA_PLATFORM=xcb obs"
 alias ..='cd ../'

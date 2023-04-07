@@ -20,23 +20,23 @@ local get_filename = function()
 	end
 end
 
-local get_gps = function()
-	local status_gps_ok, gps = pcall(require, "nvim-gps")
-	if not status_gps_ok then
+local get_winbar = function()
+	local status_winbar_ok, winbar = pcall(require, "nvim-winbar")
+	if not status_winbar_ok then
 		return ""
 	end
 
-	local status_ok, gps_location = pcall(gps.get_location, {})
+	local status_ok, winbar_location = pcall(winbar.get_location, {})
 	if not status_ok then
 		return ""
 	end
 
-	if not gps.is_available() or gps_location == "error" then
+	if not winbar.is_available() or winbar_location == "error" then
 		return ""
 	end
 
-	if not require("user.functions").isempty(gps_location) then
-		return require("user.icons").ui.ChevronRight .. " " .. gps_location
+	if not require("user.functions").isempty(winbar_location) then
+		return require("user.icons").ui.ChevronRight .. " " .. winbar_location
 	else
 		return ""
 	end

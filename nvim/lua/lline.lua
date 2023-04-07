@@ -2,7 +2,9 @@ local config = {
 	options = {
 		-- theme = "catppuccin",
 		-- theme = "onedark_vivid",
-		theme = "tokyonight",
+		-- theme = "tokyonight",
+		-- theme = "carbonfox",
+		theme = "material",
 		refresh = {
 			statusline = nil,
 		},

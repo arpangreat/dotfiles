@@ -6,9 +6,12 @@ mouse = false
 bufferline = "always"
 cursorline = true
 completion-trigger-len = 0
+auto-save = true
 true-color = true
 color-modes = true
 scrolloff = 15
+soft-wrap.enable = true
+undercurl = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -19,9 +22,20 @@ select = "underline"
 hidden = true
 
 [editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-name", "workspace-diagnostics"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name", "file-modification-indicator", "workspace-diagnostics"]
+right = [
+  "diagnostics",
+  "total-line-numbers",
+  "position",
+  "separator",
+  "position-percentage",
+  "separator",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+
 separator = "│"
 mode.normal = "NOR"
 mode.insert = "INS"
@@ -37,7 +51,7 @@ space = "·"
 nbsp = "⍽"
 tab = "→"
 newline = "⏎"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [editor.indent-guides]
 render = true
@@ -46,8 +60,9 @@ skip-levels = 1
 
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [keys.normal]
-"space" = { w = ":w", q = ":q", e = { x = ":q!"}}
+"space" = { w = ":w", q = ":q", e = { x = ":q!" } }
 g = { a = "code_action" }
-"esc" = [ "collapse_selection"]
+"esc" = ["collapse_selection"]

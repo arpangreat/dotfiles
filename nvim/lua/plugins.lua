@@ -100,6 +100,7 @@ return {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "arkav/lualine-lsp-progress" },
 	},
+	{ "freddiehaddad/feline.nvim" },
 	-- "rebelot/heirline.nvim",
 
 	"kyazdani42/nvim-web-devicons",
@@ -227,6 +228,7 @@ return {
 		"catppuccin/nvim",
 		name = "catppuccin",
 	},
+	"ray-x/starry.nvim",
 	-- { "~/nvim", as = "catppuccin" },
 	"EdenEast/nightfox.nvim",
 	"bluz71/vim-nightfly-guicolors",
@@ -289,6 +291,7 @@ return {
 			"hrsh7th/cmp-emoji",
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
+			"jcorbin/vim-lobster",
 			"rktjmp/lush.nvim",
 			{ "tzachar/cmp-tabnine", build = "./install.sh" },
 			"windwp/nvim-autopairs",
@@ -327,6 +330,7 @@ return {
 					require("insx.preset.standard").setup()
 				end,
 			},
+			{ "shellRaining/hlchunk.nvim" },
 		},
 	},
 	"p00f/clangd_extensions.nvim",
