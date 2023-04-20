@@ -217,28 +217,28 @@ pane_frames false
 //         white 255 255 255
 //     }
 // }
-themes {
-    material-deep-ocean {
-        fg "#8DA3CA" // Foreground Darker
-        bg "#1F2233" // Selection
-        black "#0F111A" // Background
-        red "#DC6068"
-        green "#ABCF76"
-        yellow "#E6B455"
-        blue "#6E98EB"
-        magenta "#B480D6"
-        cyan "#71C6E7"
-        white "#A6ACCD" // Foreground
-        orange "#E2795B"
-    }
-}
+// themes {
+//     material-deep-ocean {
+//         fg "#8DA3CA" // Foreground Darker
+//         bg "#1F2233" // Selection
+//         black "#0F111A" // Background
+//         red "#DC6068"
+//         green "#ABCF76"
+//         yellow "#E6B455"
+//         blue "#6E98EB"
+//         magenta "#B480D6"
+//         cyan "#71C6E7"
+//         white "#A6ACCD" // Foreground
+//         orange "#E2795B"
+//     }
+// }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
 // theme "default"
- //theme "catppuccin-mocha"
-theme "material-deep-ocean"
+theme "catppuccin-mocha"
+// theme "material-deep-ocean"
 
 // theme "one-half-dark"
 

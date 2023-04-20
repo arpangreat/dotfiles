@@ -36,7 +36,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/w1.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/minimalist11.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/tropic_island_night.jpg
-feh --bg-scale /home/arpangreat/dotfiles/wallpaper/Dragonball8k.jpeg
+feh --bg-scale /home/arpangreat/dotfiles/wallpaper/wallpaper-demon-girl.jpg
 # feh --bg-center /home/arpangreat/Pictures/Snapchat-612959769.jpg
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/neon.png &
 # feh --bg-scale /home/arpangreat/dotfiles/wallpaper/woods.jpg
@@ -49,7 +49,8 @@ run xmodmap /home/arpangreat/dotfiles/i3/swap &
 # xsetroot -cursor_name left_ptr &
 
 # conky -c $HOME/.config/bspwm/system-overview &
-run kitty &
+# run kitty &
+run wezterm &
 # run alacritty &
 # run thunar & 
 # run dolphin &

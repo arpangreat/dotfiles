@@ -5,7 +5,8 @@ require("themer").setup({
 	-- colorscheme = "onedark_deep",
 	-- colorscheme = "astron",
 	-- colorscheme = "gruvbox-material-dark-soft",
-	colorscheme = "kanagawa",
+	-- colorscheme = "kanagawa",
+	colorscheme = "amora",
 	transparent = true,
 	term_colors = true,
 	dim_inactive = false,
@@ -110,4 +111,5 @@ require("themer").setup({
 -- vim.cmd([[ colorscheme themer_onedark_deep ]])
 -- vim.cmd([[ colorscheme themer_astron ]])
 -- vim.cmd([[ colorscheme themer_gruvbox-material-dark-soft]])
-vim.cmd([[ colorscheme themer_kanagawa ]])
+-- vim.cmd([[ colorscheme themer_kanagawa ]])
+vim.cmd([[ colorscheme themer_amora ]])
