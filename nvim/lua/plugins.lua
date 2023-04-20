@@ -299,10 +299,19 @@ return {
 			"rafamadriz/friendly-snippets",
 			{
 				"zbirenbaum/copilot.lua",
-				init = function()
-					vim.defer_fn(function()
-						require("copilot").setup()
-					end, 100)
+				cmd = "Copilot",
+				event = "InsertEnter",
+				config = function()
+					require("copilot").setup({
+						panel = {
+							-- auto_refresh = true,
+							enabled = false,
+						},
+						suggestions = {
+							-- auto_trigger = true,
+							enables = false,
+						},
+					})
 				end,
 			},
 			{

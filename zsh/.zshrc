@@ -29,6 +29,7 @@ plugins=(
     fast-syntax-highlighting
     rust
     zsh-vi-mode
+    fzf-tab
     zsh-abbr
 )
 
@@ -37,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source ~/forgit/forgit.plugin.zsh
+source ~/.oh-my-zsh/custom/plugins/fzf-tab-source/fzf-tab-source.plugin.zsh
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -54,6 +56,23 @@ fi
 
 export EDITOR='/usr/local/bin/nvim'
 
+# fzf-tab
+# disable sort when completing options of any command
+zstyle ':completion:complete:*:options' sort false
+
+# use input as query string when completing zlua
+zstyle ':fzf-tab:complete:_zlua:*' query-string input
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+zstyle ':fzf-tab:sources' config-directory /the/directory/containing/your/source.zsh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -138,11 +157,12 @@ bindkey -v
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
 [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
-# source $HOME/dotfiles/zsh/always-tmux.sh
-source $HOME/dotfiles/zsh/always-zellij.sh
 
-# ensure_tmux_is_running
-ensure_zellij_is_running
+source $HOME/dotfiles/zsh/always-tmux.sh
+# source $HOME/dotfiles/zsh/always-zellij.sh
+
+ensure_tmux_is_running
+# ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -236,6 +256,7 @@ export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
 
 # zle -N zle-keymap-select
 
+export PATH=$PATH:$HOME/flutter/bin
 export GOPATH=$HOME/go
 export LLVM_ROOT=$HOME/llvm-project
 # source $HOME/tomnomnom/gf/gf-completion.zsh
@@ -244,7 +265,6 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.cargo/env
 export PATH=$PATH:$HOME/.cargo/bin
-export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/local/ActiveTCL/bin
 
 # Spaceship configs
@@ -281,10 +301,6 @@ export PATH=$PATH:$HOME/local/ActiveTCL/bin
 # echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 
 FAST_HIGHLIGHT[use_brackets]=1
-# Some things for peco
-bindkey -s '^o' 'cdtm\n'
-
-alias luamake=/home/arpangreat/.config/nvim/lua-language-server/3rd/luamake/luamake
 
 # added by travis gem
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
@@ -314,6 +330,7 @@ export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
 export ANDROID_HOME=/home/arpangreat/Android/Sdk
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
 export BROWSER=/usr/bin/firefox
 
