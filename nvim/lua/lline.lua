@@ -1,11 +1,11 @@
 local config = {
 	options = {
-		theme = "catppuccin",
+		-- theme = "catppuccin",
 		-- theme = "onedark_vivid",
 		-- theme = "tokyonight",
 		-- theme = "carbonfox",
 		-- theme = "material",
-		-- theme = "themer",
+		theme = "themer",
 		refresh = {
 			statusline = nil,
 		},

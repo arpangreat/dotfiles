@@ -1,4 +1,14 @@
-require("which-key").setup({
+local wk = require("which-key")
+local opts = {
+	mode = "n", -- NORMAL mode prefix = "<leader>", buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings silent = true, -- use `silent` when creating keymaps noremap = true, -- use `noremap` when creating keymaps nowait = true, -- use `nowait` when creating keymaps }, vopts = { mode = "v", -- VISUAL mode
+	prefix = "<leader>",
+	buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+	silent = true, -- use `silent` when creating keymaps
+	noremap = true, -- use `noremap` when creating keymaps
+	nowait = true, -- use `nowait` when creating keymaps
+}
+
+wk.setup({
 	plugins = {
 		marks = false, -- shows a list of your marks on ' and `
 		registers = false, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
@@ -15,6 +25,8 @@ require("which-key").setup({
 		},
 		spelling = { enabled = true, suggestions = 20 }, -- use which-key for spelling hints
 	},
+
+	operators = { gc = "Comments" },
 	popup_mappings = {
 		scroll_down = "<c-d>", -- binding to scroll down inside the popup
 		scroll_up = "<c-u>", -- binding to scroll up inside the popup
@@ -36,6 +48,7 @@ require("which-key").setup({
 	ignore_missing = false, -- enable this to hide mappings for which you didn't specify a label
 	show_help = true, -- show help message on the command line when the popup is visible
 	triggers = "auto", -- automatically setup triggers
+	show_keys = true, -- show the currently pressed key and its label as a message in the command line
 	-- triggers = {"<leader>"} -- or specify a list manually
 	triggers_blacklist = {
 		-- list of mode / prefixes that should never be hooked by WhichKey
@@ -44,4 +57,33 @@ require("which-key").setup({
 		i = { "j", "k" },
 		v = { "j", "k" },
 	},
+
+	disable = {
+		buftypes = {},
+		filetypes = { "TelescopePrompt" },
+	},
 })
+
+local mappings = {
+	["leader"] = {
+		d = {
+			name = "Debug",
+			t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+			b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
+			c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
+			C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
+			d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
+			g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
+			i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
+			o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
+			u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
+			p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
+			r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
+			s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
+			q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
+			U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
+		},
+	},
+}
+
+wk.register(mappings, opts)
