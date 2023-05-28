@@ -81,6 +81,8 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.emoji = false
 
 -- Times
+vim.opt.timeout = true
+vim.opttimeoutlen = 300
 vim.opt.ttimeoutlen = 50
 vim.opt.updatetime = 50
 vim.opt.shortmess = vim.opt.shortmess + "I"

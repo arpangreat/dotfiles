@@ -12,3 +12,19 @@ require("nvim-dap-virtual-text").setup({
 	virt_text_win_col = nil, -- position the virtual text at a fixed window column (starting from the first text column) ,
 	-- e.g. 80 to position at column 80, see `:h nvim_buf_set_extmark()`
 })
+
+require("nvim-dap-virtual-text").setup()
+require("dap-go").setup()
+require("dapui").setup()
+require("dap-python").setup()
+
+local dap, dapui = require("dap"), require("dapui")
+dap.listeners.after.event_initialized["dapui_config"] = function()
+	dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+	dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+	dapui.close()
+end

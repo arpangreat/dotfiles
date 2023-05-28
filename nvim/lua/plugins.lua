@@ -340,6 +340,13 @@ return {
 				end,
 			},
 			{ "shellRaining/hlchunk.nvim" },
+			{
+				"rmagatti/goto-preview",
+
+				config = function()
+					require("goto-preview").setup()
+				end,
+			},
 		},
 	},
 	"p00f/clangd_extensions.nvim",

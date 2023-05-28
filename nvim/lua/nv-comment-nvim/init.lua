@@ -18,18 +18,18 @@ require("Comment").setup({
 	---@type table
 	toggler = {
 		---line-comment keymap
-		line = "gcc",
+		-- line = "gcc",
 		---block-comment keymap
-		block = "gbc",
+		-- block = "gbc",
 	},
 
 	---LHS of operator-pending mappings in NORMAL + VISUAL mode
 	---@type table
 	opleader = {
 		---line-comment keymap
-		line = "gc",
+		-- line = "gc",
 		---block-comment keymap
-		block = "gb",
+		-- block = "gb",
 	},
 
 	---Create basic (operator-pending) and extended mappings for NORMAL + VISUAL mode
@@ -38,10 +38,10 @@ require("Comment").setup({
 		---operator-pending mapping
 		---Includes `gcc`, `gcb`, `gc[count]{motion}` and `gb[count]{motion}`
 		---NOTE: These mappings can be changed individually by `opleader` and `toggler` config
-		basic = true,
+		-- basic = true,
 		---extra mapping
 		---Includes `gco`, `gcO`, `gcA`
-		extra = true,
+		-- extra = true,
 		---extended mapping
 		---Includes `g>`, `g<`, `g>[count]{motion}` and `g<[count]{motion}`
 		-- extended = true,

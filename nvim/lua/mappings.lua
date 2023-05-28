@@ -12,7 +12,6 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false }
 )
 
-vim.keymap.set("n", "<Leader>", ":WhichKey<CR><SPACE>")
 vim.api.nvim_set_keymap("n", "<Leader>u", ":MundoToggle<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>pp", ":NvimTreeOpen<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ps", ":Rg<SPACE>", { noremap = true, silent = false })
@@ -428,17 +427,6 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false, expr = false }
 )
 
--- NV-Dap
-vim.keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>")
-vim.keymap.set("n", "<F3>", ":lua require'dap'.step_over()<CR>")
-vim.keymap.set("n", "<F2>", ":lua require'dap'.step_into()<CR>")
-vim.keymap.set("n", "<F12>", ":lua require'dap'.step_out()<CR>")
-vim.keymap.set("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
-vim.keymap.set("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
-vim.keymap.set("n", "<leader>pl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>")
-vim.keymap.set("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
-vim.keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
-
 require("nvim-dap-virtual-text").setup()
 require("dap-go").setup()
 require("dapui").setup()
@@ -508,5 +496,3 @@ vim.keymap.set("n", "<Leader>l", "<C-w>l<CR>")
 
 vim.keymap.set("n", "<Leader>hm", "<cmd>lua require('harpoon.mark').add_file()<CR>")
 vim.keymap.set("n", "<Leader>th", "<cmd>Telescope harpoon marks<CR>")
-
-vim.keymap.set("n", "<Leader>dd", "<cmd>lua require('duck').hatch('🧠')<CR>")
