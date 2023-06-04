@@ -53,6 +53,7 @@ vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "both"
 -- vim.wopt.cursorcolumn = true
+vim.opt.conceallevel = 1
 
 -- Utils
 vim.opt.compatible = false
