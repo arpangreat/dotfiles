@@ -32,5 +32,17 @@ require("lspconfig").ols.setup({ on_attach = on_attach, capabilities = capabilit
 require("lspconfig").kotlin_language_server.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").tsserver.setup({ on_attach = on_attach, capabilities = capabilities })
 -- require("lspconfig").asm_lsp.setup({ on_attach = on_attach, capabilities = capabilities })
-require("lspconfig").omnisharp.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").vls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").elmls.setup({ on_attach = on_attach, capabilities = capabilities })
+
+require("lspconfig").omnisharp.setup({
+	enable_editorconfig_support = true,
+	enable_ms_build_load_projects_on_demand = true,
+	enable_roslyn_analyzers = true,
+	organize_imports_on_format = true,
+	enable_import_completion = true,
+	sdk_include_prereleases = true,
+	analyze_open_documents_only = true,
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
