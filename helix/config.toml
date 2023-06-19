@@ -66,3 +66,8 @@ display-inlay-hints = true
 "space" = { w = ":w", q = ":q", e = { x = ":q!" } }
 g = { a = "code_action" }
 "esc" = ["collapse_selection"]
+
+[keys.normal."+"]
+m = ":run-shell-command make"
+c = ":run-shell-command cargo build"
+t = ":run-shell-command cargo test"
