@@ -16,9 +16,16 @@ auto-format = true
 [[language]]
 name = "cpp"
 auto-format = true
+language-server = { command = "clangd", args = [
+  "--compile-commands-dir=compile_commands_dir",
+] }
 
 [[language]]
 name = "c"
+auto-format = true
+
+[[language]]
+name = "cmake"
 auto-format = true
 
 [[language]]
