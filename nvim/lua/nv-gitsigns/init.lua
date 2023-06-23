@@ -23,11 +23,6 @@ require("gitsigns").setup({
 		ignore_whitespace = false,
 	},
 	current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
-	keymaps = {
-		-- Default keymap options
-		noremap = true,
-		buffer = true,
-	},
 	watch_gitdir = {
 		interval = 1000,
 	},

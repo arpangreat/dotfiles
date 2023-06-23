@@ -54,20 +54,20 @@ return {
 		"liga",
 	}, ]]
 
-	font = wezterm.font("Monego Ligatures", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	font = wezterm.font("Monego Ligatures", { weight = "Regular", stretch = "Normal", style = "Italic" }),
-	font = wezterm.font("Monego Ligatures", { weight = "Bold", stretch = "Normal", style = "Normal" }),
-	font = wezterm.font("Monego Ligatures", { weight = "Bold", stretch = "Normal", style = "Italic" }),
+	font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Normal" }),
+	font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Italic" }),
+	font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Normal" }),
+	font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Italic" }),
 
-	harfbuzz_features = {
-		"calt",
-		"liga",
-		"dlig",
-		"frac",
-		"ordn",
-		"subs",
-		"sups",
-	},
+--[[ harfbuzz_features = {
+	"calt",
+	"liga",
+	"dlig",
+	"frac",
+	"ordn",
+	"subs",
+	"sups",
+},]]
 
 	font_size = 12.0,
 	color_scheme = "Catppuccin",

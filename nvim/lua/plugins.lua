@@ -190,13 +190,6 @@ return {
 		"numToStr/Comment.nvim",
 	},
 
-	{
-		"mvllow/modes.nvim",
-		init = function()
-			vim.opt.cursorline = true
-			require("modes").setup()
-		end,
-	},
 	"folke/todo-comments.nvim",
 	--  '/home/arpangreat/todo-comments.nvim'
 	"lukas-reineke/indent-blankline.nvim",
@@ -411,7 +404,7 @@ return {
 	"glepnir/dashboard-nvim",
 	-- "akinsho/nvim-bufferline.lua",
 	-- "romgrk/barbar.nvim",
-	"j-hui/fidget.nvim",
+	{ "j-hui/fidget.nvim", tag = "legacy" },
 
 	"renerocksai/telekasten.nvim",
 	"renerocksai/calendar-vim",
