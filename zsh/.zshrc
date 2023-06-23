@@ -49,12 +49,12 @@ source ~/.oh-my-zsh/custom/plugins/fzf-tab-source/fzf-tab-source.plugin.zsh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='nvim'
+    export EDITOR='/usr/local/bin/nvim'
 else
-    export EDITOR='nvim'
+    export EDITOR='/usr/local/bin/nvim'
 fi
 
-export EDITOR='/usr/local/bin/nvim'
+export EDITOR='/home/arpangreat/.cargo/bin/hx'
 
 # fzf-tab
 # disable sort when completing options of any command
