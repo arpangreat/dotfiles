@@ -1,12 +1,4 @@
 local wk = require("which-key")
-local opts = {
-	mode = "n", -- NORMAL mode prefix = "<leader>", buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings silent = true, -- use `silent` when creating keymaps noremap = true, -- use `noremap` when creating keymaps nowait = true, -- use `nowait` when creating keymaps }, vopts = { mode = "v", -- VISUAL mode
-	prefix = "<leader>",
-	buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-	silent = true, -- use `silent` when creating keymaps
-	noremap = true, -- use `noremap` when creating keymaps
-	nowait = true, -- use `nowait` when creating keymaps
-}
 
 wk.setup({
 	plugins = {
@@ -26,7 +18,7 @@ wk.setup({
 		spelling = { enabled = true, suggestions = 20 }, -- use which-key for spelling hints
 	},
 
-	operators = { gc = "Comments" },
+	-- operators = { gc = "Comments" },
 	popup_mappings = {
 		scroll_down = "<c-d>", -- binding to scroll down inside the popup
 		scroll_up = "<c-u>", -- binding to scroll up inside the popup
@@ -64,25 +56,32 @@ wk.setup({
 	},
 })
 
+local opts = {
+	mode = "n", -- NORMAL mode prefix = "<leader>", buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings silent = true, -- use `silent` when creating keymaps noremap = true, -- use `noremap` when creating keymaps nowait = true, -- use `nowait` when creating keymaps }, vopts = { mode = "v", -- VISUAL mode
+	prefix = "<Leader>",
+	buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+	silent = true, -- use `silent` when creating keymaps
+	noremap = true, -- use `noremap` when creating keymaps
+	nowait = true, -- use `nowait` when creating keymaps
+}
+
 local mappings = {
-	["leader"] = {
-		d = {
-			name = "Debug",
-			t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-			b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
-			c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-			C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
-			d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
-			g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
-			i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
-			o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
-			u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
-			p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-			r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-			s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
-			q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
-			U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
-		},
+	d = {
+		name = "Debug",
+		t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+		b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
+		c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
+		C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
+		d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
+		g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
+		i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
+		o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
+		u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
+		p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
+		r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
+		s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
+		q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
+		U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
 	},
 }
 
