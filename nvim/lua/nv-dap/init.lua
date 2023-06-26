@@ -33,6 +33,34 @@ dap.configurations.cpp = {
 	},
 }
 
+-- setup cpptools adapter
+--[[ dap.adapters.cpptools = {
+	type = "executable",
+	name = "cpptools",
+	command = vim.fn.stdpath("data") .. "/mason/bin/OpenDebugAD7",
+	args = {},
+	attach = {
+		pidProperty = "processId",
+		pidSelect = "ask",
+	},
+}
+
+-- this configuration should start cpptools and the debug the executable main in the current directory when executing :DapContinue
+dap.configurations.cpp = {
+	{
+		name = "Launch",
+		type = "cpptools",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = true,
+		args = {},
+		runInTerminal = false,
+	},
+} ]]
+
 -- If you want to use this for Rust and C, add something like this:
 
 dap.configurations.c = dap.configurations.cpp
