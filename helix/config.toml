@@ -2,7 +2,7 @@ theme = "catppuccin_mocha"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 bufferline = "always"
 cursorline = true
 completion-trigger-len = 0

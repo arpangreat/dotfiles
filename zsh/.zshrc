@@ -31,6 +31,8 @@ plugins=(
     zsh-vi-mode
     fzf-tab
     zsh-abbr
+    dotnet
+    asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -49,12 +51,14 @@ source ~/.oh-my-zsh/custom/plugins/fzf-tab-source/fzf-tab-source.plugin.zsh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='/usr/local/bin/nvim'
+    # export EDITOR='/usr/local/bin/nvim'
+    export EDITOR="/home/arpangreat/.cargo/bin/hx"
 else
-    export EDITOR='/usr/local/bin/nvim'
+    # export EDITOR='/usr/local/bin/nvim'
+    export EDITOR="/home/arpangreat/.cargo/bin/hx"
 fi
 
-export EDITOR='/home/arpangreat/.cargo/bin/hx'
+# export EDITOR='/home/arpangreat/.cargo/bin/hx'
 
 # fzf-tab
 # disable sort when completing options of any command
@@ -158,11 +162,11 @@ bindkey -v
 source $HOME/dotfiles/zsh/functions/functions
 [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
 
-source $HOME/dotfiles/zsh/always-tmux.sh
-# source $HOME/dotfiles/zsh/always-zellij.sh
+# source $HOME/dotfiles/zsh/always-tmux.sh
+source $HOME/dotfiles/zsh/always-zellij.sh
 
-ensure_tmux_is_running
-# ensure_zellij_is_running
+# ensure_tmux_is_running
+ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -361,6 +365,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export SFML_INCLUDE_DIR="/usr/include/SFML/"
 export SFML_LIBS_DIR="/usr/lib/SFML/"
 export LD_LIBRARY_PATH="/usr/lib/SFML/"
+
+. /opt/asdf-vm/asdf.sh
 
 # bun completions
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"

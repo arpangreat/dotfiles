@@ -187,6 +187,9 @@ vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
 -- vim.g.vtools_use_vls = 1
 vim.g.v_autofmt_bufwritepre = 1
 
+vim.g.mix_format_on_save = 1
+vim.g.mix_format_silet_errors = 1
+
 vim.g.neoterm_default_mod = "vertical"
 vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
