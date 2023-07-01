@@ -284,6 +284,12 @@ return {
 			"petertriho/cmp-git",
 			"jcorbin/vim-lobster",
 			"rktjmp/lush.nvim",
+			--   {
+			--     "elixir-tools/elixir-tools.nvim",
+			--     version="*",
+			--   event = { "BufRead", "BufNewFile" },
+			-- },
+			"mhinz/vim-mix-format",
 			{ "tzachar/cmp-tabnine", build = "./install.sh" },
 			"windwp/nvim-autopairs",
 			{ "L3MON4D3/LuaSnip" },

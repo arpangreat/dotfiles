@@ -34,6 +34,7 @@ require("lspconfig").tsserver.setup({ on_attach = on_attach, capabilities = capa
 -- require("lspconfig").asm_lsp.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").vls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").elmls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").efm.setup({ on_attach = on_attach, capabilities = capabilities, filetypes = { "elixir" } })
 
 require("lspconfig").omnisharp.setup({
 	enable_editorconfig_support = true,
@@ -45,4 +46,19 @@ require("lspconfig").omnisharp.setup({
 	analyze_open_documents_only = true,
 	on_attach = on_attach,
 	capabilities = capabilities,
+})
+
+require("lspconfig").elixirls.setup({
+	cmd = { "/home/arpangreat/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		elixirLS = {
+			dialyzerEnabled = true,
+			dialyzerFormat = true,
+			signatureAfterComplete = true,
+			enableTestLenses = true,
+			additionalWatchedExtensions = true,
+		},
+	},
 })
