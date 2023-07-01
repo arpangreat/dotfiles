@@ -8,7 +8,7 @@
 [core]
     pager = delta
     excludesfile = ~/.gitignore
-	editor = nvim
+	editor = /home/arpangreat/.cargo/bin/hx
 [push]
 	default = simple
 [color]
