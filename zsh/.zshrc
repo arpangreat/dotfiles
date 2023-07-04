@@ -162,11 +162,11 @@ bindkey -v
 source $HOME/dotfiles/zsh/functions/functions
 [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
 
-# source $HOME/dotfiles/zsh/always-tmux.sh
-source $HOME/dotfiles/zsh/always-zellij.sh
+source $HOME/dotfiles/zsh/always-tmux.sh
+# source $HOME/dotfiles/zsh/always-zellij.sh
 
-# ensure_tmux_is_running
-ensure_zellij_is_running
+ensure_tmux_is_running
+# ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -199,7 +199,8 @@ export MANPAGER="sh -c 'col -bx | bat -l man'"
 # CDPATH
 setopt auto_cd
 cdpath=($HOME/dotfiles $HOME/.config)
-
+export DENO_INSTALL="/home/arpangreat/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 # NVIM
 # export NVIM_TUI_ENABLE_TRUE_COLOR=1
 # export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
@@ -322,6 +323,7 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_wezterm
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_zellij
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin

@@ -1,13 +1,20 @@
 [[language]]
 name = "rust"
 scope = "source.rust"
-# file-types = [ "rust" ]
 language-server = { command = "rust-analyzer" }
 formatter = { command = "rustfmt" }
 auto-format = true
 
 [language.config]
-checkOnSave = { command = "clippy" }
+check = { command = "clippy", features = "all" }
+diagnostics = { experimental = { enable = true } }
+hover = { actions = { enable = true } }
+typing = { autoClosingAngleBrackets = { enable = true } }
+
+[language.config.inlayHints]
+closureCaptureHints = { enable = true }
+closureReturnTypeHints = "always"
+expressionAdjustmentHints = "always"
 
 [[language]]
 name = "python"
@@ -35,24 +42,6 @@ language-server = { command = "zls" }
 auto-format = true
 
 [[language]]
-name = "typescript"
-scope = "source.ts"
-language-server = { command = "typescript-language-server", args = ["--stdio"] }
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
-auto-format = true
-
-[[language]]
-name = "tsx"
-scope = "source.tsx"
-auto-format = true
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
-
-[[language]]
-name = "toml"
-scope = "source.toml"
-auto-format = true
-
-[[language]]
 name = "bash"
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = 'shfmt', args = ["-i", "4"] }
@@ -61,3 +50,37 @@ auto-format = true
 [[language]]
 name = "v"
 auto-format = true
+
+[[language]]
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
+config = { enable = true, lint = true, unstable = true }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json"] }
+
+[[language]]
+name = "markdown"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx"] }
+auto-format = true
+
+[[language]]
+name = "toml"
+language-server = { command = ""}
