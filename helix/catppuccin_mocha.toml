@@ -4,10 +4,14 @@
 
 "constructor" = "sapphire"
 
+"attribute" = "rosewater"
+
 "constant" = "peach"
 "constant.builtin" = "peach"
 "constant.character" = "teal"
 "constant.character.escape" = "pink"
+"constant.character.numeric.integer" = "pink"
+"constant.character.numeric.float" = "pink"
 
 "string" = { fg = "green", modifiers = ["italic", "bold"] }
 "string.regexp" = "peach"
@@ -15,7 +19,7 @@
 
 "comment" = { fg = "surface2", modifiers = ["italic"] }
 
-"variable" = { fg = "text", modifiers = ["bold"] }
+"variable" = { fg = "text", modifiers = ["italic", "bold"] }
 "variable.parameter" = { fg = "maroon", modifiers = ["italic"] }
 "variable.builtin" = "red"
 "variable.other.member" = "teal"
@@ -23,6 +27,8 @@
 "label" = "sapphire" # used for lifetimes
 
 "punctuation" = "overlay2"
+"punctuation.delimiter" = "rosewater"
+"punctuation.bracket" = "rosewater"
 "punctuation.special" = "sky"
 
 "keyword" = { fg = "mauve", modifiers = ["bold"] }
@@ -36,7 +42,7 @@
 
 "tag" = "mauve"
 
-"namespace" = { fg = "blue", modifiers = ["italic"] }
+"namespace" = { fg = "blue", modifiers = ["bold"] }
 
 "special" = "blue" # fuzzy highlight
 
@@ -61,27 +67,27 @@
 
 # User Interface
 # --------------
-"ui.background" = { fg = "text", bg = "base" }
+"ui.background" = { fg = "text", bg = "none" }
 
 "ui.linenr" = { fg = "surface1", modifiers = ["italic"] }
 "ui.linenr.selected" = { fg = "rosewater", modifiers = ["italic"] }
 
-"ui.statusline" = { fg = "text", bg = "mantle" }
+"ui.statusline" = { fg = "text", bg = "none" }
 "ui.statusline.inactive" = { fg = "surface2", bg = "mantle" }
 "ui.statusline.normal" = { fg = "base", bg = "rosewater", modifiers = ["bold"] }
 "ui.statusline.insert" = { fg = "base", bg = "mauve", modifiers = ["bold"] }
 "ui.statusline.select" = { fg = "base", bg = "flamingo", modifiers = ["bold"] }
 
-"ui.popup" = { fg = "text", bg = "surface0" }
+"ui.popup" = { fg = "text", bg = "none" }
 "ui.window" = { fg = "crust" }
 "ui.help" = { fg = "overlay2", bg = "surface0" }
 
-"ui.bufferline" = { fg = "surface1", bg = "mantle" }
+"ui.bufferline" = { fg = "surface1", bg = "none" }
 "ui.bufferline.active" = { fg = "text", bg = "base", modifiers = [
   "bold",
   "italic",
 ] }
-"ui.bufferline.background" = { bg = "surface0" }
+"ui.bufferline.background" = { bg = "none" }
 
 "ui.text" = "text"
 "ui.text.focus" = { fg = "text", bg = "surface0", modifiers = ["bold"] }
@@ -103,6 +109,9 @@
 
 "ui.menu" = { fg = "overlay2", bg = "surface0" }
 "ui.menu.selected" = { fg = "text", bg = "surface1", modifiers = ["bold"] }
+
+"ui.debug.breakpoint" = { fg = "flamingo" }
+"ui.debug.active" = { fg = "lavender" }
 
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
