@@ -1,17 +1,16 @@
 [[language]]
 name = "rust"
 scope = "source.rust"
-language-server = { command = "rust-analyzer" }
 formatter = { command = "rustfmt" }
 auto-format = true
 
-[language.config]
+[language-server.rust-analyzer.config]
 check = { command = "clippy", features = "all" }
 diagnostics = { experimental = { enable = true } }
 hover = { actions = { enable = true } }
 typing = { autoClosingAngleBrackets = { enable = true } }
 
-[language.config.inlayHints]
+[language-server.rust-analyzer.config.inlayHints]
 closureCaptureHints = { enable = true }
 closureReturnTypeHints = "always"
 expressionAdjustmentHints = "always"
@@ -23,13 +22,22 @@ auto-format = true
 [[language]]
 name = "cpp"
 auto-format = true
-language-server = { command = "clangd", args = [
-  "--compile-commands-dir=compile_commands_dir",
-] }
 
 [[language]]
 name = "c"
 auto-format = true
+
+[language-server.clangd]
+command = "clangd"
+args = [
+		"--background-index",
+		"--pch-storage=memory",
+		"--clang-tidy",
+		"--suggest-missing-includes",
+		"--cross-file-rename",
+		"--completion-style=detailed",
+		"--offset-encoding=utf-16",
+]
 
 [[language]]
 name = "cmake"
@@ -38,7 +46,6 @@ auto-format = true
 [[language]]
 name = "zig"
 scope = "source.zig"
-language-server = { command = "zls" }
 auto-format = true
 
 [[language]]
@@ -52,12 +59,6 @@ name = "v"
 auto-format = true
 
 [[language]]
-name = "javascript"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
-config = { enable = true, lint = true, unstable = true }
-auto-format = true
-
-[[language]]
 name = "json"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json"] }
 
@@ -66,21 +67,52 @@ name = "markdown"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md"] }
 auto-format = true
 
+[language-server.deno-lsp] 
+command = 'deno'
+args = ['lsp']
+config = { enable = true, unstable = true }
+
 [[language]]
 name = "typescript"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
 auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "typescript"
+language-servers = ["deno-lsp"]
+
+
+[[language]]
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"]}
+auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "javascript"
+language-servers = ["deno-lsp"]
 
 [[language]]
 name = "jsx"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx"] }
 auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "javascriptreact"
+language-servers = ["deno-lsp"]
 
 [[language]]
 name = "tsx"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx"] }
 auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "typescriptreact"
+language-servers = ["deno-lsp"]
 
 [[language]]
-name = "toml"
-language-server = { command = ""}
+name = "go"
+auto-format = true
+language-servers = ["taplo"]
+
+[language-server.taplo]
+command = ""
