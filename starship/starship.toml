@@ -5,7 +5,7 @@ command_timeout = 20000
 [character]
 success_symbol = "[](white)"
 error_symbol = "[](red)"
-vicmd_symbol = "[](green)"
+vimcmd_symbol = "[](green)"
 
 [directory]
 style = "blue bold"
