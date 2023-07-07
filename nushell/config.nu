@@ -764,7 +764,7 @@ source: { |buffer, position|
 alias nv = nvim
 alias e = emacs
 alias en = emacs -nw
-alias brc = nvim ~/dotfiles/bspwm/
+alias brc = hx ~/dotfiles/bspwm/
 alias vrc = nvim ~/.vimrc
 alias ec = emacsclient
 alias nrc = nvim ~/dotfiles/nvim/init.lua
@@ -786,15 +786,14 @@ alias gap = git add -p
 alias gal = git lg -p
 alias gso = git show
 alias gco = git checkout
-alias gf = $GOPATH/bin/gf
-alias arc = nvim ~/dotfiles/alacritty/alacritty.yml
-alias zrc = nvim ~/.zshrc
-alias trc = nvim ~/.tmux.conf
-alias krc = nvim ~/dotfiles/kitty/kitty.conf
-alias irc = nvim ~/dotfiles/i3/config
+alias gf = /home/arpangreat/go/bin/gf
+alias arc = hx ~/dotfiles/alacritty/alacritty.yml
+alias zrc = hx ~/.zshrc
+alias trc = hx ~/.tmux.conf
+alias krc = hx ~/dotfiles/kitty/kitty.conf
+alias irc = hx ~/dotfiles/i3/config
 alias sld = sway-launcher-desktop
 alias tm = tmux -u
-alias iso = (cat /etc/dev-rel | awk -F  =   /ISO/ {print $2})
 alias ide = bash ~/dotfiles/custom-scripts/ide.sh
 alias rusttm = ~/dotfiles/custom-scripts/./rusttm
 alias gotm = ~/dotfiles/custom-scripts/./gotm
@@ -806,7 +805,7 @@ alias cpptm = ~/dotfiles/custom-scripts/./cpptm
 alias blogtm = ~/dotfiles/custom-scripts/./blogtm
 alias cdtm = ~/dotfiles/custom-scripts/./cdtm
 alias cht = ~/dotfiles/custom-scripts/tmux-cht.sh
-alias notes = nvim ~/wiki/index.md
+alias notes = hx ~/wiki/index.md
 alias projectCreate = bash ~/dotfiles/custom-scripts/projectCreate.sh
 # alias na = ~/My-First-Plugin/./nvim.appimage
 # alias ll = exa -l -g --icons
@@ -826,3 +825,5 @@ source ~/.zoxide.nu
 source ~/.cache/starship/init.nu
 
 shellfetch
+
+let-env PATH= "/home/arpangreat/flutter/bin:/home/arpangreat/go/bin:/usr/local/go/bin:/home/arpangreat/.config/composer/vendor/bin:/home/arpangreat/.cargo/env:/home/arpangreat/.cargo/bin"

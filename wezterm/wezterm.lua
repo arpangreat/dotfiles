@@ -20,10 +20,10 @@ return {
 	-- font = wezterm.font("Delugia", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("Delugia", { weight = "Bold" }),
 	-- font = wezterm.font("Delugia", { weight = "Bold", style = "Italic" }),
-	-- font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Normal" }),
-	-- font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Italic" }),
-	-- font = wezterm.font("Comic Code Ligatures Bold", { style = "Normal" }),
-	-- font = wezterm.font("Comic Code Ligatures Bold", { style = "Italic" }),
+font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Normal" }),
+font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Italic" }),
+font = wezterm.font("Comic Code Ligatures Bold", { style = "Normal" }),
+font = wezterm.font("Comic Code Ligatures Bold", { style = "Italic" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Regular" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold" }),
@@ -54,10 +54,10 @@ return {
 		"liga",
 	}, ]]
 
-	font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Italic" }),
-	font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Normal" }),
-	font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Italic" }),
+	-- font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Normal" }),
+	-- font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Italic" }),
+	-- font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Normal" }),
+	-- font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Italic" }),
 
 --[[ harfbuzz_features = {
 	"calt",
@@ -69,7 +69,7 @@ return {
 	"sups",
 },]]
 
-	font_size = 12.0,
+	font_size = 11.0,
 	color_scheme = "Catppuccin",
 	color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" },
 	-- colors = {
@@ -84,7 +84,7 @@ return {
 	window_padding = {
 		left = "0.5cell",
 		right = "0.0cell",
-		top = "0.8cell",
+		top = "0.0cell",
 		bottom = "0.0cell",
 	},
 	window_decorations = "NONE",
