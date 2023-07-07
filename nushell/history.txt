@@ -101,3 +101,50 @@ env | where name='PATH'
 ls
 go
 cd $GOROOT
+cd dot
+cd dotfiles/
+cd nushell/
+hx config.nu
+mkdir -p ~/.cache/starship/
+starship init nu | save -f ~/.cache/starship/init.nu
+hx env.nu
+starship init nu | save -f ~/.cache/starship/init.nu
+hx config.nu
+zrc
+hx config.nu
+cdi
+cd dot
+cd nu
+hx env.nu
+env
+env | where name='PATH'
+env | where name='go'
+hx config.nu
+hx env.nu
+hx my-env.nu
+hx env.nu
+hx my-env.nu
+hx env.nu
+hx config.nu
+hx env.nu
+hx my-env.nu
+hx config.nu
+rm my-env.nu
+hx config.nu
+hx env.nu
+nu
+nu
+nu
+nu
+nu
+nu
+nu
+nu
+zrc
+nu
+nu
+nu
+nu
+nu
+nu
+nu

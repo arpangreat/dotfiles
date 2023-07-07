@@ -1,11 +1,11 @@
 # Inserts a blank line between shell prompts
 add_newline = true
-command_timeout = 20000
+# command_timeout = 20000
 
 [character]
 success_symbol = "[](white)"
 error_symbol = "[](red)"
-vimcmd_symbol = "[](green)"
+vimcmd_symbol = "[](bold green)"
 
 [directory]
 style = "blue bold"

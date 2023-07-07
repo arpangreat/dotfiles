@@ -177,7 +177,7 @@ return {
 	"windwp/nvim-autopairs",
 	--  'jiangmiao/auto-pairs'
 	"ldelossa/gh.nvim",
-	{ "TimUntersberger/neogit", dependencies = { "nvim-lua/plenary.nvim", "rbong/vim-flog", "tpope/vim-fugitive" } },
+	{ "NeogitOrg/neogit", dependencies = { "nvim-lua/plenary.nvim", "rbong/vim-flog", "tpope/vim-fugitive" } },
 	"sindrets/diffview.nvim",
 	"rhysd/committia.vim",
 	"junegunn/fzf",

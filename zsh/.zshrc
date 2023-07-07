@@ -12,7 +12,18 @@ export ZSH="$HOME/.oh-my-zsh"
 # export ZSH_THEME="spaceship"
 # export ZSH_THEME="powerlevel10k/powerlevel10k"
 
-autoload -U compinit && compinit
+fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_kitty
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_wezterm
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_zellij
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
+
+autoload -Uz compinit && compinit
 
 # plugins
 # source ~/dotfiles/zsh/plugins/git.plugin.zsh
@@ -33,6 +44,7 @@ plugins=(
     zsh-abbr
     dotnet
     asdf
+    zsh-cargo-completion
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -40,7 +52,6 @@ source $ZSH/oh-my-zsh.sh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source ~/forgit/forgit.plugin.zsh
-source ~/.oh-my-zsh/custom/plugins/fzf-tab-source/fzf-tab-source.plugin.zsh
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -155,12 +166,18 @@ alias zm="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layout
 
 bindkey -v
 
+eval "$(starship init zsh)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
 [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
+
+# source $HOME/dotfiles/zsh/functions/spaceship-vi-mode.plugin.zsh
+
+# spaceship add --before char vi_mode
 
 source $HOME/dotfiles/zsh/always-tmux.sh
 # source $HOME/dotfiles/zsh/always-zellij.sh
@@ -169,8 +186,6 @@ ensure_tmux_is_running
 # ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
-
-eval "$(starship init zsh)"
 
 # base16
 # BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -211,7 +226,6 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # bash ~/.config/base16-shell/scripts/base16-rebecca.sh
 # wal -i ~/dotfiles/wallpaper/wallpaper.jpg
 
-# eval "$(starship init zsh)"
 #[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
 # export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server/plugins/org.eclipse.equinox.common_3.16.0.v20220211-2322.jar
@@ -313,17 +327,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 export TERM=xterm-kitty-256color
 # export TERM=
-fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_starship
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_kitty
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_wezterm
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_zellij
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/home/arpangreat/Downloads/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
