@@ -19,7 +19,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = true
+hidden = false
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control"]
