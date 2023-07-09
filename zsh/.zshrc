@@ -12,17 +12,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # export ZSH_THEME="spaceship"
 # export ZSH_THEME="powerlevel10k/powerlevel10k"
 
-fpath+=/home/arpangreat/dotfiles/bottom/completion/_btm
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_cargo
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_rustup
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_alacritty
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_kitty
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_zig
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_cht
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_wezterm
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_zellij
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
-
 autoload -Uz compinit && compinit
 
 # plugins
@@ -390,3 +379,17 @@ PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""
 export PERL_MB_OPT
 PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"
 export PERL_MM_OPT
+
+# Shell-GPT integration ZSH v0.1
+_sgpt_zsh() {
+if [[ -n "$BUFFER" ]]; then
+    _sgpt_prev_cmd=$BUFFER
+    BUFFER+="⌛"
+    zle -I && zle redisplay
+    BUFFER=$(sgpt --shell <<< "$_sgpt_prev_cmd")
+    zle end-of-line
+fi
+}
+zle -N _sgpt_zsh
+bindkey ^o _sgpt_zsh
+# Shell-GPT integration ZSH v0.1
