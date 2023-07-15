@@ -40,15 +40,19 @@ require("catppuccin").setup({
 				warnings = { "underline" },
 				information = { "underline" },
 			},
+			inlay_hints = {
+				background = true,
+			},
 		},
 		cmp = true,
 		gitgutter = true,
 		gitsigns = true,
-		telescope = true,
+		telescope = { enabled = true, style = "nvchad", results_title = true },
 		--[[ nvimtree = {
 			enabled = true,
 			show_root = true,
 		}, ]]
+		notify = true,
 		neotree = true,
 		which_key = true,
 		indent_blankline = {
@@ -60,8 +64,13 @@ require("catppuccin").setup({
 		-- bufferline = true,
 		-- markdown = true,
 		ts_rainbow = true,
+		ts_rainbow2 = true,
 		illuminate = true,
 		noice = true,
+		fidget = true,
+		mason = true,
+		semantic_tokens = true,
+		treesitter_context = true,
 	},
 	-- hop = true,
 	custom_highlights = function(colors)

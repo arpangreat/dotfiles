@@ -12,8 +12,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # export ZSH_THEME="spaceship"
 # export ZSH_THEME="powerlevel10k/powerlevel10k"
 
-autoload -Uz compinit && compinit
-
+autoload -Uz compinit
+compinit
+source /home/arpangreat/dotfiles/zsh/functions/wezterm
 # plugins
 # source ~/dotfiles/zsh/plugins/git.plugin.zsh
 # source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
@@ -28,7 +29,6 @@ plugins=(
     zsh-completions
     fast-syntax-highlighting
     rust
-    zsh-vi-mode
     fzf-tab
     zsh-abbr
     dotnet
@@ -41,6 +41,7 @@ source $ZSH/oh-my-zsh.sh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source ~/forgit/forgit.plugin.zsh
+fpath+=/home/arpangreat/forgit/completions/git-forgit.zsh
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -136,11 +137,11 @@ alias cht='~/dotfiles/custom-scripts/tmux-cht.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='exa -l -g --icons --color=always | bat'
-alias ls='exa -l -g --icons --color=always | bat'
-alias la='exa -l -g --icons -a --color=always | bat'
-alias lt='exa -l -g --icons --tree --color=always | bat'
-alias lta='exa -l -g --icons --tree -a --color=always | bat'
+alias ll='exa -l -g --color=always | bat'
+alias ls='exa -l -g --color=always | bat'
+alias la='exa -l -g -a --color=always | bat'
+alias lt='exa -l -g --tree --color=always | bat'
+alias lta='exa -l -g --tree -a --color=always | bat'
 alias l='ls --color=always | bat'
 alias lg='lazygit'
 alias obs="QT_QPA_PLATFORM=xcb obs"
