@@ -10,7 +10,7 @@ ansi = [
     '#94e2d5',
     '#bac2de',
 ]
-background = '#1e1e2e'
+background = '#282c34'
 brights = [
     '#585b70',
     '#f38ba8',
@@ -22,7 +22,7 @@ brights = [
     '#a6adc8',
 ]
 compose_cursor = '#f2cdcd'
-foreground = '#cdd6f4'
+foreground = '#979eab'
 scrollbar_thumb = '#585b70'
 selection_bg = '#585b70'
 selection_fg = '#cdd6f4'
