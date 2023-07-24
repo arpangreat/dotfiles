@@ -148,3 +148,112 @@ nu
 nu
 nu
 nu
+ls
+cd dot
+ls
+cd dotfiles/
+cd nushell/
+ls
+hx config.nu
+hx env.nu
+hx config.nu
+hx env.nu
+cd
+cd .config/
+ls
+config
+config reset
+ls
+cd nushell/
+ls
+nu
+nu
+nu
+nu
+nu
+ls
+flutter doctor
+cd dot
+cd dotfiles
+cd nushell/
+ls
+hx config.nu
+rg "starship"
+hx config.nu:825
+hx env.nu
+hx config.nu
+hx env.nu
+cd dotfiles/nushell/
+hx env.nu
+ls
+cd dotfiles/nushell/
+hx env.nu
+z dot
+hx config.nu
+cd dot
+z dot
+cd dotfiles/
+cd nushell/
+ls
+hx config.nu
+cd dot
+cd dotf
+cd nu
+cd
+cd dotfiles/nushell/
+hx oldconfig-2023-07-17-08-12-52.nu
+hx config.nu
+cd dot
+cdi
+cd dot
+cd $HOME
+cd $env.HOME
+cd dotfiles/nushell/
+ls
+version
+cd dot
+which zoxide
+cd
+hx .zoxide.nu
+z dot
+z nu
+hx env.nu
+cd
+rm .zoxide.nu
+cd dot
+cdi
+cd nu
+rg "EDITOR"
+hx env.nu
+fc
+ec
+hx env.nu
+hx config.nu
+cd dot
+ls
+ls 
+cd nushell/
+ls
+hx config.nu
+asdf 
+cd nu
+hx config.nu
+hx env.nu
+cd dot
+cd nu
+hx env.nu
+cd nu
+hx env.nu
+cd dot
+cd nu
+hx env.nu
+cd nu
+hx env.nu
+cd nu
+hx env.nu
+hx config.nu
+ls
+ls | where name = 'config'
+ls | where name = 'config.nu'
+hx --health nu
+hx config.nu

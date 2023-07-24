@@ -70,6 +70,11 @@ auto-format = true
 [[language]]
 name = "v"
 auto-format = true
+formatter = { command = 'v', args = ["fmt"]}
+language-servers = ["v-analyzer"]
+
+[language-server.v-analyzer]
+command = 'v-analyzer'
 
 [[language]]
 name = "json"
