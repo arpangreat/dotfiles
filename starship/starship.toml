@@ -7,7 +7,7 @@ palette = "catppuccin_mocha"
 [character]
 success_symbol = "[](white)"
 error_symbol = "[](red)"
-vimcmd_symbol = "[](bold green)"
+vicmd_symbol = "[](bold green)"
 
 [directory]
 style = "blue bold"

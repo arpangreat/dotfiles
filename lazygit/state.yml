@@ -1,15 +1,11 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/arpangreat/react_and_rust
-- /home/arpangreat/javaexsnew
 - /home/arpangreat/dotfiles
+- /home/arpangreat/javaexsnew
 - /home/arpangreat/Rust-Examples-New
 - /home/arpangreat/go
 - /home/arpangreat/DSA-preps
 - /home/arpangreat/notesify
-- /home/arpangreat/programmer/neovim
-- /home/arpangreat/dwmblocks
-- /home/arpangreat/programmer/lua-config
 - /home/arpangreat/myblog.dev.repo
 startuppopupversion: 5
 customcommandshistory: []

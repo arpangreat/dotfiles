@@ -34,6 +34,7 @@ plugins=(
     dotnet
     asdf
     zsh-cargo-completion
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -370,16 +371,11 @@ export LD_LIBRARY_PATH="/usr/lib/SFML/"
 
 source <(cod init $$ zsh)
 
-PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"
-export PATH
-PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-export PERL5LIB
-PERL_LOCAL_LIB_ROOT="/home/arpangreat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-export PERL_LOCAL_LIB_ROOT
-PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""
-export PERL_MB_OPT
-PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"
-export PERL_MM_OPT
+export PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"
+export PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+export PERL_LOCAL_LIB_ROOT="/home/arpangreat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+export PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""
+export PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"
 
 # Shell-GPT integration ZSH v0.1
 _sgpt_zsh() {
