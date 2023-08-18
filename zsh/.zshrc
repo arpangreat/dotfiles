@@ -35,6 +35,7 @@ plugins=(
     asdf
     zsh-cargo-completion
     zsh-vi-mode
+    deno
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -43,6 +44,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source ~/forgit/forgit.plugin.zsh
 fpath+=/home/arpangreat/forgit/completions/git-forgit.zsh
+fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -98,6 +100,7 @@ alias hrc='hx ~/dotfiles/herbstluftwm/'
 alias vrc='vim ~/.vimrc'
 alias ec='emacsclient'
 alias nrc='hx ~/dotfiles/nvim/init.lua'
+alias kdlc='hx ~/dotfiles/zellij/config.kdl'
 alias s='sudo'
 alias sv='sudo vim'
 alias snv='sudo nvim'
@@ -144,7 +147,7 @@ alias la='exa -l -g -a --color=always | bat'
 alias lt='exa -l -g --tree --color=always | bat'
 alias lta='exa -l -g --tree -a --color=always | bat'
 alias l='ls --color=always | bat'
-alias lg='lazygit'
+alias lg='$GOPATH/bin/lazygit'
 alias obs="QT_QPA_PLATFORM=xcb obs"
 alias ..='cd ../'
 alias ...='cd ../../'
@@ -170,10 +173,10 @@ source $HOME/dotfiles/zsh/functions/functions
 
 # spaceship add --before char vi_mode
 
-source $HOME/dotfiles/zsh/always-tmux.sh
+# source $HOME/dotfiles/zsh/always-tmux.sh
 # source $HOME/dotfiles/zsh/always-zellij.sh
 
-ensure_tmux_is_running
+# ensure_tmux_is_running
 # ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
@@ -319,7 +322,7 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export TERM=xterm-kitty-256color
 # export TERM=
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
-export PATH=$PATH:/home/arpangreat/Downloads/go/bin
+export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
 export PATH=$PATH:/home/arpangreat/.local/share/nvim/mason/bin
 export PATH=$PATH:/home/arpangreat/.ghcup/bin
@@ -390,3 +393,8 @@ fi
 zle -N _sgpt_zsh
 bindkey ^o _sgpt_zsh
 # Shell-GPT integration ZSH v0.1
+eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(atuin init zsh)"
+
+# opam configuration
+[[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

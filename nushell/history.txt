@@ -257,3 +257,184 @@ ls | where name = 'config'
 ls | where name = 'config.nu'
 hx --health nu
 hx config.nu
+cd dot
+cd nushell/
+hx config.nu:185
+cd dotfiles/nushell/
+hx env.nu:2
+hx .zoxide.nu
+cd dotfiles/nushell/
+hx .zoxide.nu
+mkdir ~/.local/share/atuin/<\n>atuin init nu | save ~/.local/share/atuin/init.nu
+cd .local/share/atuin/
+hx init.nu
+cd
+cd dotfiles/nushell/
+hx config.nu
+hx /opt/asdf-vm/asdf.nu
+sudo hx /opt/asdf-vm/asdf.nu
+cd
+flutter doctor
+cd dotfiles/nushell/
+hx config.nu
+cd
+nmtui
+cd dotfiles/nushell/
+hx config.nu
+cd dotfiles/nushell/
+ls
+hx config.nu
+hx env.nu
+rg "use"
+hx env.nu
+ls
+mkdir -p custom-completions
+mkdir --help
+mkdir completions
+hx completions/cargo.nu
+hx config.nu
+glow ../README.md
+hx completions/glow.nu
+hx config.nu
+hx completions/just.nu
+hx config.nu
+hx completions/make.nu
+hx config.nu
+hx completions/man.nu
+hx config.nu
+hx completions/npm.nu
+hx config.nu
+poetry
+hx completions/tldr.nu
+hx config.nu
+hx completions/zellij.nu
+hx config.nu
+mkdir menus
+hx menus/zoxide.nu
+hx config.nu
+mkdir themes
+hx config.nu
+hx themes/ayu-mirage.nu
+hx config.nu
+hx themes/ayu-mirage.nu
+hx config.nu
+hx completions/git.nu
+hx config.nu
+mkdir ($nu.default-config-dir | path join completions)
+cd ($nu.default-config-dir | path join completions)
+ls
+hx mod.nu
+hx ../env.nu
+hx ../config.nu
+cd ($nu.default-config-dir | path join completions)
+hx ../env.nu
+cd dotfiles/nushell/
+ls
+mkdir scripts
+cd ($nu.default-config-dir | path join 'scripts')
+cd ($nu.NU_LIB_DIRS | path join 'scripts')
+cd ($env.NU_LIB_DIRS | path join 'scripts')
+env
+env | where name='go'
+env | where name='nu'
+env | where name='NU'
+..
+hx env.nu
+cd ($env.NU_LIB_DIRScd ($nu.default-config-dir | path join 'scripts') | path join 'scripts')
+cd ($nu.default-config-dir | path join 'scripts')
+cd dotfiles/nushell/
+ls
+hx completions/glow.nu
+use completions/glow.nu
+hx completions/glow.nu:16
+use completions/glow.nu *
+hx completions/glow.nu completions/glow-comp.nu
+mv completions/glow.nu completions/glow-comp.nu
+lt
+ls --tree
+ls -d
+ls -d completions/
+use completions/glow-camp.nu *
+use completions/glow-comp.nu *
+hx config.nu
+cd dotfiles/nushell/
+hx config.nu
+us completions/cargo.nu
+use completions/cargo.run
+use completions/cargo.nu
+ls
+ls completions/
+hx config.nu
+cd dotfiles/nushell/
+mv completions/just.nu completions/just-comp.nu
+hx config.nu
+cd dotfiles/nushell/
+mv completions/make.nu completions/make-comp.nu
+hx config.nu
+cd dotfiles/nushell/
+mv completions/man.nu completions/man-comp.nu
+hx config.nu
+nu
+nu
+mv completions/tldr.nu completions/tldr-comp.nu
+hx config.nu
+hx config.nu:591
+cd
+hx mitoma
+hx mudryk
+hx mitoma
+hx nkunku
+hx grealish
+ps
+ps | where name = 'adb'
+ps | where name='adb'
+ps | where name=adb
+hx --health nu
+hx --health elm
+cd
+cd helix
+git pull 
+cargo install --locked --path helix-term
+hx --grammar fetch
+hx --grammar build
+cd
+ls completions/
+zrc
+cd nu
+ls
+hx config.nu
+ls 
+ls | where name = 'config.nu'
+fc
+ec
+cd
+cd zig-examples/
+ls
+cd firstEp/
+ls
+ls src/
+hx src/main.zig
+cd
+cd dotfiles/
+cd nushell/
+ls
+hx completions/cargo.nu
+zig --help
+zig
+cd
+cd zig-examples/
+ls
+cd kernel/
+ls
+hx src/grub.cfg
+hx src/main.zig
+cd
+cd kitty/
+g pl
+make all
+ls
+cd
+cd Downloads/
+ls
+zrc
+cd

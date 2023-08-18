@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/arpangreat/dotfiles
+- /home/arpangreat/deno_blog
 - /home/arpangreat/javaexsnew
 - /home/arpangreat/Rust-Examples-New
 - /home/arpangreat/go
@@ -10,3 +11,4 @@ recentrepos:
 startuppopupversion: 5
 customcommandshistory: []
 hidecommandlog: false
+ignorewhitespaceindiffview: false
