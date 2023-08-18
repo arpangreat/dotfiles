@@ -183,7 +183,7 @@ let light_theme = {
 
 
 # The default config record. This is where much of your global configuration is setup.
-let-env config = {
+$env.config = {
   # true or false to enable or disable the welcome banner at startup
   show_banner: true
   ls: {
@@ -549,6 +549,46 @@ let-env config = {
       mode: [emacs, vi_normal, vi_insert]
       event: { send: menu name: commands_with_description }
     }
+    {
+    name: fuzzy_dir
+    modifier: control
+    keycode: char_s
+    mode: [emacs, vi_normal, vi_insert]
+    event: {
+        send: executehostcommand
+        cmd: "commandline -a (
+            ls **/*
+            | where type == dir
+            | get name
+            | input list --fuzzy
+                $'Please choose a (ansi magenta)directory(ansi reset) to (ansi cyan_underline)insert(ansi reset):'
+        )"
+    }
+}
+{
+    name: fuzzy_module
+    modifier: control
+    keycode: char_u
+    mode: [emacs, vi_normal, vi_insert]
+    event: {
+        send: executehostcommand
+        cmd: '
+            commandline --replace "use "
+            commandline --insert (
+                $env.NU_LIB_DIRS
+                | each {|dir|
+                    ls ($dir | path join "**" "*.nu")
+                    | get name
+                    | str replace $dir ""
+                    | str trim -c "/"
+                }
+                | flatten
+                | input list --fuzzy
+                    $"Please choose a (ansi magenta)module(ansi reset) to (ansi cyan_underline)load(ansi reset):"
+            )
+        '
+    }
+}
   ]
 }
 
@@ -609,5 +649,23 @@ source ~/.cache/starship/init.nu
 
 shellfetch
 
-let-env ASDF_NU_DIR = '/opt/asdf-vm/'
+$env.ASDF_NU_DIR = '/opt/asdf-vm/'
  source /opt/asdf-vm/asdf.nu
+
+source ~/.local/share/atuin/init.nu
+
+use ~/dotfiles/nushell/themes/ayu-mirage.nu
+
+$env.config = ($env.config | merge {color_config: (ayu-mirage)})
+
+use ~/dotfiles/nushell/completions/glow-comp.nu *
+use ~/dotfiles/nushell/completions/cargo.nu *
+use ~/dotfiles/nushell/completions/git.nu *
+use ~/dotfiles/nushell/completions/just-comp.nu *
+use ~/dotfiles/nushell/completions/make-comp.nu *
+use ~/dotfiles/nushell/completions/man-comp.nu *
+use ~/dotfiles/nushell/completions/npm-comp.nu *
+use ~/dotfiles/nushell/completions/tldr-comp.nu *
+use ~/dotfiles/nushell/completions/zellij.nu *
+
+use ~/dotfiles/nushell/menus/zoxide.nu

@@ -4,13 +4,16 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
-    "modules-center": ["custom/music"],
+    "modules-center": ["custom/music", "hyprland/window"],
     "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock", "tray"],
     // Modules configuration
     "wlr/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
          "format": " {icon} ",
+         "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
+         "on-click": "activate",
          "format-icons": {
              "1": "1",
              "2": "2",
@@ -94,5 +97,9 @@
       "on-click": "swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
       "escape": true
+    },
+    "hyprland/window": {
+        "max-length": 200,
+        "separate-outputs": true
     },
 }
