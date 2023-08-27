@@ -42,6 +42,8 @@ args = [
 [[language]]
 name = "go"
 auto-format = true
+formatter = { command = "goimports" }
+language-servers = ["gopls","golangcilint"]
 
 [language-server.gopls]
 command = "gopls"
@@ -51,6 +53,12 @@ staticcheck = true
 codelenses = { generate = true }
 completion = { usePlaceholders = true }
 Inlayhint = { assignVariableTypes = true, compositeLiteralFields = true, compositeLiteralTypes = true, constantValues = true, functionTypeParameters = true, parameterNames = true, rangeVariableTypes = true}
+
+[language-server.golangcilint]
+command = "golangci-lint-langserver"
+init = [
+"golangci-lint", "run", "--enable-all", "--disable", "lll", "--out-format", "json", "--issues-exit-code=1"
+]
 
 [[language]]
 name = "cmake"
