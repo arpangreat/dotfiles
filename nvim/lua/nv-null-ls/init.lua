@@ -43,6 +43,7 @@ null_ls.setup({
 		require("null-ls").builtins.formatting.clang_format,
 		-- require("null-ls").builtins.formatting.cmakelang,
 		require("null-ls").builtins.formatting.rustfmt,
+		require("null-ls").builtins.formatting.goimports,
 		-- require("null-ls").builtins.formatting.clang_format,
 		require("null-ls").builtins.diagnostics.eslint_d,
 		-- require("null-ls").builtins.completion.cspell,
