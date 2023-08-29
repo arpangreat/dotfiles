@@ -64,7 +64,7 @@
 
 (package-initialize)
 (unless package-archive-contents
- (package-refresh-contents))
+  (package-refresh-contents))
 
 ;; Initialize use-package on non-Linux platforms
 (unless (package-installed-p 'use-package)
@@ -93,6 +93,10 @@
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (use-package command-log-mode)
+
+(electric-pair-mode 1)
+(electric-indent-mode 1)
+(electric-quote-mode 1)
 
 (use-package ivy
   :diminish
@@ -150,6 +154,9 @@
   :config
   (setq go-indent-level 2))
 
+(load "/home/arpangreat/.opam/5.0.0/share/emacs/site-lisp/tuareg-site-file")
+(add-hook 'tuareg-mode-hook 'lsp)
+
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
 
@@ -176,6 +183,22 @@
 ;; optionally if you want to use debugger
 (use-package dap-mode)
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
+
+(message "Loading yasnippet config")
+
+(use-package yasnippet
+  :ensure t
+  :diminish yas-minor-mode
+  :bind (:map yas-minor-mode-map
+              ("C-c C-e" . yas-expand))
+  
+  :config
+  (yas-reload-all)
+  (add-hook 'prog-mode-hook #'yas-minor-mode)
+  ;;(yas-global-mode 1)
+  (setq yas-prompt-functions '(yas-dropdown-prompt
+                               yas-ido-prompt
+                               yas-completing-prompt)))
 
 ;; optional if you want which-key integration
 (use-package which-key
@@ -318,24 +341,25 @@
 (rune/leader-keys
   "ts" '(hydra-text-scale/body :which-key "scale text"))
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(no-littering yasnippet-classic-snippets magit spacegray-theme c-mode
-		  go-mode rust-mode dap-mode lsp-treemacs lsp-ivy
-		  helm-lsp lsp-ui company-box typescript-mode
-		  treemacs-nerd-icons company treesit-auto zig-mode
-		  ruby-compilation which-key rainbow-delimiters
-		  ivy-rich hydra helpful general evil-collection
-		  doom-themes doom-modeline counsel command-log-mode
-		  all-the-icons))
- '(warning-suppress-log-types '((use-package))))
+   '(company-lsp tuareg-mode zig-mode yasnippet-classic-snippets
+		 which-key wfnames use-package typescript-mode tuareg
+		 treesit-auto treemacs-nerd-icons tree-sitter-langs
+		 spacegray-theme smartparens rust-mode
+		 ruby-compilation rainbow-delimiters popup
+		 no-littering lsp-ui lsp-ivy ivy-rich helpful
+		 helm-core go-mode general forge evil-nerd-commenter
+		 evil-collection doom-themes doom-modeline dap-mode
+		 counsel-projectile company-box command-log-mode
+		 all-the-icons)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

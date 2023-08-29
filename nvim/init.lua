@@ -203,6 +203,13 @@ vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
 
+vim.g.neomake_open_list = 2
+
+vim.cmd([[
+		autocmd QuickFixCmdPost [^l]* nested copen
+autocmd QuickFixCmdPost    l* nested lopen
+	]])
+
 vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
 
 -- vim.g.CommandTCancelMap = "<C-x>"
