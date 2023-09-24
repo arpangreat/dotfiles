@@ -52,21 +52,21 @@ return {
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Normal" }),
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Italic" }),
 
-	--[[ harfbuzz_features = {
-		"calt=0",
-		"ss01=0",
-		"ss02=0",
-		"ss03=0",
-		"ss04=0",
-		"ss05=0",
-		"ss07=0",
-		"ss08=0",
-		"ss19=0",
-		"ss20=0",
-		"zero",
-		"onum",
-		"liga",
-	}, ]]
+	-- harfbuzz_features = {
+	-- 	"calt=0",
+	-- 	"ss01=0",
+	-- 	"ss02=0",
+	-- 	"ss03=0",
+	-- 	"ss04=0",
+	-- 	"ss05=0",
+	-- 	"ss07=0",
+	-- 	"ss08=0",
+	-- 	"ss19=0",
+	-- 	"ss20=0",
+	-- 	"zero",
+	-- 	"onum",
+	-- 	"liga",
+	-- },
 
 	-- harfbuzz_features = {
 	-- 	"ss05=0",
@@ -81,6 +81,7 @@ return {
 	-- 	 "+cv96=1",
 	-- },
 
+	-- Fira code
 	harfbuzz_features = {
 		"+zero",
 		"+ss01",
@@ -137,7 +138,7 @@ return {
 	default_cursor_style = "SteadyBar",
 	-- cursor_blink_rate = 500,
 	hide_tab_bar_if_only_one_tab = true,
-	window_background_opacity = 0.5,
+	window_background_opacity = 0.65,
 	window_padding = {
 		left = "0.5cell",
 		right = "0.0cell",

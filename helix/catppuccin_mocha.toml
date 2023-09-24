@@ -67,6 +67,10 @@
 "diff.minus" = "red"
 "diff.delta" = "blue"
 
+"diff.plus.gutter" = "green"
+"diff.minus.gutter" = "red"
+"diff.delta.gutter" = "blue"
+
 # User Interface
 # --------------
 "ui.background" = { fg = "text", bg = "none" }
