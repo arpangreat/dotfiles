@@ -1,10 +1,8 @@
 local on_attach = require("nv-lsp-configs.config").on_attach
 local capabilities = require("nv-lsp-configs.config").capabilities
+local lspconfig = require("lspconfig")
 
-require("clangd_extensions").setup({
-	inlay_hints = {
-		show_variable_name = true,
-	},
+lspconfig.clangd.setup({
 	cmd = {
 		"clangd",
 		"--background-index",
@@ -19,7 +17,6 @@ require("clangd_extensions").setup({
 	capabilities = capabilities,
 })
 
-local lspconfig = require("lspconfig")
 local configs = require("lspconfig.configs")
 
 if not configs.cmake_ls then

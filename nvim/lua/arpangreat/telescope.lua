@@ -117,36 +117,15 @@ require("telescope").setup({
 				["wiki"] = "/home/arpangreat/wiki",
 			},
 		},
-		media_files = {
-			-- filetypes whitelist
-			-- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-			filetypes = { "png", "webp", "jpg", "jpeg" },
-			find_cmd = "rg", -- find command (defaults to `fd`)
-		},
-		git_worktree = {},
-		z = {},
-		arecibo = {
-			["selected_engine"] = "google",
-			["url_open_command"] = "xdg-open",
-			["show_http_headers"] = false,
-			["show_domain_icons"] = false,
-		},
 		file_browser = {},
 		ui_select = {},
 	},
 })
 
 require("telescope").load_extension("fzf")
-require("telescope").load_extension("gh")
 require("telescope").load_extension("frecency")
-require("telescope").load_extension("z")
-require("telescope").load_extension("media_files")
-require("telescope").load_extension("arecibo")
 require("telescope").load_extension("ui-select")
-require("telescope").load_extension("zoxide")
-require("telescope").load_extension("projects")
 require("telescope").load_extension("themes")
-require("telescope").load_extension("telescope-tabs")
 require("telescope").load_extension("harpoon")
 
 local M = {}

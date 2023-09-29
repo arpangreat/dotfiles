@@ -129,7 +129,6 @@ cmp.setup({
 			cmp.config.compare.score,
 			cmp.config.compare.offset,
 			cmp.config.compare.exact,
-			require("clangd_extensions.cmp_scores"),
 			cmp.config.compare.kind,
 			cmp.config.compare.sort_text,
 			cmp.config.compare.length,
