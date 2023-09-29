@@ -49,13 +49,6 @@ M.on_attach = function(client, bufnr)
 		)
 	end
 
-	if client.server_capabilities.colorProvider then
-		require("document-color").buf_attach()
-	end
-
-	lsp_highlight_document(client)
-	-- require'completion'.on_attach(client, bufnr)
-
 	--protocol.SymbolKind = { }
 	protocol.CompletionItemKind = {
 		"", -- Text

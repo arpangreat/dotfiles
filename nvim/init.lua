@@ -13,6 +13,8 @@
 -- Lua file
 -- require("impatient")
 
+vim.loader.enable()
+
 require("settings")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -45,126 +47,34 @@ vim.api.nvim_create_autocmd("User", {
 })
 
 require("arpangreat")
--- require('nvcoder')
--- require("nv-galaxyline")
-require("snippets-nvim")
 require("nv-treesitter")
---require("nv-telescope")
-require("nv-nerdcommenter")
--- require('nv-todo-comment')
--- require('nv-autopairs')
--- require("nv-windwp-autopairs")
--- require("nv-autotag")
--- require("nv-ale")
--- require('nv-embark')
--- require("nv-tokyodark")
--- require('nv-onebuddy')
--- require('nv-spacebuddy')
--- require("nv-material")
--- require('nv-nebulous')
--- require("nv-onedark")
--- require("nv-tokyonight")
--- require("nv-starry")
--- require('nv-nightfly')
--- require("nv-nightfox")
--- require("nv-nordfox")
--- require("nv-terafox")
--- require("nv-carbonfox")
--- require("nv-themer")
 require("nv-catppuccin")
--- require("nv-neon")
--- require("nv-onedarkpro")
--- require("nv-kanagawa")
--- require('nv-oceanic-material')
--- require('nv-gruvbox-flat')
--- require("nv-gruvbox-material")
 require("nv-fzf")
--- require('nv-indentline')
-require("nv-dashboard")
 require("nv-indent-blankline")
--- require("module")
--- require('nv-indent-guides')
 require("nv-nvim-devicons")
--- require("nv-bufferlines")
--- require("nv-barbar")
--- require("nv-kommentary")
 require("nv-comment-nvim")
--- require('nv-defx')
--- require('nv-startify')
--- require('nv-airline')
 require("nv-nvim-cmp")
 require("nv-lspkind")
--- require("nv-rainbow")
 require("nv-gitsigns")
 require("nv-neogit")
--- require("nv-diffview")
--- require('nv-nvim-tree')
-require("nv-null-ls")
 require("nv-mason")
--- require("nv-lsp-installer")
 require("nv-lsp-configs")
--- require("nv-lspsaga")
-require("nv-symbols-outline")
 require("nv-todo-comment")
--- require("nv-lsp-signatures")
--- require('nv-formatter')
 require("nv-which-key")
--- require('nv-vsnip')
--- LuaSnip
 require("utils")
 require("nv-LuaSnip")
--- require("nv-focus")
-require("nv-dap")
-require("nv-dap-virtual-text")
--- require("nv-feline")
 require("lline")
--- require("nv-lualine")
--- require("lv-lualine")
--- require("nv-heirline")
 require("nv-fidget")
-require("nv-notify")
-require("nv-telekasten")
--- require("nv-hydra")
-require("nv-winshift")
--- require("nv-session-manager")
-require("nv-cybu")
 require("nv-navic")
-require("nv-gps")
 require("nv-surround")
--- require("nv-specs")
 require("nv-winbar")
-require("nv-aerial")
 require("user.autocommands")
--- require("winbar")
-require("nv-jaq")
--- require("nv-expressline")
--- require("cmp-npm-tutorial")
--- require("nv-lir")
 require("nv-inlayhints")
-require("nv-compiler-explorer")
-require("telescope-tabs").setup()
--- require("nv-noice")
--- require("typescript").setup({})
 require("nv-code-action")
-require("nv-rvimnr")
-require("nv-tabout")
-require("nv-dressing")
-require("nv-mini")
-require("nv-hlchunk")
 
 -- vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
-vim.cmd("let test#python#pytest#options = '--color=yes'")
-vim.cmd("let test#javascript#jest#options = '--color=always'")
-vim.cmd("let test#strategy = 'neovim'")
-vim.cmd("let test#neovim#term_position = 'vertical'")
--- vim.cmd([[
---     hi DiagnosticError guibg=NONE
---     hi DiagnosticInfo guibg=NONE
---     hi DiagnosticHint guibg=NONE
---     hi DiagnosticWarn guibg=NONE
--- ]])
 vim.cmd([[
   hi TelescopeTitle guifg=#c678dd
   hi DashboardHeader guifg=#c678dd
@@ -183,16 +93,11 @@ vim.cmd([[
 
 -- V lang
 vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
--- vim.g.vfmt = 1
--- vim.g.vtools_use_vls = 1
 vim.g.v_autofmt_bufwritepre = 1
 
 vim.g.mix_format_on_save = 1
 vim.g.mix_format_silet_errors = 1
 
-vim.g.neoterm_default_mod = "vertical"
-vim.g.neoterm_size = 60
-vim.g.neoterm_autoinsert = 1
 vim.g.which_key_centered = 0
 vim.g.which_key_vertical = 0
 vim.g.which_key_sort_horizontal = 0
@@ -203,7 +108,6 @@ vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
 
-vim.g.neomake_open_list = 2
 
 vim.cmd([[
 		autocmd QuickFixCmdPost [^l]* nested copen
@@ -231,49 +135,18 @@ if (empty($TMUX))
 endif
 ]])
 
-vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = '*.go',
-  callback = function()
-    vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
-  end
+vim.api.nvim_create_autocmd("BufWritePre", {
+	pattern = "*.go",
+	callback = function()
+		vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })
+	end,
 })
-
-require("nvim_utils")
--- require("colorizer").setup()
 
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function() end,
 	pattern = "*",
 })
-
-vim.api.nvim_exec(
-	[[
-  autocmd BufWritePre *.lua :lua require("stylua-nvim").format_file()
-]],
-	true
-)
-
-vim.api.nvim_exec(
-	[[
-  autocmd BufRead * :EnableHLChunk
-  autocmd BufRead * :EnableHLLineNum
-]],
-	true
-)
-
-vim.api.nvim_exec(
-	[[
-if exists('$TMUX')
-    let &t_SI .= "\ePtmux;\e\e[=1c\e\\"
-    let &t_EI .= "\ePtmux;\e\e[=2c\e\\"
- else
-    let &t_SI .= "\e[=1c"
-    let &t_EI .= "\e[=2c"
- endif
-]],
-	true
-)
 
 -- HACK:
 -- Try to prevent bad habits like using the arrow keys for movement. This is
