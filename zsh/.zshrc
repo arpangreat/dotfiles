@@ -55,11 +55,11 @@ fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    # export EDITOR='/usr/local/bin/nvim'
-    export EDITOR="/home/arpangreat/.cargo/bin/hx"
+    export EDITOR='nvim'
+    # export EDITOR="/home/arpangreat/.cargo/bin/hx"
 else
-    # export EDITOR='/usr/local/bin/nvim'
-    export EDITOR="/home/arpangreat/.cargo/bin/hx"
+    export EDITOR='nvim'
+    # export EDITOR="/home/arpangreat/.cargo/bin/hx"
 fi
 
 # export EDITOR='/home/arpangreat/.cargo/bin/hx'
@@ -95,12 +95,12 @@ zstyle ':fzf-tab:sources' config-directory /the/directory/containing/your/source
 alias nv="nvim"
 alias e='emacs'
 alias en='emacs -nw'
-alias brc='hx ~/dotfiles/bspwm/'
-alias hrc='hx ~/dotfiles/herbstluftwm/'
+alias brc='nvim ~/dotfiles/bspwm/'
+alias hrc='nvim ~/dotfiles/herbstluftwm/'
 alias vrc='vim ~/.vimrc'
 alias ec='emacsclient'
-alias nrc='hx ~/dotfiles/nvim/init.lua'
-alias kdlc='hx ~/dotfiles/zellij/config.kdl'
+alias nrc='nvim ~/dotfiles/nvim/init.lua'
+alias kdlc='nvim ~/dotfiles/zellij/config.kdl'
 alias s='sudo'
 alias sv='sudo vim'
 alias snv='sudo nvim'
@@ -119,11 +119,11 @@ alias gal='git lg -p'
 alias gso='git show'
 alias gco='git checkout'
 alias gf='$GOPATH/bin/gf'
-alias arc='hx ~/dotfiles/alacritty/alacritty.yml'
-alias zrc='hx ~/.zshrc'
-alias trc='hx ~/.tmux.conf'
-alias krc='hx ~/dotfiles/kitty/kitty.conf'
-alias irc='hx ~/dotfiles/i3/config'
+alias arc='nvim ~/dotfiles/alacritty/alacritty.yml'
+alias zrc='nvim ~/.zshrc'
+alias trc='nvim ~/.tmux.conf'
+alias krc='nvim ~/dotfiles/kitty/kitty.conf'
+alias irc='nvim ~/dotfiles/i3/config'
 alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"

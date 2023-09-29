@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 cd ~/neovim/ || exit
-sudo make distclean
 git pull
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
