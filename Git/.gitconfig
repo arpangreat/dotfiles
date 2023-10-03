@@ -8,7 +8,7 @@
 [core]
     pager = delta
     excludesfile = ~/.gitignore
-	editor = /home/arpangreat/.cargo/bin/hx
+	editor = nvim
 [push]
 	default = simple
 [color]
@@ -87,3 +87,5 @@ vcs = git
 root = ~/
 [pull]
 	rebase = false
+[url "https://github.com/"]
+	insteadOf = git://github.com/

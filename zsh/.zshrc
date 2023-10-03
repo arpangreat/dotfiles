@@ -202,8 +202,20 @@ shellfetch
 
 export DOTBARE_DIR="$HOME/dotfiles.git"
 
+# To use batpipe, eval the output of this command in your shell init script.
+LESSOPEN="|/usr/bin/batpipe %s";
+export LESSOPEN;
+unset LESSCLOSE;
+
+# The following will enable colors when using batpipe with less:
+LESS="$LESS -R";
+BATPIPE="color";
+export LESS;
+export BATPIPE;
+
 ### "bat" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANOFFOPT="-c"
 
 # CDPATH
 setopt auto_cd

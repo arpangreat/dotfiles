@@ -48,7 +48,8 @@ vim.api.nvim_create_autocmd("User", {
 
 require("arpangreat")
 require("nv-treesitter")
-require("nv-catppuccin")
+-- require("nv-catppuccin")
+require("nv-tokyonight")
 require("nv-fzf")
 require("nv-indent-blankline")
 require("nv-nvim-devicons")
