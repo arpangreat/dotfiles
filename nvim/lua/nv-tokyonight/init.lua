@@ -9,7 +9,7 @@ require("tokyonight").setup({
 		-- Style to be applied to different syntax groups
 		-- Value is any valid attr-list value for `:help nvim_set_hl`
 		comments = { italic = true },
-		keywords = { italic = true },
+		keywords = { bold = true },
 		functions = { italic = true },
 		variables = { italic = true, bold = true },
 		-- Background styles. Can be "dark", "transparent" or "normal"
@@ -34,7 +34,9 @@ require("tokyonight").setup({
 	--- function will be called with a Highlights and ColorScheme table
 	---@param hl Highlights
 	---@param c ColorScheme
-	on_highlights = function(hl, c) end,
+	on_highlights = function(hl, c) 
+    hl.variable = { fg = c.magenta }
+  end,
 })
 
 vim.api.nvim_command("colorscheme tokyonight-storm")
