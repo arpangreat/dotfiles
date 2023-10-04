@@ -128,7 +128,7 @@ return {
 },]]
 
 	font_size = 11.0,
-	color_scheme = "Catppuccin",
+	color_scheme = "tokyonight_storm",
 	color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" },
 	-- colors = {
 	-- 	ansi = ansi,

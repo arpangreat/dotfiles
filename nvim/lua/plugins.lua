@@ -32,7 +32,7 @@ return {
 
 	"folke/todo-comments.nvim",
 	{"lukas-reineke/indent-blankline.nvim", main="ibl", opts={} },
-	"HiPhish/nvim-ts-rainbow2",
+  "HiPhish/rainbow-delimiters.nvim",
 	{
 		"uga-rosa/ccc.nvim",
 		init = function()
@@ -88,18 +88,6 @@ return {
 				"zbirenbaum/copilot.lua",
 				cmd = "Copilot",
 				event = "InsertEnter",
-				config = function()
-					require("copilot").setup({
-						panel = {
-							-- auto_refresh = true,
-							enabled = false,
-						},
-						suggestions = {
-							-- auto_trigger = true,
-							enables = false,
-						},
-					})
-				end,
 			},
 			{
 				"zbirenbaum/copilot-cmp",
@@ -162,4 +150,5 @@ return {
 
 	"RRethy/vim-illuminate",
 	{ "iamcco/markdown-preview.nvim" },
+  { 'echasnovski/mini.files', event = "VeryLazy", config = function() require("mini.files").setup() end },
 }

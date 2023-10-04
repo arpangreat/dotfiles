@@ -467,6 +467,9 @@ vim.keymap.set("i", "<C-l>", function()
 	end
 end)
 
+-- Copilot
+vim.api.nvim_set_keymap("n", "<c-s>", "<cmd>lua require('copilot.suggestion').toggle_auto_trigger()<CR>", {noremap = true, silent = true})
+
 -- Telekasten
 vim.keymap.set("n", "<Leader>zf", ":Telekasten panel<CR>", { noremap = true, silent = false, expr = false })
 
@@ -480,3 +483,6 @@ vim.keymap.set("n", "<Leader>l", "<C-w>l<CR>")
 
 vim.keymap.set("n", "<Leader>hm", "<cmd>lua require('harpoon.mark').add_file()<CR>")
 vim.keymap.set("n", "<Leader>th", "<cmd>Telescope harpoon marks<CR>")
+
+-- Mini Files
+vim.keymap.set("n", "<Leader>mf", "<cmd>lua MiniFiles.open()<CR>")
