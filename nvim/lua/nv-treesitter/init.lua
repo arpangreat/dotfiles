@@ -76,14 +76,6 @@ require("nvim-treesitter.configs").setup({
 		enable = true,
 		enable_autocmd = false,
 	},
-	rainbow = {
-		enable = true,
-		extended_mode = true, -- Highlight also non-parentheses delimiters
-		query = "rainbow-parens",
-		-- Highlight the entire buffer all at once
-		strategy = require("ts-rainbow.strategy.global"),
-		max_file_lines = 3000,
-	},
 	playground = {
 		enable = true,
 		disable = {},

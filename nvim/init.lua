@@ -33,7 +33,7 @@ vim.opt.runtimepath:prepend(lazypath)
 require("lazy").setup("plugins", {
 	defaults = { lazy = true },
 	install = { colorscheme = { "tokyonight" } },
-	checker = { enabled = true },
+	checker = { enabled = false },
 	change_detection = {
 		notify = false,
 	},
@@ -72,6 +72,8 @@ require("nv-winbar")
 require("user.autocommands")
 require("nv-inlayhints")
 require("nv-code-action")
+require("nv-rainbow")
+require("nv-copilot")
 
 -- vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
