@@ -62,7 +62,7 @@ gls.left[3] = {
 	FileIcon = {
 		provider = "FileIcon",
 		condition = buffer_not_empty,
-		highlight = { require("galaxyline.providers.fileinfo").get_file_icon_color, colors.darkblue },
+		highlight = { require("galaxyline.provider_fileinfo").get_file_icon_color, colors.darkblue },
 	},
 }
 gls.left[4] = {

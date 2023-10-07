@@ -36,6 +36,7 @@ require("tokyonight").setup({
 	---@param c ColorScheme
 	on_highlights = function(hl, c) 
     hl.variable = { fg = c.magenta }
+    hl.CursorLineNr = { fg = c.purple }
   end,
 })
 
