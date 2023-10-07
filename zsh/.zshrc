@@ -1,20 +1,22 @@
 #If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+zmodload zsh/zprof
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 export HISTFILE="/home/arpangreat/.zsh_history"
 export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
 # ZVM_INIT_MODE=sourcing
 # export ZSH_THEME="spaceship"
 # export ZSH_THEME="powerlevel10k/powerlevel10k"
 
-autoload -Uz compinit
-compinit
-source /home/arpangreat/dotfiles/zsh/functions/wezterm
+# Created by Zap installer
+[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+
 # plugins
 # source ~/dotfiles/zsh/plugins/git.plugin.zsh
 # source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
@@ -22,29 +24,42 @@ source /home/arpangreat/dotfiles/zsh/functions/wezterm
 # source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 # source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/dotfiles/zsh/functions/_zig
-plugins=(
-    gh
-    zsh-interactive-cd
-    zsh-autosuggestions
-    zsh-completions
-    fast-syntax-highlighting
-    rust
-    fzf-tab
-    zsh-abbr
-    dotnet
-    asdf
-    zsh-cargo-completion
-    zsh-vi-mode
-    deno
-)
+# plugins=(
+#     gh
+#     zsh-interactive-cd
+#     zsh-autosuggestions
+#     zsh-completions
+#     fast-syntax-highlighting
+#     rust
+#     fzf-tab
+#     zsh-abbr
+#     dotnet
+#     asdf
+#     zsh-cargo-completion
+#     zsh-vi-mode
+#     deno
+# )
 
-source $ZSH/oh-my-zsh.sh
+plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-completions"
+plug "zdharma-continuum/fast-syntax-highlighting"
+plug "johannchangpro/zsh-interactive-cd"
+plug "Aloxaf/fzf-tab"
+plug "Freed-Wu/fzf-tab-source"
+plug "MenkeTechnologies/zsh-cargo-completion"
+plug "jeffreytse/zsh-vi-mode"
+
+# source $ZSH/oh-my-zsh.sh
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source ~/forgit/forgit.plugin.zsh
 fpath+=/home/arpangreat/forgit/completions/git-forgit.zsh
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
+
+
+autoload -Uz compinit
+compinit
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -353,9 +368,6 @@ export BROWSER=/usr/bin/firefox
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
 
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-
 function myinit() {
     [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -365,7 +377,6 @@ zvm_after_init_commands+=(myinit)
 # zvm_after_init() {
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }
-source /usr/share/nvm/init-nvm.sh
 
 # bun completions
 [ -s "/home/arpangreat/.oh-my-zsh/completions/_bun" ] && source "/home/arpangreat/.oh-my-zsh/completions/_bun"
@@ -382,8 +393,6 @@ export LD_LIBRARY_PATH="/usr/lib/SFML/"
 
 # bun completions
 [ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
-
-[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
 
 source <(cod init $$ zsh)
 
@@ -411,3 +420,5 @@ eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
 
 # opam configuration
 [[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+zprof > /tmp/zprof.out

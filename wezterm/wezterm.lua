@@ -15,7 +15,7 @@ end
 return {
 	-- font = wezterm.font("Fira Code Retina", { weight = "Regular", italic = false }),
 	-- font = wezterm.font("Fira Code", { weight = "Regular", italic = true }),
-	-- font = wezterm.font("Fira Code", { weight = "Bold", italic = false }), 
+	-- font = wezterm.font("Fira Code", { weight = "Bold", italic = false }),
 	-- font = wezterm.font("Delugia", { weight = "Regular", style = "Normal" }),
 	-- font = wezterm.font("Delugia", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("Delugia", { weight = "Bold" }),
@@ -42,17 +42,36 @@ return {
 	--font = wezterm.font("SFMono Nerd Font", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold", style = "Italic" }),
-	font = wezterm.font("MonoLisa", { weight = "Regular", style = "Normal" }),
-	font = wezterm.font("MonoLisa", { weight = "Regular", style = "Italic" }),
-	font = wezterm.font("MonoLisa", { weight = "Bold", style = "Normal" }),
-	font = wezterm.font("MonoLisa", { weight = "Bold", style = "Italic" }),
+	font = wezterm.font({family = "MonoLisa"}),
+	-- font = wezterm.font("MonoLisa", { weight = "Regular", style = "Normal" }),
+	-- font = wezterm.font("MonoLisa", { weight = "Regular", style = "Italic" }),
+	-- font = wezterm.font("MonoLisa", { weight = "Bold", style = "Normal" }),
+	-- font = wezterm.font("MonoLisa", { weight = "Bold", style = "Italic" }),
+
+	font_rules = {
+		{
+			intensity = "Bold",
+			italic = false,
+			font = wezterm.font("MonoLisa", {weight = "Bold", style = "Normal" }),
+		},
+		{
+			intensity = "Bold",
+			italic = true,
+			font = wezterm.font("MonoLisa", {weight = "Bold", style = "Italic" }),
+		},
+		{
+			intensity = "Normal",
+			italic = true,
+			font = wezterm.font("MonoLisa", {weight = "Book", style = "Italic" }),
+		},
+	},
 	-- font_features CascadiaCode-Italic +calt +ss01 +ss02 +ss03 +ss04 +ss05 +ss07 +ss08 +ss19 +ss20 +zero +onum
 	-- font = wezterm.font("Cascadia Code", { weight = "Regular", style = "Normal" }),
 	-- font = wezterm.font("Cascadia Code", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Normal" }),
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Italic" }),
 
-  -- MonoLisa
+	-- MonoLisa
 	harfbuzz_features = {
 		"ss01=0",
 		"ss02=0",
@@ -68,8 +87,8 @@ return {
 		"ss20=0",
 		"zero",
 		"liga",
-    "calt",
-    "frac",
+		"calt",
+		"frac",
 	},
 
 	-- harfbuzz_features = {
