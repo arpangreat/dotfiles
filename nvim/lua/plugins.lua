@@ -11,6 +11,7 @@ return {
 	{
 		"nvim-lualine/lualine.nvim",
 	},
+
 	"kyazdani42/nvim-web-devicons",
 
 	{
@@ -31,12 +32,16 @@ return {
 	},
 
 	"folke/todo-comments.nvim",
-	{"lukas-reineke/indent-blankline.nvim", main="ibl", opts={} },
-  "HiPhish/rainbow-delimiters.nvim",
+	"HiPhish/rainbow-delimiters.nvim",
 	{
 		"uga-rosa/ccc.nvim",
 		init = function()
-			require("ccc").setup()
+			require("ccc").setup({
+				highlighter = {
+					auto_enable = true,
+					lsp = true,
+				},
+			})
 		end,
 	},
 	"folke/tokyonight.nvim",
@@ -116,7 +121,6 @@ return {
 			},
 		},
 	},
-	"p00f/clangd_extensions.nvim",
 
 	{
 		"nvim-telescope/telescope.nvim",
@@ -148,7 +152,24 @@ return {
 	{ "williamboman/mason-lspconfig.nvim" },
 	{ "lvimuser/lsp-inlayhints.nvim" },
 
-	"RRethy/vim-illuminate",
 	{ "iamcco/markdown-preview.nvim" },
-  { 'echasnovski/mini.files', event = "VeryLazy", config = function() require("mini.files").setup() end },
+	{
+		"echasnovski/mini.files",
+		event = "VeryLazy",
+		config = function()
+			require("mini.files").setup()
+		end,
+	},
+	{
+		"echasnovski/mini.cursorword",
+		event = "VeryLazy",
+		config = function()
+			require("mini.cursorword").setup()
+		end,
+	},
+	{ "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
+	{
+		"shellRaining/hlchunk.nvim",
+		event = { "UIEnter" },
+	},
 }

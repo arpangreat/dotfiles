@@ -157,6 +157,7 @@ alias open='xdg-open'
 alias keysoup="sudo systemctl restart keyd && sudo systemctl enable keyd && sudo systemctl start keyd && setxkbmap -option compose:menu"
 alias zs="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layouts/strider.kdl"
 alias zm="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layouts/my-default.kdl"
+alias man="batman"
 
 bindkey -v
 
@@ -214,8 +215,8 @@ export LESS;
 export BATPIPE;
 
 ### "bat" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANOFFOPT="-c"
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANOFFOPT="-c"
 
 # CDPATH
 setopt auto_cd
@@ -406,7 +407,7 @@ zle -N _sgpt_zsh
 bindkey ^o _sgpt_zsh
 # Shell-GPT integration ZSH v0.1
 eval "$(zellij setup --generate-auto-start zsh)"
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
 
 # opam configuration
 [[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
