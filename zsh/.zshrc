@@ -416,7 +416,6 @@ zle -N _sgpt_zsh
 bindkey ^o _sgpt_zsh
 # Shell-GPT integration ZSH v0.1
 eval "$(zellij setup --generate-auto-start zsh)"
-eval "$(atuin init zsh --disable-up-arrow --disable-ctrl-r)"
 
 # opam configuration
 [[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

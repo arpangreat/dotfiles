@@ -20,7 +20,22 @@ return {
 			"nvim-lua/plenary.nvim",
 		},
 	},
-	"windwp/nvim-autopairs",
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+		},
+	},
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		init = function()
+			require("nvim-autopairs").setup({
+        enable_check_bracket_line = true,
+      })
+		end,
+	},
 	"ldelossa/gh.nvim",
 	{ "NeogitOrg/neogit", dependencies = { "nvim-lua/plenary.nvim", "rbong/vim-flog", "tpope/vim-fugitive" } },
 	"sindrets/diffview.nvim",
@@ -50,6 +65,7 @@ return {
 		name = "catppuccin",
 	},
 	{ "themercorp/themer.lua" },
+  "rebelot/kanagawa.nvim",
 	"neovim/nvim-lspconfig",
 	"onsails/lspkind-nvim",
 	"mrjones2014/smart-splits.nvim",
@@ -135,7 +151,6 @@ return {
 	{ "nvim-telescope/telescope-file-browser.nvim" },
 	{ "nvim-telescope/telescope-ui-select.nvim" },
 	"christianchiarulli/harpoon",
-	{ "j-hui/fidget.nvim", tag = "legacy" },
 	"simnalamburt/vim-mundo",
 	{
 		"akinsho/toggleterm.nvim",
