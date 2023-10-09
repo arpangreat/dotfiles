@@ -42,7 +42,8 @@ return {
 	--font = wezterm.font("SFMono Nerd Font", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold" }),
 	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold", style = "Italic" }),
-	font = wezterm.font({family = "MonoLisa"}),
+	-- font = wezterm.font({family = "MonoLisa"}),
+	font = wezterm.font({ family = "Cascadia Code PL" }),
 	-- font = wezterm.font("MonoLisa", { weight = "Regular", style = "Normal" }),
 	-- font = wezterm.font("MonoLisa", { weight = "Regular", style = "Italic" }),
 	-- font = wezterm.font("MonoLisa", { weight = "Bold", style = "Normal" }),
@@ -52,17 +53,19 @@ return {
 		{
 			intensity = "Bold",
 			italic = false,
-			font = wezterm.font("MonoLisa", {weight = "Bold", style = "Normal" }),
+			font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Normal" }),
 		},
 		{
 			intensity = "Bold",
 			italic = true,
-			font = wezterm.font("MonoLisa", {weight = "Bold", style = "Italic" }),
+			font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Italic" }),
 		},
 		{
 			intensity = "Normal",
 			italic = true,
-			font = wezterm.font("MonoLisa", {weight = "Book", style = "Italic" }),
+			font = wezterm.font(
+				{ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }
+			),
 		},
 	},
 	-- font_features CascadiaCode-Italic +calt +ss01 +ss02 +ss03 +ss04 +ss05 +ss07 +ss08 +ss19 +ss20 +zero +onum
@@ -72,23 +75,35 @@ return {
 	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Italic" }),
 
 	-- MonoLisa
+	-- harfbuzz_features = {
+	-- 	"ss01=0",
+	-- 	"ss02=0",
+	-- 	"ss03=0",
+	-- 	"ss04=0",
+	-- 	"ss05=0",
+	-- 	"ss07=0",
+	-- 	"ss08=0",
+	-- 	"ss10=0",
+	-- 	"ss11=0",
+	-- 	"ss11=0",
+	-- 	"ss19=0",
+	-- 	"ss20=0",
+	-- 	"zero",
+	-- 	"liga",
+	-- 	"calt",
+	-- 	"frac",
+	-- },
+	--
+	-- CascadiaCode
 	harfbuzz_features = {
-		"ss01=0",
-		"ss02=0",
-		"ss03=0",
-		"ss04=0",
-		"ss05=0",
-		"ss07=0",
-		"ss08=0",
-		"ss10=0",
-		"ss11=0",
-		"ss11=0",
-		"ss19=0",
-		"ss20=0",
+		"ss01",
+		"ss02",
+		"ss03",
+		"ss19",
+		"ss20",
 		"zero",
-		"liga",
-		"calt",
-		"frac",
+		"onum",
+    "calt"
 	},
 
 	-- harfbuzz_features = {
@@ -150,7 +165,7 @@ return {
 	"sups",
 },]]
 
-	font_size = 11.0,
+	font_size = 11,
 	color_scheme = "tokyonight_storm",
 	color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" },
 	-- colors = {
@@ -161,7 +176,7 @@ return {
 	default_cursor_style = "SteadyBar",
 	-- cursor_blink_rate = 500,
 	hide_tab_bar_if_only_one_tab = true,
-	window_background_opacity = 0.65,
+	window_background_opacity = 0.75,
 	window_padding = {
 		left = "0.5cell",
 		right = "0.0cell",
