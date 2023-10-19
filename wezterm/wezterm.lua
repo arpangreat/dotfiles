@@ -13,41 +13,9 @@ for idx, color in ipairs(colors) do
 end
 
 return {
-	-- font = wezterm.font("Fira Code Retina", { weight = "Regular", italic = false }),
-	-- font = wezterm.font("Fira Code", { weight = "Regular", italic = true }),
-	-- font = wezterm.font("Fira Code", { weight = "Bold", italic = false }),
-	-- font = wezterm.font("Delugia", { weight = "Regular", style = "Normal" }),
-	-- font = wezterm.font("Delugia", { weight = "Regular", style = "Italic" }),
-	-- font = wezterm.font("Delugia", { weight = "Bold" }),
-	-- font = wezterm.font("Delugia", { weight = "Bold", style = "Italic" }),
-	-- font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Normal" }),
-	-- font = wezterm.font("Comic Code Ligatures", { weight = "Regular", style = "Italic" }),
-	-- font = wezterm.font("Comic Code Ligatures Bold", { style = "Normal" }),
-	-- font = wezterm.font("Comic Code Ligatures Bold", { style = "Italic" }),
-
-	-- font = wezterm.font("Iosevka SS05", {weight="Black", stretch="Expanded", style="Italic"}),
-	-- font = wezterm.font("Iosevka SS05", {weight="Black", stretch="Expanded", style="Italic"}),
-	-- font = wezterm.font("Iosevka SS05", {weight="Bold", stretch="Expanded", style="Normal"}),
-	-- font = wezterm.font("Iosevka SS05", {weight="Bold", stretch="Expanded", style="Italic"}),
-
-	-- font = wezterm.font("Fira Code", { weight = "Regular", stretch = "Normal", style = "Normal" }), -- /usr/share/fonts/TTF/FiraCode-Regular.ttf, FontConfig
-	-- font = wezterm.font("Fira Code", { weight = "Regular", stretch = "Normal", style = "Italic" }), -- /usr/share/fonts/OTF/FiraCode-RegularItalic.otf, FontConfig
-	-- font = wezterm.font("Fira Code", { weight = "Bold", stretch = "Normal", style = "Normal" }), -- /usr/share/fonts/TTF/FiraCode-Bold.ttf, FontConfig
-	-- font = wezterm.font("Fira Code", { weight = "Bold", stretch = "Normal", style = "Italic" }),
-
-	-- font = wezterm.font("PragmataPro Liga", {weight="Regular", stretch="Normal", style="Normal"}),
-	-- font = wezterm.font("PragmataPro Liga", {weight="Regular", stretch="Normal", style="Italic"}),
-	-- font = wezterm.font("PragmataPro Liga", {weight="Bold", stretch="Normal", style="Normal"}),
-	-- font = wezterm.font("PragmataPro Liga", {weight="Bold", stretch="Normal", style="Italic"}),
-	--font = wezterm.font("SFMono Nerd Font", { weight = "Regular", style = "Italic" }),
-	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold" }),
-	-- font = wezterm.font("SFMono Nerd Font", { weight = "Bold", style = "Italic" }),
-	-- font = wezterm.font({family = "MonoLisa"}),
 	font = wezterm.font({ family = "Cascadia Code PL" }),
-	-- font = wezterm.font("MonoLisa", { weight = "Regular", style = "Normal" }),
-	-- font = wezterm.font("MonoLisa", { weight = "Regular", style = "Italic" }),
-	-- font = wezterm.font("MonoLisa", { weight = "Bold", style = "Normal" }),
-	-- font = wezterm.font("MonoLisa", { weight = "Bold", style = "Italic" }),
+	-- font = wezterm.font({ family = "MonoLisa" }),
+	-- font = wezterm.font({ family = "JetBrains Mono" }),
 
 	font_rules = {
 		{
@@ -63,31 +31,60 @@ return {
 		{
 			intensity = "Normal",
 			italic = true,
-			font = wezterm.font(
-				{ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }
-			),
+			font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
 		},
 	},
-	-- font_features CascadiaCode-Italic +calt +ss01 +ss02 +ss03 +ss04 +ss05 +ss07 +ss08 +ss19 +ss20 +zero +onum
-	-- font = wezterm.font("Cascadia Code", { weight = "Regular", style = "Normal" }),
-	-- font = wezterm.font("Cascadia Code", { weight = "Regular", style = "Italic" }),
-	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Normal" }),
-	-- font = wezterm.font("Cascadia Code", { weight = "Bold", style = "Italic" }),
+
+	-- font_rules = {
+	-- 	{
+	-- 		intensity = "Bold",
+	-- 		italic = false,
+	-- 		font = wezterm.font("MonoLisa", { weight = "Bold", style = "Normal" }),
+	-- 	},
+	-- 	{
+	-- 		intensity = "Bold",
+	-- 		italic = true,
+	-- 		font = wezterm.font("MonoLisa", { weight = "Bold", style = "Italic" }),
+	-- 	},
+	-- 	{
+	-- 		intensity = "Normal",
+	-- 		italic = true,
+	-- 		font = wezterm.font({ family = "MonoLisa", weight = "Regular", style = "Italic" }),
+	-- 	},
+	-- },
+
+	-- font_rules = {
+	-- 	{
+	-- 		intensity = "Bold",
+	-- 		italic = false,
+	-- 		font = wezterm.font("JetBrains Mono", { weight = "Bold", style = "Normal" }),
+	-- 	},
+	-- 	{
+	-- 		intensity = "Bold",
+	-- 		italic = true,
+	-- 		font = wezterm.font("JetBrains Mono", { weight = "Bold", style = "Italic" }),
+	-- 	},
+	-- 	{
+	-- 		intensity = "Normal",
+	-- 		italic = true,
+	-- 		font = wezterm.font({ family = "JetBrains Mono", weight = "Regular", style = "Italic" }),
+	-- 	},
+	-- },
 
 	-- MonoLisa
 	-- harfbuzz_features = {
-	-- 	"ss01=0",
-	-- 	"ss02=0",
-	-- 	"ss03=0",
-	-- 	"ss04=0",
-	-- 	"ss05=0",
-	-- 	"ss07=0",
-	-- 	"ss08=0",
-	-- 	"ss10=0",
-	-- 	"ss11=0",
-	-- 	"ss11=0",
-	-- 	"ss19=0",
-	-- 	"ss20=0",
+	-- 	"ss01",
+	-- 	"ss02",
+	-- 	"ss03",
+	-- 	"ss04",
+	-- 	"ss05",
+	-- 	"ss07",
+	-- 	"ss08",
+	-- 	"ss10",
+	-- 	"ss11",
+	-- 	"ss11",
+	-- 	"ss19",
+	-- 	"ss20",
 	-- 	"zero",
 	-- 	"liga",
 	-- 	"calt",
@@ -103,7 +100,7 @@ return {
 		"ss20",
 		"zero",
 		"onum",
-    "calt"
+		"calt",
 	},
 
 	-- harfbuzz_features = {
@@ -150,20 +147,13 @@ return {
 	-- 	"+ss02",
 	-- },
 
-	-- font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	-- font = wezterm.font("Iosevka SS18", { weight = "Regular", stretch = "Normal", style = "Italic" }),
-	-- font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Normal" }),
-	-- font = wezterm.font("Iosevka SS18", { weight = "Bold", stretch = "Normal", style = "Italic" }),
-
-	--[[ harfbuzz_features = {
-	"calt",
-	"liga",
-	"dlig",
-	"frac",
-	"ordn",
-	"subs",
-	"sups",
-},]]
+	-- harfbuzz_features = {
+	-- 	"calt",
+	-- 	"zero",
+	-- 	"ss01",
+	-- 	"ss02",
+	-- 	"ss20",
+	-- },
 
 	font_size = 11,
 	color_scheme = "tokyonight_storm",
@@ -184,4 +174,5 @@ return {
 		bottom = "0.0cell",
 	},
 	window_decorations = "NONE",
+	term = "wezterm",
 }

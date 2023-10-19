@@ -1,6 +1,6 @@
 # Syntax highlighting
 # -------------------
-"type" = {fg = "yellow"}
+"type" = {fg = "yellow", modifiers = ["italic", "bold"]}
 
 "constructor" = "sapphire"
 
@@ -19,12 +19,12 @@
 
 "comment" = { fg = "surface2", modifiers = ["italic"] }
 
-"variable" = { fg = "maroon", modifiers = ["italic", "bold"] }
+"variable" = { fg = "maroon", modifiers = ["italic"] }
 "variable.parameter" = { fg = "maroon", modifiers = ["italic"] }
 "variable.builtin" = "red"
 "variable.other.member" = "teal"
 
-"identifier" = "rosewater"
+"identifier" = { fg = "rosewater", modifiers = ["italic", "bold"] }
 
 "label" = "sapphire" # used for lifetimes
 
@@ -44,7 +44,7 @@
 
 "tag" = "mauve"
 
-"namespace" = { fg = "blue", modifiers = ["bold"] }
+"namespace" = { fg = "blue", modifiers = ["italic", "bold"] }
 
 "special" = "blue" # fuzzy highlight
 
