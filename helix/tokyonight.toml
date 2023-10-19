@@ -1,4 +1,5 @@
 # Author: Paul Graydon <p.y.graydon@gmail.com>
+"identifier" = { fg = "yellow", modifiers = ["italic", "bold"] }
 
 "comment" = { fg = "comment", modifiers = ["italic"] }
 "constant" = { fg = "orange" }
@@ -11,7 +12,7 @@
 "keyword.operator" = { fg = "turquoise", modifiers = ["bold"] }
 "keyword.function" = { fg = "magenta", modifiers = ["italic"] }
 "operator" = { fg = "turquoise" }
-"punctuation" = { fg = "turquoise" }
+"punctuation" = { fg = "teal" }
 "string" = { fg = "light-green" }
 "string.regexp" = { fg = "light-blue" }
 "tag" = { fg = "red" }
