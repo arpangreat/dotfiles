@@ -74,7 +74,9 @@ require("nv-code-action")
 require("nv-rainbow")
 require("nv-copilot")
 require("nv-hlchunk")
-require("nv-noice")
+-- require("nv-noice")
+require("nv-null-ls")
+require("nv-fidget")
 
 -- vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")
@@ -111,7 +113,6 @@ vim.g.which_key_use_floating_win = 1
 vim.g.committia_use_singlecolumn = "false"
 vim.g.committia_min_window_width = 80
 vim.cmd("let g:prettier#autoformat_config_present = 1")
-
 
 vim.cmd([[
 		autocmd QuickFixCmdPost [^l]* nested copen

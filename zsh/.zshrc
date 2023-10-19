@@ -1,7 +1,7 @@
 #If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-zmodload zsh/zprof
+# zmodload zsh/zprof
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -9,13 +9,13 @@ zmodload zsh/zprof
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 export HISTFILE="/home/arpangreat/.zsh_history"
 export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
-# export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 # ZVM_INIT_MODE=sourcing
 # export ZSH_THEME="spaceship"
 # export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Created by Zap installer
-[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+# [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
 # plugins
 # source ~/dotfiles/zsh/plugins/git.plugin.zsh
@@ -24,42 +24,44 @@ export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
 # source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 # source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/dotfiles/zsh/functions/_zig
-# plugins=(
-#     gh
-#     zsh-interactive-cd
-#     zsh-autosuggestions
-#     zsh-completions
-#     fast-syntax-highlighting
-#     rust
-#     fzf-tab
-#     zsh-abbr
-#     dotnet
-#     asdf
-#     zsh-cargo-completion
-#     zsh-vi-mode
-#     deno
-# )
+plugins=(
+    gh
+    zsh-interactive-cd
+    zsh-autosuggestions
+    zsh-completions
+    fast-syntax-highlighting
+    rust
+    # fzf-tab
+    zsh-abbr
+    dotnet
+    asdf
+    zsh-cargo-completion
+    zsh-vi-mode
+    deno
+)
 
-plug "zsh-users/zsh-autosuggestions"
-plug "zsh-users/zsh-completions"
-plug "zdharma-continuum/fast-syntax-highlighting"
-plug "johannchangpro/zsh-interactive-cd"
-plug "Aloxaf/fzf-tab"
-plug "Freed-Wu/fzf-tab-source"
-plug "MenkeTechnologies/zsh-cargo-completion"
-plug "jeffreytse/zsh-vi-mode"
+# plug "zsh-users/zsh-autosuggestions"
+# plug "zsh-users/zsh-completions"
+# plug "zdharma-continuum/fast-syntax-highlighting"
+# plug "johannchangpro/zsh-interactive-cd"
+# plug "Aloxaf/fzf-tab"
+# plug "Freed-Wu/fzf-tab-source"
+# plug "MenkeTechnologies/zsh-cargo-completion"
+# plug "jeffreytse/zsh-vi-mode"
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
+source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 source ~/forgit/forgit.plugin.zsh
 fpath+=/home/arpangreat/forgit/completions/git-forgit.zsh
 fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
 
 
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -139,6 +141,7 @@ alias zrc='nvim ~/.zshrc'
 alias trc='nvim ~/.tmux.conf'
 alias krc='nvim ~/dotfiles/kitty/kitty.conf'
 alias irc='nvim ~/dotfiles/i3/config'
+alias wezrc='nvim ~/.config/wezterm/wezterm.lua'
 alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
@@ -347,7 +350,7 @@ FAST_HIGHLIGHT[use_brackets]=1
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
-export TERM=xterm-kitty-256color
+export TERM=wezterm
 # export TERM=
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
@@ -417,7 +420,11 @@ bindkey ^o _sgpt_zsh
 # Shell-GPT integration ZSH v0.1
 eval "$(zellij setup --generate-auto-start zsh)"
 
+bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
+bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 # opam configuration
 [[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-zprof > /tmp/zprof.out
+# zprof > /tmp/zprof.out
+bindkey -M menuselect '\r' .accept-line
+zstyle ':autocomplete:*' ignored-input '..##'

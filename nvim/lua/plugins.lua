@@ -2,6 +2,7 @@ return {
 	"SmiteshP/nvim-navic",
 	"kylechui/nvim-surround",
 	{ "weilbith/nvim-code-action-menu", cmd = "CodeActionMenu" },
+	{ "nvimtools/none-ls.nvim" },
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
@@ -20,20 +21,25 @@ return {
 			"nvim-lua/plenary.nvim",
 		},
 	},
+	-- {
+	-- 	"folke/noice.nvim",
+	-- 	event = "VeryLazy",
+	-- 	dependencies = {
+	-- 		"MunifTanjim/nui.nvim",
+	-- 	},
+	-- },
 	{
-		"folke/noice.nvim",
-		event = "VeryLazy",
-		dependencies = {
-			"MunifTanjim/nui.nvim",
-		},
+		"j-hui/fidget.nvim",
+		tag = "legacy",
+		event = "LspAttach",
 	},
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		init = function()
 			require("nvim-autopairs").setup({
-        enable_check_bracket_line = true,
-      })
+				enable_check_bracket_line = true,
+			})
 		end,
 	},
 	"ldelossa/gh.nvim",
@@ -65,7 +71,7 @@ return {
 		name = "catppuccin",
 	},
 	{ "themercorp/themer.lua" },
-  "rebelot/kanagawa.nvim",
+	"rebelot/kanagawa.nvim",
 	"neovim/nvim-lspconfig",
 	"onsails/lspkind-nvim",
 	"mrjones2014/smart-splits.nvim",
@@ -147,10 +153,10 @@ return {
 	},
 	"nvim-telescope/telescope-frecency.nvim",
 	"nvim-telescope/telescope-symbols.nvim",
-	"tami5/sql.nvim",
+	-- "tami5/sql.nvim",
 	{ "nvim-telescope/telescope-file-browser.nvim" },
 	{ "nvim-telescope/telescope-ui-select.nvim" },
-	"christianchiarulli/harpoon",
+	"ThePrimeagen/harpoon",
 	"simnalamburt/vim-mundo",
 	{
 		"akinsho/toggleterm.nvim",
