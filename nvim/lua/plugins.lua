@@ -173,7 +173,14 @@ return {
 	{ "williamboman/mason-lspconfig.nvim" },
 	{ "lvimuser/lsp-inlayhints.nvim" },
 
-	{ "iamcco/markdown-preview.nvim" },
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		ft = { "markdown" },
+		build = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	},
 	{
 		"echasnovski/mini.files",
 		event = "VeryLazy",

@@ -95,3 +95,9 @@ vim.g.neo_tree_remove_legacy_commands = 1
 -- Disabling Gitgutter
 vim.cmd("let g:gitgutter_enabled = 0")
 vim.cmd("let g:gitgutter_signs = 0")
+
+-- Markdown
+
+vim.g.mkdp_auto_start = 1
+vim.g.mkdp_auto_close = 1
+vim.g.mkdp_refresh_slow = 1

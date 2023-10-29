@@ -26,9 +26,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # source ~/dotfiles/zsh/functions/_zig
 plugins=(
     gh
-    zsh-interactive-cd
+    # zsh-interactive-cd
     zsh-autosuggestions
-    zsh-completions
     fast-syntax-highlighting
     rust
     # fzf-tab
@@ -41,7 +40,6 @@ plugins=(
 )
 
 # plug "zsh-users/zsh-autosuggestions"
-# plug "zsh-users/zsh-completions"
 # plug "zdharma-continuum/fast-syntax-highlighting"
 # plug "johannchangpro/zsh-interactive-cd"
 # plug "Aloxaf/fzf-tab"
@@ -49,15 +47,13 @@ plugins=(
 # plug "MenkeTechnologies/zsh-cargo-completion"
 # plug "jeffreytse/zsh-vi-mode"
 
+source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 source ~/forgit/forgit.plugin.zsh
-fpath+=/home/arpangreat/forgit/completions/git-forgit.zsh
-fpath+=/home/arpangreat/dotfiles/zsh/functions/_deno
+export FPATH=/home/arpangreat/forgit/completions/git-forgit.zsh:$FPATH
+export FPATH=/home/arpangreat/dotfiles/zsh/functions:$FPATH
 
 
 # autoload -Uz compinit
@@ -159,11 +155,11 @@ alias cht='~/dotfiles/custom-scripts/tmux-cht.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='exa -l -g --color=always | bat'
-alias ls='exa -l -g --color=always | bat'
-alias la='exa -l -g -a --color=always | bat'
-alias lt='exa -l -g --tree --color=always | bat'
-alias lta='exa -l -g --tree -a --color=always | bat'
+alias ll='eza -l --icons --color=always | bat'
+alias ls='eza -l --icons --color=always | bat'
+alias la='eza -l --icons -a --color=always | bat'
+alias lt='eza -l --icons --tree --color=always | bat'
+alias lta='eza -l --icons --tree -a --color=always | bat'
 alias l='ls --color=always | bat'
 alias lg='$GOPATH/bin/lazygit'
 alias obs="QT_QPA_PLATFORM=xcb obs"
@@ -348,7 +344,7 @@ FAST_HIGHLIGHT[use_brackets]=1
 
 # added by travis gem
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
-fpath+=${ZDOTDIR:-~}/.zsh_functions
+# export +=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 export TERM=wezterm
 # export TERM=
@@ -371,11 +367,6 @@ export BROWSER=/usr/bin/firefox
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
 
-function myinit() {
-    [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
-    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-}
-zvm_after_init_commands+=(myinit)
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # zvm_after_init() {
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -426,5 +417,11 @@ bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 [[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 # zprof > /tmp/zprof.out
-bindkey -M menuselect '\r' .accept-line
+# bindkey -M menuselect '\r' .accept-line
 zstyle ':autocomplete:*' ignored-input '..##'
+
+function myinit() {
+    [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+}
+zvm_after_init_commands+=(myinit)
