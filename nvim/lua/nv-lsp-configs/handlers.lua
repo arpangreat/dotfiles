@@ -13,6 +13,7 @@ require("lspconfig").taplo.setup({ on_attach = on_attach, capabilities = capabil
 require("lspconfig").kotlin_language_server.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").tsserver.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").ocamllsp.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
 
 require("lspconfig").omnisharp.setup({
 	enable_editorconfig_support = true,
