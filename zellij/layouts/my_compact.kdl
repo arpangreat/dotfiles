@@ -1,6 +1,36 @@
+// layout {
+//     pane size=1 borderless=true {
+//         plugin location="zellij:compact-bar"
+//     }
+//     pane
+// }
+
 layout {
-    pane size=1 borderless=true {
-        plugin location="zellij:compact-bar"
+    // pane split_direction="vertical" {
+    //     pane
+    // }
+
+  pane size=1 borderless=true {
+    plugin location="file:/home/arpangreat/dotfiles/zellij/plugins/zjstatus.wasm" {
+      format_left  "#[fg=#9ece6a,italic]{mode}  #[fg=#9ece6a,bold]{tabs}"
+      format_right "#[fg=#1abc9c,bold]{session}"
+      format_space ""
+
+
+      tab_normal   "{index}  "
+      tab_active   "{index}* "
+
+      mode_normal        "#[fg=#b8bb26,bold]{name}"
+      mode_locked        "#[fg=#fb4934,bold]{name}"
+      mode_resize        "#[fg=#fabd2f,bold]{name}"
+      mode_pane          "#[fg=#d3869b,bold]{name}"
+      mode_tab           "#[fg=#83a598,bold]{name}"
+      mode_scroll        "#[fg=#8ec07c,bold]{name}"
+      mode_session       "#[fg=#fe8019,bold]{name}"
+      mode_move          "#[fg=#a89984,bold]{name}"
+
+      hide_frame_for_single_pane "true"
     }
+  }
     pane
 }
