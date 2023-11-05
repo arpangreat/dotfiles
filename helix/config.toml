@@ -14,6 +14,7 @@ scrolloff = 15
 soft-wrap.enable = true
 undercurl = true
 insert-final-newline = false
+# rainbow-brackets = true
 
 [editor.cursor-shape]
 insert = "bar"

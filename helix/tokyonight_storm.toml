@@ -1,6 +1,6 @@
 attribute = { fg = "#7dcfff" }
 identifier = { fg = "#f7768e", modifiers = ["italic"] }
-comment = { fg = "#565f89", modifiers = ["italic"] }
+comment = { fg = "#bd5173", modifiers = ["slow_blink", "italic"] }
 "comment.block.documentation" = { fg = "#e0af68" }
 constant = { fg = "#ff9e64", modifiers = ["bold"] }
 "constant.builtin" = { fg = "#2ac3de" }
@@ -11,10 +11,10 @@ constant = { fg = "#ff9e64", modifiers = ["bold"] }
 "constant.numeric.float" = { fg = "#ff9e64" }
 "constant.numeric.integer" = { fg = "#ff9e64" }
 constructor = { fg = "#2ac3de", modifiers = ["bold"] }
-"diagnostic.error" = { underline = { style = "curl" } }
-"diagnostic.hint" = { underline = { style = "curl" } }
-"diagnostic.info" = { underline = { style = "curl" } }
-"diagnostic.warning" = { underline = { style = "curl" } }
+"diagnostic.error" = { fg = "error", underline = { style = "curl" } }
+"diagnostic.hint" = { fg = "hint", underline = { style = "curl" } }
+"diagnostic.info" = { fg = "info", underline = { style = "curl" } }
+"diagnostic.warning" = { fg = "warning", underline = { style = "curl" } }
 "diff.delta" = { fg = "#6183bb" }
 "diff.delta.moved" = { fg = "#7aa2f7" }
 "diff.minus" = { fg = "#914c54" }
@@ -33,6 +33,7 @@ keyword = { fg = "#9d7cd8", modifiers = ["bold"] }
 "keyword.control.exception" = { fg = "#bb9af7" }
 "keyword.control.repeat" = { fg = "#bb9af7" }
 "keyword.control.return" = { fg = "#9d7cd8", modifiers = ["italic"] }
+"keyword.control.import" = { fg = "#9d7cd8", modifiers = ["italic"] }
 "keyword.directive" = { fg = "#7dcfff" }
 "keyword.function" = { fg = "#bb9af7" }
 "keyword.operator" = { fg = "#bb9af7" }
@@ -56,7 +57,7 @@ label = { fg = "#7aa2f7" }
 namespace = { fg = "#7dcfff", modifiers = ["italic", "bold"] }
 operator = { fg = "#89ddff" }
 special = { fg = "#2ac3de" }
-string = { fg = "#9ece6a"}
+string = { fg = "#9ece6a" }
 "string.regexp" = { fg = "#b4f9f8" }
 "string.special" = { fg = "#2ac3de" }
 tag = { fg = "#bb9af7" }
@@ -69,7 +70,7 @@ type = { fg = "#2ac3de" }
 "ui.cursor.match" = { fg = "#ff9e64", modifiers = ["bold"] }
 "ui.linenr" = { fg = "#3b4261" }
 "ui.linenr.select" = { fg = "#737aa2" }
-"ui.cursorline.primary" = { bg = "#16161e"}
+"ui.cursorline.primary" = { bg = "#16161e" }
 "ui.menu" = { bg = "none", fg = "#c0caf5" }
 "ui.menu.scroll" = { bg = 2764351, fg = 3883617 }
 "ui.menu.selected" = { bg = "#363d59" }
@@ -82,13 +83,15 @@ type = { fg = "#2ac3de" }
 "ui.text.focus" = { fg = "#2e3c64" }
 "ui.text.inactive" = { fg = "#565f89", modifiers = ["italic"] }
 "ui.text.info" = { bg = "#1f2335", fg = "#c0caf5" }
-"ui.virtual.inlay-hint" = { fg = "#1abc9c" }
+"ui.virtual.inlay-hint" = { fg = "#d7ccce" }
 "ui.window" = { fg = "#1d202f", modifiers = ["bold"] }
-variable = { fg = "#f7768e" }
+variable = { fg = "#f7768e", modifiers = ["italic"] }
 "variable.builtin" = { fg = "#f7768e" }
 "variable.other.member" = { fg = "#73daca" }
 "variable.parameter" = { fg = "#e0af68" }
 warning = { fg = "#e0af68" }
+punctuation = { fg = "#ffa2af" }
+storage = { fg = "#fd812b" }
 
 [palette]
 bg = "#24283b"

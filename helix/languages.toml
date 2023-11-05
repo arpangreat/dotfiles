@@ -104,6 +104,10 @@ auto-format = true
 formatter = { command = 'v', args = ["fmt"] }
 language-servers = ["v-analyzer"]
 
+[[language]]
+name = "ocaml"
+auto-format = true
+
 [language-server.v-analyzer]
 command = 'v-analyzer'
 

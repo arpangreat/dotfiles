@@ -32,18 +32,18 @@ neogit.setup({
 		diffview = true,
 	},
 	-- override/add mappings
-	mappings = {
-		-- modify status buffer mappings
-		status = {
-			-- Adds a mapping with "B" as key that does the "BranchPopup" command
-			["B"] = "BranchPopup",
-			-- Removes the default mapping of "s"
-			-- ["s"] = "",
-			["p"] = "PushPopup",
-			["P"] = "PullPopup",
-			["$"] = "StashPopup",
-			["d"] = "DiffAtFile",
-			["D"] = "DiffPopup",
-		},
-	},
+	-- mappings = {
+	-- 	-- modify status buffer mappings
+	-- 	status = {
+	-- 		-- Adds a mapping with "B" as key that does the "BranchPopup" command
+	-- 		["B"] = "BranchPopup",
+	-- 		-- Removes the default mapping of "s"
+	-- 		-- ["s"] = "",
+	-- 		["p"] = "PushPopup",
+	-- 		["P"] = "PullPopup",
+	-- 		["$"] = "StashPopup",
+	-- 		["d"] = "DiffAtFile",
+	-- 		["D"] = "DiffPopup",
+	-- 	},
+	-- },
 })

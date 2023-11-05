@@ -16,6 +16,7 @@ return {
 	font = wezterm.font({ family = "Cascadia Code PL" }),
 	-- font = wezterm.font({ family = "MonoLisa" }),
 	-- font = wezterm.font({ family = "JetBrains Mono" }),
+	-- font = wezterm.font({ family = "Iosevka SS18", weight = "Black" }),
 
 	font_rules = {
 		{
@@ -35,6 +36,23 @@ return {
 		},
 	},
 
+	-- font_rules = {
+	-- 	{
+	-- 		intensity = "Bold",
+	-- 		italic = false,
+	-- 		font = wezterm.font("Iosevka SS18", { weight = "Bold", style = "Normal", stretch = "Expanded" }),
+	-- 	},
+	-- 	{
+	-- 		intensity = "Bold",
+	-- 		italic = true,
+	-- 		font = wezterm.font("Iosevka SS18", { weight = "Bold", style = "Italic", stretch = "Expanded" }),
+	-- 	},
+	-- 	{
+	-- 		intensity = "Normal",
+	-- 		italic = true,
+	-- 		font = wezterm.font({ family = "Iosevka SS18", weight = "Black", style = "Italic" }),
+	-- 	},
+	-- },
 	-- font_rules = {
 	-- 	{
 	-- 		intensity = "Bold",
@@ -103,17 +121,19 @@ return {
 		"calt",
 	},
 
+	-- Iosevka
 	-- harfbuzz_features = {
-	-- 	"ss05=0",
-	-- 	"+cv77=40",
-	-- 	 "+vxla=2",
-	-- 	 "+vxlb=5",
-	-- 	 "+vxle=2",
-	-- 	"+cv94=1",
-	-- 	 "+cv90=9",
-	-- 	 "v89=2",
-	-- 	 "+cv88=2",
-	-- 	 "+cv96=1",
+	-- 	"ss05",
+	-- 	"cv77=40",
+	-- 	"vxla=2",
+	-- 	"vxlb=5",
+	-- 	"vxle=2",
+	-- 	"cv94=1",
+	-- 	"cv90=9",
+	-- 	"cv89=2",
+	-- 	"cv88=2",
+	-- 	"cv96=1",
+	-- 	"cv83=49",
 	-- },
 
 	-- Fira code
