@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+# [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 #If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -28,6 +30,7 @@ plugins=(
     gh
     # zsh-interactive-cd
     zsh-autosuggestions
+    zsh-completions
     fast-syntax-highlighting
     rust
     # fzf-tab
@@ -37,6 +40,7 @@ plugins=(
     zsh-cargo-completion
     zsh-vi-mode
     deno
+    zsh-autocomplete
 )
 
 # plug "zsh-users/zsh-autosuggestions"
@@ -47,17 +51,23 @@ plugins=(
 # plug "MenkeTechnologies/zsh-cargo-completion"
 # plug "jeffreytse/zsh-vi-mode"
 
-source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 source ~/forgit/forgit.plugin.zsh
-export FPATH=/home/arpangreat/forgit/completions/git-forgit.zsh:$FPATH
-export FPATH=/home/arpangreat/dotfiles/zsh/functions:$FPATH
+source ~/helix/contrib/completion/hx.zsh
+# export FPATH=/home/arpangreat/forgit/completions/git-forgit.zsh:$FPATH
+# export FPATH=/home/arpangreat/dotfiles/zsh/functions:$FPATH
+fpath=(
+  ~/.zsh/completion
+  /home/arpangreat/forgit/completions/git-forgit.zsh
+  $fpath
+)
 
 
-# autoload -Uz compinit
-# compinit
+autoload -Uz compinit
+compinit
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -362,7 +372,7 @@ export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
-export BROWSER=/usr/bin/firefox
+export BROWSER=/usr/bin/mercury-browser
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
@@ -419,9 +429,16 @@ bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 # zprof > /tmp/zprof.out
 # bindkey -M menuselect '\r' .accept-line
 zstyle ':autocomplete:*' ignored-input '..##'
+zstyle ':completion:*' menu select=long
 
 function myinit() {
     [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 }
 zvm_after_init_commands+=(myinit)
+
+# setting for gup command (auto generate)
+# fpath=(~/.zsh/completion $fpath)
+
+# Fig post block. Keep at the bottom of this file.
+# [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

@@ -57,6 +57,7 @@ vim.opt.conceallevel = 1
 -- Utils
 vim.opt.compatible = false
 vim.opt.mouse = vim.opt.mouse + "a"
+-- vim.opt.formatoptions:remove("ro")
 vim.opt.autoindent = true
 -- vim.opt.linebreak = true
 -- vim.opt.list = true
