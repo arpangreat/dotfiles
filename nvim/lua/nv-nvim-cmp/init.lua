@@ -6,6 +6,7 @@ local lspkind = require("lspkind")
 local luasnip = require("luasnip")
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 local cmp = require("cmp")
+
 cmp.setup({
 	snippet = {
 		expand = function(args)
@@ -97,21 +98,33 @@ cmp.setup({
 		}),
 	}),
 
-	formatting = {
+	--[[ formatting = {
 		format = function(entry, vim_item)
 			vim_item.kind = lspkind.presets.default[vim_item.kind]
 			vim_item.menu = ({
-				nvim_lsp = "ﲳ",
-				nvim_lua = "",
+				nvim_lsp = "[LSP]",
+				nvim_lua = "[LUA]",
 				treesitter = "",
-				path = "ﱮ",
+				path = "[PATH]",
 				buffer = "﬘",
-				luasnip = "",
+				luasnip = "[SNIP]",
 				spell = "暈",
 				cmp_tabnine = "",
 				Copilot = "",
 			})[entry.source.name]
 			return vim_item
+		end,
+	}, ]]
+
+	formatting = {
+		fields = { "kind", "abbr", "menu" },
+		format = function(entry, vim_item)
+			local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+			local strings = vim.split(kind.kind, "%s", { trimempty = true })
+			kind.kind = " " .. (strings[1] or "") .. " "
+			kind.menu = "    (" .. (strings[2] or "") .. ")"
+
+			return kind
 		end,
 	},
 
