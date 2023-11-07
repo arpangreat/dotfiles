@@ -328,3 +328,4 @@ layout_dir "/home/arpangreat/dotfiles/zellij/layouts/"
 // The folder in which Zellij will look for themes
 //
 // theme_dir "/path/to/my/theme_dir"
+styled_underlines true

@@ -77,6 +77,7 @@ require("nv-hlchunk")
 -- require("nv-noice")
 require("nv-null-ls")
 require("nv-fidget")
+require("nv-lspkind")
 
 -- vim.cmd("let g:lsc_auto_map = v:true")
 vim.cmd("let g:go_gopls_enabled = 0")

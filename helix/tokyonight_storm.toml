@@ -11,22 +11,23 @@ constant = { fg = "#ff9e64", modifiers = ["bold"] }
 "constant.numeric.float" = { fg = "#ff9e64" }
 "constant.numeric.integer" = { fg = "#ff9e64" }
 constructor = { fg = "#2ac3de", modifiers = ["bold"] }
-"diagnostic.error" = { fg = "error", underline = { style = "curl" } }
-"diagnostic.hint" = { fg = "hint", underline = { style = "curl" } }
-"diagnostic.info" = { fg = "info", underline = { style = "curl" } }
-"diagnostic.warning" = { fg = "warning", underline = { style = "curl" } }
+diagnostic = {}
+"diagnostic.error" = { underline = { color = "red1", style = "line" } }
+"diagnostic.hint" = { underline = { color = "teal", style = "line" } }
+"diagnostic.info" = { underline = { color = "blue2", style = "line" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "line" } }
 "diff.delta" = { fg = "#6183bb" }
 "diff.delta.moved" = { fg = "#7aa2f7" }
 "diff.minus" = { fg = "#914c54" }
 "diff.plus" = { fg = "#449dab" }
-error = { fg = "#db4b4b" }
+error = { fg = "red1" }
 function = { fg = "#7aa2f7", modifiers = ["italic", "bold"] }
 "function.builtin" = { fg = "#2ac3de" }
 "function.macro" = { fg = "#7dcfff" }
 "function.method" = { fg = "#7aa2f7" }
 "function.special" = { fg = "#7dcfff" }
-hint = { fg = "#1abc9c" }
-info = { fg = "#0db9d7" }
+hint = { fg = "teal" }
+info = { fg = "blue2" }
 keyword = { fg = "#9d7cd8", modifiers = ["bold"] }
 "keyword.control" = { fg = "#bb9af7" }
 "keyword.control.conditional" = { fg = "#bb9af7" }
@@ -89,7 +90,7 @@ variable = { fg = "#f7768e", modifiers = ["italic"] }
 "variable.builtin" = { fg = "#f7768e" }
 "variable.other.member" = { fg = "#73daca" }
 "variable.parameter" = { fg = "#e0af68" }
-warning = { fg = "#e0af68" }
+warning = { fg = "yellow" }
 punctuation = { fg = "#ffa2af" }
 storage = { fg = "#fd812b" }
 
@@ -123,7 +124,6 @@ dark5 = "#737aa2"
 "diff.change" = "#272d43"
 "diff.delete" = "#3f2d3d"
 "diff.text" = "#394b70"
-error = "#db4b4b"
 fg = "#c0caf5"
 fg_dark = "#a9b1d6"
 fg_float = "#c0caf5"
@@ -139,8 +139,6 @@ fg_sidebar = "#a9b1d6"
 green = "#9ece6a"
 green1 = "#73daca"
 green2 = "#41a6b5"
-hint = "#1abc9c"
-info = "#0db9d7"
 magenta = "#bb9af7"
 magenta2 = "#ff007c"
 orange = "#ff9e64"
@@ -149,5 +147,4 @@ red = "#f7768e"
 red1 = "#db4b4b"
 teal = "#1abc9c"
 terminal_black = "#414868"
-warning = "#e0af68"
 yellow = "#e0af68"
