@@ -13,18 +13,8 @@ layout {
   pane size=1 borderless=true {
     plugin location="file:/home/arpangreat/dotfiles/zellij/plugins/zjstatus.wasm" {
       format_left  "#[fg=#9ece6a,italic]{mode}  #[fg=#9ece6a,bold]{tabs}"
-      format_right "{command_git_branch} #[fg=#1abc9c,bold]{session}"
+      format_right "#[fg=#1abc9c,bold]{session}"
       format_space ""
-
-      command_branch_command   "echo  "
-      command_branch_format    "#[fg=blue] {stdout} "
-      command_branch_interval  "10"
-      
-      command_git_branch_command   "git rev-parse --abbrev-ref HEAD"
-      command_git_branch_format    "#[fg=blue] {exit_code} {stdout} {stderr}"
-      command_git_branch_interval  "2"
-
-
 
       tab_normal   "{index}  "
       tab_active   "{index}* "
