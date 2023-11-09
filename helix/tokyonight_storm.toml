@@ -12,10 +12,10 @@ constant = { fg = "#ff9e64", modifiers = ["bold"] }
 "constant.numeric.integer" = { fg = "#ff9e64" }
 constructor = { fg = "#2ac3de", modifiers = ["bold"] }
 diagnostic = {}
-"diagnostic.error" = { underline = { color = "red1", style = "line" } }
-"diagnostic.hint" = { underline = { color = "teal", style = "line" } }
-"diagnostic.info" = { underline = { color = "blue2", style = "line" } }
-"diagnostic.warning" = { underline = { color = "yellow", style = "line" } }
+"diagnostic.error" = { underline = { color = "red1", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "teal", style = "dashed" } }
+"diagnostic.info" = { underline = { color = "blue2", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "double_line" } }
 "diff.delta" = { fg = "#6183bb" }
 "diff.delta.moved" = { fg = "#7aa2f7" }
 "diff.minus" = { fg = "#914c54" }
