@@ -5,13 +5,9 @@ files 😄🚀
 
 [#](#) I'm an n00b
 
-# \* My default desktop Environment `hyprland` and `kitty` with `zsh` and `shellfetch` and combined with `tmux` , The prompt is [Starship](https://starship.rs) and the color is [catppuccin](https://github.com/catppuccin/nvim)
+# \* My default desktop Environment `hyprland` and `wezterm` with `zsh` and `shellfetch` and combined with `zellij` , The prompt is [Starship](https://starship.rs) and the color is [catppuccin](https://github.com/catppuccin/nvim)
 
 ![20221028_14h57m31s_grim](https://user-images.githubusercontent.com/46556080/198555517-9379d760-55cd-4b63-b37f-72f1b94768ec.png)
-
-# \* My Love ❤️ and default Editor is [neovim](https://github.com/neovim/neovim), the Starting screen is [Dashboard.nvim](https://github.com/glepnir/dashboard-nvim) and the statusline is [lualine](https://github.com/nvim-lualine/nvim-lualine)
-
-![20221028_14h58m38s_grim](https://user-images.githubusercontent.com/46556080/198556440-a6f1518c-94e3-4e4b-9edd-e404d439de2e.png)
 
 # \* One of my Nvim-essential and all time ❤️ is [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) file picker
 
