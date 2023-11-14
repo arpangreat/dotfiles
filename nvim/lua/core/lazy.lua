@@ -18,10 +18,9 @@ require("lazy").setup("plugins", {
 	change_detection = {
 		notify = false,
 	},
-  spec = {
-    { import = "plugins" },
-    { import = "plugins.lazy" },
-  }
+	spec = {
+		{ import = "plugins" },
+	},
 })
 
 vim.api.nvim_create_autocmd("User", {

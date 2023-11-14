@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/arpangreat/dotfiles
+- /home/arpangreat/.local/share/nvim/lazy/solarized-osaka.nvim
 - /home/arpangreat/nvim
 - /home/arpangreat/RustExs
 - /home/arpangreat/goroot

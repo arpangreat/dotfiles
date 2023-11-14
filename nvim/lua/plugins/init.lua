@@ -28,7 +28,7 @@ return {
     end,
   },
   "ThePrimeagen/harpoon",
-  {"simnalamburt/vim-mundo", event = "VeryLazy"},
+  { "simnalamburt/vim-mundo",                    event = "VeryLazy" },
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -49,6 +49,13 @@ return {
     event = "VeryLazy",
     config = function()
       require("mini.cursorword").setup()
+    end,
+  },
+  {
+    "echasnovski/mini.animate",
+    event = "VeryLazy",
+    config = function()
+      require("mini.animate").setup({})
     end,
   },
   { "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },

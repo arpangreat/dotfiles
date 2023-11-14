@@ -1,6 +1,9 @@
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
+	dependencies = {
+		"folke/neodev.nvim",
+	},
 	config = function()
 		local signs = {
 			{ name = "DiagnosticSignError", text = "" },

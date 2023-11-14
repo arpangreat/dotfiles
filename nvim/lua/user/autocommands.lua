@@ -1,27 +1,13 @@
 if vim.fn.has("nvim-0.8") == 1 then
-	vim.api.nvim_create_autocmd(
-		{ "CursorMoved", "CursorHold", "BufWinEnter", "BufFilePost", "InsertEnter", "BufWritePost", "TabClosed" },
-		{
-			callback = function()
-				require("core.winbar").get_winbar()
-			end,
-		}
-	)
+  vim.api.nvim_create_autocmd(
+    { "CursorMoved", "CursorHold", "BufWinEnter", "BufFilePost", "InsertEnter", "BufWritePost", "TabClosed" },
+    {
+      callback = function()
+        require("core.winbar").get_winbar()
+      end,
+    }
+  )
 end
-
---[[ vim.api.nvim_create_augroup("LspAttach_inlayhints", {})
-vim.api.nvim_create_autocmd("LspAttach", {
-	group = "LspAttach_inlayhints",
-	callback = function(args)
-		if not (args.data and args.data.client_id) then
-			return
-		end
-
-		local bufnr = vim.lsp.get_client_by_id(args.buf)
-		local client = vim.lsp.get_client_by_id(args.data.client_id)
-		require("lsp-inlayhints").on_attach(bufnr, client)
-	end,
-}) ]]
 
 vim.cmd("let g:go_gopls_enabled = 0")
 vim.cmd("let g:zig_fmt_autosave = 1")
@@ -70,23 +56,23 @@ endif
 ]])
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-	pattern = "*.go",
-	callback = function()
-		vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })
-	end,
+  pattern = "*.go",
+  callback = function()
+    vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })
+  end,
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "*",
-	callback = function()
-		vim.cmd("set formatoptions-=ro")
-	end,
+  pattern = "*",
+  callback = function()
+    vim.cmd("set formatoptions-=ro")
+  end,
 })
 
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function() end,
-	pattern = "*",
+  callback = function() end,
+  pattern = "*",
 })
 
 -- HACK:
