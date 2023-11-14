@@ -33,7 +33,7 @@ plugins=(
     zsh-completions
     fast-syntax-highlighting
     rust
-    # fzf-tab
+    fzf-tab
     zsh-abbr
     dotnet
     asdf
@@ -211,8 +211,8 @@ eval "$(zoxide init zsh --cmd cd)"
 # [ -n "$PS1" ] && \
 #     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 #         eval "$("$BASE16_SHELL/profile_helper.sh")"
-# neofetch
-shellfetch
+neofetch
+# shellfetch
 # Install it
 # fortune | cowsay | lolcat
 
@@ -442,3 +442,11 @@ zvm_after_init_commands+=(myinit)
 
 # Fig post block. Keep at the bottom of this file.
 # [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+if test -n "$KITTY_INSTALLATION_DIR"; then
+    export KITTY_SHELL_INTEGRATION="enabled"
+    autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
+    kitty-integration
+    unfunction kitty-integration
+fi
+
+[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh

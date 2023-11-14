@@ -24,7 +24,7 @@ return {
 
 		indent = {
 			enable = true,
-			use_treesitter = false,
+			use_treesitter = true,
 			chars = {
 				"│",
 				"¦",
@@ -47,9 +47,10 @@ return {
 			chars = {
 				"․",
 			},
-			style = {
-				vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui"),
-			},
+			--[[ style = {
+        vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Comment")), "fg", "gui"),
+      }, ]]
+			style = "#d7ffff",
 		},
 	},
 }

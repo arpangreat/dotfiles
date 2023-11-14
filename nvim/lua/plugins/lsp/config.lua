@@ -93,7 +93,9 @@ M.on_attach = function(client, bufnr)
 		require("nvim-navic").attach(client, bufnr)
 	end
 
-	require("lsp-inlayhints").on_attach(client, bufnr)
+	if client.server_capabilities.inlayHintProvider then
+		vim.lsp.inlay_hint(bufnr, true)
+	end
 end
 
 M.capabilities = require("cmp_nvim_lsp").default_capabilities()
