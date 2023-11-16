@@ -1,13 +1,16 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/arpangreat/dotfiles
+- /home/arpangreat/zig-examples
+- /home/arpangreat/javaexsnew
+- /home/arpangreat/CExamples
+- /home/arpangreat/cppexamples
+- /home/arpangreat/space_invaders
 - /home/arpangreat/.local/share/nvim/lazy/solarized-osaka.nvim
 - /home/arpangreat/nvim
 - /home/arpangreat/RustExs
 - /home/arpangreat/goroot
-- /home/arpangreat/cppexamples
 - /home/arpangreat/deno_blog
-- /home/arpangreat/javaexsnew
 - /home/arpangreat/Rust-Examples-New
 - /home/arpangreat/go
 - /home/arpangreat/DSA-preps
