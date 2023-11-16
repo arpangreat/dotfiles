@@ -1,0 +1,38 @@
+[pyprland]
+plugins = [
+  "scratchpads",
+  # "monitors",
+  # "shift_monitors",
+  "workspaces_follow_focus",
+]
+
+[workspaces_follow_focus]
+max_workspaces = 9
+
+# [monitors]
+# unknown = "wlrlui"
+
+# [monitors.placement]
+# "PLX2783H-DP".topOf = "DP-1"
+# "Dell Inc. DELL P24".topOf = "eDP-1"
+
+[scratchpads.volume]
+lazy = true
+command = "pavucontrol"
+unfocus = "hide"
+animation = "fromRight"
+
+[scratchpads.term]
+command = "kitty --class kitty-dropterm"
+animation = "fromTop"
+unfocus = "keep"
+
+[scratchpads.utop]
+animation = "fromBottom"
+lazy = true
+command = "kitty --class kitty-utop utop"
+
+# [scratchpads.stb-logs]
+# animation = "fromTop"
+# lazy = true
+# command = "kitty --class kitty-stb-logs stbLog"
