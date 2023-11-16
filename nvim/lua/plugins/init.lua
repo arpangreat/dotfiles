@@ -51,12 +51,5 @@ return {
       require("mini.cursorword").setup()
     end,
   },
-  {
-    "echasnovski/mini.animate",
-    event = "VeryLazy",
-    config = function()
-      require("mini.animate").setup({})
-    end,
-  },
   { "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
 }
