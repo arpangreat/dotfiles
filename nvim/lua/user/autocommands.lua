@@ -1,12 +1,12 @@
 if vim.fn.has("nvim-0.8") == 1 then
-  vim.api.nvim_create_autocmd(
-    { "CursorMoved", "CursorHold", "BufWinEnter", "BufFilePost", "InsertEnter", "BufWritePost", "TabClosed" },
-    {
-      callback = function()
-        require("core.winbar").get_winbar()
-      end,
-    }
-  )
+	vim.api.nvim_create_autocmd(
+		{ "CursorMoved", "CursorHold", "BufWinEnter", "BufFilePost", "InsertEnter", "BufWritePost", "TabClosed" },
+		{
+			callback = function()
+				require("core.winbar").get_winbar()
+			end,
+		}
+	)
 end
 
 vim.cmd("let g:go_gopls_enabled = 0")
@@ -15,6 +15,8 @@ vim.cmd("let g:zig_fmt_autosave = 1")
 -- V lang
 vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
 vim.g.v_autofmt_bufwritepre = 1
+
+vim.g.skip_ts_context_commentstring_module = true
 
 vim.g.mix_format_on_save = 1
 vim.g.mix_format_silet_errors = 1
@@ -56,23 +58,23 @@ endif
 ]])
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*.go",
-  callback = function()
-    vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })
-  end,
+	pattern = "*.go",
+	callback = function()
+		vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })
+	end,
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "*",
-  callback = function()
-    vim.cmd("set formatoptions-=ro")
-  end,
+	pattern = "*",
+	callback = function()
+		vim.cmd("set formatoptions-=ro")
+	end,
 })
 
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
-  callback = function() end,
-  pattern = "*",
+	callback = function() end,
+	pattern = "*",
 })
 
 -- HACK:

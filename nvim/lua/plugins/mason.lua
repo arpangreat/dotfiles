@@ -3,15 +3,18 @@ return {
   event = "VeryLazy",
   branch = "main",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim"
+    "williamboman/mason-lspconfig.nvim",
   },
-  opts = {
-    ui = {
-      icons = {
-        package_installed = "✓",
-        package_pending = "➜",
-        package_uninstalled = "✗",
+  config = function()
+    require("mason").setup({
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
       },
-    },
-  }
+    })
+    require("mason-lspconfig").setup()
+  end,
 }
