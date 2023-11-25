@@ -81,10 +81,6 @@ return {
 			},
 			-- autopairs = { enable = true },
 			autotag = { enable = true },
-			context_commentstring = {
-				enable = true,
-				enable_autocmd = false,
-			},
 			playground = {
 				enable = true,
 				disable = {},
@@ -109,5 +105,6 @@ return {
 				lint_events = { "BufWrite", "CursorHold" },
 			},
 		})
+		require("ts_context_commentstring").setup({ enable_autocmd = false })
 	end,
 }
