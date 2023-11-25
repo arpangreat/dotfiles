@@ -372,7 +372,7 @@ export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
-export BROWSER=/usr/bin/mercury-browser
+export BROWSER=/usr/bin/firefox
 
 # source /home/arpangreat/.zprofile
 # fpath=(~/.zsh.d/ $fpath)
