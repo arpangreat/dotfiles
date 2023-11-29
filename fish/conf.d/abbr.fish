@@ -47,11 +47,11 @@ abbr -a cht ~/dotfiles/custom-scripts/tmux-cht.sh
 abbr -a notes nvim ~/wiki/index.md
 abbr -a projectCreate bash ~/dotfiles/custom-scripts/projectCreate.sh
 abbr -a na ~/My-First-Plugin/./nvim.appimage
-abbr -a ll exa -l -g --color always > bat
-abbr -a ls exa -l -g --color always > bat
-abbr -a la exa -l -g -a --color always > bat
-abbr -a lt exa -l -g --tree --color always > bat
-abbr -a lta exa -l -g --tree -a --color always > bat
+abbr -a ll eza -l -g --color always > bat
+abbr -a ls eza -l -g --color always > bat
+abbr -a la eza -l -g -a --color always > bat
+abbr -a lt eza -l -g --tree --color always > bat
+abbr -a lta eza -l -g --tree -a --color always > bat
 abbr -a l ls --color always > bat
 abbr -a lg lazygit
 abbr -a .. cd ../
