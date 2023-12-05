@@ -31,26 +31,6 @@ return {
 				"┆",
 				"┊",
 			},
-			-- style = {
-			--     { fg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui") }
-			-- },
-		},
-
-		line_num = {
-			enable = false,
-			use_treesitter = false,
-			-- style = "#806d9c",
-		},
-
-		blank = {
-			enable = true,
-			chars = {
-				"․",
-			},
-			--[[ style = {
-        vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Comment")), "fg", "gui"),
-      }, ]]
-			style = "#d7ffff",
 		},
 	},
 }
