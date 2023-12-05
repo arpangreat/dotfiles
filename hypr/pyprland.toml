@@ -23,14 +23,14 @@ unfocus = "hide"
 animation = "fromRight"
 
 [scratchpads.term]
-command = "footclient --title=footclient-dropterm"
+command = "wezterm start --class wezterm-dropterm"
 animation = "fromTop"
 unfocus = "keep"
 
 [scratchpads.utop]
 animation = "fromBottom"
 lazy = true
-command = "footclient --title=foot-utop utop"
+command = "wezterm start --class wezterm-utop utop"
 
 # [scratchpads.stb-logs]
 # animation = "fromTop"

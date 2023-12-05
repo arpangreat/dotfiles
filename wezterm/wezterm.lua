@@ -222,8 +222,10 @@ return {
   -- 	"ss20",
   -- },
 
-  font_size = 11,
-  color_scheme = "tokyonight_storm",
+  font_size = 10.5,
+  -- color_scheme = "tokyonight_storm",
+  color_scheme = "solarized_osaka",
+  -- color_scheme = "Horizon Dark (Gogh)",
   color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" },
   -- colors = {
   -- 	ansi = ansi,
