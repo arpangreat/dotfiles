@@ -347,16 +347,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(company-lsp tuareg-mode zig-mode yasnippet-classic-snippets
-		 which-key wfnames use-package typescript-mode tuareg
-		 treesit-auto treemacs-nerd-icons tree-sitter-langs
-		 spacegray-theme smartparens rust-mode
-		 ruby-compilation rainbow-delimiters popup
-		 no-littering lsp-ui lsp-ivy ivy-rich helpful
-		 helm-core go-mode general forge evil-nerd-commenter
-		 evil-collection doom-themes doom-modeline dap-mode
-		 counsel-projectile company-box command-log-mode
-		 all-the-icons)))
+   '(ivy-file-preview evil-ex-shell-command treemacs-evil crystal-mode
+		      company-lsp tuareg-mode zig-mode
+		      yasnippet-classic-snippets which-key wfnames
+		      use-package typescript-mode tuareg treesit-auto
+		      treemacs-nerd-icons tree-sitter-langs
+		      spacegray-theme smartparens rust-mode
+		      ruby-compilation rainbow-delimiters popup
+		      no-littering lsp-ui lsp-ivy ivy-rich helpful
+		      helm-core go-mode general forge
+		      evil-nerd-commenter evil-collection doom-themes
+		      doom-modeline dap-mode counsel-projectile
+		      company-box command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

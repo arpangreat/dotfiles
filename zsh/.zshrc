@@ -212,6 +212,7 @@ eval "$(zoxide init zsh --cmd cd)"
 #     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 #         eval "$("$BASE16_SHELL/profile_helper.sh")"
 neofetch
+
 # shellfetch
 # Install it
 # fortune | cowsay | lolcat
@@ -448,5 +449,9 @@ if test -n "$KITTY_INSTALLATION_DIR"; then
     kitty-integration
     unfunction kitty-integration
 fi
+
+precmd() {
+    print -Pn "\e]133;A\e\\"
+}
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh

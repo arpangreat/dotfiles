@@ -15,6 +15,7 @@ return {
 					-- Highlight the @foo.bar capture group with the "Identifier" highlight group.
 					["foo.bar"] = "Identifier",
 				},
+				additional_vim_regex_highlighting = false,
 			},
 			incremental_selection = {
 				enable = true,

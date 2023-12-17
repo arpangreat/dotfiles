@@ -49,8 +49,8 @@ vim.opt.encoding = "utf-8"
 -- Numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.cursorline = true
-vim.opt.cursorlineopt = "both"
+-- vim.opt.cursorline = true
+-- vim.opt.cursorlineopt = "both"
 -- vim.wopt.cursorcolumn = true
 vim.opt.conceallevel = 1
 
