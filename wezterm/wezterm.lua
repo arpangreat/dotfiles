@@ -18,22 +18,41 @@ return {
   -- font = wezterm.font({ family = "JetBrains Mono" }),
   -- font = wezterm.font({ family = "Iosevka SS18", weight = "Black" }),
   font = wezterm.font({ family = "Monaspace Neon" }),
+  -- font = wezterm.font({ family = "Cartograph CF" }),
+
+  -- font_rules = {
+  --   {
+  --     intensity = "Bold",
+  --     italic = false,
+  --     font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Normal" }),
+  --   },
+  --   {
+  --     intensity = "Bold",
+  --     italic = true,
+  --     font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Italic" }),
+  --   },
+  --   {
+  --     intensity = "Normal",
+  --     italic = true,
+  --     font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
+  --   },
+  -- },
 
   -- font_rules = {
   -- 	{
   -- 		intensity = "Bold",
   -- 		italic = false,
-  -- 		font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Normal" }),
+  -- 		font = wezterm.font("Cartograph CF", { weight = "Bold", style = "Normal" }),
   -- 	},
   -- 	{
   -- 		intensity = "Bold",
   -- 		italic = true,
-  -- 		font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Italic" }),
+  -- 		font = wezterm.font("Cartograph CF", { weight = "Bold", style = "Italic" }),
   -- 	},
   -- 	{
   -- 		intensity = "Normal",
   -- 		italic = true,
-  -- 		font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
+  -- 		font = wezterm.font({ family = "Cartograph CF", weight = "Regular", style = "Italic" }),
   -- 	},
   -- },
 
@@ -69,6 +88,7 @@ return {
       font = wezterm.font({ family = "Monaspace Neon", weight = "Bold", style = "Normal" }),
     },
   },
+
   -- font_rules = {
   -- 	{
   -- 		intensity = "Bold",
@@ -86,6 +106,7 @@ return {
   -- 		font = wezterm.font({ family = "Iosevka SS18", weight = "Black", style = "Italic" }),
   -- 	},
   -- },
+
   -- font_rules = {
   -- 	{
   -- 		intensity = "Bold",
@@ -168,6 +189,23 @@ return {
     "zero",
     "dlig",
   },
+
+  -- CartographCF
+  -- harfbuzz_features = {
+  -- 	"ss01",
+  -- 	"ss02",
+  -- 	"ss03",
+  -- 	"ss05",
+  -- 	"ss06",
+  -- 	"ss07",
+  -- 	"ss08",
+  -- 	"zero",
+  -- 	"lnum",
+  -- 	"frac",
+  -- 	"ordn",
+  -- 	"dlig",
+  -- },
+
   -- Iosevka
   -- harfbuzz_features = {
   -- 	"ss05",
@@ -217,8 +255,17 @@ return {
   -- harfbuzz_features = {
   -- 	"calt",
   -- 	"zero",
+  -- 	"frac",
+  -- 	-- "onum",
+  -- 	"liga",
   -- 	"ss01",
-  -- 	"ss02",
+  -- 	"ss03",
+  -- 	"ss04",
+  -- 	"ss05",
+  -- 	"ss06",
+  -- 	"ss07",
+  -- 	"ss08",
+  -- 	"ss11",
   -- 	"ss20",
   -- },
 
