@@ -7,8 +7,17 @@
 #
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 # documentation.
+waybar -c /home/arpangreat/dotfiles/river/waybar/config &
+swaybg -i ~/dotfiles/wallpaper/new/Night_Street.png &
+dunst &
+wezterm-gui &
+firefox &
+swaync &
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
+riverctl map normal Super D spawn 'rofi -show run'
+riverctl map normal Super V spawn 'grim -g "$(slurp)" - | swappy -f -'
+riverctl map normal Super+Shift P spawn 'rofi -show power-menu -modi power-menu:rofi-power-menu'
 
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super+Shift Return spawn wezterm-gui
@@ -155,6 +164,12 @@ riverctl rule-add -app-id 'float*' -title 'foo' float
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add -app-id "bar" csd
+
+riverctl rule-add -app-id "firefox" tag 00100
+riverctl rule-add -app-id "kitty" tag 00001
+riverctl rule-add -app-id "alacritty" tag 00001
+riverctl rule-add -app-id "org.wezfurlong.wezterm" tag 00001
+riverctl rule-add -app-id "kdesystemsettings" tag 00010
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
