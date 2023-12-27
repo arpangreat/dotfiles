@@ -14,9 +14,9 @@ end
 
 return {
 	-- font = wezterm.font({ family = "Cascadia Code PL" }),
-	-- font = wezterm.font({ family = "MonoLisa" }),
 	-- font = wezterm.font({ family = "Monaspace Neon" }),
-	font = wezterm.font({ family = "Maple Mono" }),
+	-- font = wezterm.font({ family = "Maple Mono" }),
+	font = wezterm.font({ family = "Comic Code Ligatures" }),
 
 	-- font_rules = {
 	--   {
@@ -40,17 +40,17 @@ return {
 		{
 			intensity = "Bold",
 			italic = false,
-			font = wezterm.font("Maple Mono", { weight = "Bold", style = "Normal" }),
+			font = wezterm.font("Comic Code Ligatures", { weight = "Bold", style = "Normal" }),
 		},
 		{
 			intensity = "Bold",
 			italic = true,
-			font = wezterm.font("Maple Mono", { weight = "Bold", style = "Italic" }),
+			font = wezterm.font("Comic Code Ligatures", { weight = "Bold", style = "Italic" }),
 		},
 		{
 			intensity = "Normal",
 			italic = true,
-			font = wezterm.font({ family = "Maple Mono", weight = "Regular", style = "Italic" }),
+			font = wezterm.font({ family = "Comic Code Ligatures", weight = "Regular", style = "Italic" }),
 		},
 	},
 
@@ -115,18 +115,17 @@ return {
 	-- },
 
 	-- Maple
-	harfbuzz_features = {
-		"cv01",
-		"cv02",
-		"cv04",
-		"ss01",
-		"ss02",
-		"ss03",
-		"ss04",
-		"ss05",
-	},
+	-- harfbuzz_features = {
+	-- 	"cv02",
+	-- 	"cv04",
+	-- 	"ss01",
+	-- 	"ss02",
+	-- 	"ss03",
+	-- 	"ss04",
+	-- 	"ss05",
+	-- },
 
-	font_size = 11.0,
+	font_size = 10.5,
 	-- color_scheme = "tokyonight_storm",
 	color_scheme = "solarized_osaka",
 	-- color_scheme = "Horizon Dark (Gogh)",
