@@ -357,7 +357,7 @@ FAST_HIGHLIGHT[use_brackets]=1
 [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
 # export +=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
-export TERM=wezterm
+# export TERM=wezterm
 # export TERM=foot-extra
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin

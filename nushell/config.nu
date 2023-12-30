@@ -652,8 +652,6 @@ shellfetch
 $env.ASDF_NU_DIR = '/opt/asdf-vm/'
  source /opt/asdf-vm/asdf.nu
 
-source ~/.local/share/atuin/init.nu
-
 use ~/dotfiles/nushell/themes/ayu-mirage.nu
 
 $env.config = ($env.config | merge {color_config: (ayu-mirage)})
