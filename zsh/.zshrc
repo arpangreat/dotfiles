@@ -34,13 +34,13 @@ plugins=(
     fast-syntax-highlighting
     rust
     fzf-tab
-    zsh-abbr
     dotnet
     asdf
     zsh-cargo-completion
     zsh-vi-mode
     deno
     zsh-autocomplete
+    forgit
 )
 
 # plug "zsh-users/zsh-autosuggestions"
@@ -55,13 +55,13 @@ plugins=(
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
-source ~/forgit/forgit.plugin.zsh
+# source ~/forgit/forgit.plugin.zsh
 source ~/helix/contrib/completion/hx.zsh
 # export FPATH=/home/arpangreat/forgit/completions/git-forgit.zsh:$FPATH
 # export FPATH=/home/arpangreat/dotfiles/zsh/functions:$FPATH
 fpath=(
-  ~/.zsh/completion
-  /home/arpangreat/forgit/completions/git-forgit.zsh
+  ~/.zsh/completions
+  # /home/arpangreat/forgit/completions/git-forgit.zsh
   $fpath
 )
 
