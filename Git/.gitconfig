@@ -1,5 +1,5 @@
 [credential]
-	helper = store
+	helper = cache
 [user]
 	name = arpangreat
 	email = arpanthegreat41@gmail.com
