@@ -146,6 +146,7 @@ return {
 		top = "0.0cell",
 		bottom = "0.0cell",
 	},
+	enable_kitty_keyboard = true,
 	window_decorations = "NONE",
 	term = "wezterm",
 	front_end = "OpenGL",

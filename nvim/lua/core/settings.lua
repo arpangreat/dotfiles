@@ -48,7 +48,7 @@ vim.opt.encoding = "utf-8"
 -- vim.api.nvim_exec([[set winblend=100]], true)
 -- Numbers
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 -- vim.opt.cursorline = true
 -- vim.opt.cursorlineopt = "both"
 -- vim.wopt.cursorcolumn = true
