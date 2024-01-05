@@ -2,3 +2,5 @@ nvim/plugged
 Vim/.vim
 cliff.toml
 nushell/history.txt
+emacs/elpa
+emacs/eln-cache
