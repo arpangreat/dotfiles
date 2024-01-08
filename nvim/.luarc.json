@@ -4,5 +4,8 @@
         "vim",
         "go_org_imports"
     ],
-    "workspace.checkThirdParty": "Disable"
+    "workspace.checkThirdParty": "Disable",
+    "diagnostics.disable": [
+        "missing-fields"
+    ]
 }

@@ -30,7 +30,7 @@ unfocus = "keep"
 [scratchpads.utop]
 animation = "fromBottom"
 lazy = true
-command = "wezterm start --class wezterm-utop utop"
+command = "wezterm start --class wezterm-utop utop-full"
 
 # [scratchpads.stb-logs]
 # animation = "fromTop"
