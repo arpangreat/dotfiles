@@ -51,7 +51,7 @@ return {
 				require("null-ls").builtins.diagnostics.eslint_d,
 				-- require("null-ls").builtins.completion.cspell,
 				-- require("null-ls").builtins.diagnostics.golangci_lint,
-				require("null-ls").builtins.diagnostics.revive,
+				-- require("null-ls").builtins.diagnostics.revive,
 				require("null-ls").builtins.diagnostics.shellcheck,
 				require("null-ls").builtins.diagnostics.pylint,
 				require("null-ls").builtins.formatting.black,

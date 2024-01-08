@@ -316,7 +316,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.cargo/env
 export PATH=$PATH:$HOME/.cargo/bin
-export PATH=$PATH:$HOME/local/ActiveTCL/bin
+export PATH=$PATH:$HOME/.opam/default/bin
 
 # Spaceship configs
 # SPACESHIP_DIR_TRUNC=0
