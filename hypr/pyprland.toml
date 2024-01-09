@@ -28,9 +28,9 @@ animation = "fromTop"
 unfocus = "keep"
 
 [scratchpads.utop]
-animation = "fromBottom"
 lazy = true
-command = "wezterm start --class wezterm-utop utop-full"
+command = "wezterm start --class wezterm-utop /home/arpangreat/.opam/default/bin/utop-full"
+animation = "fromBottom"
 
 # [scratchpads.stb-logs]
 # animation = "fromTop"
