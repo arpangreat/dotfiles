@@ -4,7 +4,7 @@ local capabilities = require("plugins.lsp.config").capabilities
 local lspconfig = require("lspconfig")
 
 lspconfig.gopls.setup({
-	cmd = { "/home/arpangreat/.local/share/nvim/mason/bin/gopls", "serve" },
+	cmd = { "gopls", "serve" },
 	filetypes = { "go", "gomod" },
 	root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
 	settings = {

@@ -455,3 +455,7 @@ precmd() {
 }
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
+
+# setting for gup command (auto generate)
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
