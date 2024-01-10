@@ -1,10 +1,11 @@
 # Basic Settings
-set previewer ~/scripts/lf/preview
+set previewer ~/dotfiles/lf/previewer
 set preview true
 set hidden true
 set drawbox true
 set icons true
 set ignorecase true
+set sixel true
 
 # Custom Functions
 cmd open ${{
