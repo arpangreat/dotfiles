@@ -29,7 +29,7 @@ unfocus = "keep"
 
 [scratchpads.utop]
 lazy = true
-command = "wezterm start --class wezterm-utop /home/arpangreat/.opam/default/bin/utop-full"
+command = "wezterm start --class wezterm-utop ipython"
 animation = "fromBottom"
 
 # [scratchpads.stb-logs]
