@@ -33,7 +33,6 @@ plugins=(
     zsh-completions
     fast-syntax-highlighting
     rust
-    fzf-tab
     dotnet
     asdf
     zsh-cargo-completion
@@ -68,6 +67,8 @@ fpath=(
 
 autoload -Uz compinit
 compinit
+
+# source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.plugin.zsh
 # export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
 # User configuration
 
@@ -89,21 +90,21 @@ fi
 
 # fzf-tab
 # disable sort when completing options of any command
-zstyle ':completion:complete:*:options' sort false
+# zstyle ':completion:complete:*:options' sort false
 
 # use input as query string when completing zlua
-zstyle ':fzf-tab:complete:_zlua:*' query-string input
+# zstyle ':fzf-tab:complete:_zlua:*' query-string input
 # disable sort when completing `git checkout`
-zstyle ':completion:*:git-checkout:*' sort false
+# zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
-zstyle ':completion:*:descriptions' format '[%d]'
+# zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # preview directory's content with exa when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
-zstyle ':fzf-tab:*' switch-group ',' '.'
-zstyle ':fzf-tab:sources' config-directory /the/directory/containing/your/source.zsh
+# zstyle ':fzf-tab:*' switch-group ',' '.'
+# zstyle ':fzf-tab:sources' config-directory /the/directory/containing/your/source.zsh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -456,7 +457,3 @@ precmd() {
 }
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
-
-# setting for gup command (auto generate)
-fpath=(~/.zsh/completion $fpath)
-autoload -Uz compinit && compinit -i

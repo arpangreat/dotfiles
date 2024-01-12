@@ -36,6 +36,7 @@
   "mini.files": { "branch": "main", "commit": "bf79f74d778846222ecbcf373902dd44f52f7de8" },
   "neodev.nvim": { "branch": "main", "commit": "34b93b809b781b8a1ad862142e40b11bae1dc0e9" },
   "neogit": { "branch": "master", "commit": "e43e6824c6ccf1d1d246f0cda7870c4a8d9d6dad" },
+  "neotab.nvim": { "branch": "master", "commit": "f831660ace2660b9f3da78c1b19650c60f179e02" },
   "noice.nvim": { "branch": "main", "commit": "92433164e2f7118d4122c7674c3834d9511722ba" },
   "none-ls.nvim": { "branch": "main", "commit": "fbdcbf8e152529af846b3a333f039751829b84c2" },
   "nui.nvim": { "branch": "main", "commit": "35da9ca1de0fc4dda96c2e214d93d363c145f418" },
