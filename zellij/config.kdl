@@ -261,7 +261,7 @@ theme "catppuccin-mocha"
 // Default: "default"
 //
 // default_layout "my-default"
-default_layout "my_compact"
+// default_layout "my_compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
