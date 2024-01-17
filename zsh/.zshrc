@@ -55,7 +55,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 # source ~/forgit/forgit.plugin.zsh
-source ~/helix/contrib/completion/hx.zsh
+# source ~/helix/contrib/completion/hx.zsh
 # export FPATH=/home/arpangreat/forgit/completions/git-forgit.zsh:$FPATH
 # export FPATH=/home/arpangreat/dotfiles/zsh/functions:$FPATH
 fpath=(
@@ -193,7 +193,6 @@ eval "$(starship init zsh)"
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
-[ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
 
 # source $HOME/dotfiles/zsh/functions/spaceship-vi-mode.plugin.zsh
 
@@ -435,7 +434,7 @@ zstyle ':autocomplete:*' ignored-input '..##'
 zstyle ':completion:*' menu select=long
 
 function myinit() {
-    [ -f ~/dotfiles/zsh/functions/fzf-git.zsh ] && source $HOME/dotfiles/zsh/functions/fzf-git.zsh
+    [ -f ~/fzf-git.sh/fzf-git.sh ] && source $HOME/fzf-git.sh/fzf-git.sh
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 }
 zvm_after_init_commands+=(myinit)
