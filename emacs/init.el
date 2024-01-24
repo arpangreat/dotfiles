@@ -59,7 +59,9 @@
 
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
                          ("org" . "https://orgmode.org/elpa/")
+			 ("elpy" . "http://jorgenschaefer.github.io/packages/")
 			 ("melpa-stable" . "https://stable.melpa.org/packages/")
+			 ("gnu" . "http://elpa.gnu.org/packages/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
@@ -154,7 +156,7 @@
   :config
   (setq go-indent-level 2))
 
-(load "/home/arpangreat/.opam/5.0.0/share/emacs/site-lisp/tuareg-site-file")
+(load "/home/arpangreat/.opam/default/share/emacs/site-lisp/tuareg-site-file")
 (add-hook 'tuareg-mode-hook 'lsp)
 
 (add-hook 'c-mode-hook 'lsp)
@@ -347,24 +349,19 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(ivy-file-preview evil-ex-shell-command treemacs-evil crystal-mode
-		      company-lsp tuareg-mode zig-mode
-		      yasnippet-classic-snippets which-key wfnames
-		      use-package typescript-mode tuareg treesit-auto
-		      treemacs-nerd-icons tree-sitter-langs
-		      spacegray-theme smartparens rust-mode
-		      ruby-compilation rainbow-delimiters popup
-		      no-littering lsp-ui lsp-ivy ivy-rich helpful
-		      helm-core go-mode general forge
-		      evil-nerd-commenter evil-collection doom-themes
-		      doom-modeline dap-mode counsel-projectile
-		      company-box command-log-mode all-the-icons)))
+   '(all-the-icons annalist bui command-log-mode company company-box
+		   counsel counsel-projectile dap-mode doom-modeline
+		   doom-themes evil evil-collection
+		   evil-nerd-commenter forge frame-local general
+		   go-mode helpful ivy-rich lsp-docker lsp-ivy
+		   lsp-treemacs lsp-ui magit nerd-icons no-littering
+		   projectile rainbow-delimiters rust-mode shrink-path
+		   spacegray-theme tree-sitter tree-sitter-langs
+		   typescript-mode which-key with-editor yasnippet
+		   zig-mode zuul)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
-(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
-;; ## end of OPAM user-setup addition for emacs / base ## keep this line
