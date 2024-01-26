@@ -23,13 +23,13 @@ unfocus = "hide"
 animation = "fromRight"
 
 [scratchpads.term]
-command = "kitty --class wezterm-dropterm"
+command = "wezterm start --class wezterm-dropterm"
 animation = "fromTop"
 unfocus = "keep"
 
 [scratchpads.utop]
 lazy = true
-command = "kitty --class wezterm-utop ipython"
+command = "wezterm start --class wezterm-utop ipython"
 animation = "fromBottom"
 
 # [scratchpads.stb-logs]
