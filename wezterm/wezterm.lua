@@ -168,8 +168,8 @@ config.harfbuzz_features = {
 }
 
 config.font_size = 11.0
--- config.color_scheme = "tokyonight_storm"
-config.color_scheme = "Catppuccin"
+config.color_scheme = "tokyonight_storm"
+-- config.color_scheme = "Catppuccin"
 -- config.color_scheme = "solarized_osaka"
 -- color_scheme = "Horizon Dark (Gogh)",
 config.color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" }
