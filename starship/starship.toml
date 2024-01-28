@@ -5,8 +5,8 @@ command_timeout = 20000
 palette = "catppuccin_mocha"
 
 [character]
-success_symbol = "[](white)"
-error_symbol = "[](red)"
+success_symbol = "[󰘧](bold green)"
+error_symbol = "[](bold red)"
 vicmd_symbol = "[](bold green)"
 
 [directory]
