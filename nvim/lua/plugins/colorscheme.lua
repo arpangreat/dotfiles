@@ -10,13 +10,11 @@ return {
 			transparent = true, -- Enable this to disable setting the background color
 			terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 			styles = {
-				-- Style to be applied to different syntax groups
-				-- Value is any valid attr-list value for `:help nvim_set_hl`
 				comments = { italic = true },
 				keywords = { bold = true },
-				-- functions = { italic = true  },
-				variables = { italic = true },
-				-- Background styles. Can be "dark", "transparent" or "normal"
+				functions = { italic = true },
+				variables = { italic = true, bold = true },
+				background = "transparent",
 				sidebars = "transparent", -- style for sidebars, see below
 				floats = "transparent", -- style for floating windows
 			},
@@ -43,6 +41,7 @@ return {
 				hl["@variable"] = { fg = c.red }
 				hl.LspInlayHint = { bg = "#063540" }
 				hl.WinBar = { bg = c.none }
+				hl.String = { fg = c.green, style = "italic" }
 			end,
 		},
 	},
@@ -136,61 +135,40 @@ return {
 		},
 	},
 	{
-		"akinsho/horizon.nvim",
-		version = "*",
+		"marko-cerovac/material.nvim",
 		priority = 1000,
 		opts = {
-			overrides = {
-				colors = {
-					Normal = { bg = "none" },
-				},
-			},
-		},
-	},
-	{
-		"ribru17/bamboo.nvim",
-		priority = 1000,
-		opts = {
-			style = "vulgaris", -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
-			toggle_style_key = nil, -- Keybind to toggle theme style. Leave it nil to disable it, or set it to a string, e.g. "<leader>ts"
-			toggle_style_list = { "vulgaris", "multiplex", "light" }, -- List of styles to toggle between
-			transparent = true, -- Show/hide background
-			dim_inactive = true, -- Dim inactive windows/buffers
-			term_colors = true, -- Change terminal color as per the selected theme style
-			ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
-			cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
-
-			-- Change code style ---
-			-- Options are italic, bold, underline, none
-			-- You can configure multiple style with comma separated, For e.g., keywords = 'italic,bold'
-			code_style = {
-				comments = "italic",
-				conditionals = "italic",
-				keywords = "bold",
-				functions = "italic,bold",
-				namespaces = "italic",
-				parameters = "bold",
-				strings = "italic",
-				variables = "italic",
+			contrast = {
+				terminal = true,
+				sidebars = true,
+				floating_windows = true,
+				cursor_line = true,
+				non_current_windows = true,
 			},
 
-			-- Lualine options --
-			lualine = {
-				transparent = true, -- lualine center bar transparency
+			styles = {
+				strings = { italic = true },
+				keywords = { bold = true },
+				funtions = { italic = true, bold = true },
+				variables = { italic = true },
+				operators = { bold = true },
+				types = { italic = true, bold = true },
 			},
 
-			-- Custom Highlights --
-			colors = {}, -- Override default colors
-			highlights = {
-				WinBar = { bg = "none" },
-			}, -- Override highlight groups
-
-			-- Plugins Config --
-			diagnostics = {
-				darker = true, -- darker colors for diagnostic
-				undercurl = true, -- use undercurl instead of underline for diagnostics
-				background = true, -- use background color for virtual text
+			plugins = {
+				"dap",
+				"gitsigns",
+				"harpoon",
+				"mini",
+				"noice",
+				"nvim-cmp",
+				"nvim-navic",
+				"nvim-web-devicons",
+				"telescope",
+				"which-key",
 			},
+
+			lualine_style = "stealth",
 		},
 	},
 }
