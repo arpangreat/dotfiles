@@ -149,6 +149,7 @@ alias trc='nvim ~/.tmux.conf'
 alias krc='nvim ~/dotfiles/kitty/kitty.conf'
 alias irc='nvim ~/dotfiles/i3/config'
 alias wezrc='nvim ~/.config/wezterm/wezterm.lua'
+alias hyrc='nvim ~/dotfiles/hypr/hyprland.conf'
 alias sld='sway-launcher-desktop'
 alias tm='tmux -u'
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
