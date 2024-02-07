@@ -10,6 +10,8 @@ return {
     "hrsh7th/cmp-nvim-lua",
     "hrsh7th/cmp-emoji",
     "saadparwaiz1/cmp_luasnip",
+    "dmitmel/cmp-cmdline-history",
+    "hrsh7th/cmp-nvim-lsp-signature-help",
     --   {
     --     "elixir-tools/elixir-tools.nvim",
     --     version="*",
@@ -34,6 +36,7 @@ return {
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
     local cmp = require("cmp")
     local neotab = require("neotab")
+    local types = { "?", "@" }
 
     cmp.setup({
       snippet = {
@@ -106,6 +109,7 @@ return {
         { name = "copilot" },
         { name = "emoji" },
         { name = "cody" },
+        { name = "nvim_lsp_signature_help" },
       }),
 
       cmp.setup.filetype("gitcommit", {
@@ -118,9 +122,11 @@ return {
       -- Use buffer source for `/`.
       cmp.setup.cmdline("/", {
         mapping = cmp.mapping.preset.cmdline(),
-        sources = {
+        sources = cmp.config.sources({
           { name = "buffer" },
-        },
+        }, {
+          { name = "cmdline_history" },
+        }),
       }),
 
       -- Use cmdline & path source for ':'.
@@ -130,6 +136,15 @@ return {
           { name = "path" },
         }, {
           { name = "cmdline" },
+        }, {
+          { name = "cmdline_history" },
+        }),
+      }),
+
+      cmp.setup.cmdline(types, {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = "cmdline_history" },
         }),
       }),
 
