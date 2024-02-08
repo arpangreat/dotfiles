@@ -18,7 +18,7 @@ max_workspaces = 9
 
 [scratchpads.volume]
 lazy = true
-command = "pavucontrol"
+command = "pavucontrol-qt"
 unfocus = "hide"
 animation = "fromRight"
 

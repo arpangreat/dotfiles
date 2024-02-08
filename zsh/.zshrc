@@ -50,6 +50,10 @@ plugins=(
 # plug "MenkeTechnologies/zsh-cargo-completion"
 # plug "jeffreytse/zsh-vi-mode"
 
+zvm_config() {
+    ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+}
+
 # source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
@@ -194,6 +198,7 @@ eval "$(starship init zsh)"
 
 # My custom zsh files
 source $HOME/dotfiles/zsh/functions/functions
+source $HOME/fzf-git.sh/fzf-git.sh
 
 # source $HOME/dotfiles/zsh/functions/spaceship-vi-mode.plugin.zsh
 
@@ -202,7 +207,7 @@ source $HOME/dotfiles/zsh/functions/functions
 # source $HOME/dotfiles/zsh/always-tmux.sh
 # source $HOME/dotfiles/zsh/always-zellij.sh
 
-# ensure_tmux_is_running
+ensure_tmux_is_running
 # ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
@@ -361,6 +366,7 @@ FAST_HIGHLIGHT[use_brackets]=1
 # export TERM=xterm-256color-italic
 # export TERM=wezterm
 # export TERM=foot-extra
+# export TERM=xterm-kitty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
@@ -422,7 +428,7 @@ fi
 zle -N _sgpt_zsh
 bindkey ^o _sgpt_zsh
 # Shell-GPT integration ZSH v0.1
-eval "$(zellij setup --generate-auto-start zsh)"
+# eval "$(zellij setup --generate-auto-start zsh)"
 
 bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
 bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
@@ -435,7 +441,6 @@ zstyle ':autocomplete:*' ignored-input '..##'
 zstyle ':completion:*' menu select=long
 
 function myinit() {
-    [ -f ~/fzf-git.sh/fzf-git.sh ] && source $HOME/fzf-git.sh/fzf-git.sh
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 }
 zvm_after_init_commands+=(myinit)
@@ -455,5 +460,3 @@ fi
 precmd() {
     print -Pn "\e]133;A\e\\"
 }
-
-[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
