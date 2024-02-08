@@ -6,10 +6,6 @@ zoxide init fish --cmd cd | source
 
 fish_vi_key_bindings
 
-function fish_greeting
-    shellfetch
-end
-
 set -gx EDITOR hx
 
 set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
@@ -22,7 +18,6 @@ set -g JAVA_HOME /usr/lib/jvm/default
 set -g GOPATH $HOME/go
 
 set -g LLVM_ROOT $HOME/llvm-project
-set -g TERM xterm-kitty-256color
 set -g CHROME_EXECUTABLE /usr/bin/brave
 set -g ANDROID_HOME /home/arpangreat/Android/Sdk
 
