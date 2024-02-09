@@ -207,7 +207,7 @@ source $HOME/fzf-git.sh/fzf-git.sh
 # source $HOME/dotfiles/zsh/always-tmux.sh
 # source $HOME/dotfiles/zsh/always-zellij.sh
 
-ensure_tmux_is_running
+# ensure_tmux_is_running
 # ensure_zellij_is_running
 
 eval "$(zoxide init zsh --cmd cd)"
@@ -233,7 +233,7 @@ fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
 # Alacritty
 # source /home/arpangreat/alacritty/extra/completions/_alacritty
 
-export DOTBARE_DIR="$HOME/dotfiles.git"
+# export DOTBARE_DIR="$HOME/dotfiles.git"
 
 # To use batpipe, eval the output of this command in your shell init script.
 LESSOPEN="|/usr/bin/batpipe %s";
@@ -361,24 +361,23 @@ export PATH=$PATH:$HOME/.opam/default/bin
 FAST_HIGHLIGHT[use_brackets]=1
 
 # added by travis gem
-[ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
+# [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
 # export +=${ZDOTDIR:-~}/.zsh_functions
 # export TERM=xterm-256color-italic
 # export TERM=wezterm
 # export TERM=foot-extra
 # export TERM=xterm-kitty
 export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/arpangreat/.local/bin
 export PATH=$PATH:/home/arpangreat/.local/share/nvim/mason/bin
 export PATH=$PATH:/home/arpangreat/.ghcup/bin
 export CHROME_EXECUTABLE=/usr/bin/brave
 export PATH="$PATH:/home/arpangreat/.dotnet/tools"
-export PATH=/home/arpangreat/.nimble/bin:$PATH
-export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
-export ANDROID_HOME=/home/arpangreat/Android/Sdk
+# export PATH=/home/arpangreat/.nimble/bin:$PATH
+# export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
+# export ANDROID_HOME=/home/arpangreat/Android/Sdk
 export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+# export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
 export BROWSER=/usr/bin/firefox
@@ -428,7 +427,7 @@ fi
 zle -N _sgpt_zsh
 bindkey ^o _sgpt_zsh
 # Shell-GPT integration ZSH v0.1
-# eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"
 
 bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
 bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
