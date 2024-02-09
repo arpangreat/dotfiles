@@ -1,17 +1,37 @@
-
 starship init fish | source
 
 zoxide init fish --cmd cd | source
 
+function fish_greeting
+  fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
+end
 
-fish_vi_key_bindings
+function fish_hybrid_key_bindings --description \
+"Vi-style bindings that inherit emacs-style bindings in all modes"
+    for mode in default insert visual
+        fish_default_key_bindings -M $mode
+    end
+    fish_vi_key_bindings --no-erase
+end
+set -g fish_key_bindings fish_hybrid_key_bindings
 
-set -gx EDITOR hx
+function fish_user_key_bindings
+    for mode in insert default visual
+        bind -M $mode \cf forward-char
+    end
+end
+
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_replace_one underscore
+set fish_cursor_visual block
+
+set -gx EDITOR nvim
 
 set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
 
 set -g DENO_INSTALL "/home/arpangreat/.deno"
-set -g PATH $DENO_INSTALL/bin:$PATH
+fish_add_path $DENO_INSTALL/bin:$PATH
 
 set -g JAVA_HOME /usr/lib/jvm/default
 # Go
@@ -28,3 +48,37 @@ set -g SFML_LIBS_DIR "/usr/lib/SFML/"
 set -g LD_LIBRARY_PATH "/usr/lib/SFML/"
 
 set -g BROWSER /usr/bin/firefox
+fish_add_path $PATH:$GOPATH/go/bin
+fish_add_path $PATH:/usr/local/go/bin
+fish_add_path $PATH:$HOME/.config/composer/vendor/bin
+fish_add_path $PATH:$HOME/.cargo/env
+fish_add_path $PATH:$HOME/.cargo/bin
+fish_add_path $PATH:$HOME/.opam/default/bin
+fish_add_path $PATH:/home/arpangreat/.local/bin
+fish_add_path $PATH:/home/arpangreat/.local/share/nvim/mason/bin
+fish_add_path $PATH:/home/arpangreat/.ghcup/bin
+fish_add_path $HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
+fish_add_path "$BUN_INSTALL/bin:$PATH"
+
+eval (batpipe)
+set -g BATPIPE color
+
+# The following snippet is meant to be used like this in your fish config:
+#
+# if status is-interactive
+# #     # Configure auto-attach/exit to your likings (default is off).
+#       set ZELLIJ_AUTO_ATTACH true
+#       set ZELLIJ_AUTO_EXIT true
+#      eval (zellij setup --generate-auto-start fish | string collect)
+#  end
+if not set -q ZELLIJ
+    if test "$ZELLIJ_AUTO_ATTACH" = "true"
+        zellij attach -c
+    else
+        zellij
+    end
+
+    if test "$ZELLIJ_AUTO_EXIT" = "true"
+        kill $fish_pid
+    end
+end
