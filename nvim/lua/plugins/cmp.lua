@@ -73,8 +73,8 @@ return {
         end
         end, { "i", "s" }), ]]
         ["<Tab>"] = cmp.mapping(function()
-          if luasnip.jumpable(1) then
-            luasnip.jump(1)
+          if luasnip.expand_or_jumpable(1) then
+            luasnip.expand_or_jump(1)
           else
             neotab.tabout()
           end
