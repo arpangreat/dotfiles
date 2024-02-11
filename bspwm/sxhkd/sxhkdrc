@@ -443,16 +443,16 @@ super + shift + Down
 
 # Scratchpads
 super + u
-  dropdowntoggle.sh
+  /home/arpangreat/dotfiles/bspwm/dropdowntoggle.sh
 
 super + i
-  calctoggle.sh
+  /home/arpangreat/dotfiles/bspwm/calctoggle.sh
 
 super + g
-  filestoggle.sh
+  /home/arpangreat/dotfiles/bspwm/filestoggle.sh
 
 super + c 
-  btmtoggle.sh
+  /home/arpangreat/dotfiles/bspwm/btmtoggle.sh
 
 
 #################################################################
