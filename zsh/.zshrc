@@ -146,7 +146,7 @@ alias gap='git add -p'
 alias gal='git lg -p'
 alias gso='git show'
 alias gco='git checkout'
-alias gf='$GOPATH/bin/gf'
+alias gf='~/gf/gf2'
 alias arc='nvim ~/dotfiles/alacritty/alacritty.yml'
 alias zrc='nvim ~/.zshrc'
 alias trc='nvim ~/.tmux.conf'
@@ -171,7 +171,7 @@ alias cht='~/dotfiles/custom-scripts/tmux-cht.sh'
 alias notes='nvim ~/wiki/index.md'
 alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
 alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='eza -l --icons --color=always | bat'
+alias ll='ya'
 alias ls='eza -l --icons --color=always | bat'
 alias la='eza -l --icons -a --color=always | bat'
 alias lt='eza -l --icons --tree --color=always | bat'
@@ -400,6 +400,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export SFML_INCLUDE_DIR="/usr/include/SFML/"
 export SFML_LIBS_DIR="/usr/lib/SFML/"
 export LD_LIBRARY_PATH="/usr/lib/SFML/"
+export NNN_FIFO="/tmp/nnn.fifo"
+export NNN_TMPFILE="/tmp/.lastd"
 
 . /opt/asdf-vm/asdf.sh
 
