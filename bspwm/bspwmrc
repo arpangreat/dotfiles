@@ -8,7 +8,7 @@ $HOME/.config/bspwm/autostart.sh
 #BSPWM configuration
 #bspc config border_radius       8
 bspc config border_width         1
-bspc config window_gap           10
+bspc config window_gap           5
 bspc config top_padding          30
 bspc config bottom_padding       10
 bspc config left_padding         10
@@ -108,11 +108,11 @@ bspc rule -a Spotify desktop='^10' follow=on state=tiled
 bspc rule -a Zathura desktop='^2' follow=on state=tiled
 
 # Scratchpads
-kitty --class "dropdown" -e tmux new-session &
+kitty --class "dropdown" &
 bspc rule -a dropdown state=floating sticky=on center=true hidden=on
 kitty --class "calc" -e "ipython" &
 bspc rule -a calc state=floating sticky=on center=true hidden=on
-kitty --class "files" -e "ranger" &
+kitty --class "files" -e "yazi" &
 bspc rule -a files state=floating sticky=on center=true hidden=on
 kitty --class "btm" -e btm --battery &
 bspc rule -a btm state=floating sticky=on center=true hidden=on
