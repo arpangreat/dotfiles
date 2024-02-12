@@ -76,6 +76,11 @@ function fzf-complete -d 'fzf completion and print selection back to commandline
 	commandline -f repaint
 end
 
+if status --is-interactive
+  and not set -q TMUX
+   exec tmux -u
+end
+
 set fish_cursor_default block
 set fish_cursor_insert line
 set fish_cursor_replace_one underscore
@@ -125,17 +130,17 @@ eval (batpipe)
 #       set ZELLIJ_AUTO_EXIT true
 #      eval (zellij setup --generate-auto-start fish | string collect)
 #  end
-if not set -q ZELLIJ
-    if test "$ZELLIJ_AUTO_ATTACH" = "true"
-        zellij attach -c
-    else
-        zellij
-    end
+# if not set -q ZELLIJ
+#     if test "$ZELLIJ_AUTO_ATTACH" = "true"
+#         zellij attach -c
+#     else
+#         zellij
+#     end
 
-    if test "$ZELLIJ_AUTO_EXIT" = "true"
-        kill $fish_pid
-    end
-end
+#     if test "$ZELLIJ_AUTO_EXIT" = "true"
+#         kill $fish_pid
+#     end
+# end
 
 # opam configuration
 source /home/arpangreat/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
