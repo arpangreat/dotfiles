@@ -297,3 +297,8 @@ keymap = [
 	# Filtering
 	{ on = [ "/" ], exec = "filter", desc = "Apply a filter for the help items" },
 ]
+
+[[manager.prepend_keymap]]
+on   = [ "<C-s>" ]
+exec = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
