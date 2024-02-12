@@ -1,5 +1,3 @@
-# abbrs
-
 abbr -a nv nvim
 abbr -a e emacs
 abbr -a en emacs -nw
