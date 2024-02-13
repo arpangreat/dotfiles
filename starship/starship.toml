@@ -28,7 +28,11 @@ disabled = true
 symbol = " "
 
 [git_branch]
+disabled = true
 symbol = " "
+
+[git_status]
+disabled = true
 
 [buf]
 symbol = " "
