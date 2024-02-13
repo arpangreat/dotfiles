@@ -92,3 +92,11 @@ root = ~/
 	insteadOf = git://github.com/
 [status]
 	show-toplevel-name = true
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[maintenance]
+	repo = /home/arpangreat/dotfiles
