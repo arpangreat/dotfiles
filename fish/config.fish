@@ -108,6 +108,7 @@ set -g SFML_LIBS_DIR "/usr/lib/SFML/"
 set -g LD_LIBRARY_PATH "/usr/lib/SFML/"
 
 set -g BROWSER /usr/bin/firefox
+set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 fish_add_path $PATH:$GOPATH/go/bin
 fish_add_path $PATH:/usr/local/go/bin
 fish_add_path $PATH:$HOME/.config/composer/vendor/bin
