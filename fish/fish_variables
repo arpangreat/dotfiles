@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dspinner\x3a\x23f5e0dc\x2chl\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dfg\x3a\x23cdd6f4\x2cheader\x3a\x23f38ba8\x2cinfo\x3a\x23cba6f7\x2cpointer\x3a\x23f5e0dc\x20\x2d\x2dcolor\x3dmarker\x3a\x23f5e0dc\x2cfg\x2b\x3a\x23cdd6f4\x2cprompt\x3a\x23cba6f7\x2chl\x2b\x3a\x23f38ba8
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/arpangreat/\x2elocal/share/z/data
@@ -23,9 +24,10 @@ SETUVAR _fish_abbr_o:xdg\x2dopen
 SETUVAR _fish_abbr_zrc:nvim\x20/home/arpangreat/\x2ezshrc
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1ewfxr/forgit
+SETUVAR _fisher_paldepind_2F_projectdo_files:\x7e/\x2econfig/fish/functions/projectdo_build\x2efish\x1e\x7e/\x2econfig/fish/functions/projectdo_run\x2efish\x1e\x7e/\x2econfig/fish/functions/projectdo_test\x2efish\x1e\x7e/\x2econfig/fish/functions/projectdo_tool\x2efish\x1e\x7e/\x2econfig/fish/completions/projectdo\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1ewfxr/forgit\x1epaldepind/projectdo
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ezsh
+SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2efish
 SETUVAR fish_color_autosuggestion:6c7086
 SETUVAR fish_color_cancel:f38ba8
 SETUVAR fish_color_command:89b4fa
@@ -67,4 +69,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/arpangreat/Android/Sdk/tools\x1e/home/arpangreat/\x2enimble/bin\x1e/home/arpangreat/\x2edotnet/tools\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/home/arpangreat/go/bin\x1e/home/arpangreat/flutter/bin\x1e/home/arpangreat/\x2edeno/bin\x1e/home/arpangreat/\x2edeno\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/home/arpangreat/\x2efzf/bin\x1e/home/arpangreat/fzf/bin
+SETUVAR fish_user_paths:/home/arpangreat/Android/Sdk/tools\x1e/home/arpangreat/\x2enimble/bin\x1e/home/arpangreat/\x2edotnet/tools\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/home/arpangreat/go/bin\x1e/home/arpangreat/flutter/bin\x1e/home/arpangreat/\x2edeno/bin\x1e/home/arpangreat/\x2edeno\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/home/arpangreat/\x2efzf/bin\x1e/home/arpangreat/fzf/bin\x1e/home/arpangreat/\x2erye/shims\x1e/home/arpangreat/\x2erye/env
