@@ -107,6 +107,8 @@ set -g SFML_INCLUDE_DIR "/usr/include/SFML/"
 set -g SFML_LIBS_DIR "/usr/lib/SFML/"
 set -g LD_LIBRARY_PATH "/usr/lib/SFML/"
 
+set -Ua fish_user_paths /home/arpangreat/.rye/env
+
 set -g BROWSER /usr/bin/firefox
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 fish_add_path $PATH:$GOPATH/go/bin
@@ -142,6 +144,10 @@ eval (batpipe)
 #         kill $fish_pid
 #     end
 # end
+
+v complete setup fish | source
+
+cod init $fish_pid fish | source
 
 # opam configuration
 source /home/arpangreat/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

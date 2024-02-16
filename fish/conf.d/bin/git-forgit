@@ -53,6 +53,18 @@ _forgit_previous_commit() {
     fi
 }
 
+_forgit_contains_non_flags() {
+    while (("$#")); do
+        case "$1" in
+        -*) shift ;;
+        *)
+            return 0
+            ;;
+        esac
+    done
+    return 1
+}
+
 # optional render emoji characters (https://github.com/wfxr/emoji-cli)
 hash emojify &>/dev/null && _forgit_emojify='|emojify'
 
@@ -126,6 +138,9 @@ _forgit_diff() {
     # We have to do a two-step sed -> tr pipe because OSX's sed implementation does
     # not support the null-character directly.
     get_files="echo {} | sed 's/.*] *//' | sed 's/  ->  /\\\n/' | tr '\\\n' '\\\0'"
+    # Similar to the line above, but only gets a single file from a single line
+    # Gets the new name of renamed files
+    get_file="echo {} | sed 's/.*] *//' | sed 's/.*->  //'"
     # Git stashes are named "stash@{x}", which contains the fzf placeholder "{x}".
     # In order to support passing stashes as arguments to _forgit_diff, we have to
     # prevent fzf from interpreting this substring by escaping the opening bracket.
@@ -138,7 +153,7 @@ _forgit_diff() {
         $FORGIT_FZF_DEFAULT_OPTS
         +m -0 --bind=\"enter:execute($enter_cmd | $_forgit_enter_pager)\"
         --preview=\"$preview_cmd\"
-        --bind=\"alt-e:execute-silent($EDITOR \$\($get_files\) >/dev/tty </dev/tty)+refresh-preview\"
+        --bind=\"alt-e:execute-silent($EDITOR \\\"\$\($get_file)\\\" >/dev/tty </dev/tty)+refresh-preview\"
         $FORGIT_DIFF_FZF_OPTS
         --prompt=\"$commits > \"
     "
@@ -157,7 +172,7 @@ _forgit_add() {
     local git_add changed unmerged untracked files opts preview extract
     git_add="git add $FORGIT_ADD_GIT_OPTS"
     # Add files if passed as arguments
-    [[ $# -ne 0 ]] && $git_add "$@" && git status -su && return
+    [[ $# -ne 0 ]] && { $git_add "$@" && git status -su; return $?; }
 
     changed=$(git config --get-color color.status.changed red)
     unmerged=$(git config --get-color color.status.unmerged red)
@@ -179,7 +194,7 @@ _forgit_add() {
         $FORGIT_FZF_DEFAULT_OPTS
         -0 -m --nth 2..,..
         --preview=\"$preview\"
-        --bind=\"alt-e:execute-silent($EDITOR \$\(echo {} | $extract\) >/dev/tty </dev/tty)+refresh-preview\"
+        --bind=\"alt-e:execute-silent($EDITOR \\\"\$\(echo {} | $extract\)\\\" >/dev/tty </dev/tty)+refresh-preview\"
         $FORGIT_ADD_FZF_OPTS
     "
     files=$(git -c color.status=always -c status.relativePaths=true status -su |
@@ -196,7 +211,7 @@ _forgit_reset_head() {
     _forgit_inside_work_tree || return 1
     local git_reset_head cmd files opts rootdir
     git_reset_head="git reset -q $FORGIT_RESET_HEAD_GIT_OPTS HEAD"
-    [[ $# -ne 0 ]] && $git_reset_head "$@" && git status --short && return
+    [[ $# -ne 0 ]] && { $git_reset_head "$@" && git status --short; return $?; }
     rootdir=$(git rev-parse --show-toplevel)
     cmd="git diff --staged --color=always -- $rootdir/{} | $_forgit_diff_pager "
     opts="
@@ -216,7 +231,7 @@ _forgit_stash_show() {
     _forgit_inside_work_tree || return 1
     local git_stash_show git_stash_list cmd opts
     git_stash_show="git stash show --color=always --ext-diff"
-    [[ $# -ne 0 ]] && $git_stash_show "$@" && return
+    [[ $# -ne 0 ]] && { $git_stash_show "$@"; return $?; }
     git_stash_list="git stash list $FORGIT_STASH_SHOW_GIT_OPTS"
     cmd="echo {} |cut -d: -f1 |xargs -I% $git_stash_show % |$_forgit_diff_pager"
     opts="
@@ -249,7 +264,7 @@ _forgit_stash_push() {
             # ignore -u as it's used implicitly
             -u|--include-untracked) shift ;;
             # pass to git directly when encountering anything else
-            *) $git_stash_push "${args[@]}" && return $?
+            *) $git_stash_push "${args[@]}"; return $?
         esac
     done
     local opts preview files
@@ -274,7 +289,7 @@ _forgit_stash_push() {
 # git clean selector
 _forgit_clean() {
     _forgit_inside_work_tree || return 1
-    [[ $# -ne 0 ]] && git clean "$@" &>/dev/null && return 0
+    _forgit_contains_non_flags "$@" && { git clean -q "$@"; return $?; }
     local git_clean files opts
     git_clean="git clean $FORGIT_CLEAN_GIT_OPTS"
     opts="
@@ -323,7 +338,7 @@ _forgit_cherry_pick() {
     ${IFS+"false"} && unset old_IFS || old_IFS="$IFS"
     IFS=$'\n'
     # shellcheck disable=2207
-    commits=($(echo "$fzf_selection" | sort --numeric-sort --key=1 | cut -f2 | cut -d' ' -f1 | _forgit_reverse_lines))
+    commits=($(echo "$fzf_selection" | sort -n -k 1 | cut -f2 | cut -d' ' -f1 | _forgit_reverse_lines))
     ${old_IFS+"false"} && unset IFS || IFS="$old_IFS"
     [ ${#commits[@]} -eq 0 ] && return 1
 
@@ -442,7 +457,7 @@ _forgit_checkout_branch() {
     _forgit_inside_work_tree || return 1
     # if called with arguments, check if branch exists, else create a new one
     if [[ $# -ne 0 ]]; then
-        if git show-branch "$@" &>/dev/null; then
+        if [[ "$*" == "-" ]] || git show-branch "$@" &>/dev/null; then
             git switch "$@"
         else
             git switch -c "$@"
@@ -522,7 +537,7 @@ _forgit_branch_delete() {
     _forgit_inside_work_tree || return 1
     local git_branch preview opts cmd branches
     git_branch="git branch $FORGIT_BRANCH_DELETE_GIT_OPTS"
-    [[ $# -ne 0 ]] && $git_branch -D "$@" && return
+    [[ $# -ne 0 ]] && { $git_branch -D "$@"; return $?; }
     preview="git log {1} $_forgit_log_preview_options"
 
     opts="
@@ -567,7 +582,7 @@ _forgit_revert_commit() {
     commits=($(eval "$cmd" | 
         nl |
         FZF_DEFAULT_OPTS="$opts" fzf --preview="$preview" -m | 
-        sort --numeric-sort --key=1 | 
+        sort -n -k 1 | 
         cut -f2- |
         sed 's/^[^a-f^0-9]*\([a-f0-9]*\).*/\1/'))
     ${old_IFS+"false"} && unset IFS || IFS="$old_IFS"
@@ -582,7 +597,7 @@ _forgit_blame() {
     _forgit_inside_work_tree || return 1
     local git_blame opts flags preview file
     git_blame="git blame $FORGIT_BLAME_GIT_OPTS"
-    [[ $# -ne 0 ]] && $git_blame "$@" && return 0
+    _forgit_contains_non_flags "$@" && { $git_blame "$@"; return $?; }
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         $FORGIT_BLAME_FZF_OPTS
@@ -619,7 +634,7 @@ _forgit_ignore() {
     ${IFS+"false"} && unset old_IFS || old_IFS="$IFS"
     IFS=$'\n'
     # shellcheck disable=SC2206,2207
-    args=($@) && [[ $# -eq 0 ]] && args=($(_forgit_ignore_list | nl -nrn -w4 -s'  ' |
+    args=($@) && [[ $# -eq 0 ]] && args=($(_forgit_ignore_list | nl -w4 -s'  ' |
         FZF_DEFAULT_OPTS="$opts" fzf | awk '{print $2}'))
     ${old_IFS+"false"} && unset IFS || IFS="$old_IFS"
     [ ${#args[@]} -eq 0 ] && return 1
