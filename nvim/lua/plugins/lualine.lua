@@ -28,8 +28,8 @@ return {
 			return "\u{f085} " .. table.concat(c, "|")
 		end
 
-		local custom = require("lualine.themes.catppuccin")
-		-- local custom = require("lualine.themes.tokyonight")
+		-- local custom = require("lualine.themes.catppuccin")
+		local custom = require("lualine.themes.tokyonight")
 		-- local custom = require("lualine.themes.material")
 		-- local custom = require("lualine.themes.horizon")
 		-- local custom = require("lualine.themes.solarized-osaka")
