@@ -126,7 +126,6 @@ return {
           LineNr = { fg = colors.overlay1 },
           ["@variable"] = { fg = colors.red },
           ["@variable.member"] = { fg = colors.maroon },
-          ["@variable.other.member"] = { fg = colors.maroon },
           ["@namespace"] = { fg = colors.pink },
           ["@field"] = { fg = colors.pink },
           -- CursorLine = { bg = colors.mantle },
