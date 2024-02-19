@@ -26,6 +26,22 @@ require("lazy").setup("plugins", {
 		loader = true,
 		require = true,
 	},
+	performance = {
+		cache = {
+			enable = true,
+		},
+		rtp = {
+			disabled_plugin = {
+				"netrwPlugin",
+				"gzip",
+				"tarPlugin",
+				"tohtml",
+				"tutor",
+				"zipPlugin",
+			},
+		},
+	},
+	debug = false,
 })
 
 vim.api.nvim_create_autocmd("User", {

@@ -5,6 +5,7 @@ return {
 		vim.o.timeout = true
 		vim.o.timeoutlen = 300
 	end,
+	keys = { { "<leader>" } },
 	config = function()
 		local wk = require("which-key")
 
