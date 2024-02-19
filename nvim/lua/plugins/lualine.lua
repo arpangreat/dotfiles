@@ -1,6 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	event = "UIEnter",
+	event = "BufEnter",
 	config = function()
 		local icons = require("user.icons")
 		local diff = {
