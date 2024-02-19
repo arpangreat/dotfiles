@@ -3,35 +3,21 @@ return {
   event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
-    "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-cmdline",
     "ray-x/cmp-treesitter",
     "hrsh7th/cmp-nvim-lua",
-    "hrsh7th/cmp-emoji",
     "saadparwaiz1/cmp_luasnip",
     "dmitmel/cmp-cmdline-history",
     "hrsh7th/cmp-nvim-lsp-signature-help",
-    --   {
-    --     "elixir-tools/elixir-tools.nvim",
-    --     version="*",
-    --   event = { "BufRead", "BufNewFile" },
-    -- },
-    "mhinz/vim-mix-format",
     { "tzachar/cmp-tabnine", build = "./install.sh" },
     { "L3MON4D3/LuaSnip" },
     "rafamadriz/friendly-snippets",
     { "ollykel/v-vim" },
-    {
-      "rust-lang/rust.vim",
-      "ziglang/zig.vim",
-      "Tetralux/odin.vim",
-      "scalameta/nvim-metals",
-    },
-    { "ibhagwan/fzf-lua" },
+    "rust-lang/rust.vim",
+    "ziglang/zig.vim",
   },
   config = function()
-    local lspkind = require("lspkind")
     local luasnip = require("luasnip")
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
     local cmp = require("cmp")
@@ -97,33 +83,19 @@ return {
       },
 
       sources = cmp.config.sources({
-        { name = "copilot" },
         { name = "nvim_lsp" },
         { name = "luasnip" },
-        { name = "buffer" },
         { name = "treesitter" },
         { name = "nvim_lua" },
         { name = "path" },
         { name = "cmp_tabnine" },
-        { name = "cmp_git" },
-        { name = "copilot" },
-        { name = "emoji" },
         { name = "nvim_lsp_signature_help" },
       }),
 
-      cmp.setup.filetype("gitcommit", {
-        sources = cmp.config.sources({
-          { name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
-        }, {
-          { name = "buffer" },
-        }),
-      }),
       -- Use buffer source for `/`.
       cmp.setup.cmdline("/", {
         mapping = cmp.mapping.preset.cmdline(),
         sources = cmp.config.sources({
-          { name = "buffer" },
-        }, {
           { name = "cmdline_history" },
         }),
       }),
@@ -159,7 +131,6 @@ return {
       luasnip = "[SNIP]",
       spell = "暈",
       cmp_tabnine = "",
-      Copilot = "",
       })[entry.source.name]
       return vim_item
       end,
@@ -183,8 +154,6 @@ return {
 
       sorting = {
         comparators = {
-          require("copilot_cmp.comparators").prioritize,
-
           cmp.config.compare.locality,
           cmp.config.compare.recently_used,
           cmp.config.compare.score,
