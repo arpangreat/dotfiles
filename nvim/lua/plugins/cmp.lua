@@ -67,21 +67,6 @@ return {
         end),
       }),
 
-      window = {
-        documentation = {
-          -- border = cmp.config.window.bordered(),
-          -- border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-          border = "single",
-          -- winhighlight = "NormalFloat:None,FloatBorder:NormalFloat",
-          winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
-        },
-
-        completion = {
-          border = "single",
-          winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
-        },
-      },
-
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         { name = "luasnip" },
@@ -118,6 +103,25 @@ return {
           { name = "cmdline_history" },
         }),
       }),
+
+      window = {
+        documentation = cmp.config.window.bordered(),
+
+        completion = {
+          border = "single",
+          col_offset = 1,
+          scroll_bar = false,
+          max_width = 100,
+        },
+      },
+
+      completion = {
+        completeopt = "menu,menuone,preview,noinsert,noselect",
+      },
+
+      -- view = {
+      -- 	entries = "native",
+      -- },
 
       --[[ formatting = {
       format = function(entry, vim_item)
