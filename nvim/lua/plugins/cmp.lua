@@ -116,12 +116,12 @@ return {
       },
 
       completion = {
-        completeopt = "menu,menuone,preview,noinsert",
+        completeopt = "menu,menuone,preview,noinsert,noselect",
       },
 
-      view = {
-        -- entries = "native"
-      },
+      -- view = {
+      -- 	entries = "native",
+      -- },
 
       --[[ formatting = {
       format = function(entry, vim_item)
