@@ -2,6 +2,7 @@ return {
 	"nvim-tree/nvim-web-devicons",
 	{
 		"uga-rosa/ccc.nvim",
+		event = "VeryLazy",
 		init = function()
 			require("ccc").setup({
 				highlighter = {
@@ -30,6 +31,8 @@ return {
 	{
 		"stevearc/dressing.nvim",
 		lazy = true,
-		config = function() end,
+		config = function()
+			require("dressing").setup()
+		end,
 	},
 }
