@@ -5,21 +5,21 @@ require("lspconfig").pyright.setup({ on_attach = on_attach, capabilities = capab
 require("lspconfig").taplo.setup({ on_attach = on_attach, capabilities = capabilities })
 
 require("lspconfig").ocamllsp.setup({
-	settings = {
-		codelens = { enable = true },
-		extendedHover = { enable = true },
-	},
-	on_attach = on_attach,
-	capabilities = capabilities,
+  settings = {
+    codelens = { enable = true },
+    extendedHover = { enable = true },
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
 })
 require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
 
 require("lspconfig").lua_ls.setup({
-	settings = {
-		Lua = {
-			completion = {
-				callSnippet = "Replace",
-			},
-		},
-	},
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace",
+      },
+    },
+  },
 })

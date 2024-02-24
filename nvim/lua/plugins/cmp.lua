@@ -156,19 +156,7 @@ return {
         ghost_text = true,
       },
 
-      sorting = {
-        comparators = {
-          cmp.config.compare.locality,
-          cmp.config.compare.recently_used,
-          cmp.config.compare.score,
-          cmp.config.compare.offset,
-          cmp.config.compare.exact,
-          cmp.config.compare.kind,
-          cmp.config.compare.sort_text,
-          cmp.config.compare.length,
-          cmp.config.compare.order,
-        },
-      },
+      -- sorting = require("cmp.config.default").sorting,
     })
 
     -- you need setup cmp first put this after cmp.setup()
