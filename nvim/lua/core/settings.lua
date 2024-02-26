@@ -24,7 +24,7 @@ vim.opt.expandtab = true
 vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 0
 vim.opt.showmode = false
-vim.opt.completeopt = { "menu", "menuone", "noselect", "noinsert", "preview" }
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.hidden = true
 vim.opt.sidescroll = 1
 -- vim.opt.include
