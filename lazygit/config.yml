@@ -1,0 +1,14 @@
+gui:
+  showBranchCommitHash: true
+  nerdFontsVersion: 3
+os:
+  editPreset: "nvim"
+git:
+  paging:
+    useConfig: true
+  commit:
+    signOff: true
+  log:
+    showGraph: "always"
+    showWholeGraph: true
+quitOnTopLevelReturn: true
