@@ -267,12 +267,12 @@ vim.keymap.set("i", "<C-l>", function()
 end)
 
 -- Copilot
-vim.api.nvim_set_keymap(
-  "n",
-  "<c-s>",
-  "<cmd>lua require('copilot.suggestion').toggle_auto_trigger()<CR>",
-  { noremap = true, silent = true }
-)
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<c-s>",
+--   "<cmd>lua require('copilot.suggestion').toggle_auto_trigger()<CR>",
+--   { noremap = true, silent = true }
+-- )
 
 -- Telekasten
 -- vim.keymap.set("n", "<Leader>zf", ":Telekasten panel<CR>", { noremap = true, silent = false, expr = false })
