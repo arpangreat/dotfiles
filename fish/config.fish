@@ -27,15 +27,16 @@ end
 
 fzf_key_bindings
 
-if status --is-interactive
-  and not set -q TMUX
-   exec tmux -u
-end
-
+set fish_vi_force_cursor
 set fish_cursor_default block
 set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
+
+if status --is-interactive
+  and not set -q TMUX
+   exec tmux -u
+end
 
 set -gx EDITOR nvim
 
