@@ -3,23 +3,10 @@
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dspinner\x3a\x23f5e0dc\x2chl\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dfg\x3a\x23cdd6f4\x2cheader\x3a\x23f38ba8\x2cinfo\x3a\x23cba6f7\x2cpointer\x3a\x23f5e0dc\x20\x2d\x2dcolor\x3dmarker\x3a\x23f5e0dc\x2cfg\x2b\x3a\x23cdd6f4\x2cprompt\x3a\x23cba6f7\x2chl\x2b\x3a\x23f38ba8\x20\x2d\x2dansi\x20\x2d\x2dheight\x3d\x2780\x25\x27\x20\x2d\x2dbind\x3d\x27alt\x2dk\x3apreview\x2dup\x2calt\x2dp\x3apreview\x2dup\x27\x20\x2d\x2dbind\x3d\x27alt\x2dj\x3apreview\x2ddown\x2calt\x2dn\x3apreview\x2ddown\x27\x20\x2d\x2dbind\x3d\x27ctrl\x2dr\x3atoggle\x2dall\x27\x20\x2d\x2dbind\x3d\x27ctrl\x2ds\x3atoggle\x2dsort\x27\x20\x2d\x2dbind\x3d\x27\x3f\x3atoggle\x2dpreview\x27\x20\x2d\x2dbind\x3d\x27alt\x2dw\x3atoggle\x2dpreview\x2dwrap\x27\x20\x2d\x2dpreview\x2dwindow\x3d\x27right\x3a60\x25\x27\x20\x2b1
 SETUVAR Z_DATA_DIR:/home/arpangreat/\x2elocal/share/z
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_arc:vim\x20/home/arpangreat/\x2econfig/alacritty/alacritty\x2eyml
-SETUVAR _fish_abbr_brc:vim\x20/home/arpangreat/\x2ebashrc
-SETUVAR _fish_abbr_cht:cht\x2esh
-SETUVAR _fish_abbr_e:emacs
-SETUVAR _fish_abbr_ec:emacsclient
-SETUVAR _fish_abbr_frc:nvim\x20/home/arpangreat/dotfiles/fish/config\x2efish
-SETUVAR _fish_abbr_g:git
-SETUVAR _fish_abbr_gotm:/home/arpangreat/dotfiles/custom\x2dscripts/\x2e/gotm
-SETUVAR _fish_abbr_ide:bash\x20/home/arpangreat/dotfiles/custom\x2dscripts/ide\x2esh
-SETUVAR _fish_abbr_irc:vim\x20\x7e/\x2econfig/i3/config
-SETUVAR _fish_abbr_javatm:/home/arpangreat/dotfiles/custom\x2dscripts/\x2e/javatm
-SETUVAR _fish_abbr_nrc:nvim\x20/home/arpangreat/\x2econfig/nvim/init\x2elua
-SETUVAR _fish_abbr_nv:nvim
-SETUVAR _fish_abbr_o:xdg\x2dopen
-SETUVAR _fish_abbr_zrc:nvim\x20/home/arpangreat/\x2ezshrc
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ewfxr/forgit
+SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:\x7e/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e\x7e/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/plugin\x2dbang\x2dbang\x2efish
+SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_wttr_files:\x7e/\x2econfig/fish/functions/moon\x2efish\x1e\x7e/\x2econfig/fish/functions/wttr\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ewfxr/forgit\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1eoh\x2dmy\x2dfish/plugin\x2dwttr
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2efish
 SETUVAR fish_color_autosuggestion:565f89
