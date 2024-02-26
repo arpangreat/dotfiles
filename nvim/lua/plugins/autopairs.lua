@@ -1,10 +1,15 @@
 return {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    init = function()
-      require("nvim-autopairs").setup({
-        enable_check_bracket_line = true,
-        fast_wrap = {},
-      })
-    end,
+  "altermo/ultimate-autopair.nvim",
+  event = { "InsertEnter" },
+  opts = {
+    -- space2 = { enable = true }, --Config goes here
+    -- tabout = { enable = true }, --Config goes here
+    -- close = { enable = true }, --Config goes here
+    fastwrap = {
+      map = "<C-e>",
+      rmap = "<C-e>",
+      cmap = "<C-e>",
+      rcmap = "<C-e>",
+    },
+  },
 }
