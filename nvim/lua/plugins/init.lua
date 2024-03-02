@@ -12,6 +12,7 @@ return {
       })
     end,
   },
+
   { "simnalamburt/vim-mundo",                    event = "VeryLazy" },
   {
     "echasnovski/mini.files",
@@ -34,5 +35,8 @@ return {
     config = function()
       require("dressing").setup()
     end,
+  },
+  {
+    "kevinhwang91/nvim-bqf",
   },
 }
