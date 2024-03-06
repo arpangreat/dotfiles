@@ -14,4 +14,4 @@ map i recolor
 map p print
 map g goto top
 
-include catppuccin-mocha
+include tokyonight_storm.zathurarc
