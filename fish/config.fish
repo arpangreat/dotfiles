@@ -98,6 +98,7 @@ eval (batpipe)
 # end
 
 v complete setup fish | source
+jj util completion fish | source
 
 cod init $fish_pid fish | source
 
