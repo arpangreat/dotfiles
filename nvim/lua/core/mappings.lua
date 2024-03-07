@@ -89,6 +89,12 @@ vim.api.nvim_set_keymap(
 )
 vim.api.nvim_set_keymap(
 	"n",
+	"<Leader>trr",
+	":lua require('telescope.builtin').registers()<CR>",
+	{ noremap = true, silent = false }
+)
+vim.api.nvim_set_keymap(
+	"n",
 	"<Leader>tcc",
 	":lua require('arpangreat.telescope').search_configs()<CR>",
 	{ noremap = true, silent = false }
@@ -104,26 +110,32 @@ vim.api.nvim_set_keymap("n", "<Leader>ttc", ":TodoTelescope<CR>", { noremap = tr
 
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>tea",
-	":lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor({}))<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>teo",
-	":lua require('telescope.builtin').lsp_range_code_actions()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>ter",
+	"<Leader>tlr",
 	":lua require('telescope.builtin').lsp_references()<CR>",
 	{ noremap = true, silent = false }
 )
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>tes",
+	"<Leader>tld",
+	":lua require('telescope.builtin').lsp_definitions()<CR>",
+	{ noremap = true, silent = false }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>tli",
+	":lua require('telescope.builtin').lsp_implementations()<CR>",
+	{ noremap = true, silent = false }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>tls",
 	":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>",
+	{ noremap = true, silent = false }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>tlw",
+	":lua require('telescope.builtin').lsp_workspace_symbols()<CR>",
 	{ noremap = true, silent = false }
 )
 
