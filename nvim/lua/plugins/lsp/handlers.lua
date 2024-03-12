@@ -5,6 +5,7 @@ require("lspconfig").pyright.setup({ on_attach = on_attach, capabilities = capab
 require("lspconfig").taplo.setup({ on_attach = on_attach, capabilities = capabilities })
 
 require("lspconfig").ocamllsp.setup({
+  -- cmd = { "/home/arpangreat/ocaml-lsp/_build/default/ocaml-lsp-server/bin/main.exe" },
   settings = {
     codelens = { enable = true },
     extendedHover = { enable = true },
