@@ -25,7 +25,7 @@ function ya
 	rm -f -- "$tmp"
 end
 
-fzf_key_bindings
+# fzf_key_bindings
 
 set fish_vi_force_cursor
 set fish_cursor_default block

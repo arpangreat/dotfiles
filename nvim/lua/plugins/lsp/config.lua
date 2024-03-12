@@ -16,17 +16,26 @@ M.on_attach = function(client, bufnr)
   vim.api.nvim_set_keymap("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = true })
   vim.api.nvim_set_keymap("n", "g0", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", { noremap = true, silent = true })
   vim.api.nvim_set_keymap("n", "gW", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>", { noremap = true, silent = true })
-  vim.api.nvim_set_keymap("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap(
+    "n",
+    "ga",
+    "<cmd>lua require('actions-preview').code_actions()<CR>",
+    { noremap = true, silent = true }
+  )
   vim.api.nvim_set_keymap("n", "gk", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { noremap = true, silent = true })
   vim.api.nvim_set_keymap("n", "gj", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<Leader>rg", "<cmd>lua vim.lsp.codelens.run()<CR>")
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+M.capabilities = vim.lsp.protocol.make_client_capabilities()
 M.capabilities = require("cmp_nvim_lsp").default_capabilities()
 -- local capabilities = vim.tbl_deep_extend(
 --   'force',
 --   vim.lsp.protocol.make_client_capabilities(),
+--   require('epo').register_cap()
+-- )
+-- M.capabilities = require("epo").register_cap()
+
 --   require('epo').register_cap()
 -- )
 -- M.capabilities = require("epo").register_cap()
