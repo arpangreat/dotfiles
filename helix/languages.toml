@@ -107,6 +107,10 @@ language-servers = ["v-analyzer"]
 [[language]]
 name = "ocaml"
 auto-format = true
+formatter = { command = "ocamlformat", args = [
+	"-",
+	"--impl"
+]}
 
 [language-server.v-analyzer]
 command = 'v-analyzer'
