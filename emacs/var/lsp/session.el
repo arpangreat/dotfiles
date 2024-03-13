@@ -1,1 +1,0 @@
-#s(lsp-session ("/home/arpangreat/CExamples" "/home/arpangreat/cppexamples/ArrayPointers" "/home/arpangreat/space_invaders") nil #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ()) #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ()) #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ()))
