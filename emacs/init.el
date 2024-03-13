@@ -348,17 +348,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(all-the-icons annalist bui command-log-mode company company-box
-		   counsel counsel-projectile dap-mode doom-modeline
-		   doom-themes evil evil-collection
-		   evil-nerd-commenter forge frame-local general
-		   go-mode goggles helpful ivy-rich lsp-docker lsp-ivy
-		   lsp-treemacs lsp-ui magit nerd-icons no-littering
-		   projectile rainbow-delimiters rust-mode shrink-path
-		   spacegray-theme tree-sitter tree-sitter-langs
-		   typescript-mode which-key with-editor yasnippet
-		   zig-mode zuul)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
