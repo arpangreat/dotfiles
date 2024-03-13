@@ -17,6 +17,7 @@
   "dressing.nvim": { "branch": "master", "commit": "6f212262061a2120e42da0d1e87326e8a41c0478" },
   "friendly-snippets": { "branch": "main", "commit": "dcd4a586439a1c81357d5b9d26319ae218cc9479" },
   "gitsigns.nvim": { "branch": "main", "commit": "41dc075ef67b556b0752ad3967649371bd95cb95" },
+  "gleam.vim": { "branch": "master", "commit": "d2f6d0b0399ab6d76b4a17b77ffec590fb2ec1c2" },
   "kitty-scrollback.nvim": { "branch": "main", "commit": "95c401021ed1f272081b422da547faffc096d943" },
   "lazy.nvim": { "branch": "main", "commit": "83493db50a434a4c5c648faf41e2ead80f96e478" },
   "lspkind-nvim": { "branch": "master", "commit": "1735dd5a5054c1fb7feaf8e8658dbab925f4f0cf" },
