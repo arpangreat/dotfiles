@@ -27,6 +27,8 @@ require("lspconfig").lua_ls.setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").gleam.setup({ on_attach = on_attach, capabilities = capabilities })
-
-require("lspconfig").gleam.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").gleam.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	root_dir = require("lspconfig").util.root_pattern("gleam.toml"),
+})
