@@ -16,6 +16,7 @@ return {
 		{ "ollykel/v-vim" },
 		"rust-lang/rust.vim",
 		"ziglang/zig.vim",
+		"gleam-lang/gleam.vim",
 	},
 	config = function()
 		local luasnip = require("luasnip")

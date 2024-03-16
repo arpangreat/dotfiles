@@ -63,12 +63,13 @@ vim.opt.autoindent = true
 -- vim.opt.linebreak = true
 -- vim.opt.list = true
 vim.opt.listchars = {
-	nbsp = "⦸", -- CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
-	extends = "»", -- RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
-	precedes = "«", -- LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
-	tab = "▷⋯", -- WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7) + MIDLINE HORIZONTAL ELLIPSIS (U+22EF, UTF-8: E2 8B AF)
-	trail = "•", -- BULLET (U+2022, UTF-8: E2 80 A2)
+  nbsp = "⦸", -- CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
+  extends = "»", -- RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
+  precedes = "«", -- LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
+  tab = "▷⋯", -- WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7) + MIDLINE HORIZONTAL ELLIPSIS (U+22EF, UTF-8: E2 8B AF)
+  trail = "•", -- BULLET (U+2022, UTF-8: E2 80 A2)
 }
+vim.opt.wildmode = "list:longest"
 
 vim.opt.showbreak = "↳ "
 vim.opt.backup = false
@@ -91,16 +92,9 @@ vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 3
 
--- NeoTree
-vim.g.neo_tree_remove_legacy_commands = 1
-
--- Disabling Gitgutter
-vim.cmd("let g:gitgutter_enabled = 0")
-vim.cmd("let g:gitgutter_signs = 0")
-
 -- Markdown
 
-vim.g.mkdp_auto_start = 1
+vim.g.mkdp_auto_start = 0
 vim.g.mkdp_auto_close = 1
 vim.g.mkdp_refresh_slow = 1
 

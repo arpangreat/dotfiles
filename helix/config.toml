@@ -7,6 +7,7 @@ mouse = false
 bufferline = "multiple"
 cursorline = true
 completion-trigger-len = 0
+completion-timeout = 5
 auto-save = true
 true-color = true
 color-modes = true
@@ -14,6 +15,7 @@ scrolloff = 15
 soft-wrap.enable = true
 undercurl = true
 insert-final-newline = false
+popup-border = "all"
 # rainbow-brackets = true
 
 [editor.cursor-shape]
@@ -46,7 +48,7 @@ mode.select = "SEL"
 
 [editor.whitespace.render]
 space = "none"
-tab = "all"
+tab = "none"
 newline = "none"
 
 [editor.whitespace.characters]
@@ -58,13 +60,16 @@ tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [editor.indent-guides]
 render = true
-character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
-skip-levels = 1
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 0
 
 [editor.lsp]
 display-messages = true
 display-inlay-hints = true
 
+[editor.gutters.line-numbers]
+min-width = 0
+  
 [editor.smart-tab]
 supersede-menu = true
 
@@ -73,7 +78,7 @@ supersede-menu = true
 g = { a = "code_action" }
 "esc" = ["collapse_selection"]
 y = ["yank_main_selection_to_clipboard", "collapse_selection"]
-p = ["paste_clipboard_after"]
+p = ["paste_clipboard_before"]
 
 [keys.normal."+"]
 m = ":run-shell-command make"
