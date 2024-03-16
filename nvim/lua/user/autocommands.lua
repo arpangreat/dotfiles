@@ -73,7 +73,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
-	command = "silent! lua vim.highlight.on_yank({ timeout = 500 })",
+	command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
 })
 
 vim.api.nvim_create_autocmd("BufReadPost", {
