@@ -3,11 +3,11 @@ starship init fish | source
 zoxide init fish --cmd cd | source
 
 function fish_greeting
-  fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
+    fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
 end
 
 function fish_hybrid_key_bindings --description \
-"Vi-style bindings that inherit emacs-style bindings in all modes"
+    "Vi-style bindings that inherit emacs-style bindings in all modes"
     for mode in default insert visual
         fish_default_key_bindings -M $mode
     end
@@ -17,15 +17,16 @@ end
 set -g fish_key_bindings fish_hybrid_key_bindings
 
 function ya
-	set tmp (mktemp -t "yazi-cwd.XXXXX")
-	yazi $argv --cwd-file="$tmp"
-	if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-		builtin cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
+    set tmp (mktemp -t "yazi-cwd.XXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
 
 # fzf_key_bindings
+fzf --fish | source
 
 set fish_vi_force_cursor
 set fish_cursor_default block
@@ -34,8 +35,8 @@ set fish_cursor_replace_one underscore
 set fish_cursor_visual block
 
 if status --is-interactive
-  and not set -q TMUX
-   exec tmux -u
+    and not set -q TMUX
+    exec tmux -u
 end
 
 set -gx EDITOR nvim
@@ -55,9 +56,9 @@ set -g ANDROID_HOME /home/arpangreat/Android/Sdk
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
-set -g SFML_INCLUDE_DIR "/usr/include/SFML/"
-set -g SFML_LIBS_DIR "/usr/lib/SFML/"
-set -g LD_LIBRARY_PATH "/usr/lib/SFML/"
+set -g SFML_INCLUDE_DIR /usr/include/SFML/
+set -g SFML_LIBS_DIR /usr/lib/SFML/
+set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
 set -Ua fish_user_paths /home/arpangreat/.rye/env
 
@@ -103,4 +104,4 @@ jj util completion fish | source
 cod init $fish_pid fish | source
 
 # opam configuration
-source /home/arpangreat/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+source /home/arpangreat/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
