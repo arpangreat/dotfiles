@@ -71,6 +71,10 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+vim.filetype.add({
+	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
 	command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
