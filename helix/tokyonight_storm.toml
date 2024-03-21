@@ -85,6 +85,7 @@ type = { fg = "#2ac3de" }
 "ui.text.inactive" = { fg = "#565f89", modifiers = ["italic"] }
 "ui.text.info" = { bg = "#1f2335", fg = "#c0caf5" }
 "ui.virtual.inlay-hint" = { fg = "#d7ccce" }
+"ui.virtual.ruler" = { fg = "#d7ccce" }
 "ui.window" = { fg = "#1d202f", modifiers = ["bold"] }
 variable = { fg = "#f7768e", modifiers = ["italic"] }
 "variable.builtin" = { fg = "#f7768e" }
