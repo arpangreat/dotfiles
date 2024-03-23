@@ -1,16 +1,23 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/arpangreat/dotfiles
+- /home/arpangreat/zig
+- /home/arpangreat/fzf
+- /home/arpangreat/ocaml-examples
 - /home/arpangreat/RustExs
 - /home/arpangreat/sexyterm
-- /home/arpangreat/zig
 - /home/arpangreat/Books
-- /home/arpangreat/ocaml-examples
 - /home/arpangreat/weedy
 - /home/arpangreat/CS50-AI-Python
 - /home/arpangreat/space_invaders
 - /home/arpangreat/cppexamples
 startuppopupversion: 5
+lastversion: unversioned
 customcommandshistory: []
 hidecommandlog: true
 ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
