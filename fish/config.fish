@@ -101,6 +101,8 @@ eval (batpipe)
 
 v complete setup fish | source
 jj util completion fish | source
+fx --comp fish | source
+s --completion fish | source
 
 cod init $fish_pid fish | source
 
