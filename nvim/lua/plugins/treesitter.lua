@@ -5,7 +5,6 @@ return {
 	dependencies = {
 		"JoosepAlviste/nvim-ts-context-commentstring",
 		"nvim-treesitter/playground",
-		"danielo515/nvim-treesitter-reason",
 	},
 	config = function()
 		require("nvim-treesitter.configs").setup({
@@ -51,5 +50,14 @@ return {
 			},
 		})
 		require("ts_context_commentstring").setup({ enable_autocmd = false })
+		-- Install grammar with nvim-treesitter
+		local list = require("nvim-treesitter.parsers").get_parser_configs()
+		list.reason = {
+			install_info = {
+				url = "https://github.com/reasonml-editor/tree-sitter-reason",
+				files = { "src/parser.c", "src/scanner.c" },
+				branch = "master",
+			},
+		}
 	end,
 }

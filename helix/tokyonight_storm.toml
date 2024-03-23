@@ -1,6 +1,6 @@
 attribute = { fg = "#7dcfff" }
 identifier = { fg = "#f7768e", modifiers = ["italic"] }
-comment = { fg = "#bd5173", modifiers = ["slow_blink", "italic"] }
+comment = { fg = "#292e42", modifiers = ["italic"] }
 "comment.block.documentation" = { fg = "#e0af68" }
 constant = { fg = "#ff9e64", modifiers = ["bold"] }
 "constant.builtin" = { fg = "#2ac3de" }
@@ -58,7 +58,7 @@ label = { fg = "#7aa2f7" }
 namespace = { fg = "#7dcfff", modifiers = ["italic", "bold"] }
 operator = { fg = "#89ddff" }
 special = { fg = "#2ac3de" }
-string = { fg = "#9ece6a" }
+string = { fg = "#9ece6a", modifiers = ["italic"] }
 "string.regexp" = { fg = "#b4f9f8" }
 "string.special" = { fg = "#2ac3de" }
 tag = { fg = "#bb9af7" }
@@ -87,6 +87,7 @@ type = { fg = "#2ac3de" }
 "ui.virtual.inlay-hint" = { fg = "#d7ccce" }
 "ui.virtual.ruler" = { fg = "#d7ccce" }
 "ui.window" = { fg = "#1d202f", modifiers = ["bold"] }
+"ui.virtual.jump-label" = { fg = "#73daca" }
 variable = { fg = "#f7768e", modifiers = ["italic"] }
 "variable.builtin" = { fg = "#f7768e" }
 "variable.other.member" = { fg = "#73daca" }
