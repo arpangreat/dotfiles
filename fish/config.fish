@@ -75,6 +75,7 @@ fish_add_path $PATH:/home/arpangreat/.local/share/nvim/mason/bin
 fish_add_path $PATH:/home/arpangreat/.ghcup/bin
 fish_add_path $HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 fish_add_path "$BUN_INSTALL/bin:$PATH"
+fish_add_path $HOME/.local/share/nvim/mason/bin
 
 eval (batpipe)
 
@@ -100,6 +101,8 @@ eval (batpipe)
 
 v complete setup fish | source
 jj util completion fish | source
+fx --comp fish | source
+s --completion fish | source
 
 cod init $fish_pid fish | source
 
