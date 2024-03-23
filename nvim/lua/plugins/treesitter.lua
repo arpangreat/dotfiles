@@ -5,7 +5,6 @@ return {
 	dependencies = {
 		"JoosepAlviste/nvim-ts-context-commentstring",
 		"nvim-treesitter/playground",
-		"danielo515/nvim-treesitter-reason",
 	},
 	config = function()
 		require("nvim-treesitter.configs").setup({
