@@ -103,6 +103,7 @@ v complete setup fish | source
 jj util completion fish | source
 fx --comp fish | source
 s --completion fish | source
+gix completions | source
 
 cod init $fish_pid fish | source
 
