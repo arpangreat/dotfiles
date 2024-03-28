@@ -1,6 +1,6 @@
+comment = { fg = "comment", modifiers = ["italic"] }
 attribute = { fg = "#7dcfff" }
 identifier = { fg = "#f7768e", modifiers = ["italic"] }
-comment = { fg = "#292e42", modifiers = ["italic"] }
 "comment.block.documentation" = { fg = "#e0af68" }
 constant = { fg = "#ff9e64", modifiers = ["bold"] }
 "constant.builtin" = { fg = "#2ac3de" }
@@ -73,7 +73,7 @@ type = { fg = "#2ac3de" }
 "ui.linenr.select" = { fg = "#737aa2" }
 "ui.cursorline.primary" = { bg = "#16161e" }
 "ui.menu" = { bg = "none", fg = "#c0caf5" }
-"ui.menu.scroll" = { bg = 2764351, fg = 3883617 }
+"ui.menu.scroll" = { bg = "#276435", fg = "#388361" }
 "ui.menu.selected" = { bg = "#363d59" }
 "ui.popup" = { bg = "none", fg = "#29a4bd" }
 "ui.selection" = { bg = "bg_highlight" }
