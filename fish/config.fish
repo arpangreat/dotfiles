@@ -76,6 +76,7 @@ fish_add_path $PATH:/home/arpangreat/.ghcup/bin
 fish_add_path $HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 fish_add_path "$BUN_INSTALL/bin:$PATH"
 fish_add_path $HOME/.local/share/nvim/mason/bin
+fish_add_path $JAVA_HOME/bin
 
 eval (batpipe)
 
@@ -98,6 +99,8 @@ eval (batpipe)
 #         kill $fish_pid
 #     end
 # end
+
+source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
 
 v complete setup fish | source
 jj util completion fish | source

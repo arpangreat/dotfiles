@@ -1,5 +1,5 @@
-# theme = "catppuccin_mocha"
-theme = "tokyonight_storm"
+theme = "catppuccin_mocha"
+# theme = "tokyonight_storm"
 
 [editor]
 line-number = "relative"
@@ -69,7 +69,7 @@ display-inlay-hints = true
 
 [editor.gutters.line-numbers]
 min-width = 0
-  
+
 [editor.smart-tab]
 supersede-menu = true
 
