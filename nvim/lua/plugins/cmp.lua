@@ -98,61 +98,76 @@ return {
 				}),
 			}),
 
-			cmp.setup.cmdline(types, {
+			--[[ cmp.setup.cmdline(types, {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({
 					{ name = "cmdline_history" },
 				}),
-			}),
+			}), ]]
 
 			window = {
 				documentation = cmp.config.window.bordered(),
 
 				completion = {
 					border = "single",
-					col_offset = 1,
+					col_offset = 0,
 					scroll_bar = false,
-					max_width = 100,
+					-- max_width = 100,
 				},
 			},
 
 			completion = {
-				completeopt = "menu,menuone,preview,noinsert,noselect",
+				completeopt = "menu,menuone,preview,noinsert,noselect,popup",
 			},
 
-			-- view = {
-			-- 	entries = "native",
+			view = {
+				entries = { name = "custom", selection_order = "follow_cursor" },
+			},
+
+			-- formatting = {
+			-- 	format = function(entry, vim_item)
+			-- 		vim_item.kind = require("lspkind").presets.default[vim_item.kind]
+			-- 		vim_item.menu = ({
+			-- 			nvim_lsp = "[LSP]",
+			-- 			nvim_lua = "[LUA]",
+			-- 			treesitter = "",
+			-- 			path = "[PATH]",
+			-- 			buffer = "﬘",
+			-- 			luasnip = "[SNIP]",
+			-- 			spell = "暈",
+			-- 			cmp_tabnine = "",
+			-- 		})[entry.source.name]
+			-- 		return vim_item
+			-- 	end,
 			-- },
 
-			--[[ formatting = {
-      format = function(entry, vim_item)
-      vim_item.kind = lspkind.presets.default[vim_item.kind]
-      vim_item.menu = ({
-      nvim_lsp = "[LSP]",
-      nvim_lua = "[LUA]",
-      treesitter = "",
-      path = "[PATH]",
-      buffer = "﬘",
-      luasnip = "[SNIP]",
-      spell = "暈",
-      cmp_tabnine = "",
-      })[entry.source.name]
-      return vim_item
-      end,
-      }, ]]
+			-- --[[ formatting = {
+			-- 	fields = { "kind", "abbr", "menu" },
+			-- 	format = function(entry, vim_item)
+			-- 		local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+			-- 		local strings = vim.split(kind.kind, "%s", { trimempty = true })
+			-- 		kind.kind = " " .. (strings[1] or "") .. " "
+			-- 		kind.menu = "    (" .. (strings[2] or "") .. ")"
 
+			-- 		return kind
+			-- 	end,
+			-- }, ]]
 			formatting = {
-				fields = { "kind", "abbr", "menu" },
-				format = function(entry, vim_item)
-					local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
-					local strings = vim.split(kind.kind, "%s", { trimempty = true })
-					kind.kind = " " .. (strings[1] or "") .. " "
-					kind.menu = "    (" .. (strings[2] or "") .. ")"
-
-					return kind
-				end,
+				format = require("lspkind").cmp_format({
+					mode = "symbol_text",
+					max_width = 100,
+					menu = {
+						buffer = "[Buffer]",
+						nvim_lsp = "[LSP]",
+						luasnip = "[LuaSnip]",
+						nvim_lua = "[Lua]",
+						latex_symbols = "[Latex]",
+						treesitter = "[TREE]",
+						tabnine = "[TABNINE]",
+						path = "[PATH]",
+					},
+				}),
 			},
-
 			experimental = {
 				ghost_text = true,
 			},
