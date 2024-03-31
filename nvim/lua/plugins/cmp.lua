@@ -121,7 +121,7 @@ return {
 			},
 
 			view = {
-				entries = { name = "custom", selection_order = "near_cursor" },
+				entries = { name = "custom", selection_order = "follow_cursor" },
 			},
 
 			-- formatting = {
