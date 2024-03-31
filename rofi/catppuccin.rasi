@@ -26,6 +26,7 @@ window {
 
 mainbox {
     background-color: @bg-col;
+    children: [inputbar, message, listview, mode-switcher];
 }
 
 inputbar {

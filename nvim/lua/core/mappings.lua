@@ -135,7 +135,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>tlw",
-	":lua require('telescope.builtin').lsp_workspace_symbols()<CR>",
+	":lua require('telescope.builtin').lsp_workspace_symbols({ query = vim.fn.input('Query > ') })<CR>",
 	{ noremap = true, silent = false }
 )
 

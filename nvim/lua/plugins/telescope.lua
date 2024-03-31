@@ -31,7 +31,7 @@ return {
 						["<C-h>"] = actions.which_key,
 						--[[ ["<C-m>"] = actions.toggle_selection + actions.move_selection_next,
               ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, ]]
-						["<C-d>"] = actions.delete_buffer,
+						-- ["<C-d>"] = actions.delete_buffer,
 						-- ["<CR>"] = actions.select_default,
 					},
 
