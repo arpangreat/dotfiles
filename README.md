@@ -1,7 +1,7 @@
 # dotfiles
 
-Hey this is my dotfiles repository , From which you can download my config
-files 😄🚀
+Hey this is my dotfiles repository , From which you can download my config files
+😄🚀
 
 [#](#) I'm an n00b
 
@@ -33,8 +33,8 @@ files 😄🚀
 
 -- `sudo pacman -S clangd`
 
--- `sudo pacman -S llvm`
--- " Don't forget to make a project using projectCreate script else you are not going to have lsp-server"
+-- `sudo pacman -S llvm` -- " Don't forget to make a project using projectCreate
+script else you are not going to have lsp-server"
 
 And then you are all good to Go
 
@@ -54,7 +54,7 @@ sudo npm install -g vls
 sudo yarn global add yaml-language-server
 ```
 
-# to setup lua lsp [follow this link](<https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)>) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it
+# to setup lua lsp [follow this link](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it
 
 # to setup gopls run
 
@@ -66,10 +66,13 @@ sudo ln -s /home/arpangreat/go/bin/* /usr/bin
 
 # To setup jdtls
 
-- first delete ~/dotfiles/nvim/jdtl-language-server-latest by `rm -rf jdt-language-latest-server`
-- then , extract ~/dotfiles/nvim/jdt-language-server-latest.tar.gz inside `~/dotfiles/nvim/`
+- first delete ~/dotfiles/nvim/jdtl-language-server-latest by
+  `rm -rf jdt-language-latest-server`
+- then , extract ~/dotfiles/nvim/jdt-language-server-latest.tar.gz inside
+  `~/dotfiles/nvim/`
 - tweak `.zshrc` respective java file paths if needed
-- **make project with `projectCreate` script inside ~/dotfiles/custom-scripts and lang name should be `gradle` not `java`**
+- **make project with `projectCreate` script inside ~/dotfiles/custom-scripts
+  and lang name should be `gradle` not `java`**
 - And you are all done
 
 # after doing everything don't forget to run `:TSInstall all` in nvim to install Treesitter
@@ -103,9 +106,13 @@ Defaults env_reset,pwfeedback
 
 # Fonts ( Also see Fonts/ )
 
-Download from [Operator Mono](https://fontsfree.net/operator-mono-medium-font-download.html)
-Download from [Operator Book](https://fontsfree.net/operator-mono-book-font-download.html)
-Download from [Operator Itaic](https://fontsfree.net/operator-mono-book-italic-2-font-download.html)
-Download from [Operator Bold](https://fontsfree.net/operator-mono-bold-font-download.html)
+Download from
+[Operator Mono](https://fontsfree.net/operator-mono-medium-font-download.html)
+Download from
+[Operator Book](https://fontsfree.net/operator-mono-book-font-download.html)
+Download from
+[Operator Itaic](https://fontsfree.net/operator-mono-book-italic-2-font-download.html)
+Download from
+[Operator Bold](https://fontsfree.net/operator-mono-bold-font-download.html)
 
 ## And follow this link to use [ligatures Support](https://github.com/kiliman/operator-mono-lig)

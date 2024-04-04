@@ -1,7 +1,9 @@
 from kitty import fast_data_types
 
+
 def main(args):
-    return ''
+    return ""
+
 
 def handle_result(args, answer, target_window_id, boss):
     opts = fast_data_types.get_options()
@@ -10,5 +12,10 @@ def handle_result(args, answer, target_window_id, boss):
     output = ["Kitty keyboard mappings", "=" * 23, ""]
 
     for key, action in keymap.items():
-        output.append(f'{key.human_repr} -> {action}')
-    boss.display_scrollback(boss.active_window, "\n".join(output), title="Kitty keyboard mappings", report_cursor=False)
+        output.append(f"{key.human_repr} -> {action}")
+    boss.display_scrollback(
+        boss.active_window,
+        "\n".join(output),
+        title="Kitty keyboard mappings",
+        report_cursor=False,
+    )

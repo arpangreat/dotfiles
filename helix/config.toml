@@ -75,7 +75,7 @@ supersede-menu = true
 
 [keys.normal]
 "space" = { w = ":w", q = ":q", e = { x = ":q!" } }
-g = { a = "code_action" }
+# g = { a = "code_action" }
 "esc" = ["collapse_selection"]
 y = ["yank_main_selection_to_clipboard", "collapse_selection"]
 p = ["paste_clipboard_before"]
