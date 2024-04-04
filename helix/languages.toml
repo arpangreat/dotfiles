@@ -34,6 +34,14 @@ args = { program = "{0}", initCommands = [
 [[language]]
 name = "python"
 auto-format = true
+language-servers = ["ruff", "pyright"]
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
 
 [[language]]
 name = "cpp"
@@ -107,10 +115,7 @@ language-servers = ["v-analyzer"]
 [[language]]
 name = "ocaml"
 auto-format = true
-formatter = { command = "ocamlformat", args = [
-	"-",
-	"--impl"
-]}
+formatter = { command = "ocamlformat", args = ["-", "--impl"] }
 
 [language-server.v-analyzer]
 command = 'v-analyzer'

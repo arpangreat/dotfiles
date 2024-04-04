@@ -98,12 +98,12 @@ return {
 				}),
 			}),
 
-			--[[ cmp.setup.cmdline(types, {
+			cmp.setup.cmdline(types, {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({
 					{ name = "cmdline_history" },
 				}),
-			}), ]]
+			}),
 
 			window = {
 				documentation = cmp.config.window.bordered(),
@@ -117,7 +117,7 @@ return {
 			},
 
 			completion = {
-				completeopt = "menu,menuone,preview,noinsert,noselect,popup",
+				completeopt = "menu,menuone,preview,noselect,popup",
 			},
 
 			view = {
