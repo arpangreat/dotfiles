@@ -5,8 +5,6 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
-		"ray-x/cmp-treesitter",
-		"hrsh7th/cmp-nvim-lua",
 		"saadparwaiz1/cmp_luasnip",
 		"dmitmel/cmp-cmdline-history",
 		"hrsh7th/cmp-nvim-lsp-signature-help",
@@ -71,8 +69,6 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
-				{ name = "treesitter" },
-				{ name = "nvim_lua" },
 				{ name = "path" },
 				{ name = "cmp_tabnine" },
 				{ name = "nvim_lsp_signature_help" },
@@ -98,12 +94,12 @@ return {
 				}),
 			}),
 
-			--[[ cmp.setup.cmdline(types, {
+			cmp.setup.cmdline(types, {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({
 					{ name = "cmdline_history" },
 				}),
-			}), ]]
+			}),
 
 			window = {
 				documentation = cmp.config.window.bordered(),
@@ -117,7 +113,7 @@ return {
 			},
 
 			completion = {
-				completeopt = "menu,menuone,preview,noinsert,noselect,popup",
+				completeopt = "menu,menuone,preview,noselect,popup",
 			},
 
 			view = {

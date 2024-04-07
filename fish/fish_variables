@@ -7,7 +7,8 @@ SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:\x7e/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e\x7e/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/plugin\x2dbang\x2dbang\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_wttr_files:\x7e/\x2econfig/fish/functions/moon\x2efish\x1e\x7e/\x2econfig/fish/functions/wttr\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ewfxr/forgit\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1eoh\x2dmy\x2dfish/plugin\x2dwttr\x1ecatppuccin/fish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ewfxr/forgit\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1eoh\x2dmy\x2dfish/plugin\x2dwttr\x1ecatppuccin/fish\x1eqiuxiang/flutter\x2dfish\x2dcompletions
+SETUVAR _fisher_qiuxiang_2F_flutter_2D_fish_2D_completions_files:\x7e/\x2econfig/fish/completions/flutter\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2efish
 SETUVAR fish_color_autosuggestion:6c7086
@@ -51,4 +52,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/usr/lib/jvm/default/bin\x1e/home/arpangreat/\x2elocal/share/nvim/mason/bin\x1e/home/arpangreat/Android/Sdk/tools\x1e/home/arpangreat/\x2enimble/bin\x1e/home/arpangreat/\x2edotnet/tools\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/home/arpangreat/go/bin\x1e/home/arpangreat/flutter/bin\x1e/home/arpangreat/\x2edeno/bin\x1e/home/arpangreat/\x2edeno\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/home/arpangreat/\x2efzf/bin\x1e/home/arpangreat/fzf/bin\x1e/home/arpangreat/\x2erye/shims\x1e/home/arpangreat/\x2erye/env
+SETUVAR fish_user_paths:/usr/bin/flutter/bin\x1e/usr/lib/jvm/default/bin\x1e/home/arpangreat/\x2elocal/share/nvim/mason/bin\x1e/home/arpangreat/Android/Sdk/tools\x1e/home/arpangreat/\x2enimble/bin\x1e/home/arpangreat/\x2edotnet/tools\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/home/arpangreat/go/bin\x1e/home/arpangreat/flutter/bin\x1e/home/arpangreat/\x2edeno/bin\x1e/home/arpangreat/\x2edeno\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/home/arpangreat/\x2efzf/bin\x1e/home/arpangreat/fzf/bin\x1e/home/arpangreat/\x2erye/shims\x1e/home/arpangreat/\x2erye/env

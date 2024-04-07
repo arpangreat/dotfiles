@@ -7,7 +7,7 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "black", "isort" },
+				-- python = { "ruff", "format" },
 				c = { "clang_format" },
 				cpp = { "clang_format" },
 				fish = { "fish_indent" },

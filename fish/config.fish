@@ -1,5 +1,4 @@
 starship init fish | source
-
 zoxide init fish --cmd cd | source
 
 function fish_greeting
@@ -27,6 +26,8 @@ end
 
 # fzf_key_bindings
 fzf --fish | source
+
+atuin init fish | source
 
 set fish_vi_force_cursor
 set fish_cursor_default block
@@ -77,6 +78,7 @@ fish_add_path $HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 fish_add_path "$BUN_INSTALL/bin:$PATH"
 fish_add_path $HOME/.local/share/nvim/mason/bin
 fish_add_path $JAVA_HOME/bin
+fish_add_path /usr/bin/flutter/bin
 
 eval (batpipe)
 
