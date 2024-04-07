@@ -40,6 +40,8 @@ require("lazy").setup({ { import = "plugins" } }, {
 				"tohtml",
 				"tutor",
 				"zipPlugin",
+				"matchparen",
+				"matchpairs",
 			},
 		},
 	},
