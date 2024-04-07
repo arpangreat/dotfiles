@@ -15,6 +15,8 @@ require("lspconfig").ocamllsp.setup({
 })
 require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
 
+require("neodev").setup()
+
 require("lspconfig").lua_ls.setup({
 	settings = {
 		Lua = {
@@ -27,13 +29,13 @@ require("lspconfig").lua_ls.setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").gleam.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-	root_dir = require("lspconfig").util.root_pattern("gleam.toml"),
-})
+-- require("lspconfig").gleam.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- 	root_dir = require("lspconfig").util.root_pattern("gleam.toml"),
+-- })
 
-require("lspconfig").htmx.setup({ on_attach = on_attach, capabilities = capabilities })
+-- require("lspconfig").htmx.setup({ on_attach = on_attach, capabilities = capabilities })
 
 require("lspconfig").ruff_lsp.setup({
 	on_attach = on_attach,
@@ -44,3 +46,13 @@ require("lspconfig").ruff_lsp.setup({
 		},
 	},
 })
+
+--[[ require("lspconfig").dartls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		dart = {
+			updateImportOnRename = true,
+		},
+	},
+}) ]]

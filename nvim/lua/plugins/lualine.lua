@@ -64,7 +64,17 @@ return {
 					},
 				},
 				lualine_b = { "branch" },
-				lualine_c = { diff },
+				lualine_c = {
+					diff,
+					--[[ {
+						function()
+							return require("nvim-navic").get_location()
+						end,
+						cond = function()
+							return require("nvim-navic").is_available()
+						end,
+					}, ]]
+				},
 				lualine_y = { "filetype" },
 				lualine_z = { "progress", "location" },
 				lualine_x = {
