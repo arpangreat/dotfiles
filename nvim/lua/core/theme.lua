@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("tokyonight-storm")
+-- vim.cmd.colorscheme("tokyonight")
 vim.cmd.colorscheme("catppuccin")
 -- vim.cmd("colorscheme solarized-osaka")
 

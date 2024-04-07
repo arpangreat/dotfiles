@@ -8,37 +8,6 @@ require("lspconfig").rust_analyzer.setup({
 			-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
 			["rust-analyzer"] = {
 				-- enable clippy on save
-				checkOnSave = {
-					assist = {
-						importGranularity = "module",
-						importPrefix = "by_self",
-					},
-					cargo = { loadOutDirsFromCheck = true },
-					procMacro = { enable = true },
-
-					command = "clippy",
-					inlayHints = true,
-				},
-				-- inlay_hints = {
-				--   bindingModeHints = { enable = true },
-				--   closureCaptureHints = { enable = true },
-				--   closureReturnTypeHints = { enable = "always" },
-				--   expressionAdjustmentHints = { enable = "always" },
-				--   lifetimeElisionHints = { enable = "always", useParameterNames = true },
-				--   reborrowHints = { enable = "always" },
-				--   typeHints = { hideClosureInitialization = true, hideNamedConstructor = true },
-				--   locationLinks = false,
-				-- },
-
-				procMacro = {
-					enable = true,
-					methodReference = true,
-				},
-
-				lens = {
-					enable = true,
-				},
-
 				cargo = {
 					allFeatures = true,
 				},
@@ -61,7 +30,7 @@ require("lspconfig").rust_analyzer.setup({
 				},
 				completion = {
 					completionItem = {
-						commitCharactersSupport = true,
+						-- commitCharactersSupport = true,
 						-- deprecatedSupport = false,
 						-- documentationFormat = { "markdown", "plaintext" },
 						-- preselectSupport = false,
