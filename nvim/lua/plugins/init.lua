@@ -13,7 +13,8 @@ return {
 		end,
 	},
 
-	{ "simnalamburt/vim-mundo", event = "VeryLazy" },
+	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
+	{ "mbbill/undotree", event = "VeryLazy" },
 	{
 		"echasnovski/mini.files",
 		event = "VeryLazy",
