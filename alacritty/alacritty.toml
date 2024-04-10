@@ -1,4 +1,4 @@
-import = ["/home/arpangreat/dotfiles/alacritty/alacritty_onedark.toml"]
+import = ["/home/arpangreat/dotfiles/alacritty/catppuccin-mocha.toml"]
 
 [selection]
 save_to_clipboard = true
@@ -7,29 +7,39 @@ save_to_clipboard = true
 draw_bold_text_with_bright_colors = true
 
 [cursor]
-style = "Beam"
+# Set to false to disable completely
+smooth_motion = true
+# 0.0 = cursor is not moving, 1.0 = cursor moves instantly
+smooth_motion_factor = 0.6
+# 0.0 = broken, 1.0 = cursor shape is unaffected by movement
+smooth_motion_spring = 0.5
+# Override "block" cursor if you don't like how it looks in this fork
+# I prefer "underline"
+block_replace_shape = "beam"
 
 [env]
-TERM = "alacritty"
+# TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+WAYLAND_DISPLAY = "wayland-0"
 
 [font]
 builtin_box_drawing = true
-size = 12.0
+size = 11.0
 
 [font.bold]
-family = "Fira Code"
+family = "Cascadia Code"
 style = "Bold"
 
 [font.bold_italic]
-family = "Fira Code"
+family = "Cascadia Code"
 style = "BoldItalic"
 
 [font.italic]
-family = "Fira Code"
+family = "Cascadia Code"
 style = "Italic"
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "Cascadia Code"
 style = "Regular"
 
 [[keyboard.bindings]]
@@ -158,3 +168,7 @@ mouse = "Middle"
 decorations = "none"
 dynamic_padding = true
 opacity = 0.7
+
+[[mouse.bindings]]
+action = "ScrollPageDown"
+mouse = "Middle"
