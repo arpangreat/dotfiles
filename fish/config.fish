@@ -27,7 +27,7 @@ end
 # fzf_key_bindings
 fzf --fish | source
 
-atuin init fish | source
+# atuin init fish | source
 
 set fish_vi_force_cursor
 set fish_cursor_default block

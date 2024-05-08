@@ -37,4 +37,15 @@ return {
 		-- 	require("dressing").setup()
 		-- end,
 	},
+	{
+		"alopatindev/cargo-limit",
+		ft = "rust",
+		-- event = "VeryLazy",
+		build = "cargo install --locked cargo-limit nvim-send",
+	},
+	{
+		"kevinhwang91/nvim-bqf",
+		event = "VeryLazy",
+		ft = "qf",
+	},
 }
