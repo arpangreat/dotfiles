@@ -4,10 +4,10 @@ M.on_attach = function(client, bufnr)
 		require("nvim-navic").attach(client, bufnr)
 	end ]]
 
-	if client.server_capabilities.inlayHintProvider then
-		vim.lsp.inlay_hint.enable(bufnr, true)
-		-- vim.lsp.inlay_hint.enable(bufnr)
-	end
+	-- if client.server_capabilities.inlayHintProvider then
+	vim.lsp.inlay_hint.enable(true, { bufnr })
+	-- vim.lsp.inlay_hint.enable(bufnr)
+	-- end
 
 	-- if client.supports_method("textDocument/formatting") then
 	--   vim.api.nvim_create_autocmd("BufWritePre", {
