@@ -1,17 +1,17 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/arpangreat/dotfiles
-- /home/arpangreat/space_invaders
-- /home/arpangreat/helix
-- /home/arpangreat/zig
-- /home/arpangreat/fzf
-- /home/arpangreat/ocaml-examples
-- /home/arpangreat/RustExs
-- /home/arpangreat/sexyterm
-- /home/arpangreat/Books
-- /home/arpangreat/weedy
-- /home/arpangreat/CS50-AI-Python
-- /home/arpangreat/cppexamples
+    - /home/arpangreat/dotfiles
+    - /home/arpangreat/college-work
+    - /home/arpangreat/fzf
+    - /home/arpangreat/helix
+    - /home/arpangreat/space_invaders
+    - /home/arpangreat/zig
+    - /home/arpangreat/ocaml-examples
+    - /home/arpangreat/RustExs
+    - /home/arpangreat/Books
+    - /home/arpangreat/weedy
+    - /home/arpangreat/CS50-AI-Python
+    - /home/arpangreat/cppexamples
 startuppopupversion: 5
 lastversion: unversioned
 customcommandshistory: []

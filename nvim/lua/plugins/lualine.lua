@@ -33,6 +33,7 @@ return {
 		-- local custom = require("lualine.themes.material")
 		-- local custom = require("lualine.themes.horizon")
 		-- local custom = require("lualine.themes.solarized-osaka")
+		-- local custom = require("lualine.themes.eldritch")
 		custom.normal.c.bg = "none"
 
 		local config = {

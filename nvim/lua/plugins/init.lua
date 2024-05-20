@@ -13,7 +13,8 @@ return {
 		end,
 	},
 
-	{ "simnalamburt/vim-mundo", event = "VeryLazy" },
+	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
+	{ "mbbill/undotree", event = "VeryLazy" },
 	{
 		"echasnovski/mini.files",
 		event = "VeryLazy",
@@ -35,5 +36,16 @@ return {
 		-- config = function()
 		-- 	require("dressing").setup()
 		-- end,
+	},
+	{
+		"alopatindev/cargo-limit",
+		ft = "rust",
+		-- event = "VeryLazy",
+		build = "cargo install --locked cargo-limit nvim-send",
+	},
+	{
+		"kevinhwang91/nvim-bqf",
+		event = "VeryLazy",
+		ft = "qf",
 	},
 }
