@@ -79,6 +79,7 @@ supersede-menu = true
 "esc" = ["collapse_selection"]
 y = ["yank_main_selection_to_clipboard", "collapse_selection"]
 p = ["paste_clipboard_before"]
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 
 [keys.normal."+"]
 m = ":run-shell-command make"

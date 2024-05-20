@@ -12,7 +12,7 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = false }
 )
 
-vim.api.nvim_set_keymap("n", "<Leader>u", ":MundoToggle<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>u", ":UndotreeToggle<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ps", ":Rg<SPACE>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader><Leader>", "<C-^>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>+", ":vertical resize +5<CR>", { noremap = true, silent = true })
@@ -28,8 +28,11 @@ vim.api.nvim_set_keymap("n", "\\gr", ":!go run %<CR>", { noremap = true, silent 
 vim.api.nvim_set_keymap("n", "\\gb", ":!go build<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "\\gt", ":!go test<CR>", { noremap = true, silent = false })
 
-vim.api.nvim_set_keymap("n", "<Leader>fp", ":cprevious<CR>", { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap("n", "<Leader>fn", ":cnext<CR>", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap("n", "[c", ":cprev<CR>", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap("n", "]c", ":cnext<CR>", { noremap = true, silent = false, expr = false })
+
+vim.api.nvim_set_keymap("n", "]g", "<cmd>Gitsigns next_hunk<CR>", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap("n", "[g", "<cmd>Gitsigns prev_hunk<CR>", { noremap = true, silent = false, expr = false })
 
 vim.keymap.set(
 	"n",

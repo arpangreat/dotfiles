@@ -101,3 +101,10 @@ vim.g.mkdp_refresh_slow = 1
 vim.o.background = "dark"
 
 vim.g.lazygit_floating_window_border_chars = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" } -- customize lazygit popup window border characters "╭", "─", "╮", "│", "╯", "─", "╰", "│"
+
+-- UndoTree
+vim.g.undotree_SetFocusWhenToggle = 1
+vim.g.undotree_DiffAutoOpen = 1
+vim.g.undotree_ShortIndicators = 0
+vim.g.undotree_HighlightChangedText = 1
+vim.g.undotree_HighlightChangedWithSign = 1

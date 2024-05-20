@@ -56,3 +56,8 @@ require("lspconfig").ruff_lsp.setup({
 		},
 	},
 }) ]]
+
+require("lspconfig").solargraph.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
