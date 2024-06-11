@@ -81,6 +81,7 @@ fish_add_path $HOME/.ruby/bin
 # fish_add_path $HOME/.local/share/gem/ruby/3.0.0/bin
 fish_add_path $JAVA_HOME/bin
 fish_add_path /usr/bin/flutter/bin
+fish_add_path $HOME/Downloads/RustRover-2024.1/bin
 
 eval (batpipe)
 
