@@ -17,7 +17,7 @@ return {
 				zig = { "zigfmt" },
 			},
 
-			format_on_save = {
+			format_after_save = {
 				lsp_fallback = true,
 				async = true,
 				timeout_ms = 500,

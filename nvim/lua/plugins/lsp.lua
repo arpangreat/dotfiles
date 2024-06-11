@@ -1,11 +1,8 @@
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
-	dependencies = {
-		"folke/neodev.nvim",
-	},
 	config = function()
-		local signs = {
+		--[[ local signs = {
 			{ name = "DiagnosticSignError", text = "" },
 			{ name = "DiagnosticSignWarn", text = "" },
 			{ name = "DiagnosticSignHint", text = "" },
@@ -13,20 +10,45 @@ return {
 		}
 		for _, sign in ipairs(signs) do
 			vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-		end
+		end ]]
 
 		vim.diagnostic.config({
 			virtual_text = {
 				prefix = "●", -- Could be '●', '▎', 'x'
 			},
-			signs = { active = signs },
+			signs = {
+				texthl = {
+					[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
+					[vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
+					[vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
+					[vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
+				},
+				text = {
+					[vim.diagnostic.severity.ERROR] = "",
+					[vim.diagnostic.severity.WARN] = "",
+					[vim.diagnostic.severity.HINT] = "",
+					[vim.diagnostic.severity.INFO] = "",
+				},
+				linehl = {
+					[vim.diagnostic.severity.ERROR] = "ErrorMsg",
+					[vim.diagnostic.severity.WARN] = "WarnMsg",
+					[vim.diagnostic.severity.HINT] = "HintMsg",
+					[vim.diagnostic.severity.INFO] = "InfoMsg",
+				},
+				numhl = {
+					[vim.diagnostic.severity.ERROR] = "ErrorMsg",
+					[vim.diagnostic.severity.WARN] = "WarnMsg",
+					[vim.diagnostic.severity.HINT] = "HintMsg",
+					[vim.diagnostic.severity.INFO] = "InfoMsg",
+				},
+			},
 			update_in_insert = true,
 			undercurl = true,
 			float = {
 				focusable = true,
 				style = "minimal",
 				border = "rounded",
-				source = "always",
+				source = true,
 				header = "",
 				prefix = "",
 			},

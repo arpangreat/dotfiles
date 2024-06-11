@@ -1,8 +1,10 @@
 local M = {}
-M.on_attach = function(client, bufnr)
+M.on_attach = function(client_id, bufnr)
 	--[[ if client.server_capabilities.documentSymbolProvider then
 		require("nvim-navic").attach(client, bufnr)
 	end ]]
+
+	-- vim.lsp.completion.enable(true, vim.lsp.get_client_by_id(), bufnr, { true })
 
 	-- if client.server_capabilities.inlayHintProvider then
 	vim.lsp.inlay_hint.enable(true, { bufnr })

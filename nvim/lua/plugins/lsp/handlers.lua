@@ -15,8 +15,6 @@ require("lspconfig").ocamllsp.setup({
 })
 require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
 
-require("neodev").setup()
-
 require("lspconfig").lua_ls.setup({
 	settings = {
 		Lua = {
@@ -34,6 +32,11 @@ require("lspconfig").lua_ls.setup({
 -- 	capabilities = capabilities,
 -- 	root_dir = require("lspconfig").util.root_pattern("gleam.toml"),
 -- })
+
+require("lspconfig").r_language_server.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 
 -- require("lspconfig").htmx.setup({ on_attach = on_attach, capabilities = capabilities })
 
