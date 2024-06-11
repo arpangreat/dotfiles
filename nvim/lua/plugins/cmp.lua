@@ -68,6 +68,7 @@ return {
 
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
+				{ name = "lazydev" },
 				{ name = "luasnip" },
 				{ name = "path" },
 				{ name = "cmp_tabnine" },
@@ -161,6 +162,7 @@ return {
 						treesitter = "[TREE]",
 						tabnine = "[TABNINE]",
 						path = "[PATH]",
+						lazydev = "[LAZYDEV]",
 					},
 				}),
 			},
