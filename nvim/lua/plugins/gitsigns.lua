@@ -5,6 +5,12 @@ return {
 		"nvim-lua/plenary.nvim",
 	},
 	config = function()
-		require("gitsigns").setup()
+		require("gitsigns").setup({
+			numhl = true,
+			-- linehl = true,
+			word_diff = true,
+			attach_to_untracked = true,
+			current_line_blame = true,
+		})
 	end,
 }
