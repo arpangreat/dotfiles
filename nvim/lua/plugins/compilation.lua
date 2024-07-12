@@ -1,7 +1,7 @@
 return {
 	"ej-shafran/compile-mode.nvim",
 	event = "VeryLazy",
-	-- branch = "latest",
+	branch = "latest",
 	-- or a specific version:
 	-- tag = "v2.0.0"
 	keys = {
