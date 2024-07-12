@@ -11,24 +11,26 @@ return {
 		} ]]
 		local C = require("catppuccin.palettes.mocha")
 		local custom = require("lualine.themes.catppuccin")
+		-- local custom = require("lualine.themes.tokyonight-night")
+		-- local C = require("tokyonight.colors.night")
 		custom.normal.a.bg = "none"
 		custom.normal.a.fg = C.blue
 		custom.normal.b.bg = "none"
 		custom.normal.c.bg = "none"
 		custom.command.a.bg = "none"
-		custom.command.a.fg = C.peach
+		custom.command.a.fg = C.yellow
 		custom.command.b.bg = "none"
 		custom.insert.a.bg = "none"
 		custom.insert.a.fg = C.green
 		custom.insert.b.bg = "none"
 		custom.visual.a.bg = "none"
-		custom.visual.a.fg = C.mauve
+		custom.visual.a.fg = C.magenta
 		custom.visual.b.bg = "none"
 		custom.replace.a.bg = "none"
 		custom.replace.a.fg = C.red
 		custom.replace.b.bg = "none"
 		custom.terminal.a.bg = "none"
-		custom.terminal.a.fg = C.green
+		custom.terminal.a.fg = C.green1
 		custom.terminal.b.bg = "none"
 		-- custom.terminal.c.bg = "none"
 
