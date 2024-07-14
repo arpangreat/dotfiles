@@ -55,6 +55,14 @@ vim.api.nvim_set_keymap(
 	":lua require('telescope').extensions.file_browser.file_browser({ hidden = true })<CR>",
 	{ noremap = true, silent = false }
 )
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>tll",
+	":lua require('telescope').extensions.lazy_plugins.lazy_plugins({ hidden = true })<CR>",
+	{ noremap = true, silent = false }
+)
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>tw",

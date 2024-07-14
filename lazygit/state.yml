@@ -1,8 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/college-work
+    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/Hyprland
     - /home/arpangreat/DSA-preps
     - /home/arpangreat/fzf

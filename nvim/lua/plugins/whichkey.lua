@@ -65,40 +65,34 @@ return {
 			},
 		})
 
-		local opts = {
-			mode = "n", -- NORMAL mode prefix = "<leader>", buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings silent = true, -- use `silent` when creating keymaps noremap = true, -- use `noremap` when creating keymaps nowait = true, -- use `nowait` when creating keymaps }, vopts = { mode = "v", -- VISUAL mode
-			prefix = "<Leader>",
-			buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-			silent = true, -- use `silent` when creating keymaps
-			noremap = true, -- use `noremap` when creating keymaps
-			nowait = true, -- use `nowait` when creating keymaps
-		}
-
-		local mappings = {
-			d = {
-				name = "Debug",
-				t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-				b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
-				c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-				C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
-				d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
-				g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
-				i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
-				o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
-				u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
-				p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-				r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-				s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
-				q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
-				U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
+		wk.add({
+			{
+				mode = { "n" },
+				{ "<leader>d", group = "Debug" }, -- group
+				{ "<leader>dt", "<cmd>Telescope find_files<cr>", desc = "Find File", mode = "n" },
+				{
+					"<leader>db",
+					function()
+						print("hello")
+					end,
+					desc = "Foobar",
+				},
+				{ "<leader>dc", desc = "New File" },
+				{ "<leader>dC", hidden = true }, -- hide this keymap
+				{ "<leader>dd", "<cmd>lua require'dap'.disconnect()<cr>", desc = "Disconnect" },
+				{ "<leader>dg", "<cmd>lua require'dap'.session()<cr>", desc = "Get Session" },
+				{ "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", desc = "Step Into" },
+				{ "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", desc = "Step Over" },
+				{ "<leader>du", "<cmd>lua require'dap'.step_out()<cr>", desc = "Step Out" },
+				{ "<leader>dp", "<cmd>lua require'dap'.pause()<cr>", desc = "Pause" },
+				{ "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", desc = "Toggle Repl" },
+				{ "<leader>ds", "<cmd>lua require'dap'.continue()<cr>", desc = "Start" },
+				{ "<leader>dq", "<cmd>lua require'dap'.close()<cr>", desc = "Quit" },
+				{ "<leader>dU", "<cmd>lua require'dapui'.toggle({reset = true})<cr>", desc = "Toggle UI" },
+				{ "<leader>l", group = "Lazy" },
+				{ "<leader>ll", "<cmd>Lazy<CR>", desc = "Lazy Home" },
+				{ "<leader>lf", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "find file" },
 			},
-			l = {
-				name = "Lazy",
-				l = { "<cmd>Lazy<cr>", "Lazy Home" },
-				f = { "<cmd> lua require('telescope.builtin').find_files()<cr>", "Find File" },
-			},
-		}
-
-		wk.register(mappings, opts)
+		})
 	end,
 }
