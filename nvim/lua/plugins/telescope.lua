@@ -4,6 +4,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+		{ "polirritmico/telescope-lazy-plugins.nvim" },
 		"nvim-telescope/telescope-file-browser.nvim",
 	},
 	keys = { { "<leader>t" } },
@@ -93,11 +94,15 @@ return {
 				},
 				file_browser = {},
 				flutter = {},
+				lazy_plugins = {
+					lazy_config = vim.fn.stdpath("config") .. "/lua/core/lazy.lua",
+				},
 			},
 		})
 
 		require("telescope").load_extension("fzf")
 		require("telescope").load_extension("flutter")
+		require("telescope").load_extension("lazy_plugins")
 
 		local M = {}
 		M.search_dotfiles = function()
