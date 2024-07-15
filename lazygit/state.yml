@@ -1,26 +1,31 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/catppuccin
+    - /home/arpangreat/go
+    - /home/arpangreat/PythonExs
+    - /home/arpangreat/CExamples
+    - /home/arpangreat/ocaml-examples
+    - /home/arpangreat/cppexamples
+    - /home/arpangreat/space_invaders
     - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/Hyprland
     - /home/arpangreat/DSA-preps
     - /home/arpangreat/fzf
     - /home/arpangreat/helix
-    - /home/arpangreat/space_invaders
     - /home/arpangreat/zig
-    - /home/arpangreat/ocaml-examples
     - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
-    - /home/arpangreat/cppexamples
 startuppopupversion: 5
 lastversion: unversioned
 customcommandshistory: []
 hidecommandlog: true
 ignorewhitespaceindiffview: false
 diffcontextsize: 3
+renamesimilaritythreshold: 50
 localbranchsortorder: recency
 remotebranchsortorder: alphabetical
 gitlogorder: topo-order
