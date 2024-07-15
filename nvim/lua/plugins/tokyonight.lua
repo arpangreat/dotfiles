@@ -55,6 +55,8 @@ return {
 				hl["@variable"] = { fg = c.red }
 				hl.LspInlayHint = { bg = "#063540" }
 				hl.WinBar = { bg = c.none }
+				hl.MiniCursorword = { underline = true }
+				hl.MiniCursorwordCurrent = { underline = true }
 				local prompt = "#2d3149"
 				hl.TelescopeNormal = {
 					bg = c.bg_dark,
@@ -82,7 +84,8 @@ return {
 				hl.TelescopeResultsTitle = {
 					bg = c.bg_dark,
 					fg = c.bg_dark,
-				} -- hl.String = { fg = c.green, style = "italic" }
+				}
+				hl.String = { fg = c.green, italic = true }
 			end,
 		})
 	end,
