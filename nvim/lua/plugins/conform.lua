@@ -15,6 +15,7 @@ return {
 				ocaml = { "ocamlformat" },
 				rust = { "rustfmt" },
 				zig = { "zigfmt" },
+				sql = { "sqlfmt" },
 			},
 
 			format_after_save = {
@@ -29,7 +30,7 @@ return {
 				lsp_fallback = true,
 				async = true,
 				timeout_ms = 500,
-			}, { desc = "Format file or range (in visual mode)" })
+			})
 		end)
 	end,
 }
