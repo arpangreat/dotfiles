@@ -64,8 +64,3 @@ require("lspconfig").solargraph.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
-
-require("lspconfig").sqls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})

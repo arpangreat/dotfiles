@@ -4,11 +4,9 @@ return {
 	opts = {
 		window = {
 			border = "single", -- none, single, double, shadow
-			position = "bottom", -- bottom, top
 			winblend = 0,
 		},
 		layout = {
-			spacing = 3, -- spacing between columns
 			align = "left", -- align columns left, center or right
 		},
 		hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
@@ -23,6 +21,12 @@ return {
 			-- most people should not need to change this
 			i = { "j", "k" },
 			v = { "j", "k" },
+		},
+
+		icons = {
+			keys = {
+				Leader = "󱁐 ",
+			},
 		},
 
 		disable = {
@@ -59,6 +63,20 @@ return {
 				{ "<leader>l", group = "Lazy" },
 				{ "<leader>ll", "<cmd>Lazy<CR>", desc = "Lazy Home" },
 				{ "<leader>lf", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "find file" },
+				{ "<leader>t", group = "Telescope" },
+				{ "<leader>s", group = "Split" },
+				{ "<leader>g", group = "Lsp" },
+				{ "<leader>m", group = "Mini" },
+				{ "<leader>mf", group = "MiniFiles" },
+				{ "<leader>q", group = "Quit" },
+				{ "<leader>ex", group = "Quit" },
+				{ "<leader>w", group = "Write" },
+				{ "<leader>c", group = "Compile" },
+				{ "<leader>ff", group = "Format" },
+				{ "<leader>j", group = "Buffer" },
+				{ "<leader>k", group = "Buffer" },
+				{ "<leader>l", group = "Buffer" },
+				{ "<leader>h", group = "Buffer" },
 			},
 		})
 	end,
