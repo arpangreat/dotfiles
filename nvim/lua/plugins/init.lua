@@ -1,5 +1,4 @@
 return {
-	"nvim-tree/nvim-web-devicons",
 	{
 		"uga-rosa/ccc.nvim",
 		event = "VeryLazy",
@@ -63,6 +62,13 @@ return {
 	{
 		"echasnovski/mini.icons",
 		lazy = true,
+		specs = {
+			{
+				"nvim-tree/nvim-web-devicons",
+				enabled = false,
+				optional = true,
+			},
+		},
 		opts = {
 			file = {
 				[".keep"] = { glyph = "󰊢", hl = "MiniIconsGrey" },
@@ -77,6 +83,9 @@ return {
 				require("mini.icons").mock_nvim_web_devicons()
 				return package.loaded["nvim-web-devicons"]
 			end
+		end,
+		config = function()
+			require("mini.icons").setup()
 		end,
 	},
 }

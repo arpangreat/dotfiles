@@ -30,6 +30,7 @@ return {
 			dim_inactive = true, -- dims inactive windows
 			lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 
+			---@class colors
 			on_colors = function(colors)
 				colors.hint = colors.orange
 				colors.error = colors.red

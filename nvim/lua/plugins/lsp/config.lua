@@ -45,14 +45,14 @@ M.on_attach = function(client_id, bufnr)
 	vim.keymap.set("n", "<Leader>rg", "<cmd>lua vim.lsp.codelens.run()<CR>")
 	vim.keymap.set(
 		"n",
-		"<Leader>gwa",
-		"<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>",
+		"<leader>gwa",
+		"<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>",
 		{ noremap = true, silent = true }
 	)
 	vim.keymap.set(
 		"n",
 		"<Leader>gwr",
-		"<cmd>lua vim.lsp.buf.remove_workspace_folder<CR>",
+		"<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
 		{ noremap = true, silent = true }
 	)
 	vim.keymap.set("n", "<Leader>gwl", function()

@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/go
     - /home/arpangreat/PythonExs
@@ -8,7 +9,6 @@ recentrepos:
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
-    - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/Hyprland
     - /home/arpangreat/DSA-preps
