@@ -5,28 +5,28 @@ local ansi = {}
 local brights = {}
 
 for idx, color in ipairs(colors) do
-  if idx <= 8 then
-    ansi[idx] = color
-  else
-    brights[idx - 8] = color
-  end
+	if idx <= 8 then
+		ansi[idx] = color
+	else
+		brights[idx - 8] = color
+	end
 end
 
 local config = {}
 
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+	config = wezterm.config_builder()
 end
 
-config.font = wezterm.font({ family = "Cascadia Code PL" })
+-- config.font = wezterm.font({ family = "Cascadia Code PL" })
 -- config.font = wezterm.font({ family = "Monaspace Argon" })
 -- config.font = wezterm.font({ family = "Comic Code Ligatures" })
 -- config.font = wezterm.font({ family = "JetBrains Mono" })
 -- config.font = wezterm.font({ family = "JuliaMono" })
--- config.font = wezterm.font({ family = "Rec Mono Duotone" })
+config.font = wezterm.font({ family = "Rec Mono Duotone" })
 -- config.font = wezterm.font({ family = "MonoLisa"})
 
-config.font_rules = {
+--[[ config.font_rules = {
 	{
 		intensity = "Bold",
 		italic = false,
@@ -42,7 +42,7 @@ config.font_rules = {
 		italic = true,
 		font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
 	},
-}
+} ]]
 
 -- font_rules = {
 -- 	{
@@ -98,23 +98,23 @@ config.font_rules = {
 -- 	},
 -- }
 
--- config.font_rules = {
---   {
---     intensity = "Bold",
---     italic = false,
---     font = wezterm.font("Rec Mono Duotone", { weight = "Bold", style = "Normal" }),
---   },
---   {
---     intensity = "Bold",
---     italic = true,
---     font = wezterm.font("Rec Mono Duotone", { weight = "Bold", style = "Italic" }),
---   },
---   {
---     intensity = "Normal",
---     italic = true,
---     font = wezterm.font({ family = "Rec Mono Duotone", weight = "Regular", style = "Italic" }),
---   },
--- }
+config.font_rules = {
+	{
+		intensity = "Bold",
+		italic = false,
+		font = wezterm.font("Rec Mono Duotone", { weight = "Bold", style = "Normal" }),
+	},
+	{
+		intensity = "Bold",
+		italic = true,
+		font = wezterm.font("Rec Mono Duotone", { weight = "Bold", style = "Italic" }),
+	},
+	{
+		intensity = "Normal",
+		italic = true,
+		font = wezterm.font({ family = "Rec Mono Duotone", weight = "Regular", style = "Italic" }),
+	},
+}
 
 -- config.font_rules = {
 --   {
@@ -135,16 +135,16 @@ config.font_rules = {
 -- }
 
 -- CascadiaCode
-config.harfbuzz_features = {
-  "ss01",
-  "ss02",
-  "ss03",
-  "ss19",
-  "ss20",
-  "zero",
-  "onum",
-  "calt",
-}
+-- config.harfbuzz_features = {
+-- 	"ss01",
+-- 	"ss02",
+-- 	"ss03",
+-- 	"ss19",
+-- 	"ss20",
+-- 	"zero",
+-- 	"onum",
+-- 	"calt",
+-- }
 
 -- Monaspace
 -- config.harfbuzz_features = {
@@ -180,19 +180,19 @@ config.harfbuzz_features = {
 -- 	"calt",
 -- }
 
--- config.harfbuzz_features = {
---   "calt",
---   "dlig",
---   "zero",
---   "ss01",
---   "ss03",
---   "ss05",
---   "ss06",
---   "ss07",
---   "ss08",
---   "ss09",
---   "ss12",
--- }
+config.harfbuzz_features = {
+	"calt",
+	"dlig",
+	"zero",
+	"ss01",
+	"ss03",
+	"ss05",
+	"ss06",
+	"ss07",
+	"ss08",
+	"ss09",
+	"ss12",
+}
 
 -- JuliaMono
 -- config.harfbuzz_features = {
@@ -213,21 +213,21 @@ config.harfbuzz_features = {
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 
 table.insert(config.hyperlink_rules, {
-  regex = [[\b[tt](\d+)\b]],
-  format = "https://example.com/tasks/?t=$1",
+	regex = [[\b[tt](\d+)\b]],
+	format = "https://example.com/tasks/?t=$1",
 })
 
 table.insert(config.hyperlink_rules, {
-  regex = [[["]?([\w\d]{1}[-\w\d]+)(/){1}([-\w\d\.]+)["]?]],
-  format = "https://www.github.com/$1/$3",
+	regex = [[["]?([\w\d]{1}[-\w\d]+)(/){1}([-\w\d\.]+)["]?]],
+	format = "https://www.github.com/$1/$3",
 })
 
 config.font_size = 11.0
 config.freetype_load_target = "Normal"
 config.freetype_render_target = "Normal"
 config.freetype_load_flags = "DEFAULT"
--- config.color_scheme = "tokyonight_storm"
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "tokyonight_storm"
+-- config.color_scheme = "Catppuccin Mocha"
 -- config.color_scheme = "solarized_osaka"
 -- color_scheme = "Horizon Dark (Gogh)",
 config.color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" }
@@ -242,10 +242,10 @@ config.hide_tab_bar_if_only_one_tab = true
 config.window_background_opacity = 0.90
 config.text_background_opacity = 1.0
 config.window_padding = {
-  left = "0.0cell",
-  right = "0.0cell",
-  top = "0.3cell",
-  bottom = "0.0cell",
+	left = "0.0cell",
+	right = "0.0cell",
+	top = "0.5cell",
+	bottom = "0.0cell",
 }
 config.enable_kitty_keyboard = true
 config.window_decorations = "NONE"
