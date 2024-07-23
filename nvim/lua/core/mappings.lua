@@ -64,7 +64,7 @@ vim.api.nvim_set_keymap(
 )
 vim.api.nvim_set_keymap(
 	"n",
-	"<C-h>",
+	"<leader>th",
 	":lua require('telescope.builtin').help_tags()<CR>",
 	{ noremap = true, silent = false }
 )

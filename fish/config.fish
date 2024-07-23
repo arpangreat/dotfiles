@@ -63,7 +63,7 @@ set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
 set -Ua fish_user_paths /home/arpangreat/.rye/env
 
-set -g BROWSER /usr/bin/firefox
+set -g BROWSER /usr/bin/floorp
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 fish_add_path $PATH:$GOPATH/go/bin
 fish_add_path $PATH:/usr/local/go/bin
