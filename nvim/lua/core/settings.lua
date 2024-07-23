@@ -108,3 +108,6 @@ vim.g.undotree_DiffAutoOpen = 1
 vim.g.undotree_ShortIndicators = 0
 vim.g.undotree_HighlightChangedText = 1
 vim.g.undotree_HighlightChangedWithSign = 1
+
+-- Tmux
+-- vim.g.tmux_navigator_no_mapping = 1
