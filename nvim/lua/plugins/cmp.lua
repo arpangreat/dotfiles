@@ -4,6 +4,7 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
+		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-cmdline",
 		"hrsh7th/cmp-nvim-lsp-signature-help",
 		{ "tzachar/cmp-tabnine", build = "./install.sh" },
@@ -51,7 +52,18 @@ return {
         end
         end, { "i", "s" }), ]]
 				["<Tab>"] = cmp.mapping(function()
-					neotab.tabout()
+					if vim.snippet.active({ direction = 1 }) then
+						vim.snippet.jump(1)
+					else
+						neotab.tabout()
+					end
+				end),
+				["<S-Tab>"] = cmp.mapping(function()
+					if vim.snippet.active({ direction = -1 }) then
+						vim.snippet.jump(-1)
+					else
+						neotab.tabout()
+					end
 				end),
 			}),
 
@@ -64,6 +76,12 @@ return {
 			}),
 
 			-- Use buffer source for `/`.
+			cmp.setup.cmdline({ "/", "?" }, {
+				mapping = cmp.mapping.preset.cmdline(),
+				sources = cmp.config.sources({
+					{ name = "buffer" },
+				}),
+			}),
 
 			-- Use cmdline & path source for ':'.
 			cmp.setup.cmdline(":", {
