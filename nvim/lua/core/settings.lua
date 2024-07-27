@@ -35,6 +35,7 @@ vim.opt.winblend = 35
 vim.opt.pumblend = 35
 vim.opt.textwidth = 80
 vim.opt.ruler = true
+-- vim.opt.cmdheight = 0
 
 -- Visuals
 vim.opt.syntax = "enable"
