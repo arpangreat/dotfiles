@@ -30,6 +30,7 @@ vim.api.nvim_set_keymap("n", "[g", "<cmd>Gitsigns prev_hunk<CR>", { noremap = tr
 -- )
 
 -- FZFLua
+vim.keymap.set("n", "<Leader>fz", ":FzfLua", { noremap = true, silent = true })
 
 -- Telescope
 
