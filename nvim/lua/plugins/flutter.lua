@@ -1,6 +1,7 @@
 return {
 	"akinsho/flutter-tools.nvim",
 	lazy = false,
+	enabled = false,
 	config = function()
 		local on_attach = require("plugins.lsp.config").on_attach
 		local capabilities = require("plugins.lsp.config").capabilities

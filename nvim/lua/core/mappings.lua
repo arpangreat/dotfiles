@@ -201,12 +201,12 @@ vim.api.nvim_set_keymap("v", "<Leader>s", ":s//g<Left><Left>", { noremap = true,
 -- local map = vim.keymap.set
 -- local opts = { noremap = true, silent = true }
 
-local ls = require("luasnip")
-vim.keymap.set("i", "<C-l>", function()
-	if ls.choice_active() then
-		ls.change_choice(1)
-	end
-end)
+-- local ls = require("luasnip")
+-- vim.keymap.set("i", "<C-l>", function()
+-- 	if ls.choice_active() then
+-- 		ls.change_choice(1)
+-- 	end
+-- end)
 
 -- Copilot
 -- vim.api.nvim_set_keymap(

@@ -93,7 +93,6 @@ return {
 					case_mode = "smart_case", -- or "ignore_case" or "respect_case"
 				},
 				file_browser = {},
-				flutter = {},
 				lazy_plugins = {
 					lazy_config = vim.fn.stdpath("config") .. "/lua/core/lazy.lua",
 				},
@@ -101,7 +100,6 @@ return {
 		})
 
 		require("telescope").load_extension("fzf")
-		require("telescope").load_extension("flutter")
 		require("telescope").load_extension("lazy_plugins")
 
 		local M = {}

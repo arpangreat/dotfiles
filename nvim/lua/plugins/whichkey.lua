@@ -2,13 +2,14 @@ return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
 	opts = {
-		window = {
+		preset = "modern",
+		win = {
 			border = "single", -- none, single, double, shadow
 			winblend = 0,
 		},
-		layout = {
-			align = "left", -- align columns left, center or right
-		},
+		-- layout = {
+		-- 	align = "center", -- align columns left, center or right
+		-- },
 		hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
 		ignore_missing = false, -- enable this to hide mappings for which you didn't specify a label
 		show_help = true, -- show help message on the command line when the popup is visible
