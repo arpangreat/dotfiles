@@ -1,6 +1,7 @@
 return {
 	"MagicDuck/grug-far.nvim",
 	event = "VeryLazy",
+	enabled = false,
 	keys = {
 		{
 			"<Leader>gf",
