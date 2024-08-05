@@ -82,6 +82,7 @@ fish_add_path $HOME/.ruby/bin
 fish_add_path $JAVA_HOME/bin
 fish_add_path /usr/bin/flutter/bin
 fish_add_path $HOME/Downloads/RustRover-2024.1/bin
+fish_add_path $KITTY_INSTALLATION_DIR:$HOME/kitty
 
 eval (batpipe)
 
@@ -121,6 +122,13 @@ source /home/arpangreat/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or tru
 # pnpm
 set -gx PNPM_HOME "/home/arpangreat/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# Kitty
+if set -q KITTY_INSTALLATION_DIR
+    set --global KITTY_SHELL_INTEGRATION enabled
+    source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
+    set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
+end
