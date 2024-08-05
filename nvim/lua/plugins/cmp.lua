@@ -9,10 +9,6 @@ return {
 		"hrsh7th/cmp-cmdline",
 		"hrsh7th/cmp-nvim-lsp-signature-help",
 		{ "tzachar/cmp-tabnine", build = "./install.sh" },
-		{ "ollykel/v-vim" },
-		"rust-lang/rust.vim",
-		"ziglang/zig.vim",
-		"gleam-lang/gleam.vim",
 	},
 	config = function()
 		-- local cmp_autopairs = require("nvim-autopairs.completion.cmp")
