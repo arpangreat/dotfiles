@@ -37,12 +37,7 @@ vim.keymap.set("n", "<Leader>fz", ":FzfLua", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("n", "<F8>", ":TagBarToggle<CR>", { noremap = false, silent = false })
 
 -- lua require("arpangreat")
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tf",
-	":lua require('telescope').extensions.file_browser.file_browser({ hidden = true })<CR>",
-	{ noremap = true, silent = false }
-)
+vim.api.nvim_set_keymap("n", "<Leader>tf", "<cmd>Telescope find_files<CR>", { noremap = true, silent = false })
 
 vim.api.nvim_set_keymap(
 	"n",
@@ -95,12 +90,6 @@ vim.api.nvim_set_keymap(
 )
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>trr",
-	":lua require('telescope.builtin').registers()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
 	"<Leader>tcc",
 	":lua require('arpangreat.telescope').search_configs()<CR>",
 	{ noremap = true, silent = false }
@@ -113,44 +102,6 @@ vim.api.nvim_set_keymap(
 )
 vim.api.nvim_set_keymap("n", "<Leader>to", ":Telescope", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ttc", ":TodoTelescope<CR>", { noremap = true, silent = false, expr = false })
-
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tlr",
-	":lua require('telescope.builtin').lsp_references()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tld",
-	":lua require('telescope.builtin').lsp_definitions()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tli",
-	":lua require('telescope.builtin').lsp_implementations()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tls",
-	":lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tlw",
-	":lua require('telescope.builtin').lsp_workspace_symbols({ query = vim.fn.input('Query > ') })<CR>",
-	{ noremap = true, silent = false }
-)
-
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>trf",
-	"<Cmd>lua require('telescope').extensions.frecency.frecency(require('telescope.themes').get_dropdown({ layout_config = { width = 0.25 } }))<CR>",
-	{ noremap = true, silent = true }
-)
 
 vim.api.nvim_set_keymap(
 	"n",
