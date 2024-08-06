@@ -5,7 +5,6 @@ return {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		{ "polirritmico/telescope-lazy-plugins.nvim" },
-		"nvim-telescope/telescope-file-browser.nvim",
 	},
 	keys = { { "<leader>t" } },
 	config = function()
@@ -92,7 +91,6 @@ return {
 					override_file_sorter = true, -- override the file sorter
 					case_mode = "smart_case", -- or "ignore_case" or "respect_case"
 				},
-				file_browser = {},
 				lazy_plugins = {
 					lazy_config = vim.fn.stdpath("config") .. "/lua/core/lazy.lua",
 				},
