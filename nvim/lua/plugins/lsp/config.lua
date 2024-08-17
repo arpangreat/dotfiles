@@ -22,13 +22,13 @@ M.on_attach = function(client_id, bufnr)
 	-- end
 
 	vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
-	vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
+	vim.keymap.set("n", "K", "<cmd>lua require('pretty_hover').hover()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "go", "<cmd>lua vim.lsp.buf.type_definition()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true, silent = true })
-	vim.keymap.set("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = true })
+	vim.keymap.set("n", "gR", "<cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "g0", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gW", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>", { noremap = true, silent = true })
 	vim.keymap.set(
@@ -45,14 +45,14 @@ M.on_attach = function(client_id, bufnr)
 	vim.keymap.set("n", "<Leader>rg", "<cmd>lua vim.lsp.codelens.run()<CR>")
 	vim.keymap.set(
 		"n",
-		"<Leader>gwa",
-		"<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>",
+		"<leader>gwa",
+		"<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>",
 		{ noremap = true, silent = true }
 	)
 	vim.keymap.set(
 		"n",
 		"<Leader>gwr",
-		"<cmd>lua vim.lsp.buf.remove_workspace_folder<CR>",
+		"<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
 		{ noremap = true, silent = true }
 	)
 	vim.keymap.set("n", "<Leader>gwl", function()

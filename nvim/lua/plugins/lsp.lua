@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPost", "BufNewFile" },
 	config = function()
 		--[[ local signs = {
 			{ name = "DiagnosticSignError", text = "" },
@@ -15,6 +15,9 @@ return {
 		vim.diagnostic.config({
 			virtual_text = {
 				prefix = "●", -- Could be '●', '▎', 'x'
+				spacing = 4,
+				source = "if_many",
+				hl_mode = "blend",
 			},
 			signs = {
 				texthl = {
@@ -42,13 +45,15 @@ return {
 					[vim.diagnostic.severity.INFO] = "InfoMsg",
 				},
 			},
-			update_in_insert = true,
+			update_in_insert = false,
 			undercurl = true,
+			severity_sort = true,
 			float = {
+				scope = "cursor",
 				focusable = true,
 				style = "minimal",
-				border = "rounded",
-				source = true,
+				border = "single",
+				source = "if_many",
 				header = "",
 				prefix = "",
 			},

@@ -26,25 +26,29 @@ return {
 					col = "50%",
 				},
 				size = {
-					width = 60,
+					width = "auto",
 					height = "auto",
 				},
 			},
 			popupmenu = {
 				relative = "editor",
-				position = {
-					row = 30,
-					col = "100%",
-				},
+				zindex = 65,
+				position = "auto",
 				size = {
-					width = 100,
-					height = 10,
+					width = "auto",
+					height = "auto",
 				},
 				border = {
 					style = "rounded",
 				},
 				win_options = {
 					winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+				},
+			},
+			popup = {
+				size = {
+					width = "auto",
+					height = "auto",
 				},
 			},
 		},
@@ -54,7 +58,6 @@ return {
 			view_error = "messages",
 			-- view_warn = "messages",
 		},
-
 		cmdline = {
 			enabled = true,
 			-- view = "popup",

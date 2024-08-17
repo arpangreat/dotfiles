@@ -9,8 +9,8 @@ return {
 			["Warning"] = utils.get_hlgroup("DiagnosticError"),
 			["InProgress"] = utils.get_hlgroup("DiagnosticWarn"),
 		} ]]
-		local C = require("catppuccin.palettes.mocha")
 		local custom = require("lualine.themes.catppuccin")
+		local C = require("catppuccin.palettes").get_palette("mocha")
 		-- local custom = require("lualine.themes.tokyonight-night")
 		-- local C = require("tokyonight.colors.night")
 		custom.normal.a.bg = "none"
@@ -117,7 +117,7 @@ return {
 				} },
 			},
 
-			extensions = { "lazy", "toggleterm", "mason", "neo-tree", "trouble" },
+			extensions = { "lazy", "mason", "trouble" },
 		}
 	end,
 	-- config = function()

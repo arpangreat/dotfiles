@@ -1,0 +1,30 @@
+set -Ux FZF_DEFAULT_OPTS "\
+  --color=bg+:#2e3c64 \
+  --color=bg:#1f2335 \
+  --color=border:#29a4bd \
+  --color=fg:#c0caf5 \
+  --color=gutter:#1f2335 \
+  --color=header:#ff9e64 \
+  --color=hl+:#2ac3de \
+  --color=hl:#2ac3de \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#2ac3de \
+  --color=query:#c0caf5:regular \
+  --color=scrollbar:#29a4bd \
+  --color=separator:#ff9e64 \
+  --color=spinner:#ff007c \
+  --ansi \
+  --height='80%' \
+  --bind='alt-k:preview-up,alt-p:preview-up' \
+  --bind='alt-j:preview-down,alt-n:preview-down' \
+  --bind='ctrl-r:toggle-all' \
+  --bind='ctrl-s:toggle-sort' \
+  --bind='?:toggle-preview' \
+  --bind='alt-w:toggle-preview-wrap' \
+  --preview='bat --color=always {}' \
+  --preview-window='right:60%' \
+  --border --multi --info inline-right --layout reverse --marker ▏ --pointer ▌ --prompt '▌ '  \
+  --highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189 \
+  "

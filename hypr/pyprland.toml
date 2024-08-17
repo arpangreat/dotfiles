@@ -4,6 +4,7 @@ plugins = [
   # "monitors",
   # "shift_monitors",
   "workspaces_follow_focus",
+  "expose",
 ]
 
 [workspaces_follow_focus]
@@ -17,20 +18,28 @@ max_workspaces = 9
 # "Dell Inc. DELL P24".topOf = "eDP-1"
 
 [scratchpads.volume]
-lazy = true
-command = "pavucontrol-qt"
-unfocus = "hide"
 animation = "fromRight"
+command = "pavucontrol-qt"
+class = "org.pulseaudio.pavucontrol"
+position = "200% 5%"
+size = "40% 90%"
+unfocus = "hide"
+lazy = true
 
 [scratchpads.term]
-command = "kitty --class wezterm-dropterm"
 animation = "fromTop"
+command = "kitty --class kitty-dropterm tmux"
+class = "kitty-dropterm"
+# position = "12% -200%"
+size = "75% 60%"
 unfocus = "keep"
 
 [scratchpads.utop]
-lazy = true
-command = "kitty --class wezterm-utop ipython"
 animation = "fromBottom"
+command = "kitty --class kitty-utop ipython"
+class = "kitty-utop"
+size = "75% 60%"
+lazy = true
 
 # [scratchpads.stb-logs]
 # animation = "fromTop"
