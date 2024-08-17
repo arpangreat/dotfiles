@@ -50,7 +50,7 @@ return {
 			gitsigns = true,
 			-- nvimtree = true,
 			treesitter = true,
-			notify = true,
+			-- notify = true,
 			mini = {
 				enabled = true,
 				indentscope_color = "",
@@ -67,9 +67,9 @@ return {
 				},
 				underlines = {
 					errors = { "underline" },
-					hints = { "underline" },
-					warnings = { "underline" },
-					information = { "underline" },
+					hints = { "underdashed" },
+					warnings = { "undercurl" },
+					information = { "underdotted" },
 				},
 				inlay_hints = {
 					background = true,
@@ -79,5 +79,6 @@ return {
 			which_key = true,
 			fidget = true,
 		},
+		compile_path = vim.fn.stdpath("cache") .. "nvim/catppuccin",
 	},
 }

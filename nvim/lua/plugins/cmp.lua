@@ -1,33 +1,24 @@
 return {
 	"hrsh7th/nvim-cmp",
-	event = { "InsertEnter", "CmdlineEnter" },
+	event = { "LspAttach", "CmdlineEnter" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
-		"hrsh7th/cmp-path",
+		-- "hrsh7th/cmp-path",
+		{ "tzachar/cmp-fuzzy-path", dependencies = "tzachar/fuzzy.nvim" },
+		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-cmdline",
-		"saadparwaiz1/cmp_luasnip",
-		"dmitmel/cmp-cmdline-history",
 		"hrsh7th/cmp-nvim-lsp-signature-help",
 		{ "tzachar/cmp-tabnine", build = "./install.sh" },
-		{ "L3MON4D3/LuaSnip" },
-		"rafamadriz/friendly-snippets",
-		{ "ollykel/v-vim" },
-		"rust-lang/rust.vim",
-		"ziglang/zig.vim",
-		"gleam-lang/gleam.vim",
 	},
 	config = function()
-		local luasnip = require("luasnip")
 		-- local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 		local cmp = require("cmp")
 		local neotab = require("neotab")
-		local types = { "?", "@" }
 
 		cmp.setup({
 			snippet = {
 				expand = function(args)
-					-- vim.fn["vsnip#anonymous"](args.body)
-					require("luasnip").lsp_expand(args.body)
+					vim.snippet.expand(args.body)
 				end,
 			},
 
@@ -58,8 +49,15 @@ return {
         end
         end, { "i", "s" }), ]]
 				["<Tab>"] = cmp.mapping(function()
-					if luasnip.expand_or_jumpable(1) then
-						luasnip.expand_or_jump(1)
+					if vim.snippet.active({ direction = 1 }) then
+						vim.snippet.jump(1)
+					else
+						neotab.tabout()
+					end
+				end),
+				["<S-Tab>"] = cmp.mapping(function()
+					if vim.snippet.active({ direction = -1 }) then
+						vim.snippet.jump(-1)
 					else
 						neotab.tabout()
 					end
@@ -69,17 +67,17 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "lazydev" },
-				{ name = "luasnip" },
-				{ name = "path" },
+				-- { name = "path" },
+				{ name = "fuzzy_path" },
 				{ name = "cmp_tabnine" },
 				{ name = "nvim_lsp_signature_help" },
 			}),
 
 			-- Use buffer source for `/`.
-			cmp.setup.cmdline("/", {
+			cmp.setup.cmdline({ "/", "?" }, {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({
-					{ name = "cmdline_history" },
+					{ name = "buffer" },
 				}),
 			}),
 
@@ -87,18 +85,9 @@ return {
 			cmp.setup.cmdline(":", {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({
-					{ name = "path" },
+					{ name = "fuzzy_path" },
 				}, {
 					{ name = "cmdline" },
-				}, {
-					{ name = "cmdline_history" },
-				}),
-			}),
-
-			cmp.setup.cmdline(types, {
-				mapping = cmp.mapping.preset.cmdline(),
-				sources = cmp.config.sources({
-					{ name = "cmdline_history" },
 				}),
 			}),
 
@@ -118,7 +107,7 @@ return {
 			},
 
 			view = {
-				entries = { name = "custom", selection_order = "follow_cursor" },
+				entries = { name = "custom", selection_order = "top_down" },
 			},
 
 			-- formatting = {
@@ -156,7 +145,7 @@ return {
 					menu = {
 						buffer = "[Buffer]",
 						nvim_lsp = "[LSP]",
-						luasnip = "[LuaSnip]",
+						-- luasnip = "[LuaSnip]",
 						nvim_lua = "[Lua]",
 						latex_symbols = "[Latex]",
 						treesitter = "[TREE]",
@@ -189,7 +178,7 @@ return {
 			},
 		})
 
-		require("luasnip/loaders/from_vscode").lazy_load()
-		require("luasnip.loaders.from_snipmate").lazy_load()
+		-- require("luasnip/loaders/from_vscode").lazy_load()
+		-- require("luasnip.loaders.from_snipmate").lazy_load()
 	end,
 }
