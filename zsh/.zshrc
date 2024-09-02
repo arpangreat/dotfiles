@@ -550,3 +550,4 @@ alias personal='cp -Rf /personal/* ~'
 #cpufetch
 #colorscript random
 #hyfetch
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
