@@ -66,7 +66,7 @@ set -Ua fish_user_paths /home/arpangreat/.rye/env
 set -g BROWSER /usr/bin/floorp
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 fish_add_path $PATH:$GOPATH/go/bin
-fish_add_path $PATH:/usr/local/go/bin
+fish_add_path /usr/local/go/bin/
 fish_add_path $PATH:$HOME/.config/composer/vendor/bin
 fish_add_path $PATH:$HOME/.cargo/env
 fish_add_path $PATH:$HOME/.cargo/bin
