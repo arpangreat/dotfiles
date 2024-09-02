@@ -38,7 +38,7 @@ vim.opt.ruler = true
 -- vim.opt.cmdheight = 0
 
 -- Visuals
-vim.opt.syntax = "enable"
+vim.opt.syntax = "disable"
 -- vim.opt.filetype = "plugin on"
 -- vim.api.nvim_set_optption('t_Co',256)
 vim.opt.termguicolors = true
