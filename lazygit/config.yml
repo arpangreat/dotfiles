@@ -28,12 +28,15 @@ gui:
   #     - "#c0caf5"
 os:
   editPreset: "nvim"
+
 git:
   paging:
-    useConfig: true
+    colorArg: always
+    pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+
   commit:
     signOff: true
+
   log:
-    showGraph: "always"
     showWholeGraph: true
 quitOnTopLevelReturn: true
