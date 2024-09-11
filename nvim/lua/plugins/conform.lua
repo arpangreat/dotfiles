@@ -16,6 +16,7 @@ return {
 				rust = { "rustfmt" },
 				zig = { "zigfmt" },
 				sql = { "sqlfmt" },
+				php = { "pint" },
 			},
 
 			format_after_save = {
