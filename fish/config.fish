@@ -1,5 +1,4 @@
 starship init fish | source
-zoxide init fish --cmd cd | source
 
 function fish_greeting
     fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
@@ -65,17 +64,17 @@ set -Ua fish_user_paths /home/arpangreat/.rye/env
 
 set -g BROWSER /usr/bin/floorp
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
-fish_add_path $PATH:$GOPATH/go/bin
-fish_add_path $PATH:/usr/local/go/bin
-fish_add_path $PATH:$HOME/.config/composer/vendor/bin
-fish_add_path $PATH:$HOME/.cargo/env
-fish_add_path $PATH:$HOME/.cargo/bin
-fish_add_path $PATH:$HOME/.opam/default/bin
-fish_add_path $PATH:/home/arpangreat/.local/bin
-fish_add_path $PATH:/home/arpangreat/.local/share/nvim/mason/bin
-fish_add_path $PATH:/home/arpangreat/.ghcup/bin
+fish_add_path $GOPATH/go/bin
+fish_add_path /usr/local/go/bin/
+fish_add_path $HOME/.cargo/env
+fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/.opam/default/bin
+fish_add_path /home/arpangreat/.local/bin
+fish_add_path /home/arpangreat/.local/share/nvim/mason/bin
+fish_add_path /home/arpangreat/.ghcup/bin
+fish_add_path $HOME/.config/composer/vendor/bin
 fish_add_path $HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
-fish_add_path "$BUN_INSTALL/bin:$PATH"
+fish_add_path $BUN_INSTALL/bin
 fish_add_path $HOME/.local/share/nvim/mason/bin
 fish_add_path $HOME/.ruby/bin
 # fish_add_path $HOME/.local/share/gem/ruby/3.0.0/bin
@@ -83,6 +82,8 @@ fish_add_path $JAVA_HOME/bin
 fish_add_path /usr/bin/flutter/bin
 fish_add_path $HOME/Downloads/RustRover-2024.1/bin
 fish_add_path $KITTY_INSTALLATION_DIR:$HOME/kitty
+
+zoxide init fish --cmd cd | source
 
 eval (batpipe)
 

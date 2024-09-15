@@ -3,8 +3,7 @@ return {
 	event = { "LspAttach", "CmdlineEnter" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
-		-- "hrsh7th/cmp-path",
-		{ "tzachar/cmp-fuzzy-path", dependencies = "tzachar/fuzzy.nvim" },
+		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-cmdline",
 		"hrsh7th/cmp-nvim-lsp-signature-help",
@@ -67,8 +66,7 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "lazydev" },
-				-- { name = "path" },
-				{ name = "fuzzy_path" },
+				{ name = "path" },
 				{ name = "cmp_tabnine" },
 				{ name = "nvim_lsp_signature_help" },
 			}),

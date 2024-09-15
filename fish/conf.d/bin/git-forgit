@@ -215,6 +215,31 @@ _forgit_log() {
     return $fzf_exit_code
 }
 
+# git reflog viewer
+_forgit_reflog() {
+    _forgit_inside_work_tree || return 1
+    _forgit_contains_non_flags "$@" && { git reflog "$@"; return $?; }
+    local opts reflog_format
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +s +m --tiebreak=index
+        --bind=\"enter:execute($FORGIT log_enter {})\"
+        --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
+        --preview=\"$FORGIT log_preview {}\"
+        $FORGIT_REFLOG_FZF_OPTS
+    "
+    reflog_format=${FORGIT_GRL_FORMAT:-$_forgit_log_format}
+    _forgit_reflog_git_opts=()
+    _forgit_parse_array _forgit_reflog_git_opts "$FORGIT_REFLOG_GIT_OPTS"
+    git reflog show --color=always --format="$reflog_format" "${_forgit_reflog_git_opts[@]}" "$@" |
+        _forgit_emojify |
+        FZF_DEFAULT_OPTS="$opts" fzf
+    fzf_exit_code=$?
+    # exit successfully on 130 (ctrl-c/esc)
+    [[ $fzf_exit_code == 130 ]] && return 0
+    return $fzf_exit_code
+}
+
 _forgit_get_files_from_diff_line() {
     # Construct a null-terminated list of the filenames
     # The input looks like one of these lines:
@@ -348,7 +373,7 @@ _forgit_add() {
     _forgit_inside_work_tree || return 1
     local changed unmerged untracked files opts
     # Add files if passed as arguments
-    [[ $# -ne 0 ]] && { _forgit_git_add "$@" && git status -su; return $?; }
+    [[ $# -ne 0 ]] && { _forgit_git_add "$@" && git status -s; return $?; }
 
     changed=$(git config --get-color color.status.changed red)
     unmerged=$(git config --get-color color.status.unmerged red)
@@ -368,7 +393,7 @@ _forgit_add() {
         sed -E 's/^(..[^[:space:]]*)[[:space:]]+(.*)$/[\1]  \2/' |
         FZF_DEFAULT_OPTS="$opts" fzf |
         _forgit_get_single_file_from_add_line)
-    [[ "${#files[@]}" -gt 0 ]] && _forgit_git_add "${files[@]}" && git status -su && return
+    [[ "${#files[@]}" -gt 0 ]] && _forgit_git_add "${files[@]}" && git status -s && return
     echo 'Nothing to add.'
 }
 
@@ -992,6 +1017,7 @@ public_commands=(
     "fixup"
     "ignore"
     "log"
+    "reflog"
     "rebase"
     "reset_head"
     "revert_commit"

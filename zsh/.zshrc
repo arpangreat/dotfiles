@@ -1,79 +1,87 @@
-# Fig pre block. Keep at the top of this file.
-# [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-#If you come from bash you might have to change your $PATH.
+###
+# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# zmodload zsh/zprof
+# Path to your oh-my-zsh installation.
+#installation via script from github
+#export ZSH="/home/$USER/.oh-my-zsh"
+#installation via paru -S oh-my-zsh-git
+export ZSH=/usr/share/oh-my-zsh/
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-export HISTFILE="/home/arpangreat/.zsh_history"
-export ZSH_CACHE_DIR=~/.cache/zsh:$ZSH_CACHE_DIR
-export ZSH="$HOME/.oh-my-zsh"
-# ZVM_INIT_MODE=sourcing
-# export ZSH_THEME="spaceship"
-# export ZSH_THEME="powerlevel10k/powerlevel10k"
+# if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
+ZSH_THEME="random"
 
-# Created by Zap installer
-# [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
 
-# plugins
-# source ~/dotfiles/zsh/plugins/git.plugin.zsh
-# source ~/dotfiles/zsh/plugins/zsh-interactive-cd.plugin.zsh
-# source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source ~/dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
-# source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/dotfiles/zsh/functions/_zig
-plugins=(
-    gh
-    # zsh-interactive-cd
-    zsh-autosuggestions
-    zsh-completions
-    fast-syntax-highlighting
-    rust
-    dotnet
-    asdf
-    zsh-cargo-completion
-    zsh-vi-mode
-    deno
-    zsh-autocomplete
-    forgit
-)
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# plug "zsh-users/zsh-autosuggestions"
-# plug "zdharma-continuum/fast-syntax-highlighting"
-# plug "johannchangpro/zsh-interactive-cd"
-# plug "Aloxaf/fzf-tab"
-# plug "Freed-Wu/fzf-tab-source"
-# plug "MenkeTechnologies/zsh-cargo-completion"
-# plug "jeffreytse/zsh-vi-mode"
+# ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
 
-zvm_config() {
-    ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
-}
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
 
-# source /home/arpangreat/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-source $ZSH/oh-my-zsh.sh
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-# source ~/forgit/forgit.plugin.zsh
-# source ~/helix/contrib/completion/hx.zsh
-# export FPATH=/home/arpangreat/forgit/completions/git-forgit.zsh:$FPATH
-# export FPATH=/home/arpangreat/dotfiles/zsh/functions:$FPATH
-fpath=(
-  ~/.zsh/completions
-  # /home/arpangreat/forgit/completions/git-forgit.zsh
-  $fpath
-)
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
 
-autoload -Uz compinit
-compinit
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
 
-# source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.plugin.zsh
-# export fpath=(~/dotfiles/zsh/plugins/zsh-completions/src $fpath)
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+  source $ZSH/oh-my-zsh.sh
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -82,382 +90,464 @@ compinit
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='nvim'
-    # export EDITOR="/home/arpangreat/.cargo/bin/hx"
-else
-    export EDITOR='nvim'
-    # export EDITOR="/home/arpangreat/.cargo/bin/hx"
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
-# export EDITOR='/home/arpangreat/.cargo/bin/hx'
-
-# fzf-tab
-# disable sort when completing options of any command
-# zstyle ':completion:complete:*:options' sort false
-
-# use input as query string when completing zlua
-# zstyle ':fzf-tab:complete:_zlua:*' query-string input
-# disable sort when completing `git checkout`
-# zstyle ':completion:*:git-checkout:*' sort false
-# set descriptions format to enable group support
-# zstyle ':completion:*:descriptions' format '[%d]'
-# set list-colors to enable filename colorizing
-# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-# preview directory's content with exa when completing cd
-# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
-# switch group using `,` and `.`
-# zstyle ':fzf-tab:*' switch-group ',' '.'
-# zstyle ':fzf-tab:sources' config-directory /the/directory/containing/your/source.zsh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nv="nvim"
-alias e='emacs'
-alias en='emacs -nw'
-alias brc='nvim ~/dotfiles/bspwm/'
-alias hrc='nvim ~/dotfiles/herbstluftwm/'
-alias vrc='vim ~/.vimrc'
-alias ec='emacsclient'
-alias nrc='nvim ~/dotfiles/nvim/init.lua'
-alias kdlc='nvim ~/dotfiles/zellij/config.kdl'
-alias s='sudo'
-alias sv='sudo vim'
-alias snv='sudo nvim'
-alias se='sudo emacs'
-alias sec='sudo emacsclient'
-alias ch='sudo chmod +x'
-alias chu='sudo chmod u+x'
-alias rd='sudo rmdir'
-alias rf='sudo rm -rf'
-alias g++-'g++ -std=c++2a'
-alias g='git'
-alias gP='git pull'
-alias gp='git push -u origin master'
-alias gap='git add -p'
-alias gal='git lg -p'
-alias gso='git show'
-alias gco='git checkout'
-alias gf='~/gf/gf2'
-alias arc='nvim ~/dotfiles/alacritty/alacritty.yml'
-alias zrc='nvim ~/.zshrc'
-alias trc='nvim ~/.tmux.conf'
-alias krc='nvim ~/dotfiles/kitty/kitty.conf'
-alias irc='nvim ~/dotfiles/i3/config'
-alias wezrc='nvim ~/.config/wezterm/wezterm.lua'
-alias hyrc='nvim ~/dotfiles/hypr/hyprland.conf'
-alias sld='sway-launcher-desktop'
-alias tm='tmux -u'
+
+####   ARCOLINUX SETTINGS   ####
+export PAGER='most'
+
+if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+setopt GLOB_DOTS
+#share commands between terminal instances or not
+unsetopt SHARE_HISTORY
+#setopt SHARE_HISTORY
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export HISTCONTROL=ignoreboth:erasedups
+
+# Make nano the default editor
+
+export EDITOR='nano'
+export VISUAL='nano'
+
+#PS1='[\u@\h \W]\$ '
+
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+### ALIASES ###
+
+#list
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -alFh'
+alias l='ls'
+alias l.="ls -A | egrep '^\.'"
+alias listdir="ls -d */ > list"
+
+#pacman
+alias sps='sudo pacman -S'
+alias spr='sudo pacman -R'
+alias sprs='sudo pacman -Rs'
+alias sprdd='sudo pacman -Rdd'
+alias spqo='sudo pacman -Qo'
+alias spsii='sudo pacman -Sii'
+
+# show the list of packages that need this package - depends mpv as example
+function_depends()  {
+    search=$(echo "$1")
+    sudo pacman -Sii $search | grep "Required" | sed -e "s/Required By     : //g" | sed -e "s/  /\n/g"
+    }
+
+alias depends='function_depends'
+
+#fix obvious typo's
+alias cd..='cd ..'
+alias pdw='pwd'
+alias udpate='sudo pacman -Syyu'
+alias upate='sudo pacman -Syyu'
+alias updte='sudo pacman -Syyu'
+alias updqte='sudo pacman -Syyu'
+alias upqll='paru -Syu --noconfirm'
+alias upal='paru -Syu --noconfirm'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+#readable output
+alias df='df -h'
+
+#keyboard
+alias give-me-azerty-be="sudo localectl set-x11-keymap be"
+alias give-me-qwerty-us="sudo localectl set-x11-keymap us"
+
+#setlocale
+alias setlocale="sudo localectl set-locale LANG=en_US.UTF-8"
+alias setlocales="sudo localectl set-x11-keymap be && sudo localectl set-locale LANG=en_US.UTF-8"
+
+#pacman unlock
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
+
+#arcolinux logout unlock
+alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
+
+#which graphical card is working
+alias whichvga="/usr/local/bin/arcolinux-which-vga"
+
+#free
+alias free="free -mt"
+
+#continue download
+alias wget="wget -c"
+
+#userlist
+alias userlist="cut -d: -f1 /etc/passwd | sort"
+
+#merge new settings
+alias merge="xrdb -merge ~/.Xresources"
+
+# Aliases for software managment
+# pacman
+alias pacman="sudo pacman --color auto"
+alias update="sudo pacman -Syyu"
+alias upd="sudo pacman -Syyu"
+
+# paru as aur helper - updates everything
+alias pksyua="paru -Syu --noconfirm"
+alias upall="paru -Syu --noconfirm"
+alias upa="paru -Syu --noconfirm"
+
+#ps
+alias psa="ps auxf"
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
+
+#grub update
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+#grub issue 08/2022
+alias install-grub-efi="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArcoLinux"
+
+#add new fonts
+alias update-fc='sudo fc-cache -fv'
+
+#copy/paste all content of /etc/skel over to home folder - backup of config created - beware
+#skel alias has been replaced with a script at /usr/local/bin/skel
+
+#backup contents of /etc/skel to hidden backup folder in home/user
+alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
+
+#copy shell configs
+alias cb='cp /etc/skel/.bashrc ~/.bashrc && echo "Copied."'
+alias cz='cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
+alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
+
+#switch between bash and zsh
+alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+
+#switch between displaymanager or bootsystem
+alias toboot="sudo /usr/local/bin/arcolinux-toboot"
+alias togrub="sudo /usr/local/bin/arcolinux-togrub"
+alias torefind="sudo /usr/local/bin/arcolinux-torefind"
+alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
+alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
+alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
+alias togdm="sudo pacman -S gdm --noconfirm --needed ; sudo systemctl enable gdm.service -f ; echo 'Gdm is active - reboot now'"
+alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable lxdm.service -f ; echo 'Lxdm is active - reboot now'"
+
+# kill commands
+# quickly kill conkies
+alias kc='killall conky'
+# quickly kill polybar
+alias kp='killall polybar'
+# quickly kill picom
+alias kpi='killall picom'
+
+#hardware info --short
+alias hw="hwinfo --short"
+
+#fastfetch --short
+alias ff="fastfetch"
+
+#audio check pulseaudio or pipewire
+alias audio="pactl info | grep 'Server Name'"
+
+#skip integrity check
+alias paruskip='paru -S --mflags --skipinteg'
+alias yayskip='yay -S --mflags --skipinteg'
+alias trizenskip='trizen -S --skipinteg'
+
+#check vulnerabilities microcode
+alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
+
+#approximation of how old your hardware is
+alias howold="sudo lshw | grep -B 3 -A 8 BIOS"
+
+#check cpu
+alias cpu="cpuid -i | grep uarch | head -n 1"
+
+#get fastest mirrors in your neighborhood
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
+#our experimental - best option for the moment
+alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+alias ram='rate-mirrors --allow-root --disable-comments arch | sudo tee /etc/pacman.d/mirrorlist'
+alias rams='rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
+
+#mounting the folder Public for exchange between host and guest on virtualbox
+alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
+
+#enabling vmware services
+alias start-vmware="sudo systemctl enable --now vmtoolsd.service"
+alias vmware-start="sudo systemctl enable --now vmtoolsd.service"
+alias sv="sudo systemctl enable --now vmtoolsd.service"
+
+#shopt
+#shopt -s autocd # change to named directory
+#shopt -s cdspell # autocorrects cd misspellings
+#shopt -s cmdhist # save multi-line commands in history as single line
+#shopt -s dotglob
+#shopt -s histappend # do not overwrite history
+#shopt -s expand_aliases # expand aliases
+
+#youtube download
+alias yta-aac="yt-dlp --extract-audio --audio-format aac "
+alias yta-best="yt-dlp --extract-audio --audio-format best "
+alias yta-flac="yt-dlp --extract-audio --audio-format flac "
+alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
+alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
+
+#Recent Installed Packages
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
+
+#iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-alias ide='bash ~/dotfiles/custom-scripts/ide.sh'
-alias rusttm='~/dotfiles/custom-scripts/./rusttm'
-alias gotm='~/dotfiles/custom-scripts/./gotm'
-alias javatm='~/dotfiles/custom-scripts/./javatm'
-alias tstm='~/dotfiles/custom-scripts/./tstm'
-alias nvtm='~/dotfiles/custom-scripts/./nvtm'
-alias pytm='~/dotfiles/custom-scripts/./pytm'
-alias cpptm='~/dotfiles/custom-scripts/./cpptm'
-alias blogtm='~/dotfiles/custom-scripts/./blogtm'
-alias cdtm='~/dotfiles/custom-scripts/./cdtm'
-alias cht='~/dotfiles/custom-scripts/tmux-cht.sh'
-alias notes='nvim ~/wiki/index.md'
-alias projectCreate='bash ~/dotfiles/custom-scripts/projectCreate.sh'
-alias na='~/My-First-Plugin/./nvim.appimage'
-alias ll='ya'
-alias ls='eza -l --icons --color=always | bat'
-alias la='eza -l --icons -a --color=always | bat'
-alias lt='eza -l --icons --tree --color=always | bat'
-alias lta='eza -l --icons --tree -a --color=always | bat'
-alias l='ls --color=always | bat'
-alias lg='$GOPATH/bin/lazygit'
-alias obs="QT_QPA_PLATFORM=xcb obs"
-alias ..='cd ../'
-alias ...='cd ../../'
-alias ....='cd ../../../'
-alias .....='cd ../../../../'
-alias open='xdg-open'
-alias keysoup="sudo systemctl restart keyd && sudo systemctl enable keyd && sudo systemctl start keyd && setxkbmap -option compose:menu"
-alias zs="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layouts/strider.kdl"
-alias zm="zellij action new-tab --layout /home/arpangreat/dotfiles/zellij/layouts/my-default.kdl"
-alias man="batman"
+alias isoo="cat /etc/dev-rel"
 
-bindkey -v
+#Cleanup orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
-eval "$(starship init zsh)"
+# This will generate a list of explicitly installed packages
+alias list="sudo pacman -Qqe"
+#This will generate a list of explicitly installed packages without dependencies
+alias listt="sudo pacman -Qqet"
+# list of AUR packages
+alias listaur="sudo pacman -Qqem"
+# add > list at the end to write to a file
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# install packages from list
+# pacman -S --needed - < my-list-of-packages.txt
 
-# My custom zsh files
-source $HOME/dotfiles/zsh/functions/functions
-source $HOME/fzf-git.sh/fzf-git.sh
+#clear
+alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
+alias cls="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
 
-# source $HOME/dotfiles/zsh/functions/spaceship-vi-mode.plugin.zsh
 
-# spaceship add --before char vi_mode
+#search content with ripgrep
+alias rg="rg --sort path"
 
-# source $HOME/dotfiles/zsh/always-tmux.sh
-# source $HOME/dotfiles/zsh/always-zellij.sh
+#get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
 
-# ensure_tmux_is_running
-# ensure_zellij_is_running
+#nano for important configuration files
+#know what you do in these files
+alias nlxdm="sudo $EDITOR /etc/lxdm/lxdm.conf"
+alias nlightdm="sudo $EDITOR /etc/lightdm/lightdm.conf"
+alias npacman="sudo $EDITOR /etc/pacman.conf"
+alias ngrub="sudo $EDITOR /etc/default/grub"
+alias nconfgrub="sudo $EDITOR /boot/grub/grub.cfg"
+alias nmakepkg="sudo $EDITOR /etc/makepkg.conf"
+alias nmkinitcpio="sudo $EDITOR /etc/mkinitcpio.conf"
+alias nmirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
+alias narcomirrorlist="sudo $EDITOR /etc/pacman.d/arcolinux-mirrorlist"
+alias nsddm="sudo $EDITOR /etc/sddm.conf"
+alias nsddmk="sudo $EDITOR /etc/sddm.conf.d/kde_settings.conf"
+alias nfstab="sudo $EDITOR /etc/fstab"
+alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
+alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
+alias ngnupgconf="sudo $EDITOR /etc/pacman.d/gnupg/gpg.conf"
+alias nhosts="sudo $EDITOR /etc/hosts"
+alias nhostname="sudo $EDITOR /etc/hostname"
+alias nresolv="sudo $EDITOR /etc/resolv.conf"
+alias nb="$EDITOR ~/.bashrc"
+alias nz="$EDITOR ~/.zshrc"
+alias nf="$EDITOR ~/.config/fish/config.fish"
+alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
+alias nfastfetch="$EDITOR ~/.config/fastfetch/config.jsonc"
+alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
+alias nvconsole="sudo $EDITOR /etc/vconsole.conf"
+alias nenvironment="sudo $EDITOR /etc/environment"
+alias nloader="sudo $EDITOR /boot/efi/loader/loader.conf"
+alias nrefind="sudo $EDITOR /boot/refind_linux.conf"
+alias nalacritty="nano /home/$USER/.config/alacritty/alacritty.toml"
 
-eval "$(zoxide init zsh --cmd cd)"
+#removing packages
+alias rvariety="arcolinux-remove-variety"
+alias rkmix="arcolinux-remove-kmix"
+alias rconky="arcolinux-remove-conky"
 
-# base16
-# BASE16_SHELL="$HOME/.config/base16-shell/"
-# [ -n "$PS1" ] && \
-#     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-#         eval "$("$BASE16_SHELL/profile_helper.sh")"
-# neofetch
-fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
+#reading logs with bat
+alias lcalamares="bat /var/log/Calamares.log"
+alias lpacman="bat /var/log/pacman.log"
+alias lxorg="bat /var/log/Xorg.0.log"
+alias lxorgo="bat /var/log/Xorg.0.log.old"
 
-# shellfetch
-# Install it
-# fortune | cowsay | lolcat
+#reading logs with sublime-text-4
+alias scal="subl /var/log/Calamares.log"
+alias spac="subl /etc/pacman.conf"
 
-# Kitty
-# kitty +complete setup zsh | source /dev/stdin
+#gpg
+#verify signature for isos
+alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
+alias fix-gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
+#receive the key of a developer
+alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+alias fix-keyserver="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
 
-#Zellij
-# zellij setup --generate-completion zsh | source /dev/stdin
+#fixes
+alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
+alias keyfix="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+alias key-fix="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+alias keys-fix="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+alias fixkey="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+alias fixkeys="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+alias fix-key="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+alias fix-keys="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
+#fix-sddm-config is no longer an alias but an application - part of ATT
+#alias fix-sddm-config="/usr/local/bin/arcolinux-fix-sddm-config"
+alias fix-pacman-conf="/usr/local/bin/arcolinux-fix-pacman-conf"
+alias fix-pacman-keyserver="/usr/local/bin/arcolinux-fix-pacman-gpg-conf"
+alias fix-grub="sudo /usr/local/bin/arcolinux-fix-grub"
+alias fixgrub="sudo /usr/local/bin/arcolinux-fix-grub"
 
-# Alacritty
-# source /home/arpangreat/alacritty/extra/completions/_alacritty
+#maintenance
+alias big="expac -H M '%m\t%n' | sort -h | nl"
+alias downgrada="sudo downgrade --ala-url https://ant.seedhost.eu/arcolinux/"
 
-# export DOTBARE_DIR="$HOME/dotfiles.git"
+#hblock (stop tracking with hblock)
+#use unhblock to stop using hblock
+alias unhblock="hblock -S none -D none"
 
-# To use batpipe, eval the output of this command in your shell init script.
-LESSOPEN="|/usr/bin/batpipe %s";
-export LESSOPEN;
-unset LESSCLOSE;
+#systeminfo
+alias probe="sudo -E hw-probe -all -upload"
+alias sysfailed="systemctl list-units --failed"
 
-# The following will enable colors when using batpipe with less:
-LESS="$LESS -R";
-BATPIPE="color";
-export LESS;
-export BATPIPE;
+#shutdown or reboot
+alias ssn="sudo shutdown now"
+alias sr="reboot"
 
-### "bat" as manpager
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-# export MANOFFOPT="-c"
+#update betterlockscreen images
+alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
 
-# CDPATH
-setopt auto_cd
-cdpath=($HOME/dotfiles $HOME/.config)
-export DENO_INSTALL="/home/arpangreat/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-# NVIM
-# export NVIM_TUI_ENABLE_TRUE_COLOR=1
-# export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-# export NVIM_PYTHON_LOG_FILE="/tmp/.log"
-# export NVIM_PYTHON_LOG_LEVEL=DEBUG
-# export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
-# source /home/arpangreat/tokyonight.nvim/extras/zsh_tokyonight_storm.zsh-theme
-# bash ~/.config/base16-shell/scripts/base16-rebecca.sh
-# wal -i ~/dotfiles/wallpaper/wallpaper.jpg
+#give the list of all installed desktops - xsessions desktops
+alias xd="ls /usr/share/xsessions"
+alias xdw="ls /usr/share/wayland-sessions"
 
-#[ -f "/home/arpangreat/.ghcup/env" ] && source "/home/arpangreat/.ghcup/env" # ghcup-env
+#give a list of the kernels installed
+alias kernel="ls /usr/lib/modules"
+alias kernels="ls /usr/lib/modules"
 
-# export JAR=/home/arpangreat/dotfiles/nvim/jdt-language-server/plugins/org.eclipse.equinox.common_3.16.0.v20220211-2322.jar
-# export GRADLE_HOME=$HOME/gradle
-export JAVA_HOME=/usr/lib/jvm/default
-# export JDTLS_HOME=/home/arpangreat/dotfiles/nvim/jdt-language-server/
-# export JDTLS_CONFIG=/home/arpangreat/dotfiles/nvim/jdt-language-server/config_linux
-# export WORKSPACE=$HOME/javaexsnew
+#am I on grub,systemd-boot or refind
+alias boot="sudo /usr/local/bin/arcolinux-boot"
 
-function _pip_completion {
-    local words cword
-    read -Ac words
-    read -cn cword
-    reply=($(COMP_WORDS="$words[*]" \
-        COMP_CWORD=$((cword - 1)) \
-        PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null))
+# # ex = EXtractor for all kinds of archives
+# # usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   tar xf $1    ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
 }
 
-compctl -K _pip_completion pip3
+#wayland aliases
+alias wsimplescreen="wf-recorder -a"
+alias wsimplescreenrecorder="wf-recorder -a -c h264_vaapi -C aac -d /dev/dri/renderD128 --file=recording.mp4"
 
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
---preview "bat --color 'always' {}"
---color=dark
---color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
---color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
-'
-# Using highlight (http://www.andre-simon.de/doku/highlight/en/highlight.html)
-export FZF_CTRL_T_OPTS="--preview --hidden 'bat --color "always" {}'"
-export FZF_CTRL_T_OPTS="--select-1 --exit-0"
-export FZF_CTRL_R_OPTS='--sort --exact'
-export FZF_CTRL_R_OPTS="--preview 'bat --color "always" {}'"
+#btrfs aliases
+alias btrfsfs="sudo btrfs filesystem df /"
+alias btrfsli="sudo btrfs su li / -t"
 
-# fpath=(~/.zsh.d/ $fpath)
+#snapper aliases
+alias snapcroot="sudo snapper -c root create-config /"
+alias snapchome="sudo snapper -c home create-config /home"
+alias snapli="sudo snapper list"
+alias snapcr="sudo snapper -c root create"
+alias snapch="sudo snapper -c home create"
 
-# zsh-vi-mode
-# ZVM_CURSOR_STYLE_ENABLED=true
+#Leftwm aliases
+alias lti="leftwm-theme install"
+alias ltu="leftwm-theme uninstall"
+alias lta="leftwm-theme apply"
+alias ltupd="leftwm-theme update"
+alias ltupg="leftwm-theme upgrade"
 
-# function zle-keymap-select
-# {
-#   # precmd
-#   case $KEYMAP in
-#       vicmd)      print -n '\033[1 q';; # block cursor
-#       viins|main) print -n '\033[5 q';; # line cursor
-#   esac
-#   zle reset-prompt
-# }
+#arcolinux applications
+#att is a symbolic link now
+#alias att="archlinux-tweak-tool"
+alias adt="arcolinux-desktop-trasher"
+alias abl="arcolinux-betterlockscreen"
+alias agm="arcolinux-get-mirrors"
+alias amr="arcolinux-mirrorlist-rank-info"
+alias aom="arcolinux-osbeck-as-mirror"
+alias ars="arcolinux-reflector-simple"
+alias atm="arcolinux-tellme"
+alias avs="arcolinux-vbox-share"
+alias awa="arcolinux-welcome-app"
 
-# zle -N zle-keymap-select
+#git
+alias rmgitcache="rm -r ~/.cache/git"
+alias grh="git reset --hard"
 
-export PATH=$PATH:$HOME/flutter/bin
-export GOPATH=$HOME/go
-export LLVM_ROOT=$HOME/llvm-project
-# source $HOME/tomnomnom/gf/gf-completion.zsh
-export PATH=$PATH:$GOPATH/go/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/.config/composer/vendor/bin
-export PATH=$PATH:$HOME/.cargo/env
-export PATH=$PATH:$HOME/.cargo/bin
-export PATH=$PATH:$HOME/.opam/default/bin
+#pamac
+alias pamac-unlock="sudo rm /var/tmp/pamac/dbs/db.lock"
 
-# Spaceship configs
-# SPACESHIP_DIR_TRUNC=0
-# SPACESHIP_BATTERY_THRESHOLD=30
-# SPACESHIP_VI_MODE=true
-# SPACESHIP_VI_MODE_COLOR=#ff87d7
-# SPACESHIP_CHAR_SYMBOL='➜ '
-# SPACESHIP_CHAR_SUFFIX=' '
-# ORDER
-# SPACESHIP_PROMPT_ORDER=(
-#   time     #
-#   vi_mode  # these sections will be
-#   user     # before prompt char
-#   host     #
-#   char
-#   dir
-#   git
-#   node
-#   ruby
-#   xcode
-#   swift
-#   golang
-#   docker
-#   venv
-#   pyenv
-# )
+#moving your personal files and folders from /personal to ~
+alias personal='cp -Rf /personal/* ~'
 
-# SPACESHIP_CHAR_SYMBOL='-->'
-# SPACESHIP_CHAR_SUFFIX=' '
-# export ANDROID_SDK=
-#
-# [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
-# echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
+#create a file called .zshrc-personal and put all your personal aliases
+#in there. They will not be overwritten by skel.
 
-FAST_HIGHLIGHT[use_brackets]=1
+[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
-# added by travis gem
-# [ ! -s /home/arpangreat/.travis/travis.sh ] || source /home/arpangreat/.travis/travis.sh
-# export +=${ZDOTDIR:-~}/.zsh_functions
-# export TERM=xterm-256color-italic
-# export TERM=wezterm
-# export TERM=foot-extra
-# export TERM=xterm-kitty
-export PATH=/home/arpangreat/.local/share/gem/ruby/3.0.0/bin:$PATH
-export PATH=$PATH:/home/arpangreat/.local/bin
-export PATH=$PATH:/home/arpangreat/.local/share/nvim/mason/bin
-export PATH=$PATH:/home/arpangreat/.ghcup/bin
-export CHROME_EXECUTABLE=/usr/bin/brave
-export PATH="$PATH:/home/arpangreat/.dotnet/tools"
-# export PATH=/home/arpangreat/.nimble/bin:$PATH
-# export PATH=/home/arpangreat/apache-maven-3.8.6/bin:$PATH
-# export ANDROID_HOME=/home/arpangreat/Android/Sdk
-export PATH=$ANDROID_HOME/tools:$PATH
-# export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
-
-export BROWSER=/usr/bin/firefox
-
-# source /home/arpangreat/.zprofile
-# fpath=(~/.zsh.d/ $fpath)
-
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# zvm_after_init() {
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# }
-
-# bun completions
-[ -s "/home/arpangreat/.oh-my-zsh/completions/_bun" ] && source "/home/arpangreat/.oh-my-zsh/completions/_bun"
-
-# bun
-export BUN_INSTALL="/home/arpangreat/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-export SFML_INCLUDE_DIR="/usr/include/SFML/"
-export SFML_LIBS_DIR="/usr/lib/SFML/"
-export LD_LIBRARY_PATH="/usr/lib/SFML/"
-export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_TMPFILE="/tmp/.lastd"
-
-. /opt/asdf-vm/asdf.sh
-
-# bun completions
-[ -s "/home/arpangreat/.bun/_bun" ] && source "/home/arpangreat/.bun/_bun"
-
-source <(cod init $$ zsh)
-
-export PATH="/home/arpangreat/perl5/bin${PATH:+:${PATH}}"
-export PERL5LIB="/home/arpangreat/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-export PERL_LOCAL_LIB_ROOT="/home/arpangreat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-export PERL_MB_OPT="--install_base \"/home/arpangreat/perl5\""
-export PERL_MM_OPT="INSTALL_BASE=/home/arpangreat/perl5"
-
-# Shell-GPT integration ZSH v0.1
-_sgpt_zsh() {
-if [[ -n "$BUFFER" ]]; then
-    _sgpt_prev_cmd=$BUFFER
-    BUFFER+="⌛"
-    zle -I && zle redisplay
-    BUFFER=$(sgpt --shell <<< "$_sgpt_prev_cmd")
-    zle end-of-line
-fi
-}
-zle -N _sgpt_zsh
-bindkey ^o _sgpt_zsh
-# Shell-GPT integration ZSH v0.1
-# eval "$(zellij setup --generate-auto-start zsh)"
-
-bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
-bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
-# opam configuration
-[[ ! -r /home/arpangreat/.opam/opam-init/init.zsh ]] || source /home/arpangreat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-# zprof > /tmp/zprof.out
-# bindkey -M menuselect '\r' .accept-line
-zstyle ':autocomplete:*' ignored-input '..##'
-zstyle ':completion:*' menu select=long
-
-function myinit() {
-    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-}
-zvm_after_init_commands+=(myinit)
-
-# setting for gup command (auto generate)
-# fpath=(~/.zsh/completion $fpath)
-
-# Fig post block. Keep at the bottom of this file.
-# [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-if test -n "$KITTY_INSTALLATION_DIR"; then
-    export KITTY_SHELL_INTEGRATION="enabled"
-    autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
-    kitty-integration
-    unfunction kitty-integration
-fi
-
-precmd() {
-    print -Pn "\e]133;A\e\\"
-}
+# reporting tools - install when not installed
+#fastfetch
+#neofetch
+#screenfetch
+#alsi
+#paleofetch
+#fetch
+#hfetch
+#sfetch
+#ufetch
+#ufetch-arco
+#pfetch
+#sysinfo
+#sysinfo-retro
+#cpufetch
+#colorscript random
+#hyfetch
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
