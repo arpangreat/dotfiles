@@ -1,11 +1,10 @@
-
-set -U FZF_DEFAULT_OPTS "\\\n--color=spinner:#f5e0dc,hl:#f38ba8 \\\n--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \\\n--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \\\n--ansi \\\n--height='80%' \\\n--bind='alt-k:preview-up,alt-p:preview-up' \\\n--bind='alt-j:preview-down,alt-n:preview-down' \\\n--bind='ctrl-r:toggle-all' \\\n--bind='ctrl-s:toggle-sort' \\\n--bind='?:toggle-preview' \\\n--bind='alt-w:toggle-preview-wrap' \\\n--preview='bat --color=always {}' \\\n--preview-window='right:60%' \\\n+1"
-
 set -Ux FZF_DEFAULT_OPTS "\
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
---ansi \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--multi"\
+--ansi"\
 --height='80%' \
 --bind='alt-k:preview-up,alt-p:preview-up' \
 --bind='alt-j:preview-down,alt-n:preview-down' \
@@ -17,4 +16,5 @@ set -Ux FZF_DEFAULT_OPTS "\
 --preview-window='right:60%' \
 --border --multi --info inline-right --layout reverse --marker ▏ --pointer ▌ --prompt '▌ '  \
 --highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189 \
+--info=inline-right \
 "
