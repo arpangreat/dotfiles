@@ -3,7 +3,7 @@ return {
 	build = ":TSUpdate",
 	event = { "VeryLazy" },
 	dependencies = {
-		"JoosepAlviste/nvim-ts-context-commentstring",
+		-- "JoosepAlviste/nvim-ts-context-commentstring",
 	},
 	config = function()
 		require("nvim-treesitter.configs").setup({
@@ -24,6 +24,25 @@ return {
 				},
 			},
 		})
-		require("ts_context_commentstring").setup({ enable_autocmd = false })
+
+		local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+
+		---@class parser_config
+		parser_config.blade = {
+			install_info = {
+				url = "https://github.com/EmranMR/tree-sitter-blade",
+				files = { "src/parser.c" },
+				branch = "main",
+			},
+
+			filetype = "blade",
+		}
+
+		vim.filetype.add({
+			pattern = {
+				[".*%.blade%.php"] = "blade",
+			},
+		})
+		-- require("ts_context_commentstring").setup({ enable_autocmd = false })
 	end,
 }
