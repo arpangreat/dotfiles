@@ -21,6 +21,9 @@ M.on_attach = function(client_id, bufnr)
 	--   })
 	-- end
 
+	client_id.server_capabilities.documentFormattingprovider = false
+	client_id.server_capabilities.documentRangeFormattingProvider = false
+
 	vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "K", "<cmd>lua require('pretty_hover').hover()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", { noremap = true, silent = true })
