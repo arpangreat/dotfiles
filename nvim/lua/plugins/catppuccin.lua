@@ -75,6 +75,7 @@ return {
 					background = true,
 				},
 			},
+
 			navic = true,
 			which_key = true,
 			fidget = true,

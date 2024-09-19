@@ -85,41 +85,92 @@ require("lspconfig").intelephense.setup({
 	capabilities = capabilities,
 })
 
-local lspconfig = require("lspconfig")
-local configs = require("lspconfig.configs")
+-- local lspconfig = require("lspconfig")
+-- local configs = require("lspconfig.configs")
 
 -- Configure it
-configs.blade = {
-	default_config = {
-		cmd = { "/home/arpangreat/laravel-dev-tools/laravel-dev-tools", "lsp" },
-		filetypes = { "blade" },
-		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
-		settings = {},
+-- configs.blade = {
+-- 	default_config = {
+-- 		cmd = { "/home/arpangreat/laravel-dev-tools/laravel-dev-tools", "lsp" },
+-- 		filetypes = { "blade" },
+-- 		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
+-- 		settings = {},
+-- 	},
+-- }
+-- -- Set it up
+-- lspconfig.blade.setup({
+-- 	-- Capabilities is specific to my setup.
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
+
+require("lspconfig").tailwindcss.setup({
+	-- Capabilities is specific to my setup.
+	filetypes = {
+		"aspnetcorerazor",
+		"astro",
+		"astro-markdown",
+		"clojure",
+		"django-html",
+		"htmldjango",
+		"edge",
+		"eelixir",
+		"elixir",
+		"ejs",
+		"erb",
+		"eruby",
+		"gohtml",
+		"gohtmltmpl",
+		"haml",
+		"handlebars",
+		"hbs",
+		"html",
+		"htmlangular",
+		"html-eex",
+		"heex",
+		"jade",
+		"leaf",
+		"liquid",
+		"markdown",
+		"mdx",
+		"mustache",
+		"njk",
+		"nunjucks",
+		"php",
+		"razor",
+		"slim",
+		"twig",
+		"css",
+		"less",
+		"postcss",
+		"sass",
+		"scss",
+		"stylus",
+		"sugarss",
+		"javascript",
+		"javascriptreact",
+		"reason",
+		"rescript",
+		"typescript",
+		"typescriptreact",
+		"vue",
+		"svelte",
+		"templ",
 	},
-}
--- Set it up
-lspconfig.blade.setup({
-	-- Capabilities is specific to my setup.
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
-lspconfig.tailwindcss.setup({
-	-- Capabilities is specific to my setup.
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-
-lspconfig.html.setup({
+require("lspconfig").html.setup({
 	-- Capabilities is specific to my setup.
 	-- filetypes = { "html", "blade" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
-lspconfig.emmet_language_server.setup({
-	-- Capabilities is specific to my setup.
-	filetypes = { "html", "blade" },
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
+-- lspconfig.emmet_language_server.setup({
+-- 	-- Capabilities is specific to my setup.
+-- 	filetypes = { "html", "blade" },
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })

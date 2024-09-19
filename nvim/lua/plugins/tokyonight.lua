@@ -56,8 +56,9 @@ return {
 				hl["@variable"] = { fg = c.red }
 				hl.LspInlayHint = { bg = "#063540" }
 				hl.WinBar = { bg = c.none }
-				hl.MiniCursorword = { underline = true }
-				hl.MiniCursorwordCurrent = { underline = true }
+				hl.MiniCursorword = { bg = c.terminal_black }
+				hl.MiniCursorwordCurrent = { bg = c.terminal_black }
+				hl.CursorLine = { bg = c.bg_highlight }
 				local prompt = "#2d3149"
 				hl.TelescopeNormal = {
 					bg = c.bg_dark,
