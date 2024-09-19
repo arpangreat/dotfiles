@@ -19,9 +19,6 @@ require("lazy").setup({ { import = "plugins" } }, {
 		enabled = true,
 		notify = true,
 	},
-	spec = {
-		{ import = "plugins" },
-	},
 	profiling = {
 		loader = true,
 		require = true,
