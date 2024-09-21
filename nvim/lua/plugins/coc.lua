@@ -1,9 +1,14 @@
 return {
 	"neoclide/coc.nvim",
 	event = "VeryLazy",
-	-- enabled = true,
+	enabled = false,
 	ft = "blade",
 	build = "npm ci",
+	init = function()
+		if not vim.tbl_contains({ "blade" }, vim.bo.ft) then
+			vim.cmd([[ :CocDisable ]])
+		end
+	end,
 	config = function()
 		local keyset = vim.keymap.set
 		-- Autocomplete
@@ -18,8 +23,8 @@ return {
 			{ silent = true, noremap = true, expr = true }
 		)
 
-		if not vim.tbl_contains({ "blade" }, vim.bo.ft) then
-			vim.cmd([[ :CocDisable ]])
-		end
+		-- if not vim.tbl_contains({ "blade" }, vim.bo.ft) then
+		-- 	vim.cmd([[ :CocDisable ]])
+		-- end
 	end,
 }
