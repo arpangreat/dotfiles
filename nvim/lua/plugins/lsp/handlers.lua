@@ -72,7 +72,7 @@ require("lspconfig").phpactor.setup({
 })
 
 require("lspconfig").intelephense.setup({
-	-- filetypes = { "php", "blade" },
+	filetypes = { "php", "blade" },
 	commands = {
 		IntelephenseIndex = {
 			function()
@@ -88,7 +88,7 @@ require("lspconfig").intelephense.setup({
 -- local lspconfig = require("lspconfig")
 -- local configs = require("lspconfig.configs")
 
--- Configure it
+-- -- Configure it
 -- configs.blade = {
 -- 	default_config = {
 -- 		cmd = { "/home/arpangreat/laravel-dev-tools/laravel-dev-tools", "lsp" },
@@ -106,64 +106,13 @@ require("lspconfig").intelephense.setup({
 
 require("lspconfig").tailwindcss.setup({
 	-- Capabilities is specific to my setup.
-	filetypes = {
-		"aspnetcorerazor",
-		"astro",
-		"astro-markdown",
-		"clojure",
-		"django-html",
-		"htmldjango",
-		"edge",
-		"eelixir",
-		"elixir",
-		"ejs",
-		"erb",
-		"eruby",
-		"gohtml",
-		"gohtmltmpl",
-		"haml",
-		"handlebars",
-		"hbs",
-		"html",
-		"htmlangular",
-		"html-eex",
-		"heex",
-		"jade",
-		"leaf",
-		"liquid",
-		"markdown",
-		"mdx",
-		"mustache",
-		"njk",
-		"nunjucks",
-		"php",
-		"razor",
-		"slim",
-		"twig",
-		"css",
-		"less",
-		"postcss",
-		"sass",
-		"scss",
-		"stylus",
-		"sugarss",
-		"javascript",
-		"javascriptreact",
-		"reason",
-		"rescript",
-		"typescript",
-		"typescriptreact",
-		"vue",
-		"svelte",
-		"templ",
-	},
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 require("lspconfig").html.setup({
 	-- Capabilities is specific to my setup.
-	-- filetypes = { "html", "blade" },
+	filetypes = { "html", "blade" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })

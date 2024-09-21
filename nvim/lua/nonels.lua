@@ -55,6 +55,7 @@ return {
 				-- require("null-ls").builtins.diagnostics.shellcheck,
 				require("null-ls").builtins.diagnostics.pylint,
 				require("null-ls").builtins.formatting.black,
+				require("null-ls").builtins.formatting.blade_formatter,
 				-- require("null-ls").builtins.code_actions.shellcheck,
 			},
 			debug = false,
