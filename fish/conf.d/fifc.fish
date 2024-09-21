@@ -73,20 +73,3 @@ function _fifc_uninstall --on-event fifc_uninstall
     set -e _fifc_unordered_comp
     set -e _fifc_ordered_comp
 end
-
-# Pacman
-fifc \
-    -r '^(pacman|paru|yay)(\\h*\\-S)?\\h+' \
-    -s 'pacman --color=always -Ss "$fifc_token" | string match -r \'^[^\\h+].*\'' \
-    -e '.*/(.*?)\\h.*' \
-    -f "--query ''" \
-    -p 'pacman -Si "$fifc_extracted"'
-
-# Pattern
-fifc \
-    -r '.*\*{2}.*' \
-    -s 'rg --hidden -l --no-messages (string match -r -g \'.*\*{2}(.*)\' "$fifc_commandline")' \
-    -p 'batgrep --color --paging=never (string match -r -g \'.*\*{2}(.*)\' "$fifc_commandline") "$fifc_candidate"' \
-    -f "--query ''" \
-    -o 'batgrep --color (string match -r -g \'.*\*{2}(.*)\' "$fifc_commandline") "$fifc_candidate" | less -R' \
-    -O 1
