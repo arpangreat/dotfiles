@@ -4,6 +4,6 @@ function vg
     set -l line (echo $result | cut -d ' ' -f 2)
 
     if test -n "$file"
-        nvim $file +$line
+        $EDITOR $file +$line
     end
 end
