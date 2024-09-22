@@ -72,7 +72,7 @@ require("lspconfig").phpactor.setup({
 })
 
 require("lspconfig").intelephense.setup({
-	filetypes = { "php", "blade" },
+	-- filetypes = { "php", "blade" },
 	commands = {
 		IntelephenseIndex = {
 			function()
@@ -85,24 +85,24 @@ require("lspconfig").intelephense.setup({
 	capabilities = capabilities,
 })
 
--- local lspconfig = require("lspconfig")
--- local configs = require("lspconfig.configs")
+local lspconfig = require("lspconfig")
+local configs = require("lspconfig.configs")
 
--- -- Configure it
--- configs.blade = {
--- 	default_config = {
--- 		cmd = { "/home/arpangreat/laravel-dev-tools/laravel-dev-tools", "lsp" },
--- 		filetypes = { "blade" },
--- 		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
--- 		settings = {},
--- 	},
--- }
--- -- Set it up
--- lspconfig.blade.setup({
--- 	-- Capabilities is specific to my setup.
--- 	on_attach = on_attach,
--- 	capabilities = capabilities,
--- })
+-- Configure it
+configs.blade = {
+	default_config = {
+		cmd = { "php", "/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp" },
+		filetypes = { "blade" },
+		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
+		settings = {},
+	},
+}
+-- Set it up
+lspconfig.blade.setup({
+	-- Capabilities is specific to my setup.
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 
 require("lspconfig").tailwindcss.setup({
 	-- Capabilities is specific to my setup.
@@ -110,16 +110,22 @@ require("lspconfig").tailwindcss.setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").html.setup({
+-- require("lspconfig").html.setup({
+-- 	-- Capabilities is specific to my setup.
+-- 	filetypes = { "html", "blade" },
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
+
+lspconfig.emmet_language_server.setup({
 	-- Capabilities is specific to my setup.
 	filetypes = { "html", "blade" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
--- lspconfig.emmet_language_server.setup({
--- 	-- Capabilities is specific to my setup.
--- 	filetypes = { "html", "blade" },
--- 	on_attach = on_attach,
--- 	capabilities = capabilities,
--- })
+lspconfig.stimulus_ls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	root_dir = require("lspconfig.util").root_pattern("composer.json"),
+})

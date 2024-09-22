@@ -28,7 +28,7 @@ name = "binary"
 request = "launch"
 completion = [{ name = "binary", completion = "filename" }]
 args = { program = "{0}", initCommands = [
-	"command script import /usr/local/etc/lldb_vscode_rustc_primer.py",
+  "command script import /usr/local/etc/lldb_vscode_rustc_primer.py",
 ] }
 
 [[language]]
@@ -54,13 +54,13 @@ auto-format = true
 [language-server.clangd]
 command = "clangd"
 args = [
-	"--background-index",
-	"--pch-storage=memory",
-	"--clang-tidy",
-	"--suggest-missing-includes",
-	"--cross-file-rename",
-	"--completion-style=detailed",
-	"--offset-encoding=utf-16",
+  "--background-index",
+  "--pch-storage=memory",
+  "--clang-tidy",
+  "--suggest-missing-includes",
+  "--cross-file-rename",
+  "--completion-style=detailed",
+  "--offset-encoding=utf-16",
 ]
 
 [[language]]
@@ -81,15 +81,45 @@ Inlayhint = { assignVariableTypes = true, compositeLiteralFields = true, composi
 [language-server.golangcilint]
 command = "golangci-lint-langserver"
 init = [
-	"golangci-lint",
-	"run",
-	"--enable-all",
-	"--disable",
-	"lll",
-	"--out-format",
-	"json",
-	"--issues-exit-code=1",
+  "golangci-lint",
+  "run",
+  "--enable-all",
+  "--disable",
+  "lll",
+  "--out-format",
+  "json",
+  "--issues-exit-code=1",
 ]
+
+[[language]]
+name = "blade"
+auto-format = true
+formatter = { command = "blade-formatter", args = ["--stdin"] }
+language-servers = ["blade", "tailwind", "emmet"]
+
+[language-server.blade]
+command = "php"
+args = ["/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp"]
+
+[language-server.tailwind]
+command = "tailwindcss-language-server"
+
+[language-server.emmet]
+command = "emmet-language-server"
+args = ["-C", "stdio"]
+
+[[language]]
+name = "php"
+auto-format = true
+language-servers = ["phpactor", "intelephense"]
+
+[language-servers.phpactor]
+command = "phpactor"
+args = ["language-server"]
+
+[language-server.intelephense]
+command = "intelephense"
+args = ["--stdio"]
 
 [[language]]
 name = "cmake"

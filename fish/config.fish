@@ -39,7 +39,7 @@ if status --is-interactive
     exec tmux -u
 end
 
-set -gx EDITOR nvim
+set -gx EDITOR /usr/local/bin/nvim
 
 set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
 
@@ -110,10 +110,6 @@ eval (batpipe)
 source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
 
 v complete setup fish | source
-jj util completion fish | source
-fx --comp fish | source
-s --completion fish | source
-gix completions | source
 
 cod init $fish_pid fish | source
 
