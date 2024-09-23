@@ -65,5 +65,6 @@ return {
 		require("plugins.lsp.rust")
 		require("plugins.lsp.java")
 		require("plugins.lsp.zig")
+		-- require("plugins.lsp.compl")
 	end,
 }
