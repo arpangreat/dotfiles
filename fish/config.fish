@@ -36,7 +36,7 @@ set fish_cursor_visual block
 
 if status --is-interactive
     and not set -q TMUX
-    exec tmux -u
+    tmux -u -2
 end
 
 set -gx EDITOR /usr/local/bin/nvim
@@ -110,6 +110,7 @@ eval (batpipe)
 source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
 
 v complete setup fish | source
+symfony completion | source
 
 cod init $fish_pid fish | source
 
