@@ -91,7 +91,7 @@ local configs = require("lspconfig.configs")
 -- Configure it
 configs.blade = {
 	default_config = {
-		cmd = { "php", "/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp" },
+		cmd = { "/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp" },
 		filetypes = { "blade" },
 		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
 		settings = {},
@@ -124,8 +124,13 @@ lspconfig.emmet_language_server.setup({
 	capabilities = capabilities,
 })
 
-lspconfig.stimulus_ls.setup({
+-- lspconfig.stimulus_ls.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- 	root_dir = require("lspconfig.util").root_pattern("composer.json"),
+-- })
+
+lspconfig.twiggy_language_server.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
-	root_dir = require("lspconfig.util").root_pattern("composer.json"),
 })
