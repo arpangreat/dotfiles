@@ -18,15 +18,15 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- config.font = wezterm.font({ family = "Cascadia Code PL" })
+config.font = wezterm.font({ family = "Cascadia Code PL" })
 -- config.font = wezterm.font({ family = "Monaspace Argon" })
 -- config.font = wezterm.font({ family = "Comic Code Ligatures" })
 -- config.font = wezterm.font({ family = "JetBrains Mono" })
 -- config.font = wezterm.font({ family = "JuliaMono" })
-config.font = wezterm.font({ family = "Rec Mono Duotone" })
+-- config.font = wezterm.font({ family = "Rec Mono Duotone" })
 -- config.font = wezterm.font({ family = "MonoLisa"})
 
---[[ config.font_rules = {
+config.font_rules = {
 	{
 		intensity = "Bold",
 		italic = false,
@@ -42,7 +42,7 @@ config.font = wezterm.font({ family = "Rec Mono Duotone" })
 		italic = true,
 		font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
 	},
-} ]]
+}
 
 -- font_rules = {
 -- 	{
@@ -98,7 +98,7 @@ config.font = wezterm.font({ family = "Rec Mono Duotone" })
 -- 	},
 -- }
 
-config.font_rules = {
+--[[ config.font_rules = {
 	{
 		intensity = "Bold",
 		italic = false,
@@ -114,7 +114,7 @@ config.font_rules = {
 		italic = true,
 		font = wezterm.font({ family = "Rec Mono Duotone", weight = "Regular", style = "Italic" }),
 	},
-}
+} ]]
 
 -- config.font_rules = {
 --   {
@@ -135,16 +135,16 @@ config.font_rules = {
 -- }
 
 -- CascadiaCode
--- config.harfbuzz_features = {
--- 	"ss01",
--- 	"ss02",
--- 	"ss03",
--- 	"ss19",
--- 	"ss20",
--- 	"zero",
--- 	"onum",
--- 	"calt",
--- }
+config.harfbuzz_features = {
+	"ss01",
+	"ss02",
+	"ss03",
+	"ss19",
+	"ss20",
+	"zero",
+	"onum",
+	"calt",
+}
 
 -- Monaspace
 -- config.harfbuzz_features = {
@@ -180,19 +180,19 @@ config.font_rules = {
 -- 	"calt",
 -- }
 
-config.harfbuzz_features = {
-	"calt",
-	"dlig",
-	"zero",
-	"ss01",
-	"ss03",
-	"ss05",
-	"ss06",
-	"ss07",
-	"ss08",
-	"ss09",
-	"ss12",
-}
+-- config.harfbuzz_features = {
+-- 	"calt",
+-- 	"dlig",
+-- 	"zero",
+-- 	"ss01",
+-- 	"ss03",
+-- 	"ss05",
+-- 	"ss06",
+-- 	"ss07",
+-- 	"ss08",
+-- 	"ss09",
+-- 	"ss12",
+-- }
 
 -- JuliaMono
 -- config.harfbuzz_features = {
