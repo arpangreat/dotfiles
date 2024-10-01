@@ -24,7 +24,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control"]
@@ -65,6 +65,7 @@ skip-levels = 0
 
 [editor.lsp]
 display-messages = true
+display-progress-messages = true
 display-inlay-hints = true
 
 [editor.gutters.line-numbers]
@@ -72,6 +73,11 @@ min-width = 0
 
 [editor.smart-tab]
 supersede-menu = true
+
+end-of-line-diagnostics = "hint"
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+other-lines = "info"
 
 [keys.normal]
 "space" = { w = ":w", q = ":q", e = { x = ":q!" } }
