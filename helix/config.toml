@@ -85,7 +85,8 @@ other-lines = "info"
 "esc" = ["collapse_selection"]
 y = ["yank_main_selection_to_clipboard", "collapse_selection"]
 p = ["paste_clipboard_before"]
-C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+# C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+C-g = ":sh tmux popup -d '#{pane_current_path}' -xC -yC -w80% -h80% -E lazygit"
 
 [keys.normal."+"]
 m = ":run-shell-command make"
