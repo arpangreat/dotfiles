@@ -46,12 +46,12 @@ vim.keymap.set("n", "<Leader>fz", ":FzfLua ", { noremap = true, silent = false }
 -- lua require("arpangreat")
 vim.api.nvim_set_keymap("n", "<Leader>ff", "<cmd>FzfLua files<CR>", { noremap = true, silent = false })
 
---[[ vim.api.nvim_set_keymap(
+vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>fll",
-	":lua require('telescope').extensions.lazy_plugins.lazy_plugins({ hidden = true })<CR>",
+	":lua require('fzf-lua-lazy').search()<CR>",
 	{ noremap = true, silent = false }
-) ]]
+)
 
 vim.api.nvim_set_keymap("n", "<Leader>fw", "<cmd>FzfLua live_grep<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>fb", "<cmd>FzfLua buffers<CR>", { noremap = true, silent = false })
