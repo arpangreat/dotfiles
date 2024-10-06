@@ -37,85 +37,66 @@ vim.api.nvim_set_keymap(
 -- )
 
 -- FZFLua
-vim.keymap.set("n", "<Leader>fz", ":FzfLua", { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>fz", ":FzfLua ", { noremap = true, silent = false })
 
 -- Telescope
 
 -- vim.api.nvim_set_keymap("n", "<F8>", ":TagBarToggle<CR>", { noremap = false, silent = false })
 
 -- lua require("arpangreat")
-vim.api.nvim_set_keymap("n", "<Leader>tf", "<cmd>Telescope find_files<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>ff", "<cmd>FzfLua files<CR>", { noremap = true, silent = false })
 
-vim.api.nvim_set_keymap(
+--[[ vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>tll",
+	"<Leader>fll",
 	":lua require('telescope').extensions.lazy_plugins.lazy_plugins({ hidden = true })<CR>",
 	{ noremap = true, silent = false }
-)
+) ]]
 
-vim.api.nvim_set_keymap(
+vim.api.nvim_set_keymap("n", "<Leader>fw", "<cmd>FzfLua live_grep<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>fb", "<cmd>FzfLua buffers<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>FzfLua helptags<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>fm", "<cmd>FzfLua manpages<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>fj", "<cmd>FzfLua jumps<CR>", { noremap = true, silent = false })
+--[[ vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>tw",
-	":lua require('telescope.builtin').grep_string({ prompt_prefix=🔍 })<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tb",
-	":lua require('telescope.builtin').buffers()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-h>",
-	":lua require('telescope.builtin').help_tags()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tm",
-	":lua require('telescope.builtin').man_pages()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tj",
-	":lua require('telescope.builtin').jumplist()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>trc",
+	"<Leader>frc",
 	":lua require('arpangreat.telescope').search_dotfiles()<CR>",
 	{ noremap = true, silent = false }
-)
+) ]]
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>trg",
+	"<Leader>frc",
+	":lua require'fzf-lua'.files({ prompt='Dotfiles> ', cwd='~/dotfiles/nvim' })<CR>",
+	{ noremap = true, silent = false }
+)
+--[[ vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>frg",
 	":lua require('telescope.builtin').live_grep({ prompt_prefix=🔍 })<CR>",
 	{ noremap = true, silent = false }
-)
+) ]]
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>tcc",
-	":lua require('arpangreat.telescope').search_configs()<CR>",
+	"<Leader>fcc",
+	":lua require'fzf-lua'.files({ prompt='Config> ', cwd='~/dotfiles' })<CR>",
 	{ noremap = true, silent = false }
 )
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tcb",
-	":lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap("n", "<Leader>to", ":Telescope", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>ttc", ":TodoTelescope<CR>", { noremap = true, silent = false, expr = false })
+-- vim.api.nvim_set_keymap(
+-- 	"n",
+-- 	"<Leader>fcb",
+-- 	":lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>",
+-- 	{ noremap = true, silent = false }
+-- )
+-- vim.api.nvim_set_keymap("n", "<Leader>fo", ":Telescope", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>ftc", ":TodoTelescope<CR>", { noremap = true, silent = false, expr = false })
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>tgr",
-	"<Cmd>lua require('arpangreat.rg')<CR>",
-	{ noremap = true, silent = false, expr = false }
-)
+-- vim.api.nvim_set_keymap(
+-- 	"n",
+-- 	"<Leader>fgr",
+-- 	"<Cmd>lua require('arpangreat.rg')<CR>",
+-- 	{ noremap = true, silent = false, expr = false }
+-- )
 
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
