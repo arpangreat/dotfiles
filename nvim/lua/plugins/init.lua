@@ -113,4 +113,8 @@ return {
 		event = "LspAttach",
 		opts = {},
 	},
+	{
+		"canop/nvim-bacon",
+		ft = "rust",
+	},
 }
