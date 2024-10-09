@@ -1,0 +1,25 @@
+inherits = "tokyonight"
+
+constant = { fg = "orange", style = "bold" }
+constructor = { fg = "aqua", style = "italic" }
+
+"diagnostic.hint" = { underline = { style = "dash", color = "hint" } }
+"diagnostic.info" = { underline = { style = "line", color = "info" } }
+"diagnostic.warning" = { underline = { style = "dotted", color = "yellow" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+function = { fg = "blue", modifiers = ["italic"] }
+keyword = { fg = "purple", modifiers = ["bold"] }
+namespace = { fg = "cyan", modifiers = ["bold", "italic"] }
+operator = { fg = "turquoise", modifiers = ["bold"] }
+string = { fg = "light-green", modifiers = ["italic"] }
+variable = { fg = "red", modifiers = ["italic"] }
+
+"ui.background" = { bg = "none", fg = "fg" }
+"ui.menu" = { bg = "none", fg = "fg" }
+"ui.popup" = { bg = "none", fg = "border-highlight" }
+"ui.statusline" = { bg = "none", fg = "fg-dark" }
+"ui.statusline.inactive" = { bg = "none", fg = "fg-gutter" }
+"ui.virtual.indent-guide" = { fg = "turquoise" }
+"ui.text" = { bg = "none" }
