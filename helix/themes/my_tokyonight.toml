@@ -16,10 +16,28 @@ operator = { fg = "turquoise", modifiers = ["bold"] }
 string = { fg = "light-green", modifiers = ["italic"] }
 variable = { fg = "red", modifiers = ["italic"] }
 
+"markup.raw.inline" = { bg = "none", fg = "blue" }
+
 "ui.background" = { bg = "none", fg = "fg" }
+"ui.background.separator" = { fg = "teal" }
+
+"ui.linenr.selected" = { fg = "orange" }
 "ui.menu" = { bg = "none", fg = "fg" }
-"ui.popup" = { bg = "none", fg = "border-highlight" }
+"ui.menu.selected" = { fg = "turquoise" }
+"ui.selection" = { fg = "turquoise" }
+"ui.highlight" = { fg = "turquoise" }
+"ui.popup" = { bg = "none", fg = "teal" }
+"ui.popup.info" = { bg = "none", fg = "teal" }
 "ui.statusline" = { bg = "none", fg = "fg-dark" }
 "ui.statusline.inactive" = { bg = "none", fg = "fg-gutter" }
 "ui.virtual.indent-guide" = { fg = "turquoise" }
 "ui.text" = { bg = "none" }
+"ui.text.info" = { bg = "none" }
+"ui.text.focus" = { fg = "turquoise" }
+
+"ui.window" = { fg = "turquoise" }
+
+"ui.picker.header.column" = { fg = "orange", underline.style = "line" }
+"ui.picker.header.column.active" = { fg = "purple", modifiers = [
+  "bold",
+], underline.style = "line" }
