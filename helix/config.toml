@@ -73,8 +73,8 @@ min-width = 0
 
 [editor.smart-tab]
 supersede-menu = true
-
 end-of-line-diagnostics = "hint"
+
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
 other-lines = "info"
