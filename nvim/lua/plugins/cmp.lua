@@ -163,6 +163,13 @@ return {
 				ghost_text = true,
 			},
 
+			performance = {
+				debounce = 1,
+				throttle = 1,
+				fetching_timeout = 1,
+				max_view_entries = 100,
+			},
+
 			-- sorting = require("cmp.config.default").sorting,
 		})
 
