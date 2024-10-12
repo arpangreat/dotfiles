@@ -9,29 +9,33 @@ return {
 			["Warning"] = utils.get_hlgroup("DiagnosticError"),
 			["InProgress"] = utils.get_hlgroup("DiagnosticWarn"),
 		} ]]
-		local custom = require("lualine.themes.catppuccin")
-		local C = require("catppuccin.palettes").get_palette("mocha")
+		-- local custom = require("lualine.themes.catppuccin")
+		-- local C = require("catppuccin.palettes").get_palette("mocha")
 		-- local custom = require("lualine.themes.tokyonight-night")
-		-- local C = require("tokyonight.colors.night")
-		custom.normal.a.bg = "none"
+		local custom = require("lualine.themes.tokyonight-storm")
+		local C = require("tokyonight.colors").setup({ style = "storm", transparent = true })
+		custom.normal.a.bg = C.none
 		custom.normal.a.fg = C.blue
-		custom.normal.b.bg = "none"
-		custom.normal.c.bg = "none"
-		custom.command.a.bg = "none"
+		custom.normal.b.bg = C.none
+		custom.normal.c.bg = C.none
+		custom.command.a.bg = C.none
 		custom.command.a.fg = C.yellow
-		custom.command.b.bg = "none"
-		custom.insert.a.bg = "none"
+		custom.command.b.bg = C.none
+		custom.insert.a.bg = C.none
 		custom.insert.a.fg = C.green
-		custom.insert.b.bg = "none"
-		custom.visual.a.bg = "none"
+		custom.insert.b.bg = C.none
+		custom.visual.a.bg = C.none
 		custom.visual.a.fg = C.magenta
-		custom.visual.b.bg = "none"
-		custom.replace.a.bg = "none"
+		custom.visual.b.bg = C.none
+		custom.replace.a.bg = C.none
 		custom.replace.a.fg = C.red
-		custom.replace.b.bg = "none"
-		custom.terminal.a.bg = "none"
+		custom.replace.b.bg = C.none
+		custom.terminal.a.bg = C.none
 		custom.terminal.a.fg = C.green1
-		custom.terminal.b.bg = "none"
+		custom.terminal.b.bg = C.none
+		custom.inactive.a.bg = C.none
+		custom.inactive.b.bg = C.none
+		custom.inactive.c.bg = C.none
 		-- custom.terminal.c.bg = "none"
 
 		local clients_lsp = function()
@@ -110,12 +114,15 @@ return {
 				},
 			},
 
-			tabline = {
-				lualine_z = { {
-					"tabs",
-					mode = 2,
-				} },
-			},
+			-- tabline = {
+			-- 	lualine_z = {
+			-- 		{
+			-- 			"tabs",
+			-- 			mode = 2,
+			-- 			use_mode_colors = true,
+			-- 		},
+			-- 	},
+			-- },
 
 			extensions = { "lazy", "mason", "trouble" },
 		}
