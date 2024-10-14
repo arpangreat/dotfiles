@@ -18,49 +18,49 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.font = wezterm.font({ family = "Cascadia Code PL" })
+-- config.font = wezterm.font({ family = "Cascadia Code PL" })
 -- config.font = wezterm.font({ family = "Monaspace Argon" })
--- config.font = wezterm.font({ family = "Comic Code Ligatures" })
+config.font = wezterm.font({ family = "Maple Mono NF" })
 -- config.font = wezterm.font({ family = "JetBrains Mono" })
 -- config.font = wezterm.font({ family = "JuliaMono" })
 -- config.font = wezterm.font({ family = "Rec Mono Duotone" })
 -- config.font = wezterm.font({ family = "MonoLisa"})
 
-config.font_rules = {
-	{
-		intensity = "Bold",
-		italic = false,
-		font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Normal" }),
-	},
-	{
-		intensity = "Bold",
-		italic = true,
-		font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Italic" }),
-	},
-	{
-		intensity = "Normal",
-		italic = true,
-		font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
-	},
-}
-
--- font_rules = {
+-- config.font_rules = {
 -- 	{
 -- 		intensity = "Bold",
 -- 		italic = false,
--- 		font = wezterm.font("Comic Code Ligatures", { weight = "Bold", style = "Normal" }),
+-- 		font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Normal" }),
 -- 	},
 -- 	{
 -- 		intensity = "Bold",
 -- 		italic = true,
--- 		font = wezterm.font("Comic Code Ligatures", { weight = "Bold", style = "Italic" }),
+-- 		font = wezterm.font("Cascadia Code PL", { weight = "Bold", style = "Italic" }),
 -- 	},
 -- 	{
 -- 		intensity = "Normal",
 -- 		italic = true,
--- 		font = wezterm.font({ family = "Comic Code Ligatures", weight = "Regular", style = "Italic" }),
+-- 		font = wezterm.font({ family = "Cascadia Code PL", weight = "Regular", style = "Italic" }),
 -- 	},
--- },
+-- }
+
+config.font_rules = {
+	{
+		intensity = "Bold",
+		italic = false,
+		font = wezterm.font("Maple Mono NF", { weight = "Bold", style = "Normal" }),
+	},
+	{
+		intensity = "Bold",
+		italic = true,
+		font = wezterm.font("Maple Mono NF", { weight = "Bold", style = "Italic" }),
+	},
+	{
+		intensity = "Normal",
+		italic = true,
+		font = wezterm.font({ family = "Maple Mono NF", weight = "Regular", style = "Italic" }),
+	},
+}
 
 -- config.font_rules = {
 -- 	{
@@ -135,16 +135,16 @@ config.font_rules = {
 -- }
 
 -- CascadiaCode
-config.harfbuzz_features = {
-	"ss01",
-	"ss02",
-	"ss03",
-	"ss19",
-	"ss20",
-	"zero",
-	"onum",
-	"calt",
-}
+-- config.harfbuzz_features = {
+-- 	"ss01",
+-- 	"ss02",
+-- 	"ss03",
+-- 	"ss19",
+-- 	"ss20",
+-- 	"zero",
+-- 	"onum",
+-- 	"calt",
+-- }
 
 -- Monaspace
 -- config.harfbuzz_features = {
@@ -180,19 +180,15 @@ config.harfbuzz_features = {
 -- 	"calt",
 -- }
 
--- config.harfbuzz_features = {
--- 	"calt",
--- 	"dlig",
--- 	"zero",
--- 	"ss01",
--- 	"ss03",
--- 	"ss05",
--- 	"ss06",
--- 	"ss07",
--- 	"ss08",
--- 	"ss09",
--- 	"ss12",
--- }
+config.harfbuzz_features = {
+	"calt",
+	"dlig",
+	"zero",
+	"locl",
+	"cv02",
+	"cv03",
+	"cv31",
+}
 
 -- JuliaMono
 -- config.harfbuzz_features = {
@@ -235,6 +231,7 @@ config.color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" }
 -- 	ansi = ansi,
 -- 	brights = brights,
 -- },
+config.max_fps = 255
 config.force_reverse_video_cursor = true
 config.default_cursor_style = "SteadyBar"
 -- cursor_blink_rate = 500,

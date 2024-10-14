@@ -114,12 +114,15 @@ return {
 				},
 			},
 
-			tabline = {
-				lualine_z = { {
-					"tabs",
-					mode = 2,
-				} },
-			},
+			-- tabline = {
+			-- 	lualine_z = {
+			-- 		{
+			-- 			"tabs",
+			-- 			mode = 2,
+			-- 			use_mode_colors = true,
+			-- 		},
+			-- 	},
+			-- },
 
 			extensions = { "lazy", "mason", "trouble" },
 		}
