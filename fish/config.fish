@@ -36,10 +36,10 @@ set fish_cursor_visual block
 
 if status --is-interactive
     and not set -q TMUX
-    exec tmux -u
+    tmux -u -2
 end
 
-set -gx EDITOR nvim
+set -gx EDITOR /usr/local/bin/nvim
 
 set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
 
@@ -62,7 +62,7 @@ set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
 set -Ua fish_user_paths /home/arpangreat/.rye/env
 
-set -g BROWSER /usr/bin/floorp
+set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 fish_add_path $GOPATH/go/bin
 fish_add_path /usr/local/go/bin/
@@ -110,10 +110,7 @@ eval (batpipe)
 source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
 
 v complete setup fish | source
-jj util completion fish | source
-fx --comp fish | source
-s --completion fish | source
-gix completions | source
+symfony completion | source
 
 cod init $fish_pid fish | source
 

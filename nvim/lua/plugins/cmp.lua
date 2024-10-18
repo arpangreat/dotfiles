@@ -1,6 +1,8 @@
 return {
-	"hrsh7th/nvim-cmp",
+	"yioneko/nvim-cmp",
+	branch = "perf",
 	event = { "LspAttach", "CmdlineEnter" },
+	-- enabled = false,
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
@@ -13,11 +15,13 @@ return {
 		-- local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 		local cmp = require("cmp")
 		local neotab = require("neotab")
+		local luasnip = require("luasnip")
 
 		cmp.setup({
 			snippet = {
 				expand = function(args)
-					vim.snippet.expand(args.body)
+					-- vim.snippet.expand(args.body)
+					luasnip.lsp_expand(args.body)
 				end,
 			},
 
@@ -30,8 +34,9 @@ return {
 				["<C-e>"] = cmp.mapping.close(),
 				["<CR>"] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Replace,
-					select = false,
+					select = true,
 				}),
+
 				--[[ ["<Tab>"] = cmp.mapping(function(fallback)
           if luasnip.expand_or_jumpable() then
             luasnip.expand_or_jump()
@@ -48,15 +53,15 @@ return {
         end
         end, { "i", "s" }), ]]
 				["<Tab>"] = cmp.mapping(function()
-					if vim.snippet.active({ direction = 1 }) then
-						vim.snippet.jump(1)
+					if luasnip.expand_or_jumpable() then
+						luasnip.expand_or_jump()
 					else
 						neotab.tabout()
 					end
 				end),
 				["<S-Tab>"] = cmp.mapping(function()
-					if vim.snippet.active({ direction = -1 }) then
-						vim.snippet.jump(-1)
+					if luasnip.expand_or_jumpable(-1) then
+						luasnip.jump(-1)
 					else
 						neotab.tabout()
 					end
@@ -67,8 +72,9 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "lazydev" },
 				{ name = "path" },
-				{ name = "cmp_tabnine" },
+				-- { name = "cmp_tabnine" },
 				{ name = "nvim_lsp_signature_help" },
+				{ name = "luasnip" },
 			}),
 
 			-- Use buffer source for `/`.
@@ -157,6 +163,13 @@ return {
 				ghost_text = true,
 			},
 
+			performance = {
+				debounce = 1,
+				throttle = 1,
+				fetching_timeout = 1,
+				max_view_entries = 100,
+			},
+
 			-- sorting = require("cmp.config.default").sorting,
 		})
 
@@ -176,7 +189,11 @@ return {
 			},
 		})
 
-		-- require("luasnip/loaders/from_vscode").lazy_load()
-		-- require("luasnip.loaders.from_snipmate").lazy_load()
+		-- cmp.setup.filetype("blade", {
+		-- 	enabled = false,
+		-- })
+
+		require("luasnip/loaders/from_vscode").lazy_load()
+		require("luasnip.loaders.from_snipmate").lazy_load()
 	end,
 }
