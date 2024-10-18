@@ -17,6 +17,7 @@ return {
 				zig = { "zigfmt" },
 				sql = { "sqlfmt" },
 				php = { "pint" },
+				blade = { "blade-formatter" },
 			},
 
 			format_after_save = {

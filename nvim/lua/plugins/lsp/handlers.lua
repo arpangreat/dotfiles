@@ -66,11 +66,71 @@ require("lspconfig").solargraph.setup({
 })
 
 require("lspconfig").phpactor.setup({
+	-- filetypes = { "php", "blade" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 require("lspconfig").intelephense.setup({
+	-- filetypes = { "php", "blade" },
+	commands = {
+		IntelephenseIndex = {
+			function()
+				vim.lsp.buf.execute_command({ command = "intelephense.index.workspace" })
+			end,
+		},
+	},
+
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+local lspconfig = require("lspconfig")
+local configs = require("lspconfig.configs")
+
+-- Configure it
+configs.blade = {
+	default_config = {
+		cmd = { "/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp" },
+		filetypes = { "blade" },
+		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
+		settings = {},
+	},
+}
+-- Set it up
+lspconfig.blade.setup({
+	-- Capabilities is specific to my setup.
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+require("lspconfig").tailwindcss.setup({
+	-- Capabilities is specific to my setup.
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+-- require("lspconfig").html.setup({
+-- 	-- Capabilities is specific to my setup.
+-- 	filetypes = { "html", "blade" },
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
+
+lspconfig.emmet_language_server.setup({
+	-- Capabilities is specific to my setup.
+	filetypes = { "html", "blade" },
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+-- lspconfig.stimulus_ls.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- 	root_dir = require("lspconfig.util").root_pattern("composer.json"),
+-- })
+
+lspconfig.twiggy_language_server.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
