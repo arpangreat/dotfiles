@@ -1,6 +1,6 @@
-# font_family JetBrains Mono Regular
+# font_family JetBrains Mono
 # font_family Operator Mono Book
-font_family Cascadia Code PL Regular
+# font_family Cascadia Code PL Regular
 # font_family MonoLisa Regular
 # font_family Zed Mono Extended
 # font_family Cartograph CF Regular
@@ -14,7 +14,7 @@ font_family Cascadia Code PL Regular
 # font_family Maple Mono NF Regular
 # bold_font JetBrains Mono Bold
 # bold_font Operator Mono Bold
-bold_font Cascadia Code PL Bold
+# bold_font Cascadia Code PL Bold
 # bold_font MonoLisa Bold
 # bold_font Zed Mono Bold Extended
 # bold_font Cartograph CF Bold
@@ -27,7 +27,7 @@ bold_font Cascadia Code PL Bold
 # bold_font Maple Mono NF Bold
 # bold_italic_font JetBrains Mono Bold Italic
 # bold_italic_font Operator Mono Bold Italic
-bold_italic_font Cascadia Code PL Bold Italic
+# bold_italic_font Cascadia Code PL Bold Italic
 # bold_italic_font MonoLisa Bold Italic
 # bold_italic_font Zed Mono Bold Extended Italic
 # bold_italic_font Cartograph CF Bold Italic
@@ -38,8 +38,8 @@ bold_italic_font Cascadia Code PL Bold Italic
 # bold_italic_font JuliaMono BoldItalic
 # bold_italic_font Maple Mono NF Bold Italic
 # italic_font Fira Code RegularItalic
-# italic_font JetBrains Mono Italic
-italic_font Cascadia Code PL Italic
+# italic_font JetBrains Mono
+# italic_font Cascadia Code PL Italic
 # italic_font MonoLisa Black Italic
 # italic_font Zed Mono Extended Italic
 # italic_font Cartograph CF Regular Italic
@@ -55,15 +55,15 @@ font_size 11.0
 
 # font_features FiraCodeNerdFontComplete-Retina +zero +onum +calt
 
-font_features CascadiaCodePL-Regular +calt +ss01 +ss02 +ss03 +ss19 +ss20 +onum +zero
-font_features CascadiaCodePL-Italic +calt +ss01 +ss02 +ss03 +ss19 +ss20 +onum
-font_features CascadiaCodePLRoman_700wght +calt +ss01 +ss02 +ss03 +ss19 +ss20 +onum
-font_features CascadiaCodePLItalic_700wght +calt +ss01 +ss02 +ss03 +ss19 +ss20 +onum
+# font_features CascadiaCodePLRoman-Regular +calt +ss01 +ss02 +ss03 +ss20
+# font_features CascadiaCodePL-Italic +calt +ss01 +ss02 +ss03 +ss20
+# font_features CascadiaCodePLRoman-Bold +calt +ss01 +ss02 +ss03 +ss20
+# font_features CascadiaCodePL-BoldItalic +calt +ss01 +ss02 +ss03 +ss20
 
-# font_features JetBrainsMono-Regular +calt +zero +cv14 +cv15
-# font_features JetBrainsMono-Bold +calt +zero +cv14 +cv15
-# font_features JetBrainsMono-BoldItalic +calt +zero +cv14 +cv15
-# font_features JetBrainsMono-Italic +calt +zero +cv14 +cv15
+# font_features JetBrainsMono-Regular +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-Bold +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-BoldItalic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-Italic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 
 # font_features MonaspaceArgonVar-Regular +calt +liga +ss01 +ss02 +ss03 +ss04 +ss05 +ss06 +ss07 +ss08 +ss09 +ss19 +ss20 +onum +zero
 # font_features MonaspaceArgonVar_700wght +calt +liga +ss01 +ss02 +ss03 +ss04 +ss05 +ss06 +ss07 +ss08 +ss09 +ss19 +ss20 +onum +zero
@@ -94,25 +94,27 @@ font_features CascadiaCodePLItalic_700wght +calt +ss01 +ss02 +ss03 +ss19 +ss20 +
 # modify_font                     strikethrough_thickness 250%
 # modify_font                     underline_position 125%
 # modify_font                     underline_thickness 3px
-# modify_font                     cell_height 105%
+# modify_font                     cell_height 110%
 # modify_font                     cell_width 105%
 # undercurl_style                 thin-dense
 
 # modify_font cell_width 80%
-# modify_font cell_height -2px
+# modify_font cell_height 5px
 # modify_font baseline 3
 
 disable_ligatures never
 
 cursor none
 cursor_blink_interval 0
+cursor_trail 1
+cursor_trail_decay 0.1 0.3
 
 allow_remote_control yes
 listen_on unix:/tmp/kitty
 shell_integration disabled
 cursor_shape beam
 notify_on_cmd_finish unfocused
-# term xterm-kitty
+term xterm-kitty
 
 background_opacity 0.90
 # background_tint 0.0
@@ -129,7 +131,7 @@ detect_urls yes
 
 # dynamic_background_opacity true
 
-cursor_stop_blinking_after 15.0
+# cursor_stop_blinking_after 15.0
 
 enabled_layouts *
 placement_strategy center
@@ -252,3 +254,11 @@ include kitty_tokyonight_storm.conf
 # include eldritch.conf
 # include ayu_mirage.conf
 # include kitty_onedark.conf
+
+
+# BEGIN_KITTY_FONTS
+font_family      family='Cascadia Code PL' variable_name=CascadiaCodePLRoman features='calt ss01 ss02 ss03 ss20' wght=430.392
+bold_font        family='Cascadia Code PL' variable_name=CascadiaCodePLRoman wght=430.3921568627451 features='+calt ss01=0 +ss02 ss03=0 ss20=0'
+italic_font      family='Cascadia Code PL' style=Regular variable_name= features='+calt +ss01 +ss02 +ss03 ss20=0'
+bold_italic_font family='Cascadia Code PL' variable_name= wght=430.3921568627451 features='+calt +ss01 +ss02 +ss03 ss20=0'
+# END_KITTY_FONTS
