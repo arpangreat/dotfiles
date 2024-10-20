@@ -129,8 +129,3 @@ lspconfig.emmet_language_server.setup({
 -- 	capabilities = capabilities,
 -- 	root_dir = require("lspconfig.util").root_pattern("composer.json"),
 -- })
-
-lspconfig.twiggy_language_server.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})

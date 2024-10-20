@@ -1,6 +1,6 @@
 return {
-	"yioneko/nvim-cmp",
-	branch = "perf",
+	"hrsh7th/nvim-cmp",
+	-- branch = "perf",
 	event = { "LspAttach", "CmdlineEnter" },
 	-- enabled = false,
 	dependencies = {
@@ -15,13 +15,13 @@ return {
 		-- local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 		local cmp = require("cmp")
 		local neotab = require("neotab")
-		local luasnip = require("luasnip")
+		-- local luasnip = require("luasnip")
 
 		cmp.setup({
 			snippet = {
 				expand = function(args)
-					-- vim.snippet.expand(args.body)
-					luasnip.lsp_expand(args.body)
+					vim.snippet.expand(args.body)
+					-- luasnip.lsp_expand(args.body)
 				end,
 			},
 
@@ -53,15 +53,15 @@ return {
         end
         end, { "i", "s" }), ]]
 				["<Tab>"] = cmp.mapping(function()
-					if luasnip.expand_or_jumpable() then
-						luasnip.expand_or_jump()
+					if vim.snippet.active({ direction = 1 }) then
+						vim.snippet.jump(1)
 					else
 						neotab.tabout()
 					end
 				end),
 				["<S-Tab>"] = cmp.mapping(function()
-					if luasnip.expand_or_jumpable(-1) then
-						luasnip.jump(-1)
+					if vim.snippet.active({ direction = -1 }) then
+						vim.snippet.jump(-1)
 					else
 						neotab.tabout()
 					end
@@ -193,7 +193,7 @@ return {
 		-- 	enabled = false,
 		-- })
 
-		require("luasnip/loaders/from_vscode").lazy_load()
-		require("luasnip.loaders.from_snipmate").lazy_load()
+		-- require("luasnip/loaders/from_vscode").lazy_load()
+		-- require("luasnip.loaders.from_snipmate").lazy_load()
 	end,
 }
