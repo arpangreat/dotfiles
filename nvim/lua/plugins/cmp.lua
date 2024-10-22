@@ -72,7 +72,7 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "lazydev" },
 				{ name = "path" },
-				-- { name = "cmp_tabnine" },
+				{ name = "cmp_tabnine" },
 				{ name = "nvim_lsp_signature_help" },
 				{ name = "luasnip" },
 			}),

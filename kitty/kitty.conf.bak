@@ -55,10 +55,10 @@ font_size 11.0
 
 # font_features FiraCodeNerdFontComplete-Retina +zero +onum +calt
 
-# font_features CascadiaCodePLRoman-Regular +calt +ss01 +ss02 +ss03 +ss20
-# font_features CascadiaCodePL-Italic +calt +ss01 +ss02 +ss03 +ss20
-# font_features CascadiaCodePLRoman-Bold +calt +ss01 +ss02 +ss03 +ss20
-# font_features CascadiaCodePL-BoldItalic +calt +ss01 +ss02 +ss03 +ss20
+font_features CascadiaCodePL-Regular +calt +ss01 +ss02 +ss03 +ss20
+font_features CascadiaCodePL-Italic +calt +ss01 +ss02 +ss03 +ss20
+font_features CascadiaCodePL-Bold +calt +ss01 +ss02 +ss03 +ss20
+font_features CascadiaCodePL-BoldItalic +calt +ss01 +ss02 +ss03 +ss20
 
 # font_features JetBrainsMono-Regular +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features JetBrainsMono-Bold +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
@@ -250,15 +250,25 @@ strip_trailing_spaces never
 # include nightfox_kitty.conf
 # include catppuccin.conf
 include kitty_tokyonight_storm.conf
+# include kitty-flow.conf
+# include ki.conf
 # include mocha.conf
 # include eldritch.conf
 # include ayu_mirage.conf
 # include kitty_onedark.conf
 
 
+# # BEGIN_KITTY_FONTS
+# font_family      family='Cascadia Code PL' variable_name=CascadiaCodePLRoman features='calt ss01 ss02 ss03 ss20' wght=430.392
+# bold_font        family='Cascadia Code PL' variable_name=CascadiaCodePLRoman features='calt ss01 ss02 ss03 ss20' wght=430.392
+# italic_font      family='Cascadia Code PL' variable_name='' features='calt ss01 ss02 ss03 ss20' wght=430.392
+# bold_italic_font family='Cascadia Code PL' variable_name='' features='calt ss01 ss02 ss03 ss20' wght=430.392
+# # END_KITTY_FONTS
+
+
 # BEGIN_KITTY_FONTS
-font_family      family='Cascadia Code PL' variable_name=CascadiaCodePLRoman features='calt ss01 ss02 ss03 ss20' wght=430.392
-bold_font        family='Cascadia Code PL' variable_name=CascadiaCodePLRoman wght=430.3921568627451 features='+calt ss01=0 +ss02 ss03=0 ss20=0'
-italic_font      family='Cascadia Code PL' style=Regular variable_name= features='+calt +ss01 +ss02 +ss03 ss20=0'
-bold_italic_font family='Cascadia Code PL' variable_name= wght=430.3921568627451 features='+calt +ss01 +ss02 +ss03 ss20=0'
+font_family      family='Monaspace Neon Var' variable_name=MonaspaceNeonVar wght=400 wdth=100 slnt=-1.1111111111111107 features='+calt +ss01 +ss02 +ss03 +ss04 +ss05 +ss06 +ss07 +ss08 +ss09 +liga'
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
 # END_KITTY_FONTS
