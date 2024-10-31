@@ -1,0 +1,19 @@
+modmap:
+  - name: main remap
+    remap:
+      CapsLock: 
+        held: leftctrl
+        alone: esc
+        alone_timeout_millis: 250
+
+# keymap:
+#   - name: general keybinds
+#     remap:
+#       SUPER-s:
+#           remap:
+#             p: up
+#             n: down
+#             h: home
+#             l: end
+#             j: pageup
+#             k: pagedown
