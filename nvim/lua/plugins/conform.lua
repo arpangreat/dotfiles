@@ -10,7 +10,7 @@ return {
 				-- python = { "ruff", "format" },
 				c = { "clang_format" },
 				cpp = { "clang_format" },
-				fish = { "fish_indent" },
+				-- fish = { "fish_indent" },
 				go = { "gofmt", "goimports" },
 				ocaml = { "ocamlformat" },
 				rust = { "rustfmt" },

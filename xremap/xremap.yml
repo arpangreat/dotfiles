@@ -1,0 +1,24 @@
+modmap:
+  - name: main remap
+    remap:
+      KEY_CAPSLOCK: 
+        held: leftctrl
+        alone: esc
+        alone_timeout_millis: 250
+
+  - name: home row
+    remap:
+      KEY_A:
+          held: KEY_LEFTMETA
+# keymap:
+#   - name: general keybinds
+#     remap:
+        # held: super
+#       SUPER-s:
+#           remap:
+#             p: up
+#             n: down
+#             h: home
+#             l: end
+#             j: pageup
+#             k: pagedown

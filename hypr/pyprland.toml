@@ -34,12 +34,12 @@ class = "kitty-dropterm"
 size = "75% 60%"
 unfocus = "keep"
 
-[scratchpads.utop]
-animation = "fromBottom"
-command = "kitty --class kitty-utop ipython"
-class = "kitty-utop"
-size = "75% 60%"
-lazy = true
+# [scratchpads.utop]
+# animation = "fromBottom"
+# command = "kitty --class kitty-utop ipython"
+# class = "kitty-utop"
+# size = "75% 60%"
+# lazy = true
 
 # [scratchpads.stb-logs]
 # animation = "fromTop"

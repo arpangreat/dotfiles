@@ -1,0 +1,21 @@
+;; defsrc is still necessary
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  esc caps)
+
+(defvar
+  tap-time 150
+  hold-time 200
+)
+
+(defalias
+  esccaps (tap-hold 100 250 esc caps)
+  escctrl (tap-hold 100 250 esc lctl)
+)
+
+(deflayer base
+  @esccaps @escctrl
+)
