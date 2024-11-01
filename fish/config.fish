@@ -54,7 +54,7 @@ set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/brave
 set -g ANDROID_HOME /home/arpangreat/Android/Sdk
 
-set -g MAKEFLAGS "-j4"
+set -Ux MAKEFLAGS "-j4"
 
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
