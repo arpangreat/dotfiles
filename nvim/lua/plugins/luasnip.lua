@@ -1,7 +1,7 @@
 return {
 	"L3MON4D3/LuaSnip",
 	build = "make install_jsregexp",
-	-- enabled = false,
+	enabled = false,
 	dependencies = {
 		"rafamadriz/friendly-snippets",
 	},
