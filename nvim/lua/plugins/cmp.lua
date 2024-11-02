@@ -2,7 +2,7 @@ return {
 	"hrsh7th/nvim-cmp",
 	-- branch = "perf",
 	event = { "LspAttach", "CmdlineEnter" },
-	-- enabled = false,
+	enabled = false,
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",

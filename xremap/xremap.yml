@@ -6,10 +6,10 @@ modmap:
         alone: esc
         alone_timeout_millis: 250
 
-  - name: home row
-    remap:
-      KEY_A:
-          held: KEY_LEFTMETA
+  # - name: home row
+  #   remap:
+  #     KEY_A:
+  #         held: KEY_LEFTMETA
 # keymap:
 #   - name: general keybinds
 #     remap:
