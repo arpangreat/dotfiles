@@ -1,7 +1,7 @@
 return {
 	"altermo/ultimate-autopair.nvim",
 	event = { "InsertEnter" },
-	enabled = false,
+	-- enabled = false,
 	opts = {
 		-- space2 = { enable = true }, --Config goes here
 		-- tabout = { enable = true }, --Config goes here

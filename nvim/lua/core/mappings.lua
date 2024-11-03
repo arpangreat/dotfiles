@@ -162,6 +162,7 @@ vim.keymap.set("n", "<C-f>", "<ESC>/")
 
 -- Mini Files
 vim.keymap.set("n", "<Leader>mf", "<cmd>lua MiniFiles.open()<CR>")
+vim.keymap.set("n", "-", "<Lua>require('oil').open_float()<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set({ "n", "i", "s" }, "<c-f>", function()
 	if not require("noice.lsp").scroll(4) then

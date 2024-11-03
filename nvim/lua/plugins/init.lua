@@ -15,12 +15,21 @@ return {
 
 	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
 	{ "mbbill/undotree", event = "VeryLazy" },
+	-- {
+	-- 	"echasnovski/mini.files",
+	-- 	event = "VeryLazy",
+	-- 	config = function()
+	-- 		require("mini.files").setup()
+	-- 	end,
+	-- },
 	{
-		"echasnovski/mini.files",
+		"stevearc/oil.nvim",
 		event = "VeryLazy",
-		config = function()
-			require("mini.files").setup()
-		end,
+		opts = {
+			view_options = {
+				show_hidden = true,
+			},
+		},
 	},
 	{
 		"echasnovski/mini.cursorword",
