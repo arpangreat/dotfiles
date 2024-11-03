@@ -1,7 +1,7 @@
 ;; defsrc is still necessary
-;;(defcfg
-;; process-unmapped-keys yes
-;;)
+(defcfg
+ process-unmapped-keys yes
+)
 
 (defsrc
   esc caps a s f i j h k l ;
@@ -13,17 +13,17 @@
 )
 
 (defalias
-  esccaps (tap-hold 200 100 esc caps)
-  escctrl (tap-hold-press 100 100 esc lctl)
+  capsesc (tap-hold 150 200 caps esc)
+  escctrl (tap-hold 150 200 esc lctl)
   a (tap-hold $tap-time $hold-time a lmet)
   s (tap-hold $tap-time $hold-time s lsft)
   f (tap-hold $tap-time $hold-time f (layer-while-held arrows))
-  l (tap-hold $tap-time $hold-time l rsft)
+  l (multi f24 (tap-hold $tap-time $hold-time l rsft))
   ; (tap-hold $tap-time $hold-time ; rmet)
 )
 
 (deflayer base
-  @esccaps @escctrl @a @s @f i j h k @l @;
+  @capsesc @escctrl @a @s @f _ _ _ _ @l @;
 )
 
 (deflayer arrows
