@@ -55,7 +55,7 @@ vim.api.nvim_set_keymap(
 
 vim.api.nvim_set_keymap("n", "<Leader>fw", "<cmd>FzfLua live_grep<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>fb", "<cmd>FzfLua buffers<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>FzfLua helptags<CR>", { noremap = true, silent = false })
+-- vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>FzfLua helptags<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>fm", "<cmd>FzfLua manpages<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>fj", "<cmd>FzfLua jumps<CR>", { noremap = true, silent = false })
 --[[ vim.api.nvim_set_keymap(
@@ -175,3 +175,9 @@ vim.keymap.set({ "n", "i", "s" }, "<c-b>", function()
 		return "<c-b>"
 	end
 end, { silent = true, expr = true })
+
+--[[ vim.keymap.set({}, "<M-h>", "<cmd><C-U>TmuxNavigateLeft<cr>", { noremap = true, silent = true, expr = false })
+vim.keymap.set({}, "<M-j>", "<cmd><C-U>TmuxNavigateDown<cr>", { noremap = true, silent = true, expr = false })
+vim.keymap.set({}, "<M-k>", "<cmd><C-U>TmuxNavigateUp<cr>", { noremap = true, silent = true, expr = false })
+vim.keymap.set({}, "<M-l>", "<cmd><C-U>TmuxNavigateRight<cr>", { noremap = true, silent = true, expr = false })
+vim.keymap.set({}, "<M-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>", { noremap = true, silent = true, expr = false }) ]]
