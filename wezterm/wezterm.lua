@@ -264,7 +264,7 @@ config.color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" }
 -- 	ansi = ansi,
 -- 	brights = brights,
 -- },
-config.max_fps = 255
+config.max_fps = 120
 config.force_reverse_video_cursor = true
 config.default_cursor_style = "SteadyBar"
 -- cursor_blink_rate = 500,

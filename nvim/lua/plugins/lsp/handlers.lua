@@ -40,15 +40,15 @@ require("lspconfig").r_language_server.setup({
 
 -- require("lspconfig").htmx.setup({ on_attach = on_attach, capabilities = capabilities })
 
-require("lspconfig").ruff_lsp.setup({
-	on_attach = on_attach,
-	init_options = {
-		settings = {
-			-- Any extra CLI arguments for `ruff` go here.
-			args = {},
-		},
-	},
-})
+-- require("lspconfig").ruff_lsp.setup({
+-- 	on_attach = on_attach,
+-- 	init_options = {
+-- 		settings = {
+-- 			-- Any extra CLI arguments for `ruff` go here.
+-- 			args = {},
+-- 		},
+-- 	},
+-- })
 
 --[[ require("lspconfig").dartls.setup({
 	on_attach = on_attach,
