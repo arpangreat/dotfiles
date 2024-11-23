@@ -50,7 +50,7 @@ require("lspconfig").r_language_server.setup({
 -- 	},
 -- })
 
---[[ require("lspconfig").dartls.setup({
+require("lspconfig").dartls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
@@ -58,7 +58,7 @@ require("lspconfig").r_language_server.setup({
 			updateImportOnRename = true,
 		},
 	},
-}) ]]
+})
 
 require("lspconfig").ruby_lsp.setup({
 	on_attach = on_attach,
