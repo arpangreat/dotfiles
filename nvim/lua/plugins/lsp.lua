@@ -13,12 +13,13 @@ return {
 		end ]]
 
 		vim.diagnostic.config({
-			virtual_text = {
-				prefix = "●", -- Could be '●', '▎', 'x'
-				spacing = 4,
-				source = "if_many",
-				hl_mode = "blend",
-			},
+			-- virtual_text = {
+			-- 	prefix = "●", -- Could be '●', '▎', 'x'
+			-- 	spacing = 4,
+			-- 	source = "if_many",
+			-- 	hl_mode = "blend",
+			-- },
+			virtual_text = false,
 			signs = {
 				texthl = {
 					[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",

@@ -31,6 +31,7 @@ return {
 			},
 			ghost_text = { enabled = true },
 		},
+
 		signature = {
 			enabled = true,
 			window = {
@@ -39,6 +40,7 @@ return {
 				scrollbar = false,
 			},
 		},
+
 		sources = {
 			-- add lazydev to your completion providers
 			default = { "lazydev", "lsp", "path", "snippets", "buffer" },
