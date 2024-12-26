@@ -1,8 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/blog
     - /home/arpangreat/helix
+    - /home/arpangreat/blog
     - /home/arpangreat/fzf
     - /home/arpangreat/zig-examples
     - /home/arpangreat/job-management
