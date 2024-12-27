@@ -98,8 +98,8 @@ shell-integration-features = cursor,no-sudo,title
 
 bold-is-bright = true
 
-#custom-shader = 
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom025.glsl
 
-#custom-shader-animation = true
+# custom-shader-animation = false
 
 term = xterm-ghostty

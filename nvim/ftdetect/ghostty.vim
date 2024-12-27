@@ -1,0 +1,1 @@
+/home/arpangreat/ghostty/zig-out/share/nvim/site/ftdetect/ghostty.vim
