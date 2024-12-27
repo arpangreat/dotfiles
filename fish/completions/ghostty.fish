@@ -1,0 +1,1 @@
+/home/arpangreat/ghostty/zig-out/share/fish/vendor_completions.d/ghostty.fish

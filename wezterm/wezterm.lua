@@ -275,11 +275,11 @@ config.text_background_opacity = 1.0
 config.window_padding = {
 	left = "0.0cell",
 	right = "0.0cell",
-	top = "0.4cell",
+	top = "0.0cell",
 	bottom = "0.0cell",
 }
 config.enable_kitty_keyboard = true
-config.window_decorations = "NONE"
+config.window_decorations = "RESIZE"
 config.term = "wezterm"
 config.front_end = "WebGpu"
 -- config.webgpu_preferred_adapter = gpus[2]
