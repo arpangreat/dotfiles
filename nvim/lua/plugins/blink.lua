@@ -3,7 +3,13 @@ return {
 	dependencies = "rafamadriz/friendly-snippets",
 	build = "cargo build --release --jobs 4",
 	opts = {
-		keymap = { preset = "enter" },
+		keymap = {
+			preset = "enter",
+			cmdline = {
+				["<Tab>"] = { "select_next", "fallback" },
+				["<S-Tab>"] = { "select_prev", "fallback" },
+			},
+		},
 
 		appearance = {
 			use_nvim_cmp_as_default = true,
@@ -21,6 +27,14 @@ return {
 				},
 			},
 
+			list = {
+				selection = function(ctx)
+					return ctx.mode == "cmdline" and "auto_insert" or "preselect"
+				end,
+
+				cycle = { from_bottom = true, from_top = true },
+			},
+
 			documentation = {
 				auto_show = true,
 				auto_show_delay_ms = 100,
@@ -34,6 +48,9 @@ return {
 
 		signature = {
 			enabled = true,
+			trigger = {
+				show_on_insert_on_trigger_character = true,
+			},
 			window = {
 				border = "rounded",
 				winblend = 0,
@@ -42,13 +59,11 @@ return {
 		},
 
 		sources = {
-			-- add lazydev to your completion providers
 			default = { "lazydev", "lsp", "path", "snippets", "buffer" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
 					module = "lazydev.integrations.blink",
-					-- make lazydev completions top priority (see `:h blink.cmp`)
 					score_offset = 100,
 				},
 			},
