@@ -26,15 +26,14 @@ return {
 					},
 				},
 			},
-
 			list = {
-				selection = function(ctx)
-					return ctx.mode == "cmdline" and "auto_insert" or "preselect"
-				end,
+				-- selection = function(ctx)
+				-- 	return ctx.mode == "cmdline" and "auto_insert" or "preselect"
+				-- end,
+				selection = "manual",
 
 				cycle = { from_bottom = true, from_top = true },
 			},
-
 			documentation = {
 				auto_show = true,
 				auto_show_delay_ms = 100,
@@ -45,7 +44,6 @@ return {
 			},
 			ghost_text = { enabled = true },
 		},
-
 		signature = {
 			enabled = true,
 			trigger = {
@@ -66,6 +64,10 @@ return {
 					module = "lazydev.integrations.blink",
 					score_offset = 100,
 				},
+				-- markdown = {
+				-- 	name = "RenderMarkdown",
+				-- 	module = "render-markdown.integ.blink",
+				-- },
 			},
 		},
 	},
