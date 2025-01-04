@@ -38,7 +38,7 @@ return {
 			require("mini.cursorword").setup()
 		end,
 	},
-	{ "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
+	-- { "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
 	{
 		"stevearc/dressing.nvim",
 		event = "VeryLazy",
