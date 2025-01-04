@@ -27,10 +27,10 @@ return {
 				},
 			},
 			list = {
-				-- selection = function(ctx)
-				-- 	return ctx.mode == "cmdline" and "auto_insert" or "preselect"
-				-- end,
-				selection = "manual",
+				selection = function(ctx)
+					return ctx.mode == "cmdline" and "auto_insert" or "preselect"
+				end,
+				-- selection = "manual",
 
 				cycle = { from_bottom = true, from_top = true },
 			},
@@ -44,18 +44,17 @@ return {
 			},
 			ghost_text = { enabled = true },
 		},
-		signature = {
-			enabled = true,
-			trigger = {
-				show_on_insert_on_trigger_character = true,
-			},
-			window = {
-				border = "rounded",
-				winblend = 0,
-				scrollbar = false,
-			},
-		},
-
+		-- signature = {
+		-- 	enabled = true,
+		-- 	trigger = {
+		-- 		show_on_insert_on_trigger_character = true,
+		-- 	},
+		-- 	window = {
+		-- 		border = "rounded",
+		-- 		winblend = 0,
+		-- 		scrollbar = false,
+		-- 	},
+		-- },
 		sources = {
 			default = { "lazydev", "lsp", "path", "snippets", "buffer" },
 			providers = {
@@ -67,6 +66,7 @@ return {
 				-- markdown = {
 				-- 	name = "RenderMarkdown",
 				-- 	module = "render-markdown.integ.blink",
+				-- 	fallbacks = { "lsp" },
 				-- },
 			},
 		},

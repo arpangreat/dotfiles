@@ -54,7 +54,6 @@ keybind = shift+end=scroll_to_bottom
 keybind = ctrl+zero=reset_font_size
 keybind = alt+three=goto_tab:3
 keybind = ctrl+shift+j=write_scrollback_file:paste
-# keybind = ctrl+enter=toggle_fullscreen
 keybind = ctrl+page_up=previous_tab
 keybind = shift+right=adjust_selection:right
 keybind = ctrl+tab=next_tab
