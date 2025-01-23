@@ -1,6 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/kitty
+    - /home/arpangreat/go
     - /home/arpangreat/helix
     - /home/arpangreat/blog
     - /home/arpangreat/fzf
@@ -11,7 +13,6 @@ recentrepos:
     - /home/arpangreat/Hyprland
     - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
-    - /home/arpangreat/go
     - /home/arpangreat/PythonExs
     - /home/arpangreat/CExamples
     - /home/arpangreat/ocaml-examples
