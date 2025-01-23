@@ -124,6 +124,11 @@ lspconfig.emmet_language_server.setup({
 	capabilities = capabilities,
 })
 
+lspconfig.fish_lsp.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
 -- lspconfig.stimulus_ls.setup({
 -- 	on_attach = on_attach,
 -- 	capabilities = capabilities,

@@ -24,14 +24,15 @@ return {
 						{ "label", "label_description", gap = 1 },
 						{ "kind_icon", "kind" },
 					},
+					treesitter = { "lsp" },
 				},
 			},
 			list = {
-				selection = function(ctx)
-					return ctx.mode == "cmdline" and "auto_insert" or "preselect"
-				end,
-				-- selection = "manual",
-
+				selection = {
+					preselect = function(ctx)
+						return ctx.mode ~= "cmdline"
+					end,
+				},
 				cycle = { from_bottom = true, from_top = true },
 			},
 			documentation = {
