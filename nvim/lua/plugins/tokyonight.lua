@@ -4,7 +4,7 @@ return {
 	-- enabled = false,
 	config = function()
 		require("tokyonight").setup({
-			style = "storm",
+			-- style = "storm",
 			transparent = true,
 			-- terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 			styles = {
@@ -54,10 +54,10 @@ return {
 				hl.MiniCursorwordCurrent = { bg = c.terminal_black }
 				hl.CursorLine = { bg = c.bg_highlight }
 				hl.Tabline = { bg = c.none }
-				hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg_float }
-				hl.BlinkCmpMenuBorder = { fg = c.border_highlight, bg = c.bg_float }
-				hl.BlinkCmpSignatureHelp = { fg = c.fg, bg = c.bg_float }
-				hl.BlinkCmpSignatureHelpBorder = { fg = c.border_highlight, bg = c.bg_float }
+				-- hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg_float }
+				-- hl.BlinkCmpMenuBorder = { fg = c.border_highlight, bg = c.bg_float }
+				-- hl.BlinkCmpSignatureHelp = { fg = c.fg, bg = c.bg_float }
+				-- hl.BlinkCmpSignatureHelpBorder = { fg = c.border_highlight, bg = c.bg_float }
 				-- local prompt = "#2d3149"
 				-- hl.TelescopeNormal = {
 				-- 	bg = c.bg_dark,

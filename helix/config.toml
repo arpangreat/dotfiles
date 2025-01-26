@@ -80,7 +80,7 @@ cursor-line = "warning" # show warnings and errors on the cursorline inline
 other-lines = "info"
 
 [keys.normal]
-"space" = { w = ":w", q = ":q", e = { x = ":q!" } }
+"space" = { w = ":w", q = ":q", x = ":q!" }
 # g = { a = "code_action" }
 "esc" = ["collapse_selection"]
 y = ["yank_main_selection_to_clipboard", "collapse_selection"]
