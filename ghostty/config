@@ -15,7 +15,7 @@ font-thicken = true
 
 grapheme-width-method = unicode
 
-theme = "tokyonight_storm"
+theme = "tokyonight_moon"
 
 selection-invert-fg-bg = true
 
