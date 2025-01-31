@@ -1,6 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/javaexsnew
+    - /home/arpangreat/ns2exs
+    - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/kitty
     - /home/arpangreat/go
@@ -12,7 +15,6 @@ recentrepos:
     - /home/arpangreat/laravel-dev-tools
     - /home/arpangreat/mono-dots
     - /home/arpangreat/Hyprland
-    - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/PythonExs
     - /home/arpangreat/CExamples
