@@ -5,7 +5,10 @@ return {
 	opts = {
 		keymap = {
 			preset = "enter",
-			cmdline = {
+		},
+
+		cmdline = {
+			keymap = {
 				["<Tab>"] = { "select_next", "fallback" },
 				["<S-Tab>"] = { "select_prev", "fallback" },
 			},
@@ -45,17 +48,17 @@ return {
 			},
 			ghost_text = { enabled = true },
 		},
-		-- signature = {
-		-- 	enabled = true,
-		-- 	trigger = {
-		-- 		show_on_insert_on_trigger_character = true,
-		-- 	},
-		-- 	window = {
-		-- 		border = "rounded",
-		-- 		winblend = 0,
-		-- 		scrollbar = false,
-		-- 	},
-		-- },
+		signature = {
+			enabled = true,
+			trigger = {
+				show_on_insert_on_trigger_character = true,
+			},
+			window = {
+				border = "rounded",
+				winblend = 0,
+				scrollbar = false,
+			},
+		},
 		sources = {
 			default = { "lazydev", "lsp", "path", "snippets", "buffer" },
 			providers = {

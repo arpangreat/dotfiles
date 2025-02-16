@@ -17,6 +17,7 @@ undercurl = true
 insert-final-newline = false
 popup-border = "all"
 # rainbow-brackets = true
+end-of-line-diagnostics = "hint"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -73,7 +74,6 @@ min-width = 0
 
 [editor.smart-tab]
 supersede-menu = true
-end-of-line-diagnostics = "hint"
 
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
