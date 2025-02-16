@@ -4,4 +4,4 @@ cliff.toml
 nushell/history.txt
 emacs/elpa
 emacs/eln-cache
-fish/completions/fish
+fish/completions/fish/**
