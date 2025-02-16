@@ -1,2 +1,0 @@
-_YKMAN_COMPLETE=fish_source __fish_cache_sourced_completions ykman
-or _YKMAN_COMPLETE=fish_source ykman | source

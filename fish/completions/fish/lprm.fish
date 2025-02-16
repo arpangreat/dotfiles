@@ -1,1 +1,0 @@
-__fish_complete_lpr lprm
