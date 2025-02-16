@@ -1,0 +1,1 @@
+exercism completion fish | source
