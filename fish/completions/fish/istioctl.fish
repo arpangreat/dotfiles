@@ -1,1 +1,0 @@
-istioctl completion fish | source

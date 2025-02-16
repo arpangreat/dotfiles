@@ -1,1 +1,0 @@
-crc completion fish | source
