@@ -1,12 +1,13 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
+    - /home/arpangreat/kitty
     - /home/arpangreat/zig
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
-    - /home/arpangreat/kitty
     - /home/arpangreat/go
     - /home/arpangreat/helix
     - /home/arpangreat/blog
