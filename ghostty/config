@@ -8,12 +8,21 @@ font-family-bold-italic = "Cascadia Code PL"
 #font-family-italic="Maple Mono NF"
 #font-family-bold-italic="Maple Mono NF"
 
+#font-family="JetBrains Mono"
+#font-family-bold="JetBrains Mono"
+#font-family-italic="JetBrains Mono"
+#font-family-bold-italic="JetBrains Mono"
+
 font-feature = calt
-font-feature = ss01
+# font-feature = ss01
 font-feature = ss02
 font-feature = ss03
-font-feature = ss04
+font-feature = ss20
 
+# font_features JetBrainsMono-Regular +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-Bold +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-BoldItalic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-Italic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features MapleMono-Regular +calt +liga +dlig +zero +locl +cv02 +cv03 +cv31
 #font-feature = calt
 #font-feature = liga

@@ -129,6 +129,8 @@ lspconfig.fish_lsp.setup({
 	capabilities = capabilities,
 })
 
+lspconfig.rustowl.setup({})
+
 -- lspconfig.stimulus_ls.setup({
 -- 	on_attach = on_attach,
 -- 	capabilities = capabilities,
