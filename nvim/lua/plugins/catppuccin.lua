@@ -4,12 +4,12 @@ return {
 	enabled = true,
 	priority = 1000,
 	opts = {
-		flavour = "mocha", -- latte, frappe, macchiato, mocha
+		flavour = "macchiato", -- latte, frappe, macchiato, mocha
 		-- flavour = "auto" -- will respect terminal's background
-		-- background = { -- :h background
-		-- 	light = "latte",
-		-- 	dark = "mocha",
-		-- },
+		background = { -- :h background
+			-- 	light = "latte",
+			dark = "macchiato",
+		},
 		transparent_background = true, -- disables setting the background color.
 		-- show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
 		term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
@@ -45,7 +45,7 @@ return {
 				["@variable.other.member"] = { fg = colors.maroon },
 			}
 		end,
-		default_integrations = false,
+		default_integrations = true,
 		integrations = {
 			cmp = true,
 			gitsigns = true,
@@ -82,6 +82,6 @@ return {
 			fidget = true,
 			fzf = true,
 		},
-		compile_path = vim.fn.stdpath("cache") .. "nvim/catppuccin",
+		compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
 	},
 }

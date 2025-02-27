@@ -1,10 +1,10 @@
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
-	enabled = false,
+	-- enabled = false,
 	dependencies = {
 		"MunifTanjim/nui.nvim",
-		"rcarriga/nvim-notify",
+		-- "rcarriga/nvim-notify",
 	},
 	opts = {
 		lsp = {
@@ -15,9 +15,9 @@ return {
 				["cmp.entry.get_documentation"] = true,
 			},
 		},
-		popupmenu = {
-			backend = "nui",
-		},
+		-- popupmenu = {
+		-- 	backend = "nui",
+		-- },
 
 		views = {
 			cmdline_popup = {
@@ -53,11 +53,11 @@ return {
 			},
 		},
 
-		messages = {
-			enabled = true,
-			view_error = "messages",
-			-- view_warn = "messages",
-		},
+		-- messages = {
+		-- 	enabled = true,
+		-- 	view_error = "mini",
+		-- 	view_warn = "mini",
+		-- },
 		cmdline = {
 			enabled = true,
 			-- view = "popup",

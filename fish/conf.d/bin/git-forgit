@@ -12,6 +12,21 @@
 # This gives users the choice to set aliases inside of their git config instead
 # of their shell config if they prefer.
 
+# Check if fzf is installed
+installed_fzf_version=$(fzf --version 2>/dev/null | awk '{print $1}')
+if [[ -z "$installed_fzf_version" ]]; then
+    echo "fzf is not installed. Please install fzf first."
+    exit 1
+fi
+
+# Check fzf version
+required_fzf_version="0.49.0"
+higher_fzf_version=$(printf '%s\n' "$required_fzf_version" "$installed_fzf_version" | sort -V | tail -n1)
+if [[ "$higher_fzf_version" != "$installed_fzf_version" ]]; then
+    echo "fzf version $required_fzf_version or higher is required. You have $installed_fzf_version."
+    exit 1
+fi
+
 # Set shell for fzf preview commands
 # Disable shellcheck for "which", because it suggests "command -v xxx" instead,
 # which is not a working replacement.
@@ -149,6 +164,7 @@ _forgit_get_pager() {
         show) echo -n "${FORGIT_SHOW_PAGER:-$(git config pager.show || _forgit_get_pager)}" ;;
         diff) echo -n "${FORGIT_DIFF_PAGER:-$(git config pager.diff || _forgit_get_pager)}" ;;
         ignore) echo -n "${FORGIT_IGNORE_PAGER:-$(hash bat &>/dev/null && echo 'bat -l gitignore --color=always' || echo 'cat')}" ;;
+        attributes) echo -n "${FORGIT_ATTRIBUTES_PAGER:-$(hash bat &>/dev/null && echo 'bat -l gitattributes --color=always' || echo 'cat')}" ;;
         blame) echo -n "${FORGIT_BLAME_PAGER:-$(git config pager.blame || _forgit_get_pager)}" ;;
         enter) echo -n "${FORGIT_ENTER_PAGER:-"LESS='-r' less"}" ;;
         *) echo "pager not found: $1" >&2 ;;
@@ -169,7 +185,7 @@ _forgit_list_files() {
     # unquoted.
     # uniq is necessary because unmerged files are printed once for each
     # merge conflict.
-    # With the -z flag, git also uses \0 line termination, so we 
+    # With the -z flag, git also uses \0 line termination, so we
     # have to replace the terminators.
     git ls-files -z "$@" "$rootdir" | tr '\0' '\n' | uniq
 }
@@ -185,7 +201,7 @@ _forgit_log_enter() {
     local sha
     sha=$(echo "$1" | _forgit_extract_sha)
     shift
-    echo "$sha" | xargs -I% "${FORGIT}" diff %^! "$@"
+    echo "$sha" | xargs -I% "${FORGIT}" show % "$@"
 }
 
 # git commit viewer
@@ -323,13 +339,90 @@ _forgit_diff() {
         $FORGIT_FZF_DEFAULT_OPTS
         +m -0 --bind=\"enter:execute($FORGIT diff_enter {} $escaped_commits | $FORGIT pager enter)\"
         --preview=\"$FORGIT diff_view {} '$_forgit_preview_context' $escaped_commits\"
-        --bind=\"alt-e:execute-silent($FORGIT edit_diffed_file {})+refresh-preview\"
+        --bind=\"alt-e:execute($FORGIT edit_diffed_file {})+refresh-preview\"
         $FORGIT_DIFF_FZF_OPTS
         --prompt=\"${commits[*]} > \"
     "
     _forgit_diff_git_opts=()
     _forgit_parse_array _forgit_diff_git_opts "$FORGIT_DIFF_GIT_OPTS"
     git diff --name-status "${_forgit_diff_git_opts[@]}" "${commits[@]}" -- "${files[@]}" |
+        sed -E 's/^([[:alnum:]]+)[[:space:]]+(.*)$/[\1]	\2/' |
+        sed 's/	/  ->  /2' | expand -t 8 |
+        FZF_DEFAULT_OPTS="$opts" fzf
+    fzf_exit_code=$?
+    # exit successfully on 130 (ctrl-c/esc)
+    [[ $fzf_exit_code == 130 ]] && return 0
+    return $fzf_exit_code
+}
+
+_forgit_exec_show() {
+    _forgit_show_git_opts=()
+    _forgit_parse_array _forgit_show_git_opts "$FORGIT_SHOW_GIT_OPTS"
+    git show --pretty="" --diff-merges=first-parent --color=always "${_forgit_show_git_opts[@]}" "$@"
+}
+
+_forgit_show_view() {
+    local input_line=$1
+    local diff_context=$2
+    local commit=$3
+    local repo
+    repo=$(git rev-parse --show-toplevel)
+    cd "$repo" || return 1
+    echo "$input_line" | _forgit_get_files_from_diff_line | xargs -0 \
+        "$FORGIT" exec_show "${commit}^{commit}" -U"$diff_context" -- | _forgit_pager diff
+}
+
+_forgit_show_preview() {
+    local input_line=$1
+    local diff_context=$2
+    local commit=$3
+    if [[ "$FZF_PREVIEW_LABEL" =~ "Diff" ]]; then
+        _forgit_show_view "${input_line}" "${diff_context}" "${commit}"
+    else
+        git show --quiet --color=always "${FZF_PROMPT%% *}"
+    fi
+}
+
+_forgit_show_enter() {
+    file=$1
+    commit=$2
+    _forgit_show_view "$file" "$_forgit_fullscreen_context" "${commit}"
+}
+
+# git show viewer
+_forgit_show() {
+    _forgit_inside_work_tree || return 1
+    local files opts commit escaped_commit
+    files=()
+    if [[ $# -ne 0 ]]; then
+        if git rev-parse "$1" -- &>/dev/null ; then
+            commit="$1" && files=("${@:2}")
+        else
+            commit="HEAD" && files=("$@")
+        fi
+    else
+        commit="HEAD"
+    fi
+    # Escape opening brackets to support stashes (see comment in _forgit_diff)
+    escaped_commit=${commit//\{/\\\\\{}
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +m -0 --bind=\"enter:execute($FORGIT show_enter {} $escaped_commit | $FORGIT pager enter)\"
+        --preview=\"$FORGIT show_preview {} '$_forgit_preview_context' $escaped_commit\"
+        --preview-label=\" Diff \"
+        --bind=\"alt-e:execute($FORGIT edit_diffed_file {})+refresh-preview\"
+        --bind=\"alt-t:transform:[[ ! \\\"\$FZF_PREVIEW_LABEL\\\" =~ 'Diff' ]] &&
+                echo 'change-preview-label( Diff )+refresh-preview' ||
+                echo 'change-preview-label( Commit Message )+refresh-preview'\"
+        $FORGIT_DIFF_FZF_OPTS
+        --prompt=\"${commit} > \"
+    "
+    _forgit_show_git_opts=()
+    _forgit_parse_array _forgit_show_git_opts "$FORGIT_SHOW_GIT_OPTS"
+    # Add "^{commit}" suffix after the actual commit. This suppresses the tag information in case it is a tag.
+    # See: https://git-scm.com/docs/git-show#Documentation/git-show.txt-codegitshow-s--formatsv100commitcode
+    git show --pretty="" --name-status --diff-merges=first-parent "${_forgit_show_git_opts[@]}" "${commit}^{commit}" \
+        -- "${files[@]}" |
         sed -E 's/^([[:alnum:]]+)[[:space:]]+(.*)$/[\1]	\2/' |
         sed 's/	/  ->  /2' | expand -t 8 |
         FZF_DEFAULT_OPTS="$opts" fzf
@@ -382,7 +475,7 @@ _forgit_add() {
         $FORGIT_FZF_DEFAULT_OPTS
         -0 -m --nth 2..,..
         --preview=\"$FORGIT add_preview {}\"
-        --bind=\"alt-e:execute-silent($FORGIT edit_add_file {})+refresh-preview\"
+        --bind=\"alt-e:execute($FORGIT edit_add_file {})+refresh-preview\"
         $FORGIT_ADD_FZF_OPTS
     "
     files=()
@@ -556,7 +649,7 @@ _forgit_cherry_pick() {
     [[ -z $1 ]] && echo "Please specify target branch" && return 1
     target="$1"
 
-    # in this function, we do something interesting to maintain proper ordering as it's assumed 
+    # in this function, we do something interesting to maintain proper ordering as it's assumed
     # you generally want to cherry pick oldest->newest when you multiselect
     # The instances of "cut", "nl" and "sort" all serve this purpose
     # Please see https://github.com/wfxr/forgit/issues/253 for more details
@@ -580,7 +673,7 @@ _forgit_cherry_pick() {
         commits+=("$commit")
     done < <(echo "$fzf_selection" | sort -n -k 1 | cut -f2 | cut -d' ' -f1 | _forgit_reverse_lines)
     [ ${#commits[@]} -eq 0 ] && return 1
-    
+
     _forgit_cherry_pick_git_opts=()
     _forgit_parse_array _forgit_cherry_pick_git_opts "$FORGIT_CHERRY_PICK_GIT_OPTS"
     git cherry-pick "${_forgit_cherry_pick_git_opts[@]}" "${commits[@]}"
@@ -632,27 +725,27 @@ _forgit_cherry_pick_from_branch() {
 
 _forgit_rebase() {
     _forgit_inside_work_tree || return 1
-    local opts graph quoted_files target_commit prev_commit
+    _forgit_contains_non_flags "$@" && { git rebase "$@"; return $?; }
+    local opts graph target_commit prev_commit
     graph=()
     [[ $_forgit_log_graph_enable == true ]] && graph=(--graph)
     _forgit_rebase_git_opts=()
     _forgit_parse_array _forgit_rebase_git_opts "$FORGIT_REBASE_GIT_OPTS"
-    quoted_files=$(_forgit_quote_files "$@")
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT file_preview {} $quoted_files\"
+        --preview=\"$FORGIT file_preview {}\"
         $FORGIT_REBASE_FZF_OPTS
     "
     target_commit=$(
-        git log "${graph[@]}" --color=always --format="$_forgit_log_format" "$@" |
+        git log "${graph[@]}" --color=always --format="$_forgit_log_format" |
         _forgit_emojify |
         FZF_DEFAULT_OPTS="$opts" fzf |
         _forgit_extract_sha)
     if [[ -n "$target_commit" ]]; then
         prev_commit=$(_forgit_previous_commit "$target_commit")
-        git rebase -i "${_forgit_rebase_git_opts[@]}" "$prev_commit"
+        git rebase -i "${_forgit_rebase_git_opts[@]}" "$@" "$prev_commit"
     fi
 }
 
@@ -883,7 +976,7 @@ _forgit_revert_commit() {
     graph=()
     [[ $_forgit_log_graph_enable == true ]] && graph=(--graph)
 
-    # in this function, we do something interesting to maintain proper ordering as it's assumed 
+    # in this function, we do something interesting to maintain proper ordering as it's assumed
     # you generally want to revert newest->oldest when you multiselect
     # The instances of "cut", "nl" and "sort" all serve this purpose
     # Please see https://github.com/wfxr/forgit/issues/253 for more details
@@ -896,7 +989,7 @@ _forgit_revert_commit() {
         _forgit_emojify |
         nl |
         FZF_DEFAULT_OPTS="$opts" fzf |
-        sort -n -k 1 | 
+        sort -n -k 1 |
         cut -f2- |
         sed 's/^[^a-f^0-9]*\([a-f0-9]*\).*/\1/')
 
@@ -947,21 +1040,27 @@ export FORGIT_GI_REPO_REMOTE=${FORGIT_GI_REPO_REMOTE:-https://github.com/dvcs/gi
 export FORGIT_GI_REPO_LOCAL="${FORGIT_GI_REPO_LOCAL:-${XDG_CACHE_HOME:-$HOME/.cache}/forgit/gi/repos/dvcs/gitignore}"
 export FORGIT_GI_TEMPLATES=${FORGIT_GI_TEMPLATES:-$FORGIT_GI_REPO_LOCAL/templates}
 
-_forgit_ignore_preview() {
+_forgit_path_preview() {
+    local path name ext pager
+    path=$1
+    name=$2
+    ext=$3
+    pager=$4
     quoted_files=()
-    for file in "$FORGIT_GI_TEMPLATES/$1"{,.gitignore}; do
+    while IFS='' read -r file; do
         quoted_files+=("'$file'")
-    done
-    _forgit_pager ignore "${quoted_files[@]}" 2>/dev/null
+    done < <(find -L "$path" -type f -name "$name" -o -name "$name$ext")
+    _forgit_pager "$pager" "${quoted_files[@]}" 2>/dev/null
 }
 
 _forgit_ignore() {
-    [ -d "$FORGIT_GI_REPO_LOCAL" ] || _forgit_ignore_update
+    [ -d "$FORGIT_GI_REPO_LOCAL" ] \
+    || _forgit_repo_update "$FORGIT_GI_REPO_REMOTE" "$FORGIT_GI_REPO_LOCAL"
     local IFS args opts
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -m --preview-window='right:70%'
-        --preview=\"$FORGIT ignore_preview {2}\"
+        --preview=\"$FORGIT path_preview $FORGIT_GI_TEMPLATES {2} .gitignore ignore\"
         $FORGIT_IGNORE_FZF_OPTS
     "
     args=("$@")
@@ -969,41 +1068,79 @@ _forgit_ignore() {
         args=()
         while IFS='' read -r arg; do
             args+=("$arg")
-        done < <(_forgit_ignore_list | nl -w4 -s'  ' |
+        done < <(_forgit_paths_list "$FORGIT_GI_TEMPLATES" .gitignore | 
+            nl -w4 -s'  ' |
             FZF_DEFAULT_OPTS="$opts" fzf | awk '{print $2}')
     fi
     [ ${#args[@]} -eq 0 ] && return 1
-    _forgit_ignore_get "${args[@]}"
+    _forgit_path_get "$FORGIT_GI_TEMPLATES" .gitignore "${args[@]}"
 }
-_forgit_ignore_update() {
-    if [[ -d "$FORGIT_GI_REPO_LOCAL" ]]; then
-        _forgit_info 'Updating gitignore repo...'
-        (cd "$FORGIT_GI_REPO_LOCAL" && git pull --no-rebase --ff) || return 1
+
+# git attributes generator
+export FORGIT_ATTR_REPO_REMOTE=${FORGIT_ATTR_REPO_REMOTE:-https://github.com/gitattributes/gitattributes}
+export FORGIT_ATTR_REPO_LOCAL=${FORGIT_ATTR_REPO_LOCAL:-${XDG_CACHE_HOME:-$HOME/.cache}/forgit/gat/repos/gitattributes/gitattributes}
+export FORGIT_ATTR_TEMPLATES=${FORGIT_ATTR_TEMPLATES:-$FORGIT_ATTR_REPO_LOCAL}
+
+_forgit_attributes() {
+    [ -d "$FORGIT_ATTR_REPO_LOCAL" ] \
+    || _forgit_repo_update "$FORGIT_ATTR_REPO_REMOTE" "$FORGIT_ATTR_REPO_LOCAL"
+    local IFS args opts
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        -m --preview-window='right:70%'
+        --preview=\"$FORGIT path_preview $FORGIT_ATTR_TEMPLATES {2} .gitattributes attributes\"
+        $FORGIT_ATTRIBUTES_FZF_OPTS
+    "
+    args=("$@")
+    if [[ $# -eq 0 ]]; then
+        args=()
+        while IFS='' read -r arg; do
+            args+=("$arg")
+        done < <(_forgit_paths_list "$FORGIT_ATTR_TEMPLATES" .gitattributes |
+            nl -w4 -s'  ' |
+            FZF_DEFAULT_OPTS="$opts" fzf | awk '{print $2}')
+    fi
+    [ ${#args[@]} -eq 0 ] && return 1
+    _forgit_path_get "$FORGIT_ATTR_TEMPLATES" .gitattributes "${args[@]}"
+}
+
+_forgit_repo_update() {
+    local remote path
+    remote=$1
+    path=$2
+    if [[ -d "$path" ]]; then
+        _forgit_info 'Updating repo...'
+        (cd "$path" && git pull --no-rebase --ff) || return 1
     else
-        _forgit_info 'Initializing gitignore repo...'
-        git clone --depth=1 "$FORGIT_GI_REPO_REMOTE" "$FORGIT_GI_REPO_LOCAL"
+        _forgit_info 'Initializing repo...'
+        git clone --depth=1 "$remote" "$path"
     fi
 }
-_forgit_ignore_get() {
-    local item filename header
+
+_forgit_path_get() {
+    local path ext item filename header
+    path=$1
+    ext=$2
+    shift 2
     for item in "$@"; do
-        if filename=$(find -L "$FORGIT_GI_TEMPLATES" -type f \( -iname "${item}.gitignore" -o -iname "${item}" \) -print -quit); then
-            [[ -z "$filename" ]] && _forgit_warn "No gitignore template found for '$item'." && continue
-            header="${filename##*/}" && header="${header%.gitignore}"
+        if filename=$(find -L "$path" -type f \( -iname "${item}$ext" -o -iname "${item}" \) -print -quit); then
+            [[ -z "$filename" ]] && _forgit_warn "No template found for '$item'." && continue
+            header="${filename##*/}" && header="${header%"$ext"}"
             echo "### $header" && cat "$filename" && echo
         fi
     done
 }
-_forgit_ignore_list() {
-    find "$FORGIT_GI_TEMPLATES" -print |sed -e 's#.gitignore$##' -e 's#.*/##' | sort -fu
-}
-_forgit_ignore_clean() {
-    setopt localoptions rmstarsilent
-    [[ -d "$FORGIT_GI_REPO_LOCAL" ]] && rm -rf "$FORGIT_GI_REPO_LOCAL"
+
+_forgit_paths_list() {
+    local path ext
+    path=$1
+    ext=$2
+    find "$path" -name "*$ext" -print |sed -e "s#$ext\$##" -e 's#.*/##' -e '/^$/d' | sort -fu
 }
 
 public_commands=(
     "add"
+    "attributes"
     "blame"
     "branch_delete"
     "checkout_branch"
@@ -1021,6 +1158,7 @@ public_commands=(
     "rebase"
     "reset_head"
     "revert_commit"
+    "show"
     "stash_show"
     "stash_push"
 )
@@ -1035,10 +1173,13 @@ private_commands=(
     "cherry_pick_preview"
     "clean_preview"
     "diff_enter"
+    "exec_show"
     "file_preview"
-    "ignore_preview"
+    "path_preview"
     "revert_preview"
     "reset_head_preview"
+    "show_enter"
+    "show_preview"
     "stash_push_preview"
     "stash_show_preview"
     "yank_sha"

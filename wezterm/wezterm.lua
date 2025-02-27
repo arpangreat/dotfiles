@@ -264,7 +264,7 @@ config.color_scheme_dirs = { "/home/arpangreat/dotfiles/wezterm" }
 -- 	ansi = ansi,
 -- 	brights = brights,
 -- },
-config.max_fps = 255
+config.max_fps = 120
 config.force_reverse_video_cursor = true
 config.default_cursor_style = "SteadyBar"
 -- cursor_blink_rate = 500,
@@ -275,11 +275,11 @@ config.text_background_opacity = 1.0
 config.window_padding = {
 	left = "0.0cell",
 	right = "0.0cell",
-	top = "0.4cell",
+	top = "0.0cell",
 	bottom = "0.0cell",
 }
 config.enable_kitty_keyboard = true
-config.window_decorations = "NONE"
+config.window_decorations = "RESIZE"
 config.term = "wezterm"
 config.front_end = "WebGpu"
 -- config.webgpu_preferred_adapter = gpus[2]

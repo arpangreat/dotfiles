@@ -1,10 +1,8 @@
 set -Ux FZF_DEFAULT_OPTS "\
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#ff007c,hl:#65bcff \
+--color=fg:#c8d3f5,header:#ff966c,info:#545c7e,pointer:#ff007c \
+--color=marker:#ff007c,fg+:#cdd6f4,prompt:#65bcff,hl+:#65bcff \
 --color=selected-bg:#45475a \
---multi"\
---ansi"\
 --height='80%' \
 --bind='alt-k:preview-up,alt-p:preview-up' \
 --bind='alt-j:preview-down,alt-n:preview-down' \
@@ -17,4 +15,29 @@ set -Ux FZF_DEFAULT_OPTS "\
 --border --multi --info inline-right --layout reverse --marker ▏ --pointer ▌ --prompt '▌ '  \
 --highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189 \
 --info=inline-right \
+--ansi\
+"
+
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none
+  --color=bg+:#2d3f76 \
+  --color=bg:#1e2030 \
+  --color=border:#589ed7 \
+  --color=fg:#c8d3f5 \
+  --color=gutter:#1e2030 \
+  --color=header:#ff966c \
+  --color=hl+:#65bcff \
+  --color=hl:#65bcff \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#65bcff \
+  --color=query:#c8d3f5:regular \
+  --color=scrollbar:#589ed7 \
+  --color=separator:#ff966c \
+  --color=spinner:#ff007c \
 "
