@@ -142,5 +142,4 @@ return {
 			})
 		end,
 	},
-	{ "cordx56/rustowl", ft = "rust" },
 }
