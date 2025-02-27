@@ -2,7 +2,7 @@ return {
 	"hrsh7th/nvim-cmp",
 	-- branch = "perf",
 	event = { "LspAttach", "CmdlineEnter" },
-	-- enabled = false,
+	enabled = false,
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
@@ -97,22 +97,23 @@ return {
 
 			window = {
 				documentation = cmp.config.window.bordered(),
+				completion = cmp.config.window.bordered(),
 
-				completion = {
-					border = "single",
-					col_offset = 0,
-					scroll_bar = false,
-					-- max_width = 100,
-				},
+				-- completion = {
+				-- 	border = "single",
+				-- 	col_offset = 0,
+				-- 	scroll_bar = false,
+				-- 	-- max_width = 100,
+				-- },
 			},
 
 			completion = {
 				completeopt = "menu,menuone,preview,noselect,popup",
 			},
 
-			view = {
-				entries = { name = "custom", selection_order = "top_down" },
-			},
+			-- view = {
+			-- 	entries = { name = "custom", selection_order = "top_down" },
+			-- },
 
 			-- formatting = {
 			-- 	format = function(entry, vim_item)
@@ -144,8 +145,10 @@ return {
 			-- }, ]]
 			formatting = {
 				format = require("lspkind").cmp_format({
+					expandable_indicator = true,
 					mode = "symbol_text",
 					max_width = 100,
+					ellipsis_char = "...",
 					menu = {
 						buffer = "[Buffer]",
 						nvim_lsp = "[LSP]",

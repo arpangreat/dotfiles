@@ -40,17 +40,17 @@ require("lspconfig").r_language_server.setup({
 
 -- require("lspconfig").htmx.setup({ on_attach = on_attach, capabilities = capabilities })
 
-require("lspconfig").ruff_lsp.setup({
-	on_attach = on_attach,
-	init_options = {
-		settings = {
-			-- Any extra CLI arguments for `ruff` go here.
-			args = {},
-		},
-	},
-})
+-- require("lspconfig").ruff_lsp.setup({
+-- 	on_attach = on_attach,
+-- 	init_options = {
+-- 		settings = {
+-- 			-- Any extra CLI arguments for `ruff` go here.
+-- 			args = {},
+-- 		},
+-- 	},
+-- })
 
---[[ require("lspconfig").dartls.setup({
+require("lspconfig").dartls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
@@ -58,9 +58,9 @@ require("lspconfig").ruff_lsp.setup({
 			updateImportOnRename = true,
 		},
 	},
-}) ]]
+})
 
-require("lspconfig").solargraph.setup({
+require("lspconfig").ruby_lsp.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
@@ -86,42 +86,41 @@ require("lspconfig").intelephense.setup({
 })
 
 local lspconfig = require("lspconfig")
-local configs = require("lspconfig.configs")
 
--- Configure it
-configs.blade = {
-	default_config = {
-		cmd = { "/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp" },
-		filetypes = { "blade" },
-		root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
-		settings = {},
-	},
-}
--- Set it up
-lspconfig.blade.setup({
+require("lspconfig").html.setup({
 	-- Capabilities is specific to my setup.
+	filetypes = { "html", "blade" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
-
-require("lspconfig").tailwindcss.setup({
-	-- Capabilities is specific to my setup.
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-
--- require("lspconfig").html.setup({
--- 	-- Capabilities is specific to my setup.
--- 	filetypes = { "html", "blade" },
--- 	on_attach = on_attach,
--- 	capabilities = capabilities,
--- })
 
 lspconfig.emmet_language_server.setup({
 	-- Capabilities is specific to my setup.
 	filetypes = { "html", "blade" },
 	on_attach = on_attach,
 	capabilities = capabilities,
+})
+
+lspconfig.fish_lsp.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "php", "blade" },
+	callback = function()
+		vim.lsp.start({
+			name = "laravel-ls",
+			cmd = { "/home/arpangreat/go/bin/laravel-ls" },
+			-- if you want to recompile everytime
+			-- the language server is started.
+			-- Uncomment this line instead
+			-- cmd = { '/path/to/laravel-ls/start.sh' },
+			root_dir = vim.fn.getcwd(),
+			on_attach = on_attach,
+			capabilities = capabilities,
+		})
+	end,
 })
 
 -- lspconfig.stimulus_ls.setup({

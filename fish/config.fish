@@ -54,8 +54,7 @@ set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/brave
 set -g ANDROID_HOME /home/arpangreat/Android/Sdk
 
-set -Ux MAKEFLAGS "-j4"
-
+set -Ux MAKEFLAGS -j4
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
@@ -110,7 +109,9 @@ eval (batpipe)
 #     end
 # end
 
-source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
+# source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
+source $HOME/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
+source $HOME/dotfiles/fish/tokyonight_moon.fish
 
 v complete setup fish | source
 symfony completion | source
@@ -127,9 +128,13 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
-# Kitty
-if set -q KITTY_INSTALLATION_DIR
-    set --global KITTY_SHELL_INTEGRATION enabled
-    source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
-    set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
-end
+# # Kitty
+# if set -q KITTY_INSTALLATION_DIR
+#     set --global KITTY_SHELL_INTEGRATION enabled
+#     source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
+#     set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
+# end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

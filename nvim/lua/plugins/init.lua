@@ -15,12 +15,21 @@ return {
 
 	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
 	{ "mbbill/undotree", event = "VeryLazy" },
+	-- {
+	-- 	"echasnovski/mini.files",
+	-- 	event = "VeryLazy",
+	-- 	config = function()
+	-- 		require("mini.files").setup()
+	-- 	end,
+	-- },
 	{
-		"echasnovski/mini.files",
+		"stevearc/oil.nvim",
 		event = "VeryLazy",
-		config = function()
-			require("mini.files").setup()
-		end,
+		opts = {
+			view_options = {
+				show_hidden = true,
+			},
+		},
 	},
 	{
 		"echasnovski/mini.cursorword",
@@ -29,7 +38,7 @@ return {
 			require("mini.cursorword").setup()
 		end,
 	},
-	{ "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
+	-- { "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
 	{
 		"stevearc/dressing.nvim",
 		event = "VeryLazy",
@@ -49,7 +58,7 @@ return {
 			library = {
 				-- See the configuration section for more details
 				-- Load luvit types when the `vim.uv` word is found
-				{ path = "luvit-meta/library", words = { "vim%.uv" } },
+				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
 			},
 		},
 	},
@@ -116,5 +125,21 @@ return {
 	{
 		"canop/nvim-bacon",
 		ft = "rust",
+	},
+	{
+		"rachartier/tiny-inline-diagnostic.nvim",
+		event = "VeryLazy", -- Or `LspAttach`
+		priority = 1000, -- needs to be loaded in first
+		config = function()
+			require("tiny-inline-diagnostic").setup({
+				options = {
+					show_source = true,
+					use_icons_from_diagnostic = true,
+					multiple_diag_under_cursor = true,
+					multilines = true,
+					show_all_diags_on_cursorline = true,
+				},
+			})
+		end,
 	},
 }
