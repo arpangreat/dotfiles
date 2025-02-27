@@ -162,7 +162,7 @@ M.capabilities = vim.tbl_deep_extend(
 	vim.lsp.protocol.make_client_capabilities(),
 	require("blink.cmp").get_lsp_capabilities(capabilities)
 )
--- M.capabilities.textDocument.completion.completionItem.snippetSupport = true
+M.capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- local capabilities = vim.tbl_deep_extend(
 --   'force',
