@@ -1,23 +1,29 @@
-font-family = "Cascadia Code PL"
-font-family-bold = "Cascadia Code PL"
-font-family-italic = "Cascadia Code PL"
-font-family-bold-italic = "Cascadia Code PL"
+#font-family = "Cascadia Code PL"
+#font-family-bold = "Cascadia Code PL"
+#font-family-italic = "Cascadia Code PL"
+#font-family-bold-italic = "Cascadia Code PL"
 
 #font-family="Maple Mono NF"
 #font-family-bold="Maple Mono NF"
 #font-family-italic="Maple Mono NF"
 #font-family-bold-italic="Maple Mono NF"
 
-#font-family="JetBrains Mono"
-#font-family-bold="JetBrains Mono"
-#font-family-italic="JetBrains Mono"
-#font-family-bold-italic="JetBrains Mono"
+font-family="JetBrains Mono"
+font-family-bold="JetBrains Mono"
+font-family-italic="JetBrains Mono"
+font-family-bold-italic="JetBrains Mono"
+
+# font-style = SemiBold
 
 font-feature = calt
-font-feature = ss01
-font-feature = ss02
-font-feature = ss03
-font-feature = ss20
+font-feature = dlig
+font-feature = liga
+
+#font-feature = calt
+#font-feature = ss01
+#font-feature = ss02
+#font-feature = ss03
+#font-feature = ss20
 
 # font_features JetBrainsMono-Regular +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features JetBrainsMono-Bold +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
