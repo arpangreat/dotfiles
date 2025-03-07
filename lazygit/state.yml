@@ -1,6 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/alacritty-smooth-cursor
+    - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/kitty
     - /home/arpangreat/zig
