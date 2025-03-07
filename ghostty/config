@@ -120,6 +120,7 @@ keybind = super+ctrl+left_bracket=goto_split:previous
 keybind = ctrl+shift+i=inspector:toggle
 keybind = alt+six=goto_tab:6
 keybind = alt+seven=goto_tab:7
+keybind = global:super+`=toggle_quick_terminal
 
 window-padding-x = 1
 
