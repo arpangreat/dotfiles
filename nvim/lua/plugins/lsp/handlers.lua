@@ -123,6 +123,24 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+lspconfig.denols.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		deno = {
+			enable = true,
+			suggest = {
+				imports = {
+					hosts = {
+						["https://deno.land"] = true,
+					},
+					autoDiscover = true,
+				},
+			},
+		},
+	},
+})
+
 -- lspconfig.stimulus_ls.setup({
 -- 	on_attach = on_attach,
 -- 	capabilities = capabilities,
