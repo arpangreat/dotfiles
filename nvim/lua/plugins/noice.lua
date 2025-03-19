@@ -15,6 +15,7 @@ return {
 				["cmp.entry.get_documentation"] = true,
 			},
 		},
+
 		-- popupmenu = {
 		-- 	backend = "nui",
 		-- },

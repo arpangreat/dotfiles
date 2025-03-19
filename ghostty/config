@@ -22,10 +22,10 @@ font-family-bold-italic="Maple Mono NF"
 font-style = SemiBold
 
 font-feature = calt
-#font-feature = dlig
-#font-feature = liga
+font-feature = dlig
+font-feature = liga
 font-feature = zero
-font-feature = cv01
+# font-feature = cv01
 
 #font-feature = calt
 #font-feature = ss01
