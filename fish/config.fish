@@ -54,7 +54,7 @@ set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/brave
 set -g ANDROID_HOME /home/arpangreat/Android/Sdk
 
-set -Ux MAKEFLAGS -j4
+set -g MAKEFLAGS -j4
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
@@ -62,7 +62,9 @@ set -g SFML_INCLUDE_DIR /usr/include/SFML/
 set -g SFML_LIBS_DIR /usr/lib/SFML/
 set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
-set -Ua fish_user_paths /home/arpangreat/.rye/env
+set -g RUSTC_WRAPPER sccache
+
+set -ga fish_user_paths /home/arpangreat/.rye/env
 
 set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"

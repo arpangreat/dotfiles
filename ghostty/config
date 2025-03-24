@@ -25,6 +25,9 @@ font-feature = calt
 font-feature = dlig
 font-feature = liga
 font-feature = zero
+font-feature = ss03
+# font-feature = ss06
+font-feature = ss08
 # font-feature = cv01
 
 #font-feature = calt
@@ -47,7 +50,7 @@ font-feature = zero
 #font-feature = cv03
 #font-feature = cv31
 
-font-size = 11.0
+font-size = 11.5
 
 font-thicken = true
 
@@ -75,6 +78,7 @@ keybind = super+ctrl+right_bracket=goto_split:next
 keybind = ctrl+equal=increase_font_size:1
 keybind = ctrl+shift+o=new_split:right
 keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+r=copy_url_to_clipboard
 keybind = ctrl+shift+q=quit
 keybind = ctrl+shift+n=new_window
 keybind = ctrl+shift+page_down=jump_to_prompt:1
