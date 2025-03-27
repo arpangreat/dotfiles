@@ -63,6 +63,7 @@ set -g SFML_LIBS_DIR /usr/lib/SFML/
 set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
 set -g RUSTC_WRAPPER sccache
+set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
 
 set -ga fish_user_paths /home/arpangreat/.rye/env
 
