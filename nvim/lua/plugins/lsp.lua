@@ -20,6 +20,7 @@ return {
 			-- 	hl_mode = "blend",
 			-- },
 			virtual_text = false,
+			-- virtual_lines = true,
 			signs = {
 				texthl = {
 					[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
