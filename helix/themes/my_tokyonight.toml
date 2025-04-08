@@ -1,4 +1,4 @@
-inherits = "tokyonight"
+inherits = "tokyonight_night"
 
 constant = { fg = "orange", style = "bold" }
 constructor = { fg = "aqua", style = "italic" }
