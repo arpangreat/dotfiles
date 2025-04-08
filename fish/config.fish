@@ -116,7 +116,6 @@ eval (batpipe)
 source $HOME/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
 source $HOME/dotfiles/fish/tokyonight_moon.fish
 
-v complete setup fish | source
 symfony completion | source
 
 cod init $fish_pid fish | source
