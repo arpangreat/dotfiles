@@ -26,7 +26,7 @@ font-feature = dlig
 font-feature = liga
 font-feature = zero
 font-feature = ss03
-# font-feature = ss06
+font-feature = ss06
 font-feature = ss08
 # font-feature = cv01
 
@@ -66,6 +66,7 @@ cursor-style-blink = false
 
 background-opacity = 0.90
 
+keybind = ctrl+enter=unbind
 keybind = ctrl+comma=open_config
 keybind = ctrl+alt+up=goto_split:top
 keybind = ctrl+page_down=next_tab
