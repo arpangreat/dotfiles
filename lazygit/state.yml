@@ -1,22 +1,21 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
+    - /home/arpangreat/fem-htmx-proj
+    - /home/arpangreat/ghostty
     - /home/arpangreat/kitty
-    - /home/arpangreat/zig
+    - /home/arpangreat/TypescriptExs
+    - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/go
-    - /home/arpangreat/helix
     - /home/arpangreat/blog
     - /home/arpangreat/fzf
     - /home/arpangreat/zig-examples
     - /home/arpangreat/job-management
-    - /home/arpangreat/laravel-dev-tools
     - /home/arpangreat/mono-dots
-    - /home/arpangreat/Hyprland
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/PythonExs
     - /home/arpangreat/CExamples
