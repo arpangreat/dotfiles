@@ -1,3 +1,3 @@
 function la
-  command eza -l -g -a --color always | bat
+    command eza -l -g --git -a --color always | bat
 end

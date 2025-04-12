@@ -1,23 +1,41 @@
-font-family = "Cascadia Code PL"
-font-family-bold = "Cascadia Code PL"
-font-family-italic = "Cascadia Code PL"
-font-family-bold-italic = "Cascadia Code PL"
+#font-family = "Cascadia Code PL"
+#font-family-bold = "Cascadia Code PL"
+#font-family-italic = "Cascadia Code PL"
+#font-family-bold-italic = "Cascadia Code PL"
 
-#font-family="Maple Mono NF"
-#font-family-bold="Maple Mono NF"
-#font-family-italic="Maple Mono NF"
-#font-family-bold-italic="Maple Mono NF"
+#font-feature = calt
+#font-feature = ss01
+#font-feature = ss02
+#font-feature = ss03
+#font-feature = ss20
+
+font-family="Maple Mono NF"
+font-family-bold="Maple Mono NF"
+font-family-italic="Maple Mono NF"
+font-family-bold-italic="Maple Mono NF"
 
 #font-family="JetBrains Mono"
 #font-family-bold="JetBrains Mono"
 #font-family-italic="JetBrains Mono"
 #font-family-bold-italic="JetBrains Mono"
 
+font-style = SemiBold
+
 font-feature = calt
-font-feature = ss01
-font-feature = ss02
+font-feature = dlig
+font-feature = liga
+font-feature = zero
 font-feature = ss03
-font-feature = ss20
+font-feature = ss06
+font-feature = ss08
+# font-feature = cv01
+font-feature = cv03
+
+#font-feature = calt
+#font-feature = ss01
+#font-feature = ss02
+#font-feature = ss03
+#font-feature = ss20
 
 # font_features JetBrainsMono-Regular +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features JetBrainsMono-Bold +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
@@ -49,6 +67,7 @@ cursor-style-blink = false
 
 background-opacity = 0.90
 
+keybind = ctrl+enter=unbind
 keybind = ctrl+comma=open_config
 keybind = ctrl+alt+up=goto_split:top
 keybind = ctrl+page_down=next_tab
@@ -61,6 +80,7 @@ keybind = super+ctrl+right_bracket=goto_split:next
 keybind = ctrl+equal=increase_font_size:1
 keybind = ctrl+shift+o=new_split:right
 keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+r=copy_url_to_clipboard
 keybind = ctrl+shift+q=quit
 keybind = ctrl+shift+n=new_window
 keybind = ctrl+shift+page_down=jump_to_prompt:1
@@ -106,6 +126,7 @@ keybind = super+ctrl+left_bracket=goto_split:previous
 keybind = ctrl+shift+i=inspector:toggle
 keybind = alt+six=goto_tab:6
 keybind = alt+seven=goto_tab:7
+keybind = global:super+`=toggle_quick_terminal
 
 window-padding-x = 1
 

@@ -54,7 +54,7 @@ set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/brave
 set -g ANDROID_HOME /home/arpangreat/Android/Sdk
 
-set -Ux MAKEFLAGS -j4
+set -g MAKEFLAGS -j4
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
@@ -62,7 +62,10 @@ set -g SFML_INCLUDE_DIR /usr/include/SFML/
 set -g SFML_LIBS_DIR /usr/lib/SFML/
 set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
-set -Ua fish_user_paths /home/arpangreat/.rye/env
+set -g RUSTC_WRAPPER sccache
+set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
+
+set -ga fish_user_paths /home/arpangreat/.rye/env
 
 set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
@@ -113,7 +116,6 @@ eval (batpipe)
 source $HOME/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
 source $HOME/dotfiles/fish/tokyonight_moon.fish
 
-v complete setup fish | source
 symfony completion | source
 
 cod init $fish_pid fish | source
@@ -138,3 +140,11 @@ end
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# argc-completions
+set -gx ARGC_COMPLETIONS_ROOT /home/arpangreat/argc-completions
+set -gx ARGC_COMPLETIONS_PATH "$ARGC_COMPLETIONS_ROOT/completions/linux:$ARGC_COMPLETIONS_ROOT/completions"
+fish_add_path "$ARGC_COMPLETIONS_ROOT/bin"
+# To add completions for only the specified command, modify next line e.g. set argc_scripts cargo git
+set argc_scripts (ls -1 "$ARGC_COMPLETIONS_ROOT/completions/linux" "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p')
+argc --argc-completions fish $argc_scripts | source

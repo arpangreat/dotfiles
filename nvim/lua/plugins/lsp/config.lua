@@ -157,12 +157,17 @@ end
 -- 	require("cmp_nvim_lsp").default_capabilities()
 -- )
 
-M.capabilities = vim.tbl_deep_extend(
-	"force",
-	vim.lsp.protocol.make_client_capabilities(),
-	require("blink.cmp").get_lsp_capabilities(capabilities)
-)
+M.capabilities = vim.lsp.protocol.make_client_capabilities()
+M.capabilities = vim.tbl_deep_extend("force", M.capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
 M.capabilities.textDocument.completion.completionItem.snippetSupport = true
+M.capabilities.textDocument.foldingRange.dynamicRegistration = false
+M.capabilities.textDocument.foldingRange.lineFoldingOnly = true
+M.capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
+
+--[[ M.capabilites = vim.tbl_deep_extend('force', M.capabilities, {
+  textDocument.completion.completionItem.snippetSupport = true,
+  workspace.didChangeWatchedFiles.dynamicRegistration = true
+}) ]]
 
 -- local capabilities = vim.tbl_deep_extend(
 --   'force',
