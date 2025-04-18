@@ -148,4 +148,4 @@ bold-is-bright = true
 
 # custom-shader-animation = true
 
-term = xterm-ghostty
+# term = xterm-ghostty
