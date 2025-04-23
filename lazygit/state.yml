@@ -1,6 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/RustExs
+    - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/ghostty
@@ -24,7 +26,6 @@ recentrepos:
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
     - /home/arpangreat/DSA-preps
-    - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
