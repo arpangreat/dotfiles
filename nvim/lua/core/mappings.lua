@@ -50,7 +50,7 @@ vim.api.nvim_set_keymap("n", "<Leader>tll", "<cmd>Telescope lazy_plugins<CR>", {
 
 vim.api.nvim_set_keymap("n", "<Leader>tw", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>tb", "<cmd>Telescope buffers<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>Telescope help_tags<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>th", "<cmd>Telescope help_tags<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>tm", "<cmd>Telescope man_pages<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>tj", "<cmd>Telescope jump_lists<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap(

@@ -41,6 +41,7 @@ return {
 	-- { "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
 	{
 		"stevearc/dressing.nvim",
+		enabled = false,
 		event = "VeryLazy",
 		-- config = function()
 		-- 	require("dressing").setup()
