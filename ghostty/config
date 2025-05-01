@@ -28,6 +28,9 @@ font-feature = zero
 font-feature = ss03
 font-feature = ss06
 font-feature = ss08
+font-feature = ss09
+font-feature = ss10
+font-feature = ss11
 # font-feature = cv01
 font-feature = cv03
 
@@ -57,7 +60,7 @@ font-thicken = true
 
 grapheme-width-method = unicode
 
-theme = "tokyonight_moon"
+theme = "tokyonight_moon_my"
 
 selection-invert-fg-bg = true
 

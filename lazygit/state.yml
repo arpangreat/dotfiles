@@ -1,12 +1,13 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/nnn
+    - /home/arpangreat/kitty
     - /home/arpangreat/RustExs
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/ghostty
-    - /home/arpangreat/kitty
     - /home/arpangreat/TypescriptExs
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/javaexsnew
