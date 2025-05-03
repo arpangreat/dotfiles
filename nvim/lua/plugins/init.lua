@@ -129,10 +129,15 @@ return {
 	},
 	{
 		"rachartier/tiny-inline-diagnostic.nvim",
+		enabled = false,
 		event = "VeryLazy", -- Or `LspAttach`
 		priority = 1000, -- needs to be loaded in first
 		config = function()
 			require("tiny-inline-diagnostic").setup({
+
+				preset = "classic",
+				transparent_bg = true,
+
 				options = {
 					show_source = true,
 					use_icons_from_diagnostic = true,
@@ -140,6 +145,8 @@ return {
 					multilines = true,
 					show_all_diags_on_cursorline = true,
 				},
+
+				severity = {},
 			})
 		end,
 	},
