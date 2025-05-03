@@ -24,8 +24,8 @@ return {
 
 			---@class colors
 			on_colors = function(colors)
-				colors.hint = colors.orange
-				colors.error = colors.red
+				-- colors.hint = colors.orange
+				-- colors.error = colors.red
 				colors.bg_statusline = colors.none
 				-- colors.bg = bg
 				-- colors.bg_dark = bg_dark
