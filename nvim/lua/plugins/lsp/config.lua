@@ -163,7 +163,7 @@ M.capabilities = vim.tbl_deep_extend("force", M.capabilities, require("blink.cmp
 M.capabilities.textDocument.completion.completionItem.snippetSupport = true
 M.capabilities.textDocument.foldingRange.dynamicRegistration = false
 M.capabilities.textDocument.foldingRange.lineFoldingOnly = true
-M.capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
+-- M.capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
 
 --[[ M.capabilites = vim.tbl_deep_extend('force', M.capabilities, {
   textDocument.completion.completionItem.snippetSupport = true,

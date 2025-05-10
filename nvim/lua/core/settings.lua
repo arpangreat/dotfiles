@@ -113,3 +113,5 @@ vim.g.undotree_HighlightChangedWithSign = 1
 
 -- Tmux
 -- vim.g.tmux_navigator_no_mapping = 1
+
+-- require("vim._extui").enable({})

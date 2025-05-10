@@ -1,8 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/kitty
+    - /home/arpangreat/fzf
     - /home/arpangreat/RustExs
+    - /home/arpangreat/kitty
     - /home/arpangreat/nnn
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
@@ -16,7 +17,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/go
     - /home/arpangreat/blog
-    - /home/arpangreat/fzf
     - /home/arpangreat/zig-examples
     - /home/arpangreat/job-management
     - /home/arpangreat/mono-dots

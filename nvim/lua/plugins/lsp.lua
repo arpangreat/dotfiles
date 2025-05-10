@@ -50,7 +50,7 @@ return {
 					[vim.diagnostic.severity.INFO] = "InfoMsg",
 				},
 			},
-			update_in_insert = true,
+			update_in_insert = false,
 			undercurl = true,
 			-- severity_sort = true,
 			float = {
