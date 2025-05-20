@@ -7,7 +7,7 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				-- python = { "ruff", "format" },
+				python = { "ruff", "format" },
 				c = { "clang_format" },
 				cpp = { "clang_format" },
 				-- fish = { "fish_indent" },
@@ -18,6 +18,10 @@ return {
 				sql = { "sqlfmt" },
 				php = { "pint" },
 				blade = { "blade-formatter" },
+				typescript = { "deno_fmt" },
+				javascript = { "deno_fmt" },
+				json = { "deno_fmt" },
+				markdown = { "deno_fmt" },
 			},
 
 			format_after_save = {

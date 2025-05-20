@@ -1,9 +1,17 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/myjournal-app
+    - /home/arpangreat/ocaml-examples
+    - /home/arpangreat/blog
+    - /home/arpangreat/fzf
+    - /home/arpangreat/RustExs
+    - /home/arpangreat/kitty
+    - /home/arpangreat/nnn
+    - /home/arpangreat/forgit
+    - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/ghostty
-    - /home/arpangreat/kitty
     - /home/arpangreat/TypescriptExs
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/javaexsnew
@@ -11,19 +19,15 @@ recentrepos:
     - /home/arpangreat/college-work
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/go
-    - /home/arpangreat/blog
-    - /home/arpangreat/fzf
     - /home/arpangreat/zig-examples
     - /home/arpangreat/job-management
     - /home/arpangreat/mono-dots
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/PythonExs
     - /home/arpangreat/CExamples
-    - /home/arpangreat/ocaml-examples
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
     - /home/arpangreat/DSA-preps
-    - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
