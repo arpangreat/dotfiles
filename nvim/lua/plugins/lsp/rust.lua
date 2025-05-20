@@ -1,9 +1,4 @@
-local on_attach = require("plugins.lsp.config").on_attach
-local capabilities = require("plugins.lsp.config").capabilities
-
-require("lspconfig").rust_analyzer.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
+vim.lsp.config("rust_analyzer", {
 	settings = {
 		["rust-analyzer"] = {
 			cargo = {
@@ -16,6 +11,7 @@ require("lspconfig").rust_analyzer.setup({
 					"inactive-code",
 				},
 			},
+
 			signatureHelp = {
 				dynamicRegistration = true,
 				signatureInformation = {
@@ -26,6 +22,7 @@ require("lspconfig").rust_analyzer.setup({
 					},
 				},
 			},
+
 			completion = {
 				completionItem = {
 					-- commitCharactersSupport = true,
@@ -45,7 +42,13 @@ require("lspconfig").rust_analyzer.setup({
 					enable = true,
 				},
 			},
+
+			experimental = {
+				serverStatusNotification = true,
+			},
 			-- on_attach = my_custom_attach,
 		},
 	},
 })
+
+vim.lsp.enable("rust_analyzer")
