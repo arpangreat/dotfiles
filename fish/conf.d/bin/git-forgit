@@ -414,7 +414,7 @@ _forgit_show() {
         --bind=\"alt-t:transform:[[ ! \\\"\$FZF_PREVIEW_LABEL\\\" =~ 'Diff' ]] &&
                 echo 'change-preview-label( Diff )+refresh-preview' ||
                 echo 'change-preview-label( Commit Message )+refresh-preview'\"
-        $FORGIT_DIFF_FZF_OPTS
+        $FORGIT_SHOW_FZF_OPTS
         --prompt=\"${commit} > \"
     "
     _forgit_show_git_opts=()
@@ -849,10 +849,10 @@ _forgit_checkout_branch() {
     [[ -z "$branch" ]] && return 1
 
     # track the remote branch if possible
-    if [[ "$branch" == "remotes/origin/"* ]]; then
-        if git branch | grep -qw "${branch#remotes/origin/}"; then
+    if [[ "$branch" == "remotes/"* ]]; then
+        if git branch | grep -qw "${branch#remotes/*/}"; then
             # hack to force creating a new branch which tracks the remote if a local branch already exists
-            _forgit_git_checkout_branch -b "track/${branch#remotes/origin/}" --track "$branch"
+            _forgit_git_checkout_branch -b "track/${branch#remotes/*/}" --track "$branch"
         elif ! _forgit_git_checkout_branch --track "$branch" 2>/dev/null; then
             _forgit_git_checkout_branch "$branch"
         fi

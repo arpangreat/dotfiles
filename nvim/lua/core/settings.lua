@@ -35,6 +35,7 @@ vim.opt.winblend = 0
 vim.opt.pumblend = 0
 vim.opt.textwidth = 80
 vim.opt.ruler = true
+-- vim.opt.winborder = "bold"
 -- vim.opt.cmdheight = 0
 
 -- Visuals
@@ -112,3 +113,5 @@ vim.g.undotree_HighlightChangedWithSign = 1
 
 -- Tmux
 -- vim.g.tmux_navigator_no_mapping = 1
+
+-- require("vim._extui").enable({})

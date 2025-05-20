@@ -2,11 +2,8 @@ local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 
 local workspace_dir = "/path/to/workspace-root/" .. project_name
 
-local on_attach = require("plugins.lsp.config").on_attach
-local capabilities = require("plugins.lsp.config").capabilities
-
 -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
-local config = {
+vim.lsp.config("jdtls", {
 	-- The command that starts the language server
 	-- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
 	cmd = {
@@ -69,7 +66,6 @@ local config = {
 	init_options = {
 		bundles = {},
 	},
-}
--- This starts a new client & server,
--- or attaches to an existing client & server depending on the `root_dir`.
-require("lspconfig").jdtls.setup({ config, on_attach = on_attach, capabilities = capabilities })
+})
+
+vim.lsp.enable("jdtls")

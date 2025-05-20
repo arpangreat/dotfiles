@@ -14,32 +14,35 @@ return {
 
 		vim.diagnostic.config({
 			-- virtual_text = {
+			-- 	-- enabled = false,
 			-- 	prefix = "●", -- Could be '●', '▎', 'x'
 			-- 	spacing = 4,
-			-- 	source = "if_many",
+			-- 	source = true,
 			-- 	hl_mode = "blend",
 			-- },
-			virtual_text = false,
-			-- virtual_lines = true,
+			-- virtual_text = false,
+			virtual_lines = {
+				current_line = true,
+			},
 			signs = {
-				texthl = {
-					[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
-					[vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
-					[vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
-					[vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
-				},
+				-- texthl = {
+				-- 	[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
+				-- 	[vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
+				-- 	[vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
+				-- 	[vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
+				-- },
 				text = {
 					[vim.diagnostic.severity.ERROR] = "",
 					[vim.diagnostic.severity.WARN] = "",
 					[vim.diagnostic.severity.HINT] = "",
 					[vim.diagnostic.severity.INFO] = "",
 				},
-				linehl = {
-					[vim.diagnostic.severity.ERROR] = "ErrorMsg",
-					[vim.diagnostic.severity.WARN] = "WarnMsg",
-					[vim.diagnostic.severity.HINT] = "HintMsg",
-					[vim.diagnostic.severity.INFO] = "InfoMsg",
-				},
+				-- linehl = {
+				-- 	[vim.diagnostic.severity.ERROR] = "ErrorMsg",
+				-- 	[vim.diagnostic.severity.WARN] = "WarnMsg",
+				-- 	[vim.diagnostic.severity.HINT] = "HintMsg",
+				-- 	[vim.diagnostic.severity.INFO] = "InfoMsg",
+				-- },
 				numhl = {
 					[vim.diagnostic.severity.ERROR] = "ErrorMsg",
 					[vim.diagnostic.severity.WARN] = "WarnMsg",
@@ -49,16 +52,24 @@ return {
 			},
 			update_in_insert = false,
 			undercurl = true,
-			severity_sort = true,
+			-- severity_sort = true,
 			float = {
-				scope = "cursor",
-				focusable = true,
-				style = "minimal",
+				scope = "line",
+				-- focusable = true,
+				-- style = "minimal",
 				border = "single",
-				source = "if_many",
-				header = "",
-				prefix = "",
+				-- source = "if_many",
+				-- header = "",
+				-- prefix = "",
 			},
+			jump = {
+				float = true,
+			},
+		})
+
+		vim.lsp.config("*", {
+			on_attach = require("plugins.lsp.config").on_attach,
+			capabilities = require("plugins.lsp.config").capabilities,
 		})
 
 		require("plugins.lsp.handlers")
