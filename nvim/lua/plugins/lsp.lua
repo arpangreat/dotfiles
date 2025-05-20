@@ -67,6 +67,11 @@ return {
 			},
 		})
 
+		vim.lsp.config("*", {
+			on_attach = require("plugins.lsp.config").on_attach,
+			capabilities = require("plugins.lsp.config").capabilities,
+		})
+
 		require("plugins.lsp.handlers")
 		require("plugins.lsp.clangd")
 		require("plugins.lsp.go")

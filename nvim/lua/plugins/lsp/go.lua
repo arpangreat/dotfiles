@@ -1,9 +1,4 @@
-local on_attach = require("plugins.lsp.config").on_attach
-local capabilities = require("plugins.lsp.config").capabilities
-
-local lspconfig = require("lspconfig")
-
-lspconfig.gopls.setup({
+vim.lsp.config("gopls", {
 	cmd = { "gopls" },
 	-- filetypes = { "go", "gomod" },
 	-- root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
@@ -25,6 +20,6 @@ lspconfig.gopls.setup({
 			},
 		},
 	},
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
+
+vim.lsp.enable("gopls")
