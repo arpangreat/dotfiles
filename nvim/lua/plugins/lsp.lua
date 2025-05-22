@@ -62,7 +62,7 @@ return {
 				-- header = "",
 				-- prefix = "",
 			},
-			jump = {
+			on_jump = {
 				float = true,
 			},
 		})

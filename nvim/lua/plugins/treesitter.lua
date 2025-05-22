@@ -1,10 +1,13 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
-	event = { "VeryLazy" },
+	-- event = { "VeryLazy" },
+	lazy = false,
+	-- branch = "main",
 	dependencies = {
 		-- "JoosepAlviste/nvim-ts-context-commentstring",
 	},
+	-- opts = {},
 	config = function()
 		require("nvim-treesitter.configs").setup({
 			highlight = {
@@ -25,24 +28,24 @@ return {
 			},
 		})
 
-		local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+		-- 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
-		---@class parser_config
-		parser_config.blade = {
-			install_info = {
-				url = "https://github.com/EmranMR/tree-sitter-blade",
-				files = { "src/parser.c" },
-				branch = "main",
-			},
+		-- 	---@class parser_config
+		-- 	parser_config.blade = {
+		-- 		install_info = {
+		-- 			url = "https://github.com/EmranMR/tree-sitter-blade",
+		-- 			files = { "src/parser.c" },
+		-- 			branch = "main",
+		-- 		},
 
-			filetype = "blade",
-		}
+		-- 		filetype = "blade",
+		-- 	}
 
-		vim.filetype.add({
-			pattern = {
-				[".*%.blade%.php"] = "blade",
-			},
-		})
-		-- require("ts_context_commentstring").setup({ enable_autocmd = false })
+		-- 	vim.filetype.add({
+		-- 		pattern = {
+		-- 			[".*%.blade%.php"] = "blade",
+		-- 		},
+		-- 	})
+		-- 	-- require("ts_context_commentstring").setup({ enable_autocmd = false })
 	end,
 }

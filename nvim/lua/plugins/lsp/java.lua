@@ -66,6 +66,8 @@ vim.lsp.config("jdtls", {
 	init_options = {
 		bundles = {},
 	},
+	on_attach = require("plugins.lsp.config").on_attach,
+	capabilities = require("plugins.lsp.config").capabilities,
 })
 
 vim.lsp.enable("jdtls")
