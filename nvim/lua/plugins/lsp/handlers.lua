@@ -49,6 +49,8 @@ vim.lsp.config("denols", {
 			},
 		},
 	},
+	on_attach = require("plugins.lsp.config").on_attach,
+	capabilities = require("plugins.lsp.config").capabilities,
 })
 vim.lsp.enable("denols")
 

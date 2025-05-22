@@ -20,6 +20,8 @@ vim.lsp.config("gopls", {
 			},
 		},
 	},
+	on_attach = require("plugins.lsp.config").on_attach,
+	capabilities = require("plugins.lsp.config").capabilities,
 })
 
 vim.lsp.enable("gopls")

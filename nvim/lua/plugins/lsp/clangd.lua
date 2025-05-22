@@ -9,6 +9,8 @@ vim.lsp.config("clangd", {
 		"--completion-style=detailed",
 		"--offset-encoding=utf-16",
 	},
+	on_attach = require("plugins.lsp.config").on_attach,
+	capabilities = require("plugins.lsp.config").capabilities,
 })
 
 vim.lsp.enable("clangd", true)
