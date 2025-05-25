@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPost", "BufNewFile" },
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		--[[ local signs = {
 			{ name = "DiagnosticSignError", text = "" },
