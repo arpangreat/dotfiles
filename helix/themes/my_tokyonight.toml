@@ -1,29 +1,23 @@
 inherits = "tokyonight_night"
-
 constant = { fg = "orange", style = "bold" }
 constructor = { fg = "aqua", style = "italic" }
-
 "diagnostic.hint" = { underline = { style = "dash", color = "hint" } }
 "diagnostic.info" = { underline = { style = "line", color = "info" } }
 "diagnostic.warning" = { underline = { style = "dotted", color = "yellow" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
-
 function = { fg = "blue", modifiers = ["italic"] }
 keyword = { fg = "purple", modifiers = ["bold"] }
 namespace = { fg = "cyan", modifiers = ["bold", "italic"] }
 operator = { fg = "turquoise", modifiers = ["bold"] }
 string = { fg = "light-green", modifiers = ["italic"] }
 variable = { fg = "red", modifiers = ["italic"] }
-
 "markup.raw.inline" = { bg = "none", fg = "blue" }
-
 "ui.background" = { bg = "none", fg = "fg" }
 "ui.background.separator" = { fg = "teal" }
-
 "ui.linenr.selected" = { fg = "orange" }
 "ui.menu" = { bg = "none", fg = "fg" }
-"ui.menu.selected" = { fg = "turquoise" }
+"ui.menu.selected" = { bg = "#343a55" }
 "ui.selection" = { fg = "turquoise" }
 "ui.highlight" = { fg = "turquoise" }
 "ui.popup" = { bg = "none", fg = "teal" }
@@ -34,9 +28,7 @@ variable = { fg = "red", modifiers = ["italic"] }
 "ui.text" = { bg = "none" }
 "ui.text.info" = { bg = "none" }
 "ui.text.focus" = { fg = "turquoise" }
-
 "ui.window" = { fg = "turquoise" }
-
 "ui.picker.header.column" = { fg = "orange", underline.style = "line" }
 "ui.picker.header.column.active" = { fg = "purple", modifiers = [
   "bold",
