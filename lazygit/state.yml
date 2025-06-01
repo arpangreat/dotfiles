@@ -1,8 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/RustExs
     - /home/arpangreat/myjournal-app
+    - /home/arpangreat/Books
+    - /home/arpangreat/RustExs
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
     - /home/arpangreat/fzf
@@ -28,7 +29,6 @@ recentrepos:
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
     - /home/arpangreat/DSA-preps
-    - /home/arpangreat/Books
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
