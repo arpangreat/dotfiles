@@ -75,7 +75,9 @@ _git_forgit()
         rebase
         reset_head
         revert_commit
+        reword
         show
+        squash
         stash_show
         stash_push
     "
@@ -102,7 +104,9 @@ _git_forgit()
                 rebase) _git_rebase ;;
                 reset_head) _git_reset ;;
                 revert_commit) _git_revert ;;
+                reword) _git_branch ;;
                 show) _git_show ;;
+                squash) _git_branch ;;
                 stash_show) _git_stash_show ;;
             esac
             ;;
@@ -137,7 +141,9 @@ then
     __git_complete forgit::rebase _git_rebase
     __git_complete forgit::reset::head _git_reset
     __git_complete forgit::revert::commit _git_revert
+    __git_complete forgit::reword _git_branch
     __git_complete forgit::show _git_show
+    __git_complete forgit::squash _git_branch
     __git_complete forgit::stash::show _git_stash_show
 
     # Completion for forgit plugin shell aliases
@@ -157,7 +163,9 @@ then
         __git_complete "${forgit_rebase}" _git_rebase
         __git_complete "${forgit_reset_head}" _git_reset
         __git_complete "${forgit_revert_commit}" _git_revert
+        __git_complete "${forgit_reword_commit}" _git_branch
         __git_complete "${forgit_show}" _git_show
+        __git_complete "${forgit_squash}" _git_branch
         __git_complete "${forgit_stash_show}" _git_stash_show
     fi
 fi
