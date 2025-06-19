@@ -68,7 +68,7 @@ cursor-invert-fg-bg = true
 
 cursor-style-blink = false
 
-background-opacity = 0.90
+background-opacity = 0.92
 
 keybind = ctrl+enter=unbind
 # keybind = ctrl+comma=open_config

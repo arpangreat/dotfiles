@@ -1,0 +1,159 @@
+{
+  "RunType": "FPS",
+  "Labels": "fps unlimited, tmux-256color, 210x49, no_fire",
+  "RequestedQPS": "unlimited",
+  "RequestedDuration": "",
+  "ActualQPS": 8259.272491316427,
+  "ActualDuration": 7590135822,
+  "NumThreads": 0,
+  "Version": "fps 0.37.0 h1:u8FniPbj+IQ6Qwaq7jXDFzQneLCqCz3nOcjrLceh0+Q= go1.24.4 amd64 linux",
+  "DurationHistogram": {
+    "Count": 62689,
+    "Min": 0.000043498,
+    "Max": 0.01550422,
+    "Sum": 7.581561346999998,
+    "Avg": 0.00012093926122605239,
+    "StdDev": 0.00013681645808110758,
+    "Data": [
+      {
+        "Start": 0.000043498,
+        "End": 0.000044999999999999996,
+        "Percent": 0.2935124184466174,
+        "Count": 184
+      },
+      {
+        "Start": 0.000044999999999999996,
+        "End": 0.000049999999999999996,
+        "Percent": 13.476048429549044,
+        "Count": 8264
+      },
+      {
+        "Start": 0.000049999999999999996,
+        "End": 0.000059999999999999995,
+        "Percent": 36.59334173459459,
+        "Count": 14492
+      },
+      {
+        "Start": 0.000059999999999999995,
+        "End": 0.00007,
+        "Percent": 46.58393019509005,
+        "Count": 6263
+      },
+      {
+        "Start": 0.00007,
+        "End": 0.00007999999999999999,
+        "Percent": 55.78012091435499,
+        "Count": 5765
+      },
+      {
+        "Start": 0.00007999999999999999,
+        "End": 0.00008999999999999999,
+        "Percent": 60.64540828534512,
+        "Count": 3050
+      },
+      {
+        "Start": 0.00008999999999999999,
+        "End": 0.00009999999999999999,
+        "Percent": 63.9857072213626,
+        "Count": 2094
+      },
+      {
+        "Start": 0.00009999999999999999,
+        "End": 0.00019999999999999998,
+        "Percent": 83.02413501571249,
+        "Count": 11935
+      },
+      {
+        "Start": 0.00019999999999999998,
+        "End": 0.0003,
+        "Percent": 94.43283510663753,
+        "Count": 7152
+      },
+      {
+        "Start": 0.0003,
+        "End": 0.00039999999999999996,
+        "Percent": 98.11609692290513,
+        "Count": 2309
+      },
+      {
+        "Start": 0.00039999999999999996,
+        "End": 0.0005,
+        "Percent": 99.24707683963693,
+        "Count": 709
+      },
+      {
+        "Start": 0.0005,
+        "End": 0.00075,
+        "Percent": 99.71446346248943,
+        "Count": 293
+      },
+      {
+        "Start": 0.00075,
+        "End": 0.001,
+        "Percent": 99.8564341431511,
+        "Count": 89
+      },
+      {
+        "Start": 0.001,
+        "End": 0.002,
+        "Percent": 99.98085788575348,
+        "Count": 78
+      },
+      {
+        "Start": 0.002,
+        "End": 0.003,
+        "Percent": 99.99202411906396,
+        "Count": 7
+      },
+      {
+        "Start": 0.005,
+        "End": 0.0075,
+        "Percent": 99.99680964762558,
+        "Count": 3
+      },
+      {
+        "Start": 0.01,
+        "End": 0.01550422,
+        "Percent": 100,
+        "Count": 2
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.00007371465741543798
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.00015785295349811477
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.00026114513422818787
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0004781537376586747
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.001350141025641106
+      }
+    ]
+  },
+  "ErrorsDurationHistogram": null,
+  "Exactly": 0,
+  "Jitter": false,
+  "Uniform": false,
+  "NoCatchUp": false,
+  "RunID": 0,
+  "AccessLoggerInfo": "",
+  "ID": "2025-06-20-001724_fps_unlimited_tmux_256color_210x49_no_fire",
+  "RetCodes": {
+    "OK": 62689
+  },
+  "Destination": "tmux-256color",
+  "StartTime": "2025-06-20T00:17:17.075351416+05:30",
+  "QPSLabel": "FPS",
+  "ResponseLabel": "Frame duration"
+}
