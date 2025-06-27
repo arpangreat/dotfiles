@@ -19,7 +19,7 @@ max_workspaces = 9
 
 [scratchpads.volume]
 animation = "fromRight"
-command = "pavucontrol"
+command = "pavucontrol-qt"
 class = "org.pulseaudio.pavucontrol"
 position = "200% 5%"
 size = "40% 90%"
