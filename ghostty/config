@@ -68,7 +68,7 @@ cursor-invert-fg-bg = true
 
 cursor-style-blink = false
 
-background-opacity = 0.90
+background-opacity = 0.92
 
 keybind = ctrl+enter=unbind
 # keybind = ctrl+comma=open_config
@@ -147,7 +147,7 @@ shell-integration = fish
 shell-integration-features = cursor,no-sudo,title
 
 bold-is-bright = true
-
+async-backend = epoll
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom025.glsl
 
 # custom-shader-animation = true

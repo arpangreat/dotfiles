@@ -1,5 +1,6 @@
 vim.lsp.enable("pyright")
-vim.lsp.enable("taplo")
+-- vim.lsp.enable("taplo")
+vim.lsp.enable("tombi")
 
 vim.lsp.enable("ocamllsp")
 -- require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
