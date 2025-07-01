@@ -2,6 +2,7 @@ return {
 	"saghen/blink.cmp",
 	dependencies = "rafamadriz/friendly-snippets",
 	build = "cargo build --release --jobs 4",
+	event = "InsertEnter",
 	opts = {
 		keymap = {
 			preset = "enter",
@@ -19,12 +20,13 @@ return {
 				["<C-n>"] = { "select_next" },
 				["<C-p>"] = { "select_prev" },
 
-				["<CR>"] = { "accept_and_enter", "fallback" },
+				["<CR>"] = { "accept", "fallback" },
 				["<C-e>"] = { "cancel" },
 			},
 
 			completion = {
-				ghost_text = { enabled = true },
+				ghost_text = { enabled = false },
+				menu = { auto_show = false },
 			},
 		},
 
@@ -74,13 +76,30 @@ return {
 			},
 		},
 		sources = {
-			default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+			default = { "lazydev", "lsp", "path", "snippets" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
 					module = "lazydev.integrations.blink",
 					score_offset = 100,
 				},
+				--[[ cmdline = {
+					enabled = function()
+						local cmd_type = vim.fn.getcmdtype()
+						-- disable for '/', '?', '@', '=', '-', and '>'
+						if
+							cmd_type == "/"
+							or cmd_type == "?"
+							or cmd_type == "@"
+							or cmd_type == "="
+							or cmd_type == "-"
+							or cmd_type == ">"
+						then
+							return false
+						end
+						return true
+					end,
+				}, ]]
 				-- markdown = {
 				-- 	name = "RenderMarkdown",
 				-- 	module = "render-markdown.integ.blink",

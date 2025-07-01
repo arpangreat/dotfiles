@@ -16,7 +16,12 @@ M.on_attach = function(client, bufnr)
 	vim.keymap.set("n", "gR", "<cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "g0", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gW", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>", { noremap = true, silent = true })
-	vim.keymap.set("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", { noremap = true, silent = true })
+	vim.keymap.set(
+		"n",
+		"ga",
+		"<cmd>lua require('actions-preview').code_actions()<CR>",
+		{ noremap = true, silent = true }
+	)
 	vim.keymap.set("n", "gk", "<cmd>lua vim.diagnostic.jump({count = -1})<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gj", "<cmd>lua vim.diagnostic.jump({count = 1})<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
