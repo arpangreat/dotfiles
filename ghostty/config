@@ -147,7 +147,7 @@ shell-integration = fish
 shell-integration-features = cursor,no-sudo,title
 
 bold-is-bright = true
-
+async-backend = epoll
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom025.glsl
 
 # custom-shader-animation = true
