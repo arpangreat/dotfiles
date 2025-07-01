@@ -2,6 +2,7 @@ return {
 	"saghen/blink.cmp",
 	dependencies = "rafamadriz/friendly-snippets",
 	build = "cargo build --release --jobs 4",
+	event = "InsertEnter",
 	opts = {
 		keymap = {
 			preset = "enter",
@@ -19,12 +20,13 @@ return {
 				["<C-n>"] = { "select_next" },
 				["<C-p>"] = { "select_prev" },
 
-				["<CR>"] = { "accept_and_enter", "fallback" },
+				["<CR>"] = { "accept", "fallback" },
 				["<C-e>"] = { "cancel" },
 			},
 
 			completion = {
 				ghost_text = { enabled = true },
+				menu = { auto_show = false },
 			},
 		},
 

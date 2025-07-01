@@ -1,7 +1,7 @@
 return {
-	"williamboman/mason.nvim",
+	"mason-org/mason.nvim",
 	event = "VeryLazy",
-	branch = "main",
+	-- branch = "main",
 	config = function()
 		require("mason").setup({
 			ui = {
