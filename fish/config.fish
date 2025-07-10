@@ -51,8 +51,8 @@ set -g JAVA_HOME /usr/lib/jvm/default
 set -g GOPATH $HOME/go
 
 set -g LLVM_ROOT $HOME/llvm-project
-set -g CHROME_EXECUTABLE /usr/bin/brave
-set -g ANDROID_HOME /home/arpangreat/Android/Sdk
+set -g CHROME_EXECUTABLE /usr/bin/zen-browser
+set -g ANDROID_SDK_ROOT /opt/android-sdk
 
 set -g MAKEFLAGS -j4
 
@@ -87,6 +87,9 @@ fish_add_path $JAVA_HOME/bin
 fish_add_path /usr/bin/flutter/bin
 fish_add_path $HOME/Downloads/RustRover-2024.1/bin
 fish_add_path $KITTY_INSTALLATION_DIR:$HOME/kitty
+fish_add_path $ANDROID_SDK_ROOT/cmdline-tools/latest/bin
+fish_add_path $ANDROID_SDK_ROOT/platform-tools
+fish_add_path /home/arpangreat/flutter/bin
 
 zoxide init fish --cmd cd | source
 
