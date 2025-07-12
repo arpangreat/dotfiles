@@ -41,7 +41,6 @@ right = [
   "file-line-ending",
   "file-type",
 ]
-
 separator = "│"
 mode.normal = "NOR"
 mode.insert = "INS"

@@ -5,3 +5,4 @@ nushell/history.txt
 emacs/elpa
 emacs/eln-cache
 fish/completions/fish/**
+helix/runtime
