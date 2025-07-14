@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/fzf
     - /home/arpangreat/rofi-calc
     - /home/arpangreat/myjournal-app
     - /home/arpangreat/PythonExs
@@ -11,7 +12,6 @@ recentrepos:
     - /home/arpangreat/RustExs
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
-    - /home/arpangreat/fzf
     - /home/arpangreat/kitty
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
