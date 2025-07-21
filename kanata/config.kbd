@@ -1,6 +1,7 @@
 ;; defsrc is still necessary
 (defcfg
   process-unmapped-keys yes
+  concurrent-tap-hold yes
 )
 
 (defsrc
