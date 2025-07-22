@@ -1,0 +1,19 @@
+[build]
+target-dir = "/home/arpangreat/.cargo/target-global"
+rustc-wrapper = "sccache"
+
+[profile.dev]
+opt-level = 0
+debug = true
+incremental = true
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = "thin"
+codegen-units = 4
+
+[target.x86_64-unknown-linux-gnu]
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
