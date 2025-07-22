@@ -51,7 +51,7 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon}  {percent}%",
+        "format": "{icon} {percent}%",
         "format-icons": ["", ""]
     },
     "battery": {
@@ -67,7 +67,7 @@
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        "format-wifi": "  {signalStrength}%",
+        "format-wifi": " {signalStrength}%",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "format-linked": "",
         "format-disconnected": "⚠",
@@ -75,7 +75,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "{icon}{volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
