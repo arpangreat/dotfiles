@@ -1,22 +1,16 @@
-configuration{
-    modi: "run,drun,window,filebrowser";
-    lines: 5;
-    show-icons: true;
-    icon-theme: "Oranchelo";
-    terminal: "ghostty";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-drun: "   Apps ";
-    display-run: "   Run ";
-    display-window: " 﩯  window";
-    display-Network: " 󰤨  Network";
-    sidebar-mode: true;
-}
+* {
+    bg-col:  #24283b;
+    bg-col-light: #24283b;
+    border-col: #24283b;
+    selected-col: #24283b;
+    blue: #7aa2f7;
+    fg-col: #c0caf5;
+    fg-col2: #73daca;
+    grey: #737aa2;
 
-// @theme "catppuccin"
-@theme "tokyonight"
+    width: 600;
+    font: "Maple Mono NF 14";
+}
 
 element-text, element-icon , mode-switcher {
     background-color: inherit;
@@ -32,6 +26,7 @@ window {
 
 mainbox {
     background-color: @bg-col;
+    children: [inputbar, message, listview, mode-switcher];
 }
 
 inputbar {
@@ -66,6 +61,7 @@ listview {
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
     columns: 2;
+    lines: 5;
     background-color: @bg-col;
 }
 
@@ -100,3 +96,4 @@ button selected {
   background-color: @bg-col;
   text-color: @blue;
 }
+
