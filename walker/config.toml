@@ -270,3 +270,36 @@ placeholder = "Translation"
 switcher_only = true
 provider = "googlefree"
 hidden = true
+
+[[plugins]]
+keep_sort = false
+name = "power"
+placeholder = "Power"
+recalculate_score = true
+show_icon_when_single = true
+switcher_only = true
+
+[[plugins.entries]]
+exec = "systemctl poweroff"
+icon = "system-shutdown"
+label = "Shutdown"
+
+[[plugins.entries]]
+exec = "systemctl reboot"
+icon = "system-reboot"
+label = "Reboot"
+
+[[plugins.entries]]
+exec = "systemctl hibernate"
+icon = "system-hibernate"
+label = "Hibernate"
+
+[[plugins.entries]]
+exec = "systemctl suspend"
+icon = "system-suspend"
+label = "Suspend"
+
+[[plugins.entries]]
+exec = "loginctl terminate-session ${XDG_SESSION_ID-}"
+icon = "system-logout"
+label = "Logout"
