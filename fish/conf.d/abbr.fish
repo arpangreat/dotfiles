@@ -1,6 +1,5 @@
 abbr nv nvim
 abbr e emacs
-abbr h hx
 abbr en emacs -nw
 abbr ec emacsclient
 abbr g git

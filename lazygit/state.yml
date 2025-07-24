@@ -1,16 +1,19 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/cli
+    - /home/arpangreat/argc-completions
+    - /home/arpangreat/fzf
+    - /home/arpangreat/rofi-calc
     - /home/arpangreat/myjournal-app
+    - /home/arpangreat/PythonExs
+    - /home/arpangreat/nnn
+    - /home/arpangreat/cli
     - /home/arpangreat/peda
     - /home/arpangreat/Books
     - /home/arpangreat/RustExs
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
-    - /home/arpangreat/fzf
     - /home/arpangreat/kitty
-    - /home/arpangreat/nnn
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
@@ -26,7 +29,6 @@ recentrepos:
     - /home/arpangreat/job-management
     - /home/arpangreat/mono-dots
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
-    - /home/arpangreat/PythonExs
     - /home/arpangreat/CExamples
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
