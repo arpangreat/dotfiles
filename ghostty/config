@@ -165,6 +165,6 @@ maximize = true
 custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
 
-# custom-shader-animation = true
+custom-shader-animation = true
 
 # term = xterm-ghostty

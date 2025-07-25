@@ -28,7 +28,7 @@ require("lazy").setup({ { import = "plugins" } }, {
 			enable = true,
 		},
 		rtp = {
-			disabled_plugin = {
+			disabled_plugins = {
 				"netrw",
 				"matchit",
 				"netrwPlugin",
