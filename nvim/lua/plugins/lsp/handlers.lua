@@ -58,6 +58,8 @@ vim.lsp.enable("denols")
 vim.lsp.enable("cssls")
 
 vim.lsp.enable("sourcekit")
+
+vim.lsp.enable("marksman")
 -- lspconfig.stimulus_ls.setup({
 -- 	on_attach = on_attach,
 -- 	capabilities = capabilities,
