@@ -1,7 +1,7 @@
 return {
 	"j-hui/fidget.nvim",
 	event = "VeryLazy",
-	-- enabled = false,
+	enabled = false,
 	opts = {
 		progress = {
 			lsp = {

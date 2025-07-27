@@ -1,15 +1,16 @@
 return {
 	"folke/tokyonight.nvim",
 	priority = 1000,
+	-- lazy = false,
 	-- enabled = false,
 	config = function()
 		require("tokyonight").setup({
-			-- style = "storm",
+			style = "moon",
 			transparent = true,
 			-- terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 			styles = {
 				-- comments = { italic = true },
-				keywords = { bold = true },
+				keywords = { bold = true, italic = true },
 				functions = { italic = true },
 				variables = { italic = true, bold = true },
 				sidebars = "transparent", -- style for sidebars, see below
@@ -20,7 +21,7 @@ return {
 			dim_inactive = true, -- dims inactive windows
 			lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 
-			-- cache = false,
+			cache = true,
 
 			---@class colors
 			on_colors = function(colors)
