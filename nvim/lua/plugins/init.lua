@@ -1,18 +1,4 @@
 return {
-	{
-		"uga-rosa/ccc.nvim",
-		event = "VeryLazy",
-		enabled = false,
-		init = function()
-			require("ccc").setup({
-				highlighter = {
-					auto_enable = true,
-					lsp = true,
-				},
-			})
-		end,
-	},
-
 	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
 	{ "mbbill/undotree", event = "VeryLazy" },
 	-- {
@@ -38,15 +24,6 @@ return {
 			require("mini.cursorword").setup()
 		end,
 	},
-	-- { "WhoIsSethDaniel/lualine-lsp-progress.nvim", event = "VeryLazy" },
-	{
-		"stevearc/dressing.nvim",
-		enabled = false,
-		event = "VeryLazy",
-		-- config = function()
-		-- 	require("dressing").setup()
-		-- end,
-	},
 	{
 		"kevinhwang91/nvim-bqf",
 		event = "VeryLazy",
@@ -70,7 +47,7 @@ return {
 		specs = {
 			{
 				"nvim-tree/nvim-web-devicons",
-				enabled = false,
+				enabled = true,
 				optional = true,
 			},
 		},
@@ -126,28 +103,5 @@ return {
 	{
 		"canop/nvim-bacon",
 		ft = "rust",
-	},
-	{
-		"rachartier/tiny-inline-diagnostic.nvim",
-		enabled = false,
-		event = "VeryLazy", -- Or `LspAttach`
-		priority = 1000, -- needs to be loaded in first
-		config = function()
-			require("tiny-inline-diagnostic").setup({
-
-				preset = "classic",
-				transparent_bg = true,
-
-				options = {
-					show_source = true,
-					use_icons_from_diagnostic = true,
-					multiple_diag_under_cursor = true,
-					multilines = true,
-					show_all_diags_on_cursorline = true,
-				},
-
-				severity = {},
-			})
-		end,
 	},
 }
