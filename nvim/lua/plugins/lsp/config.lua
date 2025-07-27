@@ -7,7 +7,7 @@ M.on_attach = function(client, bufnr)
 	client.server_capabilities.didSave = false
 
 	vim.keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { noremap = true, silent = true })
-	vim.keymap.set("n", "K", "<cmd>FzfLua require('pretty_hover').hover()<CR>", { noremap = true, silent = true })
+	-- vim.keymap.set("n", "K", "<cmd>lua require('pretty_hover').hover()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", { noremap = true, silent = true })
