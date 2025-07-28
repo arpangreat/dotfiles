@@ -110,7 +110,7 @@ vim.api.nvim_set_keymap("n", "<Leader>ftc", ":TodoFzfLua<CR>", { noremap = true,
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>q", ":q<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>ex", ":q!<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>ex", ":qa!<CR>", { noremap = true, silent = false })
 
 -- Toggleterm
 -- vim.api.nvim_set_keymap("n", "<Leader>gg", ":ToggleTerm<CR>", { noremap = true, silent = true })

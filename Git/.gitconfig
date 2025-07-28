@@ -6,8 +6,7 @@
 [init]
 	defaultBranch = main
 [core]
-    pager = delta
-    excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 	editor = nvim
 [push]
 	default = simple
@@ -22,7 +21,6 @@
 [alias]
   a = "!git status --short | fzf | awk '{print $2}' | xargs git add"
   co = "!git branch -l | fzf | awk '{print $2}' | xargs git checkout"
-  d = "!git diff | dunk"
   ci = commit
   ca = commit -a
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -52,11 +50,17 @@
   protocol = https
 [github]
 	user = arpangreat
-[diff]
-  tool = nvimdiff
+[diff "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+
 [difftool "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
-	path = 
+
+[difftool "nvimdiff4"]
+	cmd = nvim -d \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+
+[merge]
+  tool = nvimdiff
 
 [mergetool "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
@@ -67,26 +71,6 @@
 	required = true
 	process = git-lfs filter-process
 
-[delta]
-    features = decorations
-    line-numbers = true
-    side-by-side = true
-
-[delta "interactive"]
-    keep-plus-minus-markers = false
-
-[delta "decorations"]
-    commit-decoration-style = blue ol
-    commit-style = raw
-    file-style = omit
-    hunk-header-decoration-style = blue box
-    hunk-header-file-style = red
-    hunk-header-line-number-style = "#067a00"
-    hunk-header-style = file line-number syntax
-
-[ghq "https://git.example.com/repos/"]
-vcs = git
-root = ~/
 [pull]
 	rebase = false
 [url "https://github.com/"]
@@ -101,3 +85,5 @@ root = ~/
 	sort = -committerdate
 [maintenance]
 	repo = /home/arpangreat/dotfiles
+[rebase]
+	updateRefs = true
