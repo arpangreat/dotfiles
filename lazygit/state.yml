@@ -37,7 +37,8 @@ recentrepos:
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
 lastversion: unversioned
-customcommandshistory: []
+customcommandshistory:
+    - gh pr create --fill
 hidecommandlog: true
 ignorewhitespaceindiffview: false
 diffcontextsize: 2
