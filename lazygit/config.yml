@@ -46,7 +46,13 @@ customCommands:
     output: terminal
   - key: "p"
     description: "Create Pull Request (select branches)"
-    command: "gh pr create --head {{.SelectedLocalBranch.name}} --base {{.SelectedLocalBranch.name}}"
+    command: "gh pr create --head {{.SelectedLocalBranch.Name}} --base {{.Form.Branch}}"
     context: "localBranches"
     output: "terminal"
+    prompts:
+      - type: "input"
+        title: "Which Branch?"
+        key: "Branch"
+        suggestions:
+          preset: "branches"
     loadingText: "Creating Pull Request..."
