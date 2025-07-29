@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/ghostty
     - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
@@ -17,7 +18,6 @@ recentrepos:
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
-    - /home/arpangreat/ghostty
     - /home/arpangreat/TypescriptExs
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/javaexsnew
@@ -38,6 +38,7 @@ recentrepos:
 startuppopupversion: 5
 lastversion: unversioned
 customcommandshistory:
+    - git branch
     - gh pr create --fill
 hidecommandlog: true
 ignorewhitespaceindiffview: false
