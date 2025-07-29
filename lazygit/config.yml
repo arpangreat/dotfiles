@@ -56,3 +56,17 @@ customCommands:
         suggestions:
           preset: "branches"
     loadingText: "Creating Pull Request..."
+  - key: "P"
+    context: "localBranches"
+    loadingText: "Merging GitHub Pull Request..."
+    command: "gh pr merge {{.Form.PullRequestNumber}}"
+    prompts:
+      - type: "menuFromCommand"
+        title: "Which PR do you want to merge?"
+        key: "PullRequestNumber"
+        command: >-
+          gh pr list --json number,title,headRefName,updatedAt
+          --template '{{`{{range .}}{{printf "#%v: %s - %s (%s)" .number .title .headRefName (timeago .updatedAt)}}{{end}}`}}'
+        filter: '#(?P<number>[0-9]+): (?P<title>.+) - (?P<ref_name>[^ ]+).*'
+        valueFormat: '{{.number}}'
+        labelFormat: '{{"#" | black | bold}}{{.number | white | bold}} {{.title | yellow | bold}}{{" [" | black | bold}}{{.ref_name | green}}{{"]" | black | bold}}'
