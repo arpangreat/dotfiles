@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/fzf
@@ -10,7 +11,6 @@ recentrepos:
     - /home/arpangreat/nnn
     - /home/arpangreat/cli
     - /home/arpangreat/peda
-    - /home/arpangreat/RustExs
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
     - /home/arpangreat/kitty
