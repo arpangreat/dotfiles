@@ -6,3 +6,4 @@ emacs/elpa
 emacs/eln-cache
 fish/completions/fish/**
 helix/runtime
+lazygit/state.yml
