@@ -44,3 +44,9 @@ customCommands:
     context: "files"
     loadingText: "opening commitizen commit tool"
     output: terminal
+  - key: "p"
+    description: "Create Pull Request (select branches)"
+    command: "gh pr create --head {{.SelectedLocalBranch.name}} --base {{.SelectedLocalBranch.name}}"
+    context: "localBranches"
+    output: "terminal"
+    loadingText: "Creating Pull Request..."
