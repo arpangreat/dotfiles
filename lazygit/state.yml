@@ -38,6 +38,7 @@ recentrepos:
 startuppopupversion: 5
 lastversion: unversioned
 customcommandshistory:
+    - git branch
     - gh pr create --fill
 hidecommandlog: true
 ignorewhitespaceindiffview: false
