@@ -104,4 +104,8 @@ return {
 		"canop/nvim-bacon",
 		ft = "rust",
 	},
+	{
+		"b0o/SchemaStore.nvim",
+		lazy = true,
+	},
 }
