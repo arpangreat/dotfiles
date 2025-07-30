@@ -5,7 +5,8 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock",
+    "custom/swaync", "tray"],
     // Modules configuration
     "hyprland/workspaces": {
          "disable-scroll": true,
@@ -51,7 +52,7 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon} {percent}%",
+        "format": "{icon}  {percent}%",
         "format-icons": ["", ""]
     },
     "battery": {
@@ -67,7 +68,7 @@
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        "format-wifi": " {signalStrength}%",
+        "format-wifi": "  {signalStrength}%",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "format-linked": "",
         "format-disconnected": "⚠",
@@ -75,31 +76,36 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}{volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
     },
-    "custom/notification": {
+    "hyprland/window": {
+        "max-length": 200,
+        "separate-outputs": true
+    },
+    "custom/swaync": {
       "tooltip": false,
-      "format": "{icon}",
+      "format": " {} {icon} ",
       "format-icons": {
         "notification": "<span foreground='red'><sup></sup></span>",
         "none": "",
         "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": ""
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
       "exec": "swaync-client -swb",
       "on-click": "swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
-      "escape": true
-    },
-    "hyprland/window": {
-        "max-length": 200,
-        "separate-outputs": true
+      "escape": true,
+      "spacing": 10
     },
 }
