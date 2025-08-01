@@ -69,6 +69,10 @@ set -ga fish_user_paths /home/arpangreat/.rye/env
 
 set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
+
+set -gx LD ld.lld
+set -gx LDFLAGS "-fuse-ld=lld"
+
 fish_add_path $GOPATH/go/bin
 fish_add_path /usr/local/go/bin/
 fish_add_path $HOME/.cargo/env
@@ -119,7 +123,7 @@ eval (batpipe)
 source $HOME/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
 source $HOME/dotfiles/fish/tokyonight_moon.fish
 
-symfony completion | source
+# symfony completion | source
 
 cod init $fish_pid fish | source
 
