@@ -20,6 +20,7 @@
   "lspkind-nvim": { "branch": "master", "commit": "d79a1c3299ad0ef94e255d045bed9fa26025dab6" },
   "lualine.nvim": { "branch": "master", "commit": "a94fc68960665e54408fe37dcf573193c4ce82c9" },
   "luvit-meta": { "branch": "main", "commit": "1df30b60b1b4aecfebc785aa98943db6c6989716" },
+  "markview.nvim": { "branch": "main", "commit": "ec33f2aa333ca1d76f51847922578434d7aeadf7" },
   "mason.nvim": { "branch": "main", "commit": "3671ab0d40aa5bd24b1686562bd0a23391ecf76a" },
   "mini.cursorword": { "branch": "main", "commit": "52834085b4ad175a050343cd96c4517def711cc5" },
   "mini.hipatterns": { "branch": "main", "commit": "2b78f3d475d60ea1793a6d595ff65a0db9ac3a67" },

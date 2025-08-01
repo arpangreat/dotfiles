@@ -1,9 +1,9 @@
-lastupdatecheck: 0
+lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/ghostty
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/fzf
-    - /home/arpangreat/ghostty
     - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
@@ -37,7 +37,7 @@ recentrepos:
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
-lastversion: unversioned
+lastversion: 0.53.0
 customcommandshistory:
     - git branch
     - gh pr create --fill
