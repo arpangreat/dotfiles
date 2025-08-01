@@ -1,11 +1,12 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
+    - /home/arpangreat/fzf
     - /home/arpangreat/ghostty
     - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
-    - /home/arpangreat/fzf
     - /home/arpangreat/rofi-calc
     - /home/arpangreat/myjournal-app
     - /home/arpangreat/PythonExs
