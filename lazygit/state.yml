@@ -37,7 +37,7 @@ recentrepos:
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
-lastversion: 0.53.0
+lastversion: unversioned
 customcommandshistory:
     - git branch
     - gh pr create --fill
