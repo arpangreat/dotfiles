@@ -1,6 +1,6 @@
 terminal_title_flag = ""
 locale = ""
-close_when_open = true  # Toggle on reopen
+close_when_open = true   # Toggle on reopen
 # theme = "my-theme"
 theme = "omarchy-default"
 theme_base = []
@@ -106,10 +106,10 @@ url = "https://manuals.omamix.org/2/the-omarchy-manual"
 keywords = ["omarchy"]
 
 [builtins.xdph_picker]
-hidden = true
 weight = 5
 placeholder = "Screen/Window Picker"
 show_sub_when_single = true
+switcher_only = true
 name = "xdphpicker"
 
 [builtins.ai]
@@ -132,13 +132,14 @@ weight = 5
 name = "Calculator"
 icon = "accessories-calculator"
 placeholder = "Calculator"
-min_chars = 3  # Min chars to calculate. 3 allows "3+3"
+min_chars = 3                   # Min chars to calculate. 3 allows "3+3"
 
 [builtins.windows]
 weight = 5
 icon = "view-restore"
 name = "windows"
 placeholder = "Windows"
+switcher_only = true
 show_icon_when_single = true
 
 [builtins.clipboard]
@@ -208,8 +209,8 @@ name = "runner"
 placeholder = "Runner"
 typeahead = true
 history = true
-generic_entry = false  # Generic command runner
-shell_config = ""  # Path to shell to parse for aliases
+generic_entry = false       # Generic command runner
+shell_config = ""           # Path to shell to parse for aliases
 refresh = true
 use_fd = false
 
