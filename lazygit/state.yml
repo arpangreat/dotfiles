@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/ghostty
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/fzf
@@ -24,7 +25,6 @@ recentrepos:
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work
-    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/go
     - /home/arpangreat/zig-examples
     - /home/arpangreat/job-management

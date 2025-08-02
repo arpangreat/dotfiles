@@ -1,7 +1,6 @@
 return {
 	"eldritch-theme/eldritch.nvim",
 	lazy = false,
-	enabled = false,
 	priority = 1000,
 	opts = {
 		-- your configuration comes here
