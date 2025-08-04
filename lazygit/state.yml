@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/ghostty
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
@@ -29,7 +30,6 @@ recentrepos:
     - /home/arpangreat/zig-examples
     - /home/arpangreat/job-management
     - /home/arpangreat/mono-dots
-    - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/CExamples
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders

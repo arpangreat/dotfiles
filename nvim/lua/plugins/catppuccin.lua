@@ -77,9 +77,7 @@ return {
 				},
 			},
 
-			navic = true,
 			which_key = true,
-			fidget = true,
 			fzf = true,
 		},
 		compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
