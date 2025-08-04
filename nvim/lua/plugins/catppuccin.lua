@@ -39,10 +39,10 @@ return {
 		color_overrides = {},
 		custom_highlights = function(colors)
 			return {
-				MiniCursorword = { bg = colors.surface1, style = {} },
-				MiniCursorwordCurrent = { bg = colors.surface1, style = {} },
-				["@variable"] = { fg = colors.maroon },
-				["@variable.other.member"] = { fg = colors.maroon },
+				-- MiniCursorword = { bg = colors.surface1, style = {} },
+				-- MiniCursorwordCurrent = { bg = colors.surface1, style = {} },
+				-- ["@variable"] = { fg = colors.maroon },
+				-- ["@variable.other.member"] = { fg = colors.maroon },
 			}
 		end,
 		default_integrations = true,
