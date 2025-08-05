@@ -40,7 +40,6 @@ return {
 			},
 		},
 	},
-	{ "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
 	{
 		"echasnovski/mini.icons",
 		lazy = true,
@@ -99,10 +98,6 @@ return {
 		"Fildo7525/pretty_hover",
 		event = "LspAttach",
 		opts = {},
-	},
-	{
-		"canop/nvim-bacon",
-		ft = "rust",
 	},
 	{
 		"b0o/SchemaStore.nvim",
