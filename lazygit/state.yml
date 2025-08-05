@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/ghostty
@@ -17,7 +18,6 @@ recentrepos:
     - /home/arpangreat/peda
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
-    - /home/arpangreat/kitty
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
