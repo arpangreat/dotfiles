@@ -1,63 +1,52 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	event = "BufEnter",
+	event = "VeryLazy",
 	opts = function()
 		local utils = require("core.utils")
-		--[[ local copilot_colors = {
-			[""] = utils.get_hlgroup("Comment"),
-			["Normal"] = utils.get_hlgroup("Comment"),
-			["Warning"] = utils.get_hlgroup("DiagnosticError"),
-			["InProgress"] = utils.get_hlgroup("DiagnosticWarn"),
-		} ]]
-		-- local custom = require("lualine.themes.catppuccin")
-		-- local C = require("catppuccin.palettes").get_palette("mocha")
-		-- local custom = require("lualine.themes.tokyonight-night")
-		local custom = require("lualine.themes.tokyonight-storm")
-		local C = require("tokyonight.colors").setup({ style = "storm", transparent = true })
-		custom.normal.a.bg = C.none
-		custom.normal.a.fg = C.blue
-		custom.normal.b.bg = C.none
-		custom.normal.c.bg = C.none
-		custom.command.a.bg = C.none
-		custom.command.a.fg = C.yellow
-		custom.command.b.bg = C.none
-		custom.insert.a.bg = C.none
-		custom.insert.a.fg = C.green
-		custom.insert.b.bg = C.none
-		custom.visual.a.bg = C.none
-		custom.visual.a.fg = C.magenta
-		custom.visual.b.bg = C.none
-		custom.replace.a.bg = C.none
-		custom.replace.a.fg = C.red
-		custom.replace.b.bg = C.none
-		custom.terminal.a.bg = C.none
-		custom.terminal.a.fg = C.green1
-		custom.terminal.b.bg = C.none
-		custom.inactive.a.bg = C.none
-		custom.inactive.b.bg = C.none
-		custom.inactive.c.bg = C.none
-		-- custom.terminal.c.bg = "none"
 
-		local clients_lsp = function()
-			local bufnr = vim.api.nvim_get_current_buf()
+		-- Patch tokyonight theme once and reuse
+		local function patched_tokyonight()
+			local custom = require("lualine.themes.tokyonight")
+			local C = require("tokyonight.colors").setup({ style = "storm", transparent = true })
 
-			local clients = vim.lsp.get_clients({ bufnr = bufnr })
-			if next(clients) == nil then
-				return ""
+			local function patch(group, fg, bg)
+				if custom[group] then
+					custom[group].a = { fg = C[fg], bg = C.none }
+					custom[group].b = { bg = C.none }
+				end
 			end
 
-			local c = {}
-			for _, client in pairs(clients) do
-				table.insert(c, client.name)
+			patch("normal", "blue")
+			patch("insert", "green")
+			patch("visual", "magenta")
+			patch("replace", "red")
+			patch("command", "yellow")
+			patch("terminal", "green1")
+
+			custom.inactive.a.bg = C.none
+			custom.inactive.b.bg = C.none
+			custom.inactive.c.bg = C.none
+
+			return custom
+		end
+
+		local theme = patched_tokyonight()
+
+		local function get_listed_buffer_count()
+			local count = 0
+			for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+				if vim.fn.buflisted(buf) == 1 then
+					count = count + 1
+				end
 			end
-			return "\u{f085} " .. table.concat(c, "|")
+			return count
 		end
 
 		return {
 			options = {
 				component_separators = { left = " ", right = " " },
 				section_separators = { left = " ", right = " " },
-				theme = custom,
+				theme = theme,
 				globalstatus = true,
 				disabled_filetypes = { statusline = { "dashboard", "alpha" } },
 			},
@@ -78,12 +67,11 @@ return {
 					{ "filename", padding = { left = 1, right = 0 } },
 					{
 						function()
-							local buffer_count = require("core.utils").get_buffer_count()
-
-							return "+" .. buffer_count - 1 .. " "
+							local count = get_listed_buffer_count()
+							return "+" .. (count - 1) .. " "
 						end,
 						cond = function()
-							return require("core.utils").get_buffer_count() > 1
+							return get_listed_buffer_count() > 1
 						end,
 						color = utils.get_hlgroup("Operator", nil),
 						padding = { left = 0, right = 1 },
@@ -91,18 +79,22 @@ return {
 				},
 				lualine_x = {
 					{
-						require("lazy.status").updates,
-						cond = require("lazy.status").has_updates,
-						color = utils.get_hlgroup("String"),
-					},
-					{
-						clients_lsp,
+						function()
+							local bufnr = vim.api.nvim_get_current_buf()
+							local clients = vim.lsp.get_clients({ bufnr = bufnr })
+							if not clients or #clients == 0 then
+								return ""
+							end
+							local names = {}
+							for _, client in ipairs(clients) do
+								table.insert(names, client.name)
+							end
+							return " " .. table.concat(names, "|")
+						end,
 					},
 					{ "diff" },
 				},
-				lualine_y = {
-					"filetype",
-				},
+				lualine_y = {},
 				lualine_z = {
 					"progress",
 					{
@@ -111,18 +103,6 @@ return {
 					},
 				},
 			},
-
-			-- tabline = {
-			-- 	lualine_z = {
-			-- 		{
-			-- 			"tabs",
-			-- 			mode = 2,
-			-- 			use_mode_colors = true,
-			-- 		},
-			-- 	},
-			-- },
-
-			extensions = { "lazy", "mason", "trouble" },
 		}
 	end,
 }
