@@ -34,10 +34,10 @@ set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
 
-# if status --is-interactive
-#     and not set -q TMUX
-#     tmux -u -2
-# end
+if status --is-interactive
+    and not set -q TMUX
+    tmux -u -2
+end
 
 set -gx EDITOR /usr/local/bin/nvim
 

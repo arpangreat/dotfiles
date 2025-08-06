@@ -135,6 +135,13 @@ keybind = ctrl+enter=unbind
 # keybind = ctrl+shift+i=inspector:toggle
 # keybind = alt+six=goto_tab:6
 # keybind = alt+seven=goto_tab:7
+# keybind = alt+h=goto_split:left
+# keybind = alt+j=goto_split:down
+# keybind = alt+k=goto_split:up
+# keybind = alt+l=goto_split:right
+# keybind = ctrl+alt+h=previous_tab
+# keybind = ctrl+alt+l=next_tab
+# keybind = ctrl+shift+x=close_surface
 keybind = global:super+`=toggle_quick_terminal
 # keybind = global:ctrl+shift+p=toggle_command_palette
 
@@ -145,6 +152,8 @@ window-padding-y = 3
 # window-padding-balance = false
 
 window-decoration = false
+
+# gtk-toolbar-style = raised-border
 
 window-vsync = true
 
