@@ -94,6 +94,7 @@ fish_add_path $KITTY_INSTALLATION_DIR:$HOME/kitty
 fish_add_path $ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 fish_add_path $ANDROID_SDK_ROOT/platform-tools
 fish_add_path /home/arpangreat/flutter/bin
+fish_add_path $HOME/.platformio/penv/bin
 
 zoxide init fish --cmd cd | source
 

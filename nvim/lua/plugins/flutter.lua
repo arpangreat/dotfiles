@@ -2,6 +2,7 @@ return {
 	"nvim-flutter/flutter-tools.nvim",
 	-- lazy = false,
 	-- enabled = false,
+	ft = "dart",
 	config = function()
 		local on_attach = require("plugins.lsp.config").on_attach
 		local capabilities = require("plugins.lsp.config").capabilities

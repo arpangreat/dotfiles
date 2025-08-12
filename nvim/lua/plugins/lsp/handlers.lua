@@ -23,6 +23,7 @@ vim.lsp.config("taplo", {
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
 vim.lsp.enable("taplo")
 -- vim.lsp.enable("tombi")
 
@@ -38,6 +39,7 @@ vim.lsp.config("lua_ls", {
 		},
 	},
 })
+
 vim.lsp.enable("lua_ls")
 
 vim.lsp.enable("r_language_server")
@@ -46,7 +48,7 @@ vim.lsp.enable("r_language_server")
 
 vim.lsp.enable("ruff")
 
-vim.lsp.enable("dartls")
+-- vim.lsp.enable("dartls")
 
 vim.lsp.enable("ruby_lsp")
 
@@ -77,6 +79,7 @@ vim.lsp.config("denols", {
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
 vim.lsp.enable("denols")
 
 vim.lsp.enable("cssls")
