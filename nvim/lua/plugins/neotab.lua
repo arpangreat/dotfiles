@@ -9,6 +9,7 @@ return {
 				enabled = true,
 				ft = { "cs", "c", "cpp", "java" },
 			},
+			escape = { enabled = true },
 		},
 	},
 }
