@@ -35,12 +35,13 @@ vim.opt.winblend = 0
 vim.opt.pumblend = 0
 vim.opt.textwidth = 80
 vim.opt.ruler = true
--- vim.opt.winborder = "bold"
+vim.opt.winborder = "single"
 -- vim.opt.cmdheight = 0
 
 -- Visuals
 vim.opt.syntax = "disable"
--- vim.opt.filetype = "plugin on"
+-- vim.opt.filetype = "plugin indent on"
+vim.cmd.filetype("plugin indent on")
 -- vim.api.nvim_set_optption('t_Co',256)
 vim.opt.termguicolors = true
 -- vim.opt.encodingvim.o.hidden = true
@@ -75,8 +76,7 @@ vim.opt.wildmode = "list:longest"
 
 vim.opt.showbreak = "↳ "
 vim.opt.backup = false
--- vim.opt.undofile = false
-vim.cmd("set undofile")
+vim.opt.undofile = true
 vim.opt.undodir = "/home/arpangreat/.vim/undodir"
 vim.opt.backupdir = "/home/arpangreat/.vim/backupdir"
 vim.opt.swapfile = false
