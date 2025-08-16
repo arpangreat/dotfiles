@@ -18,13 +18,6 @@ return {
 		},
 	},
 	{
-		"echasnovski/mini.cursorword",
-		event = "VeryLazy",
-		config = function()
-			require("mini.cursorword").setup()
-		end,
-	},
-	{
 		"kevinhwang91/nvim-bqf",
 		event = "VeryLazy",
 		ft = "qf",
