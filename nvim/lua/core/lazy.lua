@@ -30,15 +30,12 @@ require("lazy").setup({ { import = "plugins" } }, {
 		rtp = {
 			disabled_plugins = {
 				"netrw",
-				"matchit",
 				"netrwPlugin",
 				"gzip",
 				"tarPlugin",
 				"tohtml",
 				"tutor",
 				"zipPlugin",
-				"matchparen",
-				"matchpairs",
 			},
 		},
 	},

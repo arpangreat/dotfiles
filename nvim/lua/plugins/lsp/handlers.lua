@@ -52,11 +52,39 @@ vim.lsp.enable("ruff")
 
 vim.lsp.enable("ruby_lsp")
 
+vim.lsp.config("phpactor", {
+	cmd = { "phpactor", "language-server" },
+	filetypes = { "php", "blade" },
+	root_markers = { ".git", "composer.json", ".phpactor.json", ".phpactor.yml" },
+	workspace_required = true,
+})
+
 vim.lsp.enable("phpactor")
+
+vim.lsp.config("intelephense", {
+	cmd = { "intelephense", "--stdio" },
+	filetypes = { "php", "blade" },
+	root_markers = { "composer.json", ".git" },
+})
 
 vim.lsp.enable("intelephense")
 
-vim.lsp.enable("html")
+vim.lsp.enable("tailwindcss")
+
+vim.lsp.config("html_ls", {
+	cmd = { "vscode-html-language-server", "--stdio" },
+	filetypes = {
+		"html",
+		"blade",
+		"javascriptreact",
+		"typescriptreact",
+		"svelte",
+	},
+	root_markers = { "index.html", ".git" },
+	init_options = { provideFormatter = true },
+})
+
+vim.lsp.enable("html_ls")
 
 vim.lsp.enable("emmet_language_server")
 
@@ -81,6 +109,17 @@ vim.lsp.config("denols", {
 })
 
 vim.lsp.enable("denols")
+
+vim.lsp.config("cssls", {
+	cmd = { "vscode-css-language-server", "--stdio" },
+	filetypes = { "css", "scss", "less" },
+	root_markers = { "package.json", ".git" },
+	settings = {
+		css = { validate = true },
+		scss = { validate = true },
+		less = { validate = true },
+	},
+})
 
 vim.lsp.enable("cssls")
 
