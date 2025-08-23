@@ -1,7 +1,7 @@
 starship init fish | source
 
 function fish_greeting
-    fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
+    fastfetch --config ~/dotfiles/fastfetch/10.jsonc
 end
 
 function fish_hybrid_key_bindings --description \
