@@ -59,7 +59,7 @@ customCommands:
   - key: "P"
     context: "localBranches"
     loadingText: "Merging GitHub Pull Request..."
-    command: "gh pr merge {{.Form.PullRequestNumber}} --admin"
+    command: "gh pr merge --admin {{.Form.PullRequestNumber}}"
     prompts:
       - type: "menuFromCommand"
         title: "Which PR do you want to merge?"
