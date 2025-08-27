@@ -1,6 +1,9 @@
 return {
 	"stevearc/conform.nvim",
 	event = { "BufReadPre", "BufNewFile" },
+	init = function()
+		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
+	end,
 	config = function()
 		local conform = require("conform")
 
@@ -18,10 +21,17 @@ return {
 				sql = { "sqlfmt" },
 				php = { "pint" },
 				blade = { "blade-formatter" },
-				typescript = { "deno_fmt" },
-				javascript = { "deno_fmt" },
-				json = { "deno_fmt" },
-				markdown = { "deno_fmt" },
+				javascript = { "prettier" },
+				typescript = { "prettier" },
+				javascriptreact = { "prettier" },
+				typescriptreact = { "prettier" },
+				json = { "prettier" },
+				jsonc = { "prettier" },
+				yaml = { "prettier" },
+				markdown = { "prettier" },
+				html = { "prettier" },
+				css = { "prettier" },
+				scss = { "prettier" },
 			},
 
 			format_after_save = {

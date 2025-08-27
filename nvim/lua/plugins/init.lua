@@ -18,13 +18,6 @@ return {
 		},
 	},
 	{
-		"echasnovski/mini.cursorword",
-		event = "VeryLazy",
-		config = function()
-			require("mini.cursorword").setup()
-		end,
-	},
-	{
 		"kevinhwang91/nvim-bqf",
 		event = "VeryLazy",
 		ft = "qf",
@@ -40,7 +33,6 @@ return {
 			},
 		},
 	},
-	{ "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
 	{
 		"echasnovski/mini.icons",
 		lazy = true,
@@ -101,7 +93,7 @@ return {
 		opts = {},
 	},
 	{
-		"canop/nvim-bacon",
-		ft = "rust",
+		"b0o/SchemaStore.nvim",
+		lazy = true,
 	},
 }

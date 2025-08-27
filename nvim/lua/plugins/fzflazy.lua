@@ -7,6 +7,7 @@ return {
 	opts = {
 		-- calling `setup` is optional for customization
 		-- local config = require("fzf-lua.config")
+		profile = "telescope",
 
 		keymap = {
 			builtin = {
@@ -15,10 +16,10 @@ return {
 				["<c-b>"] = "preview-page-up",
 				["<ctrl-u>"] = "preview-down",
 				["<ctrl-d>"] = "preview-up",
+				["<ctrl-p>"] = "toggle-preview",
 			},
 			fzf = {
 				true,
-				["ctrl-q"] = "select-all+accept",
 				["ctrl-u"] = "half-page-up",
 				["ctrl-d"] = "half-page-down",
 				["ctrl-x"] = "jump",

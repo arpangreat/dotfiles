@@ -33,6 +33,7 @@ return {
 
 		appearance = {
 			use_nvim_cmp_as_default = true,
+			nerd_font_variant = "normal",
 		},
 
 		completion = {
@@ -41,8 +42,10 @@ return {
 				winblend = 0,
 				draw = {
 					columns = {
+						{ "kind_icon" },
 						{ "label", "label_description", gap = 1 },
-						{ "kind_icon", "kind" },
+						{ "kind" },
+						{ "source_name" },
 					},
 					treesitter = { "lsp" },
 				},
@@ -65,6 +68,7 @@ return {
 			},
 			ghost_text = { enabled = true },
 		},
+		-- fuzzy = { implementation = "prefer_rust_with_warning" },
 		signature = {
 			enabled = true,
 			trigger = {
@@ -77,13 +81,18 @@ return {
 			},
 		},
 		sources = {
-			default = { "lazydev", "lsp", "path", "snippets" },
+			default = { "lazydev", "lsp", "path", "snippets", "laravel" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
 					module = "lazydev.integrations.blink",
 					score_offset = 100,
 				},
+				laravel = {
+					name = "laravel",
+					module = "laravel.blink_source",
+				},
+
 				--[[ cmdline = {
 					enabled = function()
 						local cmd_type = vim.fn.getcmdtype()
