@@ -1,5 +1,5 @@
 @define-color foreground rgba(255, 255, 255, 0.8);
-@define-color background hsla(240, 12.7%, 13.9%, 0.98);
+@define-color background hsla(240, 12.7%, 13.9%, 0.8);
 @define-color color1 hsl(172, 100%, 25.3%);
 /* AUTO GENERATED. DO NOT EDIT. CHANGES WILL BE OVERWRITTEN. */
 
@@ -43,9 +43,9 @@ slider,
 
 #box {
   border-radius: 1px;
-  background: @background;
   padding: 20px;
-  border: 1px solid @border;
+  border: 1px solid #33ccff;
+  background: @background;
   /* box-shadow: */
   /*   0 19px 38px rgba(0, 0, 0, 0.3), */
   /*   0 15px 12px rgba(0, 0, 0, 0.22); */

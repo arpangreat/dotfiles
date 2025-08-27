@@ -66,6 +66,7 @@ return {
 			{ "[h", "<cmd>lua require('gitsigns').nav_hunk('prev')<cr>", desc = "Prev Hunk" },
 			{ "<leader>hd", "<cmd>lua require('gitsigns').diffthis()<cr>", desc = "Diff hunk" },
 			{ "<leader>x", group = "Trouble" },
+			{ "<leader>L", group = "Laravel" },
 		},
 
 		disable = {

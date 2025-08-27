@@ -1,10 +1,12 @@
-;; defsrc is still necessary
+;; Kanata configuration for Ctrl+j/k/l/h as arrow keys
+
 (defcfg
  process-unmapped-keys yes
+ concurrent-tap-hold yes
 )
 
 (defsrc
-  esc caps a s l ;
+  esc caps a s d l ; h i j k
 )
 
 (defvar
@@ -17,10 +19,21 @@
   escctrl (tap-hold 150 200 esc lctl)
   a (multi f24 (tap-hold $tap-time $hold-time a lmet))
   s (multi f24 (tap-hold $tap-time $hold-time s lsft))
+  d (tap-hold $tap-time $hold-time d (layer-while-held nav-layer))
   l (multi f24 (tap-hold $tap-time $hold-time l rsft))
   ; (multi f24 (tap-hold $tap-time $hold-time ; rmet))
+  
+  ;; Arrow key mappings for nav layer
+  nav-left left
+  nav-up up
+  nav-down down
+  nav-right right
 )
 
 (deflayer base
-  @capsesc @escctrl @a @s @l @;
+  @capsesc @escctrl @a @s @d @l @; h i j k
+)
+
+(deflayer nav-layer
+  _ _ _ _ _ _ _ @nav-left @nav-up @nav-down @nav-right
 )

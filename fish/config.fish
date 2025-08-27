@@ -1,7 +1,7 @@
 starship init fish | source
 
 function fish_greeting
-    fastfetch --load-config ~/dotfiles/fastfetch/10.jsonc
+    fastfetch --config ~/dotfiles/fastfetch/10.jsonc
 end
 
 function fish_hybrid_key_bindings --description \
@@ -69,6 +69,10 @@ set -ga fish_user_paths /home/arpangreat/.rye/env
 
 set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
+
+set -gx LD ld.lld
+set -gx LDFLAGS "-fuse-ld=lld"
+
 fish_add_path $GOPATH/go/bin
 fish_add_path /usr/local/go/bin/
 fish_add_path $HOME/.cargo/env
@@ -90,6 +94,7 @@ fish_add_path $KITTY_INSTALLATION_DIR:$HOME/kitty
 fish_add_path $ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 fish_add_path $ANDROID_SDK_ROOT/platform-tools
 fish_add_path /home/arpangreat/flutter/bin
+fish_add_path $HOME/.platformio/penv/bin
 
 zoxide init fish --cmd cd | source
 
@@ -119,7 +124,7 @@ eval (batpipe)
 source $HOME/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
 source $HOME/dotfiles/fish/tokyonight_moon.fish
 
-symfony completion | source
+# symfony completion | source
 
 cod init $fish_pid fish | source
 

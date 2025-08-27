@@ -1,11 +1,12 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
-	event = { "BufWinEnter" },
-	-- lazy = false,
+	-- event = { "BufWinEnter" },
+	lazy = false,
 	branch = "main",
 	dependencies = {
 		-- "JoosepAlviste/nvim-ts-context-commentstring",
+		"OXY2DEV/markview.nvim",
 	},
 	-- opts = {},
 	config = function()

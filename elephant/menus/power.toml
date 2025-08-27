@@ -1,0 +1,29 @@
+name = "powermenu"
+name_pretty = "Power Menu"
+icon = "applications-other"
+global_search = true
+
+[[entries]]
+action = "systemctl poweroff"
+icon = "system-shutdown"
+text = "Shutdown"
+
+[[entries]]
+action = "systemctl reboot"
+icon = "system-reboot"
+text = "Reboot"
+
+[[entries]]
+action = "systemctl hibernate"
+icon = "system-hibernate"
+text = "Hibernate"
+
+[[entries]]
+action = "systemctl suspend"
+icon = "system-suspend"
+text = "Suspend"
+
+[[entries]]
+action = "loginctl terminate-session ${XDG_SESSION_ID-}"
+icon = "system-logout"
+text = "Logout"

@@ -43,6 +43,7 @@ slider,
   padding: 20px;
   border: 2px solid @border;
   border-radius: 0px;
+  opacity: 0.8;
 }
 
 /* Search container */
