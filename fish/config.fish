@@ -4,12 +4,30 @@ function fish_greeting
     fastfetch --config ~/dotfiles/fastfetch/10.jsonc
 end
 
+function copy_commandline
+    echo -n (commandline) | wl-copy
+end
+
 function fish_hybrid_key_bindings --description \
     "Vi-style bindings that inherit emacs-style bindings in all modes"
     for mode in default insert visual
         fish_default_key_bindings -M $mode
     end
     fish_vi_key_bindings --no-erase
+    
+    # Add system clipboard bindings
+    # Paste from system clipboard with 'p' in normal mode
+    bind -M default p 'commandline -i (wl-paste)'
+    
+    # System clipboard paste with Ctrl+V in insert mode (in addition to emacs Ctrl+Y)
+    bind -M insert \cv 'commandline -i (wl-paste)'
+    
+    # Optional: Make 'Y' copy entire line to system clipboard in normal mode
+    bind -M default y copy_commandline
+
+    bind -M visual y 'set sel (commandline -s); commandline -f end-selection repaint-mode; echo -n $sel | wl-copy'
+
+    bind -M default \ce edit_command_buffer
 end
 
 set -g fish_key_bindings fish_hybrid_key_bindings
