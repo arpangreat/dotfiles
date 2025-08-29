@@ -1,5 +1,6 @@
 return {
 	"adibhanna/laravel.nvim",
+	enabled = false,
 	ft = { "php", "blade" },
 	keys = {
 		{ "<leader>la", ":Artisan<cr>", desc = "Laravel Artisan" },
