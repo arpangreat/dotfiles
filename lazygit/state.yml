@@ -1,13 +1,14 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/fzf
+    - /home/arpangreat/.local/share/nvim/lazy/undotree
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
-    - /home/arpangreat/fzf
     - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
