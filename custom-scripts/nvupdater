@@ -3,5 +3,5 @@
 cd ~/neovim/ || exit
 git pull
 sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make -j4 install
+sudo make -j7 install
 cd || exit

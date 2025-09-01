@@ -28,6 +28,8 @@ Provides access to your clipboard history.
 |icon|string|depends on provider|icon for provider|
 |min_score|int32|depends on provider|minimum score for items to be displayed|
 |max_items|int|100|max amount of clipboard history items|
+|image_editor_cmd|string||editor to use for images. use '%FILE%' as placeholder for file path.|
+|text_editor_cmd|string||editor to use for text, otherwise default for mimetype. use '%FILE%' as placeholder for file path.|
 
 ### Desktop Applications
 Provides access to all your installed desktop applications.
@@ -47,6 +49,7 @@ Provides access to all your installed desktop applications.
 |history_when_empty|bool|false|consider history when query is empty|
 |icon_placeholder|string|applications-other|placeholder icon for apps without icon|
 |aliases|map[string]string||setup aliases for applications. Matched aliases will always be placed on top of the list. Example: 'ffp' => '<identifier>'. Check elephant log output when activating an item to get its identifier.|
+|pinned|[]string|<empty>|Pinned items will appear in order on top of list. Value = <identifier>. Check elephant log output when activating an item to get its identifier.|
 
 ### Files
 Search files and folders.
@@ -186,4 +189,12 @@ Websearch: search the web with custom defined searches
 |url|string||url, example: 'https://www.google.com/search?q=%TERM%'|
 |icon|string||icon to display, fallsback to global|
 
+
+
+Example:
+
+[[entries]]
+default = true
+name = "Google"
+url = "https://www.google.com/search?q=%TERM%"
 
