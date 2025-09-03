@@ -171,8 +171,11 @@ maximize = true
 # fullscreen = true
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom010.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_synesthaxia(tweened).glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_blaze_no_trail.glsl
 custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
+
 
 custom-shader-animation = true
 
