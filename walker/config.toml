@@ -17,11 +17,12 @@ anchor_right = true
 "default" = { input = "Search", list = "No Results" } # placeholders for input and empty list, key is the providers name, so f.e. "desktopapplications" or "menus:other"
 
 [keybinds]
-close = "esc"
+close = "Escape"
 next = "ctrl n"
 previous = "ctrl p"
 toggle_exact = "ctrl e"
 resume_last_query = "ctrl r"
+quick_activate = ["F1", "F2", "F3", "F4"]
 
 [providers]
 default = [
@@ -46,6 +47,10 @@ prefix = "."
 provider = "symbols"
 
 [[providers.prefixes]]
+prefix = "!"
+provider = "todo"
+
+[[providers.prefixes]]
 prefix = "="
 provider = "calc"
 
@@ -58,54 +63,68 @@ prefix = ":"
 provider = "clipboard"
 
 [providers.archlinuxpkgs]
-click = "install"
-install = "enter"
+default = "install"
+install = "Return"
 remove = "ctrl d"
 
 [providers.calc]
-click = "copy"
-copy = "enter"
+default = "copy"
+copy = "Return"
 save = "ctrl s"
 delete = "ctrl d"
 
 [providers.websearch]
-click = "search"
-search = "enter"
+default = "search"
+search = "Return"
 
 [providers.providerlist]
-click = "activate"
-activate = "enter"
+default = "activate"
+activate = "Return"
 
 [providers.clipboard]
 time_format = "%d.%m. - %H:%M" # format for the clipboard item date
-click = "copy"
-copy = "enter"
+default = "copy"
+copy = "Return"
 delete = "ctrl d"
+edit = "ctrl o"
+toggle_images_only = "ctrl i"
 
 [providers.desktopapplications]
-click = "start"
-start = "enter"
+default = "start"
+start = "Return"
 
 [providers.files]
-click = "open"
-open = "enter"
-open_dir = "ctrl enter"
+default = "open"
+open = "Return"
+open_dir = "ctrl Return"
 copy_path = "ctrl shift C"
 copy_file = "ctrl c"
 
+[providers.todo]
+default = "save"
+save = "Return"
+delete = "ctrl d"
+mark_active = "ctrl a"
+mark_done = "ctrl f"
+clear = "ctrl x"
+
 [providers.runner]
-click = "start"
-start = "enter"
-start_terminal = "shift enter"
+default = "start"
+start = "Return"
+start_terminal = "shift Return"
 
 [providers.dmenu]
-click = "select"
-select = "enter"
+default = "select"
+select = "Return"
 
 [providers.symbols]
-click = "copy"
-copy = "enter"
+default = "copy"
+copy = "Return"
+
+[providers.unicode]
+default = "copy"
+copy = "Return"
 
 [providers.menus]
-click = "activate"
-activate = "enter"
+default = "activate"
+activate = "Return"
