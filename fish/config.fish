@@ -72,7 +72,8 @@ set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
 set -g ANDROID_SDK_ROOT /opt/android-sdk
 
-set -g MAKEFLAGS "-j7"
+set -gx MAKEFLAGS "-j7"
+set -gx GNUMAKEFLAGS "-j7"
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
