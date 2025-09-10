@@ -70,7 +70,7 @@ set -g GOPATH $HOME/go
 
 set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
-set -g ANDROID_SDK_ROOT /opt/android-sdk
+set -g ANDROID_SDK_ROOT /home/arpangreat/Android/Sdk
 
 set -gx MAKEFLAGS "-j7"
 set -gx GNUMAKEFLAGS "-j7"

@@ -1,8 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
     - /home/arpangreat/fzf
+    - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
     - /home/arpangreat/.local/share/nvim/lazy/undotree
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
