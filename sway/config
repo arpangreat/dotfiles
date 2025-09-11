@@ -18,6 +18,8 @@ output eDP-1 resolution 1920x1080@60Hz position 0,0 scale 1
 # Wallpaper
 output * bg ~/dotfiles/wallpaper/Zelda_Ghib.heic fill
 
+output * max_render_time 1
+
 # Input configuration
 input type:keyboard {
     xkb_layout us
@@ -52,7 +54,7 @@ client.placeholder      #000000   #0c0c0c   #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 # Layout
-workspace_layout master
+workspace_layout default
 
 # Autostart applications
 exec_always --no-startup-id {
@@ -88,42 +90,23 @@ exec elephant
 exec systemctl --user start hyprpolkitagent
 
 # Window rules
-for_window [app_id="kitty"] {
-    move container to workspace number 1
-}
-for_window [app_id="Alacritty"] {
-    move container to workspace number 1
-}
-for_window [app_id="org.wezfurlong.wezterm"] {
-    move container to workspace number 1
-}
-for_window [app_id="com.mitchellh.ghostty"] {
-    move container to workspace number 1
-}
-for_window [class="kdesystemsettings"] {
-    move container to workspace number 2
-}
-for_window [class="Brave-browser"] {
-    move container to workspace number 3
-}
-for_window [class="firefox"] {
-    move container to workspace number 3
-}
-for_window [class="floorp"] {
-    move container to workspace number 3
-}
-for_window [class="zen"] {
-    move container to workspace number 3
-}
-for_window [class="Mercury Browser"] {
-    move container to workspace number 3
-}
+assign [app_id="kitty"] workspace number 1
+assign [app_id="alacritty"] workspace number 1
+assign [app_id="org.wezfurlong.wezterm"] workspace number 1
+assign [app_id="com.mitchellh.ghostty"] workspace number 1
+assign [app_id="kdesystemsettings"] workspace number 2
+assign [app_id="Brave-browser"] workspace number 3
+assign [app_id="firefox"] workspace number 3
+assign [app_id="floorp"] workspace number 3
+assign [app_id="zen"] workspace number 3
 
 # Floating windows
 for_window [app_id="pavucontrol-qt"] floating enable
 for_window [app_id="pavucontrol-qt"] resize set 40ppt 90ppt
 for_window [app_id="pavucontrol-qt"] move position 60ppt 5ppt
 for_window [class="rofi"] floating enable, opacity 0.8
+for_window [app_id="dev.benz.walker"] border none
+for_window [app_id="dev.benz.walker"] floating enable 
 
 # Scratchpad-like functionality for dropdown terminal
 for_window [app_id="kitty-dropterm"] {
@@ -224,9 +207,6 @@ bindsym $mod+v exec ~/.config/sway/scripts/toggle-volume.sh
 bindsym $mod+a exec ~/.config/sway/scripts/toggle-dropterm.sh
 bindsym $mod+Shift+m exec ~/.config/sway/scripts/toggle-utop.sh
 
-# Performance optimizations for your system
-max_render_time 1
-
 # Environment variables
 exec systemctl --user set-environment QT_QPA_PLATFORMTHEME=qt6ct
 exec systemctl --user set-environment GDK_BACKEND=wayland
@@ -238,8 +218,10 @@ exec systemctl --user set-environment QT_AUTO_SCREEN_SCALE_FACTOR=1
 exec systemctl --user set-environment XDG_SESSION_TYPE=wayland
 exec systemctl --user set-environment QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 exec systemctl --user set-environment ELECTRON_OZONE_PLATFORM_HINT=wayland
+exec systemctl --user set-environment GDK_SCALE=1
+exec systemctl --user set-environment QT_SCALE_FACTOR=1
 
 # XWayland settings
-xwayland force_zero_scaling enable
+xwayland enable
 
 include /etc/sway/config.d/*
