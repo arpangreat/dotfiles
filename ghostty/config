@@ -144,6 +144,8 @@ keybind = ctrl+enter=unbind
 # keybind = ctrl+shift+x=close_surface
 keybind = global:super+`=toggle_quick_terminal
 # keybind = global:ctrl+shift+p=toggle_command_palette
+adjust-cursor-thickness = 1
+adjust-cursor-height = 7
 
 window-padding-x = 3
 

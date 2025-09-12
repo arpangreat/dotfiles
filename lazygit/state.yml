@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/kitty
     - /home/arpangreat/fzf
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
     - /home/arpangreat/.local/share/nvim/lazy/undotree
@@ -10,7 +11,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
-    - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/ghostty
