@@ -34,8 +34,11 @@ font-feature = ss08
 font-feature = ss09
 font-feature = ss10
 font-feature = ss11
-# font-feature = cv01
+font-feature = cv01
 font-feature = cv03
+font-feature = cv05
+font-feature = cv63
+font-feature = cv38
 
 #font-feature = calt
 #font-feature = ss01
