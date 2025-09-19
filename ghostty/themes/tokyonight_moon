@@ -14,12 +14,9 @@ palette = 12=#9ab8ff
 palette = 13=#caabff
 palette = 14=#b2ebff
 palette = 15=#c8d3f5
-palette = 16=#ff966c
-palette = 17=#c53b53
 
-background = #1E1E2E
-foreground = #CDD6F4
-cursor-color = cell-foreground
-cursor-text = cell-background
-selection-background = cell-background
-selection-foreground = cell-foreground
+background = #222436
+foreground = #c8d3f5
+cursor-color = #c8d3f5
+selection-background = #2d3f76
+selection-foreground = #c8d3f5
