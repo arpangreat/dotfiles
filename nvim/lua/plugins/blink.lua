@@ -69,17 +69,17 @@ return {
 			ghost_text = { enabled = true },
 		},
 		-- fuzzy = { implementation = "prefer_rust_with_warning" },
-		signature = {
-			enabled = true,
-			trigger = {
-				show_on_insert_on_trigger_character = true,
-			},
-			window = {
-				border = "rounded",
-				winblend = 0,
-				scrollbar = false,
-			},
-		},
+		-- signature = {
+		-- 	enabled = true,
+		-- 	trigger = {
+		-- 		show_on_insert_on_trigger_character = true,
+		-- 	},
+		-- 	window = {
+		-- 		border = "rounded",
+		-- 		winblend = 0,
+		-- 		scrollbar = false,
+		-- 	},
+		-- },
 		sources = {
 			default = { "lazydev", "lsp", "path", "snippets" },
 			providers = {

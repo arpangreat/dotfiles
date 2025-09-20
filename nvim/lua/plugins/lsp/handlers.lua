@@ -163,3 +163,5 @@ vim.lsp.config("phptools", {
 })
 
 vim.lsp.enable("phptools")
+
+vim.lsp.enable("gleam")
