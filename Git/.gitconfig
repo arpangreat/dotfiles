@@ -8,6 +8,11 @@
 [core]
   excludesfile = ~/.gitignore
 	editor = nvim
+  pager = delta
+
+[delta]
+  features = side-by-side line-numbers decorations
+  navigate = true
 [push]
 	default = simple
   autoSetupRemote = true
@@ -41,7 +46,7 @@
   # add conflicted file on merge
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 	cof = !git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout
-
+  root = "!builtin cd \"$(git rev-parse --show-toplevel)\""
   prompt = !"prompt_git() { local s=''; local branchName=''; if [ \"$(git rev-parse --is-inside-work-tree &>/dev/null; echo \"${?}\")\" == '0' ]; then if [ \"$(git rev-parse --is-inside-git-dir 2> /dev/null)\" == 'false' ]; then if [[ -O \"$(git rev-parse --show-toplevel)/.git/index\" ]]; then git update-index --really-refresh -q &> /dev/null; fi; if ! git diff --quiet --ignore-submodules --cached; then s+='+'; fi; if ! git diff-files --quiet --ignore-submodules --; then s+='!'; fi; if [ -n \"$(git ls-files --others --exclude-standard)\" ]; then s+='?'; fi; if git rev-parse --verify refs/stash &> /dev/null; then s+='$'; fi; fi; branchName=\"$(git symbolic-ref --quiet --short HEAD 2> /dev/null || git rev-parse --short HEAD 2> /dev/null || echo '(unknown)')\"; echo \"(${1}${branchName} ${s})\"; else return; fi;}; prompt_git"
 
 [interactive]
@@ -87,3 +92,9 @@
 	repo = /home/arpangreat/dotfiles
 [rebase]
 	updateRefs = true
+[gc]
+  writeCommitGraph = true
+[fetch]
+  writeCommitGraph = true
+[commitGraph]
+  generationVersion = 2
