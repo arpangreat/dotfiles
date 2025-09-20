@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/RustExs
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
     - /home/arpangreat/kitty
     - /home/arpangreat/fzf
@@ -14,7 +15,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/ghostty
-    - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
