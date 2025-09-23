@@ -1,6 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/gleam-first/new
     - /home/arpangreat/fzf
     - /home/arpangreat/RustExs
@@ -10,7 +12,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
