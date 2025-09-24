@@ -175,3 +175,5 @@ fish_add_path "$ARGC_COMPLETIONS_ROOT/bin"
 # To add completions for only the specified command, modify next line e.g. set argc_scripts cargo git
 set argc_scripts (ls -1 "$ARGC_COMPLETIONS_ROOT/completions/linux" "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p')
 argc --argc-completions fish $argc_scripts | source
+
+source ~/.safe-chain/scripts/init-fish.fish # Safe-chain Fish initialization script
