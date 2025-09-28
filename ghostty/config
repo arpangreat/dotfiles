@@ -160,6 +160,8 @@ gtk-wide-tabs = false
 gtk-toolbar-style = flat
 window-padding-balance = false
 
+window-theme = ghostty
+
 
 window-decoration = false
 
@@ -172,6 +174,8 @@ shell-integration = fish
 shell-integration-features = cursor,no-sudo,title
 
 desktop-notifications = true
+
+copy-on-select = clipboard
 
 bold-color = "bright"
 # async-backend = epoll
