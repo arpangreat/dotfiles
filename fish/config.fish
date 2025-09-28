@@ -1,7 +1,7 @@
 starship init fish | source
 
 function fish_greeting
-    fastfetch --config ~/dotfiles/fastfetch/10.jsonc
+    fastfetch --config examples/10.jsonc
 end
 
 function copy_commandline
