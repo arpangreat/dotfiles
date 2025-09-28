@@ -11,8 +11,14 @@
   pager = delta
 
 [delta]
-  features = side-by-side line-numbers decorations
+  features = side-by-side line-numbers decorations tokyonight_storm
   navigate = true
+  side-by-side = true
+  line-numbers = true
+
+[include]
+  path = /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim/extras/delta/tokyonight_storm.gitconfig
+
 [push]
 	default = simple
   autoSetupRemote = true
@@ -66,6 +72,7 @@
 
 [merge]
   tool = nvimdiff
+  conflictStyle = zdiff3
 
 [mergetool "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
