@@ -154,7 +154,12 @@ window-padding-x = 3
 
 window-padding-y = 3
 
-# window-padding-balance = false
+gtk-single-instance = true
+gtk-tabs-location = bottom
+gtk-wide-tabs = false
+gtk-toolbar-style = flat
+window-padding-balance = false
+
 
 window-decoration = false
 
