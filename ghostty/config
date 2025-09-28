@@ -69,7 +69,7 @@ font-size = 11.0
 # grapheme-width-method = legacy
 # minimum-contrast = 1.1
 
-theme = "tokyonight_storm_my"
+theme = "tokyonight_moon_my"
 
 # selection-invert-fg-bg = true
 

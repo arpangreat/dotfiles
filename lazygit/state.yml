@@ -1,8 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/.local/share/nvim/lazy/oil.nvim
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
+    - /home/arpangreat/.local/share/nvim/lazy/oil.nvim
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/gleam-first/new
