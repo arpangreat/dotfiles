@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/gitsigns.nvim
     - /home/arpangreat/icons-in-terminal
     - /home/arpangreat/CExamples
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
