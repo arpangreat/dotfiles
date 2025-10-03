@@ -54,7 +54,7 @@ set fish_cursor_visual block
 
 if status --is-interactive
     and not set -q TMUX
-    tmux -u -2
+    tmux
 end
 
 set -gx EDITOR /usr/local/bin/nvim
