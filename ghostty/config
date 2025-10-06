@@ -103,12 +103,12 @@ link-url = true
 link-previews = true
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom010.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_synesthaxia(tweened).glsl
-# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_blaze_no_trail.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_blaze.glsl
 # custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_blaze.glsl
-# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
-custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/test_basic.glsl
+custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/test_basic.glsl
 # custom-shader = /home/arpangreat/ghostty/zig-out/share/ghostty/shaders/test_basic.glsl
-# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear_rainbow.glsl
+# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear_fade.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
 
