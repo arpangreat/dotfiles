@@ -148,3 +148,11 @@ clipboard = [
   { action = "toggle_images", global = true, label = "toggle images", bind = "ctrl i", after = "ClearReload" },
   { action = "edit", bind = "ctrl o" },
 ]
+
+"menus:power" = [
+  { action = "shutdown", bind = "Return" },
+  { action = "hibernate", bind = "Return" },
+  { action = "reboot", bind = "Return" },
+  { action = "logout", bind = "Return" },
+  { action = "suspend", bind = "Return" },
+]
