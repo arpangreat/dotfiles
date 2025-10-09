@@ -19,11 +19,11 @@ anchor_right = true
 
 [keybinds]
 close = ["Escape"]
-next = ["ctrl n"]
-previous = ["ctrl p"]
+next = ["ctrl j"]
+previous = ["ctrl k"]
 toggle_exact = ["ctrl e"]
 resume_last_query = ["ctrl r"]
-quick_activate = ["F1", "F2", "F3", "F4"]
+quick_activate = ["alt 1", "alt 2", "alt 3", "alt 4"]
 
 [providers]
 default = [
@@ -103,9 +103,9 @@ desktopapplications = [
   { action = "start", default = true, bind = "Return" },
   { action = "start", label = "open+next", bind = "shift Return", after = "KeepOpen" },
   { action = "erase_history", label = "clear hist", bind = "ctrl h", after = "AsyncReload" },
-  { action = "pin", bind = "ctrl j", after = "AsyncReload" },
-  { action = "unpin", bind = "ctrl k", after = "AsyncReload" },
-  { action = "pinup", bind = "ctrl l", after = "AsyncReload" },
+  { action = "pin", bind = "ctrl p", after = "AsyncReload" },
+  { action = "unpin", bind = "ctrl p", after = "AsyncReload" },
+  { action = "pinup", bind = "ctrl n", after = "AsyncReload" },
   { action = "pindown", bind = "ctrl m", after = "AsyncReload" },
 ]
 
