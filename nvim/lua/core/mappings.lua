@@ -1,10 +1,4 @@
--- Custom KeyBindings To make life easier You can change this to your own
--- Remember to map Your leader by writing
--- let mapleader = -- --
--- I use space as leader you can anything by putting
--- that character inside of the the double Qoutes
-
-vim.api.nvim_set_keymap("n", "<Leader>u", ":UndotreeToggle<CR>", { noremap = true, silent = false })
+vim.api.nvim_set_keymap("n", "<Leader>u", ":Undotree<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader><Leader>", "<C-^>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>sv", ":vsplit<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>ss", ":split<CR>", { noremap = true, silent = false })

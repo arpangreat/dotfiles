@@ -47,6 +47,8 @@ require("lazy").setup({ { import = "plugins" } }, {
 	},
 })
 
+vim.cmd("packadd nvim.undotree")
+
 vim.api.nvim_create_autocmd("User", {
 	pattern = "VeryLazy",
 	callback = function()
