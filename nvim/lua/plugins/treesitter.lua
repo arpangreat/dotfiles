@@ -18,7 +18,11 @@ return {
 				"cpp",
 				"typescript",
 				"go",
+				"gleam",
 				"json",
+				"jsonc",
+				"java",
+				"javadoc",
 				"toml",
 				"html",
 				"css",
@@ -39,6 +43,15 @@ return {
 				"perl",
 				"sql",
 				"blade",
+				"typescriptreact",
+				"vim",
+				"c_sharp",
+				"lua",
+				"luadoc",
+				"ocaml",
+				"ocamllex",
+				"ocaml_interface",
+				"vimdoc",
 			},
 			callback = function()
 				vim.treesitter.start()
@@ -46,46 +59,5 @@ return {
 				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 			end,
 		})
-		-- vim.treesitter.start()
 	end,
-	-- config = function()
-	-- 	require("nvim-treesitter.configs").setup({
-	-- 		highlight = {
-	-- 			enable = true,
-	-- 			-- custom_captures = {
-	-- 			--   -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-	-- 			--   ["foo.bar"] = "Identifier",
-	-- 			-- },
-	-- 		},
-	-- 		incremental_selection = {
-	-- 			enable = true,
-	-- 			keymaps = {
-	-- 				init_selection = "gnn", -- set to `false` to disable one of the mappings
-	-- 				node_incremental = "grn",
-	-- 				scope_incremental = "grc",
-	-- 				node_decremental = "grm",
-	-- 			},
-	-- 		},
-	-- 	})
-
-	-- 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
-
-	-- 	---@class parser_config
-	-- 	parser_config.blade = {
-	-- 		install_info = {
-	-- 			url = "https://github.com/EmranMR/tree-sitter-blade",
-	-- 			files = { "src/parser.c" },
-	-- 			branch = "main",
-	-- 		},
-
-	-- 		filetype = "blade",
-	-- 	}
-
-	-- 	vim.filetype.add({
-	-- 		pattern = {
-	-- 			[".*%.blade%.php"] = "blade",
-	-- 		},
-	-- 	})
-	-- 	-- require("ts_context_commentstring").setup({ enable_autocmd = false })
-	-- end,
 }

@@ -1,6 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/TypescriptExs
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/textbook
     - /home/arpangreat/.local/share/nvim/lazy/gitsigns.nvim
     - /home/arpangreat/icons-in-terminal
@@ -17,7 +19,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/undotree
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
@@ -35,7 +36,6 @@ recentrepos:
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
-    - /home/arpangreat/TypescriptExs
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/ns2exs

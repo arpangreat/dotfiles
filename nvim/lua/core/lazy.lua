@@ -36,6 +36,8 @@ require("lazy").setup({ { import = "plugins" } }, {
 				"tohtml",
 				"tutor",
 				"zipPlugin",
+				"syntax",
+				"Syntax",
 			},
 		},
 	},
