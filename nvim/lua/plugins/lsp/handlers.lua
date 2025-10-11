@@ -87,25 +87,27 @@ vim.lsp.enable("emmet_language_server")
 
 vim.lsp.enable("fish_lsp")
 
-vim.lsp.config("denols", {
-	settings = {
-		deno = {
-			enable = true,
-			suggest = {
-				imports = {
-					hosts = {
-						["https://deno.land"] = true,
-					},
-					autoDiscover = true,
-				},
-			},
-		},
-	},
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
+-- vim.lsp.config("denols", {
+-- 	settings = {
+-- 		deno = {
+-- 			enable = true,
+-- 			suggest = {
+-- 				imports = {
+-- 					hosts = {
+-- 						["https://deno.land"] = true,
+-- 					},
+-- 					autoDiscover = true,
+-- 				},
+-- 			},
+-- 		},
+-- 	},
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
 
-vim.lsp.enable("denols")
+-- vim.lsp.enable("denols")
+
+vim.lsp.enable("ts_ls")
 
 vim.lsp.config("cssls", {
 	cmd = { "vscode-css-language-server", "--stdio" },
