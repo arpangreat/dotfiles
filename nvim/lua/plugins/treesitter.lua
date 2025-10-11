@@ -16,6 +16,7 @@ return {
 				"zig",
 				"javascript",
 				"cpp",
+				"c",
 				"typescript",
 				"go",
 				"gleam",
@@ -52,6 +53,8 @@ return {
 				"ocamllex",
 				"ocaml_interface",
 				"vimdoc",
+				"angular",
+				"vue",
 			},
 			callback = function()
 				vim.treesitter.start()

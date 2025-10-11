@@ -1,6 +1,6 @@
 return {
 	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
-	{ "mbbill/undotree", event = "VeryLazy" },
+	-- { "mbbill/undotree", event = "VeryLazy" },
 	-- {
 	-- 	"nvim-mini/mini.files",
 	-- 	event = "VeryLazy",
