@@ -1,0 +1,9 @@
+#!/usr/bin/dash
+
+cp /home/arpangreat/ghostty/zig-out/share/nvim/site/ftdetect/ghostty.vim /home/arpangreat/dotfiles/nvim/ftdetect/ghostty.vim
+
+cp /home/arpangreat/ghostty/zig-out/share/nvim/site/ftplugin/ghostty.vim /home/arpangreat/dotfiles/nvim/ftplugin/ghostty.vim
+
+cp /home/arpangreat/ghostty/zig-out/share/nvim/site/syntax/ghostty.vim /home/arpangreat/dotfiles/nvim/syntax/ghostty.vim
+
+cp /home/arpangreat/ghostty/zig-out/share/nvim/site/compiler/ghostty.vim /home/arpangreat/dotfiles/nvim/compiler/ghostty.vim
