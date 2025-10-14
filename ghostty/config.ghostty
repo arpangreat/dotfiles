@@ -1,0 +1,118 @@
+#font-family = "Cascadia Code PL"
+#font-family-bold = "Cascadia Code PL"
+#font-family-italic = "Cascadia Code PL"
+#font-family-bold-italic = "Cascadia Code PL"
+
+#font-feature = calt
+#font-feature = ss01
+#font-feature = ss02
+#font-feature = ss03
+#font-feature = ss20
+
+font-family="Maple Mono NF"
+font-family-bold="Maple Mono NF"
+font-family-italic="Maple Mono NF"
+font-family-bold-italic="Maple Mono NF"
+
+#font-family="JetBrains Mono"
+#font-family-bold="JetBrains Mono"
+#font-family-italic="JetBrains Mono"
+#font-family-bold-italic="JetBrains Mono"
+
+# font-style = "Regular"
+# font-style-bold = "Bold"
+# font-style-italic = "Italic"
+# font-style-bold-italic = "Bold Italic"
+
+font-feature = calt
+font-feature = dlig
+font-feature = liga
+font-feature = zero
+font-feature = ss03
+font-feature = ss06
+font-feature = ss08
+font-feature = ss09
+font-feature = ss10
+font-feature = ss11
+font-feature = cv01
+font-feature = cv03
+font-feature = cv05
+font-feature = cv63
+font-feature = cv38
+
+#font-feature = calt
+#font-feature = ss01
+#font-feature = ss02
+#font-feature = ss03
+#font-feature = ss20
+
+# font_features JetBrainsMono-Regular +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-Bold +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-BoldItalic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features JetBrainsMono-Italic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
+# font_features MapleMono-Regular +calt +liga +dlig +zero +locl +cv02 +cv03 +cv31
+#font-feature = calt
+#font-feature = liga
+#font-feature = dlig
+#font-feature = zero
+#font-feature = locl
+#font-feature = cv02
+#font-feature = cv03
+#font-feature = cv31
+
+font-size = 11.0
+
+theme = "tokyonight_moon_my"
+
+cursor-style-blink = false
+
+background-opacity = 0.92
+
+keybind = ctrl+enter=unbind
+keybind = global:super+`=toggle_quick_terminal
+
+# window-padding-x = 2
+
+# window-padding-y = 2
+
+# gtk-single-instance = true
+# gtk-tabs-location = top
+# gtk-wide-tabs = false
+# gtk-toolbar-style = flat
+window-padding-balance = true
+
+# window-theme = ghostty
+
+
+# window-decoration = false
+
+# gtk-toolbar-style = raised-border
+
+# window-vsync = true
+
+shell-integration = fish
+
+shell-integration-features = cursor,no-sudo,title
+
+desktop-notifications = true
+
+copy-on-select = clipboard
+
+bold-color = "bright"
+link-url = true
+link-previews = true
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom010.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_synesthaxia(tweened).glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_blaze.glsl
+# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_blaze.glsl
+custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/test_basic.glsl
+# custom-shader = /home/arpangreat/ghostty/zig-out/share/ghostty/shaders/test_basic.glsl
+# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear_fade.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
+
+
+custom-shader-animation = true
+
+# term = xterm-ghostty
