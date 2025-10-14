@@ -1,4 +1,4 @@
-#!/usr/bin/dash
+#!/usr/bin/bash
 
 cp /home/arpangreat/ghostty/zig-out/share/nvim/site/ftdetect/ghostty.vim /home/arpangreat/dotfiles/nvim/ftdetect/ghostty.vim
 
