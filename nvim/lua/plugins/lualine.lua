@@ -79,18 +79,19 @@ return {
 				},
 				lualine_x = {
 					{
-						function()
-							local bufnr = vim.api.nvim_get_current_buf()
-							local clients = vim.lsp.get_clients({ bufnr = bufnr })
-							if not clients or #clients == 0 then
-								return ""
-							end
-							local names = {}
-							for _, client in ipairs(clients) do
-								table.insert(names, client.name)
-							end
-							return " " .. table.concat(names, "|")
-						end,
+						-- function()
+						-- 	local bufnr = vim.api.nvim_get_current_buf()
+						-- 	local clients = vim.lsp.get_clients({ bufnr = bufnr })
+						-- 	if not clients or #clients == 0 then
+						-- 		return ""
+						-- 	end
+						-- 	local names = {}
+						-- 	for _, client in ipairs(clients) do
+						-- 		table.insert(names, client.name)
+						-- 	end
+						-- 	return " " .. table.concat(names, "|")
+						-- end,
+						"lsp_status",
 					},
 					{ "diff" },
 				},
