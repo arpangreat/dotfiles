@@ -9,7 +9,7 @@ return {
 			local custom = require("lualine.themes.tokyonight")
 			local C = require("tokyonight.colors").setup({ style = "storm", transparent = true })
 
-			local function patch(group, fg, bg)
+			local function patch(group, fg)
 				if custom[group] then
 					custom[group].a = { fg = C[fg], bg = C.none }
 					custom[group].b = { bg = C.none }
@@ -49,6 +49,10 @@ return {
 				theme = theme,
 				globalstatus = true,
 				disabled_filetypes = { statusline = { "dashboard", "alpha" } },
+				-- always_divide_middle = true,
+				refresh = {
+					statusline = 100,
+				},
 			},
 			sections = {
 				lualine_a = { { "mode", icon = "" } },
@@ -57,10 +61,10 @@ return {
 					{
 						"diagnostics",
 						symbols = {
-							error = " ",
-							warn = " ",
-							info = " ",
-							hint = "󰝶 ",
+							error = " ",
+							warn = " ",
+							info = " ",
+							hint = " ",
 						},
 					},
 					{ "filetype", icon_only = true, separator = "", padding = { left = 0, right = 0 } },
@@ -76,6 +80,18 @@ return {
 						color = utils.get_hlgroup("Operator", nil),
 						padding = { left = 0, right = 1 },
 					},
+					{
+						function()
+							local reg = vim.fn.reg_recording()
+							if reg == "" then
+								reg = vim.fn.reg_executing()
+							end
+							if reg ~= "" then
+								return " " .. reg
+							end
+							return ""
+						end,
+					},
 				},
 				lualine_x = {
 					-- function()
@@ -90,8 +106,20 @@ return {
 					-- 	end
 					-- 	return " " .. table.concat(names, "|")
 					-- end,
-					{ "lsp_status", symbols = { separator = "|" } },
-					{ "diff" },
+					{ "lsp_status" },
+					{
+						"diff",
+						source = function()
+							local gitsigns = vim.b.gitsigns_status_dict
+							if gitsigns then
+								return {
+									added = gitsigns.added,
+									modified = gitsigns.changed,
+									removed = gitsigns.removed,
+								}
+							end
+						end,
+					},
 				},
 				lualine_y = {},
 				lualine_z = {
