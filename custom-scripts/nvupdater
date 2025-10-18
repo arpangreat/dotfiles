@@ -2,6 +2,13 @@
 
 cd ~/neovim/ || exit
 git pull
+
+export CC=gcc
+export CXX=g++
+export CFLAGS="-fuse-ld=mold"
+export CXXFLAGS="-fuse-ld=mold"
+export LDFLAGS="-fuse-ld=mold"
+
 sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make -j4 install
+sudo make -j7 install
 cd || exit

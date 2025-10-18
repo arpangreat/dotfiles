@@ -1,7 +1,7 @@
 return {
 	"folke/tokyonight.nvim",
 	priority = 1000,
-	-- lazy = false,
+	lazy = false,
 	-- enabled = false,
 	config = function()
 		require("tokyonight").setup({

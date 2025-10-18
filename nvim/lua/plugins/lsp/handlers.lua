@@ -38,6 +38,8 @@ vim.lsp.config("lua_ls", {
 			},
 		},
 	},
+	on_attach = on_attach,
+	capabilities = capabilities,
 })
 
 vim.lsp.enable("lua_ls")
@@ -53,21 +55,14 @@ vim.lsp.enable("ruff")
 vim.lsp.enable("ruby_lsp")
 
 vim.lsp.config("phpactor", {
-	cmd = { "phpactor", "language-server" },
 	filetypes = { "php", "blade" },
-	root_markers = { ".git", "composer.json", ".phpactor.json", ".phpactor.yml" },
-	workspace_required = true,
+	on_attach = on_attach,
+	capabilities = capabilities,
 })
 
 vim.lsp.enable("phpactor")
 
-vim.lsp.config("intelephense", {
-	cmd = { "intelephense", "--stdio" },
-	filetypes = { "php", "blade" },
-	root_markers = { "composer.json", ".git" },
-})
-
-vim.lsp.enable("intelephense")
+-- vim.lsp.enable("intelephense")
 
 vim.lsp.enable("tailwindcss")
 
@@ -82,6 +77,8 @@ vim.lsp.config("html_ls", {
 	},
 	root_markers = { "index.html", ".git" },
 	init_options = { provideFormatter = true },
+	on_attach = on_attach,
+	capabilities = capabilities,
 })
 
 vim.lsp.enable("html_ls")
@@ -90,25 +87,27 @@ vim.lsp.enable("emmet_language_server")
 
 vim.lsp.enable("fish_lsp")
 
-vim.lsp.config("denols", {
-	settings = {
-		deno = {
-			enable = true,
-			suggest = {
-				imports = {
-					hosts = {
-						["https://deno.land"] = true,
-					},
-					autoDiscover = true,
-				},
-			},
-		},
-	},
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
+-- vim.lsp.config("denols", {
+-- 	settings = {
+-- 		deno = {
+-- 			enable = true,
+-- 			suggest = {
+-- 				imports = {
+-- 					hosts = {
+-- 						["https://deno.land"] = true,
+-- 					},
+-- 					autoDiscover = true,
+-- 				},
+-- 			},
+-- 		},
+-- 	},
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- })
 
-vim.lsp.enable("denols")
+-- vim.lsp.enable("denols")
+
+vim.lsp.enable("ts_ls")
 
 vim.lsp.config("cssls", {
 	cmd = { "vscode-css-language-server", "--stdio" },
@@ -119,6 +118,8 @@ vim.lsp.config("cssls", {
 		scss = { validate = true },
 		less = { validate = true },
 	},
+	on_attach = on_attach,
+	capabilities = capabilities,
 })
 
 vim.lsp.enable("cssls")
@@ -146,3 +147,23 @@ vim.lsp.enable("jsonls")
 -- 	capabilities = capabilities,
 -- 	root_dir = require("lspconfig.util").root_pattern("composer.json"),
 -- })
+vim.lsp.config("phptools", {
+	filetypes = { "php", "blade" },
+	settings = {
+		php = {
+			stubs = "all",
+			condelens = {
+				enabled = true,
+			},
+			completion = {
+				autoimport = "auto-import",
+			},
+		},
+	},
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+vim.lsp.enable("phptools")
+
+vim.lsp.enable("gleam")

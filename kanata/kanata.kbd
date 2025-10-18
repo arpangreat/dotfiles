@@ -10,13 +10,13 @@
 )
 
 (defvar
-  tap-time 200
+  tap-time 150
   hold-time 200
 )
 
 (defalias
-  capsesc (tap-hold 150 200 caps esc)
-  escctrl (tap-hold 150 200 esc lctl)
+  capsesc (tap-hold $tap-time $hold-time caps esc)
+  escctrl (tap-hold $tap-time $hold-time esc lctl)
   a (multi f24 (tap-hold $tap-time $hold-time a lmet))
   s (multi f24 (tap-hold $tap-time $hold-time s lsft))
   d (tap-hold $tap-time $hold-time d (layer-while-held nav-layer))

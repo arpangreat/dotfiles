@@ -1,8 +1,8 @@
 return {
 	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
-	{ "mbbill/undotree", event = "VeryLazy" },
+	-- { "mbbill/undotree", event = "VeryLazy" },
 	-- {
-	-- 	"echasnovski/mini.files",
+	-- 	"nvim-mini/mini.files",
 	-- 	event = "VeryLazy",
 	-- 	config = function()
 	-- 		require("mini.files").setup()
@@ -34,7 +34,7 @@ return {
 		},
 	},
 	{
-		"echasnovski/mini.icons",
+		"nvim-mini/mini.icons",
 		lazy = true,
 		specs = {
 			{
@@ -63,7 +63,7 @@ return {
 		end,
 	},
 	{
-		"echasnovski/mini.hipatterns",
+		"nvim-mini/mini.hipatterns",
 		event = "VeryLazy",
 		config = function()
 			local hi = require("mini.hipatterns")

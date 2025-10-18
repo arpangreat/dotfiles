@@ -22,6 +22,7 @@ return {
 		icons = {
 			keys = {
 				Leader = "󱁐 ",
+				LocalLeader = ",",
 			},
 		},
 

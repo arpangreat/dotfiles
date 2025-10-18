@@ -3,7 +3,7 @@ return {
 	dependencies = "rafamadriz/friendly-snippets",
 	version = "1.*",
 	-- build = "cargo build --release --jobs 4",
-	event = "InsertEnter",
+	event = { "InsertEnter", "CmdlineEnter" },
 	opts = {
 		keymap = {
 			preset = "enter",
@@ -69,29 +69,29 @@ return {
 			ghost_text = { enabled = true },
 		},
 		-- fuzzy = { implementation = "prefer_rust_with_warning" },
-		signature = {
-			enabled = true,
-			trigger = {
-				show_on_insert_on_trigger_character = true,
-			},
-			window = {
-				border = "rounded",
-				winblend = 0,
-				scrollbar = false,
-			},
-		},
+		-- signature = {
+		-- 	enabled = true,
+		-- 	trigger = {
+		-- 		show_on_insert_on_trigger_character = true,
+		-- 	},
+		-- 	window = {
+		-- 		border = "rounded",
+		-- 		winblend = 0,
+		-- 		scrollbar = false,
+		-- 	},
+		-- },
 		sources = {
-			default = { "lazydev", "lsp", "path", "snippets", "laravel" },
+			default = { "lazydev", "lsp", "path", "snippets" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
 					module = "lazydev.integrations.blink",
 					score_offset = 100,
 				},
-				laravel = {
-					name = "laravel",
-					module = "laravel.blink_source",
-				},
+				-- laravel = {
+				-- 	name = "laravel",
+				-- 	module = "laravel.blink_source",
+				-- },
 
 				--[[ cmdline = {
 					enabled = function()

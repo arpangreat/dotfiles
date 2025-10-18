@@ -1,7 +1,11 @@
 starship init fish | source
 
 function fish_greeting
-    fastfetch --config ~/dotfiles/fastfetch/10.jsonc
+    fastfetch --config examples/10.jsonc
+end
+
+function copy_commandline
+    echo -n (commandline) | wl-copy
 end
 
 function fish_hybrid_key_bindings --description \
@@ -10,6 +14,20 @@ function fish_hybrid_key_bindings --description \
         fish_default_key_bindings -M $mode
     end
     fish_vi_key_bindings --no-erase
+    
+    # Add system clipboard bindings
+    # Paste from system clipboard with 'p' in normal mode
+    bind -M default p 'commandline -i (wl-paste)'
+    
+    # System clipboard paste with Ctrl+V in insert mode (in addition to emacs Ctrl+Y)
+    bind -M insert \cv 'commandline -i (wl-paste)'
+    
+    # Optional: Make 'Y' copy entire line to system clipboard in normal mode
+    bind -M default y copy_commandline
+
+    bind -M visual y 'set sel (commandline -s); commandline -f end-selection repaint-mode; echo -n $sel | wl-copy'
+
+    bind -M default \ce edit_command_buffer
 end
 
 set -g fish_key_bindings fish_hybrid_key_bindings
@@ -36,7 +54,7 @@ set fish_cursor_visual block
 
 if status --is-interactive
     and not set -q TMUX
-    tmux -u -2
+    tmux
 end
 
 set -gx EDITOR /usr/local/bin/nvim
@@ -52,9 +70,10 @@ set -g GOPATH $HOME/go
 
 set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
-set -g ANDROID_SDK_ROOT /opt/android-sdk
+set -g ANDROID_SDK_ROOT /home/arpangreat/Android/Sdk
 
-set -g MAKEFLAGS -j4
+set -gx MAKEFLAGS "-j7"
+set -gx GNUMAKEFLAGS "-j7"
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
@@ -156,3 +175,5 @@ fish_add_path "$ARGC_COMPLETIONS_ROOT/bin"
 # To add completions for only the specified command, modify next line e.g. set argc_scripts cargo git
 set argc_scripts (ls -1 "$ARGC_COMPLETIONS_ROOT/completions/linux" "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p')
 argc --argc-completions fish $argc_scripts | source
+
+source ~/.safe-chain/scripts/init-fish.fish # Safe-chain Fish initialization script
