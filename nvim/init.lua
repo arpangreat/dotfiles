@@ -12,6 +12,12 @@
 
 vim.loader.enable()
 
+-- vim.filetype.add({
+-- 	pattern = {
+-- 		[".*%.blade%.php"] = "php",
+-- 	},
+-- })
+
 require("core.settings")
 require("core.lazy")
 require("core.theme")

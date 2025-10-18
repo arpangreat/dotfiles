@@ -1,14 +1,16 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 command_timeout = 20000
-# line_break = false
 
 palette = "catppuccin_mocha"
 
 [character]
 success_symbol = "[󰘧](bold green)"
 error_symbol = "[󰘧](bold red)"
-vicmd_symbol = "[](bold green)"
+vimcmd_symbol = "[](bold green)"
+vimcmd_visual_symbol = "[V](bold yellow)"
+vimcmd_replace_one_symbol = "[r](bold purple)"
+vimcmd_replace_symbol = "[R](bold purple)"
 
 [directory]
 style = "blue bold"

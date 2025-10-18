@@ -79,7 +79,7 @@ function __gup_clear_perform_completion_once_result
     __gup_debug ""
     __gup_debug "========= clearing previously set __gup_perform_completion_once_result variable =========="
     set --erase __gup_perform_completion_once_result
-    __gup_debug "Succesfully erased the variable __gup_perform_completion_once_result"
+    __gup_debug "Successfully erased the variable __gup_perform_completion_once_result"
 end
 
 function __gup_requires_order_preservation

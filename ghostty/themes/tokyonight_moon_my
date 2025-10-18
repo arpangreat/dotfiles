@@ -14,6 +14,8 @@ palette = 12=#9ab8ff
 palette = 13=#caabff
 palette = 14=#b2ebff
 palette = 15=#c8d3f5
+palette = 16=#ff966c
+palette = 17=#c53b53
 
 background = #1E1E2E
 foreground = #CDD6F4

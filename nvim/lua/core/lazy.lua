@@ -12,7 +12,7 @@ end
 vim.opt.runtimepath:prepend(lazypath)
 
 require("lazy").setup({ { import = "plugins" } }, {
-	defaults = { lazy = true },
+	defaults = { lazy = false },
 	install = { colorscheme = { "tokyonight" } },
 	checker = { enabled = false },
 	change_detection = {
@@ -36,6 +36,8 @@ require("lazy").setup({ { import = "plugins" } }, {
 				"tohtml",
 				"tutor",
 				"zipPlugin",
+				"syntax",
+				"Syntax",
 			},
 		},
 	},
@@ -44,6 +46,8 @@ require("lazy").setup({ { import = "plugins" } }, {
 		border = "single",
 	},
 })
+
+vim.cmd("packadd nvim.undotree")
 
 vim.api.nvim_create_autocmd("User", {
 	pattern = "VeryLazy",

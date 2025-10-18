@@ -1,5 +1,5 @@
-vim.g.mapleader = " "
 vim.g.maplocalleader = ","
+vim.g.mapleader = " "
 
 -- Sets
 -- Ignoptrecases
@@ -35,7 +35,7 @@ vim.opt.winblend = 0
 vim.opt.pumblend = 0
 vim.opt.textwidth = 80
 vim.opt.ruler = true
--- vim.opt.winborder = "single"
+vim.opt.winborder = "single"
 -- vim.opt.cmdheight = 0
 
 -- Visuals

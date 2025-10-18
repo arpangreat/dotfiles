@@ -1,18 +1,27 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/TypescriptExs
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
+    - /home/arpangreat/textbook
+    - /home/arpangreat/.local/share/nvim/lazy/gitsigns.nvim
+    - /home/arpangreat/icons-in-terminal
+    - /home/arpangreat/CExamples
+    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
+    - /home/arpangreat/.local/share/nvim/lazy/oil.nvim
+    - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
+    - /home/arpangreat/gleam-first/new
+    - /home/arpangreat/fzf
+    - /home/arpangreat/RustExs
+    - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
+    - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
-    - /home/arpangreat/fzf
-    - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
-    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/ghostty
-    - /home/arpangreat/RustExs
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
@@ -26,7 +35,6 @@ recentrepos:
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
-    - /home/arpangreat/TypescriptExs
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/ns2exs
@@ -34,7 +42,6 @@ recentrepos:
     - /home/arpangreat/go
     - /home/arpangreat/zig-examples
     - /home/arpangreat/mono-dots
-    - /home/arpangreat/CExamples
     - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
     - /home/arpangreat/DSA-preps

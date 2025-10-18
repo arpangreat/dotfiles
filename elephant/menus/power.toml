@@ -4,26 +4,26 @@ icon = "applications-other"
 global_search = true
 
 [[entries]]
-action = "systemctl poweroff"
 icon = "system-shutdown"
 text = "Shutdown"
+actions = { "shutdown" = "systemctl poweroff" }
 
 [[entries]]
-action = "systemctl reboot"
 icon = "system-reboot"
 text = "Reboot"
+actions = { "reboot" = "systemctl reboot" }
 
 [[entries]]
-action = "systemctl hibernate"
 icon = "system-hibernate"
 text = "Hibernate"
+actions = { "hibernate" = "systemctl hibernate" }
 
 [[entries]]
-action = "systemctl suspend"
 icon = "system-suspend"
 text = "Suspend"
+actions = { "suspend" = "systemctl suspend" }
 
 [[entries]]
-action = "loginctl terminate-session ${XDG_SESSION_ID-}"
 icon = "system-logout"
 text = "Logout"
+actions = { "logout" = "loginctl terminate-session ${XDG_SESSION_ID-}" }
