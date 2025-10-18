@@ -5,6 +5,11 @@
 	email = arpanthegreat41@gmail.com
 [init]
 	defaultBranch = main
+[help]
+  autocorrect = prompt
+
+[commit]
+  verbose = true
 [core]
   excludesfile = ~/.gitignore
 	editor = nvim
@@ -22,6 +27,7 @@
 [push]
 	default = simple
   autoSetupRemote = true
+  followTags = true
 [color]
   status = auto
   diff = auto
@@ -61,6 +67,11 @@
   protocol = https
 [github]
 	user = arpangreat
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
 [diff "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
 
@@ -72,7 +83,7 @@
 
 [merge]
   tool = nvimdiff
-  conflictStyle = zdiff3
+	conflictstyle = zdiff3
 
 [mergetool "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
@@ -85,16 +96,23 @@
 
 [pull]
 	rebase = false
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [status]
 	show-toplevel-name = true
 [rerere]
 	enabled = true
+  autoupdate = true
 [column]
 	ui = auto
 [branch]
 	sort = -committerdate
+[tag]
+  sort = version:refname
 [maintenance]
 	repo = /home/arpangreat/dotfiles
 [rebase]
@@ -103,5 +121,10 @@
   writeCommitGraph = true
 [fetch]
   writeCommitGraph = true
+  prune = true
+  pruneTags = true
+  all = true
 [commitGraph]
   generationVersion = 2
+[feature]
+	experimental = true
