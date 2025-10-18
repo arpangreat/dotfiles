@@ -1,6 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/kitty
+    - /home/arpangreat/ghostty
     - /home/arpangreat/TypescriptExs
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/textbook
@@ -15,13 +17,11 @@ recentrepos:
     - /home/arpangreat/fzf
     - /home/arpangreat/RustExs
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
-    - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
-    - /home/arpangreat/ghostty
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc

@@ -39,6 +39,7 @@ font-feature = cv03
 font-feature = cv05
 font-feature = cv63
 font-feature = cv38
+font-feature = cv66
 
 #font-feature = calt
 #font-feature = ss01
@@ -108,7 +109,7 @@ link-previews = true
 custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/test_basic.glsl
 # custom-shader = /home/arpangreat/ghostty/zig-out/share/ghostty/shaders/test_basic.glsl
-# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear_fade.glsl
+# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
 

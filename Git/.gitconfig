@@ -122,8 +122,8 @@
 [fetch]
   writeCommitGraph = true
   prune = true
-  pruneTags = true
   all = true
+	parallel = 4
 [commitGraph]
   generationVersion = 2
 [feature]
