@@ -9,8 +9,8 @@ hovered         = { bg = "#292e42" }
 preview_hovered = { bg = "#292e42" }
 
 # Find
-find_keyword  = { fg = "#1f2335", bg = "#ff9e64", bold = true }
-find_position = { fg = "#0db9d7", bg = "#22374b", bold = true }
+find_keyword  = { fg = "#16161e", bg = "#ff9e64", bold = true }
+find_position = { fg = "#0db9d7", bg = "#192b38", bold = true }
 
 # Marker
 marker_copied   = { fg = "#73daca", bg = "#73daca" }
@@ -20,7 +20,7 @@ marker_selected = { fg = "#7aa2f7", bg = "#7aa2f7" }
 
 # Tab
 tab_active   = { fg = "#c0caf5", bg = "#292e42" }
-tab_inactive = { fg = "#3b4261", bg = "#24283b" }
+tab_inactive = { fg = "#3b4261", bg = "#1a1b26" }
 tab_width    = 1
 
 # Count
@@ -30,16 +30,16 @@ count_selected = { fg = "#c0caf5", bg = "#3d59a1" }
 
 # Border
 border_symbol = "│"
-border_style  = { fg = "#29a4bd" }
+border_style  = { fg = "#27a1b9" }
 
 [mode]
-normal_main = { fg = "#1d202f", bg = "#7aa2f7", bold = true }
+normal_main = { fg = "#15161e", bg = "#7aa2f7", bold = true }
 normal_alt  = { fg = "#7aa2f7", bg = "#3b4261" }
 
-select_main = { fg = "#1d202f", bg = "#bb9af7", bold = true }
+select_main = { fg = "#15161e", bg = "#bb9af7", bold = true }
 select_alt  = { fg = "#bb9af7", bg = "#3b4261" }
 
-unset_main  = { fg = "#1d202f", bg = "#9d7cd8", bold = true }
+unset_main  = { fg = "#15161e", bg = "#9d7cd8", bold = true }
 unset_alt   = { fg = "#9d7cd8", bg = "#3b4261" }
 
 [status]
@@ -49,7 +49,7 @@ separator_close   = ""
 
 # Progress
 progress_label  = { fg = "#a9b1d6", bold = true }
-progress_normal = { fg = "#24283b" }
+progress_normal = { fg = "#1a1b26" }
 progress_error  = { fg = "#f7768e" }
 
 # Permissions
@@ -60,8 +60,8 @@ perm_exec  = { fg = "#9ece6a" }
 perm_sep   = { fg = "#414868" }
 
 [pick]
-border   = { fg = "#29a4bd" }
-active   = { fg = "#c0caf5",  bg = "#2e3c64" }
+border   = { fg = "#27a1b9" }
+active   = { fg = "#c0caf5",  bg = "#283457" }
 inactive = { fg = "#c0caf5" }
 
 # Input
@@ -69,12 +69,12 @@ inactive = { fg = "#c0caf5" }
 border   = { fg = "#0db9d7" }
 title    = { fg = "#0db9d7" }
 value    = { fg = "#9d7cd8" }
-selected = { bg = "#2e3c64" }
+selected = { bg = "#283457" }
 
 # Completion
 [completion]
 border   = { fg = "#0db9d7" }
-active   = { fg = "#c0caf5", bg = "#2e3c64" }
+active   = { fg = "#c0caf5", bg = "#283457" }
 inactive = { fg = "#c0caf5" }
 
 icon_file    = ""
@@ -83,14 +83,14 @@ icon_command = ""
 
 # Tasks
 [tasks]
-border  = { fg = "#29a4bd" }
-title   = { fg = "#29a4bd" }
-hovered = { fg = "#c0caf5", bg="#2e3c64" }
+border  = { fg = "#27a1b9" }
+title   = { fg = "#27a1b9" }
+hovered = { fg = "#c0caf5", bg="#283457" }
 
 # Which
 [which]
 cols            = 3
-mask            = { bg = "#1f2335" }
+mask            = { bg = "#16161e" }
 cand            = { fg = "#7dcfff" }
 rest            = { fg = "#7aa2f7" }
 desc            = { fg = "#bb9af7" }
@@ -100,17 +100,17 @@ separator_style = { fg = "#565f89" }
 # Confirm
 [confirm]
 border  = { fg = "#0db9d7" }
-title   = { fg = "#29a4bd" }
+title   = { fg = "#27a1b9" }
 content = {}
 list    = {}
-btn_yes = { bg = "#2e3c64" }
+btn_yes = { bg = "#283457" }
 btn_no  = {}
 btn_labels = [ "  [Y]es  ", "  (N)o  " ]
 
 # Spot
 [spot]
-border  = { fg = "#29a4bd" }
-title   = { fg = "#29a4bd" }
+border  = { fg = "#27a1b9" }
+title   = { fg = "#27a1b9" }
 
 # Notify
 [notify]
@@ -127,7 +127,7 @@ icon_info = ""
 on      = { fg = "#9ece6a" }
 run     = { fg = "#bb9af7" }
 hovered = { bg = "#292e42" }
-footer  = { fg = "#c0caf5", bg = "#24283b" }
+footer  = { fg = "#c0caf5", bg = "#1a1b26" }
 
 [filetype]
 
