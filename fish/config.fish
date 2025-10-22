@@ -43,6 +43,7 @@ end
 
 # fzf_key_bindings
 fzf --fish | source
+source /home/arpangreat/fzf-git.sh/fzf-git.fish
 
 # atuin init fish | source
 
