@@ -18,7 +18,6 @@
     --info=inline-right \
     --layout='reverse' \
     --ansi \
-    --raw \
     --gutter-raw='▎' \
     --border-label=' alt-k/p:↑ | alt-j/n:↓ | ctrl-r:toggle-all | ctrl-s:sort | ?:preview | alt-w:wrap | tab:select ' \
     --border-label-pos=0:bottom"
