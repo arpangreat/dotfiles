@@ -7,7 +7,7 @@ return {
 	opts = {
 		-- calling `setup` is optional for customization
 		-- local config = require("fzf-lua.config")
-		-- profile = "telescope",
+		profiles = "fzf-native",
 
 		keymap = {
 			builtin = {
