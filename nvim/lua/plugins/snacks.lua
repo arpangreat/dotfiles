@@ -16,9 +16,9 @@ return {
 		words = { enabled = true, debounce = 100 },
 		lazygit = { enabled = true },
 
-		win = {
-			border = "rounded",
-		},
+		-- win = {
+		-- 	border = "rounded",
+		-- },
 	},
 	keys = {
 		{
