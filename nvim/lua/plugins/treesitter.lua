@@ -19,6 +19,7 @@ return {
 				"c",
 				"typescript",
 				"go",
+				"gomod",
 				"gleam",
 				"json",
 				"jsonc",
