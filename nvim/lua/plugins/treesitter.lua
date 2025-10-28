@@ -56,6 +56,7 @@ return {
 				"vimdoc",
 				"angular",
 				"vue",
+				"hyprlang",
 			},
 			callback = function()
 				vim.treesitter.start()
