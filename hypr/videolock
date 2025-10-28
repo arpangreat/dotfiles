@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+MONITOR="eDP-1"
+VIDEO="$HOME/Videos/lockscreen.mp4"
+
+# Start video wallpaper
+mpvpaper -o "--loop --no-audio --panscan=1.0" "$MONITOR" "$VIDEO" &
+
+# Save PID so we can kill later
+MPVPAPER_PID=$!
+
+# Wait a moment for mpvpaper to appear
+sleep 0.5
+
+# Run the lock screen
+hyprlock
+
+# When unlocked, kill mpvpaper
+kill $MPVPAPER_PID
