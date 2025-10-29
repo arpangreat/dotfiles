@@ -68,7 +68,7 @@
     "format": "  {}",
     "escape": true,
     "interval": 5,
-    "tooltip": false,
+    "tooltip": true,
     "exec": "playerctl metadata --format='{{ title }}'",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
