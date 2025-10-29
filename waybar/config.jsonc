@@ -70,6 +70,8 @@
     "interval": 5,
     "tooltip": false,
     "exec": "playerctl metadata --format='{{ title }}'",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
     "on-click": "playerctl play-pause",
     "max-length": 50,
   },
