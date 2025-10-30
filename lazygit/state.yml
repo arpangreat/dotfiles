@@ -1,8 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/myjournal-app
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
+    - /home/arpangreat/myjournal-app
     - /home/arpangreat/arpangreat
     - /home/arpangreat/.local/share/nvim/lazy/lazy.nvim
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
