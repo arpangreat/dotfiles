@@ -1,10 +1,22 @@
+local conform_ok, conform = pcall(require, "conform")
 local M = {}
 M.on_attach = function(client, bufnr)
 	vim.lsp.inlay_hint.enable(true, { bufnr })
 
-	client.server_capabilities.documentFormattingprovider = false
-	client.server_capabilities.documentRangeFormattingProvider = false
-	client.server_capabilities.didSave = false
+	local has_conform_formatter = false
+	if conform_ok then
+		local available = conform.list_formatters(bufnr)
+		has_conform_formatter = available and #available > 0
+	end
+
+	-- Enable or disable LSP formatting dynamically
+	if has_conform_formatter then
+		client.server_capabilities.documentFormattingProvider = false
+		client.server_capabilities.documentRangeFormattingProvider = false
+	else
+		client.server_capabilities.documentFormattingProvider = true
+		client.server_capabilities.documentRangeFormattingProvider = true
+	end
 
 	vim.keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { noremap = true, silent = true })
 	-- vim.keymap.set("n", "K", "<cmd>lua require('pretty_hover').hover()<CR>", { noremap = true, silent = true })
@@ -40,13 +52,48 @@ M.on_attach = function(client, bufnr)
 	vim.keymap.set("n", "<Leader>gwl", function()
 		print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 	end, { noremap = true, silent = true })
+
+	if client.server_capabilities.codeLensProvider then
+		vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "CursorHold" }, {
+			buffer = bufnr,
+			callback = vim.lsp.codelens.refresh,
+		})
+
+		vim.keymap.set(
+			"n",
+			"<Leader>rg",
+			"<cmd>lua vim.lsp.codelens.run()<CR>",
+			{ desc = "Run CodeLens", buffer = bufnr }
+		)
+	end
 end
 
-M.capabilities = vim.lsp.protocol.make_client_capabilities()
-M.capabilities = vim.tbl_deep_extend("force", M.capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
-M.capabilities.textDocument.completion.completionItem.snippetSupport = true
-M.capabilities.textDocument.foldingRange.dynamicRegistration = false
-M.capabilities.textDocument.foldingRange.lineFoldingOnly = true
+M.capabilities = vim.tbl_deep_extend(
+	"force",
+	vim.lsp.protocol.make_client_capabilities(),
+	require("blink.cmp").get_lsp_capabilities({}, false),
+	{
+		textDocument = {
+			completion = {
+				completionItem = { snippetSupport = true },
+			},
+			foldingRange = {
+				dynamicRegistration = false,
+				lineFoldingOnly = true,
+			},
+		},
+		experimental = {
+			serverStatusNotification = true,
+			commands = {
+				commands = {
+					"rust-analyzer.showReferences",
+					"rust-analyzer.runSingle",
+					"rust-analyzer.debugSingle",
+				},
+			},
+		},
+	}
+)
 -- M.capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
 
 -- vim.lsp.config("*", {

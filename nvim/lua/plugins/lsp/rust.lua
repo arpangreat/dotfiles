@@ -57,6 +57,14 @@ vim.lsp.config("rust_analyzer", {
 			experimental = {
 				serverStatusNotification = true,
 			},
+
+			lens = {
+				enable = true,
+				implementations = {
+					enable = true,
+				},
+				references = { adt = { enable = true } },
+			},
 			-- on_attach = my_custom_attach,
 		},
 	},
