@@ -3,12 +3,12 @@ plugins = [
   "scratchpads",
   # "monitors",
   # "shift_monitors",
-  "workspaces_follow_focus",
+  # "workspaces_follow_focus",
   "expose",
 ]
 
-[workspaces_follow_focus]
-max_workspaces = 9
+# [workspaces_follow_focus]
+# max_workspaces = 9
 
 # [monitors]
 # unknown = "wlrlui"
