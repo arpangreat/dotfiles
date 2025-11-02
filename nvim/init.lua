@@ -17,7 +17,6 @@ vim.loader.enable()
 -- 		[".*%.blade%.php"] = "php",
 -- 	},
 -- })
-vim.cmd("syntax off")
 
 require("core.settings")
 require("core.lazy")
