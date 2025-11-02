@@ -4,7 +4,8 @@
 	name = arpangreat
 	email = arpanthegreat41@gmail.com
 [init]
-	defaultBranch = main
+  defaultRefFormat=files
+  defaultBranch = main
 [help]
   autocorrect = prompt
 
