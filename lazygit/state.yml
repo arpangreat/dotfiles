@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/rainbow-delimiters.nvim
     - /home/arpangreat/fuxx
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/myjournal-app
