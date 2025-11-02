@@ -54,7 +54,7 @@ sudo npm install -g vls
 sudo yarn global add yaml-language-server
 ```
 
-# to setup lua lsp [follow this link](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it
+# to setup lua lsp [follow this link](<https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)>) , and don't forget to make a directory under ~/.config/nvim named as language-server and do everything under it
 
 # to setup gopls run
 
