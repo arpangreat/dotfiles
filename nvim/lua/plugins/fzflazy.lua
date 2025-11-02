@@ -12,19 +12,19 @@ return {
 		keymap = {
 			builtin = {
 				true,
-				["<ctrl-f>"] = "preview-page-down",
-				["<ctrl-b>"] = "preview-page-up",
-				["<ctrl-u>"] = "preview-down",
-				["<ctrl-d>"] = "preview-up",
+				["<c-u>"] = "preview-page-down",
+				["<c-d>"] = "preview-page-up",
+				["<ctrl-f>"] = "preview-down",
+				["<ctrl-b>"] = "preview-up",
 				["<ctrl-p>"] = "toggle-preview",
 			},
 			fzf = {
 				true,
-				["ctrl-u"] = "half-page-up",
-				["ctrl-d"] = "half-page-down",
+				["ctrl-f"] = "half-page-up",
+				["ctrl-b"] = "half-page-down",
 				["ctrl-x"] = "jump",
-				["ctrl-f"] = "preview-page-down",
-				["ctrl-b"] = "preview-page-up",
+				["ctrl-d"] = "preview-page-down",
+				["ctrl-u"] = "preview-page-up",
 			},
 		},
 		-- config.defaults.keymap.fzf["alt-n"] = "preview-page-down"
