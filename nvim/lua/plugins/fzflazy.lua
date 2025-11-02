@@ -12,8 +12,8 @@ return {
 		keymap = {
 			builtin = {
 				true,
-				["<c-f>"] = "preview-page-down",
-				["<c-b>"] = "preview-page-up",
+				["<ctrl-f>"] = "preview-page-down",
+				["<ctrl-b>"] = "preview-page-up",
 				["<ctrl-u>"] = "preview-down",
 				["<ctrl-d>"] = "preview-up",
 				["<ctrl-p>"] = "toggle-preview",
@@ -32,4 +32,9 @@ return {
 		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"
 		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"
 	},
+	config = function(_, opts)
+		local fzf = require("fzf-lua")
+		fzf.setup(opts)
+		fzf.register_ui_select()
+	end,
 }
