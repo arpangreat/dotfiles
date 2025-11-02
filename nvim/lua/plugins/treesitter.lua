@@ -58,6 +58,8 @@ return {
 				"vue",
 				"hyprlang",
 				"diff",
+				"markdown",
+				"markdown_inline",
 			},
 			callback = function()
 				vim.treesitter.start()
