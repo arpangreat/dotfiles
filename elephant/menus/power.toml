@@ -1,7 +1,6 @@
 name = "powermenu"
 name_pretty = "Power Menu"
 icon = "applications-other"
-global_search = true
 
 [[entries]]
 icon = "system-shutdown"
