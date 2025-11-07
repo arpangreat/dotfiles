@@ -81,10 +81,11 @@ keybind = global:super+`=toggle_quick_terminal
 # gtk-wide-tabs = false
 # gtk-toolbar-style = flat
 window-padding-balance = true
-window-padding-color = extend
+window-padding-color = extend-always
 
-# window-theme = ghostty
+window-theme = ghostty
 
+window-show-tab-bar = never
 
 # window-decoration = false
 
