@@ -1,6 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.tmux/plugins/tmux-floax
+    - /home/arpangreat/fzf
     - /home/arpangreat/.local/share/nvim/lazy/rainbow-delimiters.nvim
     - /home/arpangreat/fuxx
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
@@ -20,7 +22,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/oil.nvim
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
-    - /home/arpangreat/fzf
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
