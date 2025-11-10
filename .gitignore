@@ -7,3 +7,6 @@ emacs/eln-cache
 fish/completions/fish/**
 helix/runtime
 lazygit/state.yml
+
+.gemini/
+gha-creds-*.json

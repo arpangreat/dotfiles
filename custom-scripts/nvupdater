@@ -9,6 +9,6 @@ export CFLAGS="-fuse-ld=mold"
 export CXXFLAGS="-fuse-ld=mold"
 export LDFLAGS="-fuse-ld=mold"
 
-sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make CMAKE_BUILD_TYPE=Release
 sudo make -j7 install
 cd || exit

@@ -43,6 +43,7 @@ end
 
 # fzf_key_bindings
 fzf --fish | source
+source /home/arpangreat/fzf-git.sh/fzf-git.fish
 
 # atuin init fish | source
 
@@ -59,7 +60,8 @@ end
 
 set -gx EDITOR /usr/local/bin/nvim
 
-set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
+# set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
+batman --export-env | source
 
 set -g DENO_INSTALL "/home/arpangreat/.deno"
 fish_add_path $DENO_INSTALL/bin:$PATH
