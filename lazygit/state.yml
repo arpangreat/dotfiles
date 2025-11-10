@@ -1,31 +1,36 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/TypescriptExs
+    - /home/arpangreat/.tmux/plugins/tmux-floax
+    - /home/arpangreat/fzf
+    - /home/arpangreat/.local/share/nvim/lazy/rainbow-delimiters.nvim
+    - /home/arpangreat/fuxx
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
+    - /home/arpangreat/myjournal-app
+    - /home/arpangreat/arpangreat
+    - /home/arpangreat/.local/share/nvim/lazy/lazy.nvim
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
+    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
+    - /home/arpangreat/TypescriptExs
+    - /home/arpangreat/RustExs
+    - /home/arpangreat/kitty
+    - /home/arpangreat/ghostty
     - /home/arpangreat/textbook
     - /home/arpangreat/.local/share/nvim/lazy/gitsigns.nvim
     - /home/arpangreat/icons-in-terminal
     - /home/arpangreat/CExamples
-    - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/.local/share/nvim/lazy/oil.nvim
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/gleam-first/new
-    - /home/arpangreat/fzf
-    - /home/arpangreat/RustExs
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
-    - /home/arpangreat/kitty
     - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
     - /home/arpangreat/.local/share/nvim/lazy/catppuccin
-    - /home/arpangreat/ghostty
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
-    - /home/arpangreat/myjournal-app
     - /home/arpangreat/PythonExs
     - /home/arpangreat/nnn
     - /home/arpangreat/cli
@@ -48,7 +53,7 @@ recentrepos:
     - /home/arpangreat/weedy
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
-didshowhunkstaginghint: false
+didshowhunkstaginghint: true
 lastversion: unversioned
 customcommandshistory:
     - git branch

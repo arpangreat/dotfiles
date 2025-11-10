@@ -29,9 +29,9 @@ gui:
 os:
   editPreset: "nvim"
 git:
-  paging:
-    colorArg: always
-    pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+  pagers:
+    - colorArg: always
+      pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   commit:
     signOff: true
   log:
@@ -65,8 +65,7 @@ customCommands:
         title: "Which PR do you want to merge?"
         key: "PullRequestNumber"
         command: >-
-          gh pr list --json number,title,headRefName,updatedAt
-          --template '{{`{{range .}}{{printf "#%v: %s - %s (%s)" .number .title .headRefName (timeago .updatedAt)}}{{end}}`}}'
+          gh pr list --json number,title,headRefName,updatedAt --template '{{`{{range .}}{{printf "#%v: %s - %s (%s)" .number .title .headRefName (timeago .updatedAt)}}{{end}}`}}'
         filter: "#(?P<number>[0-9]+): (?P<title>.+) - (?P<ref_name>[^ ]+).*"
         valueFormat: "{{.number}}"
         labelFormat: '{{"#" | black | bold}}{{.number | white | bold}} {{.title | yellow | bold}}{{" [" | black | bold}}{{.ref_name | green}}{{"]" | black | bold}}'

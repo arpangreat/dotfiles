@@ -1,43 +1,23 @@
-set -Ux FZF_DEFAULT_OPTS "\
---color=bg+:#313244,bg:#1e1e2e,spinner:#ff007c,hl:#65bcff \
---color=fg:#c8d3f5,header:#ff966c,info:#545c7e,pointer:#ff007c \
---color=marker:#ff007c,fg+:#cdd6f4,prompt:#65bcff,hl+:#65bcff \
---color=selected-bg:#45475a \
---height='80%' \
---bind='alt-k:preview-up,alt-p:preview-up' \
---bind='alt-j:preview-down,alt-n:preview-down' \
---bind='ctrl-r:toggle-all' \
---bind='ctrl-s:toggle-sort' \
---bind='?:toggle-preview' \
---bind='alt-w:toggle-preview-wrap' \
---preview='bat --color=always {}' \
---preview-window='right:60%' \
---border --multi --info inline-right --layout reverse --marker ▏ --pointer ▌ --prompt '▌ '  \
---highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189 \
---info=inline-right \
---ansi\
-"
-
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-  --highlight-line \
-  --info=inline-right \
-  --ansi \
-  --layout=reverse \
-  --border=none
-  --color=bg+:#2d3f76 \
-  --color=bg:#1e2030 \
-  --color=border:#589ed7 \
-  --color=fg:#c8d3f5 \
-  --color=gutter:#1e2030 \
-  --color=header:#ff966c \
-  --color=hl+:#65bcff \
-  --color=hl:#65bcff \
-  --color=info:#545c7e \
-  --color=marker:#ff007c \
-  --color=pointer:#ff007c \
-  --color=prompt:#65bcff \
-  --color=query:#c8d3f5:regular \
-  --color=scrollbar:#589ed7 \
-  --color=separator:#ff966c \
-  --color=spinner:#ff007c \
-"
+ set -Ux FZF_DEFAULT_OPTS "\
+    --color=spinner:#ff007c,hl:#2ac3de \
+    --color=fg:#c0caf5,header:#ff9e64,info:#545c7e,pointer:#ff007c \
+    --color=marker:#ff007c,fg+:#c0caf5,prompt:#2ac3de,hl+:#2ac3de \
+    --color=selected-bg:#45475a,border:#29a4bd,gutter:#1f2335 \
+    --color=query:#c0caf5:regular,scrollbar:#29a4bd \
+    --height='80%' \
+    --bind='alt-k:preview-up,alt-p:preview-up' \
+    --bind='alt-j:preview-down,alt-n:preview-down' \
+    --bind='ctrl-r:toggle-all' \
+    --bind='ctrl-s:toggle-sort' \
+    --bind='?:toggle-preview' \
+    --bind='alt-w:toggle-preview-wrap' \
+    --preview='bat --color=always {}' \
+    --preview-window='right:60%' \
+    --border --multi --info inline-right --layout reverse --marker ▏ --pointer '▎' --prompt '▎' \
+    --highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189 \
+    --info=inline-right \
+    --layout='reverse' \
+    --ansi \
+    --gutter-raw='▎' \
+    --border-label=' alt-k/p:↑ | alt-j/n:↓ | ctrl-r:toggle-all | ctrl-s:sort | ?:preview | alt-w:wrap | tab:select ' \
+    --border-label-pos=0:bottom"

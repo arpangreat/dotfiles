@@ -39,6 +39,7 @@ font-feature = cv03
 font-feature = cv05
 font-feature = cv63
 font-feature = cv38
+font-feature = cv66
 
 #font-feature = calt
 #font-feature = ss01
@@ -60,7 +61,7 @@ font-feature = cv38
 #font-feature = cv03
 #font-feature = cv31
 
-font-size = 11.0
+# font-size = 11.0
 
 theme = "tokyonight_moon_my"
 
@@ -71,18 +72,20 @@ background-opacity = 0.92
 keybind = ctrl+enter=unbind
 keybind = global:super+`=toggle_quick_terminal
 
-# window-padding-x = 2
+# window-padding-x = 1
 
-# window-padding-y = 2
+# window-padding-y = 1
 
 # gtk-single-instance = true
 # gtk-tabs-location = top
 # gtk-wide-tabs = false
 # gtk-toolbar-style = flat
 window-padding-balance = true
+window-padding-color = extend-always
 
-# window-theme = ghostty
+window-theme = ghostty
 
+window-show-tab-bar = never
 
 # window-decoration = false
 
@@ -101,6 +104,8 @@ copy-on-select = clipboard
 bold-color = "bright"
 link-url = true
 link-previews = true
+
+async-backend = "epoll"
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom010.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_synesthaxia(tweened).glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_blaze.glsl
@@ -108,7 +113,7 @@ link-previews = true
 custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/test_basic.glsl
 # custom-shader = /home/arpangreat/ghostty/zig-out/share/ghostty/shaders/test_basic.glsl
-# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear_fade.glsl
+# custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
 

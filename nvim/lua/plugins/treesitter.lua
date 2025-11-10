@@ -19,6 +19,7 @@ return {
 				"c",
 				"typescript",
 				"go",
+				"gomod",
 				"gleam",
 				"json",
 				"jsonc",
@@ -55,6 +56,10 @@ return {
 				"vimdoc",
 				"angular",
 				"vue",
+				"hyprlang",
+				"diff",
+				"markdown",
+				"markdown_inline",
 			},
 			callback = function()
 				vim.treesitter.start()
