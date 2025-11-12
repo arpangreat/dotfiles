@@ -1,7 +1,7 @@
-CompileFlags:                     # Tweak the parse settings
-  Add: [-xc++, -Wall]             # treat all files as C++, enable more warnings
-  Remove: # strip all other warning-related flags
-  Compiler: clang++               # Change argv[0] of compile flags to `clang++`
+CompileFlags: # Tweak the parse settings
+  Add: [-Wall] # treat all files as C++, enable more warnings
+  # Remove: # strip all other warning-related flags
+  # Compiler: clang++               # Change argv[0] of compile flags to `clang++`
 
 Diagnostics:
   ClangTidy:
