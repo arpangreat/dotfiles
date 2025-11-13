@@ -1,4 +1,4 @@
-;; Kanata configuration for Ctrl+j/k/l/h as arrow keys
+;; Kanata configuration
 
 (defcfg
  process-unmapped-keys yes
@@ -6,11 +6,11 @@
 )
 
 (defsrc
-  esc caps a s d l ; h i j k
+  esc caps a s d f l ; h i j k m y u o p 9 0 [ ] =
 )
 
 (defvar
-  tap-time 150
+  tap-time 200
   hold-time 200
 )
 
@@ -20,20 +20,43 @@
   a (multi f24 (tap-hold $tap-time $hold-time a lmet))
   s (multi f24 (tap-hold $tap-time $hold-time s lsft))
   d (tap-hold $tap-time $hold-time d (layer-while-held nav-layer))
+  ;; Suggestion 1: Add Alt to the home row on the 'f' key
+  f (multi f24 (tap-hold $tap-time $hold-time f lalt))
   l (multi f24 (tap-hold $tap-time $hold-time l rsft))
-  ; (multi f24 (tap-hold $tap-time $hold-time ; rmet))
-  
+  ;; Suggestion 3: Change ; to be a layer-hold for a new symbols layer
+  semicolon (tap-hold $tap-time $hold-time ; (layer-while-held symbols))
+
   ;; Arrow key mappings for nav layer
   nav-left left
   nav-up up
   nav-down down
   nav-right right
+
+  ;; Suggestion 2: Add Home, End, PageUp, PageDown to nav layer
+  nav-home home
+  nav-end end
+  nav-pgup pgup
+  nav-pgdn pgdn
+
+  ;; Symbol aliases for the symbol layer
+  lprn S-9
+  rprn S-0
+  lbrc [
+  rbrc ]
+  lcbr S-[
+  rcbr S-]
+  eql =
 )
 
 (deflayer base
-  @capsesc @escctrl @a @s @d @l @; h i j k
+  @capsesc @escctrl @a @s @d @f @l @semicolon h i j k m y u o p 9 0 [ ] =
 )
 
 (deflayer nav-layer
-  _ _ _ _ _ _ _ @nav-left @nav-up @nav-down @nav-right
+  _ _ _ _ _ _ @nav-right _ @nav-left _ @nav-down @nav-up _ @nav-home @nav-pgup @nav-pgdn @nav-end _ _ _ _ _
+)
+
+;; Suggestion 3: A new layer for symbols
+(deflayer symbols
+  _ _ @lprn @rprn @lbrc @rbrc _ _ @eql _ @lcbr @rcbr _ _ _ _ _ _ _ _ _ _
 )
