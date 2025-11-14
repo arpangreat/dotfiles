@@ -17,5 +17,11 @@ return {
 			check_rtp = false,
 			check_rtp_message = false,
 		},
+		preview = {
+			filetypes = {
+				"markdown",
+				"codecompanion",
+			},
+		},
 	},
 }
