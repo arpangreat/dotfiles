@@ -60,6 +60,7 @@ return {
 				"diff",
 				"markdown",
 				"markdown_inline",
+				"yaml",
 			},
 			callback = function()
 				vim.treesitter.start()
