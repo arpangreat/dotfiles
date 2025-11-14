@@ -3,7 +3,7 @@
   "SchemaStore.nvim": { "branch": "main", "commit": "eed1834170f343c14a6768f085b26b3571a55302" },
   "blink.cmp": { "branch": "main", "commit": "327fff91fe6af358e990be7be1ec8b78037d2138" },
   "catppuccin": { "branch": "main", "commit": "234fc048de931a0e42ebcad675bf6559d75e23df" },
-  "codecompanion.nvim": { "branch": "main", "commit": "ee7f44ca9c2f22a7b82139719856a2f3d68efd49" },
+  "codecompanion.nvim": { "branch": "main", "commit": "a8c696d1fc4268085e4306d54af39b07be884b17" },
   "compile-mode.nvim": { "branch": "main", "commit": "0b2a059baa734da932913f555eb157637dab5cdd" },
   "conform.nvim": { "branch": "master", "commit": "cde4da5c1083d3527776fee69536107d98dae6c9" },
   "flutter-tools.nvim": { "branch": "main", "commit": "69db9cdac65ce536e20a8fc9a83002f007cc049c" },
