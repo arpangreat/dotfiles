@@ -14,7 +14,6 @@ setlocal iskeyword+=-
 
 " Use syntax keywords for completion
 setlocal omnifunc=syntaxcomplete#Complete
-syntax on
 
 let b:undo_ftplugin = 'setl cms< isk< ofu<'
 
