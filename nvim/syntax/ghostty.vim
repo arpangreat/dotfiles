@@ -31,6 +31,7 @@ syn keyword ghosttyConfigKeyword
 	\ font-variation-italic
 	\ font-variation-bold-italic
 	\ font-codepoint-map
+	\ clipboard-codepoint-map
 	\ font-thicken
 	\ font-thicken-strength
 	\ font-shaping-break
@@ -73,6 +74,7 @@ syn keyword ghosttyConfigKeyword
 	\ mouse-hide-while-typing
 	\ scroll-to-bottom
 	\ mouse-shift-capture
+	\ mouse-reporting
 	\ mouse-scroll-multiplier
 	\ background-opacity
 	\ background-opacity-cells
@@ -90,6 +92,7 @@ syn keyword ghosttyConfigKeyword
 	\ wait-after-command
 	\ abnormal-command-exit-runtime
 	\ scrollback-limit
+	\ scrollbar
 	\ link
 	\ link-url
 	\ link-previews
