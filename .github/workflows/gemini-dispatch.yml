@@ -4,6 +4,7 @@ on:
   pull_request_review_comment:
     types:
       - 'created'
+      - 'resolved'
   pull_request_review:
     types:
       - 'submitted'
@@ -94,7 +95,7 @@ jobs:
             const request = process.env.REQUEST;
             core.setOutput('request', request);
 
-            if (eventType === 'pull_request.opened') {
+            if (eventType === 'pull_request.opened' || eventType === 'pull_request.synchronize' || eventType === 'pull_request_review_comment.resolved') {
               core.setOutput('command', 'review');
             } else if (['issues.opened', 'issues.reopened'].includes(eventType)) {
               core.setOutput('command', 'triage');
