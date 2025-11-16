@@ -61,6 +61,7 @@ return {
 				"markdown",
 				"markdown_inline",
 				"yaml",
+				"bash",
 			},
 			callback = function()
 				vim.treesitter.start()

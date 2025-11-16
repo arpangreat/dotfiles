@@ -81,7 +81,7 @@ return {
 		-- 	},
 		-- },
 		sources = {
-			default = { "lazydev", "lsp", "path", "snippets", "codecompanion" },
+			default = { "lazydev", "lsp", "path", "snippets" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
@@ -115,9 +115,6 @@ return {
 				-- 	module = "render-markdown.integ.blink",
 				-- 	fallbacks = { "lsp" },
 				-- },
-			},
-			per_filetypes = {
-				codecompanion = { "codecompanion" },
 			},
 		},
 	},

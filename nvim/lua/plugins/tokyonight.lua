@@ -23,38 +23,37 @@ return {
 
 			cache = true,
 
-			---@class colors
 			on_colors = function(colors)
-				-- colors.hint = colors.orange
-				-- colors.error = colors.red
-				colors.bg_statusline = colors.none
-				-- colors.bg = bg
-				-- colors.bg_dark = bg_dark
-				-- colors.bg_float = bg_dark
-				-- colors.bg_highlight = bg_highlight
-				-- colors.bg_popup = bg_dark
-				-- colors.bg_search = bg_search
-				-- colors.bg_sidebar = bg_dark
-				-- colors.bg_visual = bg_visual
-				-- colors.border = border
-				-- colors.fg = fg
-				-- colors.fg_dark = fg_dark
-				-- colors.fg_float = fg
-				-- colors.fg_gutter = fg_gutter
-				-- colors.fg_sidebar = fg_dark
+				-- 	-- colors.hint = colors.orange
+				-- 	-- colors.error = colors.red
+				-- 	colors.bg_statusline = colors.none
+				-- 	-- colors.bg = bg
+				-- 	-- colors.bg_dark = bg_dark
+				-- 	-- colors.bg_float = bg_dark
+				-- 	-- colors.bg_highlight = bg_highlight
+				-- 	-- colors.bg_popup = bg_dark
+				-- 	-- colors.bg_search = bg_search
+				-- 	-- colors.bg_sidebar = bg_dark
+				-- 	-- colors.bg_visual = bg_visual
+				-- 	-- colors.border = border
+				-- 	-- colors.fg = fg
+				-- 	-- colors.fg_dark = fg_dark
+				-- 	-- colors.fg_float = fg
+				-- 	-- colors.fg_gutter = fg_gutter
+				-- 	-- colors.fg_sidebar = fg_dark
 			end,
 
 			on_highlights = function(hl, c)
 				-- hl.CursorLineNr = { fg = c.purple }
-				hl["@variable"] = { fg = c.red }
-				hl["@lsp.type.namespace"] = { italic = true, bold = true }
-				hl["@operator"] = { bold = true }
-				hl.LspInlayHint = { bg = "#063540" }
-				hl.WinBar = { bg = c.none }
-				hl.MiniCursorword = { bg = c.terminal_black }
-				hl.MiniCursorwordCurrent = { bg = c.terminal_black }
-				hl.CursorLine = { bg = c.bg_highlight }
-				hl.Tabline = { bg = c.none }
+				-- hl["@variable"] = { fg = c.red }
+				-- hl["@lsp.type.namespace"] = { italic = true, bold = true }
+				-- hl["@operator"] = { bold = true }
+				-- hl.LspInlayHint = { bg = "#063540" }
+				-- hl.WinBar = { bg = c.none }
+				-- hl.MiniCursorword = { bg = c.terminal_black }
+				-- hl.MiniCursorwordCurrent = { bg = c.terminal_black }
+				-- hl.CursorLine = { bg = c.bg_highlight }
+				-- hl.Tabline = { bg = c.none }
 				-- hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg_float }
 				-- hl.BlinkCmpMenuBorder = { fg = c.border_highlight, bg = c.bg_float }
 				-- hl.BlinkCmpSignatureHelp = { fg = c.fg, bg = c.bg_float }
@@ -87,7 +86,7 @@ return {
 				-- 	bg = c.bg_dark,
 				-- 	fg = c.bg_dark,
 				-- }
-				hl.String = { fg = c.green, italic = true }
+				-- hl.String = { fg = c.green, italic = true }
 			end,
 		})
 	end,
