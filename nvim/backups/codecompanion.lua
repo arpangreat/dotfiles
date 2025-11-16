@@ -1,5 +1,8 @@
 return {
 	"olimorris/codecompanion.nvim",
+	-- event = "VeryLazy",
+	cmd = { "CodeCompanion", "CodeCompanionCmd", "CodeCompanionChat", "CodeCompanionActions" },
+	-- lazy = true,
 	opts = {
 		adapters = {
 			acp = {
