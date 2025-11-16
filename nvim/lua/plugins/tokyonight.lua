@@ -45,13 +45,13 @@ return {
 
 			on_highlights = function(hl, c)
 				-- hl.CursorLineNr = { fg = c.purple }
-				-- hl["@variable"] = { fg = c.red }
-				-- hl["@lsp.type.namespace"] = { italic = true, bold = true }
-				-- hl["@operator"] = { bold = true }
-				-- hl.LspInlayHint = { bg = "#063540" }
-				-- hl.WinBar = { bg = c.none }
-				-- hl.MiniCursorword = { bg = c.terminal_black }
-				-- hl.MiniCursorwordCurrent = { bg = c.terminal_black }
+				hl["@variable"] = { fg = c.red }
+				hl["@lsp.type.namespace"] = { italic = true, bold = true }
+				hl["@operator"] = { bold = true }
+				hl.LspInlayHint = { bg = "#063540" }
+				hl.WinBar = { bg = c.none }
+				hl.MiniCursorword = { bg = c.terminal_black }
+				hl.MiniCursorwordCurrent = { bg = c.terminal_black }
 				-- hl.CursorLine = { bg = c.bg_highlight }
 				-- hl.Tabline = { bg = c.none }
 				-- hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg_float }
