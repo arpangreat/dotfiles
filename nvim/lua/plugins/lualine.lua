@@ -3,8 +3,6 @@ return {
 	-- event = "VeryLazy",
 	-- enabled = false,
 	opts = function()
-		local utils = require("core.utils")
-
 		-- Patch tokyonight theme once and reuse
 		local function patched_tokyonight()
 			local custom = require("lualine.themes.tokyonight")
@@ -78,7 +76,6 @@ return {
 						cond = function()
 							return get_listed_buffer_count() > 1
 						end,
-						color = utils.get_hlgroup("Operator", nil),
 						padding = { left = 0, right = 1 },
 					},
 					{
@@ -127,7 +124,6 @@ return {
 					"progress",
 					{
 						"location",
-						color = utils.get_hlgroup("Boolean"),
 					},
 				},
 			},
