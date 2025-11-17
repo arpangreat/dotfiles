@@ -39,9 +39,8 @@ vim.opt.winborder = "single"
 -- vim.opt.cmdheight = 0
 
 -- Visuals
-vim.opt.syntax = "disable"
--- vim.opt.filetype = "plugin indent on"
-vim.cmd.filetype("plugin indent on")
+vim.opt.syntax = "off"
+vim.opt.filetype = "off"
 -- vim.api.nvim_set_optption('t_Co',256)
 vim.opt.termguicolors = true
 -- vim.opt.encodingvim.o.hidden = true
@@ -62,7 +61,7 @@ vim.opt.conceallevel = 1
 vim.opt.compatible = false
 vim.opt.mouse = vim.opt.mouse + "a"
 -- vim.opt.formatoptions:remove("ro")
-vim.opt.autoindent = true
+-- vim.opt.autoindent = true
 -- vim.opt.linebreak = true
 -- vim.opt.list = true
 vim.opt.listchars = {
@@ -94,25 +93,4 @@ vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 0
 
--- Markdown
-
-vim.g.mkdp_auto_start = 0
-vim.g.mkdp_auto_close = 1
-vim.g.mkdp_refresh_slow = 1
-
-vim.o.background = "dark"
-
 vim.g.lazygit_floating_window_border_chars = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" } -- customize lazygit popup window border characters "╭", "─", "╮", "│", "╯", "─", "╰", "│"
-
--- UndoTree
-vim.g.undotree_SetFocusWhenToggle = 1
-vim.g.undotree_DiffAutoOpen = 1
-vim.g.undotree_ShortIndicators = 0
-vim.g.undotree_HighlightChangedText = 1
-vim.g.undotree_HighlightChangedWithSign = 1
-
-vim.g.snacks_animate = false
--- Tmux
--- vim.g.tmux_navigator_no_mapping = 1
-
--- require("vim._extui").enable({})
