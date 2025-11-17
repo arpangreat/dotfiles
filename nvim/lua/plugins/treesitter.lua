@@ -6,7 +6,7 @@ return {
 	branch = "main",
 	dependencies = {
 		-- "JoosepAlviste/nvim-ts-context-commentstring",
-		"OXY2DEV/markview.nvim",
+		-- "OXY2DEV/markview.nvim",
 	},
 	-- opts = {},
 	config = function()
