@@ -19,7 +19,6 @@ M.on_attach = function(client, bufnr)
 	end
 
 	vim.keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { noremap = true, silent = true })
-	-- vim.keymap.set("n", "K", "<cmd>lua require('pretty_hover').hover()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", { noremap = true, silent = true })
@@ -68,33 +67,31 @@ M.on_attach = function(client, bufnr)
 	end
 end
 
-M.capabilities = vim.tbl_deep_extend(
-	"force",
-	vim.lsp.protocol.make_client_capabilities(),
-	require("blink.cmp").get_lsp_capabilities({}, false),
-	{
-		textDocument = {
-			completion = {
-				completionItem = { snippetSupport = true },
-			},
-			foldingRange = {
-				dynamicRegistration = false,
-				lineFoldingOnly = true,
-			},
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+M.capabilities = vim.tbl_deep_extend("force", capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
+
+capabilities = vim.tbl_deep_extend("force", capabilities, {
+	textDocument = {
+		completion = {
+			completionItem = { snippetSupport = true },
 		},
-		experimental = {
-			serverStatusNotification = true,
+		--[[ foldingRange = {
+			dynamicRegistration = false,
+			lineFoldingOnly = true,
+		}, ]]
+	},
+	--[[ experimental = {
+		serverStatusNotification = true,
+		commands = {
 			commands = {
-				commands = {
-					"rust-analyzer.showReferences",
-					"rust-analyzer.runSingle",
-					"rust-analyzer.debugSingle",
-				},
+				"rust-analyzer.showReferences",
+				"rust-analyzer.runSingle",
+				"rust-analyzer.debugSingle",
 			},
 		},
-	}
-)
--- M.capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = true
+	}, ]]
+})
 
 -- vim.lsp.config("*", {
 -- 	on_attach = M.on_attach,

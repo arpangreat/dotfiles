@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.local/share/nvim/lazy/mini.icons
     - /home/arpangreat/CExamples
     - /home/arpangreat/.tmux/plugins/tmux-floax
     - /home/arpangreat/fzf
@@ -22,7 +23,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
-    - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
