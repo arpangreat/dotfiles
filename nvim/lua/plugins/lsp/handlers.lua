@@ -49,6 +49,12 @@ vim.lsp.enable("html_ls")
 
 vim.lsp.enable("emmet_language_server")
 
+vim.lsp.config("fish_lsp", {
+	cmd = { "fish-lsp", "start", "--stdio" }, -- try this first
+	filetypes = { "fish" },
+	root_markers = {},
+})
+
 vim.lsp.enable("fish_lsp")
 
 -- vim.lsp.config("denols", {
