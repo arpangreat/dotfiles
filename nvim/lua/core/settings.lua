@@ -40,7 +40,7 @@ vim.opt.winborder = "single"
 
 -- Visuals
 vim.opt.syntax = "off"
-vim.opt.filetype = "off"
+-- vim.opt.filetype = "off"
 -- vim.api.nvim_set_optption('t_Co',256)
 vim.opt.termguicolors = true
 -- vim.opt.encodingvim.o.hidden = true

@@ -1,6 +1,7 @@
 return {
 	"stevearc/conform.nvim",
 	-- event = { "BufReadPre", "BufNewFile" },
+	event = "LspAttach",
 	init = function()
 		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
 	end,
