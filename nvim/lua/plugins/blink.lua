@@ -3,7 +3,7 @@ return {
 	dependencies = "rafamadriz/friendly-snippets",
 	version = "1.*",
 	-- build = "cargo build --release --jobs 4",
-	event = { "InsertEnter" },
+	event = { "InsertEnter", "CmdlineEnter" },
 	opts = {
 		keymap = {
 			preset = "enter",
@@ -27,7 +27,7 @@ return {
 
 			completion = {
 				ghost_text = { enabled = false },
-				menu = { auto_show = false },
+				menu = { auto_show = true },
 			},
 		},
 		appearance = {
@@ -71,7 +71,7 @@ return {
 		-- 	},
 		-- },
 		sources = {
-			default = { "lsp", "buffer", "snippets", "path", "lazydev" },
+			default = { "lsp", "snippets", "path", "lazydev" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
