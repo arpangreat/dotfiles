@@ -86,8 +86,6 @@ set -g LD_LIBRARY_PATH /usr/lib/SFML/
 set -g RUSTC_WRAPPER sccache
 set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
 
-set -ga fish_user_paths /home/arpangreat/.rye/env
-
 set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 
