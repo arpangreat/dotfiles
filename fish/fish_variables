@@ -67,5 +67,5 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_path:/home/arpangreat/\x2ecargo/bin
-SETUVAR fish_user_paths:/home/arpangreat/argc\x2dcompletions/bin\x1e/home/arpangreat/\x2ebun/bin\x1e/usr/lib/jvm/default/bin\x1e/home/arpangreat/\x2eruby/bin\x1e/home/arpangreat/\x2econfig/composer/vendor/bin\x1e/home/arpangreat/\x2elocal/share/nvim/mason/bin\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2eopam/default/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/usr/local/go/bin\x1e/home/arpangreat/\x2esymfony5/bin\x1e/home/arpangreat/\x2erye/env\x1e/home/arpangreat/fzf/bin
+SETUVAR fish_user_paths:/home/arpangreat/flutter/bin\x1e/home/arpangreat/Android/Sdk/platform\x2dtools\x1e/home/arpangreat/Android/Sdk/cmdline\x2dtools/latest/bin\x1e/home/arpangreat/argc\x2dcompletions/bin\x1e/home/arpangreat/\x2ebun/bin\x1e/usr/lib/jvm/default/bin\x1e/home/arpangreat/\x2eruby/bin\x1e/home/arpangreat/\x2econfig/composer/vendor/bin\x1e/home/arpangreat/\x2elocal/share/nvim/mason/bin\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2eopam/default/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/usr/local/go/bin\x1e/home/arpangreat/\x2esymfony5/bin\x1e/home/arpangreat/\x2erye/env\x1e/home/arpangreat/fzf/bin
 SETUVAR --export nvim:/home/arpangreat/\x2ecargo/bin/hx
