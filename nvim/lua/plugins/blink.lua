@@ -29,6 +29,8 @@ return {
 				ghost_text = { enabled = false },
 				menu = { auto_show = true },
 			},
+
+			sources = { "cmdline", "path" },
 		},
 		appearance = {
 			nerd_font_variant = "normal",
