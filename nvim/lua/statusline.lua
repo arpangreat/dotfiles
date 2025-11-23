@@ -2,6 +2,7 @@
 --   MINIMAL TOKYONIGHT STATUSLINE (CENTER STYLE C1, SAFE)
 -- ============================================================
 
+---@diagnostic disable-next-line: missing-fields
 local C = require("tokyonight.colors").setup({
 	style = "storm",
 	transparent = true,
@@ -10,17 +11,6 @@ local C = require("tokyonight.colors").setup({
 ---------------------------------------------------------------
 --  MODE BLOCK (SOLID TOKYONIGHT BACKGROUND)
 ---------------------------------------------------------------
-local MODE_COLORS = {
-	n = C.blue,
-	i = C.green,
-	v = C.magenta,
-	V = C.magenta,
-	["\22"] = C.magenta,
-	c = C.yellow,
-	R = C.red,
-	t = C.green1,
-}
-
 _G.ModeBlock = function()
 	local mode = vim.fn.mode()
 
@@ -42,7 +32,7 @@ _G.ModeBlock = function()
 		bold = true,
 	})
 
-	return " " .. entry.text .. " "
+	return entry.text .. " "
 end
 ---------------------------------------------------------------
 --  GIT
@@ -164,6 +154,7 @@ vim.opt.laststatus = 3
 vim.opt.statusline = table.concat({
 
 	-- LEFT: mode, git, diff
+	" ",
 	"%#SLModeDyn#%{v:lua.ModeBlock()}%#StatusLine#",
 	" ",
 	"%#SLGit#%{v:lua.GitBranch()}%#StatusLine#",
