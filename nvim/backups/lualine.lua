@@ -1,7 +1,7 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
-	-- enabled = false,
+	enabled = false,
 	opts = function()
 		-- Patch tokyonight theme once and reuse
 		local function patched_tokyonight()
