@@ -5,6 +5,19 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
 })
 
+vim.api.nvim_create_autocmd("BufReadPost", {
+	pattern = "*",
+	callback = function()
+		if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
+			-- except for in git commit messages
+			-- https://stackoverflow.com/questions/31449496/vim-ignore-specifc-file-in-autocommand
+			if not vim.fn.expand("%:p"):find(".git", 1, true) then
+				vim.cmd('exe "normal! g\'\\""')
+			end
+		end
+	end,
+})
+
 -- HACK:
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
