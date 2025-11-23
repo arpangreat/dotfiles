@@ -50,7 +50,7 @@ M.on_attach = function(client, bufnr)
 	)
 	vim.keymap.set("n", "<Leader>gwl", function()
 		print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-	end, { noremap = true, silent = true })
+	end, { noremap = true, silent = true, desc = "List workspace files" })
 
 	if client.server_capabilities.codeLensProvider then
 		vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "CursorHold" }, {
