@@ -32,7 +32,7 @@ _G.ModeBlock = function()
 		bold = true,
 	})
 
-	return entry.text .. " "
+	return entry.text
 end
 ---------------------------------------------------------------
 --  GIT
@@ -164,21 +164,20 @@ vim.opt.statusline = table.concat({
 	"%#SLDiffMod#%{v:lua.DiffChanged()}%#StatusLine#",
 	" ",
 	"%#SLDiffDel#%{v:lua.DiffRemoved()}%#StatusLine#",
-	" ",
 
-	-- CENTER BEGINS
+	-- EXPAND LEFT
 	"%=",
 
-	-- CENTER BLOCK: diagnostics, filename, buffcount, macro
+	-- TRUE CENTER: diagnostics, filename, buffcount, macro
 	"%#SLError#%{v:lua.DiagError()}%#StatusLine#",
 	"%#SLWarn#%{v:lua.DiagWarn()}%#StatusLine#",
 	"%#SLInfo#%{v:lua.DiagInfo()}%#StatusLine#",
 	"%#SLHint#%{v:lua.DiagHint()}%#StatusLine#",
-	" %#SLFile#%{v:lua.File()}%#StatusLine# ",
+	"%#SLFile#%{v:lua.File()}%#StatusLine# ",
 	"%{v:lua.BufCount()} ",
-	"%{v:lua.Macro()} ",
+	"%{v:lua.Macro()}",
 
-	-- CENTER ENDS
+	-- EXPAND RIGHT
 	"%=",
 
 	-- RIGHT: lsp, percent, cursor
