@@ -1,31 +1,5 @@
-local on_attach = require("plugins.lsp.config").on_attach
-local capabilities = require("plugins.lsp.config").capabilities
-
-vim.lsp.enable("pyright")
-
-vim.lsp.config("taplo", {
-	cmd = { "taplo", "lsp", "stdio" },
-	filetypes = { "toml" },
-	settings = {
-		-- Use the defaults that the VSCode extension uses: https://github.com/tamasfe/taplo/blob/2e01e8cca235aae3d3f6d4415c06fd52e1523934/editors/vscode/package.json
-		taplo = {
-			configFile = { enabled = true },
-			schema = {
-				enabled = true,
-				catalogs = { "https://www.schemastore.org/api/json/catalog.json" },
-				cache = {
-					memoryExpiration = 60,
-					diskExpiration = 600,
-				},
-			},
-		},
-	},
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-
-vim.lsp.enable("taplo")
--- vim.lsp.enable("tombi")
+-- local on_attach = require("plugins.lsp.config").on_attach
+-- local capabilities = require("plugins.lsp.config").capabilities
 
 vim.lsp.enable("ocamllsp")
 -- require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
@@ -38,15 +12,9 @@ vim.lsp.config("lua_ls", {
 			},
 		},
 	},
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
 
 vim.lsp.enable("lua_ls")
-
-vim.lsp.enable("r_language_server")
-
--- require("lspconfig").htmx.setup({ on_attach = on_attach, capabilities = capabilities })
 
 vim.lsp.enable("ruff")
 
@@ -56,8 +24,6 @@ vim.lsp.enable("ruby_lsp")
 
 vim.lsp.config("phpactor", {
 	filetypes = { "php", "blade" },
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
 
 vim.lsp.enable("phpactor")
@@ -77,13 +43,17 @@ vim.lsp.config("html_ls", {
 	},
 	root_markers = { "index.html", ".git" },
 	init_options = { provideFormatter = true },
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
 
 vim.lsp.enable("html_ls")
 
 vim.lsp.enable("emmet_language_server")
+
+vim.lsp.config("fish_lsp", {
+	cmd = { "fish-lsp", "start", "--stdio" }, -- try this first
+	filetypes = { "fish" },
+	root_markers = {},
+})
 
 vim.lsp.enable("fish_lsp")
 
@@ -118,15 +88,9 @@ vim.lsp.config("cssls", {
 		scss = { validate = true },
 		less = { validate = true },
 	},
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
 
 vim.lsp.enable("cssls")
-
-vim.lsp.enable("sourcekit")
-
-vim.lsp.enable("marksman")
 
 vim.lsp.config("jsonls", {
 	cmd = { "vscode-json-language-server", "--stdio" },
@@ -137,16 +101,9 @@ vim.lsp.config("jsonls", {
 			schemas = require("schemastore").json.schemas(),
 		},
 	},
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
 
 vim.lsp.enable("jsonls")
--- lspconfig.stimulus_ls.setup({
--- 	on_attach = on_attach,
--- 	capabilities = capabilities,
--- 	root_dir = require("lspconfig.util").root_pattern("composer.json"),
--- })
 vim.lsp.config("phptools", {
 	filetypes = { "php", "blade" },
 	settings = {
@@ -160,10 +117,134 @@ vim.lsp.config("phptools", {
 			},
 		},
 	},
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
 
 vim.lsp.enable("phptools")
 
-vim.lsp.enable("gleam")
+-- Ensure workspace directory exists
+local jdtls_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls"
+local launcher_jar = vim.fn.glob(jdtls_path .. "/plugins/org.eclipse.equinox.launcher_*.jar")
+
+vim.lsp.config("jdtls", {
+	cmd = {
+		"java",
+		"-Declipse.application=org.eclipse.jdt.ls.core.id1",
+		"-Dosgi.bundles.defaultStartLevel=4",
+		"-Declipse.product=org.eclipse.jdt.ls.core.product",
+		"-Xms512m",
+		"-Xmx2g",
+		"-Xlog:disable",
+		"--add-modules=ALL-SYSTEM",
+		"--add-opens",
+		"java.base/java.util=ALL-UNNAMED",
+		"--add-opens",
+		"java.base/java.lang=ALL-UNNAMED",
+		"-jar",
+		launcher_jar,
+		"-configuration",
+		jdtls_path .. "/config_linux",
+		"-data",
+		vim.fn.expand("~/.cache/jdtls-workspace/java-learning"),
+	},
+	filetypes = { "java" },
+	root_markers = { "settings.gradle.kts", "settings.gradle", ".git" },
+	settings = {
+		java = {
+			autobuild = { enabled = true },
+			import = {
+				gradle = { enabled = true },
+			},
+		},
+	},
+	init_options = { bundles = {} },
+})
+
+vim.lsp.enable("jdtls")
+
+vim.lsp.enable("zls")
+
+vim.lsp.config("gopls", {
+	cmd = { "gopls" },
+	-- filetypes = { "go", "gomod" },
+	-- root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
+	settings = {
+		gopls = {
+			codelenses = { generate = true },
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+			hints = {
+				assignVariableTypes = true,
+				compositeLiteralFields = true,
+				compositeLiteralTypes = true,
+				constantValues = true,
+				functionTypeParameters = true,
+				parameterNames = true,
+				rangeVariableTypes = true,
+			},
+		},
+	},
+})
+
+vim.lsp.enable("gopls")
+
+vim.lsp.config("rust_analyzer", {
+	settings = {
+		["rust-analyzer"] = {
+			cargo = {
+				check = {
+					allTargets = false,
+					command = "clippy",
+				},
+
+				loadOutDirsFromCheck = true,
+			},
+
+			checkOnSave = {
+				command = "clippy",
+			},
+
+			diagnostics = {
+				disabled = {
+					"missing-unsafe",
+					"inactive-code",
+				},
+			},
+
+			completion = {
+				completionItem = {
+					snippetSupport = true,
+				},
+
+				fullFunctionSignatures = {
+					enable = true,
+				},
+			},
+		},
+	},
+})
+
+vim.lsp.enable("rust_analyzer")
+
+vim.lsp.config("clangd", {
+	cmd = {
+		"clangd",
+		"--background-index",
+		"--pch-storage=memory",
+		"--clang-tidy",
+		"--suggest-missing-includes",
+		"--cross-file-rename",
+		"--completion-style=detailed",
+		"--offset-encoding=utf-16",
+	},
+})
+
+vim.lsp.enable("clangd")
+
+vim.lsp.config("cmake", {
+	filetypes = { "cmake" },
+	settings = {},
+})
+
+vim.lsp.enable("cmake")

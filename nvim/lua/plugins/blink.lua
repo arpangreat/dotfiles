@@ -27,19 +27,16 @@ return {
 
 			completion = {
 				ghost_text = { enabled = false },
-				menu = { auto_show = false },
+				menu = { auto_show = true },
 			},
-		},
 
+			sources = { "cmdline", "path" },
+		},
 		appearance = {
-			use_nvim_cmp_as_default = true,
 			nerd_font_variant = "normal",
 		},
-
 		completion = {
 			menu = {
-				border = "rounded",
-				winblend = 0,
 				draw = {
 					columns = {
 						{ "kind_icon" },
@@ -47,7 +44,6 @@ return {
 						{ "kind" },
 						{ "source_name" },
 					},
-					treesitter = { "lsp" },
 				},
 			},
 			list = {
@@ -61,14 +57,10 @@ return {
 			documentation = {
 				auto_show = true,
 				auto_show_delay_ms = 100,
-				window = {
-					winblend = 0,
-					border = "rounded",
-				},
 			},
 			ghost_text = { enabled = true },
 		},
-		-- fuzzy = { implementation = "prefer_rust_with_warning" },
+		fuzzy = { implementation = "rust" },
 		-- signature = {
 		-- 	enabled = true,
 		-- 	trigger = {
@@ -81,43 +73,16 @@ return {
 		-- 	},
 		-- },
 		sources = {
-			default = { "lazydev", "lsp", "path", "snippets", "codecompanion" },
+			default = { "lsp", "snippets", "path", "lazydev" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
 					module = "lazydev.integrations.blink",
 					score_offset = 100,
 				},
-				-- laravel = {
-				-- 	name = "laravel",
-				-- 	module = "laravel.blink_source",
-				-- },
-
-				--[[ cmdline = {
-					enabled = function()
-						local cmd_type = vim.fn.getcmdtype()
-						-- disable for '/', '?', '@', '=', '-', and '>'
-						if
-							cmd_type == "/"
-							or cmd_type == "?"
-							or cmd_type == "@"
-							or cmd_type == "="
-							or cmd_type == "-"
-							or cmd_type == ">"
-						then
-							return false
-						end
-						return true
-					end,
-				}, ]]
-				-- markdown = {
-				-- 	name = "RenderMarkdown",
-				-- 	module = "render-markdown.integ.blink",
-				-- 	fallbacks = { "lsp" },
-				-- },
 			},
-			per_filetypes = {
-				codecompanion = { "codecompanion" },
+			per_filetype = {
+				lua = { inherit_defaults = true, "lazydev" },
 			},
 		},
 	},

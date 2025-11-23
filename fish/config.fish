@@ -14,14 +14,14 @@ function fish_hybrid_key_bindings --description \
         fish_default_key_bindings -M $mode
     end
     fish_vi_key_bindings --no-erase
-    
+
     # Add system clipboard bindings
     # Paste from system clipboard with 'p' in normal mode
     bind -M default p 'commandline -i (wl-paste)'
-    
+
     # System clipboard paste with Ctrl+V in insert mode (in addition to emacs Ctrl+Y)
     bind -M insert \cv 'commandline -i (wl-paste)'
-    
+
     # Optional: Make 'Y' copy entire line to system clipboard in normal mode
     bind -M default y copy_commandline
 
@@ -74,8 +74,8 @@ set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
 set -g ANDROID_SDK_ROOT /home/arpangreat/Android/Sdk
 
-set -gx MAKEFLAGS "-j7"
-set -gx GNUMAKEFLAGS "-j7"
+set -gx MAKEFLAGS -j7
+set -gx GNUMAKEFLAGS -j7
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
@@ -85,8 +85,6 @@ set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
 set -g RUSTC_WRAPPER sccache
 set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
-
-set -ga fish_user_paths /home/arpangreat/.rye/env
 
 set -g BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"

@@ -1,12 +1,13 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/javaexsnew
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
+    - /home/arpangreat/.local/share/nvim/lazy/mini.icons
     - /home/arpangreat/CExamples
     - /home/arpangreat/.tmux/plugins/tmux-floax
     - /home/arpangreat/fzf
-    - /home/arpangreat/.local/share/nvim/lazy/rainbow-delimiters.nvim
     - /home/arpangreat/fuxx
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/myjournal-app
     - /home/arpangreat/arpangreat
     - /home/arpangreat/.local/share/nvim/lazy/lazy.nvim
@@ -23,11 +24,9 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
     - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
-    - /home/arpangreat/.local/share/nvim/lazy/pretty_hover
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/pwndbg
     - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
-    - /home/arpangreat/.local/share/nvim/lazy/catppuccin
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
@@ -41,7 +40,6 @@ recentrepos:
     - /home/arpangreat/journalyyy
     - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
-    - /home/arpangreat/javaexsnew
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work
     - /home/arpangreat/go
