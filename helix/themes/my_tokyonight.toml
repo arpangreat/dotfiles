@@ -18,7 +18,6 @@ variable = { fg = "red", modifiers = ["italic"] }
 "ui.linenr.selected" = { fg = "orange" }
 "ui.menu" = { bg = "none", fg = "fg" }
 "ui.menu.selected" = { bg = "#343a55" }
-"ui.selection" = { fg = "turquoise" }
 "ui.highlight" = { fg = "turquoise" }
 "ui.popup" = { bg = "none", fg = "teal" }
 "ui.popup.info" = { bg = "none", fg = "teal" }

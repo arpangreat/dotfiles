@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPost", "BufNewFile" },
 	config = function()
 		--[[ local signs = {
 			{ name = "DiagnosticSignError", text = "" },
@@ -71,13 +71,6 @@ return {
 			on_attach = require("plugins.lsp.config").on_attach,
 			capabilities = require("plugins.lsp.config").capabilities,
 		})
-
 		require("plugins.lsp.handlers")
-		require("plugins.lsp.clangd")
-		require("plugins.lsp.go")
-		require("plugins.lsp.rust")
-		require("plugins.lsp.java")
-		require("plugins.lsp.zig")
-		-- require("plugins.lsp.compl")
 	end,
 }
