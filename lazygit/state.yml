@@ -1,8 +1,9 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/javaexsnew
+    - /home/arpangreat/.tmux/plugins/tmux-nerd-font-window-name
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
+    - /home/arpangreat/javaexsnew
     - /home/arpangreat/.local/share/nvim/lazy/mini.icons
     - /home/arpangreat/CExamples
     - /home/arpangreat/.tmux/plugins/tmux-floax
