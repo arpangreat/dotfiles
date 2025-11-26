@@ -48,7 +48,6 @@ require("lazy").setup({ { import = "plugins" } }, {
 				"zipPlugin",
 				"syntax",
 				"Syntax",
-				"shada",
 			},
 		},
 	},

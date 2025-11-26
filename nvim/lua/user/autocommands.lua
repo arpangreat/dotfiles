@@ -18,6 +18,20 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 	end,
 })
 
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile", "BufEnter" }, {
+	callback = function(ev)
+		-- Only for non-special buffers
+		if vim.bo[ev.buf].buftype == "" then
+			vim.schedule(function()
+				-- If filetype is still empty after a short delay, force detection
+				if vim.api.nvim_buf_is_valid(ev.buf) and vim.bo[ev.buf].filetype == "" then
+					vim.cmd("filetype detect")
+				end
+			end)
+		end
+	end,
+})
+
 -- HACK:
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys

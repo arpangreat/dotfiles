@@ -1,8 +1,8 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/neovim
+    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/tmux
     - /home/arpangreat/.tmux/plugins/tmux-nerd-font-window-name
     - /home/arpangreat/javaexsnew
