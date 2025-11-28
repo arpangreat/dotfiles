@@ -45,8 +45,6 @@ end
 fzf --fish | source
 source /home/arpangreat/fzf-git.sh/fzf-git.fish
 
-# atuin init fish | source
-
 set fish_vi_force_cursor
 set fish_cursor_default block
 set fish_cursor_insert line
@@ -60,8 +58,10 @@ end
 
 set -gx EDITOR /usr/local/bin/nvim
 
-# set -gx MANPAGER "sh -c 'col -bx | bat -l man'"
-batman --export-env | source
+set -gx PAGER 'bat -l man'
+set -gx LESS '-R'
+set -gx LESS_TERMCAP_so (printf '\033[7m')
+set -gx LESS_TERMCAP_se (printf '\033[27m')
 
 set -g DENO_INSTALL "/home/arpangreat/.deno"
 fish_add_path $DENO_INSTALL/bin:$PATH
@@ -70,18 +70,12 @@ set -g JAVA_HOME /usr/lib/jvm/default
 # Go
 set -g GOPATH $HOME/go
 
-set -g LLVM_ROOT $HOME/llvm-project
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
-set -g ANDROID_SDK_ROOT /home/arpangreat/Android/Sdk
 
 set -gx MAKEFLAGS -j7
 set -gx GNUMAKEFLAGS -j7
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
-
-set -g SFML_INCLUDE_DIR /usr/include/SFML/
-set -g SFML_LIBS_DIR /usr/lib/SFML/
-set -g LD_LIBRARY_PATH /usr/lib/SFML/
 
 set -g RUSTC_WRAPPER sccache
 set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
@@ -102,49 +96,11 @@ fish_add_path /home/arpangreat/.local/bin
 fish_add_path /home/arpangreat/.local/share/nvim/mason/bin
 fish_add_path /home/arpangreat/.ghcup/bin
 fish_add_path $HOME/.config/composer/vendor/bin
-fish_add_path $HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 fish_add_path $BUN_INSTALL/bin
-fish_add_path $HOME/.local/share/nvim/mason/bin
 fish_add_path $HOME/.ruby/bin
-# fish_add_path $HOME/.local/share/gem/ruby/3.0.0/bin
 fish_add_path $JAVA_HOME/bin
-fish_add_path /usr/bin/flutter/bin
-fish_add_path $HOME/Downloads/RustRover-2024.1/bin
-fish_add_path $KITTY_INSTALLATION_DIR:$HOME/kitty
-fish_add_path $ANDROID_SDK_ROOT/cmdline-tools/latest/bin
-fish_add_path $ANDROID_SDK_ROOT/platform-tools
-fish_add_path /home/arpangreat/flutter/bin
-fish_add_path $HOME/.platformio/penv/bin
 
 zoxide init fish --cmd cd | source
-
-eval (batpipe)
-
-# The following snippet is meant to be used like this in your fish config:
-#
-# if status is-interactive
-# #     # Configure auto-attach/exit to your likings (default is off).
-#       set ZELLIJ_AUTO_ATTACH true
-#       set ZELLIJ_AUTO_EXIT true
-#      eval (zellij setup --generate-auto-start fish | string collect)
-#  end
-# if not set -q ZELLIJ
-#     if test "$ZELLIJ_AUTO_ATTACH" = "true"
-#         zellij attach -c
-#     else
-#         zellij
-#     end
-
-#     if test "$ZELLIJ_AUTO_EXIT" = "true"
-#         kill $fish_pid
-#     end
-# end
-
-# source $HOME/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
-source $HOME/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
-source $HOME/dotfiles/fish/tokyonight_moon.fish
-
-# symfony completion | source
 
 cod init $fish_pid fish | source
 
@@ -157,13 +113,6 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
-
-# # Kitty
-# if set -q KITTY_INSTALLATION_DIR
-#     set --global KITTY_SHELL_INTEGRATION enabled
-#     source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
-#     set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
-# end
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
