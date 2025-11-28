@@ -1,6 +1,5 @@
 [build]
-target-dir = "/home/arpangreat/.cargo/target-global"
-rustc-wrapper = "sccache"
+jobs = 5
 
 [profile.dev]
 opt-level = 0
