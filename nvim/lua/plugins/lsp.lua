@@ -50,6 +50,14 @@ return {
 					[vim.diagnostic.severity.INFO] = "InfoMsg",
 				},
 			},
+			status = {
+				text = {
+					[vim.diagnostic.severity.ERROR] = " ",
+					[vim.diagnostic.severity.WARN] = " ",
+					[vim.diagnostic.severity.HINT] = " ",
+					[vim.diagnostic.severity.INFO] = " ",
+				},
+			},
 			update_in_insert = false,
 			undercurl = true,
 			-- severity_sort = true,
@@ -68,8 +76,19 @@ return {
 		})
 
 		vim.lsp.config("*", {
-			on_attach = require("plugins.lsp.config").on_attach,
+			-- on_attach = require("plugins.lsp.config").on_attach,
 			capabilities = require("plugins.lsp.config").capabilities,
+		})
+
+		vim.api.nvim_create_autocmd("LspAttach", {
+			group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
+			callback = function(args)
+				local bufnr = args.buf
+				local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+				-- Call your on_attach function
+				require("plugins.lsp.config").on_attach(client, bufnr)
+			end,
 		})
 		require("plugins.lsp.handlers")
 	end,
