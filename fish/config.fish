@@ -104,6 +104,8 @@ zoxide init fish --cmd cd | source
 
 cod init $fish_pid fish | source
 
+source /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim/extras/fish/tokyonight_moon.fish
+
 # opam configuration
 source /home/arpangreat/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 
