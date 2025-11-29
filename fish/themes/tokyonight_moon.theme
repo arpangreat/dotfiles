@@ -1,26 +1,27 @@
-    # TokyoNight
+# ---- Syntax Highlighting ----
+set -g fish_color_normal D5DDF8
+set -g fish_color_command 7AA3FF
+set -g fish_color_keyword B6A0FF
+set -g fish_color_quote DDB45A
+set -g fish_color_redirection C9D3EF
+set -g fish_color_end FF9C62
+set -g fish_color_option B6A0FF
+set -g fish_color_error FF6A5E
+set -g fish_color_param F4A8E6
+set -g fish_color_comment 7A84A5
 
-    # Syntax Highlighting Colors
-    fish_color_normal c8d3f5
-    fish_color_command 86e1fc
-    fish_color_keyword c099ff
-    fish_color_quote ffc777
-    fish_color_redirection c8d3f5
-    fish_color_end ff966c
-    fish_color_option c099ff
-    fish_color_error ff757f
-    fish_color_param fca7ea
-    fish_color_comment 636da6
-    fish_color_selection --background=2d3f76
-    fish_color_search_match --background=2d3f76
-    fish_color_operator c3e88d
-    fish_color_escape c099ff
-    fish_color_autosuggestion 636da6
+# selection / search highlight (matches Neovim CursorLine)
+set -g fish_color_selection --background=182235
+set -g fish_color_search_match --background=182235
 
-    # Completion Pager Colors
-    fish_pager_color_progress 636da6
-    fish_pager_color_prefix 86e1fc
-    fish_pager_color_completion c8d3f5
-    fish_pager_color_description 636da6
-    fish_pager_color_selected_background --background=2d3f76
-  
+set -g fish_color_operator BEE78A
+set -g fish_color_escape B6A0FF
+set -g fish_color_autosuggestion 5F678A
+
+
+# ---- Completion Pager ----
+set -g fish_pager_color_progress 5F678A
+set -g fish_pager_color_prefix 7AA3FF
+set -g fish_pager_color_completion D5DDF8
+set -g fish_pager_color_description 5F678A
+set -g fish_pager_color_selected_background --background=182235

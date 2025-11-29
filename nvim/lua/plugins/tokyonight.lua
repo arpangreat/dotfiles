@@ -22,13 +22,10 @@ return {
 			lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 
 			cache = true,
-
 			on_colors = function(c)
 				-- DARKER background to match wallpaper + transparency
 				c.bg = "#080C16"
 				c.bg_dark = "#060910"
-				c.bg_float = "#060910"
-				c.bg_sidebar = "#060910"
 
 				-- Slightly dimmed foreground for low-glow reading
 				c.fg = "#C9D3EF"
