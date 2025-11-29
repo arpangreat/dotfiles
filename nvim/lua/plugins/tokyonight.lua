@@ -23,70 +23,37 @@ return {
 
 			cache = true,
 
-			on_colors = function(colors)
-				-- 	-- colors.hint = colors.orange
-				-- 	-- colors.error = colors.red
-				-- 	colors.bg_statusline = colors.none
-				-- 	-- colors.bg = bg
-				-- 	-- colors.bg_dark = bg_dark
-				-- 	-- colors.bg_float = bg_dark
-				-- 	-- colors.bg_highlight = bg_highlight
-				-- 	-- colors.bg_popup = bg_dark
-				-- 	-- colors.bg_search = bg_search
-				-- 	-- colors.bg_sidebar = bg_dark
-				-- 	-- colors.bg_visual = bg_visual
-				-- 	-- colors.border = border
-				-- 	-- colors.fg = fg
-				-- 	-- colors.fg_dark = fg_dark
-				-- 	-- colors.fg_float = fg
-				-- 	-- colors.fg_gutter = fg_gutter
-				-- 	-- colors.fg_sidebar = fg_dark
+			on_colors = function(c)
+				-- DARKER background to match wallpaper + transparency
+				c.bg = "#080C16"
+				c.bg_dark = "#060910"
+				c.bg_float = "#060910"
+				c.bg_sidebar = "#060910"
+
+				-- Slightly dimmed foreground for low-glow reading
+				c.fg = "#C9D3EF"
+				c.fg_dark = "#B5BDD6"
+
+				-- Palette patch (ONLY the values you asked to darken)
+				c.blue = "#6A8EE0" -- palette 4
+				c.cyan = "#5ABFD8" -- palette 6
+				c.blue1 = "#81A0E5" -- palette 12
+				c.blue2 = "#92D4EA" -- palette 14
+
+				-- Darker highlights (matches Ghostty palette 0 and 8)
+				c.bg_highlight = "#0B101C"
+				c.bg_visual = "#152035"
+
+				-- Keep Tokyonight warmth/accents (unchanged)
+				-- Red, yellow, magenta, green all stay default
 			end,
 
 			on_highlights = function(hl, c)
-				-- hl.CursorLineNr = { fg = c.purple }
 				hl["@variable"] = { fg = c.red }
 				hl["@lsp.type.namespace"] = { italic = true, bold = true }
 				hl["@operator"] = { bold = true }
-				hl.LspInlayHint = { bg = "#063540" }
-				hl.WinBar = { bg = c.none }
-				hl.MiniCursorword = { bg = c.terminal_black }
-				hl.MiniCursorwordCurrent = { bg = c.terminal_black }
-				-- hl.CursorLine = { bg = c.bg_highlight }
-				-- hl.Tabline = { bg = c.none }
-				-- hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg_float }
-				-- hl.BlinkCmpMenuBorder = { fg = c.border_highlight, bg = c.bg_float }
-				-- hl.BlinkCmpSignatureHelp = { fg = c.fg, bg = c.bg_float }
-				-- hl.BlinkCmpSignatureHelpBorder = { fg = c.border_highlight, bg = c.bg_float }
-				-- local prompt = "#2d3149"
-				-- hl.TelescopeNormal = {
-				-- 	bg = c.bg_dark,
-				-- 	fg = c.fg_dark,
-				-- }
-				-- hl.TelescopeBorder = {
-				-- 	bg = c.bg_dark,
-				-- 	fg = c.bg_dark,
-				-- }
-				-- hl.TelescopePromptNormal = {
-				-- 	bg = prompt,
-				-- }
-				-- hl.TelescopePromptBorder = {
-				-- 	bg = prompt,
-				-- 	fg = prompt,
-				-- }
-				-- hl.TelescopePromptTitle = {
-				-- 	bg = prompt,
-				-- 	fg = prompt,
-				-- }
-				-- hl.TelescopePreviewTitle = {
-				-- 	bg = c.bg_dark,
-				-- 	fg = c.bg_dark,
-				-- }
-				-- hl.TelescopeResultsTitle = {
-				-- 	bg = c.bg_dark,
-				-- 	fg = c.bg_dark,
-				-- }
-				-- hl.String = { fg = c.green, italic = true }
+				hl.LspInlayHint = { bg = "#063540", fg = c.blue2 }
+				hl.CursorLine = { bg = "#111726" }
 			end,
 		})
 	end,
