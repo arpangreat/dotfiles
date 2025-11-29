@@ -53,7 +53,7 @@ return {
 				hl["@lsp.type.namespace"] = { italic = true, bold = true }
 				hl["@operator"] = { bold = true }
 				hl.LspInlayHint = { bg = "#063540", fg = c.blue2 }
-				hl.CursorLine = { bg = "#111726" }
+				hl.CursorLine = { bg = "#182235" }
 			end,
 		})
 	end,
