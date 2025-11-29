@@ -146,6 +146,8 @@ vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
 vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta })
 vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
 
+vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
+
 ---------------------------------------------------------------
 --  FINAL STATUSLINE LAYOUT (CENTER STYLE C1)
 ---------------------------------------------------------------
