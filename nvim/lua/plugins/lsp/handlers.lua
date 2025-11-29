@@ -194,6 +194,7 @@ vim.lsp.config("rust_analyzer", {
 		["rust-analyzer"] = {
 			cargo = {
 				features = "all",
+				allTargets = false,
 			},
 
 			check = {
