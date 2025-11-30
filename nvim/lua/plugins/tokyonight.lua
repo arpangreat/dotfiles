@@ -23,26 +23,26 @@ return {
 
 			cache = true,
 			on_colors = function(c)
-				-- DARKER background to match wallpaper + transparency
-				c.bg = "#080C16"
-				c.bg_dark = "#060910"
+				-- 	-- DARKER background to match wallpaper + transparency
+				-- 	c.bg = "#080C16"
+				-- 	c.bg_dark = "#060910"
 
-				-- Slightly dimmed foreground for low-glow reading
-				c.fg = "#C9D3EF"
-				c.fg_dark = "#B5BDD6"
+				-- 	-- Slightly dimmed foreground for low-glow reading
+				-- 	c.fg = "#C9D3EF"
+				-- 	c.fg_dark = "#B5BDD6"
 
-				-- Palette patch (ONLY the values you asked to darken)
-				c.blue = "#6A8EE0" -- palette 4
-				c.cyan = "#5ABFD8" -- palette 6
-				c.blue1 = "#81A0E5" -- palette 12
-				c.blue2 = "#92D4EA" -- palette 14
+				-- 	-- Palette patch (ONLY the values you asked to darken)
+				-- 	c.blue = "#6A8EE0" -- palette 4
+				-- 	c.cyan = "#5ABFD8" -- palette 6
+				-- 	c.blue1 = "#81A0E5" -- palette 12
+				-- 	c.blue2 = "#92D4EA" -- palette 14
 
-				-- Darker highlights (matches Ghostty palette 0 and 8)
-				c.bg_highlight = "#0B101C"
-				c.bg_visual = "#152035"
+				-- 	-- Darker highlights (matches Ghostty palette 0 and 8)
+				-- 	c.bg_highlight = "#0B101C"
+				-- 	c.bg_visual = "#152035"
 
-				-- Keep Tokyonight warmth/accents (unchanged)
-				-- Red, yellow, magenta, green all stay default
+				-- 	-- Keep Tokyonight warmth/accents (unchanged)
+				-- 	-- Red, yellow, magenta, green all stay default
 			end,
 
 			on_highlights = function(hl, c)
