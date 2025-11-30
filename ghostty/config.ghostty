@@ -71,7 +71,7 @@ theme = "tokyonight_moon_my"
 
 cursor-style-blink = false
 
-background-opacity = 0.94
+background-opacity = 0.95
 
 keybind = ctrl+enter=unbind
 keybind = global:super+`=toggle_quick_terminal
