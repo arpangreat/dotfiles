@@ -112,15 +112,6 @@ _G.BufCount = function()
 	end
 	return c > 1 and ("+" .. (c - 1)) or ""
 end
-
-_G.Macro = function()
-	local r = vim.fn.reg_recording()
-	if r == "" then
-		r = vim.fn.reg_executing()
-	end
-	return r ~= "" and (" " .. r) or ""
-end
-
 ---------------------------------------------------------------
 --  LSP
 ---------------------------------------------------------------
@@ -177,7 +168,6 @@ vim.opt.statusline = table.concat({
 	"%#SLHint#%{v:lua.DiagHint()}%#StatusLine#",
 	"%#SLFile#%{v:lua.File()}%#StatusLine# ",
 	"%{v:lua.BufCount()} ",
-	"%{v:lua.Macro()}",
 
 	-- EXPAND RIGHT
 	"%=",

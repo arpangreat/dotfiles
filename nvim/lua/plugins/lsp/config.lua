@@ -81,7 +81,7 @@ capabilities = vim.tbl_deep_extend("force", capabilities, {
 			lineFoldingOnly = true,
 		}, ]]
 	},
-	--[[ experimental = {
+	experimental = {
 		serverStatusNotification = true,
 		commands = {
 			commands = {
@@ -90,7 +90,7 @@ capabilities = vim.tbl_deep_extend("force", capabilities, {
 				"rust-analyzer.debugSingle",
 			},
 		},
-	}, ]]
+	},
 })
 
 -- vim.lsp.config("*", {

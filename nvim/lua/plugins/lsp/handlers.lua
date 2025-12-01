@@ -1,9 +1,3 @@
--- local on_attach = require("plugins.lsp.config").on_attach
--- local capabilities = require("plugins.lsp.config").capabilities
-
-vim.lsp.enable("ocamllsp")
--- require("lspconfig").v_analyzer.setup({ on_attach = on_attach, capabilities = capabilities })
-
 vim.lsp.config("lua_ls", {
 	settings = {
 		lua = {
@@ -15,21 +9,6 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.lsp.enable("lua_ls")
-
-vim.lsp.enable("ruff")
-
--- vim.lsp.enable("dartls")
-
-vim.lsp.enable("ruby_lsp")
-
-vim.lsp.config("phpactor", {
-	filetypes = { "php", "blade" },
-})
-
-vim.lsp.enable("phpactor")
-
--- vim.lsp.enable("intelephense")
-
 vim.lsp.enable("tailwindcss")
 
 vim.lsp.config("html_ls", {
@@ -54,29 +33,6 @@ vim.lsp.config("fish_lsp", {
 	filetypes = { "fish" },
 	root_markers = {},
 })
-
-vim.lsp.enable("fish_lsp")
-
--- vim.lsp.config("denols", {
--- 	settings = {
--- 		deno = {
--- 			enable = true,
--- 			suggest = {
--- 				imports = {
--- 					hosts = {
--- 						["https://deno.land"] = true,
--- 					},
--- 					autoDiscover = true,
--- 				},
--- 			},
--- 		},
--- 	},
--- 	on_attach = on_attach,
--- 	capabilities = capabilities,
--- })
-
--- vim.lsp.enable("denols")
-
 vim.lsp.enable("ts_ls")
 
 vim.lsp.config("cssls", {
@@ -91,35 +47,6 @@ vim.lsp.config("cssls", {
 })
 
 vim.lsp.enable("cssls")
-
-vim.lsp.config("jsonls", {
-	cmd = { "vscode-json-language-server", "--stdio" },
-	filetypes = { "json", "jsonc" },
-	settings = {
-		json = {
-			validate = { enable = true },
-			schemas = require("schemastore").json.schemas(),
-		},
-	},
-})
-
-vim.lsp.enable("jsonls")
-vim.lsp.config("phptools", {
-	filetypes = { "php", "blade" },
-	settings = {
-		php = {
-			stubs = "all",
-			condelens = {
-				enabled = true,
-			},
-			completion = {
-				autoimport = "auto-import",
-			},
-		},
-	},
-})
-
-vim.lsp.enable("phptools")
 
 -- Ensure workspace directory exists
 local jdtls_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls"
