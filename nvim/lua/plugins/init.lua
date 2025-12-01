@@ -2,13 +2,9 @@ return {
 	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
 	-- { "mbbill/undotree", event = "VeryLazy" },
 	{
-		"kevinhwang91/nvim-bqf",
-		event = "VeryLazy",
-		ft = "qf",
-	},
-	{
 		"folke/lazydev.nvim",
 		ft = "lua", -- only load on lua files
+		lazy = true,
 		opts = {
 			library = {
 				-- See the configuration section for more details
