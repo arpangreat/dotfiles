@@ -71,6 +71,7 @@ vim.opt.listchars = {
 	tab = "▷⋯", -- WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7) + MIDLINE HORIZONTAL ELLIPSIS (U+22EF, UTF-8: E2 8B AF)
 	trail = "•", -- BULLET (U+2022, UTF-8: E2 80 A2)
 }
+-- vim.opt.list = true
 vim.opt.wildmode = "list:longest"
 
 vim.opt.showbreak = "↳ "
