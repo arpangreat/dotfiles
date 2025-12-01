@@ -22,7 +22,7 @@ return {
 			lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 
 			cache = true,
-			on_colors = function(c)
+			on_colors = function()
 				-- 	-- DARKER background to match wallpaper + transparency
 				-- 	c.bg = "#080C16"
 				-- 	c.bg_dark = "#060910"
@@ -53,5 +53,6 @@ return {
 				hl.CursorLine = { bg = "#182235" }
 			end,
 		})
+		vim.cmd.colorscheme("tokyonight")
 	end,
 }

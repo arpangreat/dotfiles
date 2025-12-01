@@ -38,25 +38,34 @@ end
 --  GIT
 ---------------------------------------------------------------
 _G.GitBranch = function()
-	return vim.b.gitsigns_head or ""
+	if vim.b.git_branch == nil then
+		local handle = io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null")
+		if handle then
+			vim.b.git_branch = handle:read("*a"):gsub("\n", "")
+			handle:close()
+		else
+			vim.b.git_branch = ""
+		end
+	end
+	return vim.b.git_branch or ""
 end
 
 ---------------------------------------------------------------
 --  DIFF: + ~ -
 ---------------------------------------------------------------
 _G.DiffAdded = function()
-	local g = vim.b.gitsigns_status_dict or {}
-	return "+" .. (g.added or 0)
+	local summary = vim.b.minidiff_summary or {}
+	return "+" .. (summary.add or 0)
 end
 
 _G.DiffChanged = function()
-	local g = vim.b.gitsigns_status_dict or {}
-	return "~" .. (g.changed or 0)
+	local summary = vim.b.minidiff_summary or {}
+	return "~" .. (summary.change or 0)
 end
 
 _G.DiffRemoved = function()
-	local g = vim.b.gitsigns_status_dict or {}
-	return "-" .. (g.removed or 0)
+	local summary = vim.b.minidiff_summary or {}
+	return "-" .. (summary.delete or 0)
 end
 
 ---------------------------------------------------------------
@@ -89,9 +98,9 @@ _G.File = function()
 	end
 
 	local icon = ""
-	local ok, devicons = pcall(require, "nvim-web-devicons")
+	local ok, miniicons = pcall(require, "mini.icons")
 	if ok then
-		icon = devicons.get_icon(name, nil, { default = true }) or ""
+		icon = miniicons.get("file", name) or ""
 	end
 
 	-- Add [+] if file is modified
