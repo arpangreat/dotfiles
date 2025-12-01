@@ -22,7 +22,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 require("lazy").setup({ { import = "plugins" } }, {
-	defaults = { lazy = false },
+	defaults = { lazy = true },
 	profiling = {
 		loader = true,
 		require = true,
@@ -56,7 +56,6 @@ vim.cmd("packadd nvim.undotree")
 vim.api.nvim_create_autocmd("User", {
 	pattern = "VeryLazy",
 	callback = function()
-		require("lazy").load({ plugins = { "tokyonight.nvim" } })
 		require("core.mappings")
 	end,
 })

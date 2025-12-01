@@ -56,9 +56,12 @@ return {
 				"bash",
 			},
 			callback = function()
-				vim.treesitter.start()
-				vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+				-- Defer treesitter start to avoid blocking UI
+				vim.schedule(function()
+					vim.treesitter.start()
+					vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+					vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+				end)
 			end,
 		})
 	end,
