@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/RustExs
     - /home/arpangreat/fzf
     - /home/arpangreat/neovim
     - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
@@ -15,7 +16,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/TypescriptExs
-    - /home/arpangreat/RustExs
     - /home/arpangreat/kitty
     - /home/arpangreat/ghostty
     - /home/arpangreat/textbook
