@@ -1,16 +1,13 @@
 return {
-	"lewis6991/gitsigns.nvim",
-	event = "BufReadPre",
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-	},
+	"echasnovski/mini.diff",
+	version = false,
+	event = "BufReadPost",
 	config = function()
-		require("gitsigns").setup({
-			numhl = true,
-			-- linehl = true,
-			-- word_diff = true,
-			attach_to_untracked = true,
-			current_line_blame = true,
+		require("mini.diff").setup({
+			view = {
+				style = "sign",
+				signs = { add = "┃", change = "┃", delete = "_" },
+			},
 		})
 	end,
 }
