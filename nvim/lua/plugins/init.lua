@@ -10,8 +10,6 @@ return {
 				-- See the configuration section for more details
 				-- Load luvit types when the `vim.uv` word is found
 				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-				{ path = "snacks.nvim", words = { "Snacks" } },
-				{ path = "lazy.nvim", words = { "LazyVim" } },
 			},
 		},
 	},
@@ -39,6 +37,12 @@ return {
 
 			require("mini.hipatterns").setup({
 				highlighters = {
+					-- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
+					fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
+					hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
+					todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
+					note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
+
 					hex_color = hi.gen_highlighter.hex_color({ priority = 2000 }),
 				},
 			})
