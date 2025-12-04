@@ -13,8 +13,8 @@ vim.api.nvim_set_keymap("n", "\\gt", ":!go test<CR>", { noremap = true, silent =
 vim.api.nvim_set_keymap("n", "[c", ":cprev<CR>", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("n", "]c", ":cnext<CR>", { noremap = true, silent = false, expr = false })
 
-vim.api.nvim_set_keymap("n", "]g", "<cmd>Gitsigns next_hunk<CR>", { noremap = true, silent = false, expr = false })
-vim.api.nvim_set_keymap("n", "[g", "<cmd>Gitsigns prev_hunk<CR>", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap("n", "]g", "<cmd>lua require('mini.diff').goto_hunk('next')<CR>", { noremap = true, silent = false, expr = false })
+vim.api.nvim_set_keymap("n", "[g", "<cmd>lua require('mini.diff').goto_hunk('prev')<CR>", { noremap = true, silent = false, expr = false })
 
 -- FZFLua
 vim.keymap.set("n", "<Leader>fz", ":FzfLua ", { noremap = true, silent = false })

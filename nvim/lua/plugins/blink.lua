@@ -4,6 +4,7 @@ return {
 	version = "1.*",
 	-- build = "cargo build --release --jobs 4",
 	event = { "InsertEnter", "CmdlineEnter" },
+	lazy = true,
 	opts = {
 		keymap = {
 			preset = "enter",
@@ -29,11 +30,7 @@ return {
 				ghost_text = { enabled = false },
 				menu = { auto_show = true },
 			},
-
 			sources = { "cmdline", "path" },
-		},
-		appearance = {
-			nerd_font_variant = "normal",
 		},
 		completion = {
 			menu = {
@@ -58,20 +55,18 @@ return {
 				auto_show = true,
 				auto_show_delay_ms = 100,
 			},
-			ghost_text = { enabled = true },
 		},
-		fuzzy = { implementation = "rust" },
-		-- signature = {
-		-- 	enabled = true,
-		-- 	trigger = {
-		-- 		show_on_insert_on_trigger_character = true,
-		-- 	},
-		-- 	window = {
-		-- 		border = "rounded",
-		-- 		winblend = 0,
-		-- 		scrollbar = false,
-		-- 	},
-		-- },
+		signature = {
+			enabled = true,
+			trigger = {
+				show_on_insert_on_trigger_character = true,
+			},
+			window = {
+				border = "rounded",
+				winblend = 0,
+				scrollbar = false,
+			},
+		},
 		sources = {
 			default = { "lsp", "snippets", "path", "lazydev" },
 			providers = {

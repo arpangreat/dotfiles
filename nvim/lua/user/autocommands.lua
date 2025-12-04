@@ -1,5 +1,3 @@
-vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
-
 vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
 	command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
@@ -14,20 +12,6 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 			if not vim.fn.expand("%:p"):find(".git", 1, true) then
 				vim.cmd('exe "normal! g\'\\""')
 			end
-		end
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile", "BufEnter" }, {
-	callback = function(ev)
-		-- Only for non-special buffers
-		if vim.bo[ev.buf].buftype == "" then
-			vim.schedule(function()
-				-- If filetype is still empty after a short delay, force detection
-				if vim.api.nvim_buf_is_valid(ev.buf) and vim.bo[ev.buf].filetype == "" then
-					vim.cmd("filetype detect")
-				end
-			end)
 		end
 	end,
 })

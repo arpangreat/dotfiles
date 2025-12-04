@@ -22,21 +22,12 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 require("lazy").setup({ { import = "plugins" } }, {
-	defaults = { lazy = false, version = false },
-	install = { colorscheme = { "tokyonight" } },
-	-- checker = { enabled = false },
-	-- change_detection = {
-	-- 	enabled = true,
-	-- 	notify = true,
-	-- },
+	defaults = { lazy = true },
 	profiling = {
-		loader = true,
+		loader = false,
 		require = true,
 	},
 	performance = {
-		cache = {
-			enabled = true,
-		},
 		rtp = {
 			disabled_plugins = {
 				"netrw",
@@ -59,9 +50,4 @@ require("lazy").setup({ { import = "plugins" } }, {
 
 vim.cmd("packadd nvim.undotree")
 
-vim.api.nvim_create_autocmd("User", {
-	pattern = "VeryLazy",
-	callback = function()
-		require("core.mappings")
-	end,
-})
+require("core.mappings")
