@@ -1,21 +1,7 @@
 [pyprland]
 plugins = [
   "scratchpads",
-  # "monitors",
-  # "shift_monitors",
-  # "workspaces_follow_focus",
-  "expose",
 ]
-
-# [workspaces_follow_focus]
-# max_workspaces = 9
-
-# [monitors]
-# unknown = "wlrlui"
-
-# [monitors.placement]
-# "PLX2783H-DP".topOf = "DP-1"
-# "Dell Inc. DELL P24".topOf = "eDP-1"
 
 [scratchpads.volume]
 animation = "fromRight"
@@ -25,23 +11,3 @@ position = "200% 5%"
 size = "40% 90%"
 unfocus = "hide"
 lazy = true
-
-[scratchpads.term]
-animation = "fromTop"
-command = "kitty --class kitty-dropterm tmux"
-class = "kitty-dropterm"
-# position = "12% -200%"
-size = "75% 60%"
-unfocus = "keep"
-
-# [scratchpads.utop]
-# animation = "fromBottom"
-# command = "kitty --class kitty-utop ipython"
-# class = "kitty-utop"
-# size = "75% 60%"
-# lazy = true
-
-# [scratchpads.stb-logs]
-# animation = "fromTop"
-# lazy = true
-# command = "kitty --class kitty-stb-logs stbLog"
