@@ -3,7 +3,7 @@ return {
 	dependencies = "rafamadriz/friendly-snippets",
 	version = "1.*",
 	-- build = "cargo build --release --jobs 4",
-	-- event = { "InsertEnter", "CmdlineEnter" },
+	event = { "InsertEnter", "CmdlineEnter" },
 	lazy = true,
 	opts = {
 		keymap = {

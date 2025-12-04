@@ -93,6 +93,7 @@ vim.opt.updatetime = 50
 vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 0
+vim.opt.showmode = false
 
 -- vim.g.lazygit_floating_window_border_chars = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" } -- customize lazygit popup window border characters "╭", "─", "╮", "│", "╯", "─", "╰", "│"
 require("vim._extui").enable({})

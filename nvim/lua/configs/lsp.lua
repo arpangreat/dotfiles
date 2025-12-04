@@ -1,0 +1,64 @@
+vim.diagnostic.config({
+	virtual_lines = {
+		current_line = true,
+	},
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
+		},
+		numhl = {
+			[vim.diagnostic.severity.ERROR] = "ErrorMsg",
+			[vim.diagnostic.severity.WARN] = "WarnMsg",
+			[vim.diagnostic.severity.HINT] = "HintMsg",
+			[vim.diagnostic.severity.INFO] = "InfoMsg",
+		},
+	},
+	status = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
+		},
+	},
+	update_in_insert = false,
+	undercurl = true,
+	float = {
+		scope = "line",
+		border = "single",
+	},
+	on_jump = {
+		float = true,
+	},
+})
+
+vim.lsp.config("*", {
+	capabilities = require("configs.config").get_capabilities(),
+})
+
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
+	callback = function(args)
+		local bufnr = args.buf
+		local client = vim.lsp.get_client_by_id(args.data.client_id)
+		require("configs.config").on_attach(client, bufnr)
+	end,
+})
+
+vim.api.nvim_create_autocmd({ "BufReadPre", "BufNewFile" }, {
+	once = true,
+	callback = function()
+		-- Extend neovim's client capabilities with the completion ones.
+		vim.lsp.config("*", { capabilities = require("blink.cmp").get_lsp_capabilities(nil, true) })
+
+		local servers = vim.iter(vim.api.nvim_get_runtime_file("lsp/*.lua", true))
+			:map(function(file)
+				return vim.fn.fnamemodify(file, ":t:r")
+			end)
+			:totable()
+		vim.lsp.enable(servers)
+	end,
+})

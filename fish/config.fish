@@ -72,8 +72,8 @@ set -g GOPATH $HOME/go
 
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
 
-set -gx MAKEFLAGS -j5
-set -gx GNUMAKEFLAGS -j5
+set -gx MAKEFLAGS -j3
+set -gx GNUMAKEFLAGS -j3
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
