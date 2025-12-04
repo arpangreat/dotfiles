@@ -4,7 +4,7 @@ return {
 	cmd = "FzfLua",
 	-- enabled = false,
 	-- optional for icon support
-	dependencies = { "nvim-tree/nvim-web-devicons", "roginfarrer/fzf-lua-lazy.nvim" },
+	dependencies = { "roginfarrer/fzf-lua-lazy.nvim" },
 	opts = {
 		-- calling `setup` is optional for customization
 		-- local config = require("fzf-lua.config")

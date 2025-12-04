@@ -10,16 +10,16 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "ruff", "format" },
+				-- python = { "ruff", "format" },
 				c = { "clang_format" },
 				cpp = { "clang_format" },
 				-- fish = { "fish_indent" },
 				go = { "gofmt", "goimports" },
-				ocaml = { "ocamlformat" },
+				-- ocaml = { "ocamlformat" },
 				rust = { "rustfmt" },
 				zig = { "zigfmt" },
-				sql = { "sqlfmt" },
-				php = { "pint" },
+				-- sql = { "sqlfmt" },
+				-- php = { "pint" },
 				-- blade = { "blade-formatter" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
@@ -31,7 +31,7 @@ return {
 				markdown = { "prettier" },
 				html = { "prettier" },
 				css = { "prettier" },
-				scss = { "prettier" },
+				-- scss = { "prettier" },
 			},
 
 			format_after_save = {

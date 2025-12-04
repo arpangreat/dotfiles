@@ -2,27 +2,34 @@
 --   MINIMAL TOKYONIGHT STATUSLINE (CENTER STYLE C1, SAFE)
 -- ============================================================
 
----@diagnostic disable-next-line: missing-fields
-local C = require("tokyonight.colors").setup({
-	style = "storm",
-	transparent = true,
-})
+local C
+local function get_colors()
+	if not C then
+		---@diagnostic disable-next-line: missing-fields
+		C = require("tokyonight.colors").setup({
+			style = "storm",
+			transparent = true,
+		})
+	end
+	return C
+end
 
 ---------------------------------------------------------------
 --  MODE BLOCK (SOLID TOKYONIGHT BACKGROUND)
 ---------------------------------------------------------------
 _G.ModeBlock = function()
 	local mode = vim.fn.mode()
+	local c = get_colors()
 
 	local map = {
-		n = { text = "NORMAL", bg = C.blue },
-		i = { text = "INSERT", bg = C.green },
-		v = { text = "VISUAL", bg = C.magenta },
-		V = { text = "V-LINE", bg = C.magenta },
-		["\22"] = { text = "V-BLOCK", bg = C.magenta },
-		c = { text = "COMMAND", bg = C.yellow },
-		R = { text = "REPLACE", bg = C.red },
-		t = { text = "TERM", bg = C.green1 },
+		n = { text = "NORMAL", bg = c.blue },
+		i = { text = "INSERT", bg = c.green },
+		v = { text = "VISUAL", bg = c.magenta },
+		V = { text = "V-LINE", bg = c.magenta },
+		["\22"] = { text = "V-BLOCK", bg = c.magenta },
+		c = { text = "COMMAND", bg = c.yellow },
+		R = { text = "REPLACE", bg = c.red },
+		t = { text = "TERM", bg = c.green1 },
 	}
 
 	local entry = map[mode] or map.n
@@ -38,25 +45,34 @@ end
 --  GIT
 ---------------------------------------------------------------
 _G.GitBranch = function()
-	return vim.b.gitsigns_head or ""
+	if vim.b.git_branch == nil then
+		local handle = io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null")
+		if handle then
+			vim.b.git_branch = handle:read("*a"):gsub("\n", "")
+			handle:close()
+		else
+			vim.b.git_branch = ""
+		end
+	end
+	return vim.b.git_branch or ""
 end
 
 ---------------------------------------------------------------
 --  DIFF: + ~ -
 ---------------------------------------------------------------
 _G.DiffAdded = function()
-	local g = vim.b.gitsigns_status_dict or {}
-	return "+" .. (g.added or 0)
+	local summary = vim.b.minidiff_summary or {}
+	return "+" .. (summary.add or 0)
 end
 
 _G.DiffChanged = function()
-	local g = vim.b.gitsigns_status_dict or {}
-	return "~" .. (g.changed or 0)
+	local summary = vim.b.minidiff_summary or {}
+	return "~" .. (summary.change or 0)
 end
 
 _G.DiffRemoved = function()
-	local g = vim.b.gitsigns_status_dict or {}
-	return "-" .. (g.removed or 0)
+	local summary = vim.b.minidiff_summary or {}
+	return "-" .. (summary.delete or 0)
 end
 
 ---------------------------------------------------------------
@@ -64,19 +80,19 @@ end
 ---------------------------------------------------------------
 _G.DiagError = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.ERROR]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (" " .. d .. " ") or ""
 end
 _G.DiagWarn = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.WARN]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (" " .. d .. " ") or ""
 end
 _G.DiagInfo = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.INFO]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (" " .. d .. " ") or ""
 end
 _G.DiagHint = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.HINT]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (" " .. d .. " ") or ""
 end
 
 ---------------------------------------------------------------
@@ -89,9 +105,9 @@ _G.File = function()
 	end
 
 	local icon = ""
-	local ok, devicons = pcall(require, "nvim-web-devicons")
+	local ok, miniicons = pcall(require, "mini.icons")
 	if ok then
-		icon = devicons.get_icon(name, nil, { default = true }) or ""
+		icon = miniicons.get("file", name) or ""
 	end
 
 	-- Add [+] if file is modified
@@ -112,15 +128,6 @@ _G.BufCount = function()
 	end
 	return c > 1 and ("+" .. (c - 1)) or ""
 end
-
-_G.Macro = function()
-	local r = vim.fn.reg_recording()
-	if r == "" then
-		r = vim.fn.reg_executing()
-	end
-	return r ~= "" and (" " .. r) or ""
-end
-
 ---------------------------------------------------------------
 --  LSP
 ---------------------------------------------------------------
@@ -129,22 +136,38 @@ _G.LSPNames = function()
 	for _, c in ipairs(vim.lsp.get_clients({ bufnr = 0 })) do
 		table.insert(names, c.name)
 	end
-	return #names > 0 and (" " .. table.concat(names, "|")) or ""
+	return #names > 0 and (" " .. table.concat(names, "|")) or ""
 end
 
 ---------------------------------------------------------------
 --  STATIC HIGHLIGHT GROUPS (TOKYONIGHT)
 ---------------------------------------------------------------
-vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue })
-vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
-vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
-vim.api.nvim_set_hl(0, "SLDiffDel", { fg = C.red })
-vim.api.nvim_set_hl(0, "SLError", { fg = C.red })
-vim.api.nvim_set_hl(0, "SLWarn", { fg = C.yellow })
-vim.api.nvim_set_hl(0, "SLInfo", { fg = C.blue })
-vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
-vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta })
-vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
+local function setup_highlights()
+	local c = get_colors()
+	vim.api.nvim_set_hl(0, "SLGit", { fg = c.blue })
+	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = c.green })
+	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = c.yellow })
+	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = c.red })
+	vim.api.nvim_set_hl(0, "SLError", { fg = c.red })
+	vim.api.nvim_set_hl(0, "SLWarn", { fg = c.yellow })
+	vim.api.nvim_set_hl(0, "SLInfo", { fg = c.blue })
+	vim.api.nvim_set_hl(0, "SLHint", { fg = c.green1 })
+	vim.api.nvim_set_hl(0, "SLFile", { fg = c.magenta })
+	vim.api.nvim_set_hl(0, "SLLSP", { fg = c.blue })
+
+	vim.api.nvim_set_hl(0, "StatusLine", { bg = c.bg })
+end
+
+-- Setup highlights on VimEnter (after everything is loaded)
+vim.api.nvim_create_autocmd("VimEnter", {
+	once = true,
+	callback = setup_highlights,
+})
+
+-- Also setup when colorscheme changes
+vim.api.nvim_create_autocmd("ColorScheme", {
+	callback = setup_highlights,
+})
 
 ---------------------------------------------------------------
 --  FINAL STATUSLINE LAYOUT (CENTER STYLE C1)
@@ -175,7 +198,6 @@ vim.opt.statusline = table.concat({
 	"%#SLHint#%{v:lua.DiagHint()}%#StatusLine#",
 	"%#SLFile#%{v:lua.File()}%#StatusLine# ",
 	"%{v:lua.BufCount()} ",
-	"%{v:lua.Macro()}",
 
 	-- EXPAND RIGHT
 	"%=",

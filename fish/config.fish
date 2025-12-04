@@ -72,8 +72,8 @@ set -g GOPATH $HOME/go
 
 set -g CHROME_EXECUTABLE /usr/bin/zen-browser
 
-set -gx MAKEFLAGS -j7
-set -gx GNUMAKEFLAGS -j7
+set -gx MAKEFLAGS -j3
+set -gx GNUMAKEFLAGS -j3
 
 set -g BUN_INSTALL "/home/arpangreat/.bun"
 
@@ -126,7 +126,7 @@ set -gx ARGC_COMPLETIONS_ROOT /home/arpangreat/argc-completions
 set -gx ARGC_COMPLETIONS_PATH "$ARGC_COMPLETIONS_ROOT/completions/linux:$ARGC_COMPLETIONS_ROOT/completions"
 fish_add_path "$ARGC_COMPLETIONS_ROOT/bin"
 # To add completions for only the specified command, modify next line e.g. set argc_scripts cargo git
-set argc_scripts (ls -1 "$ARGC_COMPLETIONS_ROOT/completions/linux" "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p')
+set argc_scripts (command ls -1 "$ARGC_COMPLETIONS_ROOT/completions/linux" "$ARGC_COMPLETIONS_ROOT/completions" | string replace -r '\.sh$' '')
 argc --argc-completions fish $argc_scripts | source
 
 source ~/.safe-chain/scripts/init-fish.fish # Safe-chain Fish initialization script

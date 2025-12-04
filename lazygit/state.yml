@@ -1,9 +1,9 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/RustExs
     - /home/arpangreat/fzf
     - /home/arpangreat/neovim
-    - /home/arpangreat/.local/share/nvim/lazy/nvim-lspconfig
     - /home/arpangreat/tmux
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/.local/share/nvim/lazy/mini.icons
@@ -15,19 +15,14 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/TypescriptExs
-    - /home/arpangreat/RustExs
     - /home/arpangreat/kitty
     - /home/arpangreat/ghostty
     - /home/arpangreat/textbook
-    - /home/arpangreat/.local/share/nvim/lazy/gitsigns.nvim
     - /home/arpangreat/icons-in-terminal
-    - /home/arpangreat/.local/share/nvim/lazy/oil.nvim
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
-    - /home/arpangreat/.local/share/nvim/lazy/compile-mode.nvim
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/pwndbg
-    - /home/arpangreat/.local/share/nvim/lazy/SchemaStore.nvim
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc

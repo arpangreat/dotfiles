@@ -1,5 +1,6 @@
 local conform_ok, conform = pcall(require, "conform")
 local M = {}
+
 M.on_attach = function(client, bufnr)
 	vim.lsp.inlay_hint.enable(true, { bufnr })
 
@@ -67,35 +68,34 @@ M.on_attach = function(client, bufnr)
 	end
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- Compute capabilities lazily
+local _capabilities = nil
 
-M.capabilities = vim.tbl_deep_extend("force", capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
+function M.get_capabilities()
+	if _capabilities then
+		return _capabilities
+	end
 
-capabilities = vim.tbl_deep_extend("force", capabilities, {
-	textDocument = {
-		completion = {
-			completionItem = { snippetSupport = true },
-		},
-		--[[ foldingRange = {
-			dynamicRegistration = false,
-			lineFoldingOnly = true,
-		}, ]]
-	},
-	--[[ experimental = {
-		serverStatusNotification = true,
-		commands = {
-			commands = {
-				"rust-analyzer.showReferences",
-				"rust-analyzer.runSingle",
-				"rust-analyzer.debugSingle",
+	local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+	_capabilities = vim.tbl_deep_extend("force", capabilities, {
+		textDocument = {
+			completion = {
+				completionItem = { snippetSupport = true },
+			},
+			codelens = {
+				dynamicRegistration = false,
 			},
 		},
-	}, ]]
-})
+	})
 
--- vim.lsp.config("*", {
--- 	on_attach = M.on_attach,
--- 	capabilities = M.capabilities,
--- })
+	return _capabilities
+end
+
+M.capabilities = setmetatable({}, {
+	__index = function()
+		return M.get_capabilities()
+	end,
+})
 
 return M

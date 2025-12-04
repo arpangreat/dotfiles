@@ -10,5 +10,5 @@ export CXXFLAGS="-fuse-ld=mold"
 export LDFLAGS="-fuse-ld=mold"
 
 sudo make CMAKE_BUILD_TYPE=Release
-sudo make -j7 install
+sudo make -j3 install
 cd || exit
