@@ -86,15 +86,8 @@ function M.get_capabilities()
 			completion = {
 				completionItem = { snippetSupport = true },
 			},
-		},
-		experimental = {
-			serverStatusNotification = true,
-			commands = {
-				commands = {
-					"rust-analyzer.showReferences",
-					"rust-analyzer.runSingle",
-					"rust-analyzer.debugSingle",
-				},
+			codelens = {
+				dynamicRegistration = false,
 			},
 		},
 	})
