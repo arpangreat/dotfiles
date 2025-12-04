@@ -77,11 +77,8 @@ function M.get_capabilities()
 	end
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
-	local blink_ok, blink = pcall(require, "blink.cmp")
-	local blink_caps = blink_ok and blink.get_lsp_capabilities({}, false) or {}
 
-	_capabilities = vim.tbl_deep_extend("force", capabilities, blink_caps)
-	_capabilities = vim.tbl_deep_extend("force", _capabilities, {
+	_capabilities = vim.tbl_deep_extend("force", capabilities, {
 		textDocument = {
 			completion = {
 				completionItem = { snippetSupport = true },
