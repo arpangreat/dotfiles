@@ -1,9 +1,9 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/neovim
     - /home/arpangreat/RustExs
     - /home/arpangreat/fzf
-    - /home/arpangreat/neovim
     - /home/arpangreat/tmux
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/.local/share/nvim/lazy/mini.icons
@@ -34,7 +34,6 @@ recentrepos:
     - /home/arpangreat/blog
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
-    - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work
