@@ -20,7 +20,6 @@ return {
 			dim_inactive = true, -- dims inactive windows
 
 			cache = true,
-			on_colors = function() end,
 
 			on_highlights = function(hl, c)
 				hl["@variable"] = { fg = c.red }
