@@ -39,15 +39,6 @@ vim.lsp.config("*", {
 	capabilities = require("configs.config").get_capabilities(),
 })
 
-vim.api.nvim_create_autocmd("LspAttach", {
-	group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
-	callback = function(args)
-		local bufnr = args.buf
-		local client = vim.lsp.get_client_by_id(args.data.client_id)
-		require("configs.config").on_attach(client, bufnr)
-	end,
-})
-
 vim.api.nvim_create_autocmd({ "BufReadPre", "BufNewFile" }, {
 	once = true,
 	callback = function()
