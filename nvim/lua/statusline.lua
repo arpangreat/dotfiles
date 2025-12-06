@@ -2,34 +2,59 @@
 --   MINIMAL TOKYONIGHT STATUSLINE (CENTER STYLE C1, SAFE)
 -- ============================================================
 
-local C
-local function get_colors()
-	if not C then
-		---@diagnostic disable-next-line: missing-fields
-		C = require("tokyonight.colors").setup({
-			style = "storm",
-			transparent = true,
-		})
-	end
-	return C
-end
+local C = {
+	bg = "#222436",
+	bg_dark = "#1e2030",
+	bg_dark1 = "#191B29",
+	bg_highlight = "#2f334d",
+	blue = "#82aaff",
+	blue0 = "#3e68d7",
+	blue1 = "#65bcff",
+	blue2 = "#0db9d7",
+	blue5 = "#89ddff",
+	blue6 = "#b4f9f8",
+	blue7 = "#394b70",
+	comment = "#636da6",
+	cyan = "#86e1fc",
+	dark3 = "#545c7e",
+	dark5 = "#737aa2",
+	fg = "#c8d3f5",
+	fg_dark = "#828bb8",
+	fg_gutter = "#3b4261",
+	green = "#c3e88d",
+	green1 = "#4fd6be",
+	green2 = "#41a6b5",
+	magenta = "#c099ff",
+	magenta2 = "#ff007c",
+	orange = "#ff966c",
+	purple = "#fca7ea",
+	red = "#ff757f",
+	red1 = "#c53b53",
+	teal = "#4fd6be",
+	terminal_black = "#444a73",
+	yellow = "#ffc777",
+	git = {
+		add = "#b8db87",
+		change = "#7ca1f2",
+		delete = "#e26a75",
+	},
+}
 
 ---------------------------------------------------------------
 --  MODE BLOCK (SOLID TOKYONIGHT BACKGROUND)
 ---------------------------------------------------------------
 _G.ModeBlock = function()
 	local mode = vim.fn.mode()
-	local c = get_colors()
 
 	local map = {
-		n = { text = "NORMAL", bg = c.blue },
-		i = { text = "INSERT", bg = c.green },
-		v = { text = "VISUAL", bg = c.magenta },
-		V = { text = "V-LINE", bg = c.magenta },
-		["\22"] = { text = "V-BLOCK", bg = c.magenta },
-		c = { text = "COMMAND", bg = c.yellow },
-		R = { text = "REPLACE", bg = c.red },
-		t = { text = "TERM", bg = c.green1 },
+		n = { text = "NORMAL", bg = C.blue },
+		i = { text = "INSERT", bg = C.green },
+		v = { text = "VISUAL", bg = C.magenta },
+		V = { text = "V-LINE", bg = C.magenta },
+		["\22"] = { text = "V-BLOCK", bg = C.magenta },
+		c = { text = "COMMAND", bg = C.yellow },
+		R = { text = "REPLACE", bg = C.red },
+		t = { text = "TERM", bg = C.green1 },
 	}
 
 	local entry = map[mode] or map.n
@@ -143,19 +168,18 @@ end
 --  STATIC HIGHLIGHT GROUPS (TOKYONIGHT)
 ---------------------------------------------------------------
 local function setup_highlights()
-	local c = get_colors()
-	vim.api.nvim_set_hl(0, "SLGit", { fg = c.blue })
-	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = c.green })
-	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = c.yellow })
-	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = c.red })
-	vim.api.nvim_set_hl(0, "SLError", { fg = c.red })
-	vim.api.nvim_set_hl(0, "SLWarn", { fg = c.yellow })
-	vim.api.nvim_set_hl(0, "SLInfo", { fg = c.blue })
-	vim.api.nvim_set_hl(0, "SLHint", { fg = c.green1 })
-	vim.api.nvim_set_hl(0, "SLFile", { fg = c.magenta })
-	vim.api.nvim_set_hl(0, "SLLSP", { fg = c.blue })
+	vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
+	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
+	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = C.red })
+	vim.api.nvim_set_hl(0, "SLError", { fg = C.red })
+	vim.api.nvim_set_hl(0, "SLWarn", { fg = C.yellow })
+	vim.api.nvim_set_hl(0, "SLInfo", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
+	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta })
+	vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
 
-	vim.api.nvim_set_hl(0, "StatusLine", { bg = c.bg })
+	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
 end
 
 -- Setup highlights on VimEnter (after everything is loaded)

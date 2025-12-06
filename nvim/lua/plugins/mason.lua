@@ -1,6 +1,7 @@
 return {
 	"mason-org/mason.nvim",
-	event = "VeryLazy",
+	-- event = "VeryLazy",
+	cmd = { "Mason", "MasonInstall", "MasonUninstall", "MasonUninstallAll", "MasonLog", "MasonUpdate" },
 	-- branch = "main",
 	config = function()
 		require("mason").setup({

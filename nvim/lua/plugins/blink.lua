@@ -68,17 +68,7 @@ return {
 			},
 		},
 		sources = {
-			default = { "lsp", "snippets", "path", "lazydev" },
-			providers = {
-				lazydev = {
-					name = "LazyDev",
-					module = "lazydev.integrations.blink",
-					score_offset = 100,
-				},
-			},
-			per_filetype = {
-				lua = { inherit_defaults = true, "lazydev" },
-			},
+			default = { "lsp", "snippets", "path", "buffer" },
 		},
 	},
 }
