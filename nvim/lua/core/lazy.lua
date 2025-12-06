@@ -42,6 +42,8 @@ require("lazy").setup({ { import = "plugins" } }, {
 			},
 		},
 	},
+	pkg = { enabled = false },
+	rocks = { enabled = false },
 	-- debug = false,
 	ui = {
 		border = "single",
