@@ -50,6 +50,7 @@ return {
 			"markdown_inline",
 			"yaml",
 			"bash",
+			"cmake",
 		}
 
 		vim.api.nvim_create_autocmd("FileType", {
