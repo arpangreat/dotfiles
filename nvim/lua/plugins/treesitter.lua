@@ -1,7 +1,8 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
-	event = "BufReadPost",
+	-- event = "BufReadPost",
+	lazy = false,
 	branch = "main",
 	dependencies = {
 		-- "JoosepAlviste/nvim-ts-context-commentstring",
@@ -57,10 +58,8 @@ return {
 			pattern = filetypes,
 			callback = function()
 				-- Defer treesitter start to avoid blocking UI
-				vim.schedule(function()
-					vim.treesitter.start()
-					vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-				end)
+				vim.treesitter.start()
+				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 			end,
 		})
 	end,
