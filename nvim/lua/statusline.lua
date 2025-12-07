@@ -162,94 +162,17 @@ end
 --  BUFFER COUNT + MACRO
 ---------------------------------------------------------------
 _G.BufCount = function()
-	local bufs = vim.tbl_filter(function(buf)
-		return vim.api.nvim_buf_is_valid(buf) and vim.bo[buf].buflisted
-	end, vim.api.nvim_list_bufs())
-	return #bufs > 1 and ("+" .. (#bufs - 1)) or ""
+	local c = 0
+	for _, b in ipairs(vim.api.nvim_list_bufs()) do
+		if vim.fn.buflisted(b) == 1 then
+			c = c + 1
+		end
+	end
+	return c > 1 and ("+" .. (c - 1)) or ""
 end
 ---------------------------------------------------------------
 --  LSP
 ---------------------------------------------------------------
-local spinner_frames = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" }
-local spinner_index = 1
-local spinner_timer = nil
-
--- Initialize progress_status globally
-local progress_status = {
-	client = nil,
-	kind = nil,
-	title = nil,
-}
-
-local function start_spinner()
-	if not spinner_timer then
-		spinner_timer = vim.uv.new_timer()
-		if not spinner_timer then
-			return
-		end
-		spinner_timer:start(
-			0,
-			100,
-			vim.schedule_wrap(function()
-				spinner_index = (spinner_index % #spinner_frames) + 1
-				vim.cmd("redrawstatus")
-			end)
-		)
-	end
-end
-
-local function stop_spinner()
-	if spinner_timer then
-		spinner_timer:stop()
-		spinner_timer:close()
-		spinner_timer = nil
-	end
-end
-
-vim.api.nvim_create_autocmd("LspProgress", {
-	group = vim.api.nvim_create_augroup("statusline_lsp_progress", { clear = true }),
-	callback = function(args)
-		if not args.data then
-			return
-		end
-
-		local client = vim.lsp.get_client_by_id(args.data.client_id)
-		if not client then
-			return
-		end
-
-		progress_status = {
-			client = client.name,
-			kind = args.data.params.value.kind,
-			title = args.data.params.value.title,
-		}
-
-		if progress_status.kind == "end" then
-			progress_status.title = nil
-			stop_spinner()
-			vim.defer_fn(function()
-				vim.cmd.redrawstatus()
-			end, 3000)
-		else
-			start_spinner()
-			vim.cmd.redrawstatus()
-		end
-	end,
-})
-
-_G.LSPProgress = function()
-	if not progress_status.client or not progress_status.title then
-		return ""
-	end
-
-	if vim.startswith(vim.api.nvim_get_mode().mode, "i") then
-		return ""
-	end
-
-	-- Show only spinner and title (no client name)
-	return string.format("%s %s...", spinner_frames[spinner_index], progress_status.title)
-end
-
 _G.LSPNames = function()
 	local names = {}
 	for _, c in ipairs(vim.lsp.get_clients({ bufnr = 0 })) do
@@ -258,30 +181,10 @@ _G.LSPNames = function()
 	return #names > 0 and (" " .. table.concat(names, "|")) or ""
 end
 
--- Right section: shows either progress OR position info
-_G.RightSection = function()
-	-- If LSP is progressing, show that instead of position
-	if progress_status.client and progress_status.title then
-		if not vim.startswith(vim.api.nvim_get_mode().mode, "i") then
-			return string.format("%s %s...", spinner_frames[spinner_index], progress_status.title)
-		end
-	end
-
-	-- Otherwise show position
-	return string.format(
-		"%d%% %d:%d",
-		math.floor((vim.fn.line(".") / vim.fn.line("$")) * 100),
-		vim.fn.line("."),
-		vim.fn.col(".")
-	)
-end
-
 ---------------------------------------------------------------
 --  STATIC HIGHLIGHT GROUPS (TOKYONIGHT)
---  + STATUSLINE SETUP (FIXED ORDER)
 ---------------------------------------------------------------
-local function setup_highlights_and_statusline()
-	-- 1. SET HIGHLIGHTS FIRST
+local function setup_highlights()
 	vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue })
 	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
 	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
@@ -292,47 +195,56 @@ local function setup_highlights_and_statusline()
 	vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
 	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta })
 	vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
-	vim.api.nvim_set_hl(0, "SLProgress", { fg = C.blue5, bold = true })
-	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg, fg = C.fg })
 
-	-- 2. STATUSLINE LAYOUT
-	vim.opt.statusline = table.concat({
-		-- LEFT SECTION
-		" ",
-		"%#SLModeDyn#%{v:lua.ModeBlock()}%#StatusLine#",
-		" ",
-		"%#SLGit#%{v:lua.GitBranch()}%#StatusLine#",
-		" ",
-		"%#SLDiffAdd#%{v:lua.DiffAdded()}%#StatusLine#",
-		" ",
-		"%#SLDiffMod#%{v:lua.DiffChanged()}%#StatusLine#",
-		" ",
-		"%#SLDiffDel#%{v:lua.DiffRemoved()}%#StatusLine#",
-
-		-- CENTER SECTION
-		"%=",
-		"%#SLError#%{v:lua.DiagError()}%#StatusLine#",
-		"%#SLWarn#%{v:lua.DiagWarn()}%#StatusLine#",
-		"%#SLInfo#%{v:lua.DiagInfo()}%#StatusLine#",
-		"%#SLHint#%{v:lua.DiagHint()}%#StatusLine#",
-		"%#SLFile#%{v:lua.File()}%#StatusLine# ",
-		"%{v:lua.BufCount()} ",
-
-		-- RIGHT SECTION
-		"%=",
-		"%#SLLSP#%{v:lua.LSPNames()}%#StatusLine# ",
-		"%#SLProgress#%{v:lua.RightSection()}%#StatusLine# ",
-	})
+	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
 end
 
--- Setup autocmds as before
+-- Setup highlights on VimEnter (after everything is loaded)
 vim.api.nvim_create_autocmd("VimEnter", {
 	once = true,
-	callback = setup_highlights_and_statusline,
+	callback = setup_highlights,
 })
 
+-- Also setup when colorscheme changes
 vim.api.nvim_create_autocmd("ColorScheme", {
-	callback = setup_highlights_and_statusline,
+	callback = setup_highlights,
 })
 
+---------------------------------------------------------------
+--  FINAL STATUSLINE LAYOUT (CENTER STYLE C1)
+---------------------------------------------------------------
 vim.opt.laststatus = 3
+
+vim.opt.statusline = table.concat({
+
+	-- LEFT: mode, git, diff
+	" ",
+	"%#SLModeDyn#%{v:lua.ModeBlock()}%#StatusLine#",
+	" ",
+	"%#SLGit#%{v:lua.GitBranch()}%#StatusLine#",
+	" ",
+	"%#SLDiffAdd#%{v:lua.DiffAdded()}%#StatusLine#",
+	" ",
+	"%#SLDiffMod#%{v:lua.DiffChanged()}%#StatusLine#",
+	" ",
+	"%#SLDiffDel#%{v:lua.DiffRemoved()}%#StatusLine#",
+
+	-- EXPAND LEFT
+	"%=",
+
+	-- TRUE CENTER: diagnostics, filename, buffcount, macro
+	"%#SLError#%{v:lua.DiagError()}%#StatusLine#",
+	"%#SLWarn#%{v:lua.DiagWarn()}%#StatusLine#",
+	"%#SLInfo#%{v:lua.DiagInfo()}%#StatusLine#",
+	"%#SLHint#%{v:lua.DiagHint()}%#StatusLine#",
+	"%#SLFile#%{v:lua.File()}%#StatusLine# ",
+	"%{v:lua.BufCount()} ",
+
+	-- EXPAND RIGHT
+	"%=",
+
+	-- RIGHT: lsp, percent, cursor
+	"%#SLLSP#%{v:lua.LSPNames()}%#StatusLine# ",
+	"%p%% ",
+	"%l:%c ",
+})

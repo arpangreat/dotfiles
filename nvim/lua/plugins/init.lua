@@ -3,7 +3,6 @@ return {
 	-- { "mbbill/undotree", event = "VeryLazy" },
 	{
 		"nvim-mini/mini.icons",
-		lazy = true,
 		opts = {
 			file = {
 				[".keep"] = { glyph = "󰊢", hl = "MiniIconsGrey" },
