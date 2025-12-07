@@ -1,4 +1,3 @@
-local conform_ok, conform = pcall(require, "conform")
 local M = {}
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -14,10 +13,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.lsp.inlay_hint.enable(true, { bufnr })
 
 		local has_conform_formatter = false
-		if conform_ok then
-			local available = conform.list_formatters(bufnr)
-			has_conform_formatter = available and #available > 0
-		end
+		local available = require("conform").list_formatters(bufnr)
+		has_conform_formatter = available and #available > 0
 
 		-- Enable or disable LSP formatting dynamically
 		if has_conform_formatter then
