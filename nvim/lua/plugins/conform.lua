@@ -1,11 +1,7 @@
 return {
 	"stevearc/conform.nvim",
-	-- event = { "BufReadPre", "BufNewFile" },
-	init = function()
-		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
-	end,
+	event = { "BufReadPre", "BufNewFile" },
 	opts = {
-
 		formatters_by_ft = {
 			lua = { "stylua" },
 			c = { "clang_format" },
