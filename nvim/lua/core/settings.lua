@@ -26,7 +26,6 @@ vim.opt.splitbelow = true
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.timeoutlen = 300
-vim.opt.updatetime = 50
 vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.laststatus = 0
