@@ -147,10 +147,7 @@ _G.File = function()
 	end
 
 	local icon = ""
-	local ok, miniicons = pcall(require, "mini.icons")
-	if ok then
-		icon = miniicons.get("file", name) or ""
-	end
+	icon = require("mini.icons").get("file", name) or ""
 
 	-- Add [+] if file is modified
 	local modified = vim.bo.modified and " [+]" or ""

@@ -3,6 +3,7 @@ return {
 	-- { "mbbill/undotree", event = "VeryLazy" },
 	{
 		"nvim-mini/mini.icons",
+		lazy = true,
 		opts = {
 			file = {
 				[".keep"] = { glyph = "󰊢", hl = "MiniIconsGrey" },
@@ -12,9 +13,6 @@ return {
 				dotenv = { glyph = "", hl = "MiniIconsYellow" },
 			},
 		},
-		config = function()
-			require("mini.icons").setup()
-		end,
 	},
 	{
 		"nvim-mini/mini.hipatterns",
