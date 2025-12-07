@@ -124,4 +124,4 @@ custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 
 custom-shader-animation = true
 
-# term = xterm-ghostty
+term = xterm-256color
