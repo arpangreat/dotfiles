@@ -12,35 +12,6 @@ vim.api.nvim_set_keymap("n", "<Leader>sn", ":tabn<CR>", { noremap = false, silen
 vim.api.nvim_set_keymap("n", "[c", ":cprev<CR>", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("n", "]c", ":cnext<CR>", { noremap = true, silent = false, expr = false })
 
--- FZFLua
-vim.keymap.set("n", "<Leader>fz", ":FzfLua ", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>ff", "<cmd>FzfLua files<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>fll",
-	":lua require('fzf-lua-lazy').search()<CR>",
-	{ noremap = true, silent = false }
-)
-
-vim.api.nvim_set_keymap("n", "<leader>fw", "<cmd>FzfLua live_grep<cr>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>fb", "<cmd>FzfLua buffers<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>fh", "<cmd>FzfLua helptags<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>fm", "<cmd>FzfLua manpages<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap("n", "<Leader>fj", "<cmd>FzfLua jump<CR>", { noremap = true, silent = false })
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>frc",
-	":lua require'fzf-lua'.files({ prompt='Dotfiles> ', cwd='~/dotfiles/nvim' })<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>fcc",
-	":lua require'fzf-lua'.files({ prompt='Config> ', cwd='~/dotfiles' })<CR>",
-	{ noremap = true, silent = false }
-)
-vim.api.nvim_set_keymap("n", "<Leader>fcb", "<cmd>FzfLua lgrep_curbuf<CR>", { noremap = true, silent = false })
-
 vim.api.nvim_set_keymap("n", "<LocalLeader>", ":<C-U>WhichKey ','<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", ":w!<CR>", { noremap = true, silent = false })
 vim.api.nvim_set_keymap("n", "<Leader>q", ":q<CR>", { noremap = true, silent = false })

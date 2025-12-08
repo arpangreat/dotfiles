@@ -1,7 +1,19 @@
 return {
 	"ibhagwan/fzf-lua",
-	-- event = "VeryLazy",
 	cmd = "FzfLua",
+	keys = {
+		{ "<Leader>fz", ":FzfLua ", desc = "FzfLua" },
+		{ "<Leader>ff", "<cmd>FzfLua files<CR>", desc = "Find files" },
+		{ "<Leader>fll", function() require("fzf-lua-lazy").search() end, desc = "Search lazy plugins" },
+		{ "<Leader>fw", "<cmd>FzfLua live_grep<CR>", desc = "Live grep" },
+		{ "<Leader>fb", "<cmd>FzfLua buffers<CR>", desc = "Buffers" },
+		{ "<Leader>fh", "<cmd>FzfLua helptags<CR>", desc = "Help tags" },
+		{ "<Leader>fm", "<cmd>FzfLua manpages<CR>", desc = "Man pages" },
+		{ "<Leader>fj", "<cmd>FzfLua jump<CR>", desc = "Jump list" },
+		{ "<Leader>frc", function() require("fzf-lua").files({ prompt = "Dotfiles> ", cwd = "~/dotfiles/nvim" }) end, desc = "Dotfiles" },
+		{ "<Leader>fcc", function() require("fzf-lua").files({ prompt = "Config> ", cwd = "~/dotfiles" }) end, desc = "Config files" },
+		{ "<Leader>fcb", "<cmd>FzfLua lgrep_curbuf<CR>", desc = "Grep current buffer" },
+	},
 	-- enabled = false,
 	-- optional for icon support
 	dependencies = { "roginfarrer/fzf-lua-lazy.nvim" },

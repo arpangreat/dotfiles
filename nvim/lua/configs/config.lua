@@ -12,19 +12,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		vim.lsp.inlay_hint.enable(true, { bufnr })
 
-		local has_conform_formatter = false
-		local available = require("conform").list_formatters(bufnr)
-		has_conform_formatter = available and #available > 0
-
-		-- Enable or disable LSP formatting dynamically
-		if has_conform_formatter then
-			client.server_capabilities.documentFormattingProvider = false
-			client.server_capabilities.documentRangeFormattingProvider = false
-		else
-			client.server_capabilities.documentFormattingProvider = true
-			client.server_capabilities.documentRangeFormattingProvider = true
-		end
-
 		vim.keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { noremap = true, silent = true })
 		vim.keymap.set("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", { noremap = true, silent = true })
 		vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
