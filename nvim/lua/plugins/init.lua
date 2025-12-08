@@ -1,18 +1,8 @@
 return {
-	-- { "simnalamburt/vim-mundo", event = "VeryLazy" },
-	-- { "mbbill/undotree", event = "VeryLazy" },
 	{
 		"nvim-mini/mini.icons",
 		lazy = true,
-		opts = {
-			file = {
-				[".keep"] = { glyph = "󰊢", hl = "MiniIconsGrey" },
-				["devcontainer.json"] = { glyph = "", hl = "MiniIconsAzure" },
-			},
-			filetype = {
-				dotenv = { glyph = "", hl = "MiniIconsYellow" },
-			},
-		},
+		opts = {},
 	},
 	{
 		"nvim-mini/mini.hipatterns",
