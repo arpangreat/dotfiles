@@ -19,7 +19,7 @@ font-family-bold-italic="Maple Mono NF"
 # font-family-italic="JetBrainsMono Nerd Font"
 # font-family-bold-italic="JetBrainsMono Nerd Font"
 
-# font-style = "Regular"
+font-style = "SemiBold"
 # font-style-bold = "Bold"
 # font-style-italic = "Italic"
 # font-style-bold-italic = "Bold Italic"
