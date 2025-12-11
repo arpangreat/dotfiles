@@ -242,6 +242,6 @@ vim.opt.statusline = table.concat({
 
 	-- RIGHT: lsp, percent, cursor
 	"%#SLLSP#%{v:lua.LSPNames()}%#StatusLine# ",
-	"%p%% ",
-	"%l:%c ",
+	"%3p%%",
+	"%4l:%-3c",
 })
