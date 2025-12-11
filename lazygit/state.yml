@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/.tmux/plugins/tmux-plugin-sysstat
     - /home/arpangreat/RustExs
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/neovim
