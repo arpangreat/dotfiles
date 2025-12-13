@@ -1,13 +1,14 @@
+-- Diagnostic configuration
 vim.diagnostic.config({
 	virtual_lines = {
 		current_line = true,
 	},
 	signs = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
 		},
 		numhl = {
 			[vim.diagnostic.severity.ERROR] = "ErrorMsg",
@@ -18,10 +19,10 @@ vim.diagnostic.config({
 	},
 	status = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
 		},
 	},
 	update_in_insert = false,
@@ -35,10 +36,12 @@ vim.diagnostic.config({
 	},
 })
 
+-- Set initial capabilities (without blink)
 vim.lsp.config("*", {
 	capabilities = require("configs.config").get_capabilities(),
 })
 
+-- Lazy-load LSP servers on first buffer
 vim.api.nvim_create_autocmd({ "BufReadPre", "BufNewFile" }, {
 	once = true,
 	callback = function()
@@ -60,10 +63,17 @@ vim.api.nvim_create_autocmd({ "BufReadPre", "BufNewFile" }, {
 	end,
 })
 
+-- Update capabilities when blink loads
 vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
 	once = true,
 	callback = function()
-		-- Extend neovim's client capabilities with the completion ones after blink loads.
-		vim.lsp.config("*", { capabilities = require("blink.cmp").get_lsp_capabilities(nil, true) })
+		-- Update capabilities config for future servers
+		local blink_caps = require("blink.cmp").get_lsp_capabilities(nil, true)
+		vim.lsp.config("*", { capabilities = blink_caps })
+
+		-- Update already-running clients' capabilities
+		for _, client in ipairs(vim.lsp.get_clients()) do
+			client.config.capabilities = vim.tbl_deep_extend("force", client.config.capabilities or {}, blink_caps)
+		end
 	end,
 })

@@ -31,7 +31,6 @@ vim.opt.ttimeoutlen = 0
 vim.opt.updatetime = 50
 vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
-vim.opt.laststatus = 0
 vim.opt.showmode = false
 
 vim.g.loaded_node_provider = 0
