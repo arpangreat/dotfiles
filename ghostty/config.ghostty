@@ -14,12 +14,12 @@ font-family-bold="Maple Mono NF"
 font-family-italic="Maple Mono NF"
 font-family-bold-italic="Maple Mono NF"
 
-#font-family="JetBrains Mono"
-#font-family-bold="JetBrains Mono"
-#font-family-italic="JetBrains Mono"
-#font-family-bold-italic="JetBrains Mono"
+# font-family="JetBrainsMono Nerd Font"
+# font-family-bold="JetBrainsMono Nerd Font"
+# font-family-italic="JetBrainsMono Nerd Font"
+# font-family-bold-italic="JetBrainsMono Nerd Font"
 
-# font-style = "Regular"
+font-style = "SemiBold"
 # font-style-bold = "Bold"
 # font-style-italic = "Italic"
 # font-style-bold-italic = "Bold Italic"
@@ -35,8 +35,8 @@ font-feature = ss08
 font-feature = ss09
 font-feature = ss10
 font-feature = ss11
-# font-feature = cv01
-# font-feature = cv03
+font-feature = cv01
+font-feature = cv03
 font-feature = cv05
 font-feature = cv11
 font-feature = cv63
@@ -56,14 +56,14 @@ font-feature = cv66
 # font_features JetBrainsMono-BoldItalic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features JetBrainsMono-Italic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features MapleMono-Regular +calt +liga +dlig +zero +locl +cv02 +cv03 +cv31
-#font-feature = calt
-#font-feature = liga
-#font-feature = dlig
-#font-feature = zero
-#font-feature = locl
-#font-feature = cv02
-#font-feature = cv03
-#font-feature = cv31
+# font-feature = calt
+# font-feature = liga
+# font-feature = dlig
+# font-feature = zero
+# font-feature = locl
+# font-feature = cv02
+# font-feature = cv03
+# font-feature = cv31
 
 font-size = 12.0
 
@@ -80,7 +80,7 @@ keybind = global:super+`=toggle_quick_terminal
 
 # window-padding-y = 1
 
-# gtk-single-instance = true
+gtk-single-instance = false
 # gtk-tabs-location = top
 # gtk-wide-tabs = false
 # gtk-toolbar-style = flat
@@ -109,12 +109,12 @@ bold-color = "bright"
 link-url = true
 link-previews = true
 
-async-backend = "epoll"
+# async-backend = "epoll"
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/bloom010.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_synesthaxia(tweened).glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_blaze.glsl
 # custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_blaze.glsl
-custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
+# custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/test_basic.glsl
 # custom-shader = /home/arpangreat/ghostty/zig-out/share/ghostty/shaders/test_basic.glsl
 # custom-shader = /home/arpangreat/ghostty-shader-playground/public/shaders/cursor_smear.glsl
@@ -122,6 +122,6 @@ custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
 
 
-custom-shader-animation = true
+custom-shader-animation = false
 
-# term = xterm-ghostty
+term = xterm-256color

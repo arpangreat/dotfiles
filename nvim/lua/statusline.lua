@@ -2,34 +2,59 @@
 --   MINIMAL TOKYONIGHT STATUSLINE (CENTER STYLE C1, SAFE)
 -- ============================================================
 
-local C
-local function get_colors()
-	if not C then
-		---@diagnostic disable-next-line: missing-fields
-		C = require("tokyonight.colors").setup({
-			style = "storm",
-			transparent = true,
-		})
-	end
-	return C
-end
+local C = {
+	bg = "#222436",
+	bg_dark = "#1e2030",
+	bg_dark1 = "#191B29",
+	bg_highlight = "#2f334d",
+	blue = "#82aaff",
+	blue0 = "#3e68d7",
+	blue1 = "#65bcff",
+	blue2 = "#0db9d7",
+	blue5 = "#89ddff",
+	blue6 = "#b4f9f8",
+	blue7 = "#394b70",
+	comment = "#636da6",
+	cyan = "#86e1fc",
+	dark3 = "#545c7e",
+	dark5 = "#737aa2",
+	fg = "#c8d3f5",
+	fg_dark = "#828bb8",
+	fg_gutter = "#3b4261",
+	green = "#c3e88d",
+	green1 = "#4fd6be",
+	green2 = "#41a6b5",
+	magenta = "#c099ff",
+	magenta2 = "#ff007c",
+	orange = "#ff966c",
+	purple = "#fca7ea",
+	red = "#ff757f",
+	red1 = "#c53b53",
+	teal = "#4fd6be",
+	terminal_black = "#444a73",
+	yellow = "#ffc777",
+	git = {
+		add = "#b8db87",
+		change = "#7ca1f2",
+		delete = "#e26a75",
+	},
+}
 
 ---------------------------------------------------------------
 --  MODE BLOCK (SOLID TOKYONIGHT BACKGROUND)
 ---------------------------------------------------------------
 _G.ModeBlock = function()
 	local mode = vim.fn.mode()
-	local c = get_colors()
 
 	local map = {
-		n = { text = "NORMAL", bg = c.blue },
-		i = { text = "INSERT", bg = c.green },
-		v = { text = "VISUAL", bg = c.magenta },
-		V = { text = "V-LINE", bg = c.magenta },
-		["\22"] = { text = "V-BLOCK", bg = c.magenta },
-		c = { text = "COMMAND", bg = c.yellow },
-		R = { text = "REPLACE", bg = c.red },
-		t = { text = "TERM", bg = c.green1 },
+		n = { text = "NORMAL", bg = C.blue },
+		i = { text = "INSERT", bg = C.green },
+		v = { text = "VISUAL", bg = C.magenta },
+		V = { text = "V-LINE", bg = C.magenta },
+		["\22"] = { text = "V-BLOCK", bg = C.magenta },
+		c = { text = "COMMAND", bg = C.yellow },
+		R = { text = "REPLACE", bg = C.red },
+		t = { text = "TERM", bg = C.green1 },
 	}
 
 	local entry = map[mode] or map.n
@@ -45,16 +70,23 @@ end
 --  GIT
 ---------------------------------------------------------------
 _G.GitBranch = function()
-	if vim.b.git_branch == nil then
-		local handle = io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null")
-		if handle then
-			vim.b.git_branch = handle:read("*a"):gsub("\n", "")
-			handle:close()
-		else
-			vim.b.git_branch = ""
-		end
+	if vim.b.git_branch ~= nil then
+		return vim.b.git_branch
 	end
-	return vim.b.git_branch or ""
+	vim.b.git_branch = "" -- Set placeholder immediately
+	vim.fn.jobstart({ "git", "rev-parse", "--abbrev-ref", "HEAD" }, {
+		stdout_buffered = true,
+		on_stdout = function(_, data)
+			if data then
+				vim.b.git_branch = data[1]:gsub("\n", "")
+				vim.cmd("redrawstatus")
+			end
+		end,
+		on_exit = function()
+			vim.b.git_branch = vim.b.git_branch or ""
+		end,
+	})
+	return "[...]"
 end
 
 ---------------------------------------------------------------
@@ -78,21 +110,31 @@ end
 ---------------------------------------------------------------
 --  DIAGNOSTICS
 ---------------------------------------------------------------
+local diag_icons = {
+	[vim.diagnostic.severity.ERROR] = " ",
+	[vim.diagnostic.severity.WARN] = " ",
+	[vim.diagnostic.severity.HINT] = " ",
+	[vim.diagnostic.severity.INFO] = " ",
+}
+
 _G.DiagError = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.ERROR]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (diag_icons[vim.diagnostic.severity.ERROR] .. d .. " ") or ""
 end
+
 _G.DiagWarn = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.WARN]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (diag_icons[vim.diagnostic.severity.WARN] .. d .. " ") or ""
 end
+
 _G.DiagInfo = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.INFO]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (diag_icons[vim.diagnostic.severity.INFO] .. d .. " ") or ""
 end
+
 _G.DiagHint = function()
 	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.HINT]
-	return d and d > 0 and (" " .. d .. " ") or ""
+	return d and d > 0 and (diag_icons[vim.diagnostic.severity.HINT] .. d .. " ") or ""
 end
 
 ---------------------------------------------------------------
@@ -105,10 +147,7 @@ _G.File = function()
 	end
 
 	local icon = ""
-	local ok, miniicons = pcall(require, "mini.icons")
-	if ok then
-		icon = miniicons.get("file", name) or ""
-	end
+	icon = require("mini.icons").get("file", name) or ""
 
 	-- Add [+] if file is modified
 	local modified = vim.bo.modified and " [+]" or ""
@@ -143,19 +182,18 @@ end
 --  STATIC HIGHLIGHT GROUPS (TOKYONIGHT)
 ---------------------------------------------------------------
 local function setup_highlights()
-	local c = get_colors()
-	vim.api.nvim_set_hl(0, "SLGit", { fg = c.blue })
-	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = c.green })
-	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = c.yellow })
-	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = c.red })
-	vim.api.nvim_set_hl(0, "SLError", { fg = c.red })
-	vim.api.nvim_set_hl(0, "SLWarn", { fg = c.yellow })
-	vim.api.nvim_set_hl(0, "SLInfo", { fg = c.blue })
-	vim.api.nvim_set_hl(0, "SLHint", { fg = c.green1 })
-	vim.api.nvim_set_hl(0, "SLFile", { fg = c.magenta })
-	vim.api.nvim_set_hl(0, "SLLSP", { fg = c.blue })
+	vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
+	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
+	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = C.red })
+	vim.api.nvim_set_hl(0, "SLError", { fg = C.red })
+	vim.api.nvim_set_hl(0, "SLWarn", { fg = C.yellow })
+	vim.api.nvim_set_hl(0, "SLInfo", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
+	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta })
+	vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
 
-	vim.api.nvim_set_hl(0, "StatusLine", { bg = c.bg })
+	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
 end
 
 -- Setup highlights on VimEnter (after everything is loaded)
@@ -204,6 +242,6 @@ vim.opt.statusline = table.concat({
 
 	-- RIGHT: lsp, percent, cursor
 	"%#SLLSP#%{v:lua.LSPNames()}%#StatusLine# ",
-	"%p%% ",
-	"%l:%c ",
+	"%3p%%",
+	"%4l:%-3c",
 })
