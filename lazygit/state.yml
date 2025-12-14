@@ -1,13 +1,15 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/CExamples
+    - /home/arpangreat/tmux-cpu-real
     - /home/arpangreat/RustExs
-    - /home/arpangreat/fzf
+    - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/neovim
+    - /home/arpangreat/fzf
     - /home/arpangreat/tmux
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/.local/share/nvim/lazy/mini.icons
-    - /home/arpangreat/CExamples
     - /home/arpangreat/fuxx
     - /home/arpangreat/myjournal-app
     - /home/arpangreat/arpangreat
@@ -21,7 +23,6 @@ recentrepos:
     - /home/arpangreat/icons-in-terminal
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
-    - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/pwndbg
     - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
@@ -34,7 +35,6 @@ recentrepos:
     - /home/arpangreat/blog
     - /home/arpangreat/forgit
     - /home/arpangreat/journalyyy
-    - /home/arpangreat/fem-htmx-proj
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work

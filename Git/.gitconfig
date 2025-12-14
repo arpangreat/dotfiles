@@ -17,13 +17,12 @@
   pager = delta
 
 [delta]
-  features = side-by-side line-numbers decorations tokyonight_storm
+  features = line-numbers tokyonight_moon
   navigate = true
-  side-by-side = true
   line-numbers = true
 
 [include]
-  path = /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim/extras/delta/tokyonight_storm.gitconfig
+  path = /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim/extras/delta/tokyonight_moon.gitconfig
 
 [push]
 	default = simple

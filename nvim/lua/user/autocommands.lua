@@ -16,6 +16,16 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 	end,
 })
 
+-- This runs after everything else
+vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
+	pattern = "*",
+	callback = function()
+		vim.schedule(function()
+			vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+		end)
+	end,
+})
+
 -- HACK:
 -- Try to prevent bad habits like using the arrow keys for movement. This is
 -- not the only possible bad habit. For example, holding down the h/j/k/l keys
