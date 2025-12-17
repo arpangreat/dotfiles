@@ -8,7 +8,8 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 8
-vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.completeopt = { "menu", "menuone", "noselect", "fuzzy" }
+vim.opt.wildoptions = { "pum", "tagfile", "fuzzy" }
 vim.opt.winborder = "single"
 
 vim.opt.termguicolors = true
@@ -37,3 +38,5 @@ vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_python3_provider = 0
+
+vim.g.health = { style = "float" }
