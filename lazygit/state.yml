@@ -1,6 +1,7 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/go
     - /home/arpangreat/CExamples
     - /home/arpangreat/tmux-cpu-real
     - /home/arpangreat/RustExs
@@ -38,7 +39,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/blink.cmp
     - /home/arpangreat/ns2exs
     - /home/arpangreat/college-work
-    - /home/arpangreat/go
     - /home/arpangreat/zig-examples
     - /home/arpangreat/mono-dots
     - /home/arpangreat/cppexamples
