@@ -41,10 +41,10 @@ git:
 quitOnTopLevelReturn: true
 customCommands:
   - key: "<c-p>"
-    description: "Pull all branches with remote changes"
-    command: "git fetch --all && git branch -r | grep -v HEAD | while read remote; do git branch --track \"${remote#origin/}\" \"$remote\" 2>/dev/null; done && git pull --all"
+    description: "Pull branch"
+    command: "git pull"
     context: "localBranches"
-    loadingText: "Pulling all branches..."
+    loadingText: "Pulling changes..."
   - key: "C"
     command: "git cz"
     description: "commit with commitizen"
