@@ -32,12 +32,19 @@ git:
   pagers:
     - colorArg: always
       pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+  autoFetch: false
+  autoRefresh: true
   commit:
     signOff: true
   log:
     showWholeGraph: true
 quitOnTopLevelReturn: true
 customCommands:
+  - key: "<c-p>"
+    description: "Pull all branches with remote changes"
+    command: "git fetch --all && git branch -r | grep -v HEAD | while read remote; do git branch --track \"${remote#origin/}\" \"$remote\" 2>/dev/null; done && git pull --all"
+    context: "localBranches"
+    loadingText: "Pulling all branches..."
   - key: "C"
     command: "git cz"
     description: "commit with commitizen"
@@ -57,6 +64,7 @@ customCommands:
           preset: "branches"
     loadingText: "Creating Pull Request..."
   - key: "P"
+    description: "Merge GitHub Pull Request"
     context: "localBranches"
     loadingText: "Merging GitHub Pull Request..."
     command: "gh pr merge --admin {{.Form.PullRequestNumber}}"
