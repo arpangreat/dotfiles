@@ -49,7 +49,7 @@
   df = "!git hist | fzf | awk '{print $2}' | xargs -I {} git diff {}^ {}"
   hist = log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
   llog = log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative
-  open = "!hub browse"
+  open = "!gh browse"
   type = cat-file -t
   dump = cat-file -p
   find = "!f() { git log --pretty=format:\"%h %cd [%cn] %s%d\" --date=relative -S'pretty' -S\"$@\" | fzf | awk '{print $1}' | xargs -I {} git diff {}^ {}; }; f"
@@ -103,7 +103,7 @@
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [status]
-	show-toplevel-name = true
+	submoduleSummary = true
 [rerere]
 	enabled = true
   autoupdate = true
@@ -115,8 +115,6 @@
   sort = version:refname
 [maintenance]
 	repo = /home/arpangreat/dotfiles
-[rebase]
-	updateRefs = true
 [gc]
   writeCommitGraph = true
 [fetch]
@@ -128,3 +126,5 @@
   generationVersion = 2
 [feature]
 	experimental = true
+[transfer]
+	fsckobjects = true
