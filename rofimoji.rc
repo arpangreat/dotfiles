@@ -1,3 +1,0 @@
-action = copy
-files = [emojis, hebrew]
-skin-tone = moderate

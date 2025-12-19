@@ -12,49 +12,37 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		vim.lsp.inlay_hint.enable(true, { bufnr })
 
-		vim.keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "go", "<cmd>FzfLua lsp_typedefs<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gR", "<cmd>FzfLua lsp_references<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "g0", "<cmd>FzfLua lsp_document_symbols<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gW", "<cmd>FzfLua lsp_workspace_symbols<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "ga", "<cmd>FzfLua lsp_code_actions<CR>", { noremap = true, silent = true })
-		vim.keymap.set(
-			"n",
-			"gk",
-			"<cmd>lua vim.diagnostic.jump({count = -1, float = true})<CR>",
-			{ noremap = true, silent = true }
-		)
-		vim.keymap.set(
-			"n",
-			"gj",
-			"<cmd>lua vim.diagnostic.jump({count = 1, float = true})<CR>",
-			{ noremap = true, silent = true }
-		)
-		vim.keymap.set("n", "gl", "<cmd>FzfLua lsp_document_diagnostics<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gL", "<cmd>FzfLua lsp_workspace_diagnostics<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gF", "<cmd>FzfLua lsp_finder<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gq", "<cmd>lua vim.diagnostic.setqflist()<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "gt", "<cmd>lua vim.diagnostic.setloclist()<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "<Leader>rg", "<cmd>lua vim.lsp.codelens.run()<CR>")
-		vim.keymap.set(
-			"n",
-			"<leader>gwa",
-			"<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>",
-			{ noremap = true, silent = true }
-		)
-		vim.keymap.set(
-			"n",
-			"<Leader>gwr",
-			"<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
-			{ noremap = true, silent = true }
-		)
+		local opts = function(desc)
+			return { buffer = bufnr, desc = desc }
+		end
+
+		vim.keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", opts("LSP definitions"))
+		vim.keymap.set("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", opts("LSP implementations"))
+		vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, opts("Signature help"))
+		vim.keymap.set("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", opts("LSP declarations"))
+		vim.keymap.set("n", "go", "<cmd>FzfLua lsp_typedefs<CR>", opts("LSP type definitions"))
+		vim.keymap.set("n", "gr", vim.lsp.buf.rename, opts("LSP rename"))
+		vim.keymap.set("n", "gR", "<cmd>FzfLua lsp_references<CR>", opts("LSP references"))
+		vim.keymap.set("n", "g0", "<cmd>FzfLua lsp_document_symbols<CR>", opts("Document symbols"))
+		vim.keymap.set("n", "gW", "<cmd>FzfLua lsp_workspace_symbols<CR>", opts("Workspace symbols"))
+		vim.keymap.set("n", "ga", "<cmd>FzfLua lsp_code_actions<CR>", opts("Code actions"))
+		vim.keymap.set("n", "gk", function()
+			vim.diagnostic.jump({ count = -1, float = true })
+		end, opts("Previous diagnostic"))
+		vim.keymap.set("n", "gj", function()
+			vim.diagnostic.jump({ count = 1, float = true })
+		end, opts("Next diagnostic"))
+		vim.keymap.set("n", "gl", "<cmd>FzfLua lsp_document_diagnostics<CR>", opts("Document diagnostics"))
+		vim.keymap.set("n", "gL", "<cmd>FzfLua lsp_workspace_diagnostics<CR>", opts("Workspace diagnostics"))
+		vim.keymap.set("n", "gF", "<cmd>FzfLua lsp_finder<CR>", opts("LSP finder"))
+		vim.keymap.set("n", "gq", vim.diagnostic.setqflist, opts("Diagnostics to quickfix"))
+		vim.keymap.set("n", "gt", vim.diagnostic.setloclist, opts("Diagnostics to loclist"))
+		vim.keymap.set("n", "<Leader>rg", vim.lsp.codelens.run, opts("Run codelens"))
+		vim.keymap.set("n", "<Leader>gwa", vim.lsp.buf.add_workspace_folder, opts("Add workspace folder"))
+		vim.keymap.set("n", "<Leader>gwr", vim.lsp.buf.remove_workspace_folder, opts("Remove workspace folder"))
 		vim.keymap.set("n", "<Leader>gwl", function()
 			print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-		end, { noremap = true, silent = true, desc = "List workspace files" })
+		end, opts("List workspace folders"))
 
 		if client.server_capabilities.codeLensProvider then
 			vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "CursorHold" }, {
@@ -62,13 +50,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 				callback = vim.lsp.codelens.refresh,
 			})
 		end
-
-		vim.keymap.set(
-			"n",
-			"<Leader>rg",
-			"<cmd>lua vim.lsp.codelens.run()<CR>",
-			{ desc = "Run CodeLens", buffer = bufnr }
-		)
 	end,
 })
 

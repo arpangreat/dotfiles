@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-ip link show wg0vpn | grep -q UP && printf '\uf3ed\n\n#00ff00'
