@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-count="$(mu find flag:unread AND maildir:/fastmail/INBOX 2>/dev/null | wc -l)"
-
-if [[ "$count" != "0" ]]; then
-    echo -e "\uf0e0 $count"
-fi
