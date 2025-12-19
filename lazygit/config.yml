@@ -39,10 +39,10 @@ git:
 quitOnTopLevelReturn: true
 customCommands:
   - key: "C"
-    command: "git commit"
-    description: "commit with nvim"
+    command: "git cz"
+    description: "commit with commitizen"
     context: "files"
-    loadingText: "opening nvim commit tool"
+    loadingText: "opening commitizen commit tool"
     output: terminal
   - key: "p"
     description: "Create Pull Request (select branches)"
