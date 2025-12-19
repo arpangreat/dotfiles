@@ -1,9 +1,0 @@
-mv desert-red-sky.png ~/dotfiles/wallpaper/backiee/
-mv coast-city-cityscape.jpg ~/dotfiles/wallpaper/backiee/
-mv cat-window-nord.png ~/dotfiles/wallpaper/backiee/
-mv endyFixed_01.png ~/dotfiles/wallpaper/backiee/
-mv eren-yeager.jpg ~/dotfiles/wallpaper/backiee/
-mv bg.png ~/dotfiles/wallpaper/backiee/
-mv deer-forest-outdoor-art.jpg  ~/dotfiles/wallpaper/backiee/
-mv deer-staring-at-sunset-anime.jpg ~/dotfiles/wallpaper/backiee/
-mv beone.png ~/dotfiles/wallpaper/backiee/
