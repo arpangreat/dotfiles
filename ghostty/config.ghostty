@@ -78,10 +78,9 @@ font-feature = cv66
 # font-feature = liga
 # font-feature = dlig
 # font-feature = zero
-# font-feature = locl
 # font-feature = cv02
 # font-feature = cv03
-# font-feature = cv31
+# font-feature = cv04
 
 # font-size = 12.0
 
