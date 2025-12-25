@@ -1,9 +1,11 @@
 lastupdatecheck: 1754063109
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/tmux-cpu-real
+    - /home/arpangreat/Books
+    - /home/arpangreat/cppexamples
     - /home/arpangreat/go
     - /home/arpangreat/CExamples
-    - /home/arpangreat/tmux-cpu-real
     - /home/arpangreat/RustExs
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/neovim
@@ -25,7 +27,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
     - /home/arpangreat/pwndbg
-    - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
     - /home/arpangreat/PythonExs
@@ -41,7 +42,6 @@ recentrepos:
     - /home/arpangreat/college-work
     - /home/arpangreat/zig-examples
     - /home/arpangreat/mono-dots
-    - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
     - /home/arpangreat/DSA-preps
     - /home/arpangreat/weedy
