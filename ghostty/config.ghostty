@@ -114,6 +114,8 @@ window-show-tab-bar = never
 
 # window-vsync = true
 
+keybind = shift+enter=text:\x1b[13;2u
+
 shell-integration = fish
 
 shell-integration-features = cursor,no-sudo,title
