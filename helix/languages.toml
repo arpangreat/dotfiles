@@ -4,17 +4,6 @@ scope = "source.rust"
 formatter = { command = "rustfmt" }
 auto-format = true
 
-[language-server.rust-analyzer.config]
-check = { command = "clippy", features = "all" }
-diagnostics = { experimental = { enable = true } }
-hover = { actions = { enable = true } }
-typing = { autoClosingAngleBrackets = { enable = true } }
-
-[language-server.rust-analyzer.config.inlayHints]
-closureCaptureHints = { enable = true }
-closureReturnTypeHints = "always"
-expressionAdjustmentHints = "always"
-
 [[language]]
 name = "rust"
 
@@ -36,13 +25,6 @@ name = "python"
 auto-format = true
 language-servers = ["ruff", "pyright"]
 
-[language-server.ruff]
-command = "ruff-lsp"
-
-[language-server.pyright]
-command = "pyright-langserver"
-args = ["--stdio"]
-
 [[language]]
 name = "cpp"
 auto-format = true
@@ -50,6 +32,116 @@ auto-format = true
 [[language]]
 name = "c"
 auto-format = true
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+language-servers = ["gopls", "golangcilint"]
+
+[[language]]
+name = "blade"
+auto-format = true
+formatter = { command = "blade-formatter", args = ["--stdin"] }
+language-servers = ["blade", "tailwind", "emmet"]
+
+[[language]]
+name = "php"
+auto-format = true
+language-servers = ["phpactor", "intelephense"]
+
+[[language]]
+name = "cmake"
+auto-format = true
+
+[[language]]
+name = "zig"
+scope = "source.zig"
+auto-format = true
+
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "shfmt", args = ["-i", "4"] }
+auto-format = true
+
+[[language]]
+name = "v"
+auto-format = true
+formatter = { command = "v", args = ["fmt"] }
+language-servers = ["v-analyzer"]
+
+[[language]]
+name = "ocaml"
+auto-format = true
+formatter = { command = "ocamlformat", args = ["-", "--impl"] }
+
+[[language]]
+name = "json"
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "json"] }
+
+[[language]]
+name = "markdown"
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "md"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "ts"] }
+auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "typescript"
+language-servers = ["deno-lsp"]
+
+[[language]]
+name = "javascript"
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "js"] }
+auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "javascript"
+language-servers = ["deno-lsp"]
+
+[[language]]
+name = "jsx"
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "jsx"] }
+auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "javascriptreact"
+language-servers = ["deno-lsp"]
+
+[[language]]
+name = "tsx"
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "tsx"] }
+auto-format = true
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-id = "typescriptreact"
+language-servers = ["deno-lsp"]
+
+[[language]]
+name = "toml"
+auto-format = true
+
+[language-server.rust-analyzer.config]
+check = { command = "clippy", features = "all" }
+diagnostics = { experimental = { enable = true } }
+hover = { actions = { enable = true } }
+typing = { autoClosingAngleBrackets = { enable = true } }
+
+[language-server.rust-analyzer.config.inlayHints]
+closureCaptureHints = { enable = true }
+closureReturnTypeHints = "always"
+expressionAdjustmentHints = "always"
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
 
 [language-server.clangd]
 command = "clangd"
@@ -62,12 +154,6 @@ args = [
   "--completion-style=detailed",
   "--offset-encoding=utf-16",
 ]
-
-[[language]]
-name = "go"
-auto-format = true
-formatter = { command = "goimports" }
-language-servers = ["gopls", "golangcilint"]
 
 [language-server.gopls]
 command = "gopls"
@@ -91,12 +177,6 @@ init = [
   "--issues-exit-code=1",
 ]
 
-[[language]]
-name = "blade"
-auto-format = true
-formatter = { command = "blade-formatter", args = ["--stdin"] }
-language-servers = ["blade", "tailwind", "emmet"]
-
 [language-server.blade]
 command = "php"
 args = ["/home/arpangreat/laravel-dev-tools/builds/laravel-lsp", "lsp"]
@@ -108,99 +188,19 @@ command = "tailwindcss-language-server"
 command = "emmet-language-server"
 args = ["-C", "stdio"]
 
-[[language]]
-name = "php"
-auto-format = true
-language-servers = ["phpactor", "intelephense"]
+[language-server.intelephense]
+command = "intelephense"
+args = ["--stdio"]
+
+[language-server.v-analyzer]
+command = "v-analyzer"
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+config = { enable = true, unstable = true }
 
 [language-servers.phpactor]
 command = "phpactor"
 args = ["language-server"]
 
-[language-server.intelephense]
-command = "intelephense"
-args = ["--stdio"]
-
-[[language]]
-name = "cmake"
-auto-format = true
-
-[[language]]
-name = "zig"
-scope = "source.zig"
-auto-format = true
-
-[[language]]
-name = "bash"
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = 'shfmt', args = ["-i", "4"] }
-auto-format = true
-
-[[language]]
-name = "v"
-auto-format = true
-formatter = { command = 'v', args = ["fmt"] }
-language-servers = ["v-analyzer"]
-
-[[language]]
-name = "ocaml"
-auto-format = true
-formatter = { command = "ocamlformat", args = ["-", "--impl"] }
-
-[language-server.v-analyzer]
-command = 'v-analyzer'
-
-[[language]]
-name = "json"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json"] }
-
-[[language]]
-name = "markdown"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md"] }
-auto-format = true
-
-[language-server.deno-lsp]
-command = 'deno'
-args = ['lsp']
-config = { enable = true, unstable = true }
-
-[[language]]
-name = "typescript"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
-auto-format = true
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-language-id = "typescript"
-language-servers = ["deno-lsp"]
-
-
-[[language]]
-name = "javascript"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
-auto-format = true
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-language-id = "javascript"
-language-servers = ["deno-lsp"]
-
-[[language]]
-name = "jsx"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx"] }
-auto-format = true
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-language-id = "javascriptreact"
-language-servers = ["deno-lsp"]
-
-[[language]]
-name = "tsx"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx"] }
-auto-format = true
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-language-id = "typescriptreact"
-language-servers = ["deno-lsp"]
-
-[[language]]
-name = "toml"
-auto-format = true
