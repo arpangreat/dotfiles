@@ -60,7 +60,7 @@ tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [editor.indent-guides]
 render = true
-character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "▏"  # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 0
 
 [editor.lsp]
@@ -75,7 +75,7 @@ min-width = 0
 supersede-menu = true
 
 [editor.inline-diagnostics]
-cursor-line = "warning" # show warnings and errors on the cursorline inline
+cursor-line = "warning"  # show warnings and errors on the cursorline inline
 other-lines = "info"
 
 [keys.normal]

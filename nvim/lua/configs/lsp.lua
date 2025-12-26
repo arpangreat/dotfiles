@@ -2,13 +2,22 @@
 vim.diagnostic.config({
 	virtual_lines = {
 		current_line = true,
+		severity = { min = vim.diagnostic.severity.ERROR },
+	},
+	virtual_text = {
+		-- Show warnings, hints, and info (but not errors, since they use virtual_lines)
+		severity = {
+			min = vim.diagnostic.severity.INFO,
+			max = vim.diagnostic.severity.WARN,
+		},
+		virt_text_pos = "eol",
 	},
 	signs = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
 		},
 		numhl = {
 			[vim.diagnostic.severity.ERROR] = "ErrorMsg",
@@ -19,13 +28,13 @@ vim.diagnostic.config({
 	},
 	status = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
 		},
 	},
-	update_in_insert = false,
+	update_in_insert = true,
 	undercurl = true,
 	float = {
 		scope = "line",
