@@ -9,10 +9,10 @@
 #font-feature = ss03
 #font-feature = ss20
 
-font-family="Maple Mono NF"
-font-family-bold="Maple Mono NF"
-font-family-italic="Maple Mono NF"
-font-family-bold-italic="Maple Mono NF"
+# font-family="Maple Mono NF"
+# font-family-bold="Maple Mono NF"
+# font-family-italic="Maple Mono NF"
+# font-family-bold-italic="Maple Mono NF"
 
 # font-family="Intel One Mono"
 # font-family-bold="Intel One Mono"
@@ -24,10 +24,10 @@ font-family-bold-italic="Maple Mono NF"
 # font-family-italic="JetBrainsMono Nerd Font"
 # font-family-bold-italic="JetBrainsMono Nerd Font"
 
-# font-family="JetBrains Mono"
-# font-family-bold="JetBrains Mono"
-# font-family-italic="JetBrains Mono"
-# font-family-bold-italic="JetBrains Mono"
+font-family="JetBrains Mono"
+font-family-bold="JetBrains Mono"
+font-family-italic="JetBrains Mono"
+font-family-bold-italic="JetBrains Mono"
 
 font-style = "SemiBold"
 # font-style-bold = "Bold"
@@ -35,23 +35,23 @@ font-style = "SemiBold"
 # font-style-bold-italic = "Bold Italic"
 
 # Maple Mono
-font-feature = calt
-font-feature = dlig
-font-feature = liga
-font-feature = zero
-font-feature = ss03
-font-feature = ss06
-font-feature = ss08
-font-feature = ss09
-font-feature = ss10
-font-feature = ss11
-font-feature = cv01
-font-feature = cv03
-font-feature = cv05
-font-feature = cv11
-font-feature = cv63
-font-feature = cv35
-font-feature = cv66
+# font-feature = calt
+# font-feature = dlig
+# font-feature = liga
+# font-feature = zero
+# font-feature = ss03
+# font-feature = ss06
+# font-feature = ss08
+# font-feature = ss09
+# font-feature = ss10
+# font-feature = ss11
+# font-feature = cv01
+# font-feature = cv03
+# font-feature = cv05
+# font-feature = cv11
+# font-feature = cv63
+# font-feature = cv35
+# font-feature = cv66
 
 # Intel One
 # font-feature = calt
@@ -74,13 +74,13 @@ font-feature = cv66
 # font_features JetBrainsMono-BoldItalic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features JetBrainsMono-Italic +calt +cv02 +cv03 +cv04 +cv05 +cv06 +cv11 +cv12 +cv14 +cv18 +cv99
 # font_features MapleMono-Regular +calt +liga +dlig +zero +locl +cv02 +cv03 +cv31
-# font-feature = calt
-# font-feature = liga
-# font-feature = dlig
-# font-feature = zero
-# font-feature = cv02
-# font-feature = cv03
-# font-feature = cv04
+font-feature = calt
+font-feature = liga
+font-feature = dlig
+font-feature = zero
+font-feature = cv02
+font-feature = cv03
+font-feature = cv04
 
 # font-size = 13.0
 
