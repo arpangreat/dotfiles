@@ -82,7 +82,7 @@ font-feature = cv66
 # font-feature = cv03
 # font-feature = cv04
 
-font-size = 13.0
+# font-size = 13.0
 
 theme = "tokyonight_moon_my"
 
