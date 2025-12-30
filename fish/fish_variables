@@ -8,7 +8,7 @@ SETUVAR --export MAKEFLAGS:\x2dj4
 SETUVAR --export PAGER:bat\x20\x2d\x2dpaging\x3dalways\x20\x2d\x2dcolor\x3dalways
 SETUVAR --export --path PATH:/home/arpangreat/\x2elocal/flutter/bin
 SETUVAR Z_DATA_DIR:/home/arpangreat/\x2elocal/share/z
-SETUVAR __fish_initialized:3800
+SETUVAR __fish_initialized:4300
 SETUVAR _fisher_adriaanzon_2F_fish_2D_artisan_2D_completion_files:\x7e/\x2econfig/fish/functions/artisan\x2efish\x1e\x7e/\x2econfig/fish/completions/artisan\x2efish\x1e\x7e/\x2econfig/fish/completions/php\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:\x7e/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e\x7e/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/plugin\x2dbang\x2dbang\x2efish
@@ -21,47 +21,7 @@ SETUVAR fifc_exa_opts:\x2d\x2dicons\x1e\x2d\x2dtree
 SETUVAR --export fifc_fd_opts:\x2d\x2dhidden
 SETUVAR fifc_keybinding:\x09
 SETUVAR fifc_open_keybinding:ctrl\x2do
-SETUVAR fish_color_autosuggestion:636da6
-SETUVAR fish_color_cancel:\x1d
-SETUVAR fish_color_command:86e1fc
-SETUVAR fish_color_comment:636da6
-SETUVAR fish_color_cwd:\x1d
-SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:ff966c
-SETUVAR fish_color_error:ff757f
-SETUVAR fish_color_escape:c099ff
-SETUVAR fish_color_gray:6e738d
-SETUVAR fish_color_history_current:\x2d\x2dbold
-SETUVAR fish_color_host:\x1d
-SETUVAR fish_color_host_remote:\x1d
-SETUVAR fish_color_keyword:c099ff
-SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
-SETUVAR fish_color_normal:c8d3f5
-SETUVAR fish_color_operator:c3e88d
-SETUVAR fish_color_option:c099ff
-SETUVAR fish_color_param:fca7ea
-SETUVAR fish_color_quote:ffc777
-SETUVAR fish_color_redirection:c8d3f5
-SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d2d3f76
-SETUVAR fish_color_selection:\x2d\x2dbackground\x3d2d3f76
-SETUVAR fish_color_status:f8868e
-SETUVAR fish_color_user:\x1d
-SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
-SETUVAR fish_key_bindings:fish_vi_key_bindings
-SETUVAR fish_pager_color_background:\x1d
-SETUVAR fish_pager_color_completion:c8d3f5
-SETUVAR fish_pager_color_description:636da6
-SETUVAR fish_pager_color_prefix:86e1fc
-SETUVAR fish_pager_color_progress:636da6
-SETUVAR fish_pager_color_secondary_background:\x1d
-SETUVAR fish_pager_color_secondary_completion:\x1d
-SETUVAR fish_pager_color_secondary_description:\x1d
-SETUVAR fish_pager_color_secondary_prefix:\x1d
-SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d2d3f76
-SETUVAR fish_pager_color_selected_completion:\x1d
-SETUVAR fish_pager_color_selected_description:\x1d
-SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_path:/home/arpangreat/\x2ecargo/bin
 SETUVAR fish_user_paths:/home/arpangreat/flutter/bin\x1e/home/arpangreat/Android/Sdk/platform\x2dtools\x1e/home/arpangreat/Android/Sdk/cmdline\x2dtools/latest/bin\x1e/home/arpangreat/argc\x2dcompletions/bin\x1e/home/arpangreat/\x2ebun/bin\x1e/usr/lib/jvm/default/bin\x1e/home/arpangreat/\x2eruby/bin\x1e/home/arpangreat/\x2econfig/composer/vendor/bin\x1e/home/arpangreat/\x2elocal/share/nvim/mason/bin\x1e/home/arpangreat/\x2elocal/bin\x1e/home/arpangreat/\x2eopam/default/bin\x1e/home/arpangreat/\x2ecargo/bin\x1e/usr/local/go/bin\x1e/home/arpangreat/\x2esymfony5/bin\x1e/home/arpangreat/\x2erye/env\x1e/home/arpangreat/fzf/bin
 SETUVAR --export nvim:/home/arpangreat/\x2ecargo/bin/hx
