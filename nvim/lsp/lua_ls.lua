@@ -15,7 +15,7 @@ return {
 	},
 	settings = {
 		Lua = {
-			completion = { callSnippet = "Replace" },
+			completion = { callSnippet = "Both" },
 			hint = {
 				enable = true,
 			},
