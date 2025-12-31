@@ -79,6 +79,7 @@ return {
 	end,
 	config = function()
 		local ts = require("nvim-treesitter")
+		local install = require("nvim-treesitter.install")
 		local config = {
 			enable_logging = vim.g.ts_enable_logging or false,
 		}
@@ -89,7 +90,7 @@ return {
 			end
 		end
 
-		-- Optional setup
+		-- Setup with install directory
 		ts.setup({
 			install_dir = vim.fn.stdpath("data") .. "/site",
 		})
@@ -119,14 +120,18 @@ return {
 			"markdown",
 		}
 
-		-- Install missing parsers
-		local to_install = vim.tbl_filter(function(lang)
-			return #vim.api.nvim_get_runtime_file("parser/" .. lang .. ".*", false) == 0
-		end, parsers)
+		-- Install missing parsers on startup
+		local installed = require("nvim-treesitter.config").get_installed()
+		local to_install = {}
+		for _, lang in ipairs(parsers) do
+			if not vim.list_contains(installed, lang) then
+				table.insert(to_install, lang)
+			end
+		end
 
 		if #to_install > 0 then
-			log("Installing parsers: " .. table.concat(to_install, ", "))
-			ts.install(to_install)
+			log("Installing missing parsers: " .. table.concat(to_install, ", "))
+			install.install(to_install)
 		end
 
 		-- Build filetypes list properly (NEW table, not inserting into source)
