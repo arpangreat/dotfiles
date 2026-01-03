@@ -78,7 +78,6 @@ return {
 		end, { desc = "Toggle treesitter for current buffer" })
 	end,
 	config = function()
-		local ts = require("nvim-treesitter")
 		local install = require("nvim-treesitter.install")
 		local config = {
 			enable_logging = vim.g.ts_enable_logging or false,
@@ -89,11 +88,6 @@ return {
 				vim.notify("[TS] " .. msg, vim.log.levels.INFO)
 			end
 		end
-
-		-- Setup with install directory
-		ts.setup({
-			install_dir = vim.fn.stdpath("data") .. "/site",
-		})
 
 		-- Parser languages to install
 		local parsers = {
