@@ -25,9 +25,11 @@
 # font-family-bold-italic="JetBrainsMono Nerd Font"
 
 font-family="JetBrains Mono"
-font-family-bold="JetBrains Mono"
-font-family-italic="JetBrains Mono"
-font-family-bold-italic="JetBrains Mono"
+# font-family-bold="JetBrains Mono"
+# font-family-italic="JetBrains Mono"
+# font-family-bold-italic="JetBrains Mono"
+
+# font-family="TX-02"
 
 font-style = "SemiBold"
 # font-style-bold = "Bold"

@@ -32,13 +32,10 @@ return {
 		},
 		{ "<Leader>fcb", "<cmd>FzfLua lgrep_curbuf<CR>", desc = "Grep current buffer" },
 	},
-	-- enabled = false,
-	-- optional for icon support
 	dependencies = { "roginfarrer/fzf-lua-lazy.nvim" },
 	opts = {
-		-- calling `setup` is optional for customization
-		-- local config = require("fzf-lua.config")
 		profiles = "fzf-native",
+		ui_select = true,
 
 		keymap = {
 			builtin = {
@@ -68,9 +65,4 @@ return {
 		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"
 		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"
 	},
-	config = function(_, opts)
-		local fzf = require("fzf-lua")
-		fzf.setup(opts)
-		fzf.register_ui_select()
-	end,
 }

@@ -1,6 +1,7 @@
-lastupdatecheck: 1754063109
+lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/cli
     - /home/arpangreat/neovim
     - /home/arpangreat/RustExs
     - /home/arpangreat/CExamples
@@ -31,7 +32,6 @@ recentrepos:
     - /home/arpangreat/rofi-calc
     - /home/arpangreat/PythonExs
     - /home/arpangreat/nnn
-    - /home/arpangreat/cli
     - /home/arpangreat/peda
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
@@ -48,7 +48,7 @@ recentrepos:
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
 didshowhunkstaginghint: true
-lastversion: unversioned
+lastversion: 0.58.0
 customcommandshistory:
     - git branch
     - gh pr create --fill
