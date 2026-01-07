@@ -45,6 +45,9 @@ vim.diagnostic.config({
 	},
 })
 
+-- Disable semantic tokens for performance
+vim.lsp.semantic_tokens.enable(false)
+
 -- Set initial capabilities (without blink)
 vim.lsp.config("*", {
 	capabilities = require("configs.config").get_capabilities(),

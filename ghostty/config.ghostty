@@ -31,7 +31,7 @@ font-family="JetBrains Mono"
 
 # font-family="TX-02"
 
-# font-style = "SemiBold"
+font-style = "SemiBold"
 # font-style-bold = "Bold"
 # font-style-italic = "Italic"
 # font-style-bold-italic = "Bold Italic"
