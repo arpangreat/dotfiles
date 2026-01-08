@@ -14,7 +14,7 @@ return {
 				sidebars = "transparent", -- style for sidebars, see below
 				floats = "transparent", -- style for floating windows
 			},
-			dim_inactive = true, -- dims inactive windows
+			-- dim_inactive = true, -- dims inactive windows
 
 			on_highlights = function(highlights, colors)
 				highlights["@variable"] = { fg = colors.red }
