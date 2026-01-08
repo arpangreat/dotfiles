@@ -1,6 +1,7 @@
 lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/kitty
     - /home/arpangreat/lcc
     - /home/arpangreat/cli
     - /home/arpangreat/neovim
@@ -22,7 +23,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/TypescriptExs
-    - /home/arpangreat/kitty
     - /home/arpangreat/ghostty
     - /home/arpangreat/textbook
     - /home/arpangreat/icons-in-terminal
