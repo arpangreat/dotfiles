@@ -31,10 +31,10 @@ font-family="Maple Mono NF"
 
 # font-family="TX-02"
 
-# font-style = "SemiBold"
-# font-style-bold = "ExtraBold"
-# font-style-italic = "SemiBold Italic"
-# font-style-bold-italic = "ExtraBold Italic"
+font-style = "SemiBold"
+font-style-bold = "ExtraBold"
+font-style-italic = "SemiBold Italic"
+font-style-bold-italic = "ExtraBold Italic"
 
 # Maple Mono
 font-feature = calt
