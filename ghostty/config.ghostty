@@ -120,6 +120,10 @@ shell-integration = fish
 
 shell-integration-features = cursor,no-sudo,title
 
+notify-on-command-finish = unfocused
+
+notify-on-command-finish-action = no-bell,notify
+
 desktop-notifications = true
 
 copy-on-select = clipboard
