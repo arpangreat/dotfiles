@@ -49,7 +49,7 @@ recentrepos:
     - /home/arpangreat/CS50-AI-Python
 startuppopupversion: 5
 didshowhunkstaginghint: true
-lastversion: 0.58.0
+lastversion: unversioned
 customcommandshistory:
     - git branch
     - gh pr create --fill
