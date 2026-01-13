@@ -87,10 +87,11 @@ font-feature = cv66
 # font-size = 13.0
 
 theme = "tokyonight_moon_my"
+# theme = "TokyoNight Night"
 
 cursor-style-blink = false
 
-background-opacity = 0.95
+# background-opacity = 0.95
 
 keybind = ctrl+enter=unbind
 keybind = global:super+`=toggle_quick_terminal
