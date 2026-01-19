@@ -15,8 +15,10 @@ palette = 13=#dab8ff
 palette = 14=#a8f5ff
 palette = 15=#d5e0ff
 
-background = #0d0f17
-foreground = #F0F4FF
+# background = #0d0f17
+# foreground = #F0F4FF
+foreground = #CBE0F0
+background = #011423
 cursor-color = cell-foreground
 cursor-text = cell-background
 selection-background = cell-background
