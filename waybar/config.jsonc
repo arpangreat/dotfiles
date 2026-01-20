@@ -7,6 +7,7 @@
   // "modules-left": ["sway/workspaces"],
   "modules-center": ["custom/music"],
   "modules-right": [
+    "custom/weather",
     "pulseaudio",
     "network",
     "backlight",
@@ -159,5 +160,13 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
     "spacing": 10,
+  },
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/weather.sh",
+    "interval": 1800,
+    "return-type": "",
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "xdg-open https://open-meteo.com/en/docs",
   },
 }
