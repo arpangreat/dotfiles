@@ -1,6 +1,7 @@
 lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/nnn
     - /home/arpangreat/RustExs
     - /home/arpangreat/kitty
     - /home/arpangreat/lcc
@@ -32,7 +33,6 @@ recentrepos:
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
     - /home/arpangreat/PythonExs
-    - /home/arpangreat/nnn
     - /home/arpangreat/peda
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
