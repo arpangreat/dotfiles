@@ -26,6 +26,15 @@ return {
 					desc = ("Open %s daily note"):format(cmd),
 				}
 			)
+			vim.api.nvim_create_user_command("Daily", function(args)
+				local input = args.args
+
+				client:exec_cmd({
+					title = "Markdown-Oxide-Daily",
+					command = "jump",
+					arguments = { input },
+				}, { bufnr = bufnr })
+			end, { desc = "Open daily note", nargs = "*" })
 		end
 	end,
 }
