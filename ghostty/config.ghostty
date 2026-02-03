@@ -91,8 +91,8 @@ theme = "tokyonight_moon_my"
 
 cursor-style-blink = false
 
-background-opacity = 0.95
-background-opacity-cells = true
+# background-opacity = 0.95
+# background-opacity-cells = true
 # background-blur = true
 
 keybind = ctrl+enter=unbind
