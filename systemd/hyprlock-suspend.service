@@ -1,0 +1,13 @@
+[Unit]
+Description=Lock screen with hyprlock before suspend
+Before=sleep.target
+After=network-online.target
+StopWhenUnneeded=true
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hyprlock
+RemainAfterExit=true
+
+[Install]
+WantedBy=sleep.target

@@ -1,0 +1,36 @@
+show-failed-attempts
+daemonize
+
+# Colors (customize as you like)
+color=1e1e2e
+text-color=cdd6f4
+inside-color=1e1e2e
+ring-color=89b4fa
+line-color=1e1e2e
+separator-color=00000000
+
+inside-clear-color=f5e0dc
+ring-clear-color=f5e0dc
+inside-ver-color=89b4fa
+ring-ver-color=89b4fa
+inside-wrong-color=f38ba8
+ring-wrong-color=f38ba8
+
+# Background image with blur
+image=/home/arpangreat/dotfiles/wallpaper/4k/lighthouse.jpg
+scaling=fill
+blur=10
+
+# Input field UI styling
+font=monospace
+font-size=20
+inside-clear-color=313244aa
+ring-clear-color=89b4fa
+line-clear-color=89b4fa
+key-hl-color=89b4fa
+
+# Ring and indicator styling
+indicator
+indicator-caps-lock
+indicator-radius=100
+indicator-thickness=10

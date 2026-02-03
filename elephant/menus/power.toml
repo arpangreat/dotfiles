@@ -15,12 +15,12 @@ actions = { "reboot" = "systemctl reboot" }
 [[entries]]
 icon = "system-hibernate"
 text = "Hibernate"
-actions = { "hibernate" = "systemctl hibernate" }
+actions = { "hibernate" = "hyprlock & sleep 1 && systemctl hibernate" }
 
 [[entries]]
 icon = "system-suspend"
 text = "Suspend"
-actions = { "suspend" = "systemctl suspend" }
+actions = { "suspend" = "hyprlock & sleep 1 && systemctl suspend" }
 
 [[entries]]
 icon = "system-logout"
