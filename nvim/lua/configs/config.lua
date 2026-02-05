@@ -47,7 +47,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		if client.server_capabilities.codeLensProvider then
 			vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "CursorHold" }, {
 				buffer = bufnr,
-				callback = vim.lsp.codelens.refresh,
+				callback = function()
+					vim.lsp.codelens.enable(true, { bufnr })
+				end,
 			})
 		end
 	end,
