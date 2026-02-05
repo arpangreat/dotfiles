@@ -5,12 +5,9 @@ vim.diagnostic.config({
 		severity = { min = vim.diagnostic.severity.ERROR },
 	},
 	virtual_text = {
-		-- Show warnings, hints, and info (but not errors, since they use virtual_lines)
 		severity = {
-			min = vim.diagnostic.severity.INFO,
 			max = vim.diagnostic.severity.WARN,
 		},
-		virt_text_pos = "eol",
 	},
 	signs = {
 		text = {
