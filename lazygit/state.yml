@@ -1,6 +1,7 @@
 lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/fzf
     - /home/arpangreat/kitty
     - /home/arpangreat/rustlings
     - /home/arpangreat/RustExs
@@ -14,7 +15,6 @@ recentrepos:
     - /home/arpangreat/cppexamples
     - /home/arpangreat/go
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
-    - /home/arpangreat/fzf
     - /home/arpangreat/tmux
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/.local/share/nvim/lazy/mini.icons

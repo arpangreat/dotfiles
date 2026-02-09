@@ -36,7 +36,7 @@ SETUVAR fish_color_quote:ffc777
 SETUVAR fish_color_redirection:c8d3f5
 SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d2d3f76
 SETUVAR fish_color_selection:\x2d\x2dbackground\x3d2d3f76
-SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
+SETUVAR fish_greeting:\x1d
 SETUVAR fish_pager_color_completion:c8d3f5
 SETUVAR fish_pager_color_description:636da6
 SETUVAR fish_pager_color_prefix:86e1fc
