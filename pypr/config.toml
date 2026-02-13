@@ -1,0 +1,13 @@
+[pyprland]
+plugins = [
+  "scratchpads",
+]
+
+[scratchpads.volume]
+animation = "fromRight"
+command = "pavucontrol-qt"
+class = "org.pulseaudio.pavucontrol"
+position = "200% 5%"
+size = "40% 90%"
+unfocus = "hide"
+lazy = true

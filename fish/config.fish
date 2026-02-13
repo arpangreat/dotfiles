@@ -42,8 +42,9 @@ function ya
 end
 
 # fzf_key_bindings
-fzf --fish | source
-source /home/arpangreat/fzf-git.sh/fzf-git.fish
+# fzf --fish | source
+# source /home/arpangreat/fzf-git.sh/fzf-git.fish
+set -gx FZF_COMPLETION_OPTS "--no-multi"
 
 set fish_vi_force_cursor
 set fish_cursor_default block

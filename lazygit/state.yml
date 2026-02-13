@@ -1,13 +1,20 @@
-lastupdatecheck: 1754063109
+lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
-    - /home/arpangreat/go
+    - /home/arpangreat/fzf
+    - /home/arpangreat/kitty
+    - /home/arpangreat/rustlings
+    - /home/arpangreat/RustExs
+    - /home/arpangreat/nnn
+    - /home/arpangreat/lcc
+    - /home/arpangreat/cli
+    - /home/arpangreat/neovim
     - /home/arpangreat/CExamples
     - /home/arpangreat/tmux-cpu-real
-    - /home/arpangreat/RustExs
+    - /home/arpangreat/Books
+    - /home/arpangreat/cppexamples
+    - /home/arpangreat/go
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
-    - /home/arpangreat/neovim
-    - /home/arpangreat/fzf
     - /home/arpangreat/tmux
     - /home/arpangreat/javaexsnew
     - /home/arpangreat/.local/share/nvim/lazy/mini.icons
@@ -18,19 +25,15 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/TypescriptExs
-    - /home/arpangreat/kitty
     - /home/arpangreat/ghostty
     - /home/arpangreat/textbook
     - /home/arpangreat/icons-in-terminal
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
     - /home/arpangreat/gleam-first/new
     - /home/arpangreat/pwndbg
-    - /home/arpangreat/Books
     - /home/arpangreat/argc-completions
     - /home/arpangreat/rofi-calc
     - /home/arpangreat/PythonExs
-    - /home/arpangreat/nnn
-    - /home/arpangreat/cli
     - /home/arpangreat/peda
     - /home/arpangreat/ocaml-examples
     - /home/arpangreat/blog
@@ -41,7 +44,6 @@ recentrepos:
     - /home/arpangreat/college-work
     - /home/arpangreat/zig-examples
     - /home/arpangreat/mono-dots
-    - /home/arpangreat/cppexamples
     - /home/arpangreat/space_invaders
     - /home/arpangreat/DSA-preps
     - /home/arpangreat/weedy

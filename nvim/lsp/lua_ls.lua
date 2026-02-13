@@ -15,7 +15,7 @@ return {
 	},
 	settings = {
 		Lua = {
-			completion = { callSnippet = "Replace" },
+			completion = { callSnippet = "Both" },
 			hint = {
 				enable = true,
 			},
@@ -26,7 +26,7 @@ return {
 			workspace = {
 				checkThirdParty = false,
 				library = {
-					vim.env.VIMRUNTIME,
+					vim.api.nvim_get_runtime_file("", true),
 					"${3rd}/luv/library",
 				},
 			},

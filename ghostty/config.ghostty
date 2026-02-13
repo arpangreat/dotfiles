@@ -14,15 +14,27 @@ font-family-bold="Maple Mono NF"
 font-family-italic="Maple Mono NF"
 font-family-bold-italic="Maple Mono NF"
 
+# font-family="Intel One Mono"
+# font-family-bold="Intel One Mono"
+# font-family-italic="Intel One Mono"
+# font-family-bold-italic="Intel One Mono"
+
 # font-family="JetBrainsMono Nerd Font"
 # font-family-bold="JetBrainsMono Nerd Font"
 # font-family-italic="JetBrainsMono Nerd Font"
 # font-family-bold-italic="JetBrainsMono Nerd Font"
 
+# font-family="JetBrains Mono"
+# font-family-bold="JetBrains Mono"
+# font-family-italic="JetBrains Mono"
+# font-family-bold-italic="JetBrains Mono"
+
+# font-family="TX-02"
+
 font-style = "SemiBold"
-# font-style-bold = "Bold"
-# font-style-italic = "Italic"
-# font-style-bold-italic = "Bold Italic"
+font-style-bold = "ExtraBold"
+font-style-italic = "SemiBold Italic"
+font-style-bold-italic = "ExtraBold Italic"
 
 # Maple Mono
 font-feature = calt
@@ -43,6 +55,14 @@ font-feature = cv63
 font-feature = cv35
 font-feature = cv66
 
+# Intel One
+# font-feature = calt
+# font-feature = dlig
+# font-feature = liga
+# font-feature = ss01
+# font-feature = ss02
+# font-feature = ss03
+
 # font-feature = calt
 # font-feature = dlig
 # font-feature = liga
@@ -60,18 +80,20 @@ font-feature = cv66
 # font-feature = liga
 # font-feature = dlig
 # font-feature = zero
-# font-feature = locl
 # font-feature = cv02
 # font-feature = cv03
-# font-feature = cv31
+# font-feature = cv04
 
-font-size = 12.0
+font-size = 12.5
 
 theme = "tokyonight_moon_my"
+# theme = "TokyoNight Night"
 
 cursor-style-blink = false
 
 background-opacity = 0.95
+# background-opacity-cells = true
+# background-blur = true
 
 keybind = ctrl+enter=unbind
 keybind = global:super+`=toggle_quick_terminal
@@ -100,6 +122,10 @@ window-show-tab-bar = never
 shell-integration = fish
 
 shell-integration-features = cursor,no-sudo,title
+
+notify-on-command-finish = unfocused
+
+notify-on-command-finish-action = no-bell,notify
 
 desktop-notifications = true
 

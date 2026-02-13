@@ -8,7 +8,7 @@ vim.api.nvim_create_user_command("GoModernize", function()
 	end
 
 	-- Check if buffer is modified
-	if vim.api.nvim_buf_get_option(bufnr, "modified") then
+	if vim.api.nvim_get_option_value("modified", { buf = bufnr }) then
 		vim.cmd("silent write")
 	end
 

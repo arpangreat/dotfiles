@@ -2,13 +2,19 @@
 vim.diagnostic.config({
 	virtual_lines = {
 		current_line = true,
+		severity = { min = vim.diagnostic.severity.ERROR },
+	},
+	virtual_text = {
+		severity = {
+			max = vim.diagnostic.severity.WARN,
+		},
 	},
 	signs = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
 		},
 		numhl = {
 			[vim.diagnostic.severity.ERROR] = "ErrorMsg",
@@ -19,13 +25,13 @@ vim.diagnostic.config({
 	},
 	status = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.HINT] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
 		},
 	},
-	update_in_insert = false,
+	update_in_insert = true,
 	undercurl = true,
 	float = {
 		scope = "line",
@@ -35,6 +41,9 @@ vim.diagnostic.config({
 		float = true,
 	},
 })
+
+-- Disable semantic tokens for performance
+vim.lsp.semantic_tokens.enable(false)
 
 -- Set initial capabilities (without blink)
 vim.lsp.config("*", {

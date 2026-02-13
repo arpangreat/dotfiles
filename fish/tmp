@@ -1,4 +1,4 @@
-set -Ux FZF_DEFAULT_OPTS "\
+set -gx FZF_DEFAULT_OPTS "\
     --color=spinner:#ff007c,hl:#2ac3de \
     --color=fg:#c0caf5,header:#ff9e64,info:#545c7e,pointer:#ff007c \
     --color=marker:#ff007c,fg+:#c0caf5,prompt:#2ac3de,hl+:#2ac3de \
@@ -7,18 +7,19 @@ set -Ux FZF_DEFAULT_OPTS "\
     --height='80%' \
     --bind='alt-k:preview-up,alt-p:preview-up' \
     --bind='alt-j:preview-down,alt-n:preview-down' \
-    --bind='ctrl-r:toggle-all' \
+		--bind='tab:toggle+down,shift-tab:toggle+up' \
+    --bind='ctrl-r:change-multi' \
     --bind='ctrl-s:toggle-sort' \
     --bind='?:toggle-preview' \
     --bind='alt-w:toggle-preview-wrap' \
     --preview='bat --color=always {}' \
     --preview-window='right:60%' \
-    --border --multi --info inline-right --layout reverse --marker ▏ --pointer '▎' --prompt '▎' \
+    --border --no-multi --info inline-right --layout reverse --marker ▏ --pointer '▎' --prompt '▎' \
     --highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189 \
     --info=inline-right \
     --layout='reverse' \
     --ansi \
     --gutter-raw='▎' \
-    --border-label=' alt-k/p:↑ | alt-j/n:↓ | ctrl-r:toggle-all | ctrl-s:sort | ?:preview | alt-w:wrap | tab:select ' \
+    --border-label=' alt-k/p:↑ | alt-j/n:↓ | ctrl-r:change-multi | ctrl-s:sort | ?:preview | alt-w:wrap | tab/shift-tab:next/prev ' \
     --border-label-pos=0:bottom"
 

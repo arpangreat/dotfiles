@@ -1,22 +1,24 @@
 palette = 0=#1b1d2b
-palette = 1=#ff757f
-palette = 2=#c3e88d
-palette = 3=#ffc777
-palette = 4=#82aaff
-palette = 5=#c099ff
-palette = 6=#86e1fc
-palette = 7=#828bb8
+palette = 1=#ff7a8a
+palette = 2=#d4ff7b
+palette = 3=#ffda7e
+palette = 4=#8ab4ff
+palette = 5=#d0a8ff
+palette = 6=#8efaff
+palette = 7=#8a8fb8
 palette = 8=#444a73
-palette = 9=#ff8d94
-palette = 10=#c7fb6d
-palette = 11=#ffd8ab
-palette = 12=#9ab8ff
-palette = 13=#caabff
-palette = 14=#b2ebff
-palette = 15=#c8d3f5
+palette = 9=#ff9aaa
+palette = 10=#e0ff8a
+palette = 11=#ffeab8
+palette = 12=#a0c4ff
+palette = 13=#dab8ff
+palette = 14=#a8f5ff
+palette = 15=#d5e0ff
 
-background = #121420
-foreground = #D5D9E2
+background = #0d0f17
+foreground = #F0F4FF
+# foreground = #CBE0F0
+# background = #011423
 cursor-color = cell-foreground
 cursor-text = cell-background
 selection-background = cell-background
