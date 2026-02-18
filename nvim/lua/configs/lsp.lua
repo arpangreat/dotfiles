@@ -42,12 +42,14 @@ vim.diagnostic.config({
 	},
 })
 
--- Disable semantic tokens for performance
+-- Disable semantic tokens entirely
 vim.lsp.semantic_tokens.enable(false)
 
--- Set initial capabilities (without blink)
+-- Set initial capabilities (without blink or semantic tokens)
+local caps = require("configs.config").get_capabilities()
+caps.semanticTokens = vim.NIL
 vim.lsp.config("*", {
-	capabilities = require("configs.config").get_capabilities(),
+	capabilities = caps,
 })
 
 -- Lazy-load LSP servers on first buffer
