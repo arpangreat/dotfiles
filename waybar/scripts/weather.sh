@@ -3,8 +3,8 @@
 # Weather script using Open-Meteo API (no API key needed)
 # Set your coordinates below
 
-LAT="24.1760"  # Rampurhat latitude
-LON="87.7858"  # Rampurhat longitude
+LAT="24.1026"  # Rampurhat latitude
+LON="87.4722"  # Rampurhat longitude
 
 # Fetch weather data
 WEATHER_DATA=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&current_weather=true&temperature_unit=celsius")

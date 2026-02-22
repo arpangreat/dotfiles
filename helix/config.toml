@@ -16,7 +16,7 @@ soft-wrap.enable = true
 undercurl = true
 insert-final-newline = false
 popup-border = "all"
-# rainbow-brackets = true
+rainbow-brackets = true
 end-of-line-diagnostics = "hint"
 
 [editor.cursor-shape]
