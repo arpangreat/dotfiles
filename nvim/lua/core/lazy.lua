@@ -46,4 +46,9 @@ require("lazy").setup({ { import = "plugins" } }, {
 
 vim.cmd("packadd nvim.undotree")
 
-require("vim._core.ui2").enable({})
+require("vim._core.ui2").enable({
+	enabled = true,
+	msg = {
+		targets = "msg",
+	},
+})
