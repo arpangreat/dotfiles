@@ -147,7 +147,6 @@ link-previews = true
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_fade.glsl
 # custom-shader = /home/arpangreat/dotfiles/ghostty/shaders/cursor_smear_mine.glsl
 
-
 custom-shader-animation = false
 
 term = tmux-256color

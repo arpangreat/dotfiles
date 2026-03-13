@@ -38,6 +38,9 @@ symbol = " "
 [git_status]
 disabled = true
 
+[git_commit]
+disabled = true
+
 [buf]
 symbol = " "
 
