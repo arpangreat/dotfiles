@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, opts("Signature help"))
 		vim.keymap.set("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", opts("LSP declarations"))
 		vim.keymap.set("n", "go", "<cmd>FzfLua lsp_typedefs<CR>", opts("LSP type definitions"))
-		vim.keymap.set("n", "gr", vim.lsp.buf.rename, opts("LSP rename"))
+		vim.keymap.set("n", "grn", vim.lsp.buf.rename, opts("LSP rename"))
 		vim.keymap.set("n", "gR", "<cmd>FzfLua lsp_references<CR>", opts("LSP references"))
 		vim.keymap.set("n", "g0", "<cmd>FzfLua lsp_document_symbols<CR>", opts("Document symbols"))
 		vim.keymap.set("n", "gW", "<cmd>FzfLua lsp_workspace_symbols<CR>", opts("Workspace symbols"))
