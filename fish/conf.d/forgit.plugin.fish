@@ -30,6 +30,22 @@ end
 # alias `git-forgit` to the full-path of the command
 alias git-forgit "$FORGIT"
 
+function forgit::worktree
+    if test (count $argv) -ne 0
+        git-forgit worktree $argv
+        return $status
+    end
+    set -l tree (git-forgit worktree)
+    test -d "$tree"; and cd "$tree"
+end
+
+function forgit::worktree::add
+    set -l tree (git-forgit worktree_add $argv)
+    or return $status
+    test -d "$tree"; or return 0
+    cd "$tree"; or return 1
+end
+
 # register abbreviations
 if test -z "$FORGIT_NO_ALIASES"
     abbr -a -- (string collect $forgit_add; or string collect "ga") git-forgit add
@@ -41,6 +57,7 @@ if test -z "$FORGIT_NO_ALIASES"
     abbr -a -- (string collect $forgit_ignore; or string collect "gi") git-forgit ignore
     abbr -a -- (string collect $forgit_attributes; or string collect "gat") git-forgit attributes
     abbr -a -- (string collect $forgit_checkout_file; or string collect "gcf") git-forgit checkout_file
+    abbr -a -- (string collect $forgit_checkout_file_from_commit; or string collect "gcff") git-forgit checkout_file_from_commit
     abbr -a -- (string collect $forgit_checkout_branch; or string collect "gcb") git-forgit checkout_branch
     abbr -a -- (string collect $forgit_switch_branch; or string collect "gsw") git-forgit switch_branch
     abbr -a -- (string collect $forgit_branch_delete; or string collect "gbd") git-forgit branch_delete
@@ -56,4 +73,7 @@ if test -z "$FORGIT_NO_ALIASES"
     abbr -a -- (string collect $forgit_revert_commit; or string collect "grc") git-forgit revert_commit
     abbr -a -- (string collect $forgit_blame; or string collect "gbl") git-forgit blame
     abbr -a -- (string collect $forgit_checkout_tag; or string collect "gct") git-forgit checkout_tag
+    abbr -a -- (string collect $forgit_worktree; or string collect "gwt") forgit::worktree
+    abbr -a -- (string collect $forgit_worktree_add; or string collect "gwa") forgit::worktree::add
+    abbr -a -- (string collect $forgit_worktree_delete; or string collect "gwd") git-forgit worktree_delete
 end

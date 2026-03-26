@@ -109,6 +109,7 @@ source /home/arpangreat/ghostty/zig-out/share/fish/vendor_completions.d/ghostty.
 source /home/arpangreat/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
 source /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim/extras/fish/tokyonight_moon.fish
 
+tv init fish | source
 # opam configuration
 source /home/arpangreat/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 

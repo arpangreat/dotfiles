@@ -55,11 +55,11 @@ return {
 				["ctrl-u"] = "preview-page-up",
 			},
 		},
-		-- lsp = {
-		-- 	code_actions = {
-		-- 		previewer = "codeaction_native",
-		-- 	},
-		-- },
+		lsp = {
+			code_actions = {
+				previewer = "codeaction_native",
+			},
+		},
 		-- config.defaults.keymap.fzf["alt-n"] = "preview-page-down"
 		-- config.defaults.keymap.fzf["alt-n"] = "preview-page-down"
 		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"

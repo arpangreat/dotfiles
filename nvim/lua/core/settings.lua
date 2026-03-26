@@ -41,4 +41,7 @@ vim.g.loaded_python3_provider = 0
 
 vim.opt.cmdheight = 0
 
+vim.g.grepprg = "rg --vimgrep --smart-case"
+vim.g.grepformat = "%f:%l:%c:%m"
+
 vim.g.health = { style = "float" }

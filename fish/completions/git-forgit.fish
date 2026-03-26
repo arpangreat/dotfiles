@@ -6,14 +6,18 @@
 # sourced when git-forgit command or forgit subcommand of git is invoked.
 
 function __fish_forgit_needs_subcommand
-    for subcmd in add blame branch_delete checkout_branch checkout_commit checkout_file checkout_tag \
-        cherry_pick cherry_pick_from_branch clean diff fixup ignore log reflog rebase reset_head \
-        revert_commit reword squash stash_show stash_push switch_branch
+    for subcmd in add blame branch_delete checkout_branch checkout_commit checkout_file checkout_file_from_commit \
+        checkout_tag cherry_pick cherry_pick_from_branch clean diff fixup ignore log reflog rebase reset_head \
+        revert_commit reword squash stash_show stash_push switch_branch worktree worktree_add worktree_delete
         if contains -- $subcmd (commandline -opc)
             return 1
         end
     end
     return 0
+end
+
+function __fish_forgit_worktrees
+    git worktree list --porcelain 2>/dev/null | string match -r '^worktree .+' | string replace 'worktree ' ''
 end
 
 # Load helper functions in git completion file
@@ -28,6 +32,7 @@ complete -c git-forgit -n __fish_forgit_needs_subcommand -a branch_delete -d 'gi
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a checkout_branch -d 'git checkout branch selector'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a checkout_commit -d 'git checkout commit selector'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a checkout_file -d 'git checkout-file selector'
+complete -c git-forgit -n __fish_forgit_needs_subcommand -a checkout_file_from_commit -d 'git checkout-file from commit selector'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a checkout_tag -d 'git checkout tag selector'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a cherry_pick -d 'git cherry-picking'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a cherry_pick_from_branch -d 'git cherry-picking with interactive branch selection'
@@ -46,12 +51,16 @@ complete -c git-forgit -n __fish_forgit_needs_subcommand -a squash -d 'git squas
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a stash_show -d 'git stash viewer'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a stash_push -d 'git stash push selector'
 complete -c git-forgit -n __fish_forgit_needs_subcommand -a switch_branch -d 'git switch branch selector'
+complete -c git-forgit -n __fish_forgit_needs_subcommand -a worktree -d 'git worktree browser'
+complete -c git-forgit -n __fish_forgit_needs_subcommand -a worktree_add -d 'git worktree add selector'
+complete -c git-forgit -n __fish_forgit_needs_subcommand -a worktree_delete -d 'git worktree remove selector'
 
 complete -c git-forgit -n '__fish_seen_subcommand_from add' -a "(complete -C 'git add ')"
 complete -c git-forgit -n '__fish_seen_subcommand_from branch_delete' -a "(__fish_git_local_branches)"
 complete -c git-forgit -n '__fish_seen_subcommand_from checkout_branch' -a "(complete -C 'git switch ')"
 complete -c git-forgit -n '__fish_seen_subcommand_from checkout_commit' -a "(__fish_git_commits)"
 complete -c git-forgit -n '__fish_seen_subcommand_from checkout_file' -a "(__fish_git_files modified)"
+complete -c git-forgit -n '__fish_seen_subcommand_from checkout_file_from_commit' -a "(complete -C 'git switch ')"
 complete -c git-forgit -n '__fish_seen_subcommand_from checkout_tag' -a "(__fish_git_tags)" -d Tag
 complete -c git-forgit -n '__fish_seen_subcommand_from cherry_pick' -a "(complete -C 'git cherry-pick ')"
 complete -c git-forgit -n '__fish_seen_subcommand_from clean' -a "(__fish_git_files untracked ignored)"
@@ -68,3 +77,4 @@ complete -c git-forgit -n '__fish_seen_subcommand_from squash' -a "(complete -C 
 complete -c git-forgit -n '__fish_seen_subcommand_from stash_show' -a "(__fish_git_complete_stashes)"
 complete -c git-forgit -n '__fish_seen_subcommand_from stash_push' -a "(__fish_git_files modified deleted modified-staged-deleted)"
 complete -c git-forgit -n '__fish_seen_subcommand_from switch_branch' -a "(complete -C 'git switch ')"
+complete -c git-forgit -n '__fish_seen_subcommand_from worktree_delete' -a "(__fish_forgit_worktrees)"
