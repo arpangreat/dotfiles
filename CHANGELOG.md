@@ -7,6 +7,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## Unreleased
 
+- everyday stuff [#93](https://github.com/arpangreat/dotfiles/pull/93) ([arpangreat](https://github.com/arpangreat))
+
+## [5.0.0](https://github.com/arpangreat/dotfiles/tree/5.0.0) - 2026-03-27
+
+[Full Changelog](https://github.com/arpangreat/dotfiles/compare/4.0.0...5.0.0)
+
+### Other
+
+- everyday stuff [#93](https://github.com/arpangreat/dotfiles/pull/93) ([arpangreat](https://github.com/arpangreat))
 - everyday stuff [#92](https://github.com/arpangreat/dotfiles/pull/92) ([arpangreat](https://github.com/arpangreat))
 - clean ups [#91](https://github.com/arpangreat/dotfiles/pull/91) ([arpangreat](https://github.com/arpangreat))
 - everyday stuff [#90](https://github.com/arpangreat/dotfiles/pull/90) ([arpangreat](https://github.com/arpangreat))
