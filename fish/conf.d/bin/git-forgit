@@ -31,9 +31,13 @@ $FORGIT_FZF_DEFAULT_OPTS
 
 _forgit_warn() { printf "%b[Warn]%b %s\n" '\e[0;33m' '\e[0m' "$@" >&2; }
 _forgit_info() { printf "%b[Info]%b %s\n" '\e[0;32m' '\e[0m' "$@" >&2; }
-_forgit_inside_work_tree() { git rev-parse --is-inside-work-tree >/dev/null; }
+_forgit_print_dim() { printf "\e[90m%s\e[0m\n" "$*"; }
+_forgit_inside_work_tree() { git rev-parse --is-inside-work-tree >/dev/null 2>&1; }
+_forgit_inside_git_dir() { git rev-parse --is-inside-git-dir >/dev/null 2>&1; }
+_forgit_inside_git_repo() { _forgit_inside_work_tree || _forgit_inside_git_dir; }
 # tac is not available on OSX, tail -r is not available on Linux, so we use either of them
 _forgit_reverse_lines() { tac 2> /dev/null || tail -r; }
+_forgit_strip_ansi() { local ESC=$'\033'; sed "s/${ESC}\[[0-9;]*m//g"; }
 
 _forgit_previous_commit() {
     # "SHA~" is invalid when the commit is the first commit, but we can use "--root" instead
@@ -127,9 +131,25 @@ _forgit_dir_view=${FORGIT_DIR_VIEW:-$(hash tree &> /dev/null && echo 'tree' || e
 
 _forgit_pager() {
     local pager
-    pager=$(_forgit_get_pager "$1")
+    # Preview mode must be marked explicitly by forgit. Inferred signals such
+    # as FZF_PREVIEW_COLUMNS or a non-TTY stdout also show up in execute/fullscreen
+    # paths, which would incorrectly route Enter actions to FORGIT_PREVIEW_PAGER.
+    if [[ -n "$FORGIT_IN_PREVIEW" ]] && [[ -n "$FORGIT_PREVIEW_PAGER" ]]; then
+        pager="$FORGIT_PREVIEW_PAGER"
+    else
+        pager=$(_forgit_get_pager "$1")
+    fi
     [[ -z "${pager}" ]] && exit 1
     eval "${pager} ${*:2}"
+}
+
+_forgit_preview() {
+    local cmd=$1
+    shift
+    # Funnel all fzf --preview commands through a single wrapper so preview-only
+    # pager behavior is controlled by an explicit marker instead of ambient env.
+    export FORGIT_IN_PREVIEW=1
+    _forgit_"${cmd}" "$@"
 }
 
 _forgit_get_pager() {
@@ -151,6 +171,33 @@ _forgit_is_file_tracked() {
     git ls-files "$1" --error-unmatch &> /dev/null
 }
 
+# List branches with current branch first (for use as fzf header)
+# Usage: _forgit_branch_list [git-branch-options...]
+#
+# Note: We explicitly print the current branch first rather than using
+# `LC_ALL=C sort -k1.1,1.1 -rs` because git branch output has three possible
+# prefixes: '*' (current), '+' (checked out in a worktree), and ' ' (other).
+# Sorting by the first character doesn't reliably place '*' first when '+'
+# is present, since their ASCII order (* < +) conflicts with the desired order.
+_forgit_branch_list() {
+    local current
+    current=$(git branch --show-current)
+    if [[ -n "$current" ]]; then
+        _forgit_print_dim "* $current"
+    else
+        _forgit_print_dim "* (HEAD detached at $(git rev-parse --short HEAD))"
+    fi
+    git branch --color=always "$@" | grep -v '^\*' | grep -v ' -> '
+}
+
+# Extract branch name from git branch output
+# Handles ANSI escape codes, prefix characters (* + ' '), and symbolic refs (->)
+_forgit_extract_branch_name() {
+    _forgit_strip_ansi |
+        sed -E 's/^[*+ ] //; s/ -> .*//' |
+        awk '{print $1}'
+}
+
 _forgit_list_files() {
     local rootdir
     rootdir=$(git rev-parse --show-toplevel)
@@ -164,6 +211,23 @@ _forgit_list_files() {
     # With the -z flag, git also uses \0 line termination, so we
     # have to replace the terminators.
     git ls-files -z "$@" "$rootdir" | tr '\0' '\n' | uniq
+}
+
+# Print changed files in the worktree
+#
+# Always includes modified and unmerged files. Includes untracked files when
+# status.showUntrackedFiles is true or unset. Never includes staged files.
+_forgit_worktree_changes() {
+    local changed unmerged untracked show_untracked
+    changed=$(git config --get-color color.status.changed red)
+    unmerged=$(git config --get-color color.status.unmerged red)
+    untracked=$(git config --get-color color.status.untracked red)
+    show_untracked=$(git config status.showUntrackedFiles)
+
+    git -c color.status=always -c status.relativePaths=true status --porcelain -zs --untracked="${show_untracked:-all}" |
+        tr '\0' '\n' |
+        grep -F -e "$changed" -e "$unmerged" -e "$untracked" |
+        sed -E 's/^(..[^[:space:]]*)[[:space:]]+(.*)$/[\1]  \2/'
 }
 
 _forgit_is_submodule() {
@@ -184,27 +248,33 @@ _forgit_log_enter() {
     "${FORGIT}" show "${sha}" "$@"
 }
 
+_forgit_git_log() {
+    local graph log_format
+    log_format=$1
+    shift
+    graph=()
+    [[ $_forgit_log_graph_enable == true ]] && graph=(--graph)
+    _forgit_log_git_opts=()
+    _forgit_parse_array _forgit_log_git_opts "$FORGIT_LOG_GIT_OPTS"
+    git log "${graph[@]}" --color=always --format="$log_format" "${_forgit_log_git_opts[@]}" "$@" |
+        _forgit_emojify
+}
+
 # git commit viewer
 _forgit_log() {
     _forgit_inside_work_tree || return 1
-    local opts graph quoted_files log_format
+    local opts quoted_files log_format
     quoted_files=$(_forgit_quote_files "$@")
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
         --bind=\"enter:execute($FORGIT log_enter {} $quoted_files)\"
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT log_preview {} $quoted_files\"
+        --preview=\"$FORGIT preview log_preview {} $quoted_files\"
         $FORGIT_LOG_FZF_OPTS
     "
-    graph=()
-    [[ $_forgit_log_graph_enable == true ]] && graph=(--graph)
     log_format=${FORGIT_GLO_FORMAT:-$_forgit_log_format}
-    _forgit_log_git_opts=()
-    _forgit_parse_array _forgit_log_git_opts "$FORGIT_LOG_GIT_OPTS"
-    git log "${graph[@]}" --color=always --format="$log_format" "${_forgit_log_git_opts[@]}" "$@" |
-        _forgit_emojify |
-        FZF_DEFAULT_OPTS="$opts" fzf
+    _forgit_git_log "$log_format" "$@" | FZF_DEFAULT_OPTS="$opts" fzf
     fzf_exit_code=$?
     # exit successfully on 130 (ctrl-c/esc)
     [[ $fzf_exit_code == 130 ]] && return 0
@@ -221,7 +291,7 @@ _forgit_reflog() {
         +s +m --tiebreak=index
         --bind=\"enter:execute($FORGIT log_enter {})\"
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT log_preview {}\"
+        --preview=\"$FORGIT preview log_preview {}\"
         $FORGIT_REFLOG_FZF_OPTS
     "
     reflog_format=${FORGIT_GRL_FORMAT:-$_forgit_log_format}
@@ -326,7 +396,7 @@ _forgit_diff() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +m -0 --bind=\"enter:execute($FORGIT diff_enter {} $escaped_commits | $FORGIT pager enter)\"
-        --preview=\"$FORGIT diff_view {} '$_forgit_preview_context' $escaped_commits\"
+        --preview=\"$FORGIT preview diff_view {} '$_forgit_preview_context' $escaped_commits\"
         --bind=\"alt-e:execute($FORGIT edit_diffed_file {})+refresh-preview\"
         $FORGIT_DIFF_FZF_OPTS
         --prompt=\"${commits[*]} > \"
@@ -377,6 +447,19 @@ _forgit_show_enter() {
     _forgit_show_view "$file" "$_forgit_fullscreen_context" "${commit}"
 }
 
+_forgit_git_show() {
+    local commit=$1
+    shift
+
+    _forgit_show_git_opts=()
+    _forgit_parse_array _forgit_show_git_opts "$FORGIT_SHOW_GIT_OPTS"
+    # Add "^{commit}" suffix after the actual commit. This suppresses the tag information in case it is a tag.
+    # See: https://git-scm.com/docs/git-show#Documentation/git-show.txt-codegitshow-s--formatsv100commitcode
+    git show --pretty="" --name-status --diff-merges=first-parent "${_forgit_show_git_opts[@]}" "${commit}^{commit}" -- "$@" |
+        sed -E 's/^([[:alnum:]]+)[[:space:]]+(.*)$/[\1]	\2/' |
+        sed 's/	/  ->  /2' | expand -t 8
+}
+
 # git show viewer
 _forgit_show() {
     _forgit_inside_work_tree || return 1
@@ -396,7 +479,7 @@ _forgit_show() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +m -0 --bind=\"enter:execute($FORGIT show_enter {} $escaped_commit | $FORGIT pager enter)\"
-        --preview=\"$FORGIT show_preview {} '$_forgit_preview_context' $escaped_commit\"
+        --preview=\"$FORGIT preview show_preview {} '$_forgit_preview_context' $escaped_commit\"
         --preview-label=\" Diff \"
         --bind=\"alt-e:execute($FORGIT edit_diffed_file {})+refresh-preview\"
         --bind=\"alt-t:transform:[[ ! \\\"\$FZF_PREVIEW_LABEL\\\" =~ 'Diff' ]] &&
@@ -405,15 +488,7 @@ _forgit_show() {
         $FORGIT_SHOW_FZF_OPTS
         --prompt=\"${commit} > \"
     "
-    _forgit_show_git_opts=()
-    _forgit_parse_array _forgit_show_git_opts "$FORGIT_SHOW_GIT_OPTS"
-    # Add "^{commit}" suffix after the actual commit. This suppresses the tag information in case it is a tag.
-    # See: https://git-scm.com/docs/git-show#Documentation/git-show.txt-codegitshow-s--formatsv100commitcode
-    git show --pretty="" --name-status --diff-merges=first-parent "${_forgit_show_git_opts[@]}" "${commit}^{commit}" \
-        -- "${files[@]}" |
-        sed -E 's/^([[:alnum:]]+)[[:space:]]+(.*)$/[\1]	\2/' |
-        sed 's/	/  ->  /2' | expand -t 8 |
-        FZF_DEFAULT_OPTS="$opts" fzf
+    _forgit_git_show "$commit" "${files[@]}" | FZF_DEFAULT_OPTS="$opts" fzf
     fzf_exit_code=$?
     # exit successfully on 130 (ctrl-c/esc)
     [[ $fzf_exit_code == 130 ]] && return 0
@@ -458,29 +533,21 @@ _forgit_edit_add_file() {
 # git add selector
 _forgit_add() {
     _forgit_inside_work_tree || return 1
-    local changed unmerged untracked files opts show_untracked
+    local files opts
     # Add files if passed as arguments
     _forgit_contains_non_flags "$@" && { _forgit_git_add "$@" && git status -s; return $?; }
 
-    changed=$(git config --get-color color.status.changed red)
-    unmerged=$(git config --get-color color.status.unmerged red)
-    untracked=$(git config --get-color color.status.untracked red)
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -0 -m --nth 2..,..
-        --preview=\"$FORGIT add_preview {}\"
+        --preview=\"$FORGIT preview add_preview {}\"
         --bind=\"alt-e:execute($FORGIT edit_add_file {})+refresh-preview\"
         $FORGIT_ADD_FZF_OPTS
     "
     files=()
-    show_untracked=$(git config status.showUntrackedFiles)
     while IFS='' read -r file; do
         files+=("$file")
-    done < <(git -c color.status=always -c status.relativePaths=true -c core.quotePath=false status -s --untracked="${show_untracked:-all}" |
-        grep -F -e "$changed" -e "$unmerged" -e "$untracked" |
-        sed -E 's/^(..[^[:space:]]*)[[:space:]]+(.*)$/[\1]  \2/' |
-        FZF_DEFAULT_OPTS="$opts" fzf |
-        _forgit_get_single_file_from_add_line)
+    done < <(_forgit_worktree_changes | FZF_DEFAULT_OPTS="$opts" fzf | _forgit_get_single_file_from_add_line)
     [[ "${#files[@]}" -gt 0 ]] && _forgit_git_add "$@" "${files[@]}" && git status -s && return
     echo 'Nothing to add.'
 }
@@ -505,14 +572,14 @@ _forgit_reset_head() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -m -0
-        --preview=\"$FORGIT reset_head_preview '$rootdir'/{}\"
+        --preview=\"$FORGIT preview reset_head_preview '$rootdir'/{}\"
         $FORGIT_RESET_HEAD_FZF_OPTS
     "
     files=()
     while IFS='' read -r file; do
         files+=("$file")
     done < <(git diff -z --staged --name-only | tr '\0' '\n' | FZF_DEFAULT_OPTS="$opts" fzf)
-    if [[ ${#files} -eq 0 ]]; then
+    if [[ ${#files[@]} -eq 0 ]]; then
         echo 'Nothing to unstage.'
         return 1
     fi
@@ -545,7 +612,7 @@ _forgit_stash_show() {
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m -0 --tiebreak=index --bind=\"enter:execute($FORGIT stash_show_enter {})\"
         --bind=\"ctrl-y:execute-silent($FORGIT yank_stash_name {})\"
-        --preview=\"$FORGIT stash_show_preview {}\"
+        --preview=\"$FORGIT preview stash_show_preview {}\"
         $FORGIT_STASH_FZF_OPTS
     "
     git stash list "${_forgit_stash_show_git_opts[@]}" | FZF_DEFAULT_OPTS="$opts" fzf
@@ -591,7 +658,7 @@ _forgit_stash_push() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -m
-        --preview=\"$FORGIT stash_push_preview {}\"
+        --preview=\"$FORGIT preview stash_push_preview {}\"
         $FORGIT_STASH_PUSH_FZF_OPTS
     "
     # Show both modified and untracked files
@@ -618,7 +685,7 @@ _forgit_clean_select_files() {
     local opts
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
-        --preview=\"$FORGIT clean_preview {}\"
+        --preview=\"$FORGIT preview clean_preview {}\"
         -m -0
         $FORGIT_CLEAN_FZF_OPTS
     "
@@ -662,7 +729,7 @@ _forgit_cherry_pick() {
 
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
-        --preview=\"$FORGIT cherry_pick_preview {}\"
+        --preview=\"$FORGIT preview cherry_pick_preview {}\"
         --multi --ansi --with-nth 2.. -0 --tiebreak=index
         $FORGIT_CHERRY_PICK_FZF_OPTS
     "
@@ -686,7 +753,9 @@ _forgit_cherry_pick() {
 }
 
 _forgit_cherry_pick_from_branch_preview() {
-    git log --right-only --color=always --cherry-pick --oneline "$1"..."$2"
+    local branch
+    branch=$(echo "$2" | _forgit_extract_branch_name)
+    git log --right-only --color=always --cherry-pick --oneline "$1"..."$branch"
 }
 
 _forgit_cherry_pick_from_branch() {
@@ -703,7 +772,7 @@ _forgit_cherry_pick_from_branch() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index --header-lines=1
-        --preview=\"$FORGIT cherry_pick_from_branch_preview '$base' {1}\"
+        --preview=\"$FORGIT preview cherry_pick_from_branch_preview '$base' {}\"
         $FORGIT_CHERRY_PICK_FROM_BRANCH_FZF_OPTS
         "
     # loop until either the branch selector is closed or a commit to be cherry
@@ -711,10 +780,7 @@ _forgit_cherry_pick_from_branch() {
     while true
     do
         if [[ -z $input_branch ]]; then
-            branch="$(git branch --color=always --all |
-            LC_ALL=C sort -k1.1,1.1 -rs |
-            FZF_DEFAULT_OPTS="$opts" fzf |
-            awk '{print $1}')"
+            branch="$(_forgit_branch_list --all | FZF_DEFAULT_OPTS="$opts" fzf | _forgit_extract_branch_name)"
         else
             branch=$input_branch
         fi
@@ -741,7 +807,7 @@ _forgit_rebase() {
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT file_preview {}\"
+        --preview=\"$FORGIT preview file_preview {}\"
         $FORGIT_REBASE_FZF_OPTS
     "
     target_commit=$(
@@ -788,7 +854,7 @@ _forgit_edit_commit() {
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT file_preview {} $quoted_files\"
+        --preview=\"$FORGIT preview file_preview {} $quoted_files\"
         $fzf_opts
     "
     target_commit=$(
@@ -817,7 +883,7 @@ _forgit_reword() {
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT file_preview {} $quoted_files\"
+        --preview=\"$FORGIT preview file_preview {} $quoted_files\"
         $FORGIT_REWORD_FZF_OPTS
     "
     target_commit=$(
@@ -852,7 +918,7 @@ _forgit_checkout_file() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -m -0
-        --preview=\"$FORGIT checkout_file_preview {}\"
+        --preview=\"$FORGIT preview checkout_file_preview {}\"
         $FORGIT_CHECKOUT_FILE_FZF_OPTS
     "
     files=()
@@ -861,6 +927,54 @@ _forgit_checkout_file() {
     done < <(_forgit_list_files --modified |
         FZF_DEFAULT_OPTS="$opts" fzf)
     [[ "${#files[@]}" -gt 0 ]] && _forgit_git_checkout_file "$@" "${files[@]}"
+}
+
+# git checkout-file from commit selector
+_forgit_checkout_file_from_commit() {
+    _forgit_inside_work_tree || return 1
+    local opts commit file branch
+
+    if [[ $# -gt 0 ]]; then
+        branch=$1
+        shift
+    else
+        # default to the current branch if none was passed
+        branch=$(git rev-parse --abbrev-ref HEAD)
+    fi
+
+    # select the commit interactively
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +s +m --tiebreak=index
+        --preview=\"$FORGIT log_preview {}\"
+        $FORGIT_CHECKOUT_FILE_FROM_COMMIT_LOG_FZF_OPTS
+    "
+    commit=$(_forgit_git_log "$_forgit_log_format" "$branch" "$@" |
+        FZF_DEFAULT_OPTS="$opts" fzf |
+        _forgit_extract_sha)
+    [[ -n "$commit" ]] || return 0
+
+    # select the file interactively
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +m -0
+        --preview=\"$FORGIT preview show_preview {} '$_forgit_preview_context' $commit\"
+        --preview-label=\" Diff \"
+        --bind=\"alt-t:transform:[[ ! \\\"\$FZF_PREVIEW_LABEL\\\" =~ 'Diff' ]] &&
+                echo 'change-preview-label( Diff )+refresh-preview' ||
+                echo 'change-preview-label( Commit Message )+refresh-preview'\"
+        $FORGIT_CHECKOUT_FILE_FROM_COMMIT_SHOW_FZF_OPTS
+        --prompt=\"${commit} > \"
+    "
+    file=$(_forgit_git_show "$commit" | FZF_DEFAULT_OPTS="$opts" fzf)
+    [[ -n "$file" ]] || return 0
+
+    # special case: when the file was deleted in the commit
+    # check out the file from the previous commit.
+    [[ "$file" =~ ^\[D\] ]] && commit="$commit~"
+    file=$(echo "$file" | _forgit_get_single_file_from_diff_line)
+
+    _forgit_git_checkout_file "$commit" -- "$file"
 }
 
 _forgit_git_checkout_branch() {
@@ -888,13 +1002,13 @@ _forgit_checkout_branch() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index --header-lines=1
-        --preview=\"$FORGIT branch_preview {1}\"
+        --preview=\"$FORGIT preview branch_preview {}\"
         $FORGIT_CHECKOUT_BRANCH_FZF_OPTS
         "
     _forgit_checkout_branch_branch_git_opts=()
     _forgit_parse_array _forgit_checkout_branch_branch_git_opts "$FORGIT_CHECKOUT_BRANCH_BRANCH_GIT_OPTS"
-    branch="$(git branch --color=always "${_forgit_checkout_branch_branch_git_opts[@]:---all}" | LC_ALL=C sort -k1.1,1.1 -rs |
-              FZF_DEFAULT_OPTS="$opts" fzf | awk '{print $1}')"
+    branch="$(_forgit_branch_list "${_forgit_checkout_branch_branch_git_opts[@]:---all}" |
+        FZF_DEFAULT_OPTS="$opts" fzf | _forgit_extract_branch_name)"
     [[ -z "$branch" ]] && return 1
 
     # track the remote branch if possible
@@ -934,13 +1048,13 @@ _forgit_switch_branch() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index --header-lines=1
-        --preview=\"$FORGIT branch_preview {1}\"
+        --preview=\"$FORGIT preview branch_preview {}\"
         $FORGIT_SWITCH_BRANCH_FZF_OPTS
         "
     _forgit_switch_branch_branch_git_opts=()
     _forgit_parse_array _forgit_switch_branch_branch_git_opts "$FORGIT_SWITCH_BRANCH_BRANCH_GIT_OPTS"
-    branch="$(git branch --color=always "${_forgit_switch_branch_branch_git_opts[@]:---all}" | LC_ALL=C sort -k1.1,1.1 -rs |
-              FZF_DEFAULT_OPTS="$opts" fzf | awk '{print $1}')"
+    branch="$(_forgit_branch_list "${_forgit_switch_branch_branch_git_opts[@]:---all}" |
+        FZF_DEFAULT_OPTS="$opts" fzf | _forgit_extract_branch_name)"
     [[ -z "$branch" ]] && return 1
 
     # track the remote branch if possible
@@ -971,7 +1085,7 @@ _forgit_checkout_tag() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
-        --preview=\"$FORGIT branch_preview {}\"
+        --preview=\"$FORGIT preview branch_preview {}\"
         $FORGIT_CHECKOUT_TAG_FZF_OPTS
     "
     tag="$(git tag -l --sort=-v:refname | FZF_DEFAULT_OPTS="$opts" fzf)"
@@ -1000,7 +1114,7 @@ _forgit_checkout_commit() {
         $FORGIT_FZF_DEFAULT_OPTS
         +s +m --tiebreak=index
         --bind=\"ctrl-y:execute-silent($FORGIT yank_sha {})\"
-        --preview=\"$FORGIT checkout_commit_preview {}\"
+        --preview=\"$FORGIT preview checkout_commit_preview {}\"
         $FORGIT_CHECKOUT_COMMIT_FZF_OPTS
     "
     graph=()
@@ -1012,9 +1126,11 @@ _forgit_checkout_commit() {
 }
 
 _forgit_branch_preview() {
+    local branch
+    branch=$(echo "$1" | _forgit_extract_branch_name)
     # the trailing '--' ensures that this works for branches that have a name
     # that is identical to a file
-    git log "$1" "${_forgit_log_preview_options[@]}" --
+    git log "$branch" "${_forgit_log_preview_options[@]}" --
 }
 
 _forgit_git_branch_delete() {
@@ -1031,14 +1147,10 @@ _forgit_branch_delete() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         +s --multi --tiebreak=index --header-lines=1
-        --preview=\"$FORGIT branch_preview {1}\"
+        --preview=\"$FORGIT preview branch_preview {}\"
         $FORGIT_BRANCH_DELETE_FZF_OPTS
     "
-
-    for branch in $(git branch --color=always |
-        LC_ALL=C sort -k1.1,1.1 -rs |
-        FZF_DEFAULT_OPTS="$opts" fzf |
-        awk '{print $1}')
+    for branch in $(_forgit_branch_list | FZF_DEFAULT_OPTS="$opts" fzf | _forgit_extract_branch_name)
     do
         _forgit_git_branch_delete "$branch"
     done
@@ -1066,7 +1178,7 @@ _forgit_revert_commit() {
         $FORGIT_FZF_DEFAULT_OPTS
         -m +s --tiebreak=index
         --ansi --with-nth 2..
-        --preview=\"$FORGIT revert_preview {}\"
+        --preview=\"$FORGIT preview revert_preview {}\"
         $FORGIT_REVERT_COMMIT_FZF_OPTS
     "
     graph=()
@@ -1121,7 +1233,7 @@ _forgit_blame() {
     done < <(git rev-parse --flags "$@")
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
-        --preview=\"$FORGIT blame_preview {} ${flags[*]}\"
+        --preview=\"$FORGIT preview blame_preview {} ${flags[*]}\"
         $FORGIT_BLAME_FZF_OPTS
     "
     # flags is not quoted here, which is fine given that they are retrieved
@@ -1156,7 +1268,7 @@ _forgit_ignore() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -m --preview-window='right:70%'
-        --preview=\"$FORGIT path_preview $FORGIT_GI_TEMPLATES {2} .gitignore ignore\"
+        --preview=\"$FORGIT preview path_preview $FORGIT_GI_TEMPLATES {2} .gitignore ignore\"
         $FORGIT_IGNORE_FZF_OPTS
     "
     args=("$@")
@@ -1184,7 +1296,7 @@ _forgit_attributes() {
     opts="
         $FORGIT_FZF_DEFAULT_OPTS
         -m --preview-window='right:70%'
-        --preview=\"$FORGIT path_preview $FORGIT_ATTR_TEMPLATES {2} .gitattributes attributes\"
+        --preview=\"$FORGIT preview path_preview $FORGIT_ATTR_TEMPLATES {2} .gitattributes attributes\"
         $FORGIT_ATTRIBUTES_FZF_OPTS
     "
     args=("$@")
@@ -1232,6 +1344,204 @@ _forgit_paths_list() {
     path=$1
     ext=$2
     find "$path" -name "*$ext" -print |sed -e "s#$ext\$##" -e 's#.*/##' -e '/^$/d' | sort -fu
+}
+
+# Get the root path of the main worktree (not the current worktree)
+_forgit_main_worktree_root() {
+    git worktree list --porcelain | sed -n 's/^worktree //p;q'
+}
+
+# Parse git worktree list --porcelain output and format it for display
+# Output format: [XY] /path/to/worktree (branch) 3 hours ago
+#   X: '*' = current worktree, ' ' = other
+#   Y: 'L' (yellow) = locked, 'P' (yellow) = prunable, ' ' = normal
+#   When both locked and prunable, 'L' takes precedence
+_forgit_worktree_list() {
+    local worktree head branch locked prunable line relative_date
+    local _cyan=$'\033[36m' _gray=$'\033[90m' _yellow=$'\033[33m' _reset=$'\033[0m'
+    local current_worktree
+    current_worktree=$(git rev-parse --show-toplevel 2>/dev/null)
+    git worktree list --porcelain | while IFS= read -r line; do
+        case "$line" in
+            "worktree "*)
+                worktree="${line#worktree }"
+                head="" branch="" locked="" prunable=""
+                ;;
+            "HEAD "*)
+                head="${line#HEAD }"
+                ;;
+            "branch "*)
+                branch="${line#branch refs/heads/}"
+                ;;
+            "detached")
+                branch="detached"
+                ;;
+            "locked"*)
+                locked="${_yellow}L${_reset}"
+                ;;
+            "prunable"*)
+                prunable="${_yellow}P${_reset}"
+                ;;
+            "")
+                relative_date=$(git log -1 --format='%cr' "$head" 2>/dev/null)
+                local current_marker=" " lock_marker=" "
+                [[ "$worktree" == "$current_worktree" ]] && current_marker="*"
+                [[ -n "$prunable" ]] && lock_marker="$prunable"
+                [[ -n "$locked" ]] && lock_marker="$locked"
+                printf "[%s%s] %s ${_cyan}(%s)${_reset} ${_gray}%s${_reset}\n" \
+                    "$current_marker" "$lock_marker" "$worktree" "${branch:-HEAD}" "$relative_date"
+                ;;
+        esac
+    done
+}
+
+# Return deletable worktrees (exclude main worktree which is the first one)
+_forgit_worktree_list_deletable() {
+    _forgit_worktree_list | tail -n +2
+}
+
+# Extract worktree path from formatted line (strip ANSI codes, skip 5-char prefix '[XY] ')
+# TODO: awk '{print $1}' breaks on paths containing spaces or parentheses.
+# Consider switching _forgit_worktree_list to a tab-delimited format so we can
+# use 'cut -f1' (or awk -F'\t') for reliable path extraction.
+_forgit_extract_worktree_path() {
+    _forgit_strip_ansi | cut -c6- | awk '{print $1}'
+}
+
+# Copy worktree path to clipboard
+_forgit_worktree_yank_path() {
+    echo "$1" | _forgit_extract_worktree_path | ${FORGIT_COPY_CMD:-pbcopy}
+}
+
+# Toggle worktree lock status (check 3rd char 'L' in prefix '[XY]')
+_forgit_worktree_toggle_lock() {
+    local line="$1" worktree stripped
+    worktree=$(echo "$line" | _forgit_extract_worktree_path)
+    stripped=$(echo "$line" | _forgit_strip_ansi)
+    if [[ "${stripped:2:1}" == "L" ]]; then
+        git worktree unlock "$worktree"
+    else
+        git worktree lock "$worktree"
+    fi
+}
+
+# Preview function for worktree
+_forgit_worktree_preview() {
+    local worktree
+    worktree=$(echo "$1" | _forgit_extract_worktree_path)
+    [[ ! -d "$worktree" ]] && echo "Worktree directory not found: $worktree" && return 1
+
+    local status_output
+    status_output=$(git -c color.status=always -C "$worktree" status -s 2>/dev/null)
+    [[ -n "$status_output" ]] && echo "$status_output" && echo ""
+    git -C "$worktree" log --oneline -n 200 --color=always 2>/dev/null
+}
+
+# Git worktree delete wrapper
+_forgit_git_worktree_delete() {
+    _forgit_worktree_delete_git_opts=()
+    _forgit_parse_array _forgit_worktree_delete_git_opts "$FORGIT_WORKTREE_DELETE_GIT_OPTS"
+    git worktree remove "${_forgit_worktree_delete_git_opts[@]}" "$@"
+}
+
+# git worktree browser
+# Note: we intentionally do NOT use --header-lines=1 here, because the current
+# worktree (listed first) should remain selectable for operations like lock/unlock.
+_forgit_worktree() {
+    _forgit_inside_git_repo || return 1
+    local opts worktree
+    [[ $# -ne 0 ]] && { git worktree "$@"; return $?; }
+
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +s +m --tiebreak=index
+        --preview=\"$FORGIT preview worktree_preview {}\"
+        --bind=\"ctrl-y:execute-silent($FORGIT worktree_yank_path {})\"
+        --bind=\"alt-l:execute-silent($FORGIT worktree_toggle_lock {})+reload($FORGIT worktree_list)\"
+        $FORGIT_WORKTREE_FZF_OPTS
+    "
+    worktree=$(_forgit_worktree_list | FZF_DEFAULT_OPTS="$opts" fzf)
+    [[ -z "$worktree" ]] && return 1
+    echo "$worktree" | _forgit_extract_worktree_path
+}
+
+# git worktree delete selector
+_forgit_worktree_delete() {
+    _forgit_inside_git_repo || return 1
+    local opts worktrees
+    [[ $# -ne 0 ]] && { _forgit_git_worktree_delete "$@"; return $?; }
+
+    local candidates
+    candidates=$(_forgit_worktree_list_deletable)
+    if [[ -z "$candidates" ]]; then
+        echo "Nothing to delete."
+        return 1
+    fi
+
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +s --multi --tiebreak=index
+        --preview=\"$FORGIT preview worktree_preview {}\"
+        --bind=\"ctrl-y:execute-silent($FORGIT worktree_yank_path {})\"
+        --bind=\"alt-l:execute-silent($FORGIT worktree_toggle_lock {})+reload($FORGIT worktree_list_deletable)\"
+        $FORGIT_WORKTREE_DELETE_FZF_OPTS
+    "
+
+    worktrees=()
+    while IFS='' read -r line; do
+        [[ -n "$line" ]] && worktrees+=("$(echo "$line" | _forgit_extract_worktree_path)")
+    done < <(echo "$candidates" | FZF_DEFAULT_OPTS="$opts" fzf)
+
+    [[ ${#worktrees[@]} -eq 0 ]] && return 1
+
+    for worktree in "${worktrees[@]}"; do
+        _forgit_git_worktree_delete "$worktree"
+    done
+}
+
+_forgit_worktree_add() {
+    _forgit_inside_git_repo || return 1
+
+    # Default to main worktree root, not current worktree's root
+    local wt_dir="${FORGIT_WORKTREE_ADD_DIR:-$(_forgit_main_worktree_root)/.wt}"
+
+    # Two or more arguments: pass through to git directly
+    if [[ $# -ge 2 ]]; then
+        git worktree add "$@"
+        return $?
+    fi
+
+    local new_branch="${1:-}"
+    local opts branch
+
+    _forgit_worktree_add_branch_git_opts=()
+    _forgit_parse_array _forgit_worktree_add_branch_git_opts "$FORGIT_WORKTREE_ADD_BRANCH_GIT_OPTS"
+
+    local header_opt=""
+    [[ -z "$new_branch" ]] && header_opt="--header-lines=1"
+
+    opts="
+        $FORGIT_FZF_DEFAULT_OPTS
+        +s +m --tiebreak=index $header_opt
+        --preview=\"$FORGIT branch_preview {}\"
+        $FORGIT_WORKTREE_ADD_FZF_OPTS
+    "
+    branch=$(_forgit_branch_list "${_forgit_worktree_add_branch_git_opts[@]:---all}" |
+        FZF_DEFAULT_OPTS="$opts" fzf | _forgit_extract_branch_name)
+    [[ -z "$branch" ]] && return 1
+
+    # Strip remotes/<remote>/ prefix for remote branches
+    local local_branch="${branch#remotes/*/}"
+
+    if [[ -n "$new_branch" ]]; then
+        # gwa <new-branch>: create new branch from selected base
+        local target="$wt_dir/$new_branch"
+        git worktree add -b "$new_branch" "$target" "$branch" >&2 && echo "$target"
+    else
+        # gwa: create worktree for selected branch
+        local target="$wt_dir/$local_branch"
+        git worktree add "$target" "$branch" >&2 && echo "$target"
+    fi
 }
 
 check_prequisites() {
@@ -1290,6 +1600,7 @@ PUBLIC_COMMANDS=(
     "switch_branch"
     "checkout_commit"
     "checkout_file"
+    "checkout_file_from_commit"
     "checkout_tag"
     "cherry_pick"
     "cherry_pick_from_branch"
@@ -1307,37 +1618,29 @@ PUBLIC_COMMANDS=(
     "show"
     "stash_show"
     "stash_push"
+    "worktree"
+    "worktree_add"
+    "worktree_delete"
 )
 
 PRIVATE_COMMANDS=(
-    "add_preview"
-    "blame_preview"
-    "branch_preview"
-    "checkout_commit_preview"
-    "checkout_file_preview"
-    "cherry_pick_from_branch_preview"
-    "cherry_pick_preview"
-    "clean_preview"
     "diff_enter"
     "exec_show"
-    "file_preview"
-    "path_preview"
-    "revert_preview"
-    "reset_head_preview"
+    "preview"
     "show_enter"
-    "show_preview"
-    "stash_push_preview"
     "stash_show_enter"
-    "stash_show_preview"
     "yank_sha"
     "yank_stash_name"
-    "log_preview"
     "log_enter"
     "exec_diff"
     "diff_view"
     "edit_diffed_file"
     "edit_add_file"
     "pager"
+    "worktree_yank_path"
+    "worktree_toggle_lock"
+    "worktree_list"
+    "worktree_list_deletable"
 )
 
 # Check if the script is being sourced. This is necessary for unit tests where

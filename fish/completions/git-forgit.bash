@@ -35,6 +35,15 @@ _git_stash_show()
     __gitcomp_nl "$(__git stash list | sed -n -e 's/:.*//p')"
 }
 
+_git_worktrees()
+{
+    local wt_list="" field
+    while IFS= read -r -d '' field; do
+        [[ "$field" == worktree\ * ]] && wt_list+="${field#worktree }"$'\n'
+    done < <(__git worktree list --porcelain -z 2>/dev/null)
+    __gitcomp_nl "$wt_list"
+}
+
 # Completion for git-forgit
 # This includes git aliases, e.g. "alias.cb=forgit checkout_branch" will
 # correctly complete available branches on "git cb".
@@ -58,11 +67,13 @@ _git_forgit()
 
     cmds="
         add
+        attributes
         blame
         branch_delete
         checkout_branch
         checkout_commit
         checkout_file
+        checkout_file_from_commit
         checkout_tag
         cherry_pick
         cherry_pick_from_branch
@@ -80,6 +91,10 @@ _git_forgit()
         squash
         stash_show
         stash_push
+        switch_branch
+        worktree
+        worktree_add
+        worktree_delete
     "
 
     case ${cword} in
@@ -89,16 +104,20 @@ _git_forgit()
         3)
             case ${prev} in
                 add) _git_add ;;
+                attributes) ;;
+                blame) ;;
                 branch_delete) _git_branch_delete ;;
                 checkout_branch) _git_checkout_branch ;;
                 checkout_commit) _git_checkout ;;
                 checkout_file) _git_checkout_file ;;
+                checkout_file_from_commit) _git_checkout_branch ;;
                 checkout_tag) _git_checkout_tag ;;
                 cherry_pick) _git_cherry_pick ;;
                 cherry_pick_from_branch) _git_checkout_branch ;;
                 clean) _git_clean ;;
                 diff) _git_diff ;;
                 fixup) _git_log ;;
+                ignore) ;;
                 log) _git_log ;;
                 reflog) _git_reflog ;;
                 rebase) _git_rebase ;;
@@ -108,6 +127,10 @@ _git_forgit()
                 show) _git_show ;;
                 squash) _git_log ;;
                 stash_show) _git_stash_show ;;
+                stash_push) _git_add ;;
+                switch_branch) _git_switch ;;
+                worktree) _git_worktree ;;
+                worktree_delete) _git_worktrees ;;
             esac
             ;;
         *)
@@ -128,9 +151,10 @@ then
     __git_complete forgit::add _git_add
     __git_complete forgit::branch::delete _git_branch_delete
     __git_complete forgit::checkout::branch _git_checkout_branch
-    __git_complete forgit::switch::branch _git_switch_branch
+    __git_complete forgit::switch::branch _git_switch
     __git_complete forgit::checkout::commit _git_checkout
     __git_complete forgit::checkout::file _git_checkout_file
+    __git_complete forgit::checkout::file::from::commit _git_checkout_branch
     __git_complete forgit::checkout::tag _git_checkout_tag
     __git_complete forgit::cherry::pick _git_cherry_pick
     __git_complete forgit::cherry::pick::from::branch _git_checkout_branch
@@ -146,15 +170,19 @@ then
     __git_complete forgit::show _git_show
     __git_complete forgit::squash _git_log
     __git_complete forgit::stash::show _git_stash_show
+    __git_complete forgit::stash::push _git_add
+    __git_complete forgit::worktree _git_worktree
+    __git_complete forgit::worktree::delete _git_worktrees
 
     # Completion for forgit plugin shell aliases
     if [[ -z "$FORGIT_NO_ALIASES" ]]; then
         __git_complete "${forgit_add}" _git_add
         __git_complete "${forgit_branch_delete}" _git_branch_delete
         __git_complete "${forgit_checkout_branch}" _git_checkout_branch
-        __git_complete "${forgit_switch_branch}" _git_switch_branch
+        __git_complete "${forgit_switch_branch}" _git_switch
         __git_complete "${forgit_checkout_commit}" _git_checkout
         __git_complete "${forgit_checkout_file}" _git_checkout_file
+        __git_complete "${forgit_checkout_file_from_commit}" _git_checkout_branch
         __git_complete "${forgit_checkout_tag}" _git_checkout_tag
         __git_complete "${forgit_cherry_pick}" _git_checkout_branch
         __git_complete "${forgit_clean}" _git_clean
@@ -169,5 +197,8 @@ then
         __git_complete "${forgit_show}" _git_show
         __git_complete "${forgit_squash}" _git_log
         __git_complete "${forgit_stash_show}" _git_stash_show
+        __git_complete "${forgit_stash_push}" _git_add
+        __git_complete "${forgit_worktree}" _git_worktree
+        __git_complete "${forgit_worktree_delete}" _git_worktrees
     fi
 fi
