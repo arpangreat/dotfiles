@@ -46,6 +46,7 @@ vim.diagnostic.config({
 vim.lsp.semantic_tokens.enable(false)
 
 -- Set initial capabilities (without blink or semantic tokens)
+---@class lsp.ClientCapabilities
 local caps = require("configs.config").get_capabilities()
 caps.semanticTokens = vim.NIL
 vim.lsp.config("*", {
