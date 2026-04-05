@@ -67,16 +67,22 @@
   protocol = https
 [github]
 	user = arpangreat
-[diff]
-  algorithm = histogram
-  colorMoved = plain
-  mnemonicPrefix = true
-  renames = true
+
 [diff "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
 
 [difftool "nvimdiff"]
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+
+[difftool "nvim_difftool"]
+  cmd = nvim -c \"packadd nvim.difftool\" -d \"$LOCAL\" \"$REMOTE\"
+
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+  tool = nvim_difftool
 
 [difftool "nvimdiff4"]
 	cmd = nvim -d \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
