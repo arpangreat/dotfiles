@@ -24,12 +24,25 @@ vim.diagnostic.config({
 		},
 	},
 	status = {
-		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
-		},
+		format = function(counts)
+			local icons = {
+				[vim.diagnostic.severity.ERROR] = " ",
+				[vim.diagnostic.severity.WARN] = " ",
+				[vim.diagnostic.severity.INFO] = " ",
+				[vim.diagnostic.severity.HINT] = " ",
+			}
+
+			local parts = {}
+
+			for severity = 1, 4 do
+				local count = counts[severity]
+				if count and count > 0 then
+					parts[#parts + 1] = icons[severity] .. count
+				end
+			end
+
+			return table.concat(parts, " ")
+		end,
 	},
 	update_in_insert = true,
 	undercurl = true,
