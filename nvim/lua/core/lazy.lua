@@ -45,6 +45,7 @@ require("lazy").setup({ { import = "plugins" } }, {
 })
 
 vim.cmd("packadd nvim.undotree")
+vim.cmd("packadd nvim.difftool")
 
 require("vim._core.ui2").enable({
 	enabled = true,

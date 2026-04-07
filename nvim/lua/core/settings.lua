@@ -30,7 +30,7 @@ vim.opt.timeout = true
 vim.opt.timeoutlen = 300
 vim.opt.ttimeoutlen = 0
 vim.opt.updatetime = 50
-vim.opt.shortmess = vim.opt.shortmess + "I"
+-- vim.opt.shortmess = vim.opt.shortmess + "I"
 vim.opt.shortmess = vim.opt.shortmess + "c"
 vim.opt.showmode = false
 

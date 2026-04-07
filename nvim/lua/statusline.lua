@@ -1,247 +1,360 @@
--- ============================================================
---   MINIMAL TOKYONIGHT STATUSLINE (CENTER STYLE C1, SAFE)
--- ============================================================
+local M = {}
 
+---------------------------------------------------------------
+-- COLORS
+---------------------------------------------------------------
 local C = {
-	bg = "#222436",
-	bg_dark = "#1e2030",
-	bg_dark1 = "#191B29",
-	bg_highlight = "#2f334d",
-	blue = "#82aaff",
-	blue0 = "#3e68d7",
-	blue1 = "#65bcff",
-	blue2 = "#0db9d7",
-	blue5 = "#89ddff",
-	blue6 = "#b4f9f8",
-	blue7 = "#394b70",
-	comment = "#636da6",
-	cyan = "#86e1fc",
-	dark3 = "#545c7e",
-	dark5 = "#737aa2",
-	fg = "#c8d3f5",
-	fg_dark = "#828bb8",
-	fg_gutter = "#3b4261",
-	green = "#c3e88d",
-	green1 = "#4fd6be",
-	green2 = "#41a6b5",
-	magenta = "#c099ff",
-	magenta2 = "#ff007c",
-	orange = "#ff966c",
-	purple = "#fca7ea",
-	red = "#ff757f",
-	red1 = "#c53b53",
-	teal = "#4fd6be",
-	terminal_black = "#444a73",
-	yellow = "#ffc777",
-	git = {
-		add = "#b8db87",
-		change = "#7ca1f2",
-		delete = "#e26a75",
-	},
+	bg = "#1e2030", -- slightly darker for better contrast
+
+	blue = "#7aa2ff", -- brighter, more saturated
+	green = "#9ece6a", -- punchier green
+	green1 = "#4fd6be", -- keep teal but already good
+	magenta = "#f7768e", -- more vibrant pink-magenta
+	yellow = "#ffc777", -- already strong, keep
+	red = "#ff6b6b", -- brighter red (less dull)
+
+	-- optional extras (future-proof if used)
+	cyan = "#4cc9f0", -- brighter cyan
+	fg = "#e0e6ff", -- slightly brighter foreground
+	fg_dim = "#a6adc8", -- dim text (for ruler etc.)
 }
 
 ---------------------------------------------------------------
---  MODE BLOCK (SOLID TOKYONIGHT BACKGROUND)
+-- CACHE
 ---------------------------------------------------------------
-_G.ModeBlock = function()
-	local mode = vim.fn.mode()
+local cache = {
+	mode = "",
+	git = "",
+}
+local last_mode = nil
 
-	local map = {
-		n = { text = "NORMAL", bg = C.blue },
-		i = { text = "INSERT", bg = C.green },
-		v = { text = "VISUAL", bg = C.magenta },
-		V = { text = "V-LINE", bg = C.magenta },
-		["\22"] = { text = "V-BLOCK", bg = C.magenta },
-		c = { text = "COMMAND", bg = C.yellow },
-		R = { text = "REPLACE", bg = C.red },
-		t = { text = "TERM", bg = C.green1 },
-	}
+---------------------------------------------------------------
+-- MODE MAP
+---------------------------------------------------------------
+local base_modes = {
+	NORMAL = { text = "NORMAL", bg = C.blue },
+	INSERT = { text = "INSERT", bg = C.green },
+	VISUAL = { text = "VISUAL", bg = C.magenta },
+	COMMAND = { text = "COMMAND", bg = C.yellow },
+	REPLACE = { text = "REPLACE", bg = C.red },
+	TERM = { text = "TERM", bg = C.green1 },
+	SELECT = { text = "SELECT", bg = C.magenta },
+	PENDING = { text = "OP-PENDING", bg = C.yellow },
+}
 
-	local entry = map[mode] or map.n
+local mode_map = {
+	n = base_modes.NORMAL,
+	i = base_modes.INSERT,
+	v = base_modes.VISUAL,
+	V = base_modes.VISUAL,
+	["\22"] = base_modes.VISUAL,
+	c = base_modes.COMMAND,
+	R = base_modes.REPLACE,
+	t = base_modes.TERM,
+
+	["no"] = base_modes.PENDING,
+	["nov"] = base_modes.PENDING,
+	["noV"] = base_modes.PENDING,
+	["no\22"] = base_modes.PENDING,
+
+	["niI"] = base_modes.NORMAL,
+	["niR"] = base_modes.NORMAL,
+	["niV"] = base_modes.NORMAL,
+	["nt"] = base_modes.NORMAL,
+	["ntT"] = base_modes.NORMAL,
+
+	["vs"] = base_modes.VISUAL,
+	["Vs"] = base_modes.VISUAL,
+	["\22s"] = base_modes.VISUAL,
+
+	["s"] = base_modes.SELECT,
+	["S"] = base_modes.SELECT,
+	["\19"] = base_modes.SELECT,
+
+	["ic"] = base_modes.INSERT,
+	["ix"] = base_modes.INSERT,
+
+	["Rc"] = base_modes.REPLACE,
+	["Rx"] = base_modes.REPLACE,
+
+	["Rv"] = { text = "VIRT REPLACE", bg = C.red },
+	["Rvc"] = { text = "VIRT REPLACE", bg = C.red },
+	["Rvx"] = { text = "VIRT REPLACE", bg = C.red },
+
+	["cv"] = base_modes.COMMAND,
+	["ce"] = base_modes.COMMAND,
+
+	["r"] = base_modes.COMMAND,
+	["rm"] = base_modes.COMMAND,
+	["r?"] = base_modes.COMMAND,
+
+	["!"] = base_modes.COMMAND,
+}
+
+---------------------------------------------------------------
+-- MODE
+---------------------------------------------------------------
+function M.mode()
+	local mode = vim.api.nvim_get_mode().mode
+
+	if mode == last_mode then
+		return cache.mode
+	end
+
+	local entry = mode_map[mode] or base_modes.NORMAL
 
 	vim.api.nvim_set_hl(0, "SLModeDyn", {
-		fg = entry.bg, -- Color goes to foreground now
+		fg = entry.bg,
 		bold = true,
 	})
 
-	return entry.text
+	cache.mode = string.format("%%#SLModeDyn#%s%%#StatusLine#", entry.text)
+	last_mode = mode
+
+	return cache.mode
 end
+
 ---------------------------------------------------------------
---  GIT
+-- GIT
 ---------------------------------------------------------------
-_G.GitBranch = function()
-	if vim.b.git_branch ~= nil then
-		return vim.b.git_branch
+function M.git()
+	if cache.git ~= "" then
+		return cache.git
 	end
-	vim.b.git_branch = "" -- Set placeholder immediately
-	vim.fn.jobstart({ "git", "rev-parse", "--abbrev-ref", "HEAD" }, {
-		stdout_buffered = true,
-		on_stdout = function(_, data)
-			if data then
-				vim.b.git_branch = data[1]:gsub("\n", "")
-				vim.cmd("redrawstatus")
-			end
-		end,
-		on_exit = function()
-			vim.b.git_branch = vim.b.git_branch or ""
-		end,
-	})
-	return "[...]"
+
+	cache.git = "[...]"
+
+	vim.system({ "git", "rev-parse", "--abbrev-ref", "HEAD" }, { text = true }, function(res)
+		if res.code == 0 and res.stdout then
+			vim.schedule(function()
+				cache.git = res.stdout:gsub("\n", "")
+				vim.cmd.redrawstatus()
+			end)
+		end
+	end)
+
+	return cache.git
 end
 
 ---------------------------------------------------------------
---  DIFF: + ~ -
+-- DIFF
 ---------------------------------------------------------------
-_G.DiffAdded = function()
-	local summary = vim.b.minidiff_summary or {}
-	return "+" .. (summary.add or 0)
-end
+function M.diff()
+	local s = vim.b.minidiff_summary or {}
 
-_G.DiffChanged = function()
-	local summary = vim.b.minidiff_summary or {}
-	return "~" .. (summary.change or 0)
-end
-
-_G.DiffRemoved = function()
-	local summary = vim.b.minidiff_summary or {}
-	return "-" .. (summary.delete or 0)
+	return string.format(
+		"%%#SLDiffAdd#+%d%%#StatusLine# %%#SLDiffMod#~%d%%#StatusLine# %%#SLDiffDel#-%d%%#StatusLine#",
+		s.add or 0,
+		s.change or 0,
+		s.delete or 0
+	)
 end
 
 ---------------------------------------------------------------
---  DIAGNOSTICS
+-- DIAGNOSTICS
 ---------------------------------------------------------------
 local diag_icons = {
 	[vim.diagnostic.severity.ERROR] = " ",
 	[vim.diagnostic.severity.WARN] = " ",
-	[vim.diagnostic.severity.HINT] = " ",
 	[vim.diagnostic.severity.INFO] = " ",
+	[vim.diagnostic.severity.HINT] = " ",
 }
 
-_G.DiagError = function()
-	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.ERROR]
-	return d and d > 0 and (diag_icons[vim.diagnostic.severity.ERROR] .. d .. " ") or ""
-end
+local diag_hl = {
+	[vim.diagnostic.severity.ERROR] = "SLError",
+	[vim.diagnostic.severity.WARN] = "SLWarn",
+	[vim.diagnostic.severity.INFO] = "SLInfo",
+	[vim.diagnostic.severity.HINT] = "SLHint",
+}
 
-_G.DiagWarn = function()
-	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.WARN]
-	return d and d > 0 and (diag_icons[vim.diagnostic.severity.WARN] .. d .. " ") or ""
-end
-
-_G.DiagInfo = function()
-	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.INFO]
-	return d and d > 0 and (diag_icons[vim.diagnostic.severity.INFO] .. d .. " ") or ""
-end
-
-_G.DiagHint = function()
-	local d = vim.diagnostic.count(0)[vim.diagnostic.severity.HINT]
-	return d and d > 0 and (diag_icons[vim.diagnostic.severity.HINT] .. d .. " ") or ""
-end
-
----------------------------------------------------------------
---  FILE + ICON
----------------------------------------------------------------
-_G.File = function()
-	local name = vim.fn.expand("%:t")
-	if name == "" then
-		name = "[No Name]"
+function M.diagnostics()
+	local diags = vim.diagnostic.get(0)
+	if not diags or #diags == 0 then
+		return ""
 	end
 
-	local icon = ""
-	icon = require("mini.icons").get("file", name) or ""
+	local counts = { 0, 0, 0, 0 }
 
-	-- Add [+] if file is modified
-	local modified = vim.bo.modified and " [+]" or ""
+	for _, d in ipairs(diags) do
+		counts[d.severity] = counts[d.severity] + 1
+	end
 
-	return icon .. " " .. name .. modified
-end
+	local parts = {}
 
----------------------------------------------------------------
---  BUFFER COUNT + MACRO
----------------------------------------------------------------
-_G.BufCount = function()
-	local c = 0
-	for _, b in ipairs(vim.api.nvim_list_bufs()) do
-		if vim.fn.buflisted(b) == 1 then
-			c = c + 1
+	for severity = 1, 4 do
+		local count = counts[severity]
+		if count > 0 then
+			parts[#parts + 1] =
+				string.format("%%#%s#%s%d%%#StatusLine#", diag_hl[severity], diag_icons[severity], count)
 		end
 	end
-	return c > 1 and ("+" .. (c - 1)) or ""
-end
----------------------------------------------------------------
---  LSP
----------------------------------------------------------------
-_G.LSPNames = function()
-	local names = {}
-	for _, c in ipairs(vim.lsp.get_clients({ bufnr = 0 })) do
-		table.insert(names, c.name)
-	end
-	return #names > 0 and (" " .. table.concat(names, "|")) or ""
+
+	return table.concat(parts, " ")
 end
 
 ---------------------------------------------------------------
---  STATIC HIGHLIGHT GROUPS (TOKYONIGHT)
+-- FILE
+---------------------------------------------------------------
+function M.file()
+	local name = vim.api.nvim_buf_get_name(0)
+	name = name ~= "" and vim.fs.basename(name) or "[No Name]"
+
+	local icon = require("mini.icons").get("file", name) or ""
+	local modified = vim.bo.modified and " [+]" or ""
+
+	return string.format("%%#SLFile#%s %s%s%%#StatusLine#", icon, name, modified)
+end
+
+---------------------------------------------------------------
+-- BUFCOUNT
+---------------------------------------------------------------
+function M.bufcount()
+	local count = 0
+	for _, b in ipairs(vim.api.nvim_list_bufs()) do
+		if vim.bo[b].buflisted then
+			count = count + 1
+		end
+	end
+	return count > 1 and ("+" .. (count - 1)) or ""
+end
+
+---------------------------------------------------------------
+-- LSP
+---------------------------------------------------------------
+function M.lsp()
+	local clients = vim.lsp.get_clients({ bufnr = 0 })
+	if #clients == 0 then
+		return ""
+	end
+
+	local names = {}
+	for _, c in ipairs(clients) do
+		names[#names + 1] = c.name
+	end
+
+	return string.format("%%#SLLSP# %s%%#StatusLine#", table.concat(names, "|"))
+end
+
+---------------------------------------------------------------
+-- POSITION
+---------------------------------------------------------------
+function M.position()
+	return table.concat({
+		"%#SLProgress#",
+		"%3p%%",
+		"%#StatusLine#",
+		" ",
+		"%#SLRuler#",
+		"%4l:%-3c",
+		"%#StatusLine#",
+	})
+end
+
+---------------------------------------------------------------
+-- RENDER (CENTERED + NO OVERFLOW)
+---------------------------------------------------------------
+function M.render()
+	-----------------------------------------------------------
+	-- LEFT
+	-----------------------------------------------------------
+	local left = table.concat({
+		" ",
+		M.mode(),
+		" ",
+		"%#SLGit#",
+		M.git(),
+		"%#StatusLine#",
+		" ",
+		M.diff(),
+	})
+
+	-----------------------------------------------------------
+	-- CENTER (always full)
+	-----------------------------------------------------------
+	local diagnostics = M.diagnostics()
+	local file = M.file()
+	local bufcount = M.bufcount()
+
+	local center = table.concat({
+		diagnostics,
+		diagnostics ~= "" and " " or "",
+		file,
+		bufcount ~= "" and (" " .. bufcount) or "",
+	})
+
+	-----------------------------------------------------------
+	-- RIGHT
+	-----------------------------------------------------------
+	local right = table.concat({
+		M.lsp(),
+		" ",
+		M.position(),
+	})
+
+	-----------------------------------------------------------
+	-- TRUE CENTER LAYOUT
+	-----------------------------------------------------------
+	return table.concat({
+		left,
+		"%=",
+		center,
+		"%=",
+		right,
+	})
+end
+
+---------------------------------------------------------------
+-- HIGHLIGHTS
 ---------------------------------------------------------------
 local function setup_highlights()
-	vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue, bold = true })
 	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
 	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
 	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = C.red })
+
 	vim.api.nvim_set_hl(0, "SLError", { fg = C.red })
 	vim.api.nvim_set_hl(0, "SLWarn", { fg = C.yellow })
 	vim.api.nvim_set_hl(0, "SLInfo", { fg = C.blue })
 	vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
-	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta })
+
+	vim.api.nvim_set_hl(0, "SLProgress", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLRuler", { fg = C.green1 })
+
+	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta, bold = true })
 	vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
 
 	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
 end
 
--- Setup highlights on VimEnter (after everything is loaded)
+---------------------------------------------------------------
+-- LAZY REDRAW
+---------------------------------------------------------------
+vim.api.nvim_create_autocmd({
+	"ModeChanged",
+	"BufEnter",
+	"BufWritePost",
+	"DiagnosticChanged",
+	"LspAttach",
+	"LspDetach",
+}, {
+	callback = function()
+		vim.cmd.redrawstatus()
+	end,
+})
+
+---------------------------------------------------------------
+-- INIT
+---------------------------------------------------------------
 vim.api.nvim_create_autocmd("VimEnter", {
 	once = true,
 	callback = setup_highlights,
 })
 
--- Also setup when colorscheme changes
 vim.api.nvim_create_autocmd("ColorScheme", {
 	callback = setup_highlights,
 })
 
----------------------------------------------------------------
---  FINAL STATUSLINE LAYOUT (CENTER STYLE C1)
----------------------------------------------------------------
-vim.opt.laststatus = 3
+vim.o.laststatus = 3
+vim.o.statusline = "%!v:lua.require('statusline').render()"
 
-vim.opt.statusline = table.concat({
-
-	-- LEFT: mode, git, diff
-	" ",
-	"%#SLModeDyn#%{v:lua.ModeBlock()}%#StatusLine#",
-	" ",
-	"%#SLGit#%{v:lua.GitBranch()}%#StatusLine#",
-	" ",
-	"%#SLDiffAdd#%{v:lua.DiffAdded()}%#StatusLine#",
-	" ",
-	"%#SLDiffMod#%{v:lua.DiffChanged()}%#StatusLine#",
-	" ",
-	"%#SLDiffDel#%{v:lua.DiffRemoved()}%#StatusLine#",
-
-	-- EXPAND LEFT
-	"%=",
-
-	-- TRUE CENTER: diagnostics, filename, buffcount, macro
-	"%#SLError#%{v:lua.DiagError()}%#StatusLine#",
-	"%#SLWarn#%{v:lua.DiagWarn()}%#StatusLine#",
-	"%#SLInfo#%{v:lua.DiagInfo()}%#StatusLine#",
-	"%#SLHint#%{v:lua.DiagHint()}%#StatusLine#",
-	"%#SLFile#%{v:lua.File()}%#StatusLine# ",
-	"%{v:lua.BufCount()} ",
-
-	-- EXPAND RIGHT
-	"%=",
-
-	-- RIGHT: lsp, percent, cursor
-	"%#SLLSP#%{v:lua.LSPNames()}%#StatusLine# ",
-	"%3p%%",
-	"%4l:%-3c",
-})
+return M
