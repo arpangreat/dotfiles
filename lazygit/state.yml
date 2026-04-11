@@ -57,36 +57,6 @@ customcommandshistory:
 hidecommandlog: true
 githubPullRequests:
     /home/arpangreat/dotfiles:
-        - headRefName: master
-          number: 86
-          title: clean ups
-          state: MERGED
-          url: https://github.com/arpangreat/dotfiles/pull/86
-          headRepositoryOwner: arpangreat
-        - headRefName: master
-          number: 85
-          title: lazygit
-          state: MERGED
-          url: https://github.com/arpangreat/dotfiles/pull/85
-          headRepositoryOwner: arpangreat
-        - headRefName: master
-          number: 63
-          title: new changes
-          state: MERGED
-          url: https://github.com/arpangreat/dotfiles/pull/63
-          headRepositoryOwner: arpangreat
-        - headRefName: master
-          number: 60
-          title: yyayayay
-          state: MERGED
-          url: https://github.com/arpangreat/dotfiles/pull/60
-          headRepositoryOwner: arpangreat
-        - headRefName: master
-          number: 12
-          title: 'Merge pull request #11 from arpangreat/clean'
-          state: MERGED
-          url: https://github.com/arpangreat/dotfiles/pull/12
-          headRepositoryOwner: arpangreat
         - headRefName: everyday-stuff
           number: 95
           title: neovim 0.12
@@ -116,6 +86,36 @@ githubPullRequests:
           title: clean ups
           state: MERGED
           url: https://github.com/arpangreat/dotfiles/pull/91
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 86
+          title: clean ups
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/86
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 85
+          title: lazygit
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/85
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 63
+          title: new changes
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/63
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 60
+          title: yyayayay
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/60
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 12
+          title: 'Merge pull request #11 from arpangreat/clean'
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/12
           headRepositoryOwner: arpangreat
     /home/arpangreat/fzf:
         - headRefName: master
