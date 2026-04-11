@@ -24,7 +24,7 @@ local C = {
 ---------------------------------------------------------------
 local cache = {
 	mode = "",
-	git = "",
+	git = {},
 }
 local last_mode = nil
 
@@ -118,22 +118,33 @@ end
 -- GIT
 ---------------------------------------------------------------
 function M.git()
-	if cache.git ~= "" then
-		return cache.git
+	local file = vim.api.nvim_buf_get_name(0)
+	if file == "" then
+		return ""
 	end
 
-	cache.git = "[...]"
+	local dir = vim.fs.dirname(file)
 
-	vim.system({ "git", "rev-parse", "--abbrev-ref", "HEAD" }, { text = true }, function(res)
-		if res.code == 0 and res.stdout then
-			vim.schedule(function()
-				cache.git = res.stdout:gsub("\n", "")
-				vim.cmd.redrawstatus()
-			end)
-		end
+	-- init table cache if needed
+	if cache.git[dir] ~= nil then
+		return cache.git[dir]
+	end
+
+	cache.git[dir] = "" -- mark as fetching
+
+	vim.system({ "git", "rev-parse", "--abbrev-ref", "HEAD" }, { text = true, cwd = dir }, function(res)
+		vim.schedule(function()
+			if res.code == 0 and res.stdout then
+				local branch = res.stdout:gsub("%s+", "")
+				cache.git[dir] = branch ~= "" and branch or ""
+			else
+				cache.git[dir] = ""
+			end
+			vim.cmd.redrawstatus()
+		end)
 	end)
 
-	return cache.git
+	return ""
 end
 
 ---------------------------------------------------------------
@@ -253,17 +264,15 @@ end
 ---------------------------------------------------------------
 -- RENDER (CENTERED + NO OVERFLOW)
 ---------------------------------------------------------------
+
 function M.render()
-	-----------------------------------------------------------
-	-- LEFT
-	-----------------------------------------------------------
+	local git = M.git()
+	local dirty = vim.bo.modified and "%#SLDirty#●%#StatusLine#" or ""
+
 	local left = table.concat({
 		" ",
 		M.mode(),
-		" ",
-		"%#SLGit#",
-		M.git(),
-		"%#StatusLine#",
+		git ~= "" and (" %#SLGit# " .. git .. dirty .. "%#StatusLine#") or "",
 		" ",
 		M.diff(),
 	})
@@ -307,7 +316,8 @@ end
 -- HIGHLIGHTS
 ---------------------------------------------------------------
 local function setup_highlights()
-	vim.api.nvim_set_hl(0, "SLGit", { fg = C.blue, bold = true })
+	vim.api.nvim_set_hl(0, "SLGit", { fg = C.green1, bold = true })
+	vim.api.nvim_set_hl(0, "SLDirty", { fg = C.red, bold = true })
 	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
 	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
 	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = C.red })
