@@ -59,9 +59,7 @@ end
 
 set -gx EDITOR /usr/local/bin/nvim
 
-eval (batpipe)
 set -gx PAGER 'less' 
-set -gx MANPAGER 'bat -l man'
 set -gx LESS '-rf'
 set -gx LESS_TERMCAP_so (printf '\033[7m')
 set -gx LESS_TERMCAP_se (printf '\033[27m')
