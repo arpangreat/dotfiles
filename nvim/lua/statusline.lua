@@ -119,20 +119,27 @@ end
 ---------------------------------------------------------------
 function M.git()
 	local file = vim.api.nvim_buf_get_name(0)
-	if file == "" then
+
+	-- ignore invalid / special buffers
+	if file == "" or vim.bo.buftype ~= "" then
 		return ""
 	end
 
 	local dir = vim.fs.dirname(file)
 
-	-- init table cache if needed
+	-- ensure directory exists (VERY IMPORTANT)
+	if not dir or vim.fn.isdirectory(dir) == 0 then
+		return ""
+	end
+
+	-- cached per directory
 	if cache.git[dir] ~= nil then
 		return cache.git[dir]
 	end
 
 	cache.git[dir] = "" -- mark as fetching
 
-	vim.system({ "git", "rev-parse", "--abbrev-ref", "HEAD" }, { text = true, cwd = dir }, function(res)
+	vim.system({ "git", "-C", dir, "rev-parse", "--abbrev-ref", "HEAD" }, { text = true }, function(res)
 		vim.schedule(function()
 			if res.code == 0 and res.stdout then
 				local branch = res.stdout:gsub("%s+", "")
@@ -267,7 +274,7 @@ end
 
 function M.render()
 	local git = M.git()
-	local dirty = vim.bo.modified and "%#SLDirty#●%#StatusLine#" or ""
+	local dirty = vim.bo.modified and " %#SLDirty#●%#StatusLine#" or ""
 
 	local left = table.concat({
 		" ",
