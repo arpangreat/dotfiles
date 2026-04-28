@@ -89,16 +89,16 @@ vim.api.nvim_create_autocmd({ "BufReadPre", "BufNewFile" }, {
 })
 
 -- Update capabilities when blink loads
-vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
-	once = true,
-	callback = function()
-		-- Update capabilities config for future servers
-		local blink_caps = require("blink.cmp").get_lsp_capabilities(nil, true)
-		vim.lsp.config("*", { capabilities = blink_caps })
-
-		-- Update already-running clients' capabilities
-		for _, client in ipairs(vim.lsp.get_clients()) do
-			client.config.capabilities = vim.tbl_deep_extend("force", client.config.capabilities or {}, blink_caps)
-		end
-	end,
-})
+-- vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
+-- 	once = true,
+-- 	callback = function()
+-- 		-- Update capabilities config for future servers
+-- 		local blink_caps = require("blink.cmp").get_lsp_capabilities(nil, true)
+-- 		vim.lsp.config("*", { capabilities = blink_caps })
+--
+-- 		-- Update already-running clients' capabilities
+-- 		for _, client in ipairs(vim.lsp.get_clients()) do
+-- 			client.config.capabilities = vim.tbl_deep_extend("force", client.config.capabilities or {}, blink_caps)
+-- 		end
+-- 	end,
+-- })
