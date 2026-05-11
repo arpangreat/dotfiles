@@ -1,8 +1,11 @@
 return {
 	"saghen/blink.cmp",
-	dependencies = "rafamadriz/friendly-snippets",
-	version = "1.*",
+	dependencies = { "saghen/blink.lib", "rafamadriz/friendly-snippets" },
+	-- version = "1.*",
 	-- build = "cargo build --release --jobs 4",
+	build = function()
+		require("blink.cmp").build():wait(60000)
+	end,
 	event = { "InsertEnter", "CmdlineEnter" },
 	lazy = true,
 	opts = {
@@ -30,7 +33,7 @@ return {
 				ghost_text = { enabled = false },
 				menu = { auto_show = true },
 			},
-			sources = { "cmdline", "path" },
+			-- sources = { "cmdline", "path" },
 		},
 		completion = {
 			menu = {

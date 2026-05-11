@@ -1,9 +1,10 @@
 lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/ghostty
+    - /home/arpangreat/fzf
     - /home/arpangreat/kitty
     - /home/arpangreat/neovim
-    - /home/arpangreat/fzf
     - /home/arpangreat/rustlings
     - /home/arpangreat/RustExs
     - /home/arpangreat/nnn
@@ -25,7 +26,6 @@ recentrepos:
     - /home/arpangreat/.local/share/nvim/lazy/nvim-treesitter
     - /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim
     - /home/arpangreat/TypescriptExs
-    - /home/arpangreat/ghostty
     - /home/arpangreat/textbook
     - /home/arpangreat/icons-in-terminal
     - /home/arpangreat/.local/share/nvim/lazy/which-key.nvim
@@ -55,3 +55,127 @@ customcommandshistory:
     - git branch
     - gh pr create --fill
 hidecommandlog: true
+githubPullRequests:
+    /home/arpangreat/dotfiles:
+        - headRefName: everyday-stuff
+          number: 95
+          title: neovim 0.12
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/95
+          headRepositoryOwner: arpangreat
+        - headRefName: everyday-stuff
+          number: 94
+          title: clean ups
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/94
+          headRepositoryOwner: arpangreat
+        - headRefName: everyday-stuff
+          number: 93
+          title: everyday stuff
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/93
+          headRepositoryOwner: arpangreat
+        - headRefName: everyday-stuff
+          number: 92
+          title: everyday stuff
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/92
+          headRepositoryOwner: arpangreat
+        - headRefName: everyday-stuff
+          number: 91
+          title: clean ups
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/91
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 86
+          title: clean ups
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/86
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 85
+          title: lazygit
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/85
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 63
+          title: new changes
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/63
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 60
+          title: yyayayay
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/60
+          headRepositoryOwner: arpangreat
+        - headRefName: master
+          number: 12
+          title: 'Merge pull request #11 from arpangreat/clean'
+          state: MERGED
+          url: https://github.com/arpangreat/dotfiles/pull/12
+          headRepositoryOwner: arpangreat
+    /home/arpangreat/fzf:
+        - headRefName: master
+          number: 4706
+          title: Update devel branch
+          state: MERGED
+          url: https://github.com/junegunn/fzf/pull/4706
+          headRepositoryOwner: junegunn
+        - headRefName: master
+          number: 4670
+          title: Fix bug in advanced guide for using fzf as a ripgrep launcher
+          state: MERGED
+          url: https://github.com/junegunn/fzf/pull/4670
+          headRepositoryOwner: skbolton
+        - headRefName: master
+          number: 4637
+          title: 'docs(README): add mise alternative method installation'
+          state: MERGED
+          url: https://github.com/junegunn/fzf/pull/4637
+          headRepositoryOwner: jylenhof
+        - headRefName: master
+          number: 4635
+          title: 'fix: rebind readline command redraw-current-line'
+          state: MERGED
+          url: https://github.com/junegunn/fzf/pull/4635
+          headRepositoryOwner: jameslazo
+        - headRefName: master
+          number: 4617
+          title: 'Fix issues with --min-height and auto height combined # 4609 on fzf gh'
+          state: CLOSED
+          url: https://github.com/junegunn/fzf/pull/4617
+          headRepositoryOwner: georgeharker
+    /home/arpangreat/ghostty:
+        - headRefName: main
+          number: 12133
+          title: 'macos: fix dock icon badge permission'
+          state: MERGED
+          url: https://github.com/ghostty-org/ghostty/pull/12133
+          headRepositoryOwner: KayLeung
+        - headRefName: main
+          number: 11622
+          title: 'po: Add Georgian translation'
+          state: OPEN
+          url: https://github.com/ghostty-org/ghostty/pull/11622
+          headRepositoryOwner: EkaterinePapava
+        - headRefName: main
+          number: 11484
+          title: 'fix: enable cursor blinking mode by default'
+          state: CLOSED
+          url: https://github.com/ghostty-org/ghostty/pull/11484
+          headRepositoryOwner: elias8
+        - headRefName: main
+          number: 11242
+          title: Belief in a politics-free community
+          state: CLOSED
+          url: https://github.com/ghostty-org/ghostty/pull/11242
+          headRepositoryOwner: egorlem
+        - headRefName: main
+          number: 11094
+          title: "\U0001F41B Prevent git log output with signature information"
+          state: MERGED
+          url: https://github.com/ghostty-org/ghostty/pull/11094
+          headRepositoryOwner: drepper

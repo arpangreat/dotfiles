@@ -44,7 +44,7 @@ end
 # fzf_key_bindings
 # fzf --fish | source
 # source /home/arpangreat/fzf-git.sh/fzf-git.fish
-set -gx FZF_COMPLETION_OPTS "--no-multi"
+# set -gx FZF_COMPLETION_OPTS "--no-multi"
 
 set fish_vi_force_cursor
 set fish_cursor_default block
@@ -59,8 +59,8 @@ end
 
 set -gx EDITOR /usr/local/bin/nvim
 
-set -gx PAGER 'bat -l man'
-set -gx LESS '-R'
+set -gx PAGER 'less' 
+set -gx LESS '-rf'
 set -gx LESS_TERMCAP_so (printf '\033[7m')
 set -gx LESS_TERMCAP_se (printf '\033[27m')
 
