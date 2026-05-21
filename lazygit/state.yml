@@ -1,6 +1,7 @@
 lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/cppexamples
     - /home/arpangreat/ghostty
     - /home/arpangreat/fzf
     - /home/arpangreat/kitty
@@ -13,7 +14,6 @@ recentrepos:
     - /home/arpangreat/CExamples
     - /home/arpangreat/tmux-cpu-real
     - /home/arpangreat/Books
-    - /home/arpangreat/cppexamples
     - /home/arpangreat/go
     - /home/arpangreat/.local/share/nvim/lazy/fzf-lua
     - /home/arpangreat/tmux
@@ -56,6 +56,7 @@ customcommandshistory:
     - gh pr create --fill
 hidecommandlog: true
 githubPullRequests:
+    /home/arpangreat/cppexamples: []
     /home/arpangreat/dotfiles:
         - headRefName: everyday-stuff
           number: 96
