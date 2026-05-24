@@ -17,11 +17,11 @@ return {
 			},
 			-- dim_inactive = true, -- dims inactive windows
 
-			-- on_highlights = function(highlights, colors)
-			-- 	highlights["@variable"] = { fg = colors.red }
-			-- 	highlights.LspInlayHint = { bg = "#063540", fg = colors.blue2 }
-			-- 	highlights.CursorLine = { bg = "#182235" }
-			-- end,
+			on_highlights = function(highlights, colors)
+				-- highlights["@variable"] = { fg = colors.red }
+				highlights.LspInlayHint = { bg = "#063540", fg = colors.blue2 }
+				-- highlights.CursorLine = { bg = "#182235" }
+			end,
 		})
 		vim.cmd.colorscheme("tokyonight")
 	end,
