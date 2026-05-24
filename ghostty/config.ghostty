@@ -43,17 +43,17 @@ font-feature = liga
 font-feature = zero
 font-feature = ss03
 font-feature = ss06
-# font-feature = ss08
-# font-feature = ss09
-# font-feature = ss10
-# font-feature = ss11
-# font-feature = cv01
-# font-feature = cv03
-# font-feature = cv05
-# font-feature = cv11
-# font-feature = cv63
-# font-feature = cv35
-# font-feature = cv66
+font-feature = ss08
+font-feature = ss09
+font-feature = ss10
+font-feature = ss11
+font-feature = cv01
+font-feature = cv03
+font-feature = cv05
+font-feature = cv11
+font-feature = cv63
+font-feature = cv35
+font-feature = cv66
 
 # Intel One
 # font-feature = calt
@@ -133,7 +133,7 @@ desktop-notifications = true
 
 copy-on-select = clipboard
 
-bold-color = "bright"
+# bold-color = "bright"
 link-url = true
 link-previews = true
 
