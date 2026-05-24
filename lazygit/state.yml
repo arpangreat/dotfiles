@@ -1,11 +1,11 @@
 lastupdatecheck: 1767534010
 recentrepos:
     - /home/arpangreat/dotfiles
+    - /home/arpangreat/neovim
     - /home/arpangreat/cppexamples
     - /home/arpangreat/ghostty
     - /home/arpangreat/fzf
     - /home/arpangreat/kitty
-    - /home/arpangreat/neovim
     - /home/arpangreat/rustlings
     - /home/arpangreat/RustExs
     - /home/arpangreat/nnn
@@ -180,3 +180,34 @@ githubPullRequests:
           state: MERGED
           url: https://github.com/ghostty-org/ghostty/pull/11094
           headRepositoryOwner: drepper
+    /home/arpangreat/neovim:
+        - headRefName: master
+          number: 38824
+          title: vim.fs.ext() can return multiple extensions
+          state: CLOSED
+          url: https://github.com/neovim/neovim/pull/38824
+          headRepositoryOwner: yochem
+        - headRefName: master
+          number: 38813
+          title: fix one wrong paste
+          state: MERGED
+          url: https://github.com/neovim/neovim/pull/38813
+          headRepositoryOwner: nameearly
+        - headRefName: master
+          number: 38722
+          title: 'fix(lsp): attach buffer to inline completion cursor pos'
+          state: CLOSED
+          url: https://github.com/neovim/neovim/pull/38722
+          headRepositoryOwner: milanglacier
+        - headRefName: master
+          number: 38688
+          title: 'fix(build.zig): remove runtime dependency on Windows SDK'
+          state: MERGED
+          url: https://github.com/neovim/neovim/pull/38688
+          headRepositoryOwner: eamonburns
+        - headRefName: master
+          number: 38660
+          title: 'feat(terminal): add terminal buffer scrollback save/load'
+          state: CLOSED
+          url: https://github.com/neovim/neovim/pull/38660
+          headRepositoryOwner: kannachi323

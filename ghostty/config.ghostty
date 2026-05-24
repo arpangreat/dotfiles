@@ -43,17 +43,17 @@ font-feature = liga
 font-feature = zero
 font-feature = ss03
 font-feature = ss06
-font-feature = ss08
-font-feature = ss09
-font-feature = ss10
-font-feature = ss11
-font-feature = cv01
-font-feature = cv03
-font-feature = cv05
-font-feature = cv11
-font-feature = cv63
-font-feature = cv35
-font-feature = cv66
+# font-feature = ss08
+# font-feature = ss09
+# font-feature = ss10
+# font-feature = ss11
+# font-feature = cv01
+# font-feature = cv03
+# font-feature = cv05
+# font-feature = cv11
+# font-feature = cv63
+# font-feature = cv35
+# font-feature = cv66
 
 # Intel One
 # font-feature = calt
@@ -84,14 +84,16 @@ font-feature = cv66
 # font-feature = cv03
 # font-feature = cv04
 
-font-size = 12.5
+font-size = 13
 
 theme = "tokyonight_moon_my"
-# theme = "TokyoNight Night"
+# theme = "tokyonight_storm_my"
+# theme = "TokyoNight Moon"
+# theme = "TokyoNight Storm"
 
 cursor-style-blink = false
 
-background-opacity = 0.95
+# background-opacity = 0.96
 # background-opacity-cells = true
 # background-blur = true
 
