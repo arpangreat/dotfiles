@@ -21,6 +21,7 @@ return {
 				-- highlights["@variable"] = { fg = colors.red }
 				highlights.LspInlayHint = { bg = "#063540", fg = colors.blue2 }
 				-- highlights.CursorLine = { bg = "#182235" }
+				highlights.CursorLine = { bg = "#12314D" }
 			end,
 		})
 		vim.cmd.colorscheme("tokyonight")
