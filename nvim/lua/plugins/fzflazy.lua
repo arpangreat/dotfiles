@@ -44,7 +44,6 @@ return {
 				["<c-d>"] = "preview-page-up",
 				["<ctrl-f>"] = "preview-down",
 				["<ctrl-b>"] = "preview-up",
-				["<ctrl-p>"] = "toggle-preview",
 			},
 			fzf = {
 				true,
