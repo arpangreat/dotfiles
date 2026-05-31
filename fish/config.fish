@@ -54,7 +54,7 @@ set fish_cursor_visual block
 
 if status --is-interactive
     and not set -q TMUX
-    tmux
+    tmux -T progressBar
 end
 
 set -gx EDITOR /usr/local/bin/nvim
