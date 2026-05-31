@@ -69,13 +69,14 @@
   "custom/music": {
     "format": "  {}",
     "escape": true,
-    "interval": 5,
+    "exec": "~/.config/waybar/scripts/music-scroll.sh",
+    "restart-interval": 1,
     "tooltip": true,
-    "exec": "playerctl metadata --format='{{ title }}'",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "on-click": "playerctl play-pause",
     "max-length": 50,
+    "spacing": 10,
   },
   "clock": {
     "format": " {:%I:%M %p}",
@@ -166,6 +167,7 @@
     "interval": 1800,
     "format": "{}",
     "tooltip": false,
-    "on-click": "xdg-open https://open-meteo.com/en/docs"
+    "on-click": "xdg-open https://open-meteo.com/en/docs",
+    "spacing": 10,
   },
 }

@@ -101,6 +101,7 @@ window#waybar {
   color: @sky;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
+  margin-right: 1rem;
   font-size: 15px;
 }
 
