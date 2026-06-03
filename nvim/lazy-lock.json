@@ -1,10 +1,10 @@
 {
-  "blink.cmp": { "branch": "main", "commit": "5ee69ea52492fa038b3a1cd8de55edffe205c77d" },
-  "blink.lib": { "branch": "main", "commit": "2cb62890cee636fe46722d03b7b2331e54fb3755" },
+  "blink.cmp": { "branch": "main", "commit": "b943982a29f100a4d17b3d2d09dc06b5a0d0f398" },
+  "blink.lib": { "branch": "main", "commit": "b127d48bf8e9ac9cf41f6e0fbead317503f76558" },
   "conform.nvim": { "branch": "master", "commit": "619363c30309d29ffa631e67c8183f2a72caa373" },
   "fidget.nvim": { "branch": "main", "commit": "82404b196e73a00b1727a91903beef5ddc319d22" },
   "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
-  "fzf-lua": { "branch": "main", "commit": "e3a71496027f2e3c4a60340170c04d66053d5c4c" },
+  "fzf-lua": { "branch": "main", "commit": "988416cc782dfe28bff3f0da9b8c943b236cd86a" },
   "fzf-lua-lazy.nvim": { "branch": "main", "commit": "e813f5df261ff5b781204c108af8f071bf0e1b00" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "mason.nvim": { "branch": "main", "commit": "16ba83bfc8a25f52bb545134f5bee082b195c460" },
