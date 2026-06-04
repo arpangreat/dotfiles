@@ -94,6 +94,8 @@ theme = "tokyonight_moon_my"
 
 cursor-style-blink = false
 
+minimum-contrast = 1.1
+
 # background-opacity = 0.96
 # background-opacity-cells = true
 # background-blur = true
