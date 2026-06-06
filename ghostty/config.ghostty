@@ -96,6 +96,8 @@ cursor-style-blink = false
 
 minimum-contrast = 1.1
 
+palette-generate = true
+
 # background-opacity = 0.96
 # background-opacity-cells = true
 # background-blur = true
