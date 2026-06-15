@@ -5,17 +5,17 @@ palette = 3=#ffda7e
 palette = 4=#8ab4ff
 palette = 5=#d0a8ff
 palette = 6=#8efaff
-palette = 7=#A9B7D0
-palette = 8=#56607D
+palette = 7=#E6EDF3
+palette = 8=#65708A
 palette = 9=#ff9aaa
 palette = 10=#e0ff8a
 palette = 11=#ffeab8
 palette = 12=#a0c4ff
 palette = 13=#dab8ff
 palette = 14=#a8f5ff
-palette = 15=#d5e0ff
+palette = 15=#E5E9FF
 
-foreground = #CBE0F0
+foreground = #D7E5F7
 background = #011423
 
 cursor-color = cell-foreground

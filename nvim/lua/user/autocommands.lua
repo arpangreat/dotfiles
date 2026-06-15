@@ -1,6 +1,9 @@
 vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
-	command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
+	-- command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
+	callback = function()
+		vim.hl.hl_op()
+	end,
 })
 
 vim.api.nvim_create_autocmd("BufReadPost", {

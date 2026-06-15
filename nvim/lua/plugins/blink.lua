@@ -1,10 +1,19 @@
 return {
 	"saghen/blink.cmp",
+	-- dir = "/home/arpangreat/blink.cmp",
 	dependencies = { "saghen/blink.lib", "rafamadriz/friendly-snippets" },
 	-- version = "1.*",
 	-- build = "cargo build --release --jobs 4",
 	build = function()
-		require("blink.cmp").build():wait(60000)
+		local cargo_build_jobs = vim.env.CARGO_BUILD_JOBS
+		vim.env.CARGO_BUILD_JOBS = "3"
+
+		local ok, err = require("blink.cmp").build():pwait(60000)
+		vim.env.CARGO_BUILD_JOBS = cargo_build_jobs
+
+		if not ok then
+			error(err)
+		end
 	end,
 	event = { "InsertEnter", "CmdlineEnter" },
 	lazy = true,
