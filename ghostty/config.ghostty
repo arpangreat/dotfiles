@@ -88,6 +88,7 @@ font-size = 13
 # adjust-cell-height = -3%
 # adjust-cell-width = -1%
 theme = "tokyonight_moon_my"
+# theme = "catppuccin-mocha"
 # theme = "tokyonight_storm_my"
 # theme = "TokyoNight Moon"
 # theme = "TokyoNight Storm"
