@@ -1,15 +1,16 @@
-return {
-	"j-hui/fidget.nvim",
-	event = "LspAttach",
-	opts = {
-		-- Progress reporting
+local M = {}
+
+function M.setup()
+	require("fidget").setup({
 		progress = {
-			poll_rate = 0, -- Disable polling, use events only (better performance)
-			suppress_on_insert = true, -- Hide during insert mode
-			ignore_done_already = true, -- Don't show already-completed tasks
+			poll_rate = 0,
+			suppress_on_insert = true,
+			ignore_done_already = true,
 			lsp = {
-				log_level = vim.log.levels.WARN, -- Only show warnings/errors
+				log_level = vim.log.levels.WARN,
 			},
 		},
-	},
-}
+	})
+end
+
+return M

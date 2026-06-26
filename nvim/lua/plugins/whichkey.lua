@@ -1,14 +1,14 @@
-return {
-	"folke/which-key.nvim",
-	event = "VeryLazy",
-	opts = {
+local M = {}
+
+function M.setup()
+	require("which-key").setup({
 		preset = "helix",
-		show_help = true, -- show help message on the command line when the popup is visible
+		show_help = true,
 		triggers = {
 			{ "<auto>", mode = "nixsotc" },
 			{ "a", mode = { "n", "v" } },
-		}, -- automatically setup triggers
-		show_keys = true, -- show the currently pressed key and its label as a message in the command line
+		},
+		show_keys = true,
 
 		icons = {
 			keys = {
@@ -20,7 +20,7 @@ return {
 		spec = {
 			{ "<leader>l", group = "Lazy" },
 			{ "<leader>ll", "<cmd>Lazy<CR>", desc = "Lazy Home" },
-			{ "<leader>lf", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "find file" },
+			{ "<leader>lf", "<cmd>FzfLua files<CR>", desc = "find file" },
 			{ "<leader>f", group = "FzfLua", icon = " " },
 			{ "<leader>s", group = "Split" },
 			{ "<leader>g", group = "Lsp" },
@@ -34,5 +34,7 @@ return {
 			{ "<leader>hd", "<cmd>lua require('mini.diff').toggle_overlay()<cr>", desc = "Toggle Overlay" },
 			{ "<leader>x", group = "Trouble" },
 		},
-	},
-}
+	})
+end
+
+return M
