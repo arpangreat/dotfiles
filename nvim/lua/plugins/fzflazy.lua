@@ -1,39 +1,11 @@
-return {
-	"ibhagwan/fzf-lua",
-	cmd = "FzfLua",
-	keys = {
-		{ "<Leader>fz", ":FzfLua ", desc = "FzfLua" },
-		{ "<Leader>ff", "<cmd>FzfLua files<CR>", desc = "Find files" },
-		{
-			"<Leader>fll",
-			function()
-				require("fzf-lua-lazy").search()
-			end,
-			desc = "Search lazy plugins",
-		},
-		{ "<Leader>fw", "<cmd>FzfLua live_grep<CR>", desc = "Live grep" },
-		{ "<Leader>fb", "<cmd>FzfLua buffers<CR>", desc = "Buffers" },
-		{ "<Leader>fh", "<cmd>FzfLua helptags<CR>", desc = "Help tags" },
-		{ "<Leader>fm", "<cmd>FzfLua manpages<CR>", desc = "Man pages" },
-		{ "<Leader>fj", "<cmd>FzfLua jump<CR>", desc = "Jump list" },
-		{
-			"<Leader>frc",
-			function()
-				require("fzf-lua").files({ prompt = "Dotfiles> ", cwd = "~/dotfiles/nvim" })
-			end,
-			desc = "Dotfiles",
-		},
-		{
-			"<Leader>fcc",
-			function()
-				require("fzf-lua").files({ prompt = "Config> ", cwd = "~/dotfiles" })
-			end,
-			desc = "Config files",
-		},
-		{ "<Leader>fcb", "<cmd>FzfLua lgrep_curbuf<CR>", desc = "Grep current buffer" },
-	},
-	dependencies = { "roginfarrer/fzf-lua-lazy.nvim" },
-	opts = {
+local M = {}
+
+local function map(lhs, rhs, desc)
+	vim.keymap.set("n", lhs, rhs, { desc = desc })
+end
+
+function M.setup()
+	require("fzf-lua").setup({
 		profiles = "fzf-native",
 		ui_select = true,
 
@@ -59,9 +31,28 @@ return {
 				previewer = "codeaction_native",
 			},
 		},
-		-- config.defaults.keymap.fzf["alt-n"] = "preview-page-down"
-		-- config.defaults.keymap.fzf["alt-n"] = "preview-page-down"
-		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"
-		-- config.defaults.keymap.builtin["<alt-p>"] = "preview-page-up"
-	},
-}
+	})
+
+	map("<Leader>fz", ":FzfLua ", "FzfLua")
+	map("<Leader>ff", "<cmd>FzfLua files<CR>", "Find files")
+	map("<Leader>fw", "<cmd>FzfLua live_grep<CR>", "Live grep")
+	map("<Leader>fb", "<cmd>FzfLua buffers<CR>", "Buffers")
+	map("<Leader>fh", "<cmd>FzfLua helptags<CR>", "Help tags")
+	map("<Leader>fm", "<cmd>FzfLua manpages<CR>", "Man pages")
+	map("<Leader>fj", "<cmd>FzfLua jump<CR>", "Jump list")
+	map("<Leader>fcb", "<cmd>FzfLua lgrep_curbuf<CR>", "Grep current buffer")
+
+	vim.keymap.set("n", "<Leader>fll", function()
+		require("fzf-lua-lazy").search()
+	end, { desc = "Search lazy plugins" })
+
+	vim.keymap.set("n", "<Leader>frc", function()
+		require("fzf-lua").files({ prompt = "Dotfiles> ", cwd = "~/dotfiles/nvim" })
+	end, { desc = "Dotfiles" })
+
+	vim.keymap.set("n", "<Leader>fcc", function()
+		require("fzf-lua").files({ prompt = "Config> ", cwd = "~/dotfiles" })
+	end, { desc = "Config files" })
+end
+
+return M

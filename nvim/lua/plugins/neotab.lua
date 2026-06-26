@@ -1,8 +1,7 @@
-return {
-	"kawre/neotab.nvim",
-	event = "InsertEnter",
-	opts = {
-		-- configuration goes here
+local M = {}
+
+function M.setup()
+	require("neotab").setup({
 		smart_punctuators = {
 			enabled = true,
 			semicolon = {
@@ -11,5 +10,7 @@ return {
 			},
 			escape = { enabled = true },
 		},
-	},
-}
+	})
+end
+
+return M

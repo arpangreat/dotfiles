@@ -27,6 +27,11 @@ local cache = {
 	git = {},
 }
 local last_mode = nil
+local mini_icons = nil
+
+local function is_cmdline_mode(mode)
+	return mode == "c" or mode == "cv" or mode == "ce" or mode == "r" or mode == "rm" or mode == "r?" or mode == "!"
+end
 
 ---------------------------------------------------------------
 -- MODE MAP
@@ -96,6 +101,10 @@ local mode_map = {
 ---------------------------------------------------------------
 function M.mode()
 	local mode = vim.api.nvim_get_mode().mode
+
+	if is_cmdline_mode(mode) then
+		return cache.mode ~= "" and cache.mode or "%#StatusLine#"
+	end
 
 	if mode == last_mode then
 		return cache.mode
@@ -217,7 +226,17 @@ function M.file()
 	local name = vim.api.nvim_buf_get_name(0)
 	name = name ~= "" and vim.fs.basename(name) or "[No Name]"
 
-	local icon = require("mini.icons").get("file", name) or ""
+	if mini_icons == nil then
+		local ok, mod = pcall(require, "mini.icons")
+		if ok then
+			mini_icons = mod
+		end
+	end
+
+	local icon = ""
+	if mini_icons then
+		icon = mini_icons.get("file", name) or ""
+	end
 	local modified = vim.bo.modified and " [+]" or ""
 
 	return string.format("%%#SLFile#%s %s%s%%#StatusLine#", icon, name, modified)
