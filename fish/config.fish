@@ -107,7 +107,7 @@ cod init $fish_pid fish | source
 
 source /home/arpangreat/ghostty/zig-out/share/fish/vendor_completions.d/ghostty.fish
 source /home/arpangreat/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
-source /home/arpangreat/.local/share/nvim/lazy/tokyonight.nvim/extras/fish/tokyonight_moon.fish
+source /home/arpangreat/.local/share/nvim/site/pack/core/opt/tokyonight.nvim/extras/fish/tokyonight_moon.fish
 
 tv completions fish | source
 # opam configuration

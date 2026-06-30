@@ -32,7 +32,7 @@ local M = {
 		plugin("kawre/neotab.nvim", "e99d3e28c5a2066d2d368dfe4ef3827c8d75d337"),
 		plugin("christoomey/vim-tmux-navigator", "e41c431a0c7b7388ae7ba341f01a0d217eb3a432"),
 		plugin("folke/tokyonight.nvim", "cdc07ac78467a233fd62c493de29a17e0cf2b2b6"),
-		plugin("nvim-treesitter/nvim-treesitter", "4916d6592ede8c07973490d9322f187e07dfefac"),
+		plugin("romus204/tree-sitter-manager.nvim"),
 		plugin("folke/trouble.nvim", "bd67efe408d4816e25e8491cc5ad4088e708a69a"),
 		plugin("folke/which-key.nvim", "3aab2147e74890957785941f0c1ad87d0a44c15a"),
 	},

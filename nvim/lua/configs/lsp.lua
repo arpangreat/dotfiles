@@ -70,23 +70,21 @@ vim.lsp.config("*", {
 vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
 	once = true,
 	callback = function()
-		vim.defer_fn(function()
-			local servers = vim.iter(vim.api.nvim_get_runtime_file("lsp/*.lua", true))
-				:map(function(file)
-					return vim.fn.fnamemodify(file, ":t:r")
-				end)
-				:totable()
+		local servers = vim.iter(vim.api.nvim_get_runtime_file("lsp/*.lua", true))
+			:map(function(file)
+				return vim.fn.fnamemodify(file, ":t:r")
+			end)
+			:totable()
 
-			-- Load and configure each server
-			for _, server in ipairs(servers) do
-				local ok, config = pcall(require, "lsp." .. server)
-				if ok and config then
-					vim.lsp.config(server, config)
-				end
+		-- Load and configure each server
+		for _, server in ipairs(servers) do
+			local ok, config = pcall(require, "lsp." .. server)
+			if ok and config then
+				vim.lsp.config(server, config)
 			end
+		end
 
-			vim.lsp.enable(servers)
-		end, 250)
+		vim.lsp.enable(servers)
 	end,
 })
 
