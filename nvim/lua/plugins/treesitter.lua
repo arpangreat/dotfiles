@@ -25,6 +25,7 @@ function M.setup()
 			"hyprlang",
 			"diff",
 			"markdown",
+			"markdown_inline",
 			"ghostty",
 		},
 		auto_install = true,
