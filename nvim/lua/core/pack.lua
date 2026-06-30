@@ -37,13 +37,6 @@ local build_hooks = {
 
 		build_blink_cmp()
 	end,
-	["nvim-treesitter"] = function(ev)
-		if not ev.data.active then
-			vim.cmd.packadd(ev.data.spec.name)
-		end
-
-		vim.cmd("TSUpdate")
-	end,
 }
 
 vim.api.nvim_create_autocmd("PackChanged", {
