@@ -2,6 +2,7 @@ local M = {}
 
 function M.setup()
 	require("tree-sitter-manager").setup({
+		-- highlight = false,
 		ensure_installed = {
 			"rust",
 			"zig",
@@ -9,7 +10,6 @@ function M.setup()
 			"cpp",
 			"c",
 			"typescript",
-			"typescriptreact",
 			"go",
 			"gomod",
 			"java",

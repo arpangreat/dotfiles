@@ -44,6 +44,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 		end, opts("List workspace folders"))
 
+		vim.lsp.semantic_tokens.enable(false)
+		client.server_capabilities.semanticTokensProvider = nil
+
 		if client.server_capabilities.codeLensProvider then
 			vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "CursorHold" }, {
 				buffer = bufnr,

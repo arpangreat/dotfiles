@@ -65,10 +65,6 @@
       "src": "https://github.com/windwp/nvim-autopairs",
       "version": "'7b9923abad60b903ece7c52940e1321d39eccc79'"
     },
-    "nvim-treesitter": {
-      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
-      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
-    },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
       "src": "https://github.com/folke/tokyonight.nvim",
