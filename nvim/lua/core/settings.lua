@@ -15,6 +15,7 @@ vim.opt.winborder = "single"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+-- vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:block-blinkon0-TermCursor"
 vim.opt.conceallevel = 1
 
 vim.opt.mouse = vim.opt.mouse + "a"

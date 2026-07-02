@@ -17,10 +17,3 @@ vim.g.loaded_2html_plugin = 1
 
 pcall(vim.cmd.packadd, "nvim.undotree")
 pcall(vim.cmd.packadd, "nvim.difftool")
-
-require("vim._core.ui2").enable({
-	enabled = true,
-	msg = {
-		targets = "msg",
-	},
-})

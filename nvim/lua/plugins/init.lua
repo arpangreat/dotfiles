@@ -18,6 +18,7 @@ local M = {
 		plugin("rafamadriz/friendly-snippets"),
 		plugin("saghen/blink.cmp"),
 		plugin("stevearc/conform.nvim"),
+		plugin("j-hui/fidget.nvim"),
 		plugin("ibhagwan/fzf-lua"),
 		plugin("roginfarrer/fzf-lua-lazy.nvim"),
 		plugin("echasnovski/mini.diff"),
@@ -52,6 +53,7 @@ function M.setup()
 	safe_setup("autopairs")
 	safe_setup("blink")
 	safe_setup("conform")
+	safe_setup("fidget")
 	safe_setup("fzflazy")
 	safe_setup("gitsigns")
 	safe_setup("mason")
