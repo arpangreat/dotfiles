@@ -1,8 +1,11 @@
 local plugins = require("plugins")
+local theme = "tokyonight.nvim"
 
 local function load_pack_plugins(specs)
 	for _, spec in ipairs(specs) do
-		vim.cmd.packadd(spec.name)
+		if spec.name ~= theme then
+			vim.cmd.packadd(spec.name)
+		end
 	end
 end
 
@@ -56,6 +59,11 @@ vim.pack.add(plugins.specs, {
 	confirm = false,
 	load = false,
 })
+
+-- Set the final background before loading the rest of the plugin graph so the
+-- first rendered frame does not use Neovim's default colors.
+vim.cmd.packadd(theme)
+require("plugins.tokyonight").setup()
 
 load_pack_plugins(plugins.specs)
 vim.api.nvim_create_user_command("BlinkCmpBuild", build_blink_cmp, { desc = "Build blink.cmp native matcher" })

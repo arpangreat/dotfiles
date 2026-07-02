@@ -12,7 +12,6 @@ vim.opt.completeopt = { "menu", "menuone", "noselect", "fuzzy" }
 vim.opt.wildoptions = { "pum", "tagfile", "fuzzy" }
 vim.opt.winborder = "single"
 
-vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true

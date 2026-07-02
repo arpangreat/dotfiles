@@ -1,10 +1,10 @@
 vim.loader.enable(true)
 
 require("core.settings")
+require("core.legacy")
 require("core.mappings")
 require("user.autocommands")
 require("statusline")
 require("configs.config")
 require("configs.lsp")
 require("core.pack")
-require("core.legacy")
