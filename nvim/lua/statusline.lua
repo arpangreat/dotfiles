@@ -509,8 +509,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 	callback = setup_highlights,
 })
 
--- Window-local statusline keeps the bar visible when cmdheight is 0.
-vim.o.laststatus = 2
+vim.o.laststatus = 3
 vim.o.statusline = "%!v:lua.require('statusline').render()"
 
 return M

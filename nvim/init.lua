@@ -7,4 +7,12 @@ require("user.autocommands")
 require("statusline")
 require("configs.config")
 require("configs.lsp")
-require("core.pack")
+
+pcall(vim.cmd.packadd, "nvim.undotree")
+pcall(vim.cmd.packadd, "nvim.difftool")
+require("vim._core.ui2").enable({
+	enable = true,
+	msg = {
+		targets = "msg",
+	},
+})
