@@ -19,7 +19,7 @@ function M.setup()
 
 		spec = {
 			{ "<leader>l", group = "Lazy" },
-			{ "<leader>ll", "<cmd>Lazy<CR>", desc = "Lazy Home" },
+			{ "<leader>ll", "<cmd>packupdate<CR>", desc = "Lazy Home" },
 			{ "<leader>lf", "<cmd>FzfLua files<CR>", desc = "find file" },
 			{ "<leader>f", group = "FzfLua", icon = " " },
 			{ "<leader>s", group = "Split" },

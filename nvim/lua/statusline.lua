@@ -28,6 +28,41 @@ local cache = {
 }
 local last_mode = nil
 local mini_icons = nil
+local lsp_progress = {}
+local lsp_progress_seq = 0
+local lsp_spinner_frame = 1
+local lsp_spinner_running = false
+
+local lsp_spinner = { "⣾", "⣽", "⣻", "⢿", "⡿", "⣟", "⣯", "⣷" }
+
+local function redraw_statusline()
+	vim.cmd.redrawstatus()
+end
+
+local function escape_statusline(text)
+	return tostring(text or ""):gsub("%%", "%%%%")
+end
+
+local function animate_lsp_progress()
+	if lsp_spinner_running then
+		return
+	end
+
+	lsp_spinner_running = true
+	local function tick()
+		if not next(lsp_progress) then
+			lsp_spinner_running = false
+			lsp_spinner_frame = 1
+			return
+		end
+
+		lsp_spinner_frame = (lsp_spinner_frame % #lsp_spinner) + 1
+		redraw_statusline()
+		vim.defer_fn(tick, 100)
+	end
+
+	vim.defer_fn(tick, 100)
+end
 
 local function is_cmdline_mode(mode)
 	return mode == "c" or mode == "cv" or mode == "ce" or mode == "r" or mode == "rm" or mode == "r?" or mode == "!"
@@ -273,6 +308,46 @@ function M.lsp()
 end
 
 ---------------------------------------------------------------
+-- LSP PROGRESS
+---------------------------------------------------------------
+function M.lsp_progress()
+	-- Progress messages are useful in normal mode but distracting while typing.
+	if vim.api.nvim_get_mode().mode:sub(1, 1) == "i" then
+		return ""
+	end
+
+	local latest
+	for _, progress in pairs(lsp_progress) do
+		if not latest or progress.seq > latest.seq then
+			latest = progress
+		end
+	end
+
+	if not latest then
+		return ""
+	end
+
+	local title = vim.fn.strcharpart(latest.title, 0, 32)
+	if vim.fn.strchars(latest.title) > 32 then
+		title = title .. "…"
+	end
+
+	local percentage = latest.percentage and string.format(" %d%%%%", latest.percentage) or ""
+	return table.concat({
+		"%#SLLSPProgressSpinner#",
+		lsp_spinner[lsp_spinner_frame],
+		" ",
+		"%#SLLSPProgressClient#",
+		escape_statusline(latest.client),
+		" ",
+		"%#SLLSPProgressTitle#",
+		escape_statusline(title),
+		percentage,
+		"%#StatusLine#",
+	})
+end
+
+---------------------------------------------------------------
 -- POSITION
 ---------------------------------------------------------------
 function M.position()
@@ -320,9 +395,13 @@ function M.render()
 	-----------------------------------------------------------
 	-- RIGHT
 	-----------------------------------------------------------
+	local lsp = M.lsp()
+	local progress = M.lsp_progress()
 	local right = table.concat({
-		M.lsp(),
-		" ",
+		lsp,
+		lsp ~= "" and progress ~= "" and "  " or "",
+		progress,
+		(lsp ~= "" or progress ~= "") and " " or "",
 		M.position(),
 	})
 
@@ -358,9 +437,49 @@ local function setup_highlights()
 
 	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta, bold = true })
 	vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
+	vim.api.nvim_set_hl(0, "SLLSPProgressSpinner", { fg = C.green1, bold = true })
+	vim.api.nvim_set_hl(0, "SLLSPProgressClient", { fg = C.blue, bold = true })
+	vim.api.nvim_set_hl(0, "SLLSPProgressTitle", { fg = C.fg_dim, italic = true })
 
 	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
 end
+
+---------------------------------------------------------------
+-- LSP PROGRESS EVENTS
+---------------------------------------------------------------
+vim.api.nvim_create_autocmd("LspProgress", {
+	group = vim.api.nvim_create_augroup("statusline_lsp_progress", { clear = true }),
+	desc = "Update LSP progress in the statusline",
+	callback = function(args)
+		local data = args.data
+		local params = data and data.params
+		local value = params and params.value
+		if not data or not value then
+			return
+		end
+
+		local client = vim.lsp.get_client_by_id(data.client_id)
+		if not client then
+			return
+		end
+
+		local key = string.format("%d:%s", data.client_id, vim.inspect(params.token))
+		if value.kind == "end" then
+			lsp_progress[key] = nil
+		else
+			lsp_progress_seq = lsp_progress_seq + 1
+			lsp_progress[key] = {
+				client = client.name,
+				title = value.title or value.message or "Working",
+				percentage = tonumber(value.percentage),
+				seq = lsp_progress_seq,
+			}
+			animate_lsp_progress()
+		end
+
+		redraw_statusline()
+	end,
+})
 
 ---------------------------------------------------------------
 -- LAZY REDRAW

@@ -12,10 +12,10 @@ vim.opt.completeopt = { "menu", "menuone", "noselect", "fuzzy" }
 vim.opt.wildoptions = { "pum", "tagfile", "fuzzy" }
 vim.opt.winborder = "single"
 
-vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+-- vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:block-blinkon0-TermCursor"
 vim.opt.conceallevel = 1
 
 vim.opt.mouse = vim.opt.mouse + "a"
@@ -40,6 +40,7 @@ vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_python3_provider = 0
 
+-- Keep the command line on its own row so it does not cover the statusline.
 vim.opt.cmdheight = 0
 
 vim.g.grepprg = "rg --vimgrep --smart-case"

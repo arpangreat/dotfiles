@@ -3,7 +3,7 @@
 Hey this is my dotfiles repository , From which you can download my config files
 😄🚀
 
-#### The Nvim review is done by [ThePrimeagen](github.com/ThePrimeagen) in this video
+#### The Nvim review is done by [ThePrimeagen](https://github.com/ThePrimeagen) in this video
 
 ### A Life hack for shell , while typing any password show asterisks for every password
 
