@@ -41,7 +41,7 @@ vim.g.loaded_ruby_provider = 0
 vim.g.loaded_python3_provider = 0
 
 -- Keep the command line on its own row so it does not cover the statusline.
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 
 vim.g.grepprg = "rg --vimgrep --smart-case"
 vim.g.grepformat = "%f:%l:%c:%m"
