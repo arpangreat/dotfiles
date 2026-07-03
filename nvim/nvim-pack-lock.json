@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "bda905a4bf1b3edfa708b0be193b8c63d8620c96",
+      "rev": "67c9c3f9e3121df32d0eee406a76087a9f0a62eb",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "blink.lib": {
@@ -12,16 +12,12 @@
       "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
       "src": "https://github.com/stevearc/conform.nvim"
     },
-    "fidget.nvim": {
-      "rev": "6f793b2bcd2d35e201c09520f698bb763220908a",
-      "src": "https://github.com/j-hui/fidget.nvim"
-    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "b9919229c84bd64d8539367e67e32811cf39a836",
+      "rev": "09880d502bc76f1e025fdbdcaeff44650f7ea78a",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "fzf-lua-lazy.nvim": {
@@ -41,7 +37,7 @@
       "src": "https://github.com/nvim-mini/mini.hipatterns"
     },
     "mini.icons": {
-      "rev": "e56797f90192d81f1fda02e662fc3e8e3d775027",
+      "rev": "24dbea2195c477e57d581215839a6ab915f34b14",
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "neotab.nvim": {
