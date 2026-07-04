@@ -1,7 +1,7 @@
 local M = {}
 
 vim.api.nvim_create_autocmd("LspAttach", {
-	group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
+	-- group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
 	callback = function(args)
 		local bufnr = args.buf
 		local client = vim.lsp.get_client_by_id(args.data.client_id)
@@ -9,8 +9,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		if not client then
 			return
 		end
-
-		vim.lsp.inlay_hint.enable(true, { bufnr })
 
 		local opts = function(desc)
 			return { buffer = bufnr, desc = desc }
@@ -46,6 +44,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		vim.lsp.semantic_tokens.enable(false)
 		client.server_capabilities.semanticTokensProvider = nil
+
+		vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 
 		if client.server_capabilities.codeLensProvider then
 			vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "CursorHold" }, {
