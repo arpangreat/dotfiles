@@ -6,46 +6,35 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
-vim.api.nvim_create_autocmd("BufReadPost", {
+local cursor_restored = {}
+
+vim.api.nvim_create_autocmd("BufWinEnter", {
 	pattern = "*",
-	callback = function()
-		if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
-			-- except for in git commit messages
-			-- https://stackoverflow.com/questions/31449496/vim-ignore-specifc-file-in-autocommand
-			if not vim.fn.expand("%:p"):find(".git", 1, true) then
-				vim.cmd('exe "normal! g\'\\""')
-			end
+	callback = function(args)
+		local name = vim.api.nvim_buf_get_name(args.buf)
+		if name == "" or cursor_restored[args.buf] == name or vim.bo[args.buf].buftype ~= "" then
+			return
 		end
+		cursor_restored[args.buf] = name
+
+		local win = vim.api.nvim_get_current_win()
+		local mark = vim.api.nvim_buf_get_mark(args.buf, '"')
+		if vim.api.nvim_win_get_buf(win) ~= args.buf or vim.bo[args.buf].filetype == "gitcommit" then
+			return
+		end
+
+		if mark[1] <= 1 or mark[1] > vim.api.nvim_buf_line_count(args.buf) then
+			return
+		end
+
+		local line = vim.api.nvim_buf_get_lines(args.buf, mark[1] - 1, mark[1], false)[1]
+		vim.api.nvim_win_set_cursor(win, { mark[1], math.min(mark[2], #line) })
 	end,
 })
 
--- Some buffer-switching paths load a file without the built-in BufRead
--- filetype detector taking effect. This is reproducible with both fzf-lua's
--- unloaded-buffer switch and nvim.dir's directory-buffer reuse.
-vim.api.nvim_create_autocmd("BufEnter", {
-	pattern = "*",
+vim.api.nvim_create_autocmd("BufWipeout", {
 	callback = function(args)
-		if vim.bo[args.buf].buftype ~= "" or vim.bo[args.buf].filetype ~= "" then
-			return
-		end
-
-		local name = vim.api.nvim_buf_get_name(args.buf)
-		if name == "" or vim.fn.isdirectory(name) == 1 then
-			return
-		end
-
-		local filetype, on_detect = vim.filetype.match({
-			filename = name,
-			buf = args.buf,
-		})
-		if not filetype then
-			return
-		end
-
-		if on_detect then
-			on_detect(args.buf)
-		end
-		vim.bo[args.buf].filetype = filetype
+		cursor_restored[args.buf] = nil
 	end,
 })
 

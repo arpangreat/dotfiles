@@ -55,8 +55,8 @@ vim.diagnostic.config({
 	},
 })
 
--- Load LSP servers on first buffer
-vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+-- Register LSP activation after plugins load and before interactive navigation.
+vim.api.nvim_create_autocmd("VimEnter", {
 	once = true,
 	callback = function()
 		local servers = vim.iter(vim.api.nvim_get_runtime_file("lsp/*.lua", true))
