@@ -19,6 +19,36 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 	end,
 })
 
+-- Some buffer-switching paths load a file without the built-in BufRead
+-- filetype detector taking effect. This is reproducible with both fzf-lua's
+-- unloaded-buffer switch and nvim.dir's directory-buffer reuse.
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = "*",
+	callback = function(args)
+		if vim.bo[args.buf].buftype ~= "" or vim.bo[args.buf].filetype ~= "" then
+			return
+		end
+
+		local name = vim.api.nvim_buf_get_name(args.buf)
+		if name == "" or vim.fn.isdirectory(name) == 1 then
+			return
+		end
+
+		local filetype, on_detect = vim.filetype.match({
+			filename = name,
+			buf = args.buf,
+		})
+		if not filetype then
+			return
+		end
+
+		if on_detect then
+			on_detect(args.buf)
+		end
+		vim.bo[args.buf].filetype = filetype
+	end,
+})
+
 -- This runs after everything else
 vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
 	pattern = "*",
