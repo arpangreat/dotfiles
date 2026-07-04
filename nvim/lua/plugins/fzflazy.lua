@@ -7,7 +7,7 @@ end
 function M.setup()
 	require("fzf-lua").setup({
 		profiles = "fzf-native",
-		ui_select = true,
+		ui_select = {},
 
 		keymap = {
 			builtin = {
