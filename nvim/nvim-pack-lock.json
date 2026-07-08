@@ -17,7 +17,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "774150bc05f774af1df614f55d156b3318c6decd",
+      "rev": "ed4059deb9237f7f4cc8832ffef69779ffe2e265",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "fzf-lua-lazy.nvim": {
@@ -29,15 +29,15 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.diff": {
-      "rev": "0743d26bd858ebe32efcf5c86a91a422a000f273",
+      "rev": "be4ca6953040332d77a5a05bb5600152c5c36e7a",
       "src": "https://github.com/echasnovski/mini.diff"
     },
     "mini.hipatterns": {
-      "rev": "607d604e650cdf21d71f863d040c496a1d0cb320",
+      "rev": "7c840c71d6a91f53d734cab2b6fe2290d285ec3b",
       "src": "https://github.com/nvim-mini/mini.hipatterns"
     },
     "mini.icons": {
-      "rev": "24dbea2195c477e57d581215839a6ab915f34b14",
+      "rev": "98faae31e9be1cc054ae63485e58ceb185efcad0",
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "neotab.nvim": {
