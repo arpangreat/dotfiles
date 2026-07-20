@@ -85,7 +85,7 @@ font-style-bold-italic = "ExtraBold Italic"
 # font-feature = cv04
 
 font-size = 13
-# adjust-cell-height = -3%
+# adjust-cell-height = 0.5%
 # adjust-cell-width = -1%
 theme = "tokyonight_moon_my"
 # theme = "catppuccin-mocha"
