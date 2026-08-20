@@ -107,16 +107,18 @@ palette-generate = true
 keybind = ctrl+enter=unbind
 keybind = global:super+`=toggle_quick_terminal
 
-window-padding-x = 2
-
-window-padding-y = 2
+# window-padding-x = 2
+#
+# window-padding-y = 2
+# window-height = 46
+# window-width = 189
 
 gtk-single-instance = false
 # gtk-tabs-location = top
 # gtk-wide-tabs = false
 # gtk-toolbar-style = flat
-window-padding-balance = true
-window-padding-color = extend-always
+# window-padding-balance = true
+# window-padding-color = extend-always
 
 window-theme = ghostty
 
