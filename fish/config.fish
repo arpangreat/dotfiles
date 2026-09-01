@@ -125,3 +125,7 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 source ~/.safe-chain/scripts/init-fish.fish # Safe-chain Fish initialization script
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/arpangreat/.local/bin" $PATH

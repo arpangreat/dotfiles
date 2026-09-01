@@ -47,3 +47,5 @@ vim.g.grepprg = "rg --vimgrep --smart-case"
 vim.g.grepformat = "%f:%l:%c:%m"
 
 vim.g.health = { style = "float" }
+
+vim.g.tmux_navigator_no_mappings = 1
