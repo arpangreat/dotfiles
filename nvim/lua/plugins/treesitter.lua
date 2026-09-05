@@ -1,6 +1,7 @@
 local M = {}
 
 local install_dir = vim.fn.stdpath("data") .. "/site"
+local update_hook_initialized = false
 
 local parsers = {
 	"rust",
@@ -87,6 +88,33 @@ function M.setup()
 		callback = function()
 			vim.treesitter.start()
 			vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+		end,
+	})
+end
+
+function M.setup_update_hook()
+	if update_hook_initialized then
+		return
+	end
+	update_hook_initialized = true
+
+	vim.api.nvim_create_autocmd("PackChanged", {
+		callback = function(ev)
+			if ev.data.kind ~= "update" then
+				return
+			end
+
+			if ev.data.spec.name ~= "nvim-treesitter" then
+				return
+			end
+
+			if not ev.data.active then
+				vim.cmd.packadd("nvim-treesitter")
+			end
+
+			vim.schedule(function()
+				vim.cmd("TSUpdate " .. table.concat(parsers, " "))
+			end)
 		end,
 	})
 end
