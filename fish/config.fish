@@ -71,7 +71,7 @@ set -g JAVA_HOME /usr/lib/jvm/default
 # Go
 set -g GOPATH $HOME/go
 
-set -g CHROME_EXECUTABLE /usr/bin/zen-browser
+set -gx CHROME_EXECUTABLE /usr/bin/zen-browser
 
 set -gx MAKEFLAGS -j3
 set -gx GNUMAKEFLAGS -j3
@@ -81,7 +81,7 @@ set -g BUN_INSTALL "/home/arpangreat/.bun"
 set -g RUSTC_WRAPPER sccache
 set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
 
-set -g BROWSER /usr/bin/zen-browser
+set -gx BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 
 set -gx LD ld.lld
