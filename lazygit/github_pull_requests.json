@@ -84,5 +84,48 @@
       "url": "https://github.com/arpangreat/dotfiles/pull/12",
       "headRepositoryOwner": "arpangreat"
     }
+  ],
+  "/home/arpangreat/fzf": [
+    {
+      "headRefName": "master",
+      "number": 4706,
+      "title": "Update devel branch",
+      "state": "MERGED",
+      "checksState": "SUCCESS",
+      "url": "https://github.com/junegunn/fzf/pull/4706",
+      "headRepositoryOwner": "junegunn"
+    },
+    {
+      "headRefName": "master",
+      "number": 4670,
+      "title": "Fix bug in advanced guide for using fzf as a ripgrep launcher",
+      "state": "MERGED",
+      "url": "https://github.com/junegunn/fzf/pull/4670",
+      "headRepositoryOwner": "skbolton"
+    },
+    {
+      "headRefName": "master",
+      "number": 4637,
+      "title": "docs(README): add mise alternative method installation",
+      "state": "MERGED",
+      "url": "https://github.com/junegunn/fzf/pull/4637",
+      "headRepositoryOwner": "jylenhof"
+    },
+    {
+      "headRefName": "master",
+      "number": 4635,
+      "title": "fix: rebind readline command redraw-current-line",
+      "state": "MERGED",
+      "url": "https://github.com/junegunn/fzf/pull/4635",
+      "headRepositoryOwner": "jameslazo"
+    },
+    {
+      "headRefName": "master",
+      "number": 4617,
+      "title": "Fix issues with --min-height and auto height combined # 4609 on fzf gh",
+      "state": "CLOSED",
+      "url": "https://github.com/junegunn/fzf/pull/4617",
+      "headRepositoryOwner": "georgeharker"
+    }
   ]
 }
