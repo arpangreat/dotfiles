@@ -27,6 +27,7 @@ local parsers = {
 	"markdown",
 	"markdown_inline",
 	-- "ghostty",
+	"latex",
 }
 
 local lang_by_filetype = {

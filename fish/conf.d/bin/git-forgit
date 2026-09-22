@@ -171,7 +171,7 @@ _forgit_get_pager() {
         ignore) echo -n "${FORGIT_IGNORE_PAGER:-$(hash bat &>/dev/null && echo 'bat -l gitignore --color=always' || echo 'cat')}" ;;
         attributes) echo -n "${FORGIT_ATTRIBUTES_PAGER:-$(hash bat &>/dev/null && echo 'bat -l gitattributes --color=always' || echo 'cat')}" ;;
         blame) echo -n "${FORGIT_BLAME_PAGER:-$(git config pager.blame || _forgit_get_pager)}" ;;
-        enter) echo -n "${FORGIT_ENTER_PAGER:-"LESS='-r' less"}" ;;
+        enter) echo -n "${FORGIT_ENTER_PAGER:-"less -R -+F -+E"}" ;;
         *) echo "pager not found: $1" >&2 ;;
     esac
 }
@@ -1202,8 +1202,9 @@ _forgit_git_checkout_branch() {
 _forgit_checkout_branch() {
     _forgit_inside_work_tree || return 1
     # if called with arguments, check if branch exists, else create a new one
+    # this behavior can be disabled by setting FORGIT_CHECKOUT_BRANCH_AUTO_CREATE_BRANCH to false
     if [[ $# -ne 0 ]]; then
-        if [[ $* == "-" ]] || git show-branch "$@" &>/dev/null; then
+        if [[ $FORGIT_CHECKOUT_BRANCH_AUTO_CREATE_BRANCH == false ]] || [[ $* == "-" ]] || git show-branch "$@" &>/dev/null; then
             git switch "$@"
         else
             git switch -c "$@"
@@ -1248,8 +1249,9 @@ _forgit_git_switch_branch() {
 _forgit_switch_branch() {
     _forgit_inside_work_tree || return 1
     # if called with arguments, check if branch exists, else create a new one
+    # this behavior can be disabled by setting FORGIT_SWITCH_AUTO_CREATE_BRANCH to false
     if [[ $# -ne 0 ]]; then
-        if [[ $* == "-" ]] || git show-branch "$@" &>/dev/null; then
+        if [[ $FORGIT_SWITCH_AUTO_CREATE_BRANCH == false ]] || [[ $* == "-" ]] || git show-branch "$@" &>/dev/null; then
             git switch "$@"
         else
             git switch -c "$@"
@@ -1581,6 +1583,20 @@ _forgit_main_worktree_root() {
     git worktree list --porcelain | sed -n 's/^worktree //p;q'
 }
 
+# Get the directory in which new worktrees are created
+# A relative FORGIT_WORKTREE_ADD_DIR is resolved against the root of the main
+# worktree, so that a single setting is valid in every repository. Anchoring it
+# to the main worktree rather than the current one also keeps adding a worktree
+# from a linked worktree from nesting the directory any deeper.
+_forgit_worktree_add_dir() {
+    local dir="${FORGIT_WORKTREE_ADD_DIR:-.wt}"
+    if [[ $dir == /* ]]; then
+        echo "$dir"
+    else
+        echo "$(_forgit_main_worktree_root)/$dir"
+    fi
+}
+
 # Parse git worktree list --porcelain output and format it for display
 # Output format: [XY] /path/to/worktree (branch) 3 hours ago
 #   X: '*' = current worktree, ' ' = other
@@ -1738,8 +1754,8 @@ _forgit_worktree_delete() {
 _forgit_worktree_add() {
     _forgit_inside_git_repo || return 1
 
-    # Default to main worktree root, not current worktree's root
-    local wt_dir="${FORGIT_WORKTREE_ADD_DIR:-$(_forgit_main_worktree_root)/.wt}"
+    local wt_dir
+    wt_dir=$(_forgit_worktree_add_dir)
 
     # Two or more arguments: pass through to git directly
     if [[ $# -ge 2 ]]; then
