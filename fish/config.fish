@@ -71,7 +71,7 @@ set -g JAVA_HOME /usr/lib/jvm/default
 # Go
 set -g GOPATH $HOME/go
 
-set -g CHROME_EXECUTABLE /usr/bin/zen-browser
+set -gx CHROME_EXECUTABLE /usr/bin/zen-browser
 
 set -gx MAKEFLAGS -j3
 set -gx GNUMAKEFLAGS -j3
@@ -81,12 +81,14 @@ set -g BUN_INSTALL "/home/arpangreat/.bun"
 set -g RUSTC_WRAPPER sccache
 set -g RUSTFLAGS "-C link-arg=-fuse-ld=/usr/bin/mold"
 
-set -g BROWSER /usr/bin/zen-browser
+set -gx BROWSER /usr/bin/zen-browser
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 
 set -gx LD ld.lld
 set -gx LDFLAGS "-fuse-ld=lld"
 set -gx GEMINI_API_KEY $(cat ~/.gemini_api_key)
+
+
 
 fish_add_path $GOPATH/go/bin
 fish_add_path /usr/local/go/bin/
@@ -109,7 +111,7 @@ source /home/arpangreat/ghostty/zig-out/share/fish/vendor_completions.d/ghostty.
 source /home/arpangreat/ghostty/zig-out/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
 source /home/arpangreat/.local/share/nvim/site/pack/core/opt/tokyonight.nvim/extras/fish/tokyonight_moon.fish
 
-tv completions fish | source
+# tv completions fish | source
 # opam configuration
 source /home/arpangreat/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 
@@ -124,12 +126,8 @@ end
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-# argc-completions
-set -gx ARGC_COMPLETIONS_ROOT /home/arpangreat/argc-completions
-set -gx ARGC_COMPLETIONS_PATH "$ARGC_COMPLETIONS_ROOT/completions/linux:$ARGC_COMPLETIONS_ROOT/completions"
-fish_add_path "$ARGC_COMPLETIONS_ROOT/bin"
-# To add completions for only the specified command, modify next line e.g. set argc_scripts cargo git
-set argc_scripts (command ls -1 "$ARGC_COMPLETIONS_ROOT/completions/linux" "$ARGC_COMPLETIONS_ROOT/completions" | string replace -r '\.sh$' '')
-argc --argc-completions fish $argc_scripts | source
-
 source ~/.safe-chain/scripts/init-fish.fish # Safe-chain Fish initialization script
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/arpangreat/.local/bin" $PATH

@@ -1,7 +1,12 @@
+local treesitter = require("plugins.treesitter")
+
+treesitter.setup_update_hook()
+
 require("vim-pack").add({
 	{
-		src = "romus204/tree-sitter-manager.nvim",
+		src = "nvim-treesitter/nvim-treesitter",
+		version = "main",
 		setup = false,
-		on_setup = require("plugins.treesitter").setup,
+		on_setup = treesitter.setup,
 	},
 })

@@ -2,6 +2,7 @@ local M = {}
 
 ---@class PluginSpec
 ---@field src string GitHub repository in "owner/repository" form
+---@field version? string|vim.VersionRange Git branch, tag, commit hash, or version range
 ---@field setup? false Skip automatic require/setup
 ---@field on_setup? fun() Run after the plugin has been loaded
 
@@ -9,7 +10,15 @@ local M = {}
 function M.add(plugins)
 	local sources = vim.iter(plugins)
 		:map(function(plugin)
-			return "https://github.com/" .. plugin.src
+			local spec = {
+				src = "https://github.com/" .. plugin.src,
+			}
+
+			if plugin.version then
+				spec.version = plugin.version
+			end
+
+			return spec
 		end)
 		:totable()
 

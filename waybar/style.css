@@ -119,3 +119,15 @@ window#waybar {
   /* margin-top: 0.3rem; */
   /* margin-bottom: 0.3rem; */
 }
+
+tooltip {
+  background: rgba(30, 30, 46, 0.9);
+  border: 2px solid rgba(137, 180, 250, 0.8);
+  border-radius: 10px;
+  min-height: 20px;
+  padding: 10px;
+}
+
+tooltip label {
+  color: #cdd6f4;
+}

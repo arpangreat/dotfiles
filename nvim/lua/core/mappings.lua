@@ -33,8 +33,14 @@ vim.api.nvim_set_keymap("n", "<LocalLeader>j", ":m .+1<CR>==", { noremap = true,
 vim.api.nvim_set_keymap("n", "<LocalLeader>k", ":m .-2<CR>==", { noremap = true, silent = false, expr = false })
 
 -- Realising useless mappings
-vim.api.nvim_set_keymap("n", "Q", ":wq!<CR>", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("n", "M", "m", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("x", "<Leader>s", ":s//g<Left><Left>", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("o", "<Leader>s", ":s//g<Left><Left>", { noremap = true, silent = false, expr = false })
 vim.api.nvim_set_keymap("v", "<Leader>s", ":s//g<Left><Left>", { noremap = true, silent = false, expr = false })
+
+-- Tmux Navigator
+vim.keymap.set("n", "<M-h>", "<cmd>TmuxNavigateLeft<cr>")
+vim.keymap.set("n", "<M-j>", "<cmd>TmuxNavigateDown<cr>")
+vim.keymap.set("n", "<M-k>", "<cmd>TmuxNavigateUp<cr>")
+vim.keymap.set("n", "<M-l>", "<cmd>TmuxNavigateRight<cr>")
+vim.keymap.set("n", "<M-\\>", "<cmd>TmuxNavigatePrevious<cr>")

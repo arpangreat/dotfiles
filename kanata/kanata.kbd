@@ -17,12 +17,12 @@
 (defalias
   capsesc (tap-hold $tap-time $hold-time caps esc)
   escctrl (tap-hold $tap-time $hold-time esc lctl)
-  a (multi f24 (tap-hold $tap-time $hold-time a lmet))
-  s (multi f24 (tap-hold $tap-time $hold-time s lsft))
+  a (tap-hold $tap-time $hold-time a lmet)
+  s (tap-hold $tap-time $hold-time s lsft)
   d (tap-hold $tap-time $hold-time d (layer-while-held nav-layer))
   ;; Suggestion 1: Add Alt to the home row on the 'f' key
-  f (multi f24 (tap-hold $tap-time $hold-time f lalt))
-  l (multi f24 (tap-hold $tap-time $hold-time l rsft))
+  f (tap-hold $tap-time $hold-time f lalt)
+  l (tap-hold $tap-time $hold-time l rsft)
   ;; Suggestion 3: Change ; to be a layer-hold for a new symbols layer
   semicolon (tap-hold $tap-time $hold-time ; (layer-while-held symbols))
 
