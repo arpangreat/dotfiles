@@ -1,7 +1,7 @@
 # ── General ───────────────────────────────────────────────────────────────────
 
 # language = "en-US"        # UI language; defaults to $LC_MESSAGES / $LANG
-# region   = "it-IT"        # date format + unit system; defaults to $LC_TIME / $LANG
+region   = "en-IN"        # date format + unit system; defaults to $LC_TIME / $LANG
 # outputs = "All"            # "All" (default), "Active", or { Targets = ["eDP-1"] }
 position = "Top"             # "Top" (default) or "Bottom"
 # layer = "Bottom"           # "Bottom" (default), "Top", or "Overlay"
@@ -19,7 +19,7 @@ position = "Top"             # "Top" (default) or "Bottom"
 [modules]
 left = [ [  "Workspaces" ] ]
 center = [ "MediaPlayer" ]
-right = [ [ "Tray", "Tempo", "Privacy", "Notifications", "Settings" ] ]
+right = [ [ "Tray", "Tempo", "Privacy", "SwayNC", "Settings" ] ]
 
 # ── Workspaces ────────────────────────────────────────────────────────────────
 
@@ -62,15 +62,15 @@ formats = [ "%a %d %b %I:%M:%p", "%Y-%m-%d %I:%M:%S", "%I:%M:%S" ]
 # weather_location = { Coordinates = [40.7128, -74.0060] }
 weather_location = "Current"
 weather_indicator = "IconAndTemperature"  # (default), "Icon", or "None"
-# wind_speed_unit = "Kmh"   # (default: None = derive from locale) "Kmh", "Mph", or "Ms"
+wind_speed_unit = "Kmh"   # (default: None = derive from locale) "Kmh", "Mph", or "Ms"
 
 # ── Notifications ─────────────────────────────────────────────────────────────
 
-[notifications]
-format = "%H:%M"
-show_timestamps = true
-show_bodies = true
-grouped = true           # (default) group notifications by app
+# [notifications]
+# format = "%H:%M"
+# show_timestamps = true
+# show_bodies = true
+# grouped = true           # (default) group notifications by app
 # toast = true              # (default) enable toast popups
 # toast_position = "TopRight"  # (default) "TopLeft", "TopRight", "BottomLeft", "BottomRight"
 # toast_timeout = 5000      # (default) milliseconds before auto-dismiss
@@ -78,12 +78,22 @@ grouped = true           # (default) group notifications by app
 # toast_max_height = 150    # (default) max height of toast cards in pixels
 # blocklist = ["regex"]     # (default: []) suppress notifications from apps matching regex
 
+# ── CustomModule ─────────────────────────────────────────────────────────────
+
+[[CustomModule]]
+name = "SwayNC"
+icon = ""
+command = "swaync-client -t -sw"
+listen_cmd = "swaync-client -swb"
+icons.'dnd.*' = ""
+alert = ".*notification"
+
 # ── Settings ──────────────────────────────────────────────────────────────────
 
 [settings]
 # Optional: disable hover tooltips on status indicators
 # enable_tooltips = false
-lock_cmd = "playerctl --all-players pause; nixGL hyprlock &"
+lock_cmd = "playerctl --all-players pause; hyprlock &"
 # shutdown_cmd = "shutdown now"                   # (default)
 # suspend_cmd = "systemctl suspend"               # (default)
 # hibernate_cmd = "systemctl hibernate"           # (default: None)
@@ -99,7 +109,7 @@ battery_format = "IconAndPercentage"  # (default), "Icon", "Percentage", "Time",
 # peripheral_indicators = "All"   # (default) or { Specific = ["Keyboard", "Mouse", "Headphones", "Gamepad"] }
 peripheral_battery_format = "Icon"  # (default), "IconAndPercentage", "Percentage", etc.
 # peripheral_expanded_by_default = false  # (default)
-audio_indicator_format = "Icon"        # (default), "IconAndPercentage", "Percentage", etc.
+audio_indicator_format = "IconAndPercentage"        # (default), "IconAndPercentage", "Percentage", etc.
 microphone_indicator_format = "Icon"   # (default)
 network_indicator_format = "Icon"      # (default), "IconAndPercentage", "Percentage", "Name", "IconAndName" (Name/IconAndName show the SSID/interface/VPN name)
 bluetooth_indicator_format = "Icon"    # (default)
@@ -116,8 +126,8 @@ indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Microphone", "Bluetoot
 [osd]
 enabled = false   # (default)
 timeout = 1500    # milliseconds
-show_volume_percentage = false      # (default) show numeric volume value in the OSD
-show_brightness_percentage = false  # (default) show numeric brightness value in the OSD
+show_volume_percentage = true      # (default) show numeric volume value in the OSD
+show_brightness_percentage = true  # (default) show numeric brightness value in the OSD
 
 # ── Animations ────────────────────────────────────────────────────────────────
 
@@ -128,8 +138,8 @@ enabled = false   # (default)
 
 [appearance]
 font_name = "Maple Mono NF"           # (default: None) custom font family
-scale_factor = 1.1           # (default) range: 0.0 < x <= 2.0
-# opacity = 1.0                # (default) range: 0.0 to 1.0, every surface ashell draws
+scale_factor = 1.2           # (default) range: 0.0 < x <= 2.0
+opacity = 0.8                # (default) range: 0.0 to 1.0, every surface ashell draws
                                # or a table: [appearance.opacity] with default/bar/menu/osd/notifications
 # blur = "auto"                # (default) auto|always|never, compositor blur
 primary_color = "#7aa2f7"
