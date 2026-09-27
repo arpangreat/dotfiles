@@ -55,8 +55,8 @@ enable_workspace_filling = false  # (default)
 # ── Tempo ─────────────────────────────────────────────────────────────────────
 
 [tempo]
-clock_format = "%a %d %b %I:%M:%p"
-formats = [ "%a %d %b %I:%M:%p", "%Y-%m-%d %I:%M:%S", "%I:%M:%S" ]
+clock_format = "%a %d %b, %I:%M %p"
+formats = [ "%a %d %b, %I:%M %p", "%Y-%m-%d %I:%M:%S", "%I:%M:%S" ]
 # timezones = [ "UTC", "America/New_York", "Europe/London" ]
 # weather_location = { City = "" }
 # weather_location = { Coordinates = [40.7128, -74.0060] }
