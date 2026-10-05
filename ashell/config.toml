@@ -107,7 +107,7 @@ bluetooth_more_cmd = "blueberry"
 battery_format = "IconAndPercentage"  # (default), "Icon", "Percentage", "Time", "IconAndTime"
 # battery_hide_when_full = false  # (default)
 # peripheral_indicators = "All"   # (default) or { Specific = ["Keyboard", "Mouse", "Headphones", "Gamepad"] }
-peripheral_battery_format = "Icon"  # (default), "IconAndPercentage", "Percentage", etc.
+peripheral_battery_format = "IconAndPercentage"  # (default), "IconAndPercentage", "Percentage", etc.
 # peripheral_expanded_by_default = false  # (default)
 audio_indicator_format = "IconAndPercentage"        # (default), "IconAndPercentage", "Percentage", etc.
 microphone_indicator_format = "Icon"   # (default)
@@ -118,8 +118,8 @@ volume_step = 5    # (default) step size for IPC volume up/down, range 1..=50
 max_volume = 200   # (default) max volume level, range 1..=200 (>100 enables overdrive)
 # remove_airplane_btn = false   # (default) set true to hide airplane mode button
 # remove_idle_btn = false       # (default) set true to hide idle inhibitor button
-indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Microphone", "Bluetooth", "Network", "Vpn", "Battery", "Brightness" ]
-# indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Microphone", "Bluetooth", "Network", "Vpn", "Battery", "PeripheralBattery", "Brightness" ]
+# indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Microphone", "Bluetooth", "Network", "Vpn", "Battery", "Brightness" ]
+indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Microphone", "Bluetooth", "Network", "Vpn", "Battery", "PeripheralBattery", "Brightness" ]
 
 # ── OSD ───────────────────────────────────────────────────────────────────────
 
