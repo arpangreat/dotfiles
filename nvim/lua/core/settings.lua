@@ -46,6 +46,9 @@ vim.opt.cmdheight = 0
 vim.g.grepprg = "rg --vimgrep --smart-case"
 vim.g.grepformat = "%f:%l:%c:%m"
 
+-- vim.g.messagesopt = .
+vim.g.messageopt = "pager:<CR>"
+
 vim.g.health = { style = "float" }
 
 vim.g.tmux_navigator_no_mappings = 1
