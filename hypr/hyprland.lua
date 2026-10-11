@@ -18,7 +18,7 @@ hl.on("hyprland.start", function()
 		"/usr/local/bin/pypr",
 		-- "waybar",
 		"ashell",
-		"swaybg -i ~/dotfiles/wallpaper/4k/lighthouse.jpg",
+		"swaybg -i ~/dotfiles/wallpaper/4k/japan.jpg",
 		"ghostty",
 		"zen-browser",
 		"swaync",
