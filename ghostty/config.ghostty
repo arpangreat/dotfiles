@@ -100,7 +100,7 @@ cursor-style-blink = false
 
 palette-generate = true
 
-background-opacity = 0.98
+# background-opacity = 0.98
 # background-opacity-cells = true
 # background-blur = true
 

@@ -88,8 +88,6 @@ set -gx LD ld.lld
 set -gx LDFLAGS "-fuse-ld=lld"
 set -gx GEMINI_API_KEY $(cat ~/.gemini_api_key)
 
-
-
 fish_add_path $GOPATH/go/bin
 fish_add_path /usr/local/go/bin/
 fish_add_path $HOME/.cargo/env
