@@ -13,4 +13,10 @@ function M.setup()
 	vim.keymap.set("n", "<leader>xo", "<cmd>Trouble<cr>", { desc = "Trouble" })
 end
 
+M.spec = {
+	src = "folke/trouble.nvim",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

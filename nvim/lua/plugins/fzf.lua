@@ -55,4 +55,13 @@ function M.setup()
 	end, { desc = "Config files" })
 end
 
+M.specs = {
+	{ src = "ibhagwan/fzf-lua", setup = false },
+	{
+		src = "roginfarrer/fzf-lua-lazy.nvim",
+		setup = false,
+		on_setup = M.setup,
+	},
+}
+
 return M

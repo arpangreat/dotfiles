@@ -1,6 +1,11 @@
 local M = {}
 
-function M.setup()
+function M.setup_icons()
+	require("mini.icons").setup()
+	require("mini.icons").mock_nvim_web_devicons()
+end
+
+function M.setup_hipatterns()
 	local hi = require("mini.hipatterns")
 	hi.setup({
 		highlighters = {
@@ -12,5 +17,38 @@ function M.setup()
 		},
 	})
 end
+
+function M.setup_diff()
+	require("mini.diff").setup({
+		view = {
+			style = "sign",
+			signs = { add = "┃", change = "┃", delete = "_" },
+		},
+	})
+end
+
+function M.setup()
+	M.setup_icons()
+	M.setup_hipatterns()
+	M.setup_diff()
+end
+
+M.specs = {
+	{
+		src = "nvim-mini/mini.icons",
+		setup = false,
+		on_setup = M.setup_icons,
+	},
+	{
+		src = "nvim-mini/mini.hipatterns",
+		setup = false,
+		on_setup = M.setup_hipatterns,
+	},
+	{
+		src = "echasnovski/mini.diff",
+		setup = false,
+		on_setup = M.setup_diff,
+	},
+}
 
 return M

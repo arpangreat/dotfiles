@@ -9,4 +9,10 @@ function M.setup()
 	})
 end
 
+M.spec = {
+	src = "windwp/nvim-autopairs",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

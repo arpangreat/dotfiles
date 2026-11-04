@@ -28,4 +28,10 @@ function M.setup()
 	})
 end
 
+M.spec = {
+	src = "stevearc/conform.nvim",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

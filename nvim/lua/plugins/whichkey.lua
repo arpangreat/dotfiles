@@ -37,4 +37,10 @@ function M.setup()
 	})
 end
 
+M.spec = {
+	src = "folke/which-key.nvim",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

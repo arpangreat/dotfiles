@@ -12,4 +12,10 @@ function M.setup()
 	})
 end
 
+M.spec = {
+	src = "mason-org/mason.nvim",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

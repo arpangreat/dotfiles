@@ -13,4 +13,10 @@ function M.setup()
 	})
 end
 
+M.spec = {
+	src = "kawre/neotab.nvim",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

@@ -16,4 +16,10 @@ function M.setup()
 	vim.cmd.colorscheme("tokyonight")
 end
 
+M.spec = {
+	src = "folke/tokyonight.nvim",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M

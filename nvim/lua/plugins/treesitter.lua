@@ -120,4 +120,13 @@ function M.setup_update_hook()
 	})
 end
 
+M.setup_update_hook()
+
+M.spec = {
+	src = "nvim-treesitter/nvim-treesitter",
+	version = "main",
+	setup = false,
+	on_setup = M.setup,
+}
+
 return M
