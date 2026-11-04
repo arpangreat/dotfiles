@@ -6,15 +6,24 @@
   "workspace": {
     "checkThirdParty": false,
     "library": [
-      // Runtime and builtin libraries.
-      "$VIMRUNTIME/lua",
+      "$VIMRUNTIME",
       "${3rd}/luv/library",
-      // Include some plugins for API completion.
-      "$XDG_DATA_HOME/nvim/lazy/blink.cmp/lua",
-      "$XDG_DATA_HOME/nvim/lazy/fzf-lua/lua",
-      "$XDG_DATA_HOME/nvim/lazy/lazy.nvim/lua",
-      "$XDG_DATA_HOME/nvim/lazy/mini.files/lua",
-      "$XDG_DATA_HOME/nvim/lazy/nvim-autopairs/lua"
+      "~/.local/share/nvim/site/pack/core/opt/blink.cmp/lua",
+      "~/.local/share/nvim/site/pack/core/opt/blink.lib/lua",
+      "~/.local/share/nvim/site/pack/core/opt/conform.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/fzf-lua/lua",
+      "~/.local/share/nvim/site/pack/core/opt/fzf-lua-lazy.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/mason.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/mini.diff/lua",
+      "~/.local/share/nvim/site/pack/core/opt/mini.hipatterns/lua",
+      "~/.local/share/nvim/site/pack/core/opt/mini.icons/lua",
+      "~/.local/share/nvim/site/pack/core/opt/neotab.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/nvim-autopairs/lua",
+      "~/.local/share/nvim/site/pack/core/opt/nvim-treesitter/lua",
+      "~/.local/share/nvim/site/pack/core/opt/tokyonight.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/trouble.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/videre.nvim/lua",
+      "~/.local/share/nvim/site/pack/core/opt/which-key.nvim/lua"
     ]
   }
 }
