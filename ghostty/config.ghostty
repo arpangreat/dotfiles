@@ -105,6 +105,7 @@ palette-generate = true
 # background-blur = true
 
 keybind = ctrl+enter=unbind
+keybind = ctrl+enter=text:\x1b[13;5u
 keybind = global:super+`=toggle_quick_terminal
 
 # window-padding-x = 2
