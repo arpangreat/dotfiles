@@ -52,7 +52,7 @@ font-feature = cv03
 font-feature = cv05
 font-feature = cv11
 font-feature = cv63
-font-feature = cv35
+# font-feature = cv35
 font-feature = cv66
 
 # Intel One
