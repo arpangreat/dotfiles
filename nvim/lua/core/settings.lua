@@ -1,64 +1,60 @@
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+-- Use vim.o / vim.g for simple scalar options (faster than vim.opt, no
+-- metatable overhead).  vim.opt is only needed for list/map operations.
+local o, g = vim.o, vim.g
+
+o.ignorecase = true
+o.smartcase = true
 vim.opt.path:append("**")
 
-vim.opt.smartindent = true
-vim.opt.wrap = false
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.signcolumn = "yes"
-vim.opt.scrolloff = 10
-vim.opt.sidescrolloff = 8
--- vim.opt.completeopt = { "menu", "menuone", "noselect", "fuzzy" }
--- vim.opt.wildoptions = { "pum", "tagfile", "fuzzy" }
+o.smartindent = true
+o.wrap = false
+o.shiftwidth = 2
+o.tabstop = 2
+o.softtabstop = 2
+o.signcolumn = "yes"
+o.scrolloff = 10
+o.sidescrolloff = 8
 vim.opt.wildoptions:append("fuzzy")
-vim.opt.winborder = "single"
-vim.opt.pumheight = 10
-vim.opt.pumblend = 10
-vim.opt.showmatch = true
-vim.opt.matchtime = 2
-vim.opt.title = true
-vim.opt.splitbelow = true
-vim.opt.splitright = true
+o.winborder = "single"
+o.pumheight = 10
+o.pumblend = 10
+o.showmatch = true
+o.matchtime = 2
+o.title = true
+o.splitbelow = true
+o.splitright = true
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = true
--- vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:block-blinkon0-TermCursor"
-vim.opt.conceallevel = 1
-vim.opt.mouse = vim.opt.mouse + "a"
-vim.opt.undofile = true
-vim.opt.undodir = "/home/arpangreat/.vim/undodir"
-vim.opt.swapfile = false
-vim.opt.splitright = true
-vim.opt.splitbelow = true
-vim.opt.clipboard = "unnamedplus"
+o.number = true
+o.relativenumber = true
+o.cursorline = true
+o.conceallevel = 1
+o.mouse = "a"
+o.undofile = true
+o.undodir = "/home/arpangreat/.vim/undodir"
+o.swapfile = false
+o.clipboard = "unnamedplus"
 
-vim.opt.timeout = true
-vim.opt.timeoutlen = 300
-vim.opt.ttimeoutlen = 0
-vim.opt.updatetime = 50
--- vim.opt.shortmess = vim.opt.shortmess + "I"
--- vim.opt.shortmess = vim.opt.shortmess + "c"
+o.timeout = true
+o.timeoutlen = 300
+o.ttimeoutlen = 0
+o.updatetime = 50
 vim.opt.shortmess:append("c")
-vim.opt.showmode = false
+o.showmode = false
 
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
-vim.g.loaded_ruby_provider = 0
-vim.g.loaded_python3_provider = 0
+g.loaded_node_provider = 0
+g.loaded_perl_provider = 0
+g.loaded_ruby_provider = 0
+g.loaded_python3_provider = 0
 
--- Keep the command line on its own row so it does not cover the statusline.
-vim.opt.termguicolors = true
-vim.opt.cmdheight = 0
-vim.opt.laststatus = 3
+o.termguicolors = true
+o.cmdheight = 0
+o.laststatus = 3
 
-vim.g.grepprg = "rg --vimgrep --smart-case"
-vim.g.grepformat = "%f:%l:%c:%m"
+g.grepprg = "rg --vimgrep --smart-case"
+g.grepformat = "%f:%l:%c:%m"
 
-vim.opt.messagesopt = "hit-enter,history:500,maxheight:50,pager:<CR>,timeout:5000"
+o.messagesopt = "hit-enter,history:500,maxheight:50,pager:<CR>,timeout:5000"
 
-vim.g.health = { style = "float" }
+g.health = { style = "float" }
 
-vim.g.tmux_navigator_no_mappings = 1
+g.tmux_navigator_no_mappings = 1

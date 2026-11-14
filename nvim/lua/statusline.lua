@@ -4,19 +4,16 @@ local M = {}
 -- COLORS
 ---------------------------------------------------------------
 local C = {
-	bg = "#1e2030", -- slightly darker for better contrast
-
-	blue = "#7aa2ff", -- brighter, more saturated
-	green = "#9ece6a", -- punchier green
-	green1 = "#4fd6be", -- keep teal but already good
-	magenta = "#f7768e", -- more vibrant pink-magenta
-	yellow = "#ffc777", -- already strong, keep
-	red = "#ff6b6b", -- brighter red (less dull)
-
-	-- optional extras (future-proof if used)
-	cyan = "#4cc9f0", -- brighter cyan
-	fg = "#e0e6ff", -- slightly brighter foreground
-	fg_dim = "#a6adc8", -- dim text (for ruler etc.)
+	bg = "#1e2030",
+	blue = "#7aa2ff",
+	green = "#9ece6a",
+	green1 = "#4fd6be",
+	magenta = "#f7768e",
+	yellow = "#ffc777",
+	red = "#ff6b6b",
+	cyan = "#4cc9f0",
+	fg = "#e0e6ff",
+	fg_dim = "#a6adc8",
 }
 
 ---------------------------------------------------------------
@@ -31,37 +28,32 @@ local mini_icons = nil
 local lsp_progress = {}
 local lsp_progress_seq = 0
 local lsp_spinner_frame = 1
-local lsp_spinner_running = false
+local lsp_spinner_timer = nil
 
 local lsp_spinner = { "⣾", "⣽", "⣻", "⢿", "⡿", "⣟", "⣯", "⣷" }
 
-local function redraw_statusline()
-	vim.cmd.redrawstatus()
-end
-
-local function escape_statusline(text)
-	return tostring(text or ""):gsub("%%", "%%%%")
-end
-
-local function animate_lsp_progress()
-	if lsp_spinner_running then
+-- Use a single persistent uv timer instead of recursive vim.defer_fn.
+-- vim.defer_fn creates a new timer object every 100ms which gets GC'd;
+-- a single timer avoids that churn entirely.
+local function start_lsp_spinner()
+	if lsp_spinner_timer then
 		return
 	end
-
-	lsp_spinner_running = true
-	local function tick()
+	lsp_spinner_timer = vim.uv.new_timer()
+	lsp_spinner_timer:start(100, 100, vim.schedule_wrap(function()
 		if not next(lsp_progress) then
-			lsp_spinner_running = false
+			if lsp_spinner_timer then
+				lsp_spinner_timer:stop()
+				lsp_spinner_timer:close()
+				lsp_spinner_timer = nil
+			end
 			lsp_spinner_frame = 1
+			vim.cmd.redrawstatus()
 			return
 		end
-
 		lsp_spinner_frame = (lsp_spinner_frame % #lsp_spinner) + 1
-		redraw_statusline()
-		vim.defer_fn(tick, 100)
-	end
-
-	vim.defer_fn(tick, 100)
+		vim.cmd.redrawstatus()
+	end))
 end
 
 local function is_cmdline_mode(mode)
@@ -164,19 +156,16 @@ end
 function M.git()
 	local file = vim.api.nvim_buf_get_name(0)
 
-	-- ignore invalid / special buffers
 	if file == "" or vim.bo.buftype ~= "" then
 		return ""
 	end
 
 	local dir = vim.fs.dirname(file)
 
-	-- ensure directory exists (VERY IMPORTANT)
 	if not dir or vim.fn.isdirectory(dir) == 0 then
 		return ""
 	end
 
-	-- cached per directory
 	if cache.git[dir] ~= nil then
 		return cache.git[dir]
 	end
@@ -216,10 +205,10 @@ end
 -- DIAGNOSTICS
 ---------------------------------------------------------------
 local diag_icons = {
-	[vim.diagnostic.severity.ERROR] = " ",
-	[vim.diagnostic.severity.WARN] = " ",
-	[vim.diagnostic.severity.INFO] = " ",
-	[vim.diagnostic.severity.HINT] = " ",
+	[vim.diagnostic.severity.ERROR] = " ",
+	[vim.diagnostic.severity.WARN] = " ",
+	[vim.diagnostic.severity.INFO] = " ",
+	[vim.diagnostic.severity.HINT] = " ",
 }
 
 local diag_hl = {
@@ -230,22 +219,16 @@ local diag_hl = {
 }
 
 function M.diagnostics()
-	local diags = vim.diagnostic.get(0)
-	if not diags or #diags == 0 then
+	local counts = vim.diagnostic.count(0)
+	if not counts or not next(counts) then
 		return ""
-	end
-
-	local counts = { 0, 0, 0, 0 }
-
-	for _, d in ipairs(diags) do
-		counts[d.severity] = counts[d.severity] + 1
 	end
 
 	local parts = {}
 
 	for severity = 1, 4 do
 		local count = counts[severity]
-		if count > 0 then
+		if count and count > 0 then
 			parts[#parts + 1] =
 				string.format("%%#%s#%s%d%%#StatusLine#", diag_hl[severity], diag_icons[severity], count)
 		end
@@ -280,14 +263,28 @@ end
 ---------------------------------------------------------------
 -- BUFCOUNT
 ---------------------------------------------------------------
+-- Cache buffer count; update on buffer add/delete/wipeout only.
+local buf_count_cache = nil
+
+vim.api.nvim_create_autocmd({ "BufAdd", "BufDelete", "BufWipeout" }, {
+	callback = function()
+		buf_count_cache = nil
+	end,
+})
+
 function M.bufcount()
+	if buf_count_cache then
+		return buf_count_cache
+	end
+
 	local count = 0
 	for _, b in ipairs(vim.api.nvim_list_bufs()) do
 		if vim.bo[b].buflisted then
 			count = count + 1
 		end
 	end
-	return count > 1 and ("+" .. (count - 1)) or ""
+	buf_count_cache = count > 1 and ("+" .. (count - 1)) or ""
+	return buf_count_cache
 end
 
 ---------------------------------------------------------------
@@ -310,8 +307,11 @@ end
 ---------------------------------------------------------------
 -- LSP PROGRESS
 ---------------------------------------------------------------
+local function escape_statusline(text)
+	return tostring(text or ""):gsub("%%", "%%%%")
+end
+
 function M.lsp_progress()
-	-- Progress messages are useful in normal mode but distracting while typing.
 	if vim.api.nvim_get_mode().mode:sub(1, 1) == "i" then
 		return ""
 	end
@@ -373,7 +373,7 @@ function M.render()
 	local left = table.concat({
 		" ",
 		M.mode(),
-		git ~= "" and (" %#SLGit# " .. git .. dirty .. "%#StatusLine#") or "",
+		git ~= "" and (" %#SLGit# " .. git .. dirty .. "%#StatusLine#") or "",
 		" ",
 		M.diff(),
 	})
@@ -421,27 +421,28 @@ end
 -- HIGHLIGHTS
 ---------------------------------------------------------------
 local function setup_highlights()
-	vim.api.nvim_set_hl(0, "SLGit", { fg = C.green1, bold = true })
-	vim.api.nvim_set_hl(0, "SLDirty", { fg = C.red, bold = true })
-	vim.api.nvim_set_hl(0, "SLDiffAdd", { fg = C.green })
-	vim.api.nvim_set_hl(0, "SLDiffMod", { fg = C.yellow })
-	vim.api.nvim_set_hl(0, "SLDiffDel", { fg = C.red })
+	local set_hl = vim.api.nvim_set_hl
+	set_hl(0, "SLGit", { fg = C.green1, bold = true })
+	set_hl(0, "SLDirty", { fg = C.red, bold = true })
+	set_hl(0, "SLDiffAdd", { fg = C.green })
+	set_hl(0, "SLDiffMod", { fg = C.yellow })
+	set_hl(0, "SLDiffDel", { fg = C.red })
 
-	vim.api.nvim_set_hl(0, "SLError", { fg = C.red })
-	vim.api.nvim_set_hl(0, "SLWarn", { fg = C.yellow })
-	vim.api.nvim_set_hl(0, "SLInfo", { fg = C.blue })
-	vim.api.nvim_set_hl(0, "SLHint", { fg = C.green1 })
+	set_hl(0, "SLError", { fg = C.red })
+	set_hl(0, "SLWarn", { fg = C.yellow })
+	set_hl(0, "SLInfo", { fg = C.blue })
+	set_hl(0, "SLHint", { fg = C.green1 })
 
-	vim.api.nvim_set_hl(0, "SLProgress", { fg = C.blue })
-	vim.api.nvim_set_hl(0, "SLRuler", { fg = C.green1 })
+	set_hl(0, "SLProgress", { fg = C.blue })
+	set_hl(0, "SLRuler", { fg = C.green1 })
 
-	vim.api.nvim_set_hl(0, "SLFile", { fg = C.magenta, bold = true })
-	vim.api.nvim_set_hl(0, "SLLSP", { fg = C.blue })
-	vim.api.nvim_set_hl(0, "SLLSPProgressSpinner", { fg = C.green1, bold = true })
-	vim.api.nvim_set_hl(0, "SLLSPProgressClient", { fg = C.blue, bold = true })
-	vim.api.nvim_set_hl(0, "SLLSPProgressTitle", { fg = C.fg_dim, italic = true })
+	set_hl(0, "SLFile", { fg = C.magenta, bold = true })
+	set_hl(0, "SLLSP", { fg = C.blue })
+	set_hl(0, "SLLSPProgressSpinner", { fg = C.green1, bold = true })
+	set_hl(0, "SLLSPProgressClient", { fg = C.blue, bold = true })
+	set_hl(0, "SLLSPProgressTitle", { fg = C.fg_dim, italic = true })
 
-	vim.api.nvim_set_hl(0, "StatusLine", { bg = C.bg })
+	set_hl(0, "StatusLine", { bg = C.bg })
 end
 
 ---------------------------------------------------------------
@@ -474,10 +475,10 @@ vim.api.nvim_create_autocmd("LspProgress", {
 				percentage = tonumber(value.percentage),
 				seq = lsp_progress_seq,
 			}
-			animate_lsp_progress()
+			start_lsp_spinner()
 		end
 
-		redraw_statusline()
+		vim.cmd.redrawstatus()
 	end,
 })
 

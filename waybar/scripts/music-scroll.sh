@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WIDTH=50
+WIDTH=30
 DELAY=0.25
 SEPARATOR="   -   "
 

@@ -1,3 +1,4 @@
 function fish_user_key_bindings
-  fzf --fish | source
+	fzf --fish | source
+  source "/home/arpangreat/fzf/shell/key-bindings.fish"
 end

@@ -8,19 +8,13 @@ local M = {}
 
 ---@param plugins PluginSpec[]
 function M.add(plugins)
-	local sources = vim.iter(plugins)
-		:map(function(plugin)
-			local spec = {
-				src = "https://github.com/" .. plugin.src,
-			}
-
-			if plugin.version then
-				spec.version = plugin.version
-			end
-
-			return spec
-		end)
-		:totable()
+	local sources = {}
+	for i, plugin in ipairs(plugins) do
+		sources[i] = {
+			src = "https://github.com/" .. plugin.src,
+			version = plugin.version,
+		}
+	end
 
 	vim.pack.add(sources)
 

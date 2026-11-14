@@ -1,6 +1,5 @@
 vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
-	-- command = "silent! lua vim.highlight.on_yank({ timeout = 200 })",
 	callback = function()
 		vim.hl.hl_op()
 	end,
@@ -38,8 +37,9 @@ vim.api.nvim_create_autocmd("BufWipeout", {
 	end,
 })
 
--- This runs after everything else
-vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
+-- Remove unwanted formatoptions — only needs FileType, not BufEnter/BufWinEnter.
+-- Those extra events caused redundant work on every buffer switch.
+vim.api.nvim_create_autocmd("FileType", {
 	pattern = "*",
 	callback = function()
 		vim.schedule(function()
@@ -48,19 +48,13 @@ vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "BufWinEnter" }, {
 	end,
 })
 
--- HACK:
--- Try to prevent bad habits like using the arrow keys for movement. This is
--- not the only possible bad habit. For example, holding down the h/j/k/l keys
--- for movement, rather than using more efficient movement commands, is also a
--- bad habit. The former is enforceable through a .vimrc, while we don't know
--- how to prevent the latter.
--- Do this in normal mode...
-vim.cmd('nnoremap <Left>  :echoe "Use h"<CR>')
-vim.cmd('nnoremap <Right> :echoe "Use l"<CR>')
-vim.cmd('nnoremap <Up>    :echoe "Use k"<CR>')
-vim.cmd('nnoremap <Down>  :echoe "Use j"<CR>')
--- ...and in insert mode
-vim.cmd('inoremap <Left>  <ESC>:echoe "Use h"<CR>')
-vim.cmd('inoremap <Right> <ESC>:echoe "Use l"<CR>')
-vim.cmd('inoremap <Up>    <ESC>:echoe "Use k"<CR>')
-vim.cmd('inoremap <Down>  <ESC>:echoe "Use j"<CR>')
+-- Arrow key training — pure Lua keymaps instead of vim.cmd
+local map = vim.keymap.set
+map("n", "<Left>",  function() vim.notify("Use h", vim.log.levels.ERROR) end)
+map("n", "<Right>", function() vim.notify("Use l", vim.log.levels.ERROR) end)
+map("n", "<Up>",    function() vim.notify("Use k", vim.log.levels.ERROR) end)
+map("n", "<Down>",  function() vim.notify("Use j", vim.log.levels.ERROR) end)
+map("i", "<Left>",  function() vim.notify("Use h", vim.log.levels.ERROR) end)
+map("i", "<Right>", function() vim.notify("Use l", vim.log.levels.ERROR) end)
+map("i", "<Up>",    function() vim.notify("Use k", vim.log.levels.ERROR) end)
+map("i", "<Down>",  function() vim.notify("Use j", vim.log.levels.ERROR) end)

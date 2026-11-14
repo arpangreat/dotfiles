@@ -82,13 +82,33 @@ function M.setup()
 		vim.treesitter.language.register(lang, filetype)
 	end
 
-	treesitter.install(parsers)
+	-- Defer parser installation to after startup — it does synchronous
+	-- filesystem stat calls for every parser in the list.
+	local timer = vim.uv.new_timer()
+	timer:start(50, 0, vim.schedule_wrap(function()
+		timer:close()
+		treesitter.install(parsers)
+	end))
 
 	vim.api.nvim_create_autocmd("FileType", {
 		pattern = filetypes,
-		callback = function()
-			vim.treesitter.start()
-			vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+		callback = function(ev)
+			local bufnr = ev.buf
+			-- Skip large files (>100KB) to avoid long parse times
+			local ok, stats = pcall(vim.uv.fs_stat, vim.api.nvim_buf_get_name(bufnr))
+			if ok and stats and stats.size > 100 * 1024 then
+				return
+			end
+			-- Defer parsing to next event loop iteration so the buffer renders first
+			local ts_timer = vim.uv.new_timer()
+			ts_timer:start(0, 0, vim.schedule_wrap(function()
+				ts_timer:close()
+				if not vim.api.nvim_buf_is_valid(bufnr) then
+					return
+				end
+				vim.treesitter.start(bufnr)
+				vim.bo[bufnr].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+			end))
 		end,
 	})
 end

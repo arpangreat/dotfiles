@@ -20,6 +20,7 @@ window#waybar {
   background: rgba(0, 0, 0, 0.5);
   /* background-color: @subtext0; */
   margin-left: 1rem;
+  min-height: 24px;
 }
 
 #workspaces button {
@@ -48,8 +49,9 @@ window#waybar {
 #custom-weather {
   background: rgba(0, 0, 0, 0.5);
   background-color: @surface0;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   margin: 5px 0;
+  min-height: 24px;
 }
 
 #clock {
@@ -95,6 +97,7 @@ window#waybar {
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.5);
   margin-left: 1rem;
+  min-width: 340px;
 }
 
 #custom-weather {

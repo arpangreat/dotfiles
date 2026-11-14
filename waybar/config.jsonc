@@ -1,6 +1,7 @@
 {
   "layer": "top", // Waybar at top layer
   "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 46, // Waybar fixed height
   // "width": 1280, // Waybar width
   // Choose the order of the modules
   "modules-left": ["hyprland/workspaces"],
@@ -75,7 +76,8 @@
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "on-click": "playerctl play-pause",
-    "max-length": 50,
+    "max-length": 35,
+    "hide-empty-text": true,
     "spacing": 10,
   },
   "clock": {
