@@ -12,32 +12,41 @@ local function reload_workspace(bufnr)
 	end
 end
 
+---@param command string
+---@return boolean
+local function executable_exists(command)
+	local exists = vim.fn.executable(command) == 1
+
+	if not exists then
+		vim.notify_once(("[rust_analyzer] %s not found."):format(command), vim.log.levels.WARN)
+	end
+
+	return exists
+end
+
 local function user_sysroot_src()
 	return vim.tbl_get(vim.lsp.config["rust_analyzer"], "settings", "rust-analyzer", "cargo", "sysrootSrc")
 end
 
+local sysroot_cache = {} ---@type table<string, string|false>
+
 local function default_sysroot_src()
 	local sysroot = vim.tbl_get(vim.lsp.config["rust_analyzer"], "settings", "rust-analyzer", "cargo", "sysroot")
 	if not sysroot then
-		local rustc = os.getenv("RUSTC") or "rustc"
-		local result = vim.system({ rustc, "--print", "sysroot" }, { text = true }):wait()
-
-		local stdout = result.stdout
-		if result.code == 0 and stdout then
-			if string.sub(stdout, #stdout) == "\n" then
-				if #stdout > 1 then
-					sysroot = string.sub(stdout, 1, #stdout - 1)
-				else
-					sysroot = ""
-				end
-			else
-				sysroot = stdout
-			end
+		local cwd = vim.fn.getcwd()
+		if sysroot_cache[cwd] == nil then
+			local ok, result = pcall(function()
+				return vim.system({ "rustc", "--print", "sysroot" }, { text = true }):wait()
+			end)
+			sysroot_cache[cwd] = ok and result.code == 0 and result.stdout and vim.trim(result.stdout) or false
 		end
+		sysroot = sysroot_cache[cwd] or nil
 	end
 
 	return sysroot and vim.fs.joinpath(sysroot, "lib/rustlib/src/rust/library") or nil
 end
+
+local workspace_cache = {} ---@type table<string, string>
 
 local function is_library(fname)
 	local user_home = vim.fs.normalize(vim.env.HOME)
@@ -63,6 +72,10 @@ return {
 	cmd = { "rust-analyzer" },
 	filetypes = { "rust" },
 	root_dir = function(bufnr, on_dir)
+		if not executable_exists("cargo") then
+			return
+		end
+
 		local fname = vim.api.nvim_buf_get_name(bufnr)
 		local reused_dir = is_library(fname)
 		if reused_dir then
@@ -78,6 +91,11 @@ return {
 				vim.fs.root(fname, { "rust-project.json" })
 					or vim.fs.dirname(vim.fs.find(".git", { path = fname, upward = true })[1])
 			)
+			return
+		end
+
+		if workspace_cache[cargo_crate_dir] then
+			on_dir(workspace_cache[cargo_crate_dir])
 			return
 		end
 
@@ -100,6 +118,7 @@ return {
 					end
 				end
 
+				workspace_cache[cargo_crate_dir] = cargo_workspace_root or cargo_crate_dir
 				on_dir(cargo_workspace_root or cargo_crate_dir)
 			else
 				vim.schedule(function()

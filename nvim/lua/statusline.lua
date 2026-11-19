@@ -40,20 +40,27 @@ local function start_lsp_spinner()
 		return
 	end
 	lsp_spinner_timer = vim.uv.new_timer()
-	lsp_spinner_timer:start(100, 100, vim.schedule_wrap(function()
-		if not next(lsp_progress) then
-			if lsp_spinner_timer then
-				lsp_spinner_timer:stop()
-				lsp_spinner_timer:close()
-				lsp_spinner_timer = nil
+	if not lsp_spinner_timer then
+		return
+	end
+	lsp_spinner_timer:start(
+		100,
+		100,
+		vim.schedule_wrap(function()
+			if not next(lsp_progress) then
+				if lsp_spinner_timer then
+					lsp_spinner_timer:stop()
+					lsp_spinner_timer:close()
+					lsp_spinner_timer = nil
+				end
+				lsp_spinner_frame = 1
+				vim.cmd.redrawstatus()
+				return
 			end
-			lsp_spinner_frame = 1
+			lsp_spinner_frame = (lsp_spinner_frame % #lsp_spinner) + 1
 			vim.cmd.redrawstatus()
-			return
-		end
-		lsp_spinner_frame = (lsp_spinner_frame % #lsp_spinner) + 1
-		vim.cmd.redrawstatus()
-	end))
+		end)
+	)
 end
 
 local function is_cmdline_mode(mode)
@@ -205,10 +212,10 @@ end
 -- DIAGNOSTICS
 ---------------------------------------------------------------
 local diag_icons = {
-	[vim.diagnostic.severity.ERROR] = " ",
-	[vim.diagnostic.severity.WARN] = " ",
-	[vim.diagnostic.severity.INFO] = " ",
-	[vim.diagnostic.severity.HINT] = " ",
+	[vim.diagnostic.severity.ERROR] = " ",
+	[vim.diagnostic.severity.WARN] = " ",
+	[vim.diagnostic.severity.HINT] = " ",
+	[vim.diagnostic.severity.INFO] = " ",
 }
 
 local diag_hl = {
@@ -357,7 +364,7 @@ function M.position()
 		"%#StatusLine#",
 		" ",
 		"%#SLRuler#",
-		"%4l:%-3c",
+		"%4l:%-2c",
 		"%#StatusLine#",
 	})
 end
@@ -403,6 +410,7 @@ function M.render()
 		progress,
 		(lsp ~= "" or progress ~= "") and " " or "",
 		M.position(),
+		" ",
 	})
 
 	-----------------------------------------------------------
@@ -455,7 +463,7 @@ vim.api.nvim_create_autocmd("LspProgress", {
 		local data = args.data
 		local params = data and data.params
 		local value = params and params.value
-		if not data or not value then
+		if not data or not value or not params then
 			return
 		end
 
@@ -464,7 +472,7 @@ vim.api.nvim_create_autocmd("LspProgress", {
 			return
 		end
 
-		local key = string.format("%d:%s", data.client_id, vim.inspect(params.token))
+		local key = string.format("%d:%s", data.client_id, vim.inspect(params.token)) ---@diagnostic disable-line: param-type-mismatch
 		if value.kind == "end" then
 			lsp_progress[key] = nil
 		else
