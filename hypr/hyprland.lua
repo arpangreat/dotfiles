@@ -23,8 +23,8 @@ hl.on("hyprland.start", function()
 		"zen-browser",
 		"swaync",
 		"nm-applet",
-		"systemctl --user restart elephant.service",
-		"walker --gapplication-service",
+		-- "systemctl --user restart elephant.service",
+		-- "walker --gapplication-service",
 		-- Re-apply config once devices and portals have settled.
 		"sh -lc 'sleep 3 && hyprctl reload'",
 	}) do
@@ -207,7 +207,7 @@ hl.bind(main_mod .. " + SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(main_mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(main_mod .. " + mouse:272", hl.dsp.window.float({ action = "toggle" }), { click = true })
 hl.bind(main_mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
-hl.bind(main_mod .. " + D", hl.dsp.exec_cmd("walker"))
+hl.bind(main_mod .. " + D", hl.dsp.exec_cmd("vicinae toggle"))
 hl.bind(main_mod .. " + P", hl.dsp.window.pseudo())
 hl.bind(main_mod .. " + Y", hl.dsp.exec_cmd("hyprshot -m region"))
 
@@ -238,7 +238,8 @@ for i = 1, 10 do
 	hl.bind(main_mod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
-hl.bind(main_mod .. " + SHIFT + p", hl.dsp.exec_cmd("walker --provider menus:powermenu"))
+-- hl.bind(main_mod .. " + SHIFT + p", hl.dsp.exec_cmd("walker --provider menus:powermenu"))
+hl.bind(main_mod .. " + SHIFT + p", hl.dsp.exec_cmd("vicinae vicinae://launch/power"))
 hl.bind(main_mod .. " + U", hl.dsp.workspace.toggle_special())
 hl.bind(main_mod .. " + SHIFT + U", hl.dsp.window.move({ workspace = "special", follow = true }))
 hl.bind(main_mod .. " + SHIFT + n", hl.dsp.exec_cmd("swaync-client -t -sw"))

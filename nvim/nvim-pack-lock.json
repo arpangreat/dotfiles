@@ -37,15 +37,15 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.diff": {
-      "rev": "91d6ce4b7f400439fe761f01a58280f2c0f99c01",
+      "rev": "f527407247245d121ca65d539d7a8a3686938915",
       "src": "https://github.com/echasnovski/mini.diff"
     },
     "mini.hipatterns": {
-      "rev": "7a79e5f000beb530ade0fa9faec70f01469dbcb3",
+      "rev": "012ae1f3070ad47973d09c730091be2ee4bef09c",
       "src": "https://github.com/nvim-mini/mini.hipatterns"
     },
     "mini.icons": {
-      "rev": "fc90b3925a2a68282be06e28cfe0cbb366c75dad",
+      "rev": "5d58117d176c133f4cb5585ec8cb3450881c89a0",
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "neotab.nvim": {
@@ -70,7 +70,7 @@
       "src": "https://github.com/folke/trouble.nvim"
     },
     "videre.nvim": {
-      "rev": "c9de0e17f3a2f790a8fce15e4354953e143c8545",
+      "rev": "014818f736bf97e36bce75f9f9ff3132916ca34c",
       "src": "https://github.com/Owen-Dechow/videre.nvim"
     },
     "vim-tmux-navigator": {

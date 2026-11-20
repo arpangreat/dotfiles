@@ -1,0 +1,21 @@
+{
+  "closeOnFocusLoss": false,
+  "faviconService": "twenty",
+  "font": {
+    "normal": "Maple Mono NF",
+    "size": 10
+  },
+  "keybinding": "emacs",
+  "popToRootOnClose": false,
+  "rootSearch": {
+    "searchFiles": true
+  },
+  "theme": {
+    "name": "tokyo_night_storm.json"
+  },
+  "window": {
+    "csd": true,
+    "opacity": 1.0,
+    "rounding": 10
+  }
+}
