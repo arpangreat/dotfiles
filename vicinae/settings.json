@@ -28,6 +28,11 @@
       "action.move-up": "control+P"
    },
    "providers": {
+      "@c4n4m1/store.vicinae.zoxide-recent-directories": {
+         "preferences": {
+            "application": "com.mitchellh.ghostty.desktop"
+         }
+      },
       "@dagimg-dot/store.vicinae.wifi-commander": {
          "preferences": {
             "network-cli-tool": "nmcli"
