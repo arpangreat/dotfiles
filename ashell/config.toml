@@ -58,8 +58,8 @@ indicator_visualizer = "Background" # (default: None = disabled), "Before", or "
 clock_format = "%a %d %b, %I:%M %p"
 formats = [ "%a %d %b, %I:%M %p", "%Y-%m-%d %I:%M:%S", "%I:%M:%S" ]
 # timezones = [ "UTC", "America/New_York", "Europe/London" ]
-# weather_location = { City = "Rampurhat" }
-weather_location = { Coordinates = [24.17, 87.78] }
+weather_location = { City = "Kalyani" }
+# weather_location = { Coordinates = [24.17, 87.78] }
 # weather_location = "Current"
 weather_indicator = "IconAndTemperature"  # (default), "Icon", or "None"
 wind_speed_unit = "Kmh"   # (default: None = derive from locale) "Kmh", "Mph", or "Ms"
