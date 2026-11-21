@@ -8,6 +8,7 @@ fish/completions/fish/**
 helix/runtime
 lazygit/state.yml
 lazygit/github_pull_requests.json
+lazygit/state.yml.lock
 
 .gemini/
 gha-creds-*.json
