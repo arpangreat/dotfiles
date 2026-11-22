@@ -355,6 +355,17 @@ function M.lsp_progress()
 end
 
 ---------------------------------------------------------------
+-- MACRO RECORDING
+---------------------------------------------------------------
+function M.macro()
+	local reg = vim.fn.reg_recording()
+	if reg == "" then
+		return ""
+	end
+	return string.format("%%#SLMacro# Recording @%s%%#StatusLine#", reg)
+end
+
+---------------------------------------------------------------
 -- POSITION
 ---------------------------------------------------------------
 function M.position()
@@ -402,9 +413,12 @@ function M.render()
 	-----------------------------------------------------------
 	-- RIGHT
 	-----------------------------------------------------------
+	local macro = M.macro()
 	local lsp = M.lsp()
 	local progress = M.lsp_progress()
 	local right = table.concat({
+		macro,
+		macro ~= "" and " " or "",
 		lsp,
 		lsp ~= "" and progress ~= "" and "  " or "",
 		progress,
@@ -449,6 +463,7 @@ local function setup_highlights()
 	set_hl(0, "SLLSPProgressSpinner", { fg = C.green1, bold = true })
 	set_hl(0, "SLLSPProgressClient", { fg = C.blue, bold = true })
 	set_hl(0, "SLLSPProgressTitle", { fg = C.fg_dim, italic = true })
+	set_hl(0, "SLMacro", { fg = C.red, bold = true })
 
 	set_hl(0, "StatusLine", { bg = C.bg })
 end
@@ -500,6 +515,8 @@ vim.api.nvim_create_autocmd({
 	"DiagnosticChanged",
 	"LspAttach",
 	"LspDetach",
+	"RecordingEnter",
+	"RecordingLeave",
 }, {
 	callback = function()
 		vim.cmd.redrawstatus()
