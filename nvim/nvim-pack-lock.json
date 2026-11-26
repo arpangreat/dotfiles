@@ -17,7 +17,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "a8312697c30b4d3b110fa3dc56e3699107aed9a0",
+      "rev": "a3b5e6bebcc604d0286fffa1c4eb05b066a2a198",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "fzf-lua-lazy.nvim": {
@@ -32,12 +32,16 @@
       "rev": "ecc5ba0a0b8c3a6eb3e7fa5a2caeeee2263729c3",
       "src": "https://github.com/Owen-Dechow/graph_view_yaml_parser"
     },
+    "ipynb.nvim": {
+      "rev": "9c06504b2597404eceda7da18fd68c0d55edbb4e",
+      "src": "https://github.com/ajbucci/ipynb.nvim"
+    },
     "mason.nvim": {
       "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.diff": {
-      "rev": "f527407247245d121ca65d539d7a8a3686938915",
+      "rev": "92385df93f81a0934e50c03615865041bc074b28",
       "src": "https://github.com/echasnovski/mini.diff"
     },
     "mini.hipatterns": {

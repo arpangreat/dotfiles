@@ -14,6 +14,7 @@ local modules = {
 	"trouble",
 	"whichkey",
 	"videre",
+	"ipynb",
 }
 
 local all_specs = {}
